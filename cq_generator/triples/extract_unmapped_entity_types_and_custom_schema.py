@@ -1,7 +1,7 @@
 import json
 
 # Input and output file paths
-input_file = "untyped_entity_usage_trace_suggestions.json"
+input_file = "raw_files/untyped_entity_usage_trace_suggestions.json"
 output_entity_types = "entity_types_list.json"
 output_custom_schema = "custom_schema_declarations.ttl"
 

@@ -1,8 +1,8 @@
 import json
 
 # Input and output file paths
-input_file = "untyped_entity_usage_trace_suggestions.json"
-output_file = "entity_types_list.json"
+input_file = "raw_files/untyped_entity_usage_trace_suggestions.json"
+output_file = "raw_files/entity_types_list.json"
 
 # Load JSON data
 with open(input_file, "r") as f:

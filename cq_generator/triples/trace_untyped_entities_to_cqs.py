@@ -2,11 +2,11 @@ import json
 from collections import defaultdict
 
 # Load untyped entities
-with open("untyped_entities.json") as f:
+with open("raw_files/untyped_entities.json") as f:
     untyped_entities = set(json.load(f))
 
 # Load triples
-with open("triples_from_gpt.json") as f:
+with open("raw_files/triples_from_gpt.json") as f:
     triples_data = json.load(f)
 
 # Mapping from entity URI to list of (CQ_ID, CQ_Text)
@@ -29,7 +29,7 @@ for item in triples_data:
                 })
 
 # Save to file
-with open("untyped_entity_usage_trace.json", "w") as f:
+with open("raw_files/untyped_entity_usage_trace.json", "w") as f:
     json.dump(entity_usage_map, f, indent=2)
 
 print(f"Saved mapping of untyped entities to CQs in 'untyped_entity_usage_trace.json'")

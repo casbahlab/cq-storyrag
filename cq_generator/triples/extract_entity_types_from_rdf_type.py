@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 
 # Load the GPT-generated triples
-with open("triples_from_gpt.json", "r") as f:
+with open("raw_files/triples_from_gpt.json", "r") as f:
     data = json.load(f)
 
 # A mapping of entities to their rdf:type (object)
@@ -28,7 +28,7 @@ for subject, types in entity_type_map.items():
     })
 
 # Save to file
-with open("entity_type_from_rdf_type.json", "w") as f:
+with open("raw_files/entity_type_from_rdf_type.json", "w") as f:
     json.dump(entity_type_output, f, indent=2)
 
 print(f"Inferred {len(entity_type_output)} entities with rdf:type relationships.")

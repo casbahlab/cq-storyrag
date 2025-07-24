@@ -1,9 +1,9 @@
 import rdflib
 
 # Input file paths
-custom_schema_file = "custom_schema_declarations.ttl"
+custom_schema_file = "raw_files/custom_schema_declarations.ttl"
 schema_attributes_file = "schema_class_attributes.ttl"
-output_file = "ontology_template_combined_final.ttl"
+output_file = "raw_files/ontology_template_combined_final.ttl"
 
 # Standard prefixes to inject
 required_prefixes = """@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

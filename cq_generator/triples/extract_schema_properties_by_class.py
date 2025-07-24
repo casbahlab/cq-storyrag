@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 
 # === Input and output paths ===
-input_file = "triples_from_gpt.json"
+input_file = "raw_files/triples_from_gpt.json"
 ttl_output_file = "schema_class_attributes_full.ttl"
 
 # === Load JSON ===

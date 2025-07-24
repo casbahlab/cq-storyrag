@@ -3,7 +3,7 @@ from rdflib import Graph, Namespace, RDF, RDFS, URIRef
 from urllib.parse import urlparse
 
 # File paths
-input_file = "untyped_entity_usage_trace_suggestions.json"
+input_file = "raw_files/untyped_entity_usage_trace_suggestions.json"
 output_file = "untyped_suggestions_clean.ttl"
 
 # Load JSON

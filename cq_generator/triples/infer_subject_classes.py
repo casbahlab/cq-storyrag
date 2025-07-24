@@ -2,7 +2,7 @@ import json
 from collections import defaultdict, Counter
 
 # Load triples
-with open("triples_from_gpt.json") as f:
+with open("raw_files/triples_from_gpt.json") as f:
     data = json.load(f)
 
 # Helper: extract URI fragment
@@ -76,7 +76,7 @@ for pred, trace in predicate_traces.items():
     }
 
 # Save traceable output
-with open("predicate_domain_range_trace.json", "w") as f:
+with open("raw_files/predicate_domain_range_trace.json", "w") as f:
     json.dump(predicate_inference, f, indent=2)
 
 print("Traceable predicate domain/range inference saved to predicate_domain_range_trace.json")

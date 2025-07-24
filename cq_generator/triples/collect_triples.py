@@ -3,7 +3,7 @@ from collections import defaultdict
 from pathlib import Path
 
 # Load triples from JSON (your CQ-format input file)
-INPUT_FILE = "triples_from_gpt.json"  # Replace with your actual path
+INPUT_FILE = "raw_files/triples_from_gpt.json"  # Replace with your actual path
 
 with open(INPUT_FILE, "r") as f:
     data = json.load(f)
@@ -39,7 +39,7 @@ for predicate, info in predicate_map.items():
     }
 
 # Save the template
-output_file = "kg_predicate_summary.json"
+output_file = "raw_files/kg_predicate_summary.json"
 with open(output_file, "w") as f:
     json.dump(ontology_template, f, indent=2)
 

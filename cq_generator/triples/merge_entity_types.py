@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 
 # Load input files
-with open("entity_types_list.json") as f1, open("entity_type_from_rdf_type.json") as f2:
+with open("raw_files/entity_types_list.json") as f1, open("raw_files/entity_type_from_rdf_type.json") as f2:
     enriched = json.load(f1)
     rdf_types = json.load(f2)
 
@@ -28,7 +28,7 @@ cleaned_output = [
 ]
 
 # Save output
-with open("merged_entity_types.json", "w") as out:
+with open("raw_files/merged_entity_types.json", "w") as out:
     json.dump(cleaned_output, out, indent=2)
 
 print("Merged entity types saved to: merged_entity_types.json")

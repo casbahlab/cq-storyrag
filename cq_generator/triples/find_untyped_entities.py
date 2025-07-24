@@ -1,11 +1,11 @@
 import json
 
 # Load the full triple data
-with open("triples_from_gpt.json") as f:
+with open("raw_files/triples_from_gpt.json") as f:
     triples_data = json.load(f)
 
 # Load rdf:type inferred entity types
-with open("entity_type_from_rdf_type.json") as f:
+with open("raw_files/entity_type_from_rdf_type.json") as f:
     typed_entities = json.load(f)
 
 # Collect all typed entity URIs
@@ -26,7 +26,7 @@ for entry in triples_data:
 untyped_entities = sorted(all_entities - typed_uris)
 
 # Save for later
-with open("untyped_entities.json", "w") as f:
+with open("raw_files/untyped_entities.json", "w") as f:
     json.dump(untyped_entities, f, indent=2)
 
 # Print summary

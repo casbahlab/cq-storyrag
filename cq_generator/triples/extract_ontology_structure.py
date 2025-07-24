@@ -2,7 +2,7 @@ import json
 from rdflib import Graph, RDFS
 
 # Input and output paths
-input_ttl_file = "ontology_template_combined_final.ttl"
+input_ttl_file = "raw_files/ontology_template_combined_final.ttl"
 class_output = "class_hierarchy.json"
 property_output = "property_definitions.json"
 

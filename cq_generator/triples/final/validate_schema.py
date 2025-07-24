@@ -1,7 +1,7 @@
 from rdflib import Graph, RDF, RDFS, URIRef
 from collections import defaultdict
 
-ttl_path = "cleaned_file_with_schema.ttl"  # your schema file
+ttl_path = "minimal_schema_template_manual_updated.ttl"  # your schema file
 g = Graph()
 g.parse(ttl_path, format="turtle")
 

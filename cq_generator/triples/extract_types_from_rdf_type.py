@@ -2,7 +2,7 @@ import json
 from collections import defaultdict
 
 # Input and output file paths
-input_file = "triples_from_gpt.json"
+input_file = "raw_files/triples_from_gpt.json"
 output_entity_types = "entity_type_from_rdf_type.json"
 output_custom_schema = "custom_schema_from_rdf_type.ttl"
 
