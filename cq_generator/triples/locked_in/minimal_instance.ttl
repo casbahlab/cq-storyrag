@@ -75,12 +75,15 @@
     :hasPerformer :Madonna , :BlackSabbath .
 
 :Queen_LiveAidWembley_Performance a :Performance ;
-    :performedBy :Queen ;
+    :performer :Queen ;
     :performedAt :LiveAidWembley1985 ;
     schema:video <https://www.youtube.com/watch?v=6OsCheVsdTQ&pp=ygUaUXVlZW4gbGl2ZSBhaWQgcGVyZm9ybWFuY2U%3D> ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Queen%27s_performance_at_Live_Aid>,
                  <https://www.setlist.fm/setlist/queen/1985/wembley-stadium-london-england-5bd47f28.html>,
-                 <https://musicbrainz.org/release/746840c7-e95c-4a54-8034-d371cf5664e9> .
+                 <https://musicbrainz.org/release/746840c7-e95c-4a54-8034-d371cf5664e9> ;
+    :hasSegment :queen_segment_1, :queen_segment_2, :queen_segment_3,
+                :queen_segment_4, :queen_segment_5, :queen_segment_6,
+                :queen_segment_7 .
 
 # -- Queen's performance segments --
 

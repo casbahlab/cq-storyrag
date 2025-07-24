@@ -214,6 +214,11 @@ ex:hasPerformer a rdf:Property ;
     rdfs:range ex:MusicArtist ;
     rdfs:subPropertyOf schema:performer .
 
+ex:performer a rdf:Property ;
+    rdfs:domain ex:Performance ;
+    rdfs:range schema:MusicGroup ;
+    rdfs:label "performer" ;
+    rdfs:comment "Links a performance to the artist or group who performed." .
 
 ex:PerformanceSegment a rdfs:Class ;
     rdfs:label "Performance Segment" ;

@@ -1,0 +1,15 @@
+Emma:
+  description: >
+    Emma is a curious newcomer to music history. She appreciates emotionally engaging,
+    clear explanations with simple language. The tone should be warm, welcoming,
+    and accessible—like you're telling a story to someone new to the topic.
+  tone: emotional
+  detail_level: basic
+
+Luca:
+  description: >
+    Luca is an informed music enthusiast. He values detailed, structured explanations
+    with references to performance context, artist background, and legacy.
+    The tone should be knowledgeable but still conversational.
+  tone: analytical
+  detail_level: advanced
