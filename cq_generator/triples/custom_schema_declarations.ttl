@@ -1,0 +1,162 @@
+@prefix : <http://example.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:CharitableConcert a rdfs:Class ;
+  rdfs:subClassOf schema:MusicEvent .
+
+:Performance a rdfs:Class ;
+  rdfs:subClassOf rdfs:Class .
+
+:PerformanceSegment a rdfs:Class ;
+  rdfs:subClassOf rdfs:Class .
+
+:Reaction a rdfs:Class ;
+  rdfs:subClassOf rdfs:Class .
+
+:Cause a rdfs:Class ;
+  rdfs:subClassOf rdfs:Class .
+
+:SatelliteNetwork a rdfs:Class ;
+  rdfs:subClassOf rdfs:Class .
+
+:MemorableMoment a rdfs:Class ;
+  rdfs:subClassOf rdfs:Class .
+
+:WembleyAudience a rdfs:Class ;
+  rdfs:subClassOf schema:Audience .
+
+:WembleyStadium a rdfs:Class ;
+  rdfs:subClassOf schema:Place .
+
+:MusicGenre a rdfs:Class ;
+  rdfs:subClassOf rdfs:Class .
+
+:PerformanceSchedulePattern a rdfs:Class ;
+  rdfs:subClassOf rdfs:Class .
+
+:cause a rdf:Property ;
+  rdfs:domain :CharitableConcert ;
+  rdfs:range :Cause ;
+  rdfs:label "cause" .
+
+:reactionIntensity a rdf:Property ;
+  rdfs:domain :Performance ;
+  rdfs:range :Reaction ;
+  rdfs:label "reactionIntensity" .
+
+:audienceReactionIntensity a rdf:Property ;
+  rdfs:domain :Performance ;
+  rdfs:range :Reaction ;
+  rdfs:label "audienceReactionIntensity" .
+
+:hasSetList a rdf:Property ;
+  rdfs:domain :Performance ;
+  rdfs:range :PerformanceSegment ;
+  rdfs:label "hasSetList" .
+
+:songPerformed a rdf:Property ;
+  rdfs:domain :PerformanceSegment ;
+  rdfs:range :HammerToFall ;
+  rdfs:label "songPerformed" .
+
+:audienceReaction a rdf:Property ;
+  rdfs:domain :PerformanceSegment ;
+  rdfs:range :Reaction ;
+  rdfs:label "audienceReaction" .
+
+:criticalAcclaim a rdf:Property ;
+  rdfs:domain :Performance ;
+  rdfs:range schema:Review ;
+  rdfs:label "criticalAcclaim" .
+
+:reason a rdf:Property ;
+  rdfs:domain :Cause ;
+  rdfs:range xsd:string ;
+  rdfs:label "reason" .
+
+:broadcastOf a rdf:Property ;
+  rdfs:domain schema:BroadcastEvent ;
+  rdfs:range schema:MusicEvent ;
+  rdfs:label "broadcastOf" .
+
+:preservationStatus a rdf:Property ;
+  rdfs:domain schema:BroadcastEvent ;
+  rdfs:range xsd:boolean ;
+  rdfs:label "preservationStatus" .
+
+:preservationStatusReason a rdf:Property ;
+  rdfs:domain schema:BroadcastEvent ;
+  rdfs:range xsd:string ;
+  rdfs:label "preservationStatusReason" .
+
+:datePublished a rdf:Property ;
+  rdfs:domain schema:MusicAlbum ;
+  rdfs:range xsd:date ;
+  rdfs:label "datePublished" .
+
+:releasedAfter a rdf:Property ;
+  rdfs:domain schema:MusicAlbum ;
+  rdfs:range schema:MusicEvent ;
+  rdfs:label "releasedAfter" .
+
+:startDate a rdf:Property ;
+  rdfs:domain schema:MusicEvent ;
+  rdfs:range xsd:date ;
+  rdfs:label "startDate" .
+
+:numberOfSatellites a rdf:Property ;
+  rdfs:domain :SatelliteNetwork ;
+  rdfs:range xsd:integer ;
+  rdfs:label "numberOfSatellites" .
+
+:numberOfCountries a rdf:Property ;
+  rdfs:domain schema:Audience ;
+  rdfs:range xsd:integer ;
+  rdfs:label "numberOfCountries" .
+
+:audienceCount a rdf:Property ;
+  rdfs:domain schema:Audience ;
+  rdfs:range xsd:integer ;
+  rdfs:label "audienceCount" .
+
+:audienceFor a rdf:Property ;
+  rdfs:domain schema:Event ;
+  rdfs:range schema:Audience ;
+  rdfs:label "audienceFor" .
+
+:performedIn a rdf:Property ;
+  rdfs:domain schema:MusicComposition ;
+  rdfs:range :PerformanceSegment ;
+  rdfs:label "performedIn" .
+
+:occurredDuringSegment a rdf:Property ;
+  rdfs:domain :MemorableMoment ;
+  rdfs:range :PerformanceSegment ;
+  rdfs:label "occurredDuringSegment" .
+
+:numberOfMusicalActs a rdf:Property ;
+  rdfs:domain schema:MusicEvent ;
+  rdfs:range xsd:integer ;
+  rdfs:label "numberOfMusicalActs" .
+
+:facilitatedBy a rdf:Property ;
+  rdfs:domain :BroadcastMethod ;
+  rdfs:range :SatelliteNetwork ;
+  rdfs:label "facilitatedBy" .
+
+:enabled a rdf:Property ;
+  rdfs:domain :BroadcastMethod ;
+  rdfs:range schema:BroadcastEvent ;
+  rdfs:label "enabled" .
+
+:usedIn a rdf:Property ;
+  rdfs:domain :PerformanceSchedulePattern ;
+  rdfs:range schema:MusicEvent ;
+  rdfs:label "usedIn" .
+
+:betweenVenues a rdf:Property ;
+  rdfs:domain :PerformanceSchedulePattern ;
+  rdfs:range schema:Place ;
+  rdfs:label "betweenVenues" .

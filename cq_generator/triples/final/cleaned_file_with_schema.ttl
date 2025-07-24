@@ -1,0 +1,2397 @@
+@prefix : <http://example.org/> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:source a rdf:Property ;
+    rdfs:label "source" ;
+    rdfs:comment "Reference or origin of the information." ;
+    rdfs:domain schema:Thing ;
+    rdfs:range rdfs:Literal .
+
+schema:domainIncludes a rdf:Property ;
+    rdfs:label "domainIncludes" ;
+    rdfs:comment "Relates a property to a class that is (one of) the type(s) the property is expected to be used on." ;
+    schema:domainIncludes schema:Property ;
+    schema:isPartOf <https://meta.schema.org> ;
+    schema:rangeIncludes schema:Class .
+
+schema:supersededBy a rdf:Property ;
+    rdfs:label "supersededBy" ;
+    rdfs:comment "Relates a term (i.e. a property, class or enumeration) to one that supersedes it." ;
+    schema:domainIncludes schema:Class,
+        schema:Enumeration,
+        schema:Property ;
+    schema:isPartOf <https://meta.schema.org> ;
+    schema:rangeIncludes schema:Class,
+        schema:Enumeration,
+        schema:Property .
+
+schema:rangeIncludes a rdf:Property ;
+    rdfs:label "rangeIncludes" ;
+    rdfs:comment "Relates a property to a class that constitutes (one of) the expected type(s) for values of the property." ;
+    schema:domainIncludes schema:Property ;
+    schema:isPartOf <https://meta.schema.org> ;
+    schema:rangeIncludes schema:Class .
+
+schema:inverseOf a rdf:Property ;
+    rdfs:label "inverseOf" ;
+    rdfs:comment "Relates a property to a property that is its inverse. Inverse properties relate the same pairs of items to each other, but in reversed direction. For example, the 'alumni' and 'alumniOf' properties are inverseOf each other. Some properties don't have explicit inverses; in these situations RDFa and JSON-LD syntax for reverse properties can be used." ;
+    schema:domainIncludes schema:Property ;
+    schema:isPartOf <https://meta.schema.org> ;
+    schema:rangeIncludes schema:Property .
+
+schema:contributor a rdf:Property ;
+    rdfs:label "contributor" ;
+    rdfs:comment "A secondary contributor to the CreativeWork or Event." ;
+    schema:domainIncludes schema:CreativeWork,
+        schema:Event ;
+    schema:rangeIncludes schema:Organization,
+        schema:Person .
+
+:BroadcastMethod a rdfs:Class .
+
+:BroadcastMusicEvent a rdfs:Class ;
+    rdfs:label "Broadcast Music Event" ;
+    rdfs:comment "A music event intended for distribution via broadcast media such as television, radio, or streaming platforms. This class encompasses live or pre-recorded concerts, festivals, or performances that are publicly disseminated." ;
+    rdfs:subClassOf schema:BroadcastEvent,
+        schema:MusicEvent .
+
+:Cause a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+:CharitableConcert a rdfs:Class ;
+    rdfs:subClassOf schema:MusicEvent .
+
+:MemorableMoment a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+:MusicArtist a rdfs:Class ;
+    rdfs:label "Music Artist" ;
+    rdfs:comment "A custom class representing either a solo performer (Person) or a group (MusicGroup).",
+        "A custom subclass that represents either a solo performer or a group in a musical context." ;
+    rdfs:subClassOf schema:MusicGroup,
+        schema:Person .
+
+:MusicEvent a rdfs:Class ;
+    rdfs:subClassOf schema:MusicEvent .
+
+:MusicGenre a :MusicGenre,
+        rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+:Performance a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+:PerformanceSchedulePattern a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+:PerformanceSegment a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+:Reaction a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+:SatelliteNetwork a :SatelliteNetwork,
+        rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+schema:BroadcastChannel a rdfs:Class .
+
+schema:BroadcastEvent a rdfs:Class .
+
+schema:BroadcastService a rdfs:Class .
+
+schema:City a rdfs:Class .
+
+schema:Country a rdfs:Class .
+
+schema:CreativeWork a rdfs:Class .
+
+schema:DataType a rdfs:Class ;
+    rdfs:label "DataType" ;
+    rdfs:comment "The basic data types such as Integers, Strings, etc." ;
+    rdfs:subClassOf rdfs:Class .
+
+schema:Event a rdfs:Class .
+
+schema:MusicComposition a rdfs:Class .
+
+schema:MusicEvent a rdfs:Class .
+
+schema:MusicGroup a rdfs:Class .
+
+schema:MusicRecording a rdfs:Class .
+
+schema:Person a rdfs:Class .
+
+schema:Place a rdfs:Class .
+
+schema:StadiumOrArena a rdfs:Class .
+
+schema:Audience a rdfs:Class ;
+    rdfs:label "Audience" ;
+    rdfs:comment "Intended audience for an item, i.e. the group for whom the item was created." ;
+    rdfs:subClassOf schema:Intangible .
+
+schema:BroadcastChannel a rdfs:Class ;
+    rdfs:label "BroadcastChannel" ;
+    rdfs:comment "A unique instance of a BroadcastService on a CableOrSatelliteService lineup." ;
+    rdfs:subClassOf schema:Intangible .
+
+schema:BroadcastEvent a rdfs:Class ;
+    rdfs:label "BroadcastEvent" ;
+    rdfs:comment "An over the air or online broadcast event." ;
+    rdfs:subClassOf schema:PublicationEvent .
+
+schema:BroadcastService a rdfs:Class ;
+    rdfs:label "BroadcastService" ;
+    rdfs:comment "A delivery service through which content is provided via broadcast over the air or online." ;
+    rdfs:subClassOf schema:Service .
+
+schema:City a rdfs:Class ;
+    rdfs:label "City" ;
+    rdfs:comment "A city or town." ;
+    rdfs:subClassOf schema:AdministrativeArea .
+
+schema:Country a rdfs:Class ;
+    rdfs:label "Country" ;
+    rdfs:comment "A country." ;
+    rdfs:subClassOf schema:AdministrativeArea .
+
+schema:CreativeWork a rdfs:Class ;
+    rdfs:label "CreativeWork" ;
+    rdfs:comment "The most generic kind of creative work, including books, movies, photographs, software programs, etc." ;
+    rdfs:subClassOf schema:Thing ;
+    schema:contributor <https://schema.org/docs/collab/rNews> .
+
+schema:Date a rdfs:Class,
+        schema:DataType ;
+    rdfs:label "Date" ;
+    rdfs:comment "A date value in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601)." .
+
+schema:Event a rdfs:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the [[offers]] property. Repeated events may be structured as separate Event objects." ;
+    rdfs:subClassOf schema:Thing ;
+    owl:equivalentClass dcmitype:Event .
+
+schema:Museum a rdfs:Class ;
+    rdfs:label "Museum" ;
+    rdfs:comment "A museum." ;
+    rdfs:subClassOf schema:CivicStructure .
+
+schema:MusicAlbum a rdfs:Class ;
+    rdfs:label "MusicAlbum" ;
+    rdfs:comment "A collection of music tracks." ;
+    rdfs:subClassOf schema:MusicPlaylist .
+
+schema:MusicComposition a rdfs:Class ;
+    rdfs:label "MusicComposition" ;
+    rdfs:comment "A musical composition." ;
+    rdfs:subClassOf schema:CreativeWork ;
+    schema:contributor <https://schema.org/docs/collab/MBZ> .
+
+schema:MusicEvent a rdfs:Class ;
+    rdfs:label "MusicEvent" ;
+    rdfs:comment "Event type: Music event." ;
+    rdfs:subClassOf schema:Event .
+
+schema:MusicGroup a rdfs:Class ;
+    rdfs:label "MusicGroup" ;
+    rdfs:comment "A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician." ;
+    rdfs:subClassOf schema:PerformingGroup .
+
+schema:MusicRecording a rdfs:Class ;
+    rdfs:label "MusicRecording" ;
+    rdfs:comment "A music recording (track), usually a single song." ;
+    rdfs:subClassOf schema:CreativeWork .
+
+schema:Person a rdfs:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A person (alive, dead, undead, or fictional)." ;
+    rdfs:subClassOf schema:Thing ;
+    owl:equivalentClass foaf:Person ;
+    schema:contributor <https://schema.org/docs/collab/rNews> .
+
+schema:Place a rdfs:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "Entities that have a somewhat fixed, physical extension." ;
+    rdfs:subClassOf schema:Thing .
+
+schema:Review a rdfs:Class ;
+    rdfs:label "Review" ;
+    rdfs:comment "A review of an item - for example, of a restaurant, movie, or store." ;
+    rdfs:subClassOf schema:CreativeWork .
+
+schema:StadiumOrArena a rdfs:Class ;
+    rdfs:label "StadiumOrArena" ;
+    rdfs:comment "A stadium." ;
+    rdfs:subClassOf schema:CivicStructure,
+        schema:SportsActivityLocation .
+
+schema:URL a rdfs:Class ;
+    rdfs:label "URL" ;
+    rdfs:comment "Data type: URL." ;
+    rdfs:subClassOf schema:Text .
+
+:AlternatingSlots a :PerformanceSchedulePattern .
+
+:BenefitConcert a :CharitableConcert .
+
+:GlobalAudience a schema:Audience,
+        schema:Event .
+
+:MediaCritics a :Performance .
+
+:SatelliteBroadcast a :BroadcastMethod .
+
+:amountRaised a rdf:Property ;
+    rdfs:domain :CharitableConcert .
+
+:audienceCount a rdf:Property ;
+    rdfs:domain schema:Audience ;
+    rdfs:range xsd:integer .
+
+:audienceFor a rdf:Property ;
+    rdfs:domain schema:Event ;
+    rdfs:range schema:Audience .
+
+:audienceReaction a rdf:Property ;
+    rdfs:domain :PerformanceSegment ;
+    rdfs:range :Reaction .
+
+:audienceReactionIntensity a rdf:Property ;
+    rdfs:domain :Performance ;
+    rdfs:range :Reaction .
+
+:beneficiary a rdf:Property ;
+    rdfs:domain :CharitableConcert .
+
+:betweenVenues a rdf:Property ;
+    rdfs:domain :PerformanceSchedulePattern ;
+    rdfs:range schema:Place .
+
+:birthDate a rdf:Property ;
+    rdfs:label "birthDate" ;
+    rdfs:comment "The date of birth of the music artist." ;
+    rdfs:domain :MusicArtist ;
+    rdfs:range schema:Date .
+
+:broadcastOf a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent ;
+    rdfs:range schema:MusicEvent .
+
+:broadcastService a rdf:Property ;
+    rdfs:domain :BroadcastMusicEvent .
+
+:cause a rdf:Property ;
+    rdfs:domain :CharitableConcert ;
+    rdfs:range :Cause .
+
+:criticalAcclaim a rdf:Property ;
+    rdfs:domain :Performance ;
+    rdfs:range schema:Review .
+
+:datePublished a rdf:Property ;
+    rdfs:domain schema:MusicAlbum ;
+    rdfs:range xsd:date .
+
+:enabled a rdf:Property ;
+    rdfs:domain :BroadcastMethod ;
+    rdfs:range schema:BroadcastEvent .
+
+:facilitatedBy a rdf:Property ;
+    rdfs:domain :BroadcastMethod ;
+    rdfs:range :SatelliteNetwork .
+
+:hasSetList a rdf:Property ;
+    rdfs:domain :Performance ;
+    rdfs:range :PerformanceSegment .
+
+:influenced a rdf:Property ;
+    rdfs:domain :BroadcastMusicEvent .
+
+:inspiredBy a rdf:Property ;
+    rdfs:domain :BroadcastMusicEvent .
+
+:numberOfCountries a rdf:Property ;
+    rdfs:domain schema:Audience ;
+    rdfs:range xsd:integer .
+
+:numberOfMusicalActs a rdf:Property ;
+    rdfs:domain schema:MusicEvent ;
+    rdfs:range xsd:integer .
+
+:numberOfSatellites a rdf:Property ;
+    rdfs:domain :SatelliteNetwork ;
+    rdfs:range xsd:integer .
+
+:occurredDuringSegment a rdf:Property ;
+    rdfs:domain :MemorableMoment ;
+    rdfs:range :PerformanceSegment .
+
+:performedIn a rdf:Property ;
+    rdfs:domain schema:MusicComposition ;
+    rdfs:range :PerformanceSegment .
+
+:performerIn a rdf:Property ;
+    rdfs:label "performerIn" ;
+    rdfs:comment "An event in which the music artist performed." ;
+    rdfs:domain :MusicArtist ;
+    rdfs:range schema:Event .
+
+:preservationStatus a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent ;
+    rdfs:range xsd:boolean .
+
+:preservationStatusReason a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent ;
+    rdfs:range xsd:string .
+
+<http://example.org/rdfs:label> a rdf:Property ;
+    rdfs:domain :MusicGenre ;
+    rdfs:range xsd:string .
+
+:reactionIntensity a rdf:Property ;
+    rdfs:domain :Performance ;
+    rdfs:range :Reaction .
+
+:reason a rdf:Property ;
+    rdfs:domain :Cause ;
+    rdfs:range xsd:string .
+
+:releasedAfter a rdf:Property ;
+    rdfs:domain schema:MusicAlbum ;
+    rdfs:range schema:MusicEvent .
+
+:songPerformed a rdf:Property ;
+    rdfs:domain :PerformanceSegment ;
+    rdfs:range schema:MusicComposition .
+
+:startDate a rdf:Property ;
+    rdfs:domain schema:MusicEvent ;
+    rdfs:range xsd:date .
+
+:usedIn a rdf:Property ;
+    rdfs:domain :PerformanceSchedulePattern ;
+    rdfs:range schema:MusicEvent .
+
+schema:about a rdf:Property ;
+    rdfs:domain schema:CreativeWork,
+        schema:MusicEvent .
+
+schema:additionalType a rdf:Property ;
+    rdfs:domain schema:Event,
+        schema:MusicEvent .
+
+schema:audience a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent,
+        schema:MusicEvent .
+
+schema:award a rdf:Property ;
+    rdfs:domain schema:MusicRecording .
+
+schema:birthDate a rdf:Property ;
+    rdfs:domain schema:Person .
+
+schema:broadcastDisplayName a rdf:Property ;
+    rdfs:domain schema:BroadcastService .
+
+schema:broadcastOfEvent a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent,
+        schema:MusicEvent .
+
+schema:containedInPlace a rdf:Property ;
+    rdfs:domain schema:City,
+        schema:Place,
+        schema:StadiumOrArena .
+
+schema:creator a rdf:Property ;
+    rdfs:domain schema:CreativeWork,
+        schema:MusicGroup,
+        schema:MusicRecording .
+
+schema:datePublished a rdf:Property ;
+    rdfs:domain schema:MusicRecording .
+
+schema:description a rdf:Property ;
+    rdfs:domain :PerformanceSegment ;
+    rdfs:range xsd:string .
+
+schema:distribution a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent .
+
+schema:duration a rdf:Property ;
+    rdfs:domain schema:MusicEvent ;
+    rdfs:range xsd:duration .
+
+schema:eventAttendanceMode a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:eventSchedule a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:founder a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:foundingDate a rdf:Property ;
+    rdfs:domain schema:MusicGroup .
+
+schema:foundingLocation a rdf:Property ;
+    rdfs:domain schema:MusicGroup .
+
+schema:fundedItem a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:genre a rdf:Property ;
+    rdfs:domain schema:MusicGroup,
+        schema:MusicRecording .
+
+schema:hasBroadcastChannel a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent .
+
+schema:hasPart a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:inLanguage a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent .
+
+schema:isPartOf a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent,
+        schema:Event,
+        schema:MusicEvent .
+
+schema:keywords a rdf:Property ;
+    rdfs:domain schema:CreativeWork .
+
+schema:location a rdf:Property ;
+    rdfs:domain :Cause,
+        schema:CreativeWork,
+        schema:Event,
+        schema:MusicEvent ;
+    rdfs:range schema:Country .
+
+schema:maximumAttendeeCapacity a rdf:Property ;
+    rdfs:domain schema:Place,
+        schema:StadiumOrArena .
+
+schema:member a rdf:Property ;
+    rdfs:domain schema:MusicGroup .
+
+schema:memberOf a rdf:Property ;
+    rdfs:domain schema:Person .
+
+schema:numberOfItems a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:organizer a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:performer a rdf:Property ;
+    rdfs:domain :MemorableMoment,
+        schema:Event,
+        schema:MusicEvent ;
+    rdfs:range schema:Person .
+
+schema:performerIn a rdf:Property ;
+    rdfs:domain schema:MusicGroup,
+        schema:Person .
+
+schema:position a rdf:Property ;
+    rdfs:domain :PerformanceSegment ;
+    rdfs:range xsd:integer .
+
+schema:sameAs a rdf:Property ;
+    rdfs:domain :Cause ;
+    rdfs:range schema:URL .
+
+schema:startDate a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:subEvent a rdf:Property ;
+    rdfs:domain schema:MusicEvent ;
+    rdfs:range schema:MusicEvent .
+
+schema:subjectOf a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:workPerformed a rdf:Property ;
+    rdfs:domain schema:MusicEvent .
+
+schema:Accommodation rdfs:subClassOf schema:Place .
+
+schema:AmpStory rdfs:subClassOf schema:CreativeWork .
+
+schema:ArchiveComponent rdfs:subClassOf schema:CreativeWork .
+
+schema:Article rdfs:subClassOf schema:CreativeWork .
+
+schema:Atlas rdfs:subClassOf schema:CreativeWork .
+
+schema:Blog rdfs:subClassOf schema:CreativeWork .
+
+schema:Book rdfs:subClassOf schema:CreativeWork .
+
+schema:BusinessAudience rdfs:subClassOf schema:Audience .
+
+schema:BusinessEvent rdfs:subClassOf schema:Event .
+
+schema:Chapter rdfs:subClassOf schema:CreativeWork .
+
+schema:ChildrensEvent rdfs:subClassOf schema:Event .
+
+schema:Claim rdfs:subClassOf schema:CreativeWork .
+
+schema:ClaimReview rdfs:subClassOf schema:Review .
+
+schema:Clip rdfs:subClassOf schema:CreativeWork .
+
+schema:Code rdfs:subClassOf schema:CreativeWork .
+
+schema:Collection rdfs:subClassOf schema:CreativeWork .
+
+schema:ComedyEvent rdfs:subClassOf schema:Event .
+
+schema:ComicStory rdfs:subClassOf schema:CreativeWork .
+
+schema:Comment rdfs:subClassOf schema:CreativeWork .
+
+schema:Conversation rdfs:subClassOf schema:CreativeWork .
+
+schema:Course rdfs:subClassOf schema:CreativeWork .
+
+schema:CourseInstance rdfs:subClassOf schema:Event .
+
+schema:CriticReview rdfs:subClassOf schema:Review .
+
+schema:DanceEvent rdfs:subClassOf schema:Event .
+
+schema:DataCatalog rdfs:subClassOf schema:CreativeWork .
+
+schema:DefinedTermSet rdfs:subClassOf schema:CreativeWork .
+
+schema:DeliveryEvent rdfs:subClassOf schema:Event .
+
+schema:Diet rdfs:subClassOf schema:CreativeWork .
+
+schema:DigitalDocument rdfs:subClassOf schema:CreativeWork .
+
+schema:Drawing rdfs:subClassOf schema:CreativeWork .
+
+schema:EducationEvent rdfs:subClassOf schema:Event .
+
+schema:EducationalAudience rdfs:subClassOf schema:Audience .
+
+schema:EducationalOccupationalCredential rdfs:subClassOf schema:CreativeWork .
+
+schema:EmployerReview rdfs:subClassOf schema:Review .
+
+schema:EventSeries rdfs:subClassOf schema:Event .
+
+schema:ExercisePlan rdfs:subClassOf schema:CreativeWork .
+
+schema:ExhibitionEvent rdfs:subClassOf schema:Event .
+
+schema:Festival rdfs:subClassOf schema:Event .
+
+schema:FoodEvent rdfs:subClassOf schema:Event .
+
+schema:Game rdfs:subClassOf schema:CreativeWork .
+
+schema:Guide rdfs:subClassOf schema:CreativeWork .
+
+schema:Hackathon rdfs:subClassOf schema:Event .
+
+schema:HowTo rdfs:subClassOf schema:CreativeWork .
+
+schema:HowToDirection rdfs:subClassOf schema:CreativeWork .
+
+schema:HowToSection rdfs:subClassOf schema:CreativeWork .
+
+schema:HowToStep rdfs:subClassOf schema:CreativeWork .
+
+schema:HowToTip rdfs:subClassOf schema:CreativeWork .
+
+schema:HyperToc rdfs:subClassOf schema:CreativeWork .
+
+schema:HyperTocEntry rdfs:subClassOf schema:CreativeWork .
+
+schema:Landform rdfs:subClassOf schema:Place .
+
+schema:LandmarksOrHistoricalBuildings rdfs:subClassOf schema:Place .
+
+schema:LearningResource rdfs:subClassOf schema:CreativeWork .
+
+schema:Legislation rdfs:subClassOf schema:CreativeWork .
+
+schema:LiteraryEvent rdfs:subClassOf schema:Event .
+
+schema:LocalBusiness rdfs:subClassOf schema:Place .
+
+schema:Manuscript rdfs:subClassOf schema:CreativeWork .
+
+schema:Map rdfs:subClassOf schema:CreativeWork .
+
+schema:MathSolver rdfs:subClassOf schema:CreativeWork .
+
+schema:MediaReview rdfs:subClassOf schema:Review .
+
+schema:MediaReviewItem rdfs:subClassOf schema:CreativeWork .
+
+schema:MedicalAudience rdfs:subClassOf schema:Audience .
+
+schema:Menu rdfs:subClassOf schema:CreativeWork .
+
+schema:MenuSection rdfs:subClassOf schema:CreativeWork .
+
+schema:Message rdfs:subClassOf schema:CreativeWork .
+
+schema:Painting rdfs:subClassOf schema:CreativeWork .
+
+schema:Patient rdfs:subClassOf schema:Person .
+
+schema:PeopleAudience rdfs:subClassOf schema:Audience .
+
+schema:Photograph rdfs:subClassOf schema:CreativeWork .
+
+schema:Play rdfs:subClassOf schema:CreativeWork .
+
+schema:Poster rdfs:subClassOf schema:CreativeWork .
+
+schema:PublicationIssue rdfs:subClassOf schema:CreativeWork .
+
+schema:PublicationVolume rdfs:subClassOf schema:CreativeWork .
+
+schema:Quotation rdfs:subClassOf schema:CreativeWork .
+
+schema:RadioBroadcastService rdfs:subClassOf schema:BroadcastService .
+
+schema:RadioChannel rdfs:subClassOf schema:BroadcastChannel .
+
+schema:Recommendation rdfs:subClassOf schema:Review .
+
+schema:Researcher rdfs:subClassOf schema:Audience .
+
+schema:Residence rdfs:subClassOf schema:Place .
+
+schema:SaleEvent rdfs:subClassOf schema:Event .
+
+schema:ScreeningEvent rdfs:subClassOf schema:Event .
+
+schema:Sculpture rdfs:subClassOf schema:CreativeWork .
+
+schema:Season rdfs:subClassOf schema:CreativeWork .
+
+schema:SheetMusic rdfs:subClassOf schema:CreativeWork .
+
+schema:ShortStory rdfs:subClassOf schema:CreativeWork .
+
+schema:SocialEvent rdfs:subClassOf schema:Event .
+
+schema:SoftwareApplication rdfs:subClassOf schema:CreativeWork .
+
+schema:SoftwareSourceCode rdfs:subClassOf schema:CreativeWork .
+
+schema:SpecialAnnouncement rdfs:subClassOf schema:CreativeWork .
+
+schema:SportsEvent rdfs:subClassOf schema:Event .
+
+schema:Statement rdfs:subClassOf schema:CreativeWork .
+
+schema:TVSeason rdfs:subClassOf schema:CreativeWork .
+
+schema:TVSeries rdfs:subClassOf schema:CreativeWork .
+
+schema:TelevisionChannel rdfs:subClassOf schema:BroadcastChannel .
+
+schema:TheaterEvent rdfs:subClassOf schema:Event .
+
+schema:Thesis rdfs:subClassOf schema:CreativeWork .
+
+schema:TouristAttraction rdfs:subClassOf schema:Place .
+
+schema:TouristDestination rdfs:subClassOf schema:Place .
+
+schema:UserInteraction rdfs:subClassOf schema:Event .
+
+schema:UserReview rdfs:subClassOf schema:Review .
+
+schema:VisualArtsEvent rdfs:subClassOf schema:Event .
+
+schema:VisualArtwork rdfs:subClassOf schema:CreativeWork .
+
+schema:WebContent rdfs:subClassOf schema:CreativeWork .
+
+schema:WebPage rdfs:subClassOf schema:CreativeWork .
+
+schema:WebPageElement rdfs:subClassOf schema:CreativeWork .
+
+schema:WebSite rdfs:subClassOf schema:CreativeWork .
+
+schema:abstract schema:domainIncludes schema:CreativeWork .
+
+schema:acceptsReservations schema:rangeIncludes schema:URL .
+
+schema:accessMode schema:domainIncludes schema:CreativeWork .
+
+schema:accessModeSufficient schema:domainIncludes schema:CreativeWork .
+
+schema:accessibilityAPI schema:domainIncludes schema:CreativeWork .
+
+schema:accessibilityControl schema:domainIncludes schema:CreativeWork .
+
+schema:accessibilityFeature schema:domainIncludes schema:CreativeWork .
+
+schema:accessibilityHazard schema:domainIncludes schema:CreativeWork .
+
+schema:accessibilitySummary schema:domainIncludes schema:CreativeWork .
+
+schema:accountablePerson schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:acquireLicensePage schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:acquiredFrom schema:rangeIncludes schema:Person .
+
+schema:actionPlatform schema:rangeIncludes schema:URL .
+
+schema:actionableFeedbackPolicy schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:actor schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Person .
+
+schema:actors schema:rangeIncludes schema:Person .
+
+schema:additionalName schema:domainIncludes schema:Person .
+
+schema:additionalProperty schema:domainIncludes schema:Place .
+
+schema:additionalType a rdf:Property ;
+    rdfs:label "additionalType" ;
+    rdfs:comment """An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. Typically the value is a URI-identified RDF class, and in this case corresponds to the
+    use of rdf:type in RDF. Text values can be used sparingly, for cases where useful information can be added without their being an appropriate schema to reference. In the case of text values, the class label should follow the schema.org <a href="https://schema.org/docs/styleguide.html">style guide</a>.""" ;
+    rdfs:subPropertyOf rdf:type ;
+    schema:domainIncludes schema:Thing ;
+    schema:rangeIncludes schema:Text,
+        schema:URL .
+
+schema:address a rdf:Property ;
+    rdfs:label "address" ;
+    rdfs:comment "Physical address of the item." ;
+    schema:domainIncludes schema:GeoCoordinates,
+        schema:GeoShape,
+        schema:Organization,
+        schema:Person,
+        schema:Place ;
+    schema:rangeIncludes schema:PostalAddress,
+        schema:Text .
+
+schema:addressCountry schema:rangeIncludes schema:Country .
+
+schema:affiliation rdfs:subPropertyOf schema:memberOf ;
+    schema:domainIncludes schema:Person .
+
+schema:afterMedia schema:rangeIncludes schema:URL .
+
+schema:agent schema:rangeIncludes schema:Person .
+
+schema:agentInteractionStatistic schema:domainIncludes schema:Person .
+
+schema:aggregateRating schema:domainIncludes schema:CreativeWork,
+        schema:Event,
+        schema:Place .
+
+schema:album schema:domainIncludes schema:MusicGroup ;
+    schema:rangeIncludes schema:MusicAlbum .
+
+schema:albumProductionType schema:domainIncludes schema:MusicAlbum .
+
+schema:albumRelease schema:domainIncludes schema:MusicAlbum .
+
+schema:albumReleaseType schema:domainIncludes schema:MusicAlbum .
+
+schema:albums schema:domainIncludes schema:MusicGroup ;
+    schema:rangeIncludes schema:MusicAlbum .
+
+schema:alternativeHeadline schema:domainIncludes schema:CreativeWork .
+
+schema:alumni schema:rangeIncludes schema:Person .
+
+schema:alumniOf schema:domainIncludes schema:Person .
+
+schema:amenityFeature schema:domainIncludes schema:Place .
+
+schema:appearance schema:rangeIncludes schema:CreativeWork .
+
+schema:applicableCountry schema:rangeIncludes schema:Country .
+
+schema:applicationCategory schema:rangeIncludes schema:URL .
+
+schema:applicationDeadline schema:rangeIncludes schema:Date .
+
+schema:applicationStartDate schema:rangeIncludes schema:Date .
+
+schema:applicationSubCategory schema:rangeIncludes schema:URL .
+
+schema:archivedAt schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:area schema:domainIncludes schema:BroadcastService ;
+    schema:rangeIncludes schema:Place .
+
+schema:areaServed schema:rangeIncludes schema:Place .
+
+schema:artMedium schema:rangeIncludes schema:URL .
+
+schema:artform schema:rangeIncludes schema:URL .
+
+schema:artist schema:rangeIncludes schema:Person .
+
+schema:artworkSurface schema:rangeIncludes schema:URL .
+
+schema:asin schema:rangeIncludes schema:URL .
+
+schema:assesses schema:domainIncludes schema:CreativeWork .
+
+schema:associatedClaimReview schema:domainIncludes schema:Review ;
+    schema:rangeIncludes schema:Review .
+
+schema:associatedDisease schema:rangeIncludes schema:URL .
+
+schema:associatedMedia schema:domainIncludes schema:CreativeWork .
+
+schema:associatedMediaReview schema:domainIncludes schema:Review ;
+    schema:rangeIncludes schema:Review .
+
+schema:associatedReview schema:domainIncludes schema:Review ;
+    schema:rangeIncludes schema:Review .
+
+schema:athlete schema:rangeIncludes schema:Person .
+
+schema:attendee schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Person .
+
+schema:attendees schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Person .
+
+schema:audienceType a rdf:Property ;
+    rdfs:label "audienceType" ;
+    rdfs:comment "The target group associated with a given audience (e.g. veterans, car owners, musicians, etc.)." ;
+    schema:domainIncludes schema:Audience ;
+    schema:rangeIncludes schema:Text .
+
+schema:audio schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:MusicRecording .
+
+schema:auditDate schema:rangeIncludes schema:Date .
+
+schema:author schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:availabilityEnds schema:rangeIncludes schema:Date .
+
+schema:availabilityStarts schema:rangeIncludes schema:Date .
+
+schema:availableAtOrFrom schema:rangeIncludes schema:Place .
+
+schema:awards schema:domainIncludes schema:CreativeWork,
+        schema:Person ;
+    schema:supersededBy schema:award .
+
+schema:awayTeam schema:rangeIncludes schema:Person .
+
+schema:backstory schema:rangeIncludes schema:CreativeWork .
+
+schema:bankAccountType schema:rangeIncludes schema:URL .
+
+schema:bccRecipient schema:rangeIncludes schema:Person .
+
+schema:beforeMedia schema:rangeIncludes schema:URL .
+
+schema:benefitsSummaryUrl schema:rangeIncludes schema:URL .
+
+schema:birthDate a rdf:Property ;
+    rdfs:label "birthDate" ;
+    rdfs:comment "Date of birth." ;
+    schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Date .
+
+schema:birthPlace schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Place .
+
+schema:bodyType schema:rangeIncludes schema:URL .
+
+schema:bookingAgent schema:rangeIncludes schema:Person .
+
+schema:borrower schema:rangeIncludes schema:Person .
+
+schema:branchCode schema:domainIncludes schema:Place .
+
+schema:brand schema:domainIncludes schema:Person .
+
+schema:broadcastAffiliateOf schema:domainIncludes schema:BroadcastService .
+
+schema:broadcastChannelId schema:domainIncludes schema:BroadcastChannel .
+
+schema:broadcastDisplayName a rdf:Property ;
+    rdfs:label "broadcastDisplayName" ;
+    rdfs:comment "The name displayed in the channel guide. For many US affiliates, it is the network name." ;
+    schema:domainIncludes schema:BroadcastService ;
+    schema:rangeIncludes schema:Text .
+
+schema:broadcastFrequency schema:domainIncludes schema:BroadcastChannel,
+        schema:BroadcastService .
+
+schema:broadcastOfEvent a rdf:Property ;
+    rdfs:label "broadcastOfEvent" ;
+    rdfs:comment "The event being broadcast such as a sporting event or awards ceremony." ;
+    schema:domainIncludes schema:BroadcastEvent ;
+    schema:rangeIncludes schema:Event .
+
+schema:broadcastServiceTier schema:domainIncludes schema:BroadcastChannel .
+
+schema:broadcastTimezone schema:domainIncludes schema:BroadcastService .
+
+schema:broadcaster schema:domainIncludes schema:BroadcastService .
+
+schema:broker schema:rangeIncludes schema:Person .
+
+schema:buyer schema:rangeIncludes schema:Person .
+
+schema:byArtist schema:domainIncludes schema:MusicAlbum,
+        schema:MusicRecording ;
+    schema:rangeIncludes schema:MusicGroup,
+        schema:Person .
+
+schema:callSign schema:domainIncludes schema:BroadcastService,
+        schema:Person .
+
+schema:candidate schema:rangeIncludes schema:Person .
+
+schema:category schema:rangeIncludes schema:URL .
+
+schema:ccRecipient schema:rangeIncludes schema:Person .
+
+schema:character schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:cheatCode schema:rangeIncludes schema:CreativeWork .
+
+schema:childTaxon schema:rangeIncludes schema:URL .
+
+schema:children schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:citation schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:claimInterpreter schema:rangeIncludes schema:Person .
+
+schema:clipNumber rdfs:subPropertyOf schema:position .
+
+schema:coach schema:rangeIncludes schema:Person .
+
+schema:codeRepository schema:rangeIncludes schema:URL .
+
+schema:colleague schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person,
+        schema:URL .
+
+schema:colleagues schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:colorSwatch schema:rangeIncludes schema:URL .
+
+schema:colorist schema:rangeIncludes schema:Person .
+
+schema:comment schema:domainIncludes schema:CreativeWork .
+
+schema:commentCount schema:domainIncludes schema:CreativeWork .
+
+schema:commentTime schema:rangeIncludes schema:Date .
+
+schema:competencyRequired schema:rangeIncludes schema:URL .
+
+schema:competitor schema:rangeIncludes schema:Person .
+
+schema:composer schema:domainIncludes schema:Event,
+        schema:MusicComposition ;
+    schema:rangeIncludes schema:Person .
+
+schema:conditionsOfAccess schema:domainIncludes schema:CreativeWork .
+
+schema:constraintProperty schema:rangeIncludes schema:URL .
+
+schema:contactPoint schema:domainIncludes schema:Person .
+
+schema:contactPoints schema:domainIncludes schema:Person .
+
+schema:containedIn schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place ;
+    schema:supersededBy schema:containedInPlace .
+
+schema:containsSeason rdfs:subPropertyOf schema:hasPart .
+
+schema:contentLocation schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Place .
+
+schema:contentRating schema:domainIncludes schema:CreativeWork .
+
+schema:contentReferenceTime schema:domainIncludes schema:CreativeWork .
+
+schema:contentUrl schema:rangeIncludes schema:URL .
+
+schema:contributor schema:domainIncludes schema:CreativeWork,
+        schema:Event ;
+    schema:rangeIncludes schema:Person .
+
+schema:copyrightHolder schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:copyrightNotice schema:domainIncludes schema:CreativeWork .
+
+schema:copyrightYear schema:domainIncludes schema:CreativeWork .
+
+schema:correction schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:correctionsPolicy schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:countryOfOrigin schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Country .
+
+schema:course rdfs:subPropertyOf schema:location ;
+    schema:rangeIncludes schema:Place .
+
+schema:courseMode schema:rangeIncludes schema:URL .
+
+schema:creativeWorkStatus schema:domainIncludes schema:CreativeWork .
+
+schema:credentialCategory schema:rangeIncludes schema:URL .
+
+schema:creditText schema:domainIncludes schema:CreativeWork .
+
+schema:creditedTo schema:rangeIncludes schema:Person .
+
+schema:customer schema:rangeIncludes schema:Person .
+
+schema:dateCreated schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Date .
+
+schema:dateDeleted schema:rangeIncludes schema:Date .
+
+schema:dateIssued schema:rangeIncludes schema:Date .
+
+schema:dateModified schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Date .
+
+schema:datePosted schema:rangeIncludes schema:Date .
+
+schema:datePublished a rdf:Property ;
+    rdfs:label "datePublished" ;
+    rdfs:comment "Date of first publication or broadcast. For example the date a [[CreativeWork]] was broadcast or a [[Certification]] was issued." ;
+    schema:domainIncludes schema:Certification,
+        schema:CreativeWork ;
+    schema:rangeIncludes schema:Date,
+        schema:DateTime .
+
+schema:dateRead schema:rangeIncludes schema:Date .
+
+schema:dateVehicleFirstRegistered schema:rangeIncludes schema:Date .
+
+schema:deathDate schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Date .
+
+schema:deathPlace schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Place .
+
+schema:digitalSourceType schema:domainIncludes schema:CreativeWork .
+
+schema:director schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Person .
+
+schema:directors schema:rangeIncludes schema:Person .
+
+schema:disambiguatingDescription rdfs:subPropertyOf schema:description .
+
+schema:discusses schema:rangeIncludes schema:CreativeWork .
+
+schema:discussionUrl schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:diseasePreventionInfo schema:rangeIncludes schema:URL .
+
+schema:diseaseSpreadStatistics schema:rangeIncludes schema:URL .
+
+schema:dissolutionDate schema:rangeIncludes schema:Date .
+
+schema:distribution a rdf:Property ;
+    rdfs:label "distribution" ;
+    rdfs:comment "A downloadable form of this dataset, at a specific location, in a specific format. This property can be repeated if different variations are available. There is no expectation that different downloadable distributions must contain exactly equivalent information (see also [DCAT](https://www.w3.org/TR/vocab-dcat-3/#Class:Distribution) on this point). Different distributions might include or exclude different subsets of the entire dataset, for example." ;
+    schema:domainIncludes schema:Dataset ;
+    schema:rangeIncludes schema:DataDownload .
+
+schema:diversityPolicy schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:diversityStaffingReport schema:rangeIncludes schema:URL .
+
+schema:documentation schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:doorTime schema:domainIncludes schema:Event .
+
+schema:downloadUrl schema:rangeIncludes schema:URL .
+
+schema:dropoffLocation schema:rangeIncludes schema:Place .
+
+schema:duns schema:domainIncludes schema:Person .
+
+schema:duringMedia schema:rangeIncludes schema:URL .
+
+schema:editEIDR schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:editor schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:educationalAlignment schema:domainIncludes schema:CreativeWork .
+
+schema:educationalCredentialAwarded schema:rangeIncludes schema:URL .
+
+schema:educationalLevel schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:educationalProgramMode schema:rangeIncludes schema:URL .
+
+schema:educationalUse schema:domainIncludes schema:CreativeWork .
+
+schema:eligibleRegion schema:rangeIncludes schema:Place .
+
+schema:email schema:domainIncludes schema:Person .
+
+schema:embedUrl schema:rangeIncludes schema:URL .
+
+schema:employee schema:rangeIncludes schema:Person .
+
+schema:employees schema:rangeIncludes schema:Person .
+
+schema:encodesCreativeWork schema:rangeIncludes schema:CreativeWork .
+
+schema:encoding schema:domainIncludes schema:CreativeWork .
+
+schema:encodingFormat schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:encodings schema:domainIncludes schema:CreativeWork .
+
+schema:endDate schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Date .
+
+schema:endorsee schema:rangeIncludes schema:Person .
+
+schema:endorsers schema:rangeIncludes schema:Person .
+
+schema:engineType schema:rangeIncludes schema:URL .
+
+schema:entertainmentBusiness rdfs:subPropertyOf schema:location .
+
+schema:episode rdfs:subPropertyOf schema:hasPart .
+
+schema:episodeNumber rdfs:subPropertyOf schema:position .
+
+schema:ethicsPolicy schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:event schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Event .
+
+schema:eventAttendanceMode a rdf:Property ;
+    rdfs:label "eventAttendanceMode" ;
+    rdfs:comment "The eventAttendanceMode of an event indicates whether it occurs online, offline, or a mix." ;
+    schema:domainIncludes schema:Event ;
+    schema:isPartOf <https://pending.schema.org> ;
+    schema:rangeIncludes schema:EventAttendanceModeEnumeration ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/1842> .
+
+schema:eventSchedule a rdf:Property ;
+    rdfs:label "eventSchedule" ;
+    rdfs:comment """Associates an [[Event]] with a [[Schedule]]. There are circumstances where it is preferable to share a schedule for a series of
+      repeating events rather than data on the individual events themselves. For example, a website or application might prefer to publish a schedule for a weekly
+      gym class rather than provide data on every event. A schedule could be processed by applications to add forthcoming events to a calendar. An [[Event]] that
+      is associated with a [[Schedule]] using this property should not have [[startDate]] or [[endDate]] properties. These are instead defined within the associated
+      [[Schedule]], this avoids any ambiguity for clients using the data. The property might have repeated values to specify different schedules, e.g. for different months
+      or seasons.""" ;
+    schema:domainIncludes schema:Event ;
+    schema:isPartOf <https://pending.schema.org> ;
+    schema:rangeIncludes schema:Schedule ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/1457> .
+
+schema:eventStatus schema:domainIncludes schema:Event .
+
+schema:events schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Event .
+
+schema:exampleOfWork schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:exceptDate schema:rangeIncludes schema:Date .
+
+schema:exerciseCourse rdfs:subPropertyOf schema:location ;
+    schema:rangeIncludes schema:Place .
+
+schema:expectedArrivalFrom schema:rangeIncludes schema:Date .
+
+schema:expectedArrivalUntil schema:rangeIncludes schema:Date .
+
+schema:expires schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Date .
+
+schema:familyName schema:domainIncludes schema:Person .
+
+schema:faxNumber schema:domainIncludes schema:Person,
+        schema:Place .
+
+schema:featureList schema:rangeIncludes schema:URL .
+
+schema:feesAndCommissionsSpecification schema:rangeIncludes schema:URL .
+
+schema:fileFormat schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:firstAppearance schema:rangeIncludes schema:CreativeWork .
+
+schema:firstPerformance schema:domainIncludes schema:MusicComposition ;
+    schema:rangeIncludes schema:Event .
+
+schema:followee schema:rangeIncludes schema:Person .
+
+schema:follows schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:foodEstablishment rdfs:subPropertyOf schema:location ;
+    schema:rangeIncludes schema:Place .
+
+schema:foodEvent rdfs:subPropertyOf schema:location .
+
+schema:founders schema:rangeIncludes schema:Person ;
+    schema:supersededBy schema:founder .
+
+schema:foundingDate a rdf:Property ;
+    rdfs:label "foundingDate" ;
+    rdfs:comment "The date that this organization was founded." ;
+    schema:domainIncludes schema:Organization ;
+    schema:rangeIncludes schema:Date .
+
+schema:foundingLocation a rdf:Property ;
+    rdfs:label "foundingLocation" ;
+    rdfs:comment "The place where the Organization was founded." ;
+    schema:domainIncludes schema:Organization ;
+    schema:rangeIncludes schema:Place .
+
+schema:fromLocation rdfs:subPropertyOf schema:location ;
+    schema:rangeIncludes schema:Place .
+
+schema:fuelType schema:rangeIncludes schema:URL .
+
+schema:funder schema:domainIncludes schema:CreativeWork,
+        schema:Event,
+        schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:gameLocation schema:rangeIncludes schema:Place,
+        schema:URL .
+
+schema:gamePlatform schema:rangeIncludes schema:URL .
+
+schema:gameTip schema:rangeIncludes schema:CreativeWork .
+
+schema:gender schema:domainIncludes schema:Person .
+
+schema:geo schema:domainIncludes schema:Place .
+
+schema:geoContains schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geoCoveredBy schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geoCovers schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geoCrosses schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geoDisjoint schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geoEquals schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geoIntersects schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geoOverlaps schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geoTouches schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geoWithin schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:Place .
+
+schema:geographicArea schema:domainIncludes schema:Audience .
+
+schema:gettingTestedInfo schema:rangeIncludes schema:URL .
+
+schema:givenName schema:domainIncludes schema:Person .
+
+schema:globalLocationNumber schema:domainIncludes schema:Person,
+        schema:Place .
+
+schema:grantee schema:rangeIncludes schema:Audience,
+        schema:Person .
+
+schema:gtin schema:rangeIncludes schema:URL .
+
+schema:guidelineDate schema:rangeIncludes schema:Date .
+
+schema:hasCertification schema:domainIncludes schema:Person,
+        schema:Place .
+
+schema:hasCredential schema:domainIncludes schema:Person .
+
+schema:hasDriveThroughService schema:domainIncludes schema:Place .
+
+schema:hasGS1DigitalLink schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:URL .
+
+schema:hasMap schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:URL .
+
+schema:hasMenu schema:rangeIncludes schema:URL .
+
+schema:hasMolecularFunction schema:rangeIncludes schema:URL .
+
+schema:hasOccupation schema:domainIncludes schema:Person .
+
+schema:hasOfferCatalog schema:domainIncludes schema:Person .
+
+schema:hasPOS schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Place .
+
+schema:hasRepresentation schema:rangeIncludes schema:URL .
+
+schema:headline schema:domainIncludes schema:CreativeWork .
+
+schema:healthPlanMarketingUrl schema:rangeIncludes schema:URL .
+
+schema:height schema:domainIncludes schema:Person .
+
+schema:hiringOrganization schema:rangeIncludes schema:Person .
+
+schema:homeLocation rdfs:subPropertyOf schema:location ;
+    schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Place .
+
+schema:homeTeam schema:rangeIncludes schema:Person .
+
+schema:honorificPrefix schema:domainIncludes schema:Person .
+
+schema:honorificSuffix schema:domainIncludes schema:Person .
+
+schema:identifier schema:rangeIncludes schema:URL .
+
+schema:illustrator schema:rangeIncludes schema:Person .
+
+schema:image schema:rangeIncludes schema:URL .
+
+schema:inAlbum schema:domainIncludes schema:MusicRecording ;
+    schema:rangeIncludes schema:MusicAlbum .
+
+schema:inBroadcastLineup schema:domainIncludes schema:BroadcastChannel .
+
+schema:inCodeSet schema:rangeIncludes schema:URL .
+
+schema:inDefinedTermSet rdfs:subPropertyOf schema:isPartOf ;
+    schema:rangeIncludes schema:URL .
+
+schema:inPlaylist schema:domainIncludes schema:MusicRecording .
+
+schema:includedComposition schema:domainIncludes schema:MusicComposition ;
+    schema:rangeIncludes schema:MusicComposition .
+
+schema:ineligibleRegion schema:rangeIncludes schema:Place .
+
+schema:inker schema:rangeIncludes schema:Person .
+
+schema:installUrl schema:rangeIncludes schema:URL .
+
+schema:instructor schema:rangeIncludes schema:Person .
+
+schema:interactionStatistic schema:domainIncludes schema:CreativeWork,
+        schema:Person .
+
+schema:interactivityType schema:domainIncludes schema:CreativeWork .
+
+schema:interpretedAsClaim rdfs:subPropertyOf schema:description ;
+    schema:domainIncludes schema:CreativeWork .
+
+schema:isAccessibleForFree schema:domainIncludes schema:CreativeWork,
+        schema:Event,
+        schema:Place .
+
+schema:isBasedOn schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:isBasedOnUrl schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:isFamilyFriendly schema:domainIncludes schema:CreativeWork .
+
+schema:isInvolvedInBiologicalProcess schema:rangeIncludes schema:URL .
+
+schema:isLiveBroadcast schema:domainIncludes schema:BroadcastEvent .
+
+schema:isLocatedInSubcellularLocation schema:rangeIncludes schema:URL .
+
+schema:isicV4 schema:domainIncludes schema:Person,
+        schema:Place .
+
+schema:isrcCode schema:domainIncludes schema:MusicRecording .
+
+schema:issueNumber rdfs:subPropertyOf schema:position .
+
+schema:iswcCode schema:domainIncludes schema:MusicComposition .
+
+schema:itemLocation rdfs:subPropertyOf schema:location ;
+    schema:rangeIncludes schema:Place .
+
+schema:itemOffered schema:rangeIncludes schema:CreativeWork,
+        schema:Event .
+
+schema:itemReviewed schema:domainIncludes schema:Review .
+
+schema:itinerary schema:rangeIncludes schema:Place .
+
+schema:jobLocation schema:rangeIncludes schema:Place .
+
+schema:jobStartDate schema:rangeIncludes schema:Date .
+
+schema:jobTitle schema:domainIncludes schema:Person .
+
+schema:keywords a rdf:Property ;
+    rdfs:label "keywords" ;
+    rdfs:comment "Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property." ;
+    schema:domainIncludes schema:CreativeWork,
+        schema:Event,
+        schema:Organization,
+        schema:Place,
+        schema:Product ;
+    schema:rangeIncludes schema:DefinedTerm,
+        schema:Text,
+        schema:URL .
+
+schema:knows schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:knowsAbout schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:URL .
+
+schema:knowsLanguage schema:domainIncludes schema:Person .
+
+schema:labelDetails schema:rangeIncludes schema:URL .
+
+schema:landlord schema:rangeIncludes schema:Person .
+
+schema:language schema:supersededBy schema:inLanguage .
+
+schema:lastReviewed schema:rangeIncludes schema:Date .
+
+schema:latitude schema:domainIncludes schema:Place .
+
+schema:layoutImage schema:rangeIncludes schema:URL .
+
+schema:learningResourceType schema:domainIncludes schema:CreativeWork .
+
+schema:legalRepresentative schema:rangeIncludes schema:Person .
+
+schema:legislationCountersignedBy schema:rangeIncludes schema:Person .
+
+schema:legislationDate schema:rangeIncludes schema:Date .
+
+schema:legislationDateOfApplicability schema:rangeIncludes schema:Date .
+
+schema:legislationDateVersion schema:rangeIncludes schema:Date .
+
+schema:legislationIdentifier schema:rangeIncludes schema:URL .
+
+schema:legislationPassedBy rdfs:subPropertyOf schema:creator ;
+    schema:rangeIncludes schema:Person .
+
+schema:legislationResponsible schema:rangeIncludes schema:Person .
+
+schema:legislationType rdfs:subPropertyOf schema:genre .
+
+schema:lender schema:rangeIncludes schema:Person .
+
+schema:letterer schema:rangeIncludes schema:Person .
+
+schema:license schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:loanTerm rdfs:subPropertyOf schema:duration .
+
+schema:loanType schema:rangeIncludes schema:URL .
+
+schema:locationCreated schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Place .
+
+schema:logo schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:URL .
+
+schema:longitude schema:domainIncludes schema:Place .
+
+schema:loser schema:rangeIncludes schema:Person .
+
+schema:lyricist schema:domainIncludes schema:MusicComposition ;
+    schema:rangeIncludes schema:Person .
+
+schema:lyrics schema:domainIncludes schema:MusicComposition ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:mainEntity rdfs:subPropertyOf schema:about ;
+    schema:domainIncludes schema:CreativeWork .
+
+schema:mainEntityOfPage schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:maintainer schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:makesOffer schema:domainIncludes schema:Person .
+
+schema:map schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:URL .
+
+schema:maps schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:URL .
+
+schema:masthead schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:material schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:materialExtent schema:domainIncludes schema:CreativeWork .
+
+schema:maximumAttendeeCapacity a rdf:Property ;
+    rdfs:label "maximumAttendeeCapacity" ;
+    rdfs:comment "The total number of individuals that may attend an event or venue." ;
+    schema:domainIncludes schema:Event,
+        schema:Place ;
+    schema:rangeIncludes schema:Integer .
+
+schema:maximumPhysicalAttendeeCapacity schema:domainIncludes schema:Event .
+
+schema:maximumVirtualAttendeeCapacity schema:domainIncludes schema:Event .
+
+schema:measurementMethod schema:rangeIncludes schema:URL .
+
+schema:measurementTechnique schema:rangeIncludes schema:URL .
+
+schema:meetsEmissionStandard schema:rangeIncludes schema:URL .
+
+schema:members schema:rangeIncludes schema:Person ;
+    schema:supersededBy schema:member .
+
+schema:memoryRequirements schema:rangeIncludes schema:URL .
+
+schema:mentions schema:domainIncludes schema:CreativeWork .
+
+schema:menu schema:rangeIncludes schema:URL .
+
+schema:merchant schema:rangeIncludes schema:Person .
+
+schema:merchantReturnDays schema:rangeIncludes schema:Date .
+
+schema:merchantReturnLink schema:rangeIncludes schema:URL .
+
+schema:messageAttachment schema:rangeIncludes schema:CreativeWork .
+
+schema:missionCoveragePrioritiesPolicy schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:modelDate schema:rangeIncludes schema:Date .
+
+schema:musicArrangement schema:domainIncludes schema:MusicComposition ;
+    schema:rangeIncludes schema:MusicComposition .
+
+schema:musicBy schema:rangeIncludes schema:MusicGroup,
+        schema:Person .
+
+schema:musicCompositionForm schema:domainIncludes schema:MusicComposition .
+
+schema:musicGroupMember schema:domainIncludes schema:MusicGroup ;
+    schema:rangeIncludes schema:Person ;
+    schema:supersededBy schema:member .
+
+schema:musicalKey schema:domainIncludes schema:MusicComposition .
+
+schema:naics schema:domainIncludes schema:Person .
+
+schema:namedPosition schema:rangeIncludes schema:URL .
+
+schema:nationality schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Country .
+
+schema:negativeNotes schema:domainIncludes schema:Review .
+
+schema:netWorth schema:domainIncludes schema:Person .
+
+schema:newsUpdatesAndGuidelines schema:rangeIncludes schema:URL .
+
+schema:noBylinesPolicy schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:numberOfItems a rdf:Property ;
+    rdfs:label "numberOfItems" ;
+    rdfs:comment "The number of items in an ItemList. Note that some descriptions might not fully describe all items in a list (e.g., multi-page pagination); in such cases, the numberOfItems would be for the entire list." ;
+    schema:domainIncludes schema:ItemList ;
+    schema:rangeIncludes schema:Integer .
+
+schema:observationAbout schema:rangeIncludes schema:Place .
+
+schema:occupationalCredentialAwarded schema:rangeIncludes schema:URL .
+
+schema:offeredBy schema:rangeIncludes schema:Person .
+
+schema:offers schema:domainIncludes schema:CreativeWork,
+        schema:Event .
+
+schema:openingHoursSpecification schema:domainIncludes schema:Place .
+
+schema:opponent schema:rangeIncludes schema:Person .
+
+schema:orderDate schema:rangeIncludes schema:Date .
+
+schema:organizer a rdf:Property ;
+    rdfs:label "organizer" ;
+    rdfs:comment "An organizer of an Event." ;
+    schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Organization,
+        schema:Person .
+
+schema:originalMediaContextDescription rdfs:subPropertyOf schema:description .
+
+schema:originalMediaLink schema:rangeIncludes schema:URL .
+
+schema:ownershipFundingInfo schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:owns schema:domainIncludes schema:Person .
+
+schema:parent schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:parentItem schema:rangeIncludes schema:CreativeWork .
+
+schema:parentService schema:domainIncludes schema:BroadcastService ;
+    schema:rangeIncludes schema:BroadcastService .
+
+schema:parentTaxon schema:rangeIncludes schema:URL .
+
+schema:parents schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:partOfEpisode rdfs:subPropertyOf schema:isPartOf .
+
+schema:partOfSeason rdfs:subPropertyOf schema:isPartOf .
+
+schema:partOfSeries rdfs:subPropertyOf schema:isPartOf .
+
+schema:partOfTVSeries rdfs:subPropertyOf schema:isPartOf .
+
+schema:participant schema:rangeIncludes schema:Person .
+
+schema:pattern schema:domainIncludes schema:CreativeWork .
+
+schema:paymentDueDate schema:rangeIncludes schema:Date .
+
+schema:paymentUrl schema:rangeIncludes schema:URL .
+
+schema:penciler schema:rangeIncludes schema:Person .
+
+schema:performerIn a rdf:Property ;
+    rdfs:label "performerIn" ;
+    rdfs:comment "Event that this person is a performer or participant in." ;
+    schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Event .
+
+schema:performers schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Person ;
+    schema:supersededBy schema:performer .
+
+schema:permitAudience schema:rangeIncludes schema:Audience .
+
+schema:photo schema:domainIncludes schema:Place .
+
+schema:photos schema:domainIncludes schema:Place .
+
+schema:physicalRequirement schema:rangeIncludes schema:URL .
+
+schema:pickupLocation schema:rangeIncludes schema:Place .
+
+schema:positiveNotes schema:domainIncludes schema:Review .
+
+schema:prescribingInfo schema:rangeIncludes schema:URL .
+
+schema:previousStartDate schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Date .
+
+schema:priceValidUntil schema:rangeIncludes schema:Date .
+
+schema:producer schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:productionDate schema:rangeIncludes schema:Date .
+
+schema:pronouns schema:domainIncludes schema:Person .
+
+schema:propertyID schema:rangeIncludes schema:URL .
+
+schema:provider schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:publicAccess schema:domainIncludes schema:Place .
+
+schema:publicTransportClosuresInfo schema:rangeIncludes schema:URL .
+
+schema:publication schema:domainIncludes schema:CreativeWork .
+
+schema:publishedBy schema:rangeIncludes schema:Person .
+
+schema:publishedOn schema:rangeIncludes schema:BroadcastService .
+
+schema:publisher schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:publisherImprint schema:domainIncludes schema:CreativeWork .
+
+schema:publishingPrinciples schema:domainIncludes schema:CreativeWork,
+        schema:Person ;
+    schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:purchaseDate schema:rangeIncludes schema:Date .
+
+schema:quarantineGuidelines schema:rangeIncludes schema:URL .
+
+schema:readBy schema:rangeIncludes schema:Person .
+
+schema:recipeInstructions schema:rangeIncludes schema:CreativeWork .
+
+schema:recipient schema:rangeIncludes schema:Audience,
+        schema:Person .
+
+schema:recordedAs schema:domainIncludes schema:MusicComposition ;
+    schema:rangeIncludes schema:MusicRecording .
+
+schema:recordedAt schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Event .
+
+schema:recordedIn schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:recordingOf schema:domainIncludes schema:MusicRecording ;
+    schema:rangeIncludes schema:MusicComposition .
+
+schema:referee schema:rangeIncludes schema:Person .
+
+schema:regionsAllowed schema:rangeIncludes schema:Place .
+
+schema:relatedLink schema:rangeIncludes schema:URL .
+
+schema:relatedTo schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:releaseDate schema:rangeIncludes schema:Date .
+
+schema:releaseNotes schema:rangeIncludes schema:URL .
+
+schema:releaseOf schema:rangeIncludes schema:MusicAlbum .
+
+schema:releasedEvent schema:domainIncludes schema:CreativeWork .
+
+schema:remainingAttendeeCapacity schema:domainIncludes schema:Event .
+
+schema:replyToUrl schema:rangeIncludes schema:URL .
+
+schema:requirements schema:rangeIncludes schema:URL .
+
+schema:resultReview schema:rangeIncludes schema:Review .
+
+schema:returnPolicyCountry schema:rangeIncludes schema:Country .
+
+schema:review schema:domainIncludes schema:CreativeWork,
+        schema:Event,
+        schema:Place ;
+    schema:rangeIncludes schema:Review .
+
+schema:reviewAspect schema:domainIncludes schema:Review .
+
+schema:reviewBody schema:domainIncludes schema:Review .
+
+schema:reviewRating schema:domainIncludes schema:Review .
+
+schema:reviewedBy schema:rangeIncludes schema:Person .
+
+schema:reviews schema:domainIncludes schema:CreativeWork,
+        schema:Place ;
+    schema:rangeIncludes schema:Review .
+
+schema:roleName schema:rangeIncludes schema:URL .
+
+schema:sameAs a rdf:Property ;
+    rdfs:label "sameAs" ;
+    rdfs:comment "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website." ;
+    schema:domainIncludes schema:Thing ;
+    schema:rangeIncludes schema:URL .
+
+schema:scheduledPaymentDate schema:rangeIncludes schema:Date .
+
+schema:scheduledTime schema:rangeIncludes schema:Date .
+
+schema:schemaVersion schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:schoolClosuresInfo schema:rangeIncludes schema:URL .
+
+schema:screenshot schema:rangeIncludes schema:URL .
+
+schema:sdDatePublished schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Date .
+
+schema:sdLicense schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:sdPublisher schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Person .
+
+schema:season rdfs:subPropertyOf schema:hasPart ;
+    schema:rangeIncludes schema:URL .
+
+schema:seasonNumber rdfs:subPropertyOf schema:position .
+
+schema:securityClearanceRequirement schema:rangeIncludes schema:URL .
+
+schema:seeks schema:domainIncludes schema:Person .
+
+schema:seller schema:rangeIncludes schema:Person .
+
+schema:sender schema:rangeIncludes schema:Audience,
+        schema:Person .
+
+schema:sensoryRequirement schema:rangeIncludes schema:URL .
+
+schema:serviceArea schema:rangeIncludes schema:Place .
+
+schema:serviceAudience schema:rangeIncludes schema:Audience ;
+    schema:supersededBy schema:audience .
+
+schema:serviceLocation schema:rangeIncludes schema:Place .
+
+schema:serviceUrl schema:rangeIncludes schema:URL .
+
+schema:sha256 rdfs:subPropertyOf schema:description .
+
+schema:sharedContent schema:rangeIncludes schema:CreativeWork .
+
+schema:sibling schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:siblings schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:significantLink schema:rangeIncludes schema:URL .
+
+schema:significantLinks schema:rangeIncludes schema:URL .
+
+schema:size schema:domainIncludes schema:CreativeWork .
+
+schema:skills schema:domainIncludes schema:Person .
+
+schema:slogan schema:domainIncludes schema:Place .
+
+schema:smokingAllowed schema:domainIncludes schema:Place .
+
+schema:softwareHelp schema:rangeIncludes schema:CreativeWork .
+
+schema:softwareRequirements schema:rangeIncludes schema:URL .
+
+schema:sourceOrganization schema:domainIncludes schema:CreativeWork .
+
+schema:spatial schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Place .
+
+schema:spatialCoverage schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:Place .
+
+schema:speakable schema:rangeIncludes schema:URL .
+
+schema:specialOpeningHoursSpecification schema:domainIncludes schema:Place .
+
+schema:spokenByCharacter schema:rangeIncludes schema:Person .
+
+schema:sponsor schema:domainIncludes schema:CreativeWork,
+        schema:Event,
+        schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:sport schema:rangeIncludes schema:URL .
+
+schema:sportsActivityLocation rdfs:subPropertyOf schema:location .
+
+schema:sportsEvent rdfs:subPropertyOf schema:location .
+
+schema:spouse schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Person .
+
+schema:startDate a rdf:Property ;
+    rdfs:label "startDate" ;
+    rdfs:comment "The start date and time of the item (in [ISO 8601 date format](http://en.wikipedia.org/wiki/ISO_8601))." ;
+    schema:domainIncludes schema:CreativeWorkSeason,
+        schema:CreativeWorkSeries,
+        schema:DatedMoneySpecification,
+        schema:EducationalOccupationalProgram,
+        schema:Event,
+        schema:MerchantReturnPolicySeasonalOverride,
+        schema:Role,
+        schema:Schedule ;
+    schema:rangeIncludes schema:Date,
+        schema:DateTime ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/2486> .
+
+schema:statType schema:rangeIncludes schema:URL .
+
+schema:step schema:rangeIncludes schema:CreativeWork .
+
+schema:steps schema:rangeIncludes schema:CreativeWork .
+
+schema:storageRequirements schema:rangeIncludes schema:URL .
+
+schema:subEvents schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Event ;
+    schema:supersededBy schema:subEvent .
+
+schema:subtitleLanguage schema:domainIncludes schema:BroadcastEvent .
+
+schema:surface schema:rangeIncludes schema:URL .
+
+schema:target schema:rangeIncludes schema:URL .
+
+schema:targetUrl schema:rangeIncludes schema:URL .
+
+schema:taxID schema:domainIncludes schema:Person .
+
+schema:taxonRank schema:rangeIncludes schema:URL .
+
+schema:taxonomicRange schema:rangeIncludes schema:URL .
+
+schema:teaches schema:domainIncludes schema:CreativeWork .
+
+schema:telephone schema:domainIncludes schema:Person,
+        schema:Place .
+
+schema:temporal schema:domainIncludes schema:CreativeWork .
+
+schema:temporalCoverage schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:termsOfService schema:rangeIncludes schema:URL .
+
+schema:text schema:domainIncludes schema:CreativeWork .
+
+schema:thumbnail schema:domainIncludes schema:CreativeWork .
+
+schema:thumbnailUrl schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:URL .
+
+schema:ticketToken schema:rangeIncludes schema:URL .
+
+schema:timeRequired schema:domainIncludes schema:CreativeWork .
+
+schema:titleEIDR schema:rangeIncludes schema:URL .
+
+schema:toLocation rdfs:subPropertyOf schema:location ;
+    schema:rangeIncludes schema:Place .
+
+schema:toRecipient schema:rangeIncludes schema:Audience,
+        schema:Person .
+
+schema:tocEntry rdfs:subPropertyOf schema:hasPart .
+
+schema:tourBookingPage schema:domainIncludes schema:Place ;
+    schema:rangeIncludes schema:URL .
+
+schema:touristType schema:rangeIncludes schema:Audience .
+
+schema:track schema:domainIncludes schema:MusicGroup ;
+    schema:rangeIncludes schema:MusicRecording .
+
+schema:trackingUrl schema:rangeIncludes schema:URL .
+
+schema:tracks schema:domainIncludes schema:MusicGroup ;
+    schema:rangeIncludes schema:MusicRecording .
+
+schema:translationOfWork schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:translator schema:domainIncludes schema:CreativeWork,
+        schema:Event ;
+    schema:rangeIncludes schema:Person .
+
+schema:travelBans schema:rangeIncludes schema:URL .
+
+schema:tripOrigin schema:rangeIncludes schema:Place .
+
+schema:typicalAgeRange schema:domainIncludes schema:CreativeWork,
+        schema:Event .
+
+schema:underName schema:rangeIncludes schema:Person .
+
+schema:unitCode schema:rangeIncludes schema:URL .
+
+schema:unnamedSourcesPolicy schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:uploadDate schema:rangeIncludes schema:Date .
+
+schema:url schema:rangeIncludes schema:URL .
+
+schema:usageInfo schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:usesHealthPlanIdStandard schema:rangeIncludes schema:URL .
+
+schema:validFrom schema:rangeIncludes schema:Date .
+
+schema:validThrough schema:rangeIncludes schema:Date .
+
+schema:validUntil schema:rangeIncludes schema:Date .
+
+schema:vatID schema:domainIncludes schema:Person .
+
+schema:vehicleModelDate schema:rangeIncludes schema:Date .
+
+schema:vehicleTransmission schema:rangeIncludes schema:URL .
+
+schema:vendor schema:rangeIncludes schema:Person .
+
+schema:verificationFactCheckingPolicy schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:version schema:domainIncludes schema:CreativeWork .
+
+schema:video schema:domainIncludes schema:CreativeWork .
+
+schema:videoFormat schema:domainIncludes schema:BroadcastEvent,
+        schema:BroadcastService .
+
+schema:volumeNumber rdfs:subPropertyOf schema:position .
+
+schema:warning schema:rangeIncludes schema:URL .
+
+schema:webFeed schema:rangeIncludes schema:URL .
+
+schema:weight schema:domainIncludes schema:Person .
+
+schema:winner schema:rangeIncludes schema:Person .
+
+schema:wordCount schema:domainIncludes schema:CreativeWork .
+
+schema:workExample schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:workLocation rdfs:subPropertyOf schema:location ;
+    schema:domainIncludes schema:Person ;
+    schema:rangeIncludes schema:Place .
+
+schema:workPerformed a rdf:Property ;
+    rdfs:label "workPerformed" ;
+    rdfs:comment "A work performed in some event, for example a play performed in a TheaterEvent." ;
+    rdfs:subPropertyOf schema:workFeatured ;
+    schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:workTranslation schema:domainIncludes schema:CreativeWork ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:worksFor schema:domainIncludes schema:Person .
+
+schema:CreativeWorkSeason rdfs:subClassOf schema:CreativeWork .
+
+schema:CreativeWorkSeries rdfs:subClassOf schema:CreativeWork .
+
+schema:Dataset rdfs:subClassOf schema:CreativeWork .
+
+schema:Episode rdfs:subClassOf schema:CreativeWork .
+
+schema:MediaObject rdfs:subClassOf schema:CreativeWork .
+
+schema:Movie rdfs:subClassOf schema:CreativeWork .
+
+schema:MusicPlaylist rdfs:subClassOf schema:CreativeWork .
+
+schema:PublicationEvent rdfs:subClassOf schema:Event .
+
+schema:audience a rdf:Property ;
+    rdfs:label "audience" ;
+    rdfs:comment "An intended audience, i.e. a group for whom something was created." ;
+    schema:domainIncludes schema:CreativeWork,
+        schema:Event,
+        schema:LodgingBusiness,
+        schema:PlayAction,
+        schema:Product,
+        schema:Service ;
+    schema:rangeIncludes schema:Audience .
+
+schema:award a rdf:Property ;
+    rdfs:label "award" ;
+    rdfs:comment "An award won by or for this item." ;
+    schema:domainIncludes schema:CreativeWork,
+        schema:Organization,
+        schema:Person,
+        schema:Product,
+        schema:Service ;
+    schema:rangeIncludes schema:Text .
+
+schema:containsPlace schema:domainIncludes schema:Place ;
+    schema:inverseOf schema:containedInPlace ;
+    schema:rangeIncludes schema:Place .
+
+schema:creator a rdf:Property ;
+    rdfs:label "creator" ;
+    rdfs:comment "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork." ;
+    schema:domainIncludes schema:CreativeWork,
+        schema:UserComments ;
+    schema:rangeIncludes schema:Organization,
+        schema:Person .
+
+schema:duration a rdf:Property ;
+    rdfs:label "duration" ;
+    rdfs:comment "The duration of the item (movie, audio recording, event, etc.) in [ISO 8601 duration format](http://en.wikipedia.org/wiki/ISO_8601)." ;
+    schema:domainIncludes schema:Audiobook,
+        schema:Episode,
+        schema:Event,
+        schema:MediaObject,
+        schema:Movie,
+        schema:MusicRecording,
+        schema:MusicRelease,
+        schema:QuantitativeValueDistribution,
+        schema:Schedule,
+        schema:ServicePeriod ;
+    schema:rangeIncludes schema:Duration,
+        schema:QuantitativeValue ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/1457>,
+        <https://github.com/schemaorg/schemaorg/issues/1698>,
+        <https://github.com/schemaorg/schemaorg/issues/3617> .
+
+schema:founder a rdf:Property ;
+    rdfs:label "founder" ;
+    rdfs:comment "A person or organization who founded this organization." ;
+    schema:domainIncludes schema:Organization ;
+    schema:rangeIncludes schema:Organization,
+        schema:Person .
+
+schema:fundedItem a rdf:Property ;
+    rdfs:label "fundedItem" ;
+    rdfs:comment "Indicates something directly or indirectly funded or sponsored through a [[Grant]]. See also [[ownershipFundingInfo]]." ;
+    schema:contributor <https://schema.org/docs/collab/TP> ;
+    schema:domainIncludes schema:Grant ;
+    schema:inverseOf schema:funding ;
+    schema:isPartOf <https://pending.schema.org> ;
+    schema:rangeIncludes schema:BioChemEntity,
+        schema:CreativeWork,
+        schema:Event,
+        schema:MedicalEntity,
+        schema:Organization,
+        schema:Person,
+        schema:Product ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/1950>,
+        <https://github.com/schemaorg/schemaorg/issues/383> .
+
+schema:funding schema:domainIncludes schema:CreativeWork,
+        schema:Event,
+        schema:Person ;
+    schema:inverseOf schema:fundedItem .
+
+schema:genre a rdf:Property ;
+    rdfs:label "genre" ;
+    rdfs:comment "Genre of the creative work, broadcast channel or group." ;
+    schema:domainIncludes schema:BroadcastChannel,
+        schema:CreativeWork,
+        schema:MusicGroup ;
+    schema:rangeIncludes schema:Text,
+        schema:URL .
+
+schema:hasBroadcastChannel a rdf:Property ;
+    rdfs:label "hasBroadcastChannel" ;
+    rdfs:comment "A broadcast channel of a broadcast service." ;
+    schema:domainIncludes schema:BroadcastService ;
+    schema:inverseOf schema:providesBroadcastService ;
+    schema:rangeIncludes schema:BroadcastChannel ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/1004> .
+
+schema:inLanguage a rdf:Property ;
+    rdfs:label "inLanguage" ;
+    rdfs:comment "The language of the content or performance or used in an action. Please use one of the language codes from the [IETF BCP 47 standard](http://tools.ietf.org/html/bcp47). See also [[availableLanguage]]." ;
+    schema:domainIncludes schema:BroadcastService,
+        schema:CommunicateAction,
+        schema:CreativeWork,
+        schema:Event,
+        schema:LinkRole,
+        schema:PronounceableText,
+        schema:WriteAction ;
+    schema:rangeIncludes schema:Language,
+        schema:Text ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/2382> .
+
+schema:performer a rdf:Property ;
+    rdfs:label "performer" ;
+    rdfs:comment "A performer at the event&#x2014;for example, a presenter, musician, musical group or actor." ;
+    schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Organization,
+        schema:Person .
+
+schema:providesBroadcastService schema:domainIncludes schema:BroadcastChannel ;
+    schema:inverseOf schema:hasBroadcastChannel ;
+    schema:rangeIncludes schema:BroadcastService .
+
+schema:subjectOf a rdf:Property ;
+    rdfs:label "subjectOf" ;
+    rdfs:comment "A CreativeWork or Event about this Thing." ;
+    schema:domainIncludes schema:Thing ;
+    schema:inverseOf schema:about ;
+    schema:rangeIncludes schema:CreativeWork,
+        schema:Event ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/1670> .
+
+schema:superEvent schema:domainIncludes schema:Event ;
+    schema:inverseOf schema:subEvent ;
+    schema:rangeIncludes schema:Event .
+
+schema:workFeatured schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:AdministrativeArea rdfs:subClassOf schema:Place .
+
+schema:Certification rdfs:subClassOf schema:CreativeWork .
+
+schema:CivicStructure rdfs:subClassOf schema:Place .
+
+schema:about a rdf:Property ;
+    rdfs:label "about" ;
+    rdfs:comment "The subject matter of the content." ;
+    schema:domainIncludes schema:Certification,
+        schema:CommunicateAction,
+        schema:CreativeWork,
+        schema:Event ;
+    schema:inverseOf schema:subjectOf ;
+    schema:rangeIncludes schema:Thing ;
+    schema:source <https://github.com/schemaorg/schemaorg/issues/1670> .
+
+schema:containedInPlace a rdf:Property ;
+    rdfs:label "containedInPlace" ;
+    rdfs:comment "The basic containment relation between a place and one that contains it." ;
+    schema:domainIncludes schema:Place ;
+    schema:inverseOf schema:containsPlace ;
+    schema:rangeIncludes schema:Place .
+
+schema:memberOf a rdf:Property ;
+    rdfs:label "memberOf" ;
+    rdfs:comment "An Organization (or ProgramMembership) to which this Person or Organization belongs." ;
+    schema:domainIncludes schema:Organization,
+        schema:Person ;
+    schema:inverseOf schema:member ;
+    schema:rangeIncludes schema:MemberProgramTier,
+        schema:Organization,
+        schema:ProgramMembership .
+
+schema:subEvent a rdf:Property ;
+    rdfs:label "subEvent" ;
+    rdfs:comment "An Event that is part of this event. For example, a conference event includes many presentations, each of which is a subEvent of the conference." ;
+    schema:domainIncludes schema:Event ;
+    schema:inverseOf schema:superEvent ;
+    schema:rangeIncludes schema:Event .
+
+schema:member a rdf:Property ;
+    rdfs:label "member" ;
+    rdfs:comment "A member of an Organization or a ProgramMembership. Organizations can be members of organizations; ProgramMembership is typically for individuals." ;
+    schema:domainIncludes schema:Organization,
+        schema:ProgramMembership ;
+    schema:inverseOf schema:memberOf ;
+    schema:rangeIncludes schema:Organization,
+        schema:Person .
+
+schema:description a rdf:Property ;
+    rdfs:label "description" ;
+    rdfs:comment "A description of the item." ;
+    owl:equivalentProperty dcterms:description ;
+    schema:domainIncludes schema:Thing ;
+    schema:rangeIncludes schema:Text,
+        schema:TextObject .
+
+schema:hasPart a rdf:Property ;
+    rdfs:label "hasPart" ;
+    rdfs:comment "Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense)." ;
+    schema:contributor <https://schema.org/docs/collab/bibex> ;
+    schema:domainIncludes schema:CreativeWork ;
+    schema:inverseOf schema:isPartOf ;
+    schema:rangeIncludes schema:CreativeWork .
+
+schema:position a rdf:Property ;
+    rdfs:label "position" ;
+    rdfs:comment "The position of an item in a series or sequence of items." ;
+    schema:domainIncludes schema:CreativeWork,
+        schema:ListItem ;
+    schema:rangeIncludes schema:Integer,
+        schema:Text .
+
+schema:isPartOf a rdf:Property ;
+    rdfs:label "isPartOf" ;
+    rdfs:comment "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of." ;
+    schema:domainIncludes schema:CreativeWork ;
+    schema:inverseOf schema:hasPart ;
+    schema:rangeIncludes schema:CreativeWork,
+        schema:URL .
+
+schema:location a rdf:Property ;
+    rdfs:label "location" ;
+    rdfs:comment "The location of, for example, where an event is happening, where an organization is located, or where an action takes place." ;
+    schema:domainIncludes schema:Action,
+        schema:Event,
+        schema:InteractionCounter,
+        schema:Organization ;
+    schema:rangeIncludes schema:Place,
+        schema:PostalAddress,
+        schema:Text,
+        schema:VirtualLocation .
+
+
+
