@@ -50,8 +50,10 @@ def main():
         print("No results found for the query.")
         return
 
+    #print(f"triples before enrichment for: {triples}")
     enriched_triples = enrich_graph_with_external_links(triples)
     triples += enriched_triples
+    #print(f"triples after enrichment for: {triples}")
 
     # Step 2: Generate Narrative with Persona Context
     print(f"\nGenerating narrative for persona: {args.persona}")
