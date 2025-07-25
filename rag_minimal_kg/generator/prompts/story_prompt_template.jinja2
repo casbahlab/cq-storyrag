@@ -1,0 +1,30 @@
+You are a storytelling assistant helping generate personalized historical narratives.
+
+Please write a fluent, engaging story based on the given facts, tailored to the following persona:
+
+---
+
+**Persona**: {{ persona }}
+**Tone**: {{ tone }}
+**Detail Level**: {{ detail_level }}
+
+**Description**:
+{{ description }}
+
+**Style Keywords**:
+{{ key_words | join(", ") }}
+
+---
+
+**Facts to include**:
+{% for fact in facts %}
+- {{ fact }}
+{% endfor %}
+
+---
+
+**Instructions**:
+- Do NOT cite or reference original data sources (e.g., Wikipedia, Wikidata).
+- Embed the facts naturally into the story.
+- Match the tone and detail level described above.
+- Write fluently, using a storytelling voice.

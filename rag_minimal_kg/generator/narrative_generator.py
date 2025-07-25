@@ -1,7 +1,7 @@
 import ollama
 import yaml
 from pathlib import Path
-from jinja2 import Template
+from jinja2 import Template, Environment, FileSystemLoader
 
 
 # Load personas from YAML
@@ -12,34 +12,24 @@ def load_personas(yaml_path="config/personas.yaml"):
 
 PERSONAS = load_personas()
 
-OLLAMA_PROMPT_TEMPLATE = """
-You are a storytelling assistant generating a narrative from RDF triples.
+template_dir = Path(__file__).parent / "prompts"
+env = Environment(loader=FileSystemLoader(str(template_dir)))
+template = env.get_template("story_prompt_template.jinja2")
 
-Persona Description:
-{{ persona_description }}
-
-Instructions:
-- Generate a coherent narrative based on the triples below.
-- Follow the persona's tone and information preference.
-- Do not just list the triples. Tell a story.
-
-Triples:
-{% for s, p, o in triples %}
-- {{ s }} {{ p }} {{ o }}
-{% endfor %}
-
-Narrative:
-"""
+def generate_prompt(facts, persona_name, profile):
+    return template.render(
+        facts=facts,
+        persona=persona_name,
+        description=profile["description"],
+        tone=profile["tone"],
+        detail_level=profile["detail_level"],
+        key_words=profile["key_words"]
+    )
 
 
 def generate_story_with_ollama(triples, persona="Emma", model="llama3"):
     persona_data = PERSONAS.get(persona, {})
-    persona_description = persona_data.get("description", "A general music audience.")
-
-    prompt = Template(OLLAMA_PROMPT_TEMPLATE).render(
-        triples=triples,
-        persona_description=persona_description
-    )
+    prompt = generate_prompt(triples, persona, persona_data)
 
     response = ollama.chat(
         model=model,
