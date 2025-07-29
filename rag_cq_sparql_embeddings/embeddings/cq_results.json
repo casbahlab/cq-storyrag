@@ -1,0 +1,567 @@
+[
+  {
+    "CQ_ID": "CQ-E1",
+    "CQ_Text": "What kind of event was Live Aid?",
+    "Results": [
+      {
+        "event": "http://example.org/liveaid/LiveAid1985",
+        "type": "http://example.org/liveaid/BroadcastMusicEvent"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E3/CQ-L3",
+    "CQ_Text": "Which artist performed at Live Aid?",
+    "Results": [
+      {
+        "artist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan"
+      },
+      {
+        "artist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie"
+      },
+      {
+        "artist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John"
+      },
+      {
+        "artist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton"
+      },
+      {
+        "artist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin"
+      },
+      {
+        "artist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna"
+      },
+      {
+        "artist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney"
+      },
+      {
+        "artist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen"
+      },
+      {
+        "artist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E10/CQ-L10",
+    "CQ_Text": "Which songs did each artist perform?",
+    "Results": [
+      {
+        "artistLabel": "Bob Dylan",
+        "songLabel": "Blowin' in the Wind"
+      },
+      {
+        "artistLabel": "Bryan Adams",
+        "songLabel": "Summer of '69"
+      },
+      {
+        "artistLabel": "David Bowie",
+        "songLabel": "Heroes"
+      },
+      {
+        "artistLabel": "David Bowie",
+        "songLabel": "Rebel Rebel"
+      },
+      {
+        "artistLabel": "Dire Straits",
+        "songLabel": "Sultans of Swing"
+      },
+      {
+        "artistLabel": "Elton John",
+        "songLabel": "Bennie and the Jets"
+      },
+      {
+        "artistLabel": "Elton John",
+        "songLabel": "Rocket Man"
+      },
+      {
+        "artistLabel": "Eric Clapton",
+        "songLabel": "Layla"
+      },
+      {
+        "artistLabel": "Led Zeppelin",
+        "songLabel": "Stairway to Heaven"
+      },
+      {
+        "artistLabel": "Madonna",
+        "songLabel": "Like a Virgin"
+      },
+      {
+        "artistLabel": "Paul McCartney",
+        "songLabel": "Let It Be"
+      },
+      {
+        "artistLabel": "Phil Collins",
+        "songLabel": "In the Air Tonight"
+      },
+      {
+        "artistLabel": "Queen",
+        "songLabel": "Bohemian Rhapsody"
+      },
+      {
+        "artistLabel": "Queen",
+        "songLabel": "Radio Ga Ga"
+      },
+      {
+        "artistLabel": "Sting",
+        "songLabel": "Roxanne"
+      },
+      {
+        "artistLabel": "The Cars",
+        "songLabel": "Drive"
+      },
+      {
+        "artistLabel": "The Who",
+        "songLabel": "My Generation"
+      },
+      {
+        "artistLabel": "The Who",
+        "songLabel": "Pinball Wizard"
+      },
+      {
+        "artistLabel": "U2",
+        "songLabel": "Bad"
+      },
+      {
+        "artistLabel": "U2",
+        "songLabel": "Sunday Bloody Sunday"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E15/CQ-L15",
+    "CQ_Text": "What genres are associated with artists?",
+    "Results": [
+      {
+        "artistLabel": "Bob Dylan",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "Bryan Adams",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "David Bowie",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "Dire Straits",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "Elton John",
+        "genreLabel": "Pop Rock"
+      },
+      {
+        "artistLabel": "Eric Clapton",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "Led Zeppelin",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "Madonna",
+        "genreLabel": "Pop"
+      },
+      {
+        "artistLabel": "Paul McCartney",
+        "genreLabel": "Pop Rock"
+      },
+      {
+        "artistLabel": "Phil Collins",
+        "genreLabel": "Pop Rock"
+      },
+      {
+        "artistLabel": "Queen",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "Sting",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "The Cars",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "The Who",
+        "genreLabel": "Rock"
+      },
+      {
+        "artistLabel": "U2",
+        "genreLabel": "Rock"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E14",
+    "CQ_Text": "Who were the solo artists at Live Aid?",
+    "Results": [
+      {
+        "soloArtist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BrianMay",
+        "artistLabel": "Brian May"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/FreddieMercury",
+        "artistLabel": "Freddie Mercury"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/JohnDeacon",
+        "artistLabel": "John Deacon"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/RogerTaylor",
+        "artistLabel": "Roger Taylor"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L5",
+    "CQ_Text": "Which performances were in London vs Philadelphia?",
+    "Results": [
+      {
+        "artistLabel": "Bryan Adams",
+        "songLabel": "Summer of '69",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "David Bowie",
+        "songLabel": "Heroes",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "David Bowie",
+        "songLabel": "Rebel Rebel",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "Dire Straits",
+        "songLabel": "Sultans of Swing",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "Eric Clapton",
+        "songLabel": "Layla",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "Paul McCartney",
+        "songLabel": "Let It Be",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "Phil Collins",
+        "songLabel": "In the Air Tonight",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "Queen",
+        "songLabel": "Bohemian Rhapsody",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "Queen",
+        "songLabel": "Radio Ga Ga",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "Sting",
+        "songLabel": "Roxanne",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "U2",
+        "songLabel": "Sunday Bloody Sunday",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "U2",
+        "songLabel": "Bad",
+        "locationLabel": "London"
+      },
+      {
+        "artistLabel": "Bob Dylan",
+        "songLabel": "Blowin' in the Wind",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artistLabel": "Elton John",
+        "songLabel": "Rocket Man",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artistLabel": "Elton John",
+        "songLabel": "Bennie and the Jets",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artistLabel": "Led Zeppelin",
+        "songLabel": "Stairway to Heaven",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artistLabel": "Madonna",
+        "songLabel": "Like a Virgin",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artistLabel": "The Cars",
+        "songLabel": "Drive",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artistLabel": "The Who",
+        "songLabel": "My Generation",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artistLabel": "The Who",
+        "songLabel": "Pinball Wizard",
+        "locationLabel": "Philadelphia"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E7/CQ-L6",
+    "CQ_Text": "Which broadcasters aired Live Aid?",
+    "Results": [
+      {
+        "broadcaster": "http://example.org/liveaid/BBC",
+        "broadcasterLabel": "BBC"
+      },
+      {
+        "broadcaster": "http://example.org/liveaid/MTV",
+        "broadcasterLabel": "MTV"
+      },
+      {
+        "broadcaster": "http://example.org/liveaid/ABC",
+        "broadcasterLabel": "ABC"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L5 Extended",
+    "CQ_Text": "What was the attendance at each venue?",
+    "Results": [
+      {
+        "venueLabel": "JFK Stadium",
+        "attendance": "89000"
+      },
+      {
+        "venueLabel": "Wembley Stadium",
+        "attendance": "72000"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L7 Extended",
+    "CQ_Text": "What was the global TV audience size?",
+    "Results": [
+      {
+        "audienceSize": "1500000000"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E20/CQ-L12",
+    "CQ_Text": "How much money was raised by Live Aid?",
+    "Results": [
+      {
+        "amount": "125000000.0"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E12/CQ-E13",
+    "CQ_Text": "When was Queen formed and who were the members?",
+    "Results": [
+      {
+        "bandLabel": "Queen",
+        "foundingDate": "1970-01-01",
+        "memberLabel": "Brian May"
+      },
+      {
+        "bandLabel": "Queen",
+        "foundingDate": "1970-01-01",
+        "memberLabel": "Freddie Mercury"
+      },
+      {
+        "bandLabel": "Queen",
+        "foundingDate": "1970-01-01",
+        "memberLabel": "John Deacon"
+      },
+      {
+        "bandLabel": "Queen",
+        "foundingDate": "1970-01-01",
+        "memberLabel": "Roger Taylor"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E20 (Exit)",
+    "CQ_Text": "How much money was raised by Live Aid?",
+    "Results": [
+      {
+        "amount": "125000000",
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E21 (Exit)",
+    "CQ_Text": "Which organization preserved the Wembley broadcast?",
+    "Results": [
+      {
+        "broadcaster": "http://example.org/liveaid/BBC",
+        "archived": "true"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E22 (Exit)",
+    "CQ_Text": "Which organization failed to preserve the Philadelphia broadcast?",
+    "Results": [
+      {
+        "broadcaster": "http://example.org/liveaid/ABC",
+        "archived": "false"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E24 (Exit)",
+    "CQ_Text": "Why is Queen's Live Aid performance considered iconic?",
+    "Results": [
+      {
+        "comment": "Queen’s performance at Live Aid is widely praised for its energy and crowd engagement."
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L27 (Exit)",
+    "CQ_Text": "Did Live Aid inspire later benefit concerts such as Live 8?",
+    "Results": [
+      {
+        "nextEvent": "http://example.org/liveaid/Live8",
+        "comment": "Live Aid raised over $125 million for famine relief efforts."
+      },
+      {
+        "nextEvent": "http://example.org/liveaid/Live8",
+        "comment": "Live Aid inspired later benefit concerts such as Live 8 in 2005."
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L28 (Exit)",
+    "CQ_Text": "Which artifacts from Live Aid performances are preserved at the BME?",
+    "Results": [
+      {
+        "artifact": "http://example.org/liveaid/BME_QueenGuitar",
+        "artist": "http://example.org/liveaid/Queen",
+        "location": "http://example.org/liveaid/BME",
+        "comment": "A guitar from Queen's Live Aid performance is on display at the BME."
+      },
+      {
+        "artifact": "http://example.org/liveaid/BME_BowieOutfit",
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "location": "http://example.org/liveaid/BME",
+        "comment": "David Bowie's Live Aid stage outfit is preserved at the BME."
+      },
+      {
+        "artifact": "http://example.org/liveaid/BME_EltonJacket",
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "location": "http://example.org/liveaid/BME",
+        "comment": "Elton John's Live Aid performance jacket is part of the BME collection."
+      }
+    ]
+  }
+]
