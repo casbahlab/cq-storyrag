@@ -93,3 +93,8 @@ rdflib~=7.1.1
 textstat~=0.7.8
 wikidata
 beautifulsoup4
+streamlit
+syntok
+streamlit-aggrid>=0.3.4
+google-generativeai
+SPARQLWrapper

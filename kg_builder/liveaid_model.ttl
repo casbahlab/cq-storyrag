@@ -1,0 +1,40 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix mmcore: <https://w3id.org/polifonia/ontology/core/> .
+@prefix bme: <http://britishmusicexperience.co.uk/ontology#> .
+@prefix : <http://britishmusicexperience.co.uk/resource#> .
+
+#################################################################
+# Custom Class Definition
+#################################################################
+
+bme:MusicBroadcastingEvent a owl:Class ;
+    rdfs:label "Music Broadcasting Event" ;
+    rdfs:comment "A music event that is broadcast across media platforms, potentially involving multiple performers and locations." ;
+    rdfs:subClassOf mm:BroadcastingSituation , schema:MusicEvent .
+
+#################################################################
+# Instance: Live Aid 1985
+#################################################################
+
+:LiveAid1985 a bme:MusicBroadcastingEvent ,
+                mm:BroadcastingSituation ,
+                schema:MusicEvent ;
+
+    mmcore:hasPurpose :CharitablePurpose ;
+    mmcore:isDerivedFrom :BandAidMovement ;
+    schema:hasGoal :FundraisingGoal ;
+    schema:spatialCoverage :GlobalAudience ;
+    schema:eventAttendanceMode schema:MixedEventAttendanceMode .
+
+#################################################################
+# Related Instances
+#################################################################
+
+:FundraisingGoal schema:description "Raise funds for humanitarian relief in Ethiopia." ;
+                 schema:additionalType schema:DonateAction ;
+                 schema:name "Famine Relief Fundraising Goal" .
+
