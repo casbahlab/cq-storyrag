@@ -1,7 +1,12 @@
 [
   {
     "CQ_ID": "CQ-E1",
+    "CQ_List": [
+      "CQ-E1"
+    ],
     "CQ_Text": "What kind of event was Live Aid?",
+    "Category": "Entry",
+    "Persona": "Emma",
     "Results": [
       {
         "event": "http://example.org/liveaid/LiveAid1985",
@@ -11,7 +16,13 @@
   },
   {
     "CQ_ID": "CQ-E3/CQ-L3",
+    "CQ_List": [
+      "CQ-E3",
+      "CQ-L3"
+    ],
     "CQ_Text": "Which artist performed at Live Aid?",
+    "Category": "Entry",
+    "Persona": "Emma",
     "Results": [
       {
         "artist": "http://example.org/liveaid/BobDylan",
@@ -77,7 +88,13 @@
   },
   {
     "CQ_ID": "CQ-E10/CQ-L10",
+    "CQ_List": [
+      "CQ-E10",
+      "CQ-L10"
+    ],
     "CQ_Text": "Which songs did each artist perform?",
+    "Category": "Core",
+    "Persona": "Emma",
     "Results": [
       {
         "artistLabel": "Bob Dylan",
@@ -163,7 +180,13 @@
   },
   {
     "CQ_ID": "CQ-E15/CQ-L15",
+    "CQ_List": [
+      "CQ-E15",
+      "CQ-L15"
+    ],
     "CQ_Text": "What genres are associated with artists?",
+    "Category": "Core",
+    "Persona": "Emma",
     "Results": [
       {
         "artistLabel": "Bob Dylan",
@@ -229,7 +252,12 @@
   },
   {
     "CQ_ID": "CQ-E14",
+    "CQ_List": [
+      "CQ-E14"
+    ],
     "CQ_Text": "Who were the solo artists at Live Aid?",
+    "Category": "Core",
+    "Persona": "Emma",
     "Results": [
       {
         "soloArtist": "http://example.org/liveaid/LedZeppelin",
@@ -307,7 +335,12 @@
   },
   {
     "CQ_ID": "CQ-L5",
+    "CQ_List": [
+      "CQ-L5"
+    ],
     "CQ_Text": "Which performances were in London vs Philadelphia?",
+    "Category": "Entry",
+    "Persona": "Luca",
     "Results": [
       {
         "artistLabel": "Bryan Adams",
@@ -413,7 +446,13 @@
   },
   {
     "CQ_ID": "CQ-E7/CQ-L6",
+    "CQ_List": [
+      "CQ-E7",
+      "CQ-L6"
+    ],
     "CQ_Text": "Which broadcasters aired Live Aid?",
+    "Category": "Entry",
+    "Persona": "Emma",
     "Results": [
       {
         "broadcaster": "http://example.org/liveaid/BBC",
@@ -431,7 +470,12 @@
   },
   {
     "CQ_ID": "CQ-L5 Extended",
+    "CQ_List": [
+      "CQ-L5"
+    ],
     "CQ_Text": "What was the attendance at each venue?",
+    "Category": "Entry",
+    "Persona": "Luca",
     "Results": [
       {
         "venueLabel": "JFK Stadium",
@@ -445,7 +489,12 @@
   },
   {
     "CQ_ID": "CQ-L7 Extended",
+    "CQ_List": [
+      "CQ-L7"
+    ],
     "CQ_Text": "What was the global TV audience size?",
+    "Category": "Entry",
+    "Persona": "Luca",
     "Results": [
       {
         "audienceSize": "1500000000"
@@ -454,7 +503,13 @@
   },
   {
     "CQ_ID": "CQ-E20/CQ-L12",
+    "CQ_List": [
+      "CQ-E20",
+      "CQ-L12"
+    ],
     "CQ_Text": "How much money was raised by Live Aid?",
+    "Category": "Exit",
+    "Persona": "Emma",
     "Results": [
       {
         "amount": "125000000.0"
@@ -463,7 +518,13 @@
   },
   {
     "CQ_ID": "CQ-E12/CQ-E13",
+    "CQ_List": [
+      "CQ-E12",
+      "CQ-E13"
+    ],
     "CQ_Text": "When was Queen formed and who were the members?",
+    "Category": "Core",
+    "Persona": "Emma",
     "Results": [
       {
         "bandLabel": "Queen",
@@ -489,7 +550,12 @@
   },
   {
     "CQ_ID": "CQ-E20 (Exit)",
+    "CQ_List": [
+      "CQ-E20"
+    ],
     "CQ_Text": "How much money was raised by Live Aid?",
+    "Category": "Exit",
+    "Persona": "Emma",
     "Results": [
       {
         "amount": "125000000",
@@ -499,7 +565,12 @@
   },
   {
     "CQ_ID": "CQ-E21 (Exit)",
+    "CQ_List": [
+      "CQ-E21"
+    ],
     "CQ_Text": "Which organization preserved the Wembley broadcast?",
+    "Category": "Exit",
+    "Persona": "Emma",
     "Results": [
       {
         "broadcaster": "http://example.org/liveaid/BBC",
@@ -509,7 +580,12 @@
   },
   {
     "CQ_ID": "CQ-E22 (Exit)",
+    "CQ_List": [
+      "CQ-E22"
+    ],
     "CQ_Text": "Which organization failed to preserve the Philadelphia broadcast?",
+    "Category": "Exit",
+    "Persona": "Emma",
     "Results": [
       {
         "broadcaster": "http://example.org/liveaid/ABC",
@@ -519,7 +595,12 @@
   },
   {
     "CQ_ID": "CQ-E24 (Exit)",
+    "CQ_List": [
+      "CQ-E24"
+    ],
     "CQ_Text": "Why is Queen's Live Aid performance considered iconic?",
+    "Category": "Exit",
+    "Persona": "Emma",
     "Results": [
       {
         "comment": "Queen’s performance at Live Aid is widely praised for its energy and crowd engagement."
@@ -528,7 +609,12 @@
   },
   {
     "CQ_ID": "CQ-L27 (Exit)",
+    "CQ_List": [
+      "CQ-L27"
+    ],
     "CQ_Text": "Did Live Aid inspire later benefit concerts such as Live 8?",
+    "Category": "Exit",
+    "Persona": "Luca",
     "Results": [
       {
         "nextEvent": "http://example.org/liveaid/Live8",
@@ -542,7 +628,12 @@
   },
   {
     "CQ_ID": "CQ-L28 (Exit)",
+    "CQ_List": [
+      "CQ-L28"
+    ],
     "CQ_Text": "Which artifacts from Live Aid performances are preserved at the BME?",
+    "Category": "Exit",
+    "Persona": "Luca",
     "Results": [
       {
         "artifact": "http://example.org/liveaid/BME_QueenGuitar",

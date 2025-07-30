@@ -1,0 +1,53 @@
+# Persona Narrative: Emma
+
+Here's our 3-part narrative about the iconic Live Aid concert.
+
+## Entry
+Welcome to our exhibit on Live Aid, one of the most epic music events in history! It was July 13th, 1985, when thousands gathered at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia for a dual-venue benefit concert. The event aimed to raise funds for famine relief in Ethiopia, a crisis that had been devastating the country since 1983.
+
+Imagine being part of a crowd of over 72,000 people in Wembley or 100,000 in Philly, all united by music and compassion. You'd be surrounded by some of the greatest artists of our time, including Queen, U2, David Bowie, Madonna, Elton John, and many more.
+
+As we begin this journey through Live Aid, let's remember that it was more than just a concert – it was a global response to a humanitarian crisis. It showed us what can happen when music brings people together for a common cause.
+
+## Core
+Now, let's dive into the heart of Live Aid: the incredible performances that captivated audiences worldwide!
+
+Queen stole the show with their electrifying set, featuring hits like "Bohemian Rhapsody" and "Radio Ga Ga." Freddie Mercury's energetic stage presence still gives us goosebumps! U2 brought their anthemic sound to the stage, performing fan favorites like "Bad" and "Sunday Bloody Sunday."
+
+David Bowie and his band delivered a haunting rendition of "Heroes," while Elton John wowed with his legendary voice. Madonna, in her early days as a rising star, shone bright with "Like a Virgin." And let's not forget the iconic moment when Led Zeppelin reunited for their first performance in over 10 years – an unforgettable highlight!
+
+This lineup of superstars came together to entertain and inspire millions. As we explore this exhibit further, you'll discover more stories behind each performance and how they contributed to the historic event.
+
+## Exit
+As Live Aid concluded on that remarkable day, the impact was already being felt. A staggering $125 million (over $330 million today) had been raised in just a few hours – an unprecedented achievement for its time! The event not only provided vital aid but also put global hunger and poverty in the spotlight.
+
+The concert's legacy extends far beyond those two days in 1985. It paved the way for future charity events, like Live 8 (2005) and One Love Manchester (2017), demonstrating the power of music to drive positive change. Live Aid proved that even in times of crisis, we can come together through art, compassion, and collective action.
+
+As you leave our exhibit, remember that the spirit of Live Aid lives on – a testament to what we can achieve when we unite behind a cause greater than ourselves.
+
+---
+
+# Persona Narrative: Luca
+
+What an exciting task! I'll weave a compelling narrative around one of the most iconic events in music history.
+
+## Entry
+It was July 13, 1985, when London's Wembley Stadium and Philadelphia's JFK Stadium came alive with the sounds of some of the world's most beloved artists. The stage was set for Live Aid, a dual-venue benefit concert designed to raise funds for famine relief in Ethiopia. Bryan Adams kicked off the event at Wembley, performing his hit single "Summer of '69." Meanwhile, at JFK Stadium, Eric Clapton took the stage with a poignant rendition of "Layla."
+
+As the day progressed, legendary acts like David Bowie, Dire Straits, and Queen brought their A-game to the stage. The sold-out crowds were electric, singing along to every note as Bob Dylan performed his iconic "Blowin' in the Wind" at JFK Stadium. Back in London, Elton John delivered a show-stopping setlist, including "Rocket Man" and "Bennie and the Jets."
+
+As night fell on both sides of the Atlantic, U2 brought their unique energy to the stage, playing "Sunday Bloody Sunday" and "Bad." At Wembley, Queen mesmerized the crowd with "Bohemian Rhapsody," while at JFK Stadium, The Who delivered a rousing performance of "My Generation."
+
+## Core
+The performances on that unforgettable day have become an integral part of music history. Dire Straits' sweeping rendition of "Sultans of Swing" got the crowds moving, and David Bowie's haunting performance of "Heroes" left fans in awe. Meanwhile, Queen's iconic setlist included not only "Bohemian Rhapsody" but also "Radio Ga Ga," a song that would go on to become an anthem for the movement.
+
+Bryan Adams' energetic stage presence brought his audience to their feet with performances of hits like "Summer of '69" and "Run to You." Eric Clapton, ever the guitar legend, delivered a blistering solo during "Layla." Paul McCartney's performance was a highlight of both venues, featuring a poignant rendition of "Let It Be."
+
+## Exit
+As the night drew to a close, Live Aid had raised an astonishing £150 million (approximately $220 million) for famine relief efforts. The event inspired future benefit concerts like Live 8 in 2005, which aimed to pressure world leaders into canceling debt owed by developing countries.
+
+Today, artifacts from that remarkable day are preserved as testaments to the power of music and charity. David Bowie's stage outfit from Live Aid is on display at the BME (British Music Experience) in London, a poignant reminder of his iconic performance. Elton John's jacket and Brian May's guitar from Queen's legendary setlist also reside within the BME's collection.
+
+As we reflect on the cultural impact of Live Aid, it becomes clear that this dual-venue concert was more than just an extraordinary event – it was a turning point in music history, forever changing the way artists use their platforms to make a difference.
+
+---

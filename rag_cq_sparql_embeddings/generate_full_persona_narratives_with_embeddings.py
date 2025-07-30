@@ -1,13 +1,16 @@
+# generate_semantic_narratives.py
 import json
+import numpy as np
 import subprocess
 from datetime import datetime
-from collections import defaultdict
 
-# ---- CONFIG ----
-CQ_RESULTS_FILE = "embeddings/cq_results.json"
-OUTPUT_JSON = "embeddings/persona_full_narratives.json"
-OUTPUT_MD = "embeddings/persona_full_narratives.md"
+INDEX_FILE = "embeddings/fact_index.json"
+EMB_FILE = "embeddings/fact_embeddings.npy"
+OUTPUT_JSON = "embeddings/persona_full_narratives_semantic.json"
+OUTPUT_MD = "embeddings/persona_full_narratives_semantic.md"
 OLLAMA_MODEL = "llama3.1"
+
+TOP_K = 8  # facts per category to keep prompts concise
 
 PROMPT_TEMPLATES = {
     "Emma": """You are a friendly museum storyteller.
@@ -78,65 +81,76 @@ Generate a fluent, structured narrative in the format:
 """
 }
 
-def generate_full_narrative_ollama(persona, entry_facts, core_facts, exit_facts, model=OLLAMA_MODEL):
-    """Generate a full 3-section narrative in a single Ollama call."""
+# ---- Load embeddings and metadata ----
+with open(INDEX_FILE, "r", encoding="utf-8") as f:
+    fact_index = json.load(f)
+embeddings = np.load(EMB_FILE)
+from sentence_transformers import SentenceTransformer
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+def retrieve_facts(query, persona, category, top_k=TOP_K):
+    """Semantic search for top-k facts for a persona & category."""
+    query_emb = model.encode([query])
+    scores = np.dot(embeddings, query_emb.T).squeeze()
+
+    # Filter to persona & category
+    candidates = [(i, s) for i, s in enumerate(scores)
+                  if fact_index[i]["Persona"] == persona and
+                     fact_index[i]["Category"] == category]
+
+    top = sorted(candidates, key=lambda x: x[1], reverse=True)[:top_k]
+    return [fact_index[i]["Fact"] for i, _ in top]
+
+def generate_narrative_ollama(persona, entry_facts, core_facts, exit_facts):
     prompt = PROMPT_TEMPLATES[persona].format(
         entry_facts=json.dumps(entry_facts, indent=2, ensure_ascii=False),
         core_facts=json.dumps(core_facts, indent=2, ensure_ascii=False),
         exit_facts=json.dumps(exit_facts, indent=2, ensure_ascii=False),
     )
-
     result = subprocess.run(
-        ["ollama", "run", model],
+        ["ollama", "run", OLLAMA_MODEL],
         input=prompt.encode("utf-8"),
         stdout=subprocess.PIPE
     )
     return result.stdout.decode("utf-8").strip()
 
 def main():
-    # Load enriched CQ results (JSON-only, no CSV needed)
-    with open(CQ_RESULTS_FILE, "r", encoding="utf-8") as f:
-        cq_results = json.load(f)
+    personas = ["Emma", "Luca"]
+    categories = ["Entry", "Core", "Exit"]
 
-    # Group facts by (Persona, Category)
-    facts_by_persona_cat = defaultdict(list)
-    for item in cq_results:
-        persona = item.get("Persona", "")
-        category = item.get("Category", "Uncategorized")
-        facts = item.get("Results", [])
-        if persona and category in ["Entry", "Core", "Exit"] and facts:
-            facts_by_persona_cat[(persona, category)].extend(facts)
-
-    # Generate narratives per persona in a single-pass LLM call
-    full_persona_narratives = []
+    narratives = []
     md_lines = []
 
-    for persona in ["Emma", "Luca"]:
-        entry_facts = facts_by_persona_cat.get((persona, "Entry"), [])
-        core_facts = facts_by_persona_cat.get((persona, "Core"), [])
-        exit_facts = facts_by_persona_cat.get((persona, "Exit"), [])
+    for persona in personas:
+        # Use persona name as semantic query seed for variety
+        entry_facts = retrieve_facts("introduction live aid", persona, "Entry")
+        core_facts = retrieve_facts("performance highlights live aid", persona, "Core")
+        exit_facts = retrieve_facts("legacy impact live aid", persona, "Exit")
 
-        print(f"Generating single-pass narrative for {persona}...")
-        full_narrative = generate_full_narrative_ollama(persona, entry_facts, core_facts, exit_facts)
+        print(f"Generating semantic RAG narrative for {persona}...")
+        narrative = generate_narrative_ollama(persona, entry_facts, core_facts, exit_facts)
 
         persona_story = {
             "Persona": persona,
             "GeneratedAt": datetime.now().isoformat(),
-            "FullNarrativeRaw": full_narrative
+            "EntryFactsUsed": entry_facts,
+            "CoreFactsUsed": core_facts,
+            "ExitFactsUsed": exit_facts,
+            "FullNarrative": narrative
         }
-        full_persona_narratives.append(persona_story)
+        narratives.append(persona_story)
 
         md_lines.append(f"# Persona Narrative: {persona}\n")
-        md_lines.append(full_narrative)
+        md_lines.append(narrative)
         md_lines.append("\n---\n")
 
     # Save outputs
     with open(OUTPUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(full_persona_narratives, f, indent=2, ensure_ascii=False)
+        json.dump(narratives, f, indent=2, ensure_ascii=False)
     with open(OUTPUT_MD, "w", encoding="utf-8") as f:
         f.write("\n".join(md_lines))
 
-    print(f"\nFull persona narratives saved to:\n- {OUTPUT_JSON}\n- {OUTPUT_MD}")
+    print(f"Semantic persona narratives saved to:\n- {OUTPUT_JSON}\n- {OUTPUT_MD}")
 
 if __name__ == "__main__":
     main()
