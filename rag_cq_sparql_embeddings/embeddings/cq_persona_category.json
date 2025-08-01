@@ -1,0 +1,226 @@
+{
+  "CQ-E1": {
+    "persona": "Emma",
+    "category": "Entry"
+  },
+  "CQ-E2": {
+    "persona": "Emma",
+    "category": "Entry"
+  },
+  "CQ-E3": {
+    "persona": "Emma",
+    "category": "Entry"
+  },
+  "CQ-E4": {
+    "persona": "Emma",
+    "category": "Entry"
+  },
+  "CQ-E5": {
+    "persona": "Emma",
+    "category": "Entry"
+  },
+  "CQ-E6": {
+    "persona": "Emma",
+    "category": "Entry"
+  },
+  "CQ-E7": {
+    "persona": "Emma",
+    "category": "Entry"
+  },
+  "CQ-E8": {
+    "persona": "Emma",
+    "category": "Entry"
+  },
+  "CQ-E9": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E10": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E11": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E12": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E13": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E14": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E15": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E16": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E17": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E18": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E19": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E20": {
+    "persona": "Emma",
+    "category": "Exit"
+  },
+  "CQ-E21": {
+    "persona": "Emma",
+    "category": "Exit"
+  },
+  "CQ-E22": {
+    "persona": "Emma",
+    "category": "Exit"
+  },
+  "CQ-E23": {
+    "persona": "Emma",
+    "category": "Exit"
+  },
+  "CQ-E24": {
+    "persona": "Emma",
+    "category": "Exit"
+  },
+  "CQ-E25": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E26": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-E27": {
+    "persona": "Emma",
+    "category": "Core"
+  },
+  "CQ-L1": {
+    "persona": "Luca",
+    "category": "Entry"
+  },
+  "CQ-L2": {
+    "persona": "Luca",
+    "category": "Entry"
+  },
+  "CQ-L3": {
+    "persona": "Luca",
+    "category": "Entry"
+  },
+  "CQ-L4": {
+    "persona": "Luca",
+    "category": "Entry"
+  },
+  "CQ-L5": {
+    "persona": "Luca",
+    "category": "Entry"
+  },
+  "CQ-L6": {
+    "persona": "Luca",
+    "category": "Entry"
+  },
+  "CQ-L7": {
+    "persona": "Luca",
+    "category": "Entry"
+  },
+  "CQ-L8": {
+    "persona": "Luca",
+    "category": "Entry"
+  },
+  "CQ-L9": {
+    "persona": "Luca",
+    "category": "Entry"
+  },
+  "CQ-L10": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L11": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L12": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L13": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L14": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L15": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L16": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L17": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L18": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L19": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L20": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L21": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L22": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L23": {
+    "persona": "Luca",
+    "category": "Core"
+  },
+  "CQ-L24": {
+    "persona": "Luca",
+    "category": "Exit"
+  },
+  "CQ-L25": {
+    "persona": "Luca",
+    "category": "Exit"
+  },
+  "CQ-L26": {
+    "persona": "Luca",
+    "category": "Exit"
+  },
+  "CQ-L27": {
+    "persona": "Luca",
+    "category": "Exit"
+  },
+  "CQ-L28": {
+    "persona": "Luca",
+    "category": "Exit"
+  },
+  "CQ-L29": {
+    "persona": "Luca",
+    "category": "Exit"
+  }
+}

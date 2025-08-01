@@ -164,7 +164,7 @@ ex:BBC a schema:BroadcastService ;
 
 ex:Bad a mm:MusicalWork ;
     rdfs:label "Bad" ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Bad> .
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Bad_(U2_song)> .
 
 ex:BennieandtheJets a mm:MusicalWork ;
     rdfs:label "Bennie and the Jets" ;
@@ -177,12 +177,13 @@ ex:BlowinintheWind a mm:MusicalWork ;
 ex:BobDylan a mm:MusicArtist ;
     rdfs:label "Bob Dylan" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Bob_Dylan> ;
-    schema:sameAs <https://www.wikidata.org/entity/BobDylan> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q392> ;
     mm:hasGenre ex:Rock .
 
 ex:BohemianRhapsody a mm:MusicalWork ;
     rdfs:label "Bohemian Rhapsody" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Bohemian_Rhapsody> .
+    schema:sameAs <https://www.wikidata.org/wiki/Q187745> , <https://musicbrainz.org/recording/f1248820-11bf-4c35-8b70-0660b05325e5> ;
 
 ex:BrianMay a mm:MusicArtist ;
     rdfs:label "Brian May" .
@@ -190,23 +191,23 @@ ex:BrianMay a mm:MusicArtist ;
 ex:BryanAdams a mm:MusicArtist ;
     rdfs:label "Bryan Adams" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Bryan_Adams> ;
-    schema:sameAs <https://www.wikidata.org/entity/BryanAdams> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q482907> ;
     mm:hasGenre ex:Rock .
 
 ex:DireStraits a mm:MusicArtist ;
     rdfs:label "Dire Straits" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Dire_Straits> ;
-    schema:sameAs <https://www.wikidata.org/entity/DireStraits> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q50040> ;
     mm:hasGenre ex:Rock .
 
 ex:Drive a mm:MusicalWork ;
     rdfs:label "Drive" ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Drive> .
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Drive_(The_Cars_song)> .
 
 ex:EricClapton a mm:MusicArtist ;
     rdfs:label "Eric Clapton" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Eric_Clapton> ;
-    schema:sameAs <https://www.wikidata.org/entity/EricClapton> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q48187> ;
     mm:hasGenre ex:Rock .
 
 ex:FreddieMercury a mm:MusicArtist ;
@@ -214,7 +215,7 @@ ex:FreddieMercury a mm:MusicArtist ;
 
 ex:Heroes a mm:MusicalWork ;
     rdfs:label "Heroes" ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Heroes> .
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/%22Heroes%22_(David_Bowie_song)> .
 
 ex:IntheAirTonight a mm:MusicalWork ;
     rdfs:label "In the Air Tonight" ;
@@ -230,26 +231,26 @@ ex:Layla a mm:MusicalWork ;
 ex:LedZeppelin a mm:MusicArtist ;
     rdfs:label "Led Zeppelin" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Led_Zeppelin> ;
-    schema:sameAs <https://www.wikidata.org/entity/LedZeppelin> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q2331> ;
     mm:hasGenre ex:Rock .
 
 ex:LetItBe a mm:MusicalWork ;
     rdfs:label "Let It Be" ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Let_It_Be> .
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Let_It_Be_(song)> .
 
 ex:LikeaVirgin a mm:MusicalWork ;
     rdfs:label "Like a Virgin" ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Like_a_Virgin> .
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Like_a_Virgin_(song)> .
 
 ex:MTV a schema:BroadcastService ;
     rdfs:label "MTV" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/MTV> ;
-    schema:sameAs <https://www.wikidata.org/entity/Q2004> .
+    schema:sameAs <https://www.wikidata.org/wiki/Q43359> .
 
 ex:Madonna a mm:MusicArtist ;
     rdfs:label "Madonna" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Madonna> ;
-    schema:sameAs <https://www.wikidata.org/entity/Madonna> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q1744> ;
     mm:hasGenre ex:Pop .
 
 ex:MyGeneration a mm:MusicalWork ;
@@ -259,13 +260,13 @@ ex:MyGeneration a mm:MusicalWork ;
 ex:PaulMcCartney a mm:MusicArtist ;
     rdfs:label "Paul McCartney" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Paul_McCartney> ;
-    schema:sameAs <https://www.wikidata.org/entity/PaulMcCartney> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q2599> ;
     mm:hasGenre ex:PopRock .
 
 ex:PhilCollins a mm:MusicArtist ;
     rdfs:label "Phil Collins" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Phil_Collins> ;
-    schema:sameAs <https://www.wikidata.org/entity/PhilCollins> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q144622> ;
     mm:hasGenre ex:PopRock .
 
 ex:PinballWizard a mm:MusicalWork ;
@@ -285,14 +286,14 @@ ex:RebelRebel a mm:MusicalWork ;
 
 ex:RocketMan a mm:MusicalWork ;
     rdfs:label "Rocket Man" ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Rocket_Man> .
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Rocket_Man_(song)> .
 
 ex:RogerTaylor a mm:MusicArtist ;
     rdfs:label "Roger Taylor" .
 
 ex:Roxanne a mm:MusicalWork ;
     rdfs:label "Roxanne" ;
-    rdfs:seeAlso <https://en.wikipedia.org/wiki/Roxanne> .
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Roxanne_(The_Police_song)> .
 
 ex:StairwaytoHeaven a mm:MusicalWork ;
     rdfs:label "Stairway to Heaven" ;
@@ -301,7 +302,7 @@ ex:StairwaytoHeaven a mm:MusicalWork ;
 ex:Sting a mm:MusicArtist ;
     rdfs:label "Sting" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Sting> ;
-    schema:sameAs <https://www.wikidata.org/entity/Sting> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q483203> ;
     mm:hasGenre ex:Rock .
 
 ex:SultansofSwing a mm:MusicalWork ;
@@ -319,7 +320,7 @@ ex:SundayBloodySunday a mm:MusicalWork ;
 ex:TheCars a mm:MusicArtist ;
     rdfs:label "The Cars" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/The_Cars> ;
-    schema:sameAs <https://www.wikidata.org/entity/TheCars> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q858388> ;
     mm:hasGenre ex:Rock .
 
 ex:DavidBowie a mm:MusicArtist ;
@@ -331,7 +332,7 @@ ex:DavidBowie a mm:MusicArtist ;
 ex:EltonJohn a mm:MusicArtist ;
     rdfs:label "Elton John" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/Elton_John> ;
-    schema:sameAs <https://www.wikidata.org/entity/EltonJohn> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q2808> ;
     mm:hasGenre ex:PopRock .
 
 ex:Queen a mm:MusicArtist ;
@@ -348,13 +349,13 @@ ex:Queen a mm:MusicArtist ;
 ex:TheWho a mm:MusicArtist ;
     rdfs:label "The Who" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/The_Who> ;
-    schema:sameAs <https://www.wikidata.org/entity/TheWho> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q93346> ;
     mm:hasGenre ex:Rock .
 
 ex:U2 a mm:MusicArtist ;
     rdfs:label "U2" ;
     rdfs:seeAlso <https://en.wikipedia.org/wiki/U2> ;
-    schema:sameAs <https://www.wikidata.org/entity/U2> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q396> ;
     mm:hasGenre ex:Rock .
 
 ex:PopRock a mm:MusicGenre ;

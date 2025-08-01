@@ -1,12 +1,13 @@
-CQ_ID,CQ_Text,SPARQL_Query,Status
-CQ-E1,What kind of event was Live Aid?,"PREFIX ex: <http://example.org/liveaid/>
+# CQ-E1: What kind of event was Live Aid?
+PREFIX ex: <http://example.org/liveaid/>
 SELECT ?event ?type
 WHERE {
   ex:LiveAid1985 a ?type .
   BIND(ex:LiveAid1985 AS ?event)
-}",Verified
+}
 
-CQ-E3/CQ-L3,Which artist performed at Live Aid?,"PREFIX ex: <http://example.org/liveaid/>
+# CQ-E3/CQ-L3: Which artist performed at Live Aid?
+PREFIX ex: <http://example.org/liveaid/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?artist ?artistLabel
@@ -16,9 +17,10 @@ WHERE {
                mm:hasAgentRole ?artist .
   ?artist rdfs:label ?artistLabel .
 }
-ORDER BY ?artistLabel",Verified
+ORDER BY ?artistLabel
 
-CQ-E10/CQ-L10,Which songs did each artist perform?,"PREFIX ex: <http://example.org/liveaid/>
+# CQ-E10/CQ-L10: Which songs did each artist perform?
+PREFIX ex: <http://example.org/liveaid/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?artistLabel ?songLabel
@@ -30,9 +32,10 @@ WHERE {
   ?artist rdfs:label ?artistLabel .
   ?song rdfs:label ?songLabel .
 }
-ORDER BY ?artistLabel ?songLabel",Verified
+ORDER BY ?artistLabel ?songLabel
 
-CQ-E15/CQ-L15,What genres are associated with artists?,"PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+# CQ-E15/CQ-L15: What genres are associated with artists?
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?artistLabel ?genreLabel
 WHERE {
@@ -41,9 +44,10 @@ WHERE {
           rdfs:label ?artistLabel .
   ?genre rdfs:label ?genreLabel .
 }
-ORDER BY ?artistLabel",Verified
+ORDER BY ?artistLabel
 
-CQ-E14,Who were the solo artists at Live Aid?,"PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+# CQ-E14: Who were the solo artists at Live Aid?
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 SELECT ?soloArtist ?artistLabel
@@ -51,9 +55,10 @@ WHERE {
   ?soloArtist a mm:MusicArtist ;
               rdfs:label ?artistLabel .
   FILTER NOT EXISTS { ?soloArtist schema:member ?band } 
-}",Verified
+}
 
-CQ-L5,Which performances were in London vs Philadelphia?,"PREFIX ex: <http://example.org/liveaid/>
+# CQ-L5: Which performances were in London vs Philadelphia?
+PREFIX ex: <http://example.org/liveaid/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -68,18 +73,20 @@ WHERE {
   ?song rdfs:label ?songLabel .
   ?loc rdfs:label ?locationLabel .
 }
-ORDER BY ?locationLabel ?artistLabel",Verified
+ORDER BY ?locationLabel ?artistLabel
 
-CQ-E7/CQ-L6,Which broadcasters aired Live Aid?,"PREFIX ex: <http://example.org/liveaid/>
+# CQ-E7/CQ-L6: Which broadcasters aired Live Aid?
+PREFIX ex: <http://example.org/liveaid/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?broadcaster ?broadcasterLabel
 WHERE {
   ex:LiveAid1985 mm:hasBroadcaster ?broadcaster .
   ?broadcaster rdfs:label ?broadcasterLabel .
-}",Verified
+}
 
-CQ-L5 Extended,What was the attendance at each venue?,"PREFIX ex: <http://example.org/liveaid/>
+# CQ-L5 Extended: What was the attendance at each venue?
+PREFIX ex: <http://example.org/liveaid/>
 PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?venueLabel ?attendance
@@ -87,23 +94,26 @@ WHERE {
   ?venue a schema:Place ;
          rdfs:label ?venueLabel ;
          schema:audience ?attendance .
-}",Verified
+}
 
-CQ-L7 Extended,What was the global TV audience size?,"PREFIX ex: <http://example.org/liveaid/>
+# CQ-L7 Extended: What was the global TV audience size?
+PREFIX ex: <http://example.org/liveaid/>
 PREFIX schema: <https://schema.org/>
 SELECT ?audienceSize
 WHERE {
   ex:LiveAid1985 schema:audience ?audienceSize .
-}",Verified
+}
 
-CQ-E20/CQ-L12,How much money was raised by Live Aid?,"PREFIX ex: <http://example.org/liveaid/>
+# CQ-E20/CQ-L12: How much money was raised by Live Aid?
+PREFIX ex: <http://example.org/liveaid/>
 PREFIX schema: <https://schema.org/>
 SELECT ?amount
 WHERE {
   ex:LiveAid1985 schema:amountRaised ?amount .
-}",Verified
+}
 
-CQ-E12/CQ-E13,When was Queen formed, and who were the members?,"PREFIX ex: <http://example.org/liveaid/>
+# CQ-E12/CQ-E13: When was Queen formed and who were the members?
+PREFIX ex: <http://example.org/liveaid/>
 PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?bandLabel ?foundingDate ?memberLabel
@@ -112,63 +122,64 @@ WHERE {
            schema:foundingDate ?foundingDate ;
            schema:member ?member .
   ?member rdfs:label ?memberLabel .
-}",Verified
-CQ-E20,How much money was raised by Live Aid?,"PREFIX : <http://example.org/liveaid/>
-PREFIX schema: <https://schema.org/>
+}
 
+# CQ-E20 (Exit): How much money was raised by Live Aid?
+PREFIX : <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
 SELECT ?amount ?currency
 WHERE {
   :LiveAid schema:amountRaised ?amount ;
            schema:currency ?currency .
-}",Exit
+}
 
-CQ-E21,Which organization preserved the Wembley broadcast?,"PREFIX : <http://example.org/liveaid/>
+# CQ-E21 (Exit): Which organization preserved the Wembley broadcast?
+PREFIX : <http://example.org/liveaid/>
 PREFIX schema: <https://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-
 SELECT ?broadcaster ?archived
 WHERE {
   :WembleyBroadcast mm:hasBroadcaster ?broadcaster ;
                     schema:archived ?archived .
-}",Exit
+}
 
-CQ-E22,Which organization failed to preserve the Philadelphia broadcast?,"PREFIX : <http://example.org/liveaid/>
+# CQ-E22 (Exit): Which organization failed to preserve the Philadelphia broadcast?
+PREFIX : <http://example.org/liveaid/>
 PREFIX schema: <https://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-
 SELECT ?broadcaster ?archived
 WHERE {
   :PhiladelphiaBroadcast mm:hasBroadcaster ?broadcaster ;
                          schema:archived ?archived .
-}",Exit
+}
 
-CQ-E24,Why is Queen's Live Aid performance considered iconic?,"PREFIX : <http://example.org/liveaid/>
+# CQ-E24 (Exit): Why is Queen's Live Aid performance considered iconic?
+PREFIX : <http://example.org/liveaid/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
 SELECT ?comment
 WHERE {
   :QueenLiveAidPerformance a mm:LivePerformance ;
                            rdfs:comment ?comment .
-}",Exit
+}
 
-CQ-L27,Did Live Aid inspire later benefit concerts such as Live 8?,"PREFIX : <http://example.org/liveaid/>
+# CQ-L27 (Exit): Did Live Aid inspire later benefit concerts such as Live 8?
+PREFIX : <http://example.org/liveaid/>
 PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
 SELECT ?nextEvent ?comment
 WHERE {
   :LiveAid schema:inspiredByEvent ?nextEvent ;
            rdfs:comment ?comment .
-}",Exit
+}
 
-CQ-L28,Which artifacts from Live Aid performances are preserved at the BME?,"PREFIX : <http://example.org/liveaid/>
+# CQ-L28 (Exit): Which artifacts from Live Aid performances are preserved at the BME?
+PREFIX : <http://example.org/liveaid/>
 PREFIX schema: <https://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-
 SELECT ?artifact ?artist ?location ?comment
 WHERE {
   ?artifact schema:creator ?artist ;
             schema:location ?location ;
             rdfs:comment ?comment .
-}",Exit
+}

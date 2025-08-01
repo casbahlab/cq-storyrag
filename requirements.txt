@@ -98,3 +98,6 @@ syntok
 streamlit-aggrid>=0.3.4
 google-generativeai
 SPARQLWrapper
+faiss-cpu
+ollama
+numpy
