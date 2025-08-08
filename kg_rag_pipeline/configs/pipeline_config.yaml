@@ -1,0 +1,9 @@
+retriever:
+  embed_model: "nomic-embed-text"
+  top_k: 5
+
+generator:
+  model: "llama3.1"
+  interface: "ollama"
+  prompt_template: "default"
+  temperature: 0.7

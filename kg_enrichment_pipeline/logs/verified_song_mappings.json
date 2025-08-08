@@ -1,0 +1,102 @@
+{
+  "Bad": {
+    "wikidata": "http://www.wikidata.org/entity/Q2602667",
+    "musicbrainz": "62d0a051-20ff-3fce-961c-c9157e38a07d",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bad_(U2_song)"
+  },
+  "Bennie and the Jets": {
+    "wikidata": "http://www.wikidata.org/entity/Q2560178",
+    "musicbrainz": "6ef8fb46-a4dc-312f-9a18-e21682fd7550",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bennie_and_the_Jets"
+  },
+  "Blowin' in the Wind": {
+    "wikidata": "http://www.wikidata.org/entity/Q640529",
+    "musicbrainz": "f5a12d42-00a1-3bc2-8ed1-df2506ea3db2",
+    "wikipedia": "https://en.wikipedia.org/wiki/Blowin%27_in_the_Wind"
+  },
+  "Bohemian Rhapsody": {
+    "wikidata": "http://www.wikidata.org/entity/Q187745",
+    "musicbrainz": "41c94a08-a551-3c86-bb17-d9a52e3a618b",
+    "wikipedia": "https://en.wikipedia.org/wiki/Bohemian_Rhapsody"
+  },
+  "Drive": {
+    "wikidata": "http://www.wikidata.org/entity/Q169987",
+    "musicbrainz": "4cbcd04d-3b93-30b1-bd33-3ace8d4a1826",
+    "wikipedia": "https://en.wikipedia.org/wiki/Drive_(The_Cars_song)"
+  },
+  "Heroes": {
+    "wikidata": "http://www.wikidata.org/entity/Q701655",
+    "musicbrainz": "e2b01286-a914-3eb9-a0ab-89e0659b878c",
+    "wikipedia": "https://en.wikipedia.org/wiki/%22Heroes%22_(David_Bowie_song)"
+  },
+  "In the Air Tonight": {
+    "wikidata": "http://www.wikidata.org/entity/Q546425",
+    "musicbrainz": "b9a05cea-1b4d-3139-980e-a48e14537800",
+    "wikipedia": "https://en.wikipedia.org/wiki/In_the_Air_Tonight"
+  },
+  "Layla": {
+    "wikidata": "http://www.wikidata.org/entity/Q923966",
+    "musicbrainz": "beb76331-bb4b-30b3-b4f4-ca80742ebd47",
+    "wikipedia": "https://en.wikipedia.org/wiki/Layla"
+  },
+  "Let It Be": {
+    "wikidata": "http://www.wikidata.org/entity/Q184259",
+    "musicbrainz": "ef5b9074-84d2-3e46-81ba-cdbe57898033",
+    "wikipedia": "https://en.wikipedia.org/wiki/Let_It_Be_(song)"
+  },
+  "Like a Virgin": {
+    "wikidata": "http://www.wikidata.org/entity/Q542497",
+    "musicbrainz": "2ae1284a-3eb2-3b00-bb8c-9597593f2309",
+    "wikipedia": "https://en.wikipedia.org/wiki/Like_a_Virgin_(song)"
+  },
+  "My Generation": {
+    "wikidata": "http://www.wikidata.org/entity/Q8353114",
+    "musicbrainz": "a55b5d5b-cc47-304c-98c1-460fe91e1cd7",
+    "wikipedia": "https://en.wikipedia.org/wiki/My_Generation"
+  },
+  "Pinball Wizard": {
+    "wikidata": "http://www.wikidata.org/entity/Q2321342",
+    "musicbrainz": "6ef8cd26-d0a7-36a1-84f5-5d872364d7c6",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pinball_Wizard"
+  },
+  "Radio Ga Ga": {
+    "wikidata": "http://www.wikidata.org/entity/Q605031",
+    "musicbrainz": "2c76fe20-59d5-3dd9-93ee-be2107ac977c",
+    "wikipedia": "https://en.wikipedia.org/wiki/Radio_Ga_Ga"
+  },
+  "Rebel Rebel": {
+    "wikidata": "http://www.wikidata.org/entity/Q2190364",
+    "musicbrainz": "dc6d909d-a39f-3932-a194-19703564743e",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rebel_Rebel"
+  },
+  "Rocket Man": {
+    "wikidata": "http://www.wikidata.org/entity/Q56070897",
+    "musicbrainz": "af9bc306-eb56-3eb1-9d37-eb46ceca1e50",
+    "wikipedia": "https://en.wikipedia.org/wiki/Rocket_Man_(song)"
+  },
+  "Roxanne": {
+    "wikidata": "http://www.wikidata.org/entity/Q1631268",
+    "musicbrainz": "0ddba90a-83cd-3edc-9335-14460903952e",
+    "wikipedia": "https://en.wikipedia.org/wiki/Roxanne_(The_Police_song)"
+  },
+  "Stairway to Heaven": {
+    "wikidata": "http://www.wikidata.org/entity/Q192023",
+    "musicbrainz": "968ee3c5-21fa-35de-88f9-bd1c300ac3ee",
+    "wikipedia": "https://en.wikipedia.org/wiki/Stairway_to_Heaven"
+  },
+  "Sultans of Swing": {
+    "wikidata": "http://www.wikidata.org/entity/Q2270916",
+    "musicbrainz": "8626823c-47f9-3053-a9c5-4b7e9343b5df",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sultans_of_Swing"
+  },
+  "Summer of '69": {
+    "wikidata": "http://www.wikidata.org/entity/Q1472791",
+    "musicbrainz": "9604422e-df7a-3528-9c25-c3afa67678ae",
+    "wikipedia": "https://en.wikipedia.org/wiki/Summer_of_%2769"
+  },
+  "Sunday Bloody Sunday": {
+    "wikidata": "http://www.wikidata.org/entity/Q1779491",
+    "musicbrainz": "dc2c1143-4ef4-3406-873f-e3158942e363",
+    "wikipedia": "https://en.wikipedia.org/wiki/Sunday_Bloody_Sunday"
+  }
+}

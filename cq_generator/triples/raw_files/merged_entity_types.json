@@ -1,0 +1,460 @@
+[
+  {
+    "entity": "http://example.org/HumanitarianRelief",
+    "types": [
+      ":CharitableConcert"
+    ]
+  },
+  {
+    "entity": "http://example.org/BenefitConcert",
+    "types": [
+      ":CharitableConcert"
+    ]
+  },
+  {
+    "entity": "http://example.org/Ethiopia",
+    "types": [
+      "schema:Country"
+    ]
+  },
+  {
+    "entity": "http://example.org/NewYorkCity",
+    "types": [
+      "schema:City"
+    ]
+  },
+  {
+    "entity": "http://example.org/UK",
+    "types": [
+      "schema:Country"
+    ]
+  },
+  {
+    "entity": "http://example.org/QueenPerformance_LiveAid",
+    "types": [
+      ":Performance",
+      ":PerformanceSegment",
+      ":Reaction"
+    ]
+  },
+  {
+    "entity": "http://example.org/MediaCritics",
+    "types": [
+      ":Performance"
+    ]
+  },
+  {
+    "entity": "http://example.org/FamineReliefEthiopia",
+    "types": [
+      ":Cause"
+    ]
+  },
+  {
+    "entity": "http://example.org/BBC",
+    "types": [
+      "schema:BroadcastService"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidWembleyBroadcast",
+    "types": [
+      "schema:BroadcastEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidPhiladelphiaBroadcast",
+    "types": [
+      "schema:BroadcastEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/ABC",
+    "types": [
+      "schema:BroadcastService"
+    ]
+  },
+  {
+    "entity": "http://example.org/QueenPerformanceLiveAid",
+    "types": [
+      "http://example.org/QueenPerformance_LiveAid"
+    ]
+  },
+  {
+    "entity": "http://example.org/BritishMusicExperience",
+    "types": [
+      "http://example.org/BME"
+    ]
+  },
+  {
+    "entity": "http://example.org/TheWorks",
+    "types": [
+      "schema:MusicAlbum"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAid",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidWembley",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidPhiladelphia",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/BandAid",
+    "types": [
+      "schema:MusicGroup"
+    ]
+  },
+  {
+    "entity": "http://example.org/SatelliteNetwork",
+    "types": [
+      ":SatelliteNetwork"
+    ]
+  },
+  {
+    "entity": "http://example.org/GlobalAudience",
+    "types": [
+      "schema:Audience",
+      "schema:Event"
+    ]
+  },
+  {
+    "entity": "http://example.org/HammerToFallSegment",
+    "types": [
+      ":PerformanceSegment"
+    ]
+  },
+  {
+    "entity": "http://example.org/HammerToFall",
+    "types": [
+      "schema:MusicComposition"
+    ]
+  },
+  {
+    "entity": "http://example.org/CrazyLittleThingCalledLove",
+    "types": [
+      "schema:MusicComposition"
+    ]
+  },
+  {
+    "entity": "http://example.org/WeWillRockYou",
+    "types": [
+      "schema:MusicComposition"
+    ]
+  },
+  {
+    "entity": "http://example.org/QueenPerformance",
+    "types": [
+      "http://example.org/QueenPerformance_LiveAid"
+    ]
+  },
+  {
+    "entity": "http://example.org/SetlistEntry3",
+    "types": [
+      "http://example.org/HammerToFallSegment"
+    ]
+  },
+  {
+    "entity": "http://example.org/FreddieDanceMoment",
+    "types": [
+      ":MemorableMoment"
+    ]
+  },
+  {
+    "entity": "http://example.org/RadioGaGaAudienceChorus",
+    "types": [
+      ":MemorableMoment"
+    ]
+  },
+  {
+    "entity": "http://example.org/WembleyAudience",
+    "types": [
+      ":WembleyAudience"
+    ]
+  },
+  {
+    "entity": "http://example.org/WembleyStadium",
+    "types": [
+      ":WembleyStadium",
+      "schema:Place",
+      "schema:StadiumOrArena"
+    ]
+  },
+  {
+    "entity": "http://example.org/MusicGenre",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/ProgressiveRock",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/HardRock",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/HeavyMetal",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/ArenaRock",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/PopRock",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidSchedule",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/SatelliteBroadcast",
+    "types": [
+      ":BroadcastMethod"
+    ]
+  },
+  {
+    "entity": "http://example.org/AlternatingSlots",
+    "types": [
+      ":PerformanceSchedulePattern"
+    ]
+  },
+  {
+    "entity": "http://example.org/WembleyBroadcast",
+    "types": [
+      ":BroadcastMethod"
+    ]
+  },
+  {
+    "entity": "http://example.org/PhiladelphiaBroadcast",
+    "types": [
+      ":BroadcastMethod"
+    ]
+  },
+  {
+    "entity": "http://example.org/BME",
+    "types": [
+      "schema:Museum"
+    ]
+  },
+  {
+    "entity": "http://example.org/FamineRelief_Ethiopia",
+    "types": [
+      "schema:HumanitarianAid"
+    ]
+  },
+  {
+    "entity": "http://example.org/Queen",
+    "types": [
+      "schema:MusicGroup"
+    ]
+  },
+  {
+    "entity": "http://example.org/DavidBowie",
+    "types": [
+      "schema:MusicArtist",
+      "schema:Person"
+    ]
+  },
+  {
+    "entity": "http://example.org/London",
+    "types": [
+      "schema:City"
+    ]
+  },
+  {
+    "entity": "http://example.org/Philadelphia",
+    "types": [
+      "schema:City"
+    ]
+  },
+  {
+    "entity": "http://example.org/UnitedKingdom",
+    "types": [
+      "schema:Country"
+    ]
+  },
+  {
+    "entity": "http://example.org/UnitedStates",
+    "types": [
+      "schema:Country"
+    ]
+  },
+  {
+    "entity": "http://example.org/JFKStadium",
+    "types": [
+      "schema:StadiumOrArena"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidBroadcast",
+    "types": [
+      "schema:BroadcastEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/Television",
+    "types": [
+      "schema:BroadcastChannel"
+    ]
+  },
+  {
+    "entity": "http://example.org/Radio",
+    "types": [
+      "schema:BroadcastChannel"
+    ]
+  },
+  {
+    "entity": "http://example.org/BobGeldof",
+    "types": [
+      "schema:Person"
+    ]
+  },
+  {
+    "entity": "http://example.org/MidgeUre",
+    "types": [
+      "schema:Person"
+    ]
+  },
+  {
+    "entity": "http://example.org/QueenWembleyPerformance",
+    "types": [
+      "schema:Event"
+    ]
+  },
+  {
+    "entity": "http://example.org/QueenLiveAidPerformance",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/BohemianRhapsody",
+    "types": [
+      "schema:MusicComposition"
+    ]
+  },
+  {
+    "entity": "http://example.org/RadioGaGa",
+    "types": [
+      "schema:MusicComposition"
+    ]
+  },
+  {
+    "entity": "http://example.org/WeAreTheChampions",
+    "types": [
+      "schema:MusicComposition"
+    ]
+  },
+  {
+    "entity": "http://example.org/Madonna",
+    "types": [
+      "schema:MusicArtist",
+      "schema:Person"
+    ]
+  },
+  {
+    "entity": "http://example.org/MadonnaDebutPerformance",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/FreddieMercury",
+    "types": [
+      "schema:Person"
+    ]
+  },
+  {
+    "entity": "http://example.org/BrianMay",
+    "types": [
+      "schema:Person"
+    ]
+  },
+  {
+    "entity": "http://example.org/RogerTaylor",
+    "types": [
+      "schema:Person"
+    ]
+  },
+  {
+    "entity": "http://example.org/JohnDeacon",
+    "types": [
+      "schema:Person"
+    ]
+  },
+  {
+    "entity": "http://example.org/EltonJohn",
+    "types": [
+      "schema:MusicArtist",
+      "schema:Person"
+    ]
+  },
+  {
+    "entity": "http://example.org/SatelliteService",
+    "types": [
+      "schema:BroadcastService"
+    ]
+  },
+  {
+    "entity": "http://example.org/TelevisionNetwork",
+    "types": [
+      "schema:BroadcastService"
+    ]
+  },
+  {
+    "entity": "http://example.org/LogisticsAndCoordination",
+    "types": [
+      "schema:CreativeWork"
+    ]
+  },
+  {
+    "entity": "http://example.org/Live8",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/GlobalCitizenFestival",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/FreddieMicStand",
+    "types": [
+      "schema:CreativeWork"
+    ]
+  },
+  {
+    "entity": "http://example.org/DoTheyKnowItsChristmas",
+    "types": [
+      "schema:MusicRecording"
+    ]
+  }
+]

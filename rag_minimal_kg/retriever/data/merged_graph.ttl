@@ -1,0 +1,431 @@
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:BroadcastMusicEvent a rdfs:Class ;
+    rdfs:label "Broadcast Music Event" ;
+    rdfs:comment "A music event intended for distribution via broadcast media such as television, radio, or streaming platforms. This class encompasses live or pre-recorded concerts, festivals, or performances that are publicly disseminated." ;
+    rdfs:subClassOf schema:BroadcastEvent,
+        schema:MusicEvent .
+
+ex:Cause a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+ex:CharitableConcert a rdfs:Class ;
+    rdfs:subClassOf schema:MusicEvent .
+
+ex:MemorableMoment a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+ex:MusicArtist a rdfs:Class ;
+    rdfs:label "Music Artist" ;
+    rdfs:comment "A custom class representing either a solo performer (Person) or a group (MusicGroup).",
+        "A custom subclass that represents either a solo performer or a group in a musical context." ;
+    rdfs:subClassOf schema:MusicGroup,
+        schema:Person .
+
+ex:MusicEvent a rdfs:Class ;
+    rdfs:subClassOf schema:MusicEvent .
+
+ex:MusicGenre a ex:MusicGenre,
+        rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+ex:Performance a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+ex:PerformanceSegment a rdfs:Class ;
+    rdfs:label "Performance Segment" ;
+    rdfs:comment "A simplified segment of a performance, representing a specific song." ;
+    rdfs:subClassOf ex:CreativeWork .
+
+schema:BroadcastEvent a rdfs:Class ;
+    rdfs:label "BroadcastEvent" ;
+    rdfs:comment "An over the air or online broadcast event." ;
+    rdfs:subClassOf schema:PublicationEvent .
+
+schema:Country a rdfs:Class ;
+    rdfs:label "Country" ;
+    rdfs:comment "A country." ;
+    rdfs:subClassOf schema:AdministrativeArea .
+
+schema:Event a rdfs:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the [[offers]] property. Repeated events may be structured as separate Event objects." ;
+    rdfs:subClassOf schema:Thing ;
+    owl:equivalentClass dcmitype:Event .
+
+schema:MusicComposition a rdfs:Class ;
+    rdfs:label "MusicComposition" ;
+    rdfs:comment "A musical composition." ;
+    rdfs:subClassOf schema:CreativeWork .
+
+schema:MusicEvent a rdfs:Class ;
+    rdfs:label "MusicEvent" ;
+    rdfs:comment "Event type: Music event." ;
+    rdfs:subClassOf schema:Event .
+
+schema:MusicGroup a rdfs:Class ;
+    rdfs:label "MusicGroup" ;
+    rdfs:comment "A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician." ;
+    rdfs:subClassOf schema:PerformingGroup .
+
+schema:Person a rdfs:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A person (alive, dead, undead, or fictional)." ;
+    rdfs:subClassOf schema:Thing ;
+    owl:equivalentClass foaf:Person .
+
+schema:Place a rdfs:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "Entities that have a somewhat fixed, physical extension." ;
+    rdfs:subClassOf schema:Thing .
+
+schema:Review a rdfs:Class ;
+    rdfs:label "Review" ;
+    rdfs:comment "A review of an item - for example, of a restaurant, movie, or store." ;
+    rdfs:subClassOf schema:CreativeWork .
+
+schema:URL a rdfs:Class ;
+    rdfs:label "URL" ;
+    rdfs:comment "Data type: URL." ;
+    rdfs:subClassOf schema:Text .
+
+ex:BohemianRhapsody a schema1:MusicRecording ;
+    schema1:mainEntityOfPage <https://www.songfacts.com/facts/queen/bohemian-rhapsody> ;
+    schema1:name "Bohemian Rhapsody" ;
+    schema1:sameAs <https://musicbrainz.org/recording/5c5e6e29-a48c-4050-a0f8-898e0a92ef0b> ;
+    schema1:url <https://genius.com/Queen-bohemian-rhapsody-lyrics> .
+
+ex:HammerToFall a schema1:MusicRecording ;
+    schema1:mainEntityOfPage <https://www.songfacts.com/facts/queen/hammer-to-fall> ;
+    schema1:name "Hammer to Fall" ;
+    schema1:sameAs <https://musicbrainz.org/recording/a1880648-3a8e-404b-9cd6-b3b503fb79cb> ;
+    schema1:url <https://genius.com/Queen-hammer-to-fall-lyrics> .
+
+ex:LiveAidJFK1985 a ex:BroadcastMusicEvent ;
+    ex:hasPerformer ex:BlackSabbath,
+        ex:Madonna .
+
+ex:RadioGaGa a schema1:MusicRecording ;
+    schema1:mainEntityOfPage <https://www.songfacts.com/facts/queen/radio-ga-ga> ;
+    schema1:name "Radio Ga Ga" ;
+    schema1:sameAs <https://musicbrainz.org/recording/c1306858-c92f-490f-849d-e4063ffcd77d> ;
+    schema1:url <https://genius.com/Queen-radio-ga-ga-lyrics> .
+
+ex:WeAreTheChampions a schema1:MusicRecording ;
+    schema1:mainEntityOfPage <https://www.songfacts.com/facts/queen/we-are-the-champions> ;
+    schema1:name "We Are the Champions" ;
+    schema1:sameAs <https://musicbrainz.org/recording/47673c9d-e0f0-4ebf-bfe5-8798dea90520> ;
+    schema1:url <https://genius.com/Queen-we-are-the-champions-lyrics> .
+
+ex:bowie_segment_1 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_tvc15 ;
+    ex:segmentOf ex:DavidBowie_LiveAidWembley_Performance .
+
+ex:bowie_segment_2 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_rebel_rebel ;
+    ex:segmentOf ex:DavidBowie_LiveAidWembley_Performance .
+
+ex:bowie_segment_3 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_modern_love ;
+    ex:segmentOf ex:DavidBowie_LiveAidWembley_Performance .
+
+ex:bowie_segment_4 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_heroes ;
+    ex:segmentOf ex:DavidBowie_LiveAidWembley_Performance .
+
+ex:cause a rdf:Property ;
+    rdfs:domain ex:CharitableConcert ;
+    rdfs:range ex:Cause .
+
+ex:criticalAcclaim a rdf:Property ;
+    rdfs:domain ex:Performance ;
+    rdfs:range schema:Review .
+
+ex:hasPerformer a rdf:Property ;
+    rdfs:label "has performer" ;
+    rdfs:comment "Relates a broadcast or music event to the performing artist or group." ;
+    rdfs:domain ex:BroadcastMusicEvent ;
+    rdfs:range ex:MusicArtist ;
+    rdfs:subPropertyOf schema:performer .
+
+ex:hasSetList a rdf:Property ;
+    rdfs:domain ex:Performance ;
+    rdfs:range ex:PerformanceSegment .
+
+ex:influenced a rdf:Property ;
+    rdfs:domain ex:BroadcastMusicEvent .
+
+ex:inspiredBy a rdf:Property ;
+    rdfs:domain ex:BroadcastMusicEvent .
+
+ex:occurredDuringSegment a rdf:Property ;
+    rdfs:domain ex:MemorableMoment ;
+    rdfs:range ex:PerformanceSegment .
+
+ex:performedIn a rdf:Property ;
+    rdfs:domain schema:MusicComposition ;
+    rdfs:range ex:PerformanceSegment .
+
+ex:performedSong a rdf:Property ;
+    rdfs:label "performed song" ;
+    rdfs:comment "The song performed during this segment." ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range schema:MusicRecording .
+
+ex:performer a rdf:Property ;
+    rdfs:label "performer" ;
+    rdfs:comment "Links a performance to the artist or group who performed." ;
+    rdfs:domain ex:Performance ;
+    rdfs:range schema:MusicGroup .
+
+ex:performerIn a rdf:Property ;
+    rdfs:label "performerIn" ;
+    rdfs:comment "An event in which the music artist performed." ;
+    rdfs:domain ex:MusicArtist ;
+    rdfs:range schema:Event .
+
+<http://example.org/rdfs:label> a rdf:Property ;
+    rdfs:domain ex:MusicGenre ;
+    rdfs:range xsd:string .
+
+ex:segmentOf a rdf:Property ;
+    rdfs:label "segment of" ;
+    rdfs:comment "Links this segment to the larger performance it belongs to." ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range ex:Performance .
+
+ex:songPerformed a rdf:Property ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range schema:MusicComposition .
+
+schema:description a rdf:Property ;
+    rdfs:label "description" ;
+    rdfs:comment "A description of the item." ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range xsd:string ;
+    owl:equivalentProperty dcterms:description ;
+    schema:domainIncludes schema:Thing ;
+    schema:rangeIncludes schema:Text,
+        schema:TextObject .
+
+schema:domainIncludes a rdf:Property ;
+    rdfs:label "domainIncludes" ;
+    rdfs:comment "Relates a property to a class that is (one of) the type(s) the property is expected to be used on." ;
+    schema:domainIncludes schema:Property ;
+    schema:isPartOf <https://meta.schema.org> ;
+    schema:rangeIncludes schema:Class .
+
+schema:isPartOf a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent,
+        schema:Event,
+        schema:MusicEvent .
+
+schema:location a rdf:Property ;
+    rdfs:label "location" ;
+    rdfs:comment "The location of, for example, where an event is happening, where an organization is located, or where an action takes place." ;
+    rdfs:domain ex:Cause,
+        schema:CreativeWork,
+        schema:Event,
+        schema:MusicEvent ;
+    rdfs:range schema:Country ;
+    schema:domainIncludes schema:Action,
+        schema:Event,
+        schema:InteractionCounter,
+        schema:Organization ;
+    schema:rangeIncludes schema:Place,
+        schema:PostalAddress,
+        schema:Text,
+        schema:VirtualLocation .
+
+schema:position a rdf:Property ;
+    rdfs:label "position" ;
+    rdfs:comment "The position of an item in a series or sequence of items." ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range xsd:integer ;
+    schema:domainIncludes schema:CreativeWork,
+        schema:ListItem ;
+    schema:rangeIncludes schema:Integer,
+        schema:Text .
+
+schema:rangeIncludes a rdf:Property ;
+    rdfs:label "rangeIncludes" ;
+    rdfs:comment "Relates a property to a class that constitutes (one of) the expected type(s) for values of the property." ;
+    schema:domainIncludes schema:Property ;
+    schema:isPartOf <https://meta.schema.org> ;
+    schema:rangeIncludes schema:Class .
+
+schema:sameAs a rdf:Property ;
+    rdfs:label "sameAs" ;
+    rdfs:comment "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website." ;
+    rdfs:domain ex:Cause ;
+    rdfs:range schema:URL ;
+    schema:domainIncludes schema:Thing ;
+    schema:rangeIncludes schema:URL .
+
+ex:BBCBroadcast a schema1:BroadcastService ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q152219> .
+
+ex:BobGeldof a schema1:Person ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q216608> .
+
+ex:FamineEthiopia1983_85 a ex:Cause ;
+    rdfs:label "1983–1985 Famine in Ethiopia" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1637896> .
+
+ex:JFKStadium a schema1:Place ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2390739> .
+
+ex:LiveAidWembley1985 a ex:BroadcastMusicEvent ;
+    ex:hasPerformer ex:DavidBowie,
+        ex:Queen .
+
+ex:LiveAid_JFK a ex:BroadcastMusicEvent ;
+    schema1:broadcastService ex:NBCAmericaBroadcast ;
+    schema1:performer ex:BlackSabbath,
+        ex:Madonna ;
+    schema1:superEvent ex:LiveAid1985 ;
+    schema1:venue ex:JFKStadium ;
+    owl:sameAs <https://musicbrainz.org/event/e4ea9ddd-3fbb-47d0-b570-add507bf0c27> .
+
+ex:LiveAid_Wembley a ex:CharitableConcert ;
+    schema1:broadcastService ex:BBCBroadcast ;
+    schema1:performer ex:DavidBowie,
+        ex:Queen ;
+    schema1:superEvent ex:LiveAid1985 ;
+    schema1:venue ex:WembleyStadium ;
+    owl:sameAs <https://musicbrainz.org/event/08657c50-71c6-4a3d-b7c4-3db6efbf07fd> .
+
+ex:MidgeUre a schema1:Person ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q355382> .
+
+ex:queen_segment_1 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_bohemian_rhapsody ;
+    ex:segmentOf ex:Queen_LiveAidWembley_Performance .
+
+ex:queen_segment_2 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_radio_gaga ;
+    ex:segmentOf ex:Queen_LiveAidWembley_Performance .
+
+ex:queen_segment_3 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_ay_oh ;
+    ex:segmentOf ex:Queen_LiveAidWembley_Performance .
+
+ex:queen_segment_4 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_hammer_to_fall ;
+    ex:segmentOf ex:Queen_LiveAidWembley_Performance .
+
+ex:queen_segment_5 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_crazy_little_thing ;
+    ex:segmentOf ex:Queen_LiveAidWembley_Performance .
+
+ex:queen_segment_6 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_we_will_rock_you ;
+    ex:segmentOf ex:Queen_LiveAidWembley_Performance .
+
+ex:queen_segment_7 a ex:PerformanceSegment ;
+    ex:performedSong ex:recording_we_are_the_champions ;
+    ex:segmentOf ex:Queen_LiveAidWembley_Performance .
+
+ex:recording_ay_oh a schema1:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/02d8dacd-23a3-44a0-bf6a-55165c3c41bb> .
+
+ex:recording_crazy_little_thing a schema1:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/eecc24a7-c176-4d68-9d47-737e3917ec34> .
+
+ex:recording_heroes a schema1:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/03ab3eb8-3b53-4704-b93a-6450b1089b70> .
+
+ex:recording_modern_love a schema1:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/4f1859e8-f5c1-4c40-b4ff-d5d053f83cb5> .
+
+ex:recording_rebel_rebel a schema1:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/fc1debd2-2935-4f6d-a58b-c89dd57910c0> .
+
+ex:recording_tvc15 a schema1:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/0a10e44f-5f5b-407e-8bc5-6cc99de0d258> .
+
+ex:recording_we_will_rock_you a schema1:MusicRecording ;
+    schema1:mainEntityOfPage <https://www.songfacts.com/facts/queen/we-will-rock-you> ;
+    schema1:name "We Will Rock You" ;
+    schema1:url <https://genius.com/Queen-we-will-rock-you-lyrics> ;
+    owl:sameAs <https://musicbrainz.org/recording/2599eb27-f9d2-4132-b6a1-dbfa4d5f1a7c> .
+
+schema:performer a rdf:Property ;
+    rdfs:label "performer" ;
+    rdfs:comment "A performer at the event&#x2014;for example, a presenter, musician, musical group or actor." ;
+    rdfs:domain ex:MemorableMoment,
+        schema:Event,
+        schema:MusicEvent ;
+    rdfs:range schema:Person ;
+    schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Organization,
+        schema:Person .
+
+ex:BlackSabbath a ex:MusicArtist ;
+    rdfs:label "Black Sabbath" ;
+    owl:sameAs <https://musicbrainz.org/artist/5182c1d9-c7d2-4dad-afa0-ccfeada921a8>,
+        <https://www.wikidata.org/wiki/Q47670> .
+
+ex:Madonna a ex:MusicArtist ;
+    rdfs:label "Madonna" ;
+    owl:sameAs <https://musicbrainz.org/artist/79239441-bfd5-4981-a70c-55c3f15c1287>,
+        <https://www.wikidata.org/wiki/Q1744> .
+
+ex:WembleyStadium a schema1:Place ;
+    schema1:photo <https://upload.wikimedia.org/wikipedia/commons/d/d2/London_Wembley.jpg> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q43279> .
+
+ex:DavidBowie a ex:MusicArtist ;
+    rdfs:label "David Bowie" ;
+    owl:sameAs <https://musicbrainz.org/artist/5441c29d-3602-4898-b1a1-b77fa23b8e50>,
+        <https://www.wikidata.org/wiki/Q5383> .
+
+ex:LiveAid1985 a ex:BroadcastMusicEvent ;
+    ex:cause ex:FamineEthiopia1983_85 ;
+    schema1:beneficiary ex:FamineReliefEthiopia ;
+    schema1:organizer ex:BobGeldof,
+        ex:MidgeUre ;
+    schema1:subEvent ex:LiveAid_JFK,
+        ex:LiveAid_Wembley ;
+    owl:sameAs <https://musicbrainz.org/event/8e0ff16a-757f-4e16-9877-4c4131621a8b>,
+        <https://www.wikidata.org/wiki/Q193740> .
+
+ex:Queen a ex:MusicArtist ;
+    rdfs:label "Queen" ;
+    owl:sameAs <https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3>,
+        <https://www.wikidata.org/wiki/Q15862> .
+
+ex:DavidBowie_LiveAidWembley_Performance a ex:Performance ;
+    schema1:eventType "LiveAidWembleyPerformance" ;
+    schema1:location ex:WembleyStadium ;
+    schema1:performer ex:DavidBowie ;
+    schema1:startDate "1985-07-13"^^xsd:date ;
+    schema1:superEvent ex:LiveAid1985 ;
+    schema1:video <https://www.youtube.com/watch?v=dsnTZHQZzN4&list=PLb3zO5A0ktftbHu6804HNZ3kEFZn_6P3t> ;
+    owl:sameAs <https://musicbrainz.org/release/5d895e21-2df0-4807-b6cb-e98f3a853c83>,
+        <https://www.setlist.fm/setlist/david-bowie/1985/wembley-stadium-london-england-1bd59920.html> .
+
+ex:Queen_LiveAidWembley_Performance a ex:Performance ;
+    ex:hasSegment ex:queen_segment_1,
+        ex:queen_segment_2,
+        ex:queen_segment_3,
+        ex:queen_segment_4,
+        ex:queen_segment_5,
+        ex:queen_segment_6,
+        ex:queen_segment_7 ;
+    ex:performedAt ex:LiveAidWembley1985 ;
+    ex:performer ex:Queen ;
+    schema1:video <https://www.youtube.com/watch?v=6OsCheVsdTQ&pp=ygUaUXVlZW4gbGl2ZSBhaWQgcGVyZm9ybWFuY2U%3D> ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Queen%27s_performance_at_Live_Aid>,
+        <https://musicbrainz.org/release/746840c7-e95c-4a54-8034-d371cf5664e9>,
+        <https://www.setlist.fm/setlist/queen/1985/wembley-stadium-london-england-5bd47f28.html> .
+

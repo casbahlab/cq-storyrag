@@ -1,0 +1,203 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://example.org/> .
+
+# Parent Event
+:LiveAid1985 a :BroadcastMusicEvent ;
+    schema:subEvent :LiveAid_Wembley , :LiveAid_JFK ;
+    schema:beneficiary :FamineReliefEthiopia ;
+    schema:organizer :BobGeldof , :MidgeUre ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q193740> ,
+               <https://musicbrainz.org/event/8e0ff16a-757f-4e16-9877-4c4131621a8b> .
+
+# Sub-event: Wembley
+:LiveAid_Wembley a :CharitableConcert ;
+    schema:venue :WembleyStadium ;
+    schema:performer :Queen , :DavidBowie ;
+    schema:broadcastService :BBCBroadcast ;
+    schema:superEvent :LiveAid1985 ;
+    owl:sameAs <https://musicbrainz.org/event/08657c50-71c6-4a3d-b7c4-3db6efbf07fd> .
+
+# Sub-event: JFK
+:LiveAid_JFK a :BroadcastMusicEvent ;
+    schema:venue :JFKStadium ;
+    schema:performer :Madonna , :BlackSabbath ;
+    schema:broadcastService :NBCAmericaBroadcast ;
+    schema:superEvent :LiveAid1985 ;
+    owl:sameAs <https://musicbrainz.org/event/e4ea9ddd-3fbb-47d0-b570-add507bf0c27> .
+
+# Venues
+:WembleyStadium a schema:Place ;
+    schema:photo <https://upload.wikimedia.org/wikipedia/commons/d/d2/London_Wembley.jpg> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q43279> .
+
+:JFKStadium a schema:Place ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q2390739> .
+
+:BobGeldof a schema:Person ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q216608> .
+
+:MidgeUre a schema:Person ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q355382> .
+
+:FamineEthiopia1983_85 a :Cause ;
+    rdfs:label "1983–1985 Famine in Ethiopia" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1637896> .
+
+:LiveAid1985 :cause :FamineEthiopia1983_85 .
+
+:BBCBroadcast a schema:BroadcastService ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q152219> .
+
+:Queen a :MusicArtist ;
+    rdfs:label "Queen" ;
+    owl:sameAs <https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3> , <https://www.wikidata.org/wiki/Q15862> .
+
+:DavidBowie a :MusicArtist ;
+    rdfs:label "David Bowie" ;
+    owl:sameAs <https://musicbrainz.org/artist/5441c29d-3602-4898-b1a1-b77fa23b8e50> , <https://www.wikidata.org/wiki/Q5383> .
+
+:LiveAidWembley1985 a :BroadcastMusicEvent ;
+    :hasPerformer :Queen , :DavidBowie .
+
+:Madonna a :MusicArtist ;
+    rdfs:label "Madonna" ;
+    owl:sameAs <https://musicbrainz.org/artist/79239441-bfd5-4981-a70c-55c3f15c1287> , <https://www.wikidata.org/wiki/Q1744> .
+
+:BlackSabbath a :MusicArtist ;
+    rdfs:label "Black Sabbath" ;
+    owl:sameAs <https://musicbrainz.org/artist/5182c1d9-c7d2-4dad-afa0-ccfeada921a8> , <https://www.wikidata.org/wiki/Q47670> .
+
+:LiveAidJFK1985 a :BroadcastMusicEvent ;
+    :hasPerformer :Madonna , :BlackSabbath .
+
+:Queen_LiveAidWembley_Performance a :Performance ;
+    :performer :Queen ;
+    :performedAt :LiveAidWembley1985 ;
+    schema:video <https://www.youtube.com/watch?v=6OsCheVsdTQ&pp=ygUaUXVlZW4gbGl2ZSBhaWQgcGVyZm9ybWFuY2U%3D> ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Queen%27s_performance_at_Live_Aid>,
+                 <https://www.setlist.fm/setlist/queen/1985/wembley-stadium-london-england-5bd47f28.html>,
+                 <https://musicbrainz.org/release/746840c7-e95c-4a54-8034-d371cf5664e9> ;
+    :hasSegment :queen_segment_1, :queen_segment_2, :queen_segment_3,
+                :queen_segment_4, :queen_segment_5, :queen_segment_6,
+                :queen_segment_7 .
+
+# -- Queen's performance segments --
+
+# --- MusicRecordings as per schema.org ---
+:recording_ay_oh a schema:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/02d8dacd-23a3-44a0-bf6a-55165c3c41bb> .
+
+:recording_crazy_little_thing a schema:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/eecc24a7-c176-4d68-9d47-737e3917ec34> .
+
+:recording_we_will_rock_you a schema:MusicRecording ;
+    schema:name "We Will Rock You" ;
+    owl:sameAs <https://musicbrainz.org/recording/2599eb27-f9d2-4132-b6a1-dbfa4d5f1a7c> ;
+    schema:url <https://genius.com/Queen-we-will-rock-you-lyrics> ;
+    schema:mainEntityOfPage <https://www.songfacts.com/facts/queen/we-will-rock-you> .
+
+:BohemianRhapsody a schema:MusicRecording ;
+    schema:name "Bohemian Rhapsody" ;
+    schema:sameAs <https://musicbrainz.org/recording/5c5e6e29-a48c-4050-a0f8-898e0a92ef0b> ;
+    schema:url <https://genius.com/Queen-bohemian-rhapsody-lyrics> ;
+    schema:mainEntityOfPage <https://www.songfacts.com/facts/queen/bohemian-rhapsody> .
+
+:RadioGaGa a schema:MusicRecording ;
+    schema:name "Radio Ga Ga" ;
+    schema:sameAs <https://musicbrainz.org/recording/c1306858-c92f-490f-849d-e4063ffcd77d> ;
+    schema:url <https://genius.com/Queen-radio-ga-ga-lyrics> ;
+    schema:mainEntityOfPage <https://www.songfacts.com/facts/queen/radio-ga-ga> .
+
+:HammerToFall a schema:MusicRecording ;
+    schema:name "Hammer to Fall" ;
+    schema:sameAs <https://musicbrainz.org/recording/a1880648-3a8e-404b-9cd6-b3b503fb79cb> ;
+    schema:url <https://genius.com/Queen-hammer-to-fall-lyrics> ;
+    schema:mainEntityOfPage <https://www.songfacts.com/facts/queen/hammer-to-fall> .
+
+:WeAreTheChampions a schema:MusicRecording ;
+    schema:name "We Are the Champions" ;
+    schema:sameAs <https://musicbrainz.org/recording/47673c9d-e0f0-4ebf-bfe5-8798dea90520> ;
+    schema:url <https://genius.com/Queen-we-are-the-champions-lyrics> ;
+    schema:mainEntityOfPage <https://www.songfacts.com/facts/queen/we-are-the-champions> .
+
+# --- Performance Segments ---
+:queen_segment_1 a :PerformanceSegment ;
+    :performedSong :recording_bohemian_rhapsody ;
+    :segmentOf :Queen_LiveAidWembley_Performance .
+
+:queen_segment_2 a :PerformanceSegment ;
+    :performedSong :recording_radio_gaga ;
+    :segmentOf :Queen_LiveAidWembley_Performance .
+
+:queen_segment_3 a :PerformanceSegment ;
+    :performedSong :recording_ay_oh ;
+    :segmentOf :Queen_LiveAidWembley_Performance .
+
+:queen_segment_4 a :PerformanceSegment ;
+    :performedSong :recording_hammer_to_fall ;
+    :segmentOf :Queen_LiveAidWembley_Performance .
+
+:queen_segment_5 a :PerformanceSegment ;
+    :performedSong :recording_crazy_little_thing ;
+    :segmentOf :Queen_LiveAidWembley_Performance .
+
+:queen_segment_6 a :PerformanceSegment ;
+    :performedSong :recording_we_will_rock_you ;
+    :segmentOf :Queen_LiveAidWembley_Performance .
+
+:queen_segment_7 a :PerformanceSegment ;
+    :performedSong :recording_we_are_the_champions ;
+    :segmentOf :Queen_LiveAidWembley_Performance .
+
+
+:DavidBowie_LiveAidWembley_Performance a :Performance ;
+    schema:performer :DavidBowie ;
+    schema:location :WembleyStadium ;
+    schema:superEvent :LiveAid1985 ;
+    schema:startDate "1985-07-13"^^xsd:date ;
+    schema:eventType "LiveAidWembleyPerformance" ;
+    schema:video <https://www.youtube.com/watch?v=dsnTZHQZzN4&list=PLb3zO5A0ktftbHu6804HNZ3kEFZn_6P3t> ;
+    owl:sameAs <https://musicbrainz.org/release/5d895e21-2df0-4807-b6cb-e98f3a853c83>,
+    <https://www.setlist.fm/setlist/david-bowie/1985/wembley-stadium-london-england-1bd59920.html> .
+
+# --- MusicRecordings ---
+:recording_tvc15 a schema:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/0a10e44f-5f5b-407e-8bc5-6cc99de0d258> .
+
+:recording_rebel_rebel a schema:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/fc1debd2-2935-4f6d-a58b-c89dd57910c0> .
+
+:recording_modern_love a schema:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/4f1859e8-f5c1-4c40-b4ff-d5d053f83cb5> .
+
+:recording_heroes a schema:MusicRecording ;
+    owl:sameAs <https://musicbrainz.org/recording/03ab3eb8-3b53-4704-b93a-6450b1089b70> .
+
+
+# --- Performance Segments (David Bowie @ Live Aid Wembley) ---
+:bowie_segment_1 a :PerformanceSegment ;
+    :performedSong :recording_tvc15 ;
+    :segmentOf :DavidBowie_LiveAidWembley_Performance .
+
+:bowie_segment_2 a :PerformanceSegment ;
+    :performedSong :recording_rebel_rebel ;
+    :segmentOf :DavidBowie_LiveAidWembley_Performance .
+
+:bowie_segment_3 a :PerformanceSegment ;
+    :performedSong :recording_modern_love ;
+    :segmentOf :DavidBowie_LiveAidWembley_Performance .
+
+:bowie_segment_4 a :PerformanceSegment ;
+    :performedSong :recording_heroes ;
+    :segmentOf :DavidBowie_LiveAidWembley_Performance .
+
+
+
+
+
+
+

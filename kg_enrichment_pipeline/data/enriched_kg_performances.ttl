@@ -1,0 +1,586 @@
+@prefix ex: <http://example.org/liveaid/> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:BobDylanPerformance1 a mm:LivePerformance ;
+    rdfs:label "Bob Dylan Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:Philadelphia ;
+    schema:performer <http://www.wikidata.org/entity/Q392> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q392> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:BobDylan ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:BlowinintheWind .
+
+ex:BryanAdamsPerformance1 a mm:LivePerformance ;
+    rdfs:label "Bryan Adams Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q482907> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q482907> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:BryanAdams ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:Summerof69 .
+
+ex:DavidBowiePerformance1 a mm:LivePerformance ;
+    rdfs:label "David Bowie Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q5383> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5383> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:DavidBowie ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:Heroes .
+
+ex:DavidBowiePerformance2 a mm:LivePerformance ;
+    rdfs:label "David Bowie Live Aid Performance 2" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q5383> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5383> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:DavidBowie ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:RebelRebel .
+
+ex:DireStraitsPerformance1 a mm:LivePerformance ;
+    rdfs:label "Dire Straits Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q50040> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50040> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:DireStraits ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:SultansofSwing .
+
+ex:EltonJohnPerformance1 a mm:LivePerformance ;
+    rdfs:label "Elton John Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:Philadelphia ;
+    schema:performer <http://www.wikidata.org/entity/Q2808> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2808> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:EltonJohn ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:RocketMan .
+
+ex:EltonJohnPerformance2 a mm:LivePerformance ;
+    rdfs:label "Elton John Live Aid Performance 2" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:Philadelphia ;
+    schema:performer <http://www.wikidata.org/entity/Q2808> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2808> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:EltonJohn ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:BennieandtheJets .
+
+ex:EricClaptonPerformance1 a mm:LivePerformance ;
+    rdfs:label "Eric Clapton Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q48187> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q48187> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:EricClapton ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:Layla .
+
+ex:JFKStadium a schema:Place ;
+    rdfs:label "JFK Stadium" ;
+    schema:audience 89000 .
+
+ex:LedZeppelinPerformance1 a mm:LivePerformance ;
+    rdfs:label "Led Zeppelin Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:Philadelphia ;
+    schema:performer <http://www.wikidata.org/entity/Q2331> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2331> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:LedZeppelin ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:StairwaytoHeaven .
+
+ex:MadonnaPerformance1 a mm:LivePerformance ;
+    rdfs:label "Madonna Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:Philadelphia ;
+    schema:performer <http://www.wikidata.org/entity/Q1744> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1744> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:Madonna ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:LikeaVirgin .
+
+ex:PaulMcCartneyPerformance1 a mm:LivePerformance ;
+    rdfs:label "Paul McCartney Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q2599> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2599> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:PaulMcCartney ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:LetItBe .
+
+ex:PhilCollinsPerformance1 a mm:LivePerformance ;
+    rdfs:label "Phil Collins Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q144622> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q144622> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:PhilCollins ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:IntheAirTonight .
+
+ex:QueenPerformance1 a mm:LivePerformance ;
+    rdfs:label "Queen Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q15862> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15862> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:Queen ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:BohemianRhapsody .
+
+ex:QueenPerformance2 a mm:LivePerformance ;
+    rdfs:label "Queen Live Aid Performance 2" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q15862> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15862> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:Queen ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:RadioGaGa .
+
+ex:StingPerformance1 a mm:LivePerformance ;
+    rdfs:label "Sting Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q483203> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q483203> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:Sting ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:Roxanne .
+
+ex:TheCarsPerformance1 a mm:LivePerformance ;
+    rdfs:label "The Cars Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:Philadelphia ;
+    schema:performer <http://www.wikidata.org/entity/Q858388> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q858388> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:TheCars ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:Drive .
+
+ex:TheWhoPerformance1 a mm:LivePerformance ;
+    rdfs:label "The Who Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:Philadelphia ;
+    schema:performer <http://www.wikidata.org/entity/Q93346> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q93346> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:TheWho ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:MyGeneration .
+
+ex:TheWhoPerformance2 a mm:LivePerformance ;
+    rdfs:label "The Who Live Aid Performance 2" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:Philadelphia ;
+    schema:performer <http://www.wikidata.org/entity/Q93346> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q93346> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:TheWho ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:PinballWizard .
+
+ex:U2Performance1 a mm:LivePerformance ;
+    rdfs:label "U2 Live Aid Performance 1" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q396> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q396> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:U2 ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:SundayBloodySunday .
+
+ex:U2Performance2 a mm:LivePerformance ;
+    rdfs:label "U2 Live Aid Performance 2" ;
+    schema:inEvent <http://www.wikidata.org/entity/Q184199> ;
+    schema:location ex:London ;
+    schema:performer <http://www.wikidata.org/entity/Q396> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q396> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    mm:hasAgentRole ex:U2 ;
+    mm:hasEvent ex:LiveAid1985 ;
+    mm:performedWork ex:Bad .
+
+ex:WembleyStadium a schema:Place ;
+    rdfs:label "Wembley Stadium" ;
+    schema:audience 72000 .
+
+ex:ABC a schema:BroadcastService ;
+    rdfs:label "ABC" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/American_Broadcasting_Company> ;
+    schema:sameAs <https://www.wikidata.org/entity/Q169889> .
+
+ex:BBC a schema:BroadcastService ;
+    rdfs:label "BBC" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/BBC> ;
+    schema:sameAs <https://www.wikidata.org/entity/Q9531> .
+
+ex:Bad a mm:MusicalWork ;
+    rdfs:label "Bad" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Bad_(U2_song)> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2602667>,
+        <https://musicbrainz.org/work/62d0a051-20ff-3fce-961c-c9157e38a07d> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Bad_(U2_song)> .
+
+ex:BennieandtheJets a mm:MusicalWork ;
+    rdfs:label "Bennie and the Jets" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Bennie_and_the_Jets> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2560178>,
+        <https://musicbrainz.org/work/6ef8fb46-a4dc-312f-9a18-e21682fd7550> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Bennie_and_the_Jets> .
+
+ex:BlowinintheWind a mm:MusicalWork ;
+    rdfs:label "Blowin' in the Wind" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Blowin'_in_the_Wind> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q640529>,
+        <https://musicbrainz.org/work/f5a12d42-00a1-3bc2-8ed1-df2506ea3db2> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Blowin%27_in_the_Wind> .
+
+ex:BobDylan a mm:MusicArtist ;
+    rdfs:label "Bob Dylan" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Bob_Dylan> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q392>,
+        <https://musicbrainz.org/artist/72c536dc-7137-4477-a521-567eeb840fa8>,
+        <https://www.wikidata.org/wiki/Q392> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Bob_Dylan> ;
+    mm:hasGenre ex:Rock .
+
+ex:BohemianRhapsody a mm:MusicalWork ;
+    rdfs:label "Bohemian Rhapsody" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Bohemian_Rhapsody> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q187745>,
+        <https://musicbrainz.org/recording/f1248820-11bf-4c35-8b70-0660b05325e5>,
+        <https://musicbrainz.org/work/41c94a08-a551-3c86-bb17-d9a52e3a618b>,
+        <https://www.wikidata.org/wiki/Q187745> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Bohemian_Rhapsody> .
+
+ex:BrianMay a mm:MusicArtist ;
+    rdfs:label "Brian May" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15873>,
+        <https://musicbrainz.org/artist/6d24f102-5c43-453a-8664-4ee092f441cf> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Brian_May> .
+
+ex:BryanAdams a mm:MusicArtist ;
+    rdfs:label "Bryan Adams" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Bryan_Adams> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q482907>,
+        <https://musicbrainz.org/artist/4dbf5678-7a31-406a-abbe-232f8ac2cd63>,
+        <https://www.wikidata.org/wiki/Q482907> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Bryan_Adams> ;
+    mm:hasGenre ex:Rock .
+
+ex:DireStraits a mm:MusicArtist ;
+    rdfs:label "Dire Straits" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Dire_Straits> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q50040>,
+        <https://musicbrainz.org/artist/614e3804-7d34-41ba-857f-811bad7c2b7a>,
+        <https://www.wikidata.org/wiki/Q50040> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Dire_Straits> ;
+    mm:hasGenre ex:Rock .
+
+ex:Drive a mm:MusicalWork ;
+    rdfs:label "Drive" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Drive_(The_Cars_song)> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q169987>,
+        <https://musicbrainz.org/work/4cbcd04d-3b93-30b1-bd33-3ace8d4a1826> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Drive_(The_Cars_song)> .
+
+ex:EricClapton a mm:MusicArtist ;
+    rdfs:label "Eric Clapton" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Eric_Clapton> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q48187>,
+        <https://musicbrainz.org/artist/618b6900-0618-4f1e-b835-bccb17f84294>,
+        <https://www.wikidata.org/wiki/Q48187> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Eric_Clapton> ;
+    mm:hasGenre ex:Rock .
+
+ex:FreddieMercury a mm:MusicArtist ;
+    rdfs:label "Freddie Mercury" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15869>,
+        <https://musicbrainz.org/artist/022589ac-7177-460d-a178-9976cf70e29f> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Freddie_Mercury> .
+
+ex:Heroes a mm:MusicalWork ;
+    rdfs:label "Heroes" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/%22Heroes%22_(David_Bowie_song)> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q701655>,
+        <https://musicbrainz.org/work/e2b01286-a914-3eb9-a0ab-89e0659b878c> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/%22Heroes%22_(David_Bowie_song)> .
+
+ex:IntheAirTonight a mm:MusicalWork ;
+    rdfs:label "In the Air Tonight" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/In_the_Air_Tonight> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q546425>,
+        <https://musicbrainz.org/work/b9a05cea-1b4d-3139-980e-a48e14537800> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/In_the_Air_Tonight> .
+
+ex:JohnDeacon a mm:MusicArtist ;
+    rdfs:label "John Deacon" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q192103>,
+        <https://musicbrainz.org/artist/a0b77a10-ecff-4b84-b1f3-008391038d67> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/John_Deacon> .
+
+ex:Layla a mm:MusicalWork ;
+    rdfs:label "Layla" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Layla> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q923966>,
+        <https://musicbrainz.org/work/beb76331-bb4b-30b3-b4f4-ca80742ebd47> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Layla> .
+
+ex:LedZeppelin a mm:MusicArtist ;
+    rdfs:label "Led Zeppelin" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Led_Zeppelin> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2331>,
+        <https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3>,
+        <https://www.wikidata.org/wiki/Q2331> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Led_Zeppelin> ;
+    mm:hasGenre ex:Rock .
+
+ex:LetItBe a mm:MusicalWork ;
+    rdfs:label "Let It Be" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Let_It_Be_(song)> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q184259>,
+        <https://musicbrainz.org/work/ef5b9074-84d2-3e46-81ba-cdbe57898033> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Let_It_Be_(song)> .
+
+ex:LikeaVirgin a mm:MusicalWork ;
+    rdfs:label "Like a Virgin" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Like_a_Virgin_(song)> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q542497>,
+        <https://musicbrainz.org/work/2ae1284a-3eb2-3b00-bb8c-9597593f2309> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Like_a_Virgin_(song)> .
+
+ex:MTV a schema:BroadcastService ;
+    rdfs:label "MTV" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/MTV> ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q43359> .
+
+ex:Madonna a mm:MusicArtist ;
+    rdfs:label "Madonna" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Madonna> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1744>,
+        <https://musicbrainz.org/artist/79239441-bfd5-4981-a70c-55c3f15c1287>,
+        <https://www.wikidata.org/wiki/Q1744> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Madonna> ;
+    mm:hasGenre ex:Pop .
+
+ex:MyGeneration a mm:MusicalWork ;
+    rdfs:label "My Generation" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/My_Generation> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q8353114>,
+        <https://musicbrainz.org/work/a55b5d5b-cc47-304c-98c1-460fe91e1cd7> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/My_Generation> .
+
+ex:PaulMcCartney a mm:MusicArtist ;
+    rdfs:label "Paul McCartney" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Paul_McCartney> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2599>,
+        <https://musicbrainz.org/artist/ba550d0e-adac-4864-b88b-407cab5e76af>,
+        <https://www.wikidata.org/wiki/Q2599> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Paul_McCartney> ;
+    mm:hasGenre ex:PopRock .
+
+ex:PhilCollins a mm:MusicArtist ;
+    rdfs:label "Phil Collins" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Phil_Collins> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q144622>,
+        <https://musicbrainz.org/artist/401c3991-b76b-499d-8082-9f2df958ef78>,
+        <https://www.wikidata.org/wiki/Q144622> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Phil_Collins> ;
+    mm:hasGenre ex:PopRock .
+
+ex:PinballWizard a mm:MusicalWork ;
+    rdfs:label "Pinball Wizard" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Pinball_Wizard> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2321342>,
+        <https://musicbrainz.org/work/6ef8cd26-d0a7-36a1-84f5-5d872364d7c6> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Pinball_Wizard> .
+
+ex:Pop a mm:MusicGenre ;
+    rdfs:label "Pop" .
+
+ex:RadioGaGa a mm:MusicalWork ;
+    rdfs:label "Radio Ga Ga" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Radio_Ga_Ga> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q605031>,
+        <https://musicbrainz.org/work/2c76fe20-59d5-3dd9-93ee-be2107ac977c> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Radio_Ga_Ga> .
+
+ex:RebelRebel a mm:MusicalWork ;
+    rdfs:label "Rebel Rebel" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Rebel_Rebel> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2190364>,
+        <https://musicbrainz.org/work/dc6d909d-a39f-3932-a194-19703564743e> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Rebel_Rebel> .
+
+ex:RocketMan a mm:MusicalWork ;
+    rdfs:label "Rocket Man" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Rocket_Man_(song)> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q56070897>,
+        <https://musicbrainz.org/work/af9bc306-eb56-3eb1-9d37-eb46ceca1e50> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Rocket_Man_(song)> .
+
+ex:RogerTaylor a mm:MusicArtist ;
+    rdfs:label "Roger Taylor" ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15880>,
+        <https://musicbrainz.org/artist/558302b1-07ae-4be1-9edb-2a2b1f036313> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Roger_Taylor_(Queen_drummer)> .
+
+ex:Roxanne a mm:MusicalWork ;
+    rdfs:label "Roxanne" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Roxanne_(The_Police_song)> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1631268>,
+        <https://musicbrainz.org/work/0ddba90a-83cd-3edc-9335-14460903952e> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Roxanne_(The_Police_song)> .
+
+ex:StairwaytoHeaven a mm:MusicalWork ;
+    rdfs:label "Stairway to Heaven" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Stairway_to_Heaven> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q192023>,
+        <https://musicbrainz.org/work/968ee3c5-21fa-35de-88f9-bd1c300ac3ee> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Stairway_to_Heaven> .
+
+ex:Sting a mm:MusicArtist ;
+    rdfs:label "Sting" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Sting> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q483203>,
+        <https://musicbrainz.org/artist/f8306763-5570-4217-b041-fab869331b18>,
+        <https://www.wikidata.org/wiki/Q483203> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Sting_(musician)> ;
+    mm:hasGenre ex:Rock .
+
+ex:SultansofSwing a mm:MusicalWork ;
+    rdfs:label "Sultans of Swing" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Sultans_of_Swing> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2270916>,
+        <https://musicbrainz.org/work/8626823c-47f9-3053-a9c5-4b7e9343b5df> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Sultans_of_Swing> .
+
+ex:Summerof69 a mm:MusicalWork ;
+    rdfs:label "Summer of '69" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Summer_of_'69> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1472791>,
+        <https://musicbrainz.org/work/9604422e-df7a-3528-9c25-c3afa67678ae> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Summer_of_%2769> .
+
+ex:SundayBloodySunday a mm:MusicalWork ;
+    rdfs:label "Sunday Bloody Sunday" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Sunday_Bloody_Sunday> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q1779491>,
+        <https://musicbrainz.org/work/dc2c1143-4ef4-3406-873f-e3158942e363> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Sunday_Bloody_Sunday> .
+
+ex:TheCars a mm:MusicArtist ;
+    rdfs:label "The Cars" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/The_Cars> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q858388>,
+        <https://musicbrainz.org/artist/092b603f-eb4c-4958-b10e-02420de5885b>,
+        <https://www.wikidata.org/wiki/Q858388> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/The_Cars> ;
+    mm:hasGenre ex:Rock .
+
+ex:DavidBowie a mm:MusicArtist ;
+    rdfs:label "David Bowie" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/David_Bowie> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q5383>,
+        <https://musicbrainz.org/artist/5441c29d-3602-4898-b1a1-b77fa23b8e50>,
+        <https://www.wikidata.org/entity/DavidBowie> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/David_Bowie> ;
+    mm:hasGenre ex:Rock .
+
+ex:EltonJohn a mm:MusicArtist ;
+    rdfs:label "Elton John" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Elton_John> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q2808>,
+        <https://musicbrainz.org/artist/b83bc61f-8451-4a5d-8b8e-7e9ed295e822>,
+        <https://www.wikidata.org/wiki/Q2808> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Elton_John> ;
+    mm:hasGenre ex:PopRock .
+
+ex:Queen a mm:MusicArtist ;
+    rdfs:label "Queen" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Queen> ;
+    schema:foundingDate "1970-01-01"^^xsd:date ;
+    schema:member ex:BrianMay,
+        ex:FreddieMercury,
+        ex:JohnDeacon,
+        ex:RogerTaylor ;
+    schema:sameAs <http://www.wikidata.org/entity/Q15862>,
+        <https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3>,
+        <https://www.wikidata.org/entity/Queen> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/Queen_(band)> ;
+    mm:hasGenre ex:Rock .
+
+ex:TheWho a mm:MusicArtist ;
+    rdfs:label "The Who" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/The_Who> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q93346>,
+        <https://musicbrainz.org/artist/9fdaa16b-a6c4-4831-b87c-bc9ca8ce7eaa>,
+        <https://www.wikidata.org/wiki/Q93346> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/The_Who> ;
+    mm:hasGenre ex:Rock .
+
+ex:U2 a mm:MusicArtist ;
+    rdfs:label "U2" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/U2> ;
+    schema:sameAs <http://www.wikidata.org/entity/Q396>,
+        <https://musicbrainz.org/artist/a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432>,
+        <https://www.wikidata.org/wiki/Q396> ;
+    schema:subjectOf <https://en.wikipedia.org/wiki/U2> ;
+    mm:hasGenre ex:Rock .
+
+ex:PopRock a mm:MusicGenre ;
+    rdfs:label "Pop Rock" .
+
+ex:Philadelphia a schema:Place ;
+    rdfs:label "Philadelphia" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Philadelphia> ;
+    schema:containedInPlace <https://www.wikidata.org/entity/Q1345> .
+
+ex:Rock a mm:MusicGenre ;
+    rdfs:label "Rock" .
+
+ex:London a schema:Place ;
+    rdfs:label "London" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/London> ;
+    schema:containedInPlace <https://www.wikidata.org/entity/Q84> .
+
+ex:LiveAid1985 a ex:BroadcastMusicEvent ;
+    rdfs:label "Live Aid 1985" ;
+    rdfs:seeAlso <https://en.wikipedia.org/wiki/Live_Aid> ;
+    schema:amountRaised 125000000.0 ;
+    schema:audience 1500000000 ;
+    schema:location "London and Philadelphia" ;
+    schema:sameAs <https://www.wikidata.org/entity/Q180548> ;
+    schema:startDate "1985-07-13"^^xsd:date ;
+    mm:hasBroadcaster ex:ABC,
+        ex:BBC,
+        ex:MTV .
+

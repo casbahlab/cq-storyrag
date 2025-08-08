@@ -1,0 +1,1300 @@
+{
+  "rdf:type": {
+    "predicate": "rdf:type",
+    "subject_fragments": {
+      "LiveAid": 2,
+      "FamineRelief_Ethiopia": 1,
+      "Queen": 5,
+      "WembleyStadium": 3,
+      "DavidBowie": 3,
+      "London": 2,
+      "Philadelphia": 2,
+      "UnitedKingdom": 2,
+      "UnitedStates": 2,
+      "JFKStadium": 1,
+      "LiveAidBroadcast": 2,
+      "Television": 1,
+      "Radio": 1,
+      "BobGeldof": 1,
+      "MidgeUre": 1,
+      "QueenWembleyPerformance": 1,
+      "QueenLiveAidPerformance": 1,
+      "BohemianRhapsody": 1,
+      "RadioGaGa": 1,
+      "WeAreTheChampions": 1,
+      "Madonna": 3,
+      "MadonnaDebutPerformance": 1,
+      "FreddieMercury": 1,
+      "BrianMay": 1,
+      "RogerTaylor": 1,
+      "JohnDeacon": 1,
+      "EltonJohn": 2,
+      "SatelliteService": 1,
+      "TelevisionNetwork": 1,
+      "LogisticsAndCoordination": 1,
+      "Live8": 1,
+      "GlobalCitizenFestival": 1,
+      "FreddieMicStand": 1,
+      "DoTheyKnowItsChristmas": 1
+    },
+    "object_fragments": {
+      "Literal": 51
+    },
+    "inferred_subject_classes": [
+      "MusicArtist",
+      "Stadium",
+      "Madonna",
+      "MusicEvent",
+      "London",
+      "Philadelphia",
+      "UnitedKingdom",
+      "UnitedStates",
+      "LiveAidBroadcast",
+      "FamineRelief_Ethiopia",
+      "Television",
+      "Radio",
+      "BobGeldof",
+      "MidgeUre",
+      "Performance",
+      "BohemianRhapsody",
+      "RadioGaGa",
+      "WeAreTheChampions",
+      "FreddieMercury",
+      "BrianMay",
+      "RogerTaylor",
+      "JohnDeacon",
+      "SatelliteService",
+      "TelevisionNetwork",
+      "LogisticsAndCoordination",
+      "Live8",
+      "GlobalCitizenFestival",
+      "FreddieMicStand",
+      "DoTheyKnowItsChristmas"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:eventAttendanceMode": {
+    "predicate": "schema:eventAttendanceMode",
+    "subject_fragments": {
+      "LiveAid": 2
+    },
+    "object_fragments": {
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:audience": {
+    "predicate": "schema:audience",
+    "subject_fragments": {
+      "LiveAid": 2,
+      "QueenPerformance_LiveAid": 1,
+      "LiveAidBroadcast": 1,
+      "RadioGaGaAudienceChorus": 1
+    },
+    "object_fragments": {
+      "Literal": 1,
+      "LiveAudience": 1,
+      "GlobalAudience": 2,
+      "WembleyAudience": 1
+    },
+    "inferred_subject_classes": [
+      "MusicEvent",
+      "QueenPerformance_LiveAid",
+      "LiveAidBroadcast",
+      "RadioGaGaAudienceChorus"
+    ],
+    "inferred_object_classes": [
+      "Audience",
+      "Literal"
+    ]
+  },
+  "schema:fundedItem": {
+    "predicate": "schema:fundedItem",
+    "subject_fragments": {
+      "LiveAid": 2
+    },
+    "object_fragments": {
+      "HumanitarianRelief": 1,
+      "FamineRelief_Ethiopia": 1
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "HumanitarianRelief",
+      "FamineRelief_Ethiopia"
+    ]
+  },
+  "schema:additionalType": {
+    "predicate": "schema:additionalType",
+    "subject_fragments": {
+      "LiveAid": 1,
+      "QueenWembleyPerformance": 1,
+      "SatelliteNetwork": 1
+    },
+    "object_fragments": {
+      "BenefitConcert": 1,
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "MusicEvent",
+      "Performance",
+      "SatelliteNetwork"
+    ],
+    "inferred_object_classes": [
+      "Literal",
+      "BenefitConcert"
+    ]
+  },
+  "schema:spatialCoverage": {
+    "predicate": "schema:spatialCoverage",
+    "subject_fragments": {
+      "FamineRelief_Ethiopia": 1
+    },
+    "object_fragments": {
+      "Ethiopia": 1
+    },
+    "inferred_subject_classes": [
+      "FamineRelief_Ethiopia"
+    ],
+    "inferred_object_classes": [
+      "Ethiopia"
+    ]
+  },
+  "schema:performer": {
+    "predicate": "schema:performer",
+    "subject_fragments": {
+      "LiveAid": 2,
+      "QueenWembleyPerformance": 1,
+      "QueenLiveAidPerformance": 1,
+      "MadonnaDebutPerformance": 1,
+      "QueenPerformanceLiveAid": 2,
+      "FreddieDanceMoment": 1,
+      "RadioGaGaAudienceChorus": 1,
+      "QueenPerformance": 2
+    },
+    "object_fragments": {
+      "Queen": 7,
+      "DavidBowie": 1,
+      "Madonna": 1,
+      "FreddieMercury": 2
+    },
+    "inferred_subject_classes": [
+      "MusicEvent",
+      "QueenPerformanceLiveAid",
+      "Performance",
+      "FreddieDanceMoment",
+      "RadioGaGaAudienceChorus"
+    ],
+    "inferred_object_classes": [
+      "MusicArtist",
+      "FreddieMercury",
+      "Madonna"
+    ]
+  },
+  "schema:location": {
+    "predicate": "schema:location",
+    "subject_fragments": {
+      "LiveAid": 14,
+      "QueenWembleyPerformance": 1,
+      "MadonnaDebutPerformance": 1,
+      "LiveAidWembleyBroadcast": 2,
+      "LiveAidPhiladelphiaBroadcast": 1,
+      "FreddieMicStand": 2,
+      "BowieJacket": 1,
+      "EltonSunglasses": 1,
+      "WembleySegment": 1,
+      "PhiladelphiaSegment": 1,
+      "FreddieDanceMoment": 1,
+      "RadioGaGaAudienceChorus": 1,
+      "QueenPerformance": 2,
+      "GlobalAudience": 1,
+      "SatelliteBroadcast": 1,
+      "QueenLiveAidArtifacts": 1,
+      "Memorabilia_Queen": 1,
+      "Memorabilia_Bowie": 1,
+      "Memorabilia_EltonJohn": 1
+    },
+    "object_fragments": {
+      "WembleyStadium": 12,
+      "London": 2,
+      "Philadelphia": 2,
+      "UnitedKingdom": 2,
+      "UnitedStates": 2,
+      "JFKStadium": 4,
+      "NewYorkCity": 1,
+      "BritishMusicExperience": 4,
+      "150Countries": 1,
+      "Global": 1,
+      "BME": 4
+    },
+    "inferred_subject_classes": [
+      "MusicEvent",
+      "LiveAidWembleyBroadcast",
+      "FreddieMicStand",
+      "Performance",
+      "LiveAidPhiladelphiaBroadcast",
+      "BowieJacket",
+      "EltonSunglasses",
+      "WembleySegment",
+      "PhiladelphiaSegment",
+      "FreddieDanceMoment",
+      "RadioGaGaAudienceChorus",
+      "Audience",
+      "SatelliteBroadcast",
+      "QueenLiveAidArtifacts",
+      "Memorabilia_Queen",
+      "Memorabilia_Bowie",
+      "Memorabilia_EltonJohn"
+    ],
+    "inferred_object_classes": [
+      "Stadium",
+      "BritishMusicExperience",
+      "BME",
+      "London",
+      "Philadelphia",
+      "UnitedKingdom",
+      "UnitedStates",
+      "NewYorkCity",
+      "150Countries",
+      "Global"
+    ]
+  },
+  "schema:subjectOf": {
+    "predicate": "schema:subjectOf",
+    "subject_fragments": {
+      "LiveAid": 2
+    },
+    "object_fragments": {
+      "LiveAidBroadcast": 1,
+      "LogisticsAndCoordination": 1
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "LiveAidBroadcast",
+      "LogisticsAndCoordination"
+    ]
+  },
+  "schema:broadcastOfEvent": {
+    "predicate": "schema:broadcastOfEvent",
+    "subject_fragments": {
+      "LiveAidBroadcast": 2,
+      "LiveAid": 1
+    },
+    "object_fragments": {
+      "LiveAid": 2,
+      "SatelliteBroadcast": 1
+    },
+    "inferred_subject_classes": [
+      "LiveAidBroadcast",
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "MusicEvent",
+      "SatelliteBroadcast"
+    ]
+  },
+  "schema:inLanguage": {
+    "predicate": "schema:inLanguage",
+    "subject_fragments": {
+      "LiveAidBroadcast": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "LiveAidBroadcast"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:hasBroadcastChannel": {
+    "predicate": "schema:hasBroadcastChannel",
+    "subject_fragments": {
+      "LiveAidBroadcast": 2
+    },
+    "object_fragments": {
+      "Television": 1,
+      "Radio": 1
+    },
+    "inferred_subject_classes": [
+      "LiveAidBroadcast"
+    ],
+    "inferred_object_classes": [
+      "Television",
+      "Radio"
+    ]
+  },
+  "schema:organizer": {
+    "predicate": "schema:organizer",
+    "subject_fragments": {
+      "LiveAid": 4
+    },
+    "object_fragments": {
+      "BobGeldof": 2,
+      "MidgeUre": 2
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "BobGeldof",
+      "MidgeUre"
+    ]
+  },
+  "schema:isPartOf": {
+    "predicate": "schema:isPartOf",
+    "subject_fragments": {
+      "QueenWembleyPerformance": 1,
+      "QueenLiveAidPerformance": 1,
+      "LiveAidWembleyBroadcast": 2,
+      "LiveAidPhiladelphiaBroadcast": 1,
+      "QueenPerformanceLiveAid": 2,
+      "LiveAidBroadcast": 2,
+      "QueenPerformance": 2,
+      "FreddieDanceMoment": 1,
+      "RadioGaGaAudienceChorus": 1,
+      "WembleyBroadcast": 1,
+      "PhiladelphiaBroadcast": 1
+    },
+    "object_fragments": {
+      "LiveAid": 13,
+      "QueenPerformance": 2
+    },
+    "inferred_subject_classes": [
+      "LiveAidWembleyBroadcast",
+      "QueenPerformanceLiveAid",
+      "LiveAidBroadcast",
+      "Performance",
+      "LiveAidPhiladelphiaBroadcast",
+      "FreddieDanceMoment",
+      "RadioGaGaAudienceChorus",
+      "WembleyBroadcast",
+      "PhiladelphiaBroadcast"
+    ],
+    "inferred_object_classes": [
+      "MusicEvent",
+      "Performance"
+    ]
+  },
+  "schema:workPerformed": {
+    "predicate": "schema:workPerformed",
+    "subject_fragments": {
+      "QueenLiveAidPerformance": 3,
+      "SetlistEntry3": 1
+    },
+    "object_fragments": {
+      "BohemianRhapsody": 1,
+      "RadioGaGa": 1,
+      "WeAreTheChampions": 1,
+      "HammerToFall": 1
+    },
+    "inferred_subject_classes": [
+      "Performance",
+      "SetlistEntry3"
+    ],
+    "inferred_object_classes": [
+      "BohemianRhapsody",
+      "RadioGaGa",
+      "WeAreTheChampions",
+      "HammerToFall"
+    ]
+  },
+  "schema:birthDate": {
+    "predicate": "schema:birthDate",
+    "subject_fragments": {
+      "Madonna": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "Madonna"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:startDate": {
+    "predicate": "schema:startDate",
+    "subject_fragments": {
+      "MadonnaDebutPerformance": 1,
+      "LiveAid": 2
+    },
+    "object_fragments": {
+      "Literal": 3
+    },
+    "inferred_subject_classes": [
+      "MusicEvent",
+      "Performance"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:foundingDate": {
+    "predicate": "schema:foundingDate",
+    "subject_fragments": {
+      "Queen": 2
+    },
+    "object_fragments": {
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "MusicArtist"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:foundingLocation": {
+    "predicate": "schema:foundingLocation",
+    "subject_fragments": {
+      "Queen": 2
+    },
+    "object_fragments": {
+      "London": 2
+    },
+    "inferred_subject_classes": [
+      "MusicArtist"
+    ],
+    "inferred_object_classes": [
+      "London"
+    ]
+  },
+  "schema:containedInPlace": {
+    "predicate": "schema:containedInPlace",
+    "subject_fragments": {
+      "London": 1,
+      "WembleyStadium": 1,
+      "JFKStadium": 1
+    },
+    "object_fragments": {
+      "UK": 1,
+      "London": 1,
+      "Philadelphia": 1
+    },
+    "inferred_subject_classes": [
+      "London",
+      "Stadium"
+    ],
+    "inferred_object_classes": [
+      "UK",
+      "London",
+      "Philadelphia"
+    ]
+  },
+  "schema:member": {
+    "predicate": "schema:member",
+    "subject_fragments": {
+      "Queen": 8
+    },
+    "object_fragments": {
+      "FreddieMercury": 2,
+      "BrianMay": 2,
+      "RogerTaylor": 2,
+      "JohnDeacon": 2
+    },
+    "inferred_subject_classes": [
+      "MusicArtist"
+    ],
+    "inferred_object_classes": [
+      "FreddieMercury",
+      "BrianMay",
+      "RogerTaylor",
+      "JohnDeacon"
+    ]
+  },
+  "schema:performerIn": {
+    "predicate": "schema:performerIn",
+    "subject_fragments": {
+      "Madonna": 1,
+      "EltonJohn": 2,
+      "DavidBowie": 2,
+      "Queen": 3
+    },
+    "object_fragments": {
+      "LiveAid": 8
+    },
+    "inferred_subject_classes": [
+      "MusicArtist",
+      "Madonna"
+    ],
+    "inferred_object_classes": [
+      "MusicEvent"
+    ]
+  },
+  "schema:genre": {
+    "predicate": "schema:genre",
+    "subject_fragments": {
+      "Queen": 13,
+      "DoTheyKnowItsChristmas": 1
+    },
+    "object_fragments": {
+      "Literal": 4,
+      "ProgressiveRock": 2,
+      "HardRock": 2,
+      "HeavyMetal": 2,
+      "ArenaRock": 2,
+      "PopRock": 2
+    },
+    "inferred_subject_classes": [
+      "MusicArtist",
+      "DoTheyKnowItsChristmas"
+    ],
+    "inferred_object_classes": [
+      "Literal",
+      "ProgressiveRock",
+      "HardRock",
+      "HeavyMetal",
+      "ArenaRock",
+      "PopRock"
+    ]
+  },
+  "schema:subEvent": {
+    "predicate": "schema:subEvent",
+    "subject_fragments": {
+      "LiveAid": 3
+    },
+    "object_fragments": {
+      "LiveAidBroadcast": 1,
+      "WembleySegment": 1,
+      "PhiladelphiaSegment": 1
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "LiveAidBroadcast",
+      "WembleySegment",
+      "PhiladelphiaSegment"
+    ]
+  },
+  "schema:broadcastService": {
+    "predicate": "schema:broadcastService",
+    "subject_fragments": {
+      "LiveAidBroadcast": 2
+    },
+    "object_fragments": {
+      "SatelliteService": 1,
+      "TelevisionNetwork": 1
+    },
+    "inferred_subject_classes": [
+      "LiveAidBroadcast"
+    ],
+    "inferred_object_classes": [
+      "SatelliteService",
+      "TelevisionNetwork"
+    ]
+  },
+  "schema:broadcastDisplayName": {
+    "predicate": "schema:broadcastDisplayName",
+    "subject_fragments": {
+      "SatelliteService": 1,
+      "TelevisionNetwork": 1
+    },
+    "object_fragments": {
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "SatelliteService",
+      "TelevisionNetwork"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:about": {
+    "predicate": "schema:about",
+    "subject_fragments": {
+      "LogisticsAndCoordination": 1,
+      "LiveAid": 1,
+      "FreddieDanceMoment": 1,
+      "RadioGaGaAudienceChorus": 1,
+      "QueenLiveAidArtifacts": 1
+    },
+    "object_fragments": {
+      "Literal": 1,
+      "FamineReliefEthiopia": 1,
+      "HammerToFall": 1,
+      "RadioGaGa": 1,
+      "QueenPerformance": 1
+    },
+    "inferred_subject_classes": [
+      "LogisticsAndCoordination",
+      "MusicEvent",
+      "FreddieDanceMoment",
+      "RadioGaGaAudienceChorus",
+      "QueenLiveAidArtifacts"
+    ],
+    "inferred_object_classes": [
+      "Literal",
+      "FamineReliefEthiopia",
+      "HammerToFall",
+      "RadioGaGa",
+      "Performance"
+    ]
+  },
+  "schema:keywords": {
+    "predicate": "schema:keywords",
+    "subject_fragments": {
+      "LogisticsAndCoordination": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "LogisticsAndCoordination"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:influenced": {
+    "predicate": "schema:influenced",
+    "subject_fragments": {
+      "LiveAid": 2
+    },
+    "object_fragments": {
+      "Live8": 1,
+      "GlobalCitizenFestival": 1
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "Live8",
+      "GlobalCitizenFestival"
+    ]
+  },
+  "schema:reviewedBy": {
+    "predicate": "schema:reviewedBy",
+    "subject_fragments": {
+      "QueenPerformance_LiveAid": 1
+    },
+    "object_fragments": {
+      "MediaCritics": 1
+    },
+    "inferred_subject_classes": [
+      "QueenPerformance_LiveAid"
+    ],
+    "inferred_object_classes": [
+      "MediaCritics"
+    ]
+  },
+  "schema:review": {
+    "predicate": "schema:review",
+    "subject_fragments": {
+      "QueenPerformance_LiveAid": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "QueenPerformance_LiveAid"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:description": {
+    "predicate": "schema:description",
+    "subject_fragments": {
+      "LiveAudience": 1,
+      "QueenPerformanceLiveAid": 1,
+      "FreddieDanceMoment": 1,
+      "RadioGaGaAudienceChorus": 1,
+      "QueenPerformance": 1,
+      "LiveAidSchedule": 1
+    },
+    "object_fragments": {
+      "Literal": 6
+    },
+    "inferred_subject_classes": [
+      "Audience",
+      "QueenPerformanceLiveAid",
+      "FreddieDanceMoment",
+      "RadioGaGaAudienceChorus",
+      "Performance",
+      "LiveAidSchedule"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:amountRaised": {
+    "predicate": "schema:amountRaised",
+    "subject_fragments": {
+      "LiveAid": 2
+    },
+    "object_fragments": {
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:beneficiary": {
+    "predicate": "schema:beneficiary",
+    "subject_fragments": {
+      "LiveAid": 2
+    },
+    "object_fragments": {
+      "FamineReliefEthiopia": 2
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "FamineReliefEthiopia"
+    ]
+  },
+  "schema:archiveHeld": {
+    "predicate": "schema:archiveHeld",
+    "subject_fragments": {
+      "BBC": 1
+    },
+    "object_fragments": {
+      "LiveAidWembleyBroadcast": 1
+    },
+    "inferred_subject_classes": [
+      "Organization"
+    ],
+    "inferred_object_classes": [
+      "LiveAidWembleyBroadcast"
+    ]
+  },
+  "schema:archivedBy": {
+    "predicate": "schema:archivedBy",
+    "subject_fragments": {
+      "LiveAidPhiladelphiaBroadcast": 1,
+      "LiveAidWembleyBroadcast": 1
+    },
+    "object_fragments": {
+      "ABC": 1,
+      "BBC": 1
+    },
+    "inferred_subject_classes": [
+      "LiveAidPhiladelphiaBroadcast",
+      "LiveAidWembleyBroadcast"
+    ],
+    "inferred_object_classes": [
+      "Organization"
+    ]
+  },
+  "schema:isRated": {
+    "predicate": "schema:isRated",
+    "subject_fragments": {
+      "QueenPerformanceLiveAid": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "QueenPerformanceLiveAid"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:usedDuring": {
+    "predicate": "schema:usedDuring",
+    "subject_fragments": {
+      "FreddieMicStand": 1
+    },
+    "object_fragments": {
+      "QueenPerformanceLiveAid": 1
+    },
+    "inferred_subject_classes": [
+      "FreddieMicStand"
+    ],
+    "inferred_object_classes": [
+      "QueenPerformanceLiveAid"
+    ]
+  },
+  "schema:creator": {
+    "predicate": "schema:creator",
+    "subject_fragments": {
+      "FreddieMicStand": 1,
+      "BowieJacket": 1,
+      "EltonSunglasses": 1,
+      "DoTheyKnowItsChristmas": 1,
+      "Memorabilia_Queen": 1,
+      "Memorabilia_Bowie": 1,
+      "Memorabilia_EltonJohn": 1
+    },
+    "object_fragments": {
+      "FreddieMercury": 1,
+      "DavidBowie": 2,
+      "EltonJohn": 2,
+      "BandAid": 1,
+      "Queen": 1
+    },
+    "inferred_subject_classes": [
+      "FreddieMicStand",
+      "BowieJacket",
+      "EltonSunglasses",
+      "DoTheyKnowItsChristmas",
+      "Memorabilia_Queen",
+      "Memorabilia_Bowie",
+      "Memorabilia_EltonJohn"
+    ],
+    "inferred_object_classes": [
+      "MusicArtist",
+      "FreddieMercury",
+      "BandAid"
+    ]
+  },
+  "schema:memberOf": {
+    "predicate": "schema:memberOf",
+    "subject_fragments": {
+      "FreddieMercury": 1
+    },
+    "object_fragments": {
+      "Queen": 1
+    },
+    "inferred_subject_classes": [
+      "FreddieMercury"
+    ],
+    "inferred_object_classes": [
+      "MusicArtist"
+    ]
+  },
+  "schema:creatorOf": {
+    "predicate": "schema:creatorOf",
+    "subject_fragments": {
+      "Queen": 2
+    },
+    "object_fragments": {
+      "TheWorks": 1,
+      "AKindOfMagic": 1
+    },
+    "inferred_subject_classes": [
+      "MusicArtist"
+    ],
+    "inferred_object_classes": [
+      "TheWorks",
+      "AKindOfMagic"
+    ]
+  },
+  "schema:datePublished": {
+    "predicate": "schema:datePublished",
+    "subject_fragments": {
+      "TheWorks": 1,
+      "AKindOfMagic": 1,
+      "DoTheyKnowItsChristmas": 1
+    },
+    "object_fragments": {
+      "Literal": 3
+    },
+    "inferred_subject_classes": [
+      "TheWorks",
+      "AKindOfMagic",
+      "DoTheyKnowItsChristmas"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:duration": {
+    "predicate": "schema:duration",
+    "subject_fragments": {
+      "LiveAid": 2
+    },
+    "object_fragments": {
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:hasPart": {
+    "predicate": "schema:hasPart",
+    "subject_fragments": {
+      "LiveAid": 4,
+      "QueenPerformance": 4,
+      "BME": 1
+    },
+    "object_fragments": {
+      "WembleySegment": 2,
+      "PhiladelphiaSegment": 2,
+      "SetlistEntry3": 1,
+      "BohemianRhapsody": 1,
+      "RadioGaGa": 1,
+      "WeAreTheChampions": 1,
+      "QueenLiveAidArtifacts": 1
+    },
+    "inferred_subject_classes": [
+      "MusicEvent",
+      "Performance",
+      "BME"
+    ],
+    "inferred_object_classes": [
+      "WembleySegment",
+      "PhiladelphiaSegment",
+      "SetlistEntry3",
+      "BohemianRhapsody",
+      "RadioGaGa",
+      "WeAreTheChampions",
+      "QueenLiveAidArtifacts"
+    ]
+  },
+  "schema:award": {
+    "predicate": "schema:award",
+    "subject_fragments": {
+      "DoTheyKnowItsChristmas": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "DoTheyKnowItsChristmas"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:maximumAttendeeCapacity": {
+    "predicate": "schema:maximumAttendeeCapacity",
+    "subject_fragments": {
+      "WembleyStadium": 1,
+      "JFKStadium": 1
+    },
+    "object_fragments": {
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "Stadium"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:attendeeCount": {
+    "predicate": "schema:attendeeCount",
+    "subject_fragments": {
+      "WembleySegment": 1,
+      "PhiladelphiaSegment": 1
+    },
+    "object_fragments": {
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "WembleySegment",
+      "PhiladelphiaSegment"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:distribution": {
+    "predicate": "schema:distribution",
+    "subject_fragments": {
+      "LiveAidBroadcast": 1
+    },
+    "object_fragments": {
+      "SatelliteNetwork": 1
+    },
+    "inferred_subject_classes": [
+      "LiveAidBroadcast"
+    ],
+    "inferred_object_classes": [
+      "SatelliteNetwork"
+    ]
+  },
+  "schema:numberOfItems": {
+    "predicate": "schema:numberOfItems",
+    "subject_fragments": {
+      "SatelliteNetwork": 1,
+      "LiveAid": 1
+    },
+    "object_fragments": {
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "SatelliteNetwork",
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:audienceType": {
+    "predicate": "schema:audienceType",
+    "subject_fragments": {
+      "GlobalAudience": 2
+    },
+    "object_fragments": {
+      "Literal": 2
+    },
+    "inferred_subject_classes": [
+      "Audience"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:populationType": {
+    "predicate": "schema:populationType",
+    "subject_fragments": {
+      "GlobalAudience": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "Audience"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:estimatedPopulation": {
+    "predicate": "schema:estimatedPopulation",
+    "subject_fragments": {
+      "GlobalAudience": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "Audience"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:date": {
+    "predicate": "schema:date",
+    "subject_fragments": {
+      "LiveAid": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:founder": {
+    "predicate": "schema:founder",
+    "subject_fragments": {
+      "LiveAid": 2
+    },
+    "object_fragments": {
+      "BobGeldof": 1,
+      "MidgeUre": 1
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "BobGeldof",
+      "MidgeUre"
+    ]
+  },
+  "schema:performed": {
+    "predicate": "schema:performed",
+    "subject_fragments": {
+      "Queen": 6
+    },
+    "object_fragments": {
+      "BohemianRhapsody": 1,
+      "RadioGaGa": 1,
+      "HammerToFall": 1,
+      "CrazyLittleThingCalledLove": 1,
+      "WeWillRockYou": 1,
+      "WeAreTheChampions": 1
+    },
+    "inferred_subject_classes": [
+      "MusicArtist"
+    ],
+    "inferred_object_classes": [
+      "BohemianRhapsody",
+      "RadioGaGa",
+      "HammerToFall",
+      "CrazyLittleThingCalledLove",
+      "WeWillRockYou",
+      "WeAreTheChampions"
+    ]
+  },
+  "schema:position": {
+    "predicate": "schema:position",
+    "subject_fragments": {
+      "SetlistEntry3": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "SetlistEntry3"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:interactionType": {
+    "predicate": "schema:interactionType",
+    "subject_fragments": {
+      "RadioGaGaAudienceChorus": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "RadioGaGaAudienceChorus"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:eventSchedule": {
+    "predicate": "schema:eventSchedule",
+    "subject_fragments": {
+      "LiveAid": 1,
+      "WembleySegment": 1,
+      "PhiladelphiaSegment": 1
+    },
+    "object_fragments": {
+      "LiveAidSchedule": 1,
+      "AlternatingSlots": 2
+    },
+    "inferred_subject_classes": [
+      "MusicEvent",
+      "WembleySegment",
+      "PhiladelphiaSegment"
+    ],
+    "inferred_object_classes": [
+      "AlternatingSlots",
+      "LiveAidSchedule"
+    ]
+  },
+  "schema:estimatedNumberOfPeople": {
+    "predicate": "schema:estimatedNumberOfPeople",
+    "subject_fragments": {
+      "GlobalAudience": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "Audience"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:transmissionMethod": {
+    "predicate": "schema:transmissionMethod",
+    "subject_fragments": {
+      "SatelliteBroadcast": 1
+    },
+    "object_fragments": {
+      "Literal": 1
+    },
+    "inferred_subject_classes": [
+      "SatelliteBroadcast"
+    ],
+    "inferred_object_classes": [
+      "Literal"
+    ]
+  },
+  "schema:recordedBy": {
+    "predicate": "schema:recordedBy",
+    "subject_fragments": {
+      "WembleyBroadcast": 1
+    },
+    "object_fragments": {
+      "BBC": 1
+    },
+    "inferred_subject_classes": [
+      "WembleyBroadcast"
+    ],
+    "inferred_object_classes": [
+      "Organization"
+    ]
+  },
+  "schema:archivedAt": {
+    "predicate": "schema:archivedAt",
+    "subject_fragments": {
+      "WembleyBroadcast": 1,
+      "PhiladelphiaBroadcast": 1
+    },
+    "object_fragments": {
+      "BBCArchive": 1,
+      "None": 1
+    },
+    "inferred_subject_classes": [
+      "WembleyBroadcast",
+      "PhiladelphiaBroadcast"
+    ],
+    "inferred_object_classes": [
+      "BBCArchive",
+      "None"
+    ]
+  },
+  "schema:provider": {
+    "predicate": "schema:provider",
+    "subject_fragments": {
+      "PhiladelphiaBroadcast": 1
+    },
+    "object_fragments": {
+      "ABC": 1
+    },
+    "inferred_subject_classes": [
+      "PhiladelphiaBroadcast"
+    ],
+    "inferred_object_classes": [
+      "Organization"
+    ]
+  },
+  "schema:inspiredBy": {
+    "predicate": "schema:inspiredBy",
+    "subject_fragments": {
+      "Live8": 1
+    },
+    "object_fragments": {
+      "LiveAid": 1
+    },
+    "inferred_subject_classes": [
+      "Live8"
+    ],
+    "inferred_object_classes": [
+      "MusicEvent"
+    ]
+  },
+  "schema:eventType": {
+    "predicate": "schema:eventType",
+    "subject_fragments": {
+      "LiveAid": 1
+    },
+    "object_fragments": {
+      "CharityConcert": 1
+    },
+    "inferred_subject_classes": [
+      "MusicEvent"
+    ],
+    "inferred_object_classes": [
+      "CharityConcert"
+    ]
+  }
+}

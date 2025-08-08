@@ -1,0 +1,277 @@
+CQ_ID,Atomic_ID,Atomic_Fact
+CQ-E1,CQ-E1.1,Live Aid is a concert
+CQ-E1,CQ-E1.2,Live Aid is a benefit concert
+CQ-E1,CQ-E1.3,Live Aid has a global scope
+CQ-E1,CQ-E1.4,Live Aid was held to raise funds
+CQ-E1,CQ-E1.5,The funds were for humanitarian relief
+CQ-E10,CQ-E10.1,Queen performed 'Bohemian Rhapsody' at Live Aid
+CQ-E10,CQ-E10.2,Queen performed 'Radio Ga Ga' at Live Aid
+CQ-E10,CQ-E10.3,Queen performed 'We Are the Champions' at Live Aid
+CQ-E11,CQ-E11.1,Madonna made a debut
+CQ-E11,CQ-E11.2,The debut occurred in
+CQ-E11,CQ-E11.3,The debut included a performance
+CQ-E11,CQ-E11.4,The performance took place in New York City
+CQ-E12,CQ-E12.1,Queen was formed in
+CQ-E12,CQ-E12.2,Queen was formed in London
+CQ-E12,CQ-E12.3,London is located in the UK
+CQ-E13,CQ-E13.1,Queen included Freddie Mercury
+CQ-E13,CQ-E13.2,Queen included Brian May
+CQ-E13,CQ-E13.3,Queen included Roger Taylor
+CQ-E13,CQ-E13.4,Queen included John Deacon
+CQ-E14,CQ-E14.1,Madonna performed at Live Aid
+CQ-E14,CQ-E14.2,Elton John performed at Live Aid
+CQ-E14,CQ-E14.3,David Bowie performed at Live Aid
+CQ-E14,CQ-E14.4,Madonna is a solo artist
+CQ-E14,CQ-E14.5,Elton John is a solo artist
+CQ-E14,CQ-E14.6,David Bowie is a solo artist
+CQ-E15,CQ-E15.1,Queen is associated with rock
+CQ-E15,CQ-E15.2,Queen is associated with hard rock
+CQ-E15,CQ-E15.3,Queen is associated with glam rock
+CQ-E16,CQ-E16.1,Live Aid was broadcast globally
+CQ-E16,CQ-E16.2,Live Aid was broadcast via satellite uplinks
+CQ-E16,CQ-E16.3,Live Aid was broadcast via television networks
+CQ-E17,CQ-E17.1,A coordination event occurred
+CQ-E17,CQ-E17.2,The coordination event involved two venues
+CQ-E17,CQ-E17.3,The coordination event involved artist schedules
+CQ-E17,CQ-E17.4,The coordination event involved live global broadcasts
+CQ-E17,CQ-E17.5,The coordination event presented logistical challenges
+CQ-E17,CQ-E17.6,The coordination event presented technical challenges
+CQ-E18,CQ-E18.1,Live Aid is a concert
+CQ-E18,CQ-E18.2,Live Aid established a standard for global fundraising concerts
+CQ-E18,CQ-E18.3,Live Aid inspired Live
+CQ-E18,CQ-E18.4,Live Aid inspired Global Citizen
+CQ-E18,CQ-E18.5,Live 8 is an event
+CQ-E18,CQ-E18.6,Global Citizen is an event
+CQ-E19,CQ-E19.1,Queen's performance was acclaimed by critics
+CQ-E19,CQ-E19.2,The acclaim for Queen's performance was widespread
+CQ-E19,CQ-E19.3,Queen's performance was praised by audiences
+CQ-E19,CQ-E19.4,Queen's performance demonstrated energy
+CQ-E19,CQ-E19.5,Queen's performance demonstrated charisma
+CQ-E19,CQ-E19.6,The praise for Queen's performance by audiences was due to energy
+CQ-E19,CQ-E19.7,The praise for Queen's performance by audiences was due to charisma
+CQ-E2,CQ-E2.1,Live Aid was an event
+CQ-E2,CQ-E2.2,Live Aid was organized
+CQ-E2,CQ-E2.3,The organization of Live Aid had a purpose
+CQ-E2,CQ-E2.4,The purpose of Live Aid's organization was to raise funds
+CQ-E2,CQ-E2.5,The raised funds were intended for famine relief
+CQ-E2,CQ-E2.6,The famine relief was located in Ethiopia
+CQ-E2,CQ-E2.7,Ethiopia experienced famine
+CQ-E20,CQ-E20.1,Live Aid raised money
+CQ-E20,CQ-E20.2,"The amount of money raised was greater than $125,000,"
+CQ-E20,CQ-E20.3,The purpose of the money was famine relief efforts
+CQ-E21,CQ-E21.1,The BBC archived the Wembley broadcast
+CQ-E21,CQ-E21.2,The Wembley broadcast took place at Wembley
+CQ-E21,CQ-E21.3,The Wembley broadcast is of Live Aid
+CQ-E22,CQ-E22.1,Live Aid is an event
+CQ-E22,CQ-E22.2,A broadcast is associated with Live Aid
+CQ-E22,CQ-E22.3,The broadcast originates from Philadelphia
+CQ-E22,CQ-E22.4,ABC is an organization
+CQ-E22,CQ-E22.5,ABC did not preserve the broadcast that originated from Philadelphia and is associated with Live Aid
+CQ-E23,CQ-E23.1,The BBC preserved a broadcast
+CQ-E23,CQ-E23.2,A broadcast originated from Wembley
+CQ-E24,CQ-E24.1,Queen's performance occurred at Live Aid
+CQ-E24,CQ-E24.2,Queen's performance exhibited energy
+CQ-E24,CQ-E24.3,Queen's performance exhibited crowd engagement
+CQ-E24,CQ-E24.4,Queen's performance received praise
+CQ-E24,CQ-E24.5,The praise for Queen's performance is widespread
+CQ-E24,CQ-E24.6,The energy of Queen's performance was a reason for the praise
+CQ-E24,CQ-E24.7,The crowd engagement of Queen's performance was a reason for the praise
+CQ-E25,CQ-E25.1,The microphone stand was owned by Freddie Mercury
+CQ-E25,CQ-E25.2,The microphone stand was used during a specific performance
+CQ-E25,CQ-E25.3,Queen was the performer at the specific performance
+CQ-E25,CQ-E25.4,The specific performance occurred at the Live Aid event
+CQ-E25,CQ-E25.5,The microphone stand is preserved
+CQ-E25,CQ-E25.6,The microphone stand is located at the BME
+CQ-E26,CQ-E26.1,BME exhibits include memorabilia
+CQ-E26,CQ-E26.2,Memorabilia is linked to Queen
+CQ-E26,CQ-E26.3,Memorabilia is linked to David Bowie
+CQ-E26,CQ-E26.4,Memorabilia is linked to Elton John
+CQ-E26,CQ-E26.5,Queen is an artist
+CQ-E26,CQ-E26.6,David Bowie is an artist
+CQ-E26,CQ-E26.7,Elton John is an artist
+CQ-E26,CQ-E26.8,Queen performed at Live Aid
+CQ-E26,CQ-E26.9,David Bowie performed at Live Aid
+CQ-E26,CQ-E26.10,Elton John performed at Live Aid
+CQ-E27,CQ-E27.1,"Queen released ""The Works"""
+CQ-E27,CQ-E27.2,"""The Works"" was released in"
+CQ-E27,CQ-E27.3,"The release of ""The Works"" occurred before Live Aid"
+CQ-E27,CQ-E27.4,"Queen recorded ""A Kind of Magic"""
+CQ-E27,CQ-E27.5,"""A Kind of Magic"" was recorded in"
+CQ-E27,CQ-E27.6,"The recording of ""A Kind of Magic"" occurred after Live Aid"
+CQ-E3,CQ-E3.1,Queen performed at Live Aid
+CQ-E3,CQ-E3.2,Live Aid was held at Wembley Stadium
+CQ-E3b,CQ-E3b.1,David Bowie performed at Live Aid
+CQ-E3b,CQ-E3b.2,Live Aid was held at Wembley Stadium
+CQ-E5a,CQ-E5a.1,London hosted Live Aid
+CQ-E5a,CQ-E5a.2,Philadelphia hosted Live Aid
+CQ-E5b,CQ-E5b.1,The UK hosted Live Aid
+CQ-E5b,CQ-E5b.2,The USA hosted Live Aid
+CQ-E5c,CQ-E5c.1,Live Aid is an event
+CQ-E5c,CQ-E5c.2,London is a city
+CQ-E5c,CQ-E5c.3,London is located in the United Kingdom
+CQ-E5c,CQ-E5c.4,Philadelphia is a city
+CQ-E5c,CQ-E5c.5,Philadelphia is located in the United States of America
+CQ-E5c,CQ-E5c.6,London hosted Live Aid
+CQ-E5c,CQ-E5c.7,Philadelphia hosted Live Aid
+CQ-E6,CQ-E6.1,Wembley Stadium hosted Live Aid
+CQ-E6,CQ-E6.2,JFK Stadium hosted Live Aid
+CQ-E7,CQ-E7.1,Live Aid was broadcast
+CQ-E7,CQ-E7.2,Live Aid was broadcast via television
+CQ-E7,CQ-E7.3,Live Aid was broadcast via radio
+CQ-E7,CQ-E7.4,Live Aid was broadcast worldwide
+CQ-E7,CQ-E7.5,Live Aid had a global impact
+CQ-E7,CQ-E7.6,The broadcast of Live Aid caused an expansion of Live Aid's global impact
+CQ-E8,CQ-E8.1,Live Aid was organized by Bob Geldof
+CQ-E8,CQ-E8.2,Live Aid was organized by Midge Ure
+CQ-E9,CQ-E9.1,A specific performance was delivered by the band Queen
+CQ-E9,CQ-E9.2,The performance occurred at Wembley
+CQ-E9,CQ-E9.3,The performance occurred during the Live Aid event
+CQ-E9,CQ-E9.4,The performance is iconic
+CQ-E9,CQ-E9.5,The iconic status of the performance is widely acknowledged
+CQ-L1,CQ-L1.1,The Live Aid concert was a global benefit event
+CQ-L1,CQ-L1.2,The Live Aid concert occurred on 13 July
+CQ-L1,CQ-L1.3,The Live Aid concert featured a performance in London
+CQ-L1,CQ-L1.4,The Live Aid concert featured a performance in Philadelphia
+CQ-L1,CQ-L1.5,The performance in London was simultaneous with the performance in Philadelphia
+CQ-L10,CQ-L10.1,Queen performed a medley
+CQ-L10,CQ-L10.2,The medley performed by Queen occurred at Live Aid
+CQ-L10,CQ-L10.3,The medley performed by Queen contained six songs
+CQ-L10,CQ-L10.4,Bohemian Rhapsody was a song in the medley performed by Queen
+CQ-L10,CQ-L10.5,Radio Ga Ga was a song in the medley performed by Queen
+CQ-L10,CQ-L10.6,Hammer to Fall was a song in the medley performed by Queen
+CQ-L10,CQ-L10.7,Crazy Little Thing Called Love was a song in the medley performed by Queen
+CQ-L10,CQ-L10.8,We Will Rock You was a song in the medley performed by Queen
+CQ-L10,CQ-L10.9,We Are the Champions was a song in the medley performed by Queen
+CQ-L11,CQ-L11.1,"""Hammer to Fall"" is a song"
+CQ-L11,CQ-L11.2,Queen performed at Live Aid
+CQ-L11,CQ-L11.3,Queen presented a setlist for their performance at Live Aid
+CQ-L11,CQ-L11.4,Queen's setlist for their performance at Live Aid 1985 contained six songs
+CQ-L11,CQ-L11.5,"""Hammer to Fall"" was the third song in Queen's setlist for their performance at Live Aid"
+CQ-L11,CQ-L11.6,The Works Tour is a tour
+CQ-L11,CQ-L11.7,The Magic Tour is a tour
+CQ-L11,CQ-L11.8,Queen performed on the Works Tour
+CQ-L11,CQ-L11.9,Queen performed on the Magic Tour
+CQ-L11,CQ-L11.10,"""Hammer to Fall"" was a staple song for Queen on the Works Tour"
+CQ-L11,CQ-L11.11,"""Hammer to Fall"" was a staple song for Queen on the Magic Tour"
+CQ-L12,CQ-L12.1,Freddie Mercury performed a ballet
+CQ-L12,CQ-L12.2,A BBC cameraman participated in the ballet
+CQ-L12,CQ-L12.3,The ballet was spontaneous
+CQ-L12,CQ-L12.4,"The ballet occurred during the song ""Hammer to Fall"""
+CQ-L12,CQ-L12.5,The ballet became a visual highlight
+CQ-L13,CQ-L13.1,A performance occurred
+CQ-L13,CQ-L13.2,"The song ""Radio Ga Ga"" was performed"
+CQ-L13,CQ-L13.3,Freddie Mercury was the performer
+CQ-L13,CQ-L13.4,The performance took place at Wembley Stadium
+CQ-L13,CQ-L13.5,An audience was present at the performance
+CQ-L13,CQ-L13.6,The audience was located at Wembley Stadium
+CQ-L13,CQ-L13.7,Freddie Mercury caused the audience to sing along
+CQ-L13,CQ-L13.8,The audience sang along with the chorus
+CQ-L13,CQ-L13.9,Freddie Mercury experienced laryngitis
+CQ-L13,CQ-L13.10,Freddie Mercury battled laryngitis
+CQ-L13,CQ-L13.11,The battling of laryngitis occurred during the performance
+CQ-L14,CQ-L14.1,Queen is a band
+CQ-L14,CQ-L14.2,Queen is a rock band
+CQ-L14,CQ-L14.3,Queen is a British band
+CQ-L14,CQ-L14.4,Queen formed in London
+CQ-L14,CQ-L14.5,Queen formed in
+CQ-L14,CQ-L14.6,Freddie Mercury formed Queen
+CQ-L14,CQ-L14.7,Brian May formed Queen
+CQ-L14,CQ-L14.8,Roger Taylor formed Queen
+CQ-L14,CQ-L14.9,John Deacon joined Queen
+CQ-L15,CQ-L15.1,The band Queen created specific early music
+CQ-L15,CQ-L15.2,The early music created by the band Queen was influenced by progressive rock
+CQ-L15,CQ-L15.3,The early music created by the band Queen was influenced by hard rock
+CQ-L15,CQ-L15.4,The early music created by the band Queen was influenced by heavy metal
+CQ-L16,CQ-L16.1,Queen produced music
+CQ-L16,CQ-L16.2,Queen's music had an early musical style
+CQ-L16,CQ-L16.3,Queen's early musical style incorporated elements of progressive rock
+CQ-L16,CQ-L16.4,Queen's early musical style incorporated elements of hard rock
+CQ-L16,CQ-L16.5,Queen's early musical style incorporated elements of heavy metal
+CQ-L16,CQ-L16.6,Queen's music had a later musical style
+CQ-L16,CQ-L16.7,Queen's later musical style incorporated elements of arena rock
+CQ-L16,CQ-L16.8,Queen's later musical style incorporated elements of pop rock
+CQ-L16,CQ-L16.9,Queen's musical style evolved from the early musical style to the later musical style
+CQ-L17,CQ-L17.1,Music by Queen from Queen's later years incorporated the arena rock style
+CQ-L17,CQ-L17.2,Music by Queen from Queen's later years incorporated the pop rock style
+CQ-L18,CQ-L18.1,The live performance by Queen is a live performance
+CQ-L18,CQ-L18.2,The live performance by Queen is part of rock history
+CQ-L18,CQ-L18.3,The live performance by Queen is widely considered iconic
+CQ-L18,CQ-L18.4,The live performance by Queen is among the most iconic live performances in rock history
+CQ-L19,CQ-L19.1,An event had a duration of approximately 16 hours
+CQ-L19,CQ-L19.2,An event featured over 60 musical acts
+CQ-L2,CQ-L2.1,"The title of the single is ""Do They Know It's Christmas?"""
+CQ-L2,CQ-L2.2,"Band Aid performed the single ""Do They Know It's Christmas?"""
+CQ-L2,CQ-L2.3,"The single ""Do They Know It's Christmas?"" was released in"
+CQ-L2,CQ-L2.4,"The single ""Do They Know It's Christmas?"" is a charity single"
+CQ-L2,CQ-L2.5,"The single ""Do They Know It's Christmas?"" is a best-selling single in the United Kingdom"
+CQ-L20,CQ-L20.1,The Broadcast Content was broadcast
+CQ-L20,CQ-L20.2,The Broadcast Content reached an estimated audience of 1.5 billion viewers
+CQ-L20,CQ-L20.3,The Broadcast Content was distributed across more than 150 countries
+CQ-L21,CQ-L21.1,The concert was broadcast live
+CQ-L21,CQ-L21.2,The live broadcast utilized satellite uplinks
+CQ-L21,CQ-L21.3,Satellite uplinks enabled synchronized performances
+CQ-L21,CQ-L21.4,The synchronized performances took place across two continents
+CQ-L22,CQ-L22.1,Performance slots underwent scheduling
+CQ-L22,CQ-L22.2,The scheduling established an alternation pattern
+CQ-L22,CQ-L22.3,The alternation pattern involved the London stage
+CQ-L22,CQ-L22.4,The alternation pattern involved the Philadelphia stage
+CQ-L22,CQ-L22.5,The alternation pattern occurred sequentially between the London stage and the Philadelphia stage
+CQ-L23,CQ-L23.1,Queen performed a musical set
+CQ-L23,CQ-L23.2,The musical set had a duration of 21 minutes
+CQ-L23,CQ-L23.3,The musical set occurred at Wembley Stadium
+CQ-L23,CQ-L23.4,The musical set included the song 'Bohemian Rhapsody'
+CQ-L23,CQ-L23.5,The musical set included the song 'Radio Ga Ga'
+CQ-L23,CQ-L23.6,The musical set included the song 'We Are the Champions'
+CQ-L24,CQ-L24.1,"The British Broadcasting Corporation has the abbreviation ""BBC"""
+CQ-L24,CQ-L24.2,The British Broadcasting Corporation recorded the Wembley concert
+CQ-L24,CQ-L24.3,The British Broadcasting Corporation archived the Wembley concert
+CQ-L24,CQ-L24.4,The recording of the Wembley concert by the British Broadcasting Corporation was complete
+CQ-L24,CQ-L24.5,The archiving of the Wembley concert by the British Broadcasting Corporation was complete
+CQ-L25,CQ-L25.1,The American Broadcasting Company is also known as ABC
+CQ-L25,CQ-L25.2,The American Broadcasting Company did not retain the Philadelphia master tapes
+CQ-L26,CQ-L26.1,Live Aid raised money
+CQ-L26,CQ-L26.2,"The amount of money raised by Live Aid exceeded $125,000,"
+CQ-L26,CQ-L26.3,The currency of the money raised by Live Aid was United States Dollars (USD)
+CQ-L26,CQ-L26.4,The purpose of the money raised by Live Aid was famine relief
+CQ-L27,CQ-L27.1,The event inspired benefit concerts
+CQ-L27,CQ-L27.2,Live 8 is a benefit concert
+CQ-L27,CQ-L27.3,Live 8 was inspired by The event
+CQ-L27,CQ-L27.4,Live 8 occurred after The event
+CQ-L28,CQ-L28.1,The British Music Experience preserves artifacts
+CQ-L28,CQ-L28.2,Artifacts originate from Live Aid
+CQ-L28,CQ-L28.3,Artifacts originate from Queen's performance
+CQ-L28,CQ-L28.4,The British Music Experience has the abbreviation BME
+CQ-L28,CQ-L28.5,Artifacts are available for public viewing
+CQ-L29,CQ-L29.1,BME exhibits contain memorabilia
+CQ-L29,CQ-L29.2,Memorabilia is linked to Queen
+CQ-L29,CQ-L29.3,Memorabilia is linked to David Bowie
+CQ-L29,CQ-L29.4,Memorabilia is linked to Elton John
+CQ-L29,CQ-L29.5,Queen is an artist
+CQ-L29,CQ-L29.6,David Bowie is an artist
+CQ-L29,CQ-L29.7,Elton John is an artist
+CQ-L29,CQ-L29.8,Queen performed at Live Aid
+CQ-L29,CQ-L29.9,David Bowie performed at Live Aid
+CQ-L29,CQ-L29.10,Elton John performed at Live Aid
+CQ-L3,CQ-L3.1,Here's the breakdown:
+CQ-L3,CQ-L3.2,The event was organized by Bob Geldof
+CQ-L3,CQ-L3.3,The event was organized by Midge Ure
+CQ-L3,CQ-L3.4,The event aimed to raise funds
+CQ-L3,CQ-L3.5,The funds supported famine relief
+CQ-L3,CQ-L3.6,Famine relief was located in Ethiopia
+CQ-L4,CQ-L4.1,The concerts were hosted at Wembley Stadium
+CQ-L4,CQ-L4.2,The concerts were hosted at JFK Stadium
+CQ-L4,CQ-L4.3,Wembley Stadium is located in London
+CQ-L4,CQ-L4.4,JFK Stadium is located in Philadelphia
+CQ-L5,CQ-L5.1,Live Aid took place at Wembley Stadium
+CQ-L5,CQ-L5.2,"The approximate attendance for Live Aid at Wembley Stadium was 72,000 people"
+CQ-L5,CQ-L5.3,Live Aid took place at JFK Stadium
+CQ-L5,CQ-L5.4,"The attendance for Live Aid at JFK Stadium was 89,484 people"
+CQ-L6,CQ-L6.1,Live Aid used satellites
+CQ-L6,CQ-L6.2,The satellites numbered
+CQ-L6,CQ-L6.3,The satellites were military satellites
+CQ-L6,CQ-L6.4,The satellites facilitated transmission
+CQ-L6,CQ-L6.5,The transmission was global
+CQ-L7,CQ-L7.1,The viewership of Live Aid was approximately 1.9 billion people
+CQ-L8,CQ-L8.1,Live Aid occurred on 1985-07-
+CQ-L9,CQ-L9.1,Live Aid was founded by Bob Geldof
+CQ-L9,CQ-L9.2,Live Aid was founded by Midge Ure

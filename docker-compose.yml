@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  graphdb:
+    image: ontotext/graphdb:10.4.0
+    container_name: graphdb
+    ports:
+      - "7200:7200"
+    # volumes:
+    #   - ./graphdb-data:/opt/graphdb/home
+    restart: unless-stopped

@@ -1,0 +1,241 @@
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:domainIncludes a rdf:Property ;
+    rdfs:label "domainIncludes" ;
+    rdfs:comment "Relates a property to a class that is (one of) the type(s) the property is expected to be used on." ;
+    schema:domainIncludes schema:Property ;
+    schema:isPartOf <https://meta.schema.org> ;
+    schema:rangeIncludes schema:Class .
+
+schema:rangeIncludes a rdf:Property ;
+    rdfs:label "rangeIncludes" ;
+    rdfs:comment "Relates a property to a class that constitutes (one of) the expected type(s) for values of the property." ;
+    schema:domainIncludes schema:Property ;
+    schema:isPartOf <https://meta.schema.org> ;
+    schema:rangeIncludes schema:Class .
+
+schema:isPartOf a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent,
+        schema:Event,
+        schema:MusicEvent .
+
+ex:BroadcastMusicEvent a rdfs:Class ;
+    rdfs:label "Broadcast Music Event" ;
+    rdfs:comment "A music event intended for distribution via broadcast media such as television, radio, or streaming platforms. This class encompasses live or pre-recorded concerts, festivals, or performances that are publicly disseminated." ;
+    rdfs:subClassOf schema:BroadcastEvent,
+        schema:MusicEvent .
+
+ex:Cause a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+ex:CharitableConcert a rdfs:Class ;
+    rdfs:subClassOf schema:MusicEvent .
+
+ex:MemorableMoment a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+ex:MusicArtist a rdfs:Class ;
+    rdfs:label "Music Artist" ;
+    rdfs:comment "A custom class representing either a solo performer (Person) or a group (MusicGroup).",
+        "A custom subclass that represents either a solo performer or a group in a musical context." ;
+    rdfs:subClassOf schema:MusicGroup,
+        schema:Person .
+
+ex:MusicEvent a rdfs:Class ;
+    rdfs:subClassOf schema:MusicEvent .
+
+ex:MusicGenre a ex:MusicGenre,
+        rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+ex:Performance a rdfs:Class ;
+    rdfs:subClassOf rdfs:Class .
+
+schema:BroadcastEvent a rdfs:Class ;
+    rdfs:label "BroadcastEvent" ;
+    rdfs:comment "An over the air or online broadcast event." ;
+    rdfs:subClassOf schema:PublicationEvent .
+
+schema:Country a rdfs:Class ;
+    rdfs:label "Country" ;
+    rdfs:comment "A country." ;
+    rdfs:subClassOf schema:AdministrativeArea .
+
+schema:Event a rdfs:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "An event happening at a certain time and location, such as a concert, lecture, or festival. Ticketing information may be added via the [[offers]] property. Repeated events may be structured as separate Event objects." ;
+    rdfs:subClassOf schema:Thing ;
+    owl:equivalentClass dcmitype:Event .
+
+schema:MusicComposition a rdfs:Class ;
+    rdfs:label "MusicComposition" ;
+    rdfs:comment "A musical composition." ;
+    rdfs:subClassOf schema:CreativeWork .
+
+schema:MusicEvent a rdfs:Class ;
+    rdfs:label "MusicEvent" ;
+    rdfs:comment "Event type: Music event." ;
+    rdfs:subClassOf schema:Event .
+
+schema:MusicGroup a rdfs:Class ;
+    rdfs:label "MusicGroup" ;
+    rdfs:comment "A musical group, such as a band, an orchestra, or a choir. Can also be a solo musician." ;
+    rdfs:subClassOf schema:PerformingGroup .
+
+schema:Person a rdfs:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A person (alive, dead, undead, or fictional)." ;
+    rdfs:subClassOf schema:Thing ;
+    owl:equivalentClass foaf:Person .
+
+schema:Place a rdfs:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "Entities that have a somewhat fixed, physical extension." ;
+    rdfs:subClassOf schema:Thing .
+
+schema:Review a rdfs:Class ;
+    rdfs:label "Review" ;
+    rdfs:comment "A review of an item - for example, of a restaurant, movie, or store." ;
+    rdfs:subClassOf schema:CreativeWork .
+
+schema:URL a rdfs:Class ;
+    rdfs:label "URL" ;
+    rdfs:comment "Data type: URL." ;
+    rdfs:subClassOf schema:Text .
+
+ex:cause a rdf:Property ;
+    rdfs:domain ex:CharitableConcert ;
+    rdfs:range ex:Cause .
+
+ex:criticalAcclaim a rdf:Property ;
+    rdfs:domain ex:Performance ;
+    rdfs:range schema:Review .
+
+ex:hasSetList a rdf:Property ;
+    rdfs:domain ex:Performance ;
+    rdfs:range ex:PerformanceSegment .
+
+ex:influenced a rdf:Property ;
+    rdfs:domain ex:BroadcastMusicEvent .
+
+ex:inspiredBy a rdf:Property ;
+    rdfs:domain ex:BroadcastMusicEvent .
+
+ex:occurredDuringSegment a rdf:Property ;
+    rdfs:domain ex:MemorableMoment ;
+    rdfs:range ex:PerformanceSegment .
+
+ex:performedIn a rdf:Property ;
+    rdfs:domain schema:MusicComposition ;
+    rdfs:range ex:PerformanceSegment .
+
+ex:performerIn a rdf:Property ;
+    rdfs:label "performerIn" ;
+    rdfs:comment "An event in which the music artist performed." ;
+    rdfs:domain ex:MusicArtist ;
+    rdfs:range schema:Event .
+
+<http://example.org/rdfs:label> a rdf:Property ;
+    rdfs:domain ex:MusicGenre ;
+    rdfs:range xsd:string .
+
+ex:songPerformed a rdf:Property ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range schema:MusicComposition .
+
+schema:description a rdf:Property ;
+    rdfs:label "description" ;
+    rdfs:comment "A description of the item." ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range xsd:string ;
+    owl:equivalentProperty dcterms:description ;
+    schema:domainIncludes schema:Thing ;
+    schema:rangeIncludes schema:Text,
+        schema:TextObject .
+
+schema:location a rdf:Property ;
+    rdfs:label "location" ;
+    rdfs:comment "The location of, for example, where an event is happening, where an organization is located, or where an action takes place." ;
+    rdfs:domain ex:Cause,
+        schema:CreativeWork,
+        schema:Event,
+        schema:MusicEvent ;
+    rdfs:range schema:Country ;
+    schema:domainIncludes schema:Action,
+        schema:Event,
+        schema:InteractionCounter,
+        schema:Organization ;
+    schema:rangeIncludes schema:Place,
+        schema:PostalAddress,
+        schema:Text,
+        schema:VirtualLocation .
+
+schema:performer a rdf:Property ;
+    rdfs:label "performer" ;
+    rdfs:comment "A performer at the event&#x2014;for example, a presenter, musician, musical group or actor." ;
+    rdfs:domain ex:MemorableMoment,
+        schema:Event,
+        schema:MusicEvent ;
+    rdfs:range schema:Person ;
+    schema:domainIncludes schema:Event ;
+    schema:rangeIncludes schema:Organization,
+        schema:Person .
+
+schema:position a rdf:Property ;
+    rdfs:label "position" ;
+    rdfs:comment "The position of an item in a series or sequence of items." ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range xsd:integer ;
+    schema:domainIncludes schema:CreativeWork,
+        schema:ListItem ;
+    schema:rangeIncludes schema:Integer,
+        schema:Text .
+
+schema:sameAs a rdf:Property ;
+    rdfs:label "sameAs" ;
+    rdfs:comment "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website." ;
+    rdfs:domain ex:Cause ;
+    rdfs:range schema:URL ;
+    schema:domainIncludes schema:Thing ;
+    schema:rangeIncludes schema:URL .
+
+ex:hasPerformer a rdf:Property ;
+    rdfs:label "has performer" ;
+    rdfs:comment "Relates a broadcast or music event to the performing artist or group." ;
+    rdfs:domain ex:BroadcastMusicEvent ;
+    rdfs:range ex:MusicArtist ;
+    rdfs:subPropertyOf schema:performer .
+
+ex:performer a rdf:Property ;
+    rdfs:domain ex:Performance ;
+    rdfs:range schema:MusicGroup ;
+    rdfs:label "performer" ;
+    rdfs:comment "Links a performance to the artist or group who performed." .
+
+ex:PerformanceSegment a rdfs:Class ;
+    rdfs:label "Performance Segment" ;
+    rdfs:comment "A simplified segment of a performance, representing a specific song." ;
+    rdfs:subClassOf ex:CreativeWork .
+
+ex:performedSong a rdf:Property ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range schema:MusicRecording ;
+    rdfs:label "performed song" ;
+    rdfs:comment "The song performed during this segment." .
+
+ex:segmentOf a rdf:Property ;
+    rdfs:domain ex:PerformanceSegment ;
+    rdfs:range ex:Performance ;
+    rdfs:label "segment of" ;
+    rdfs:comment "Links this segment to the larger performance it belongs to." .
+
+
+

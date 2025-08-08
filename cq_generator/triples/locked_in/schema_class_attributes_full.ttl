@@ -1,0 +1,187 @@
+@prefix schema: <http://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+schema:BroadcastChannel a rdfs:Class .
+
+schema:BroadcastEvent a rdfs:Class .
+
+schema:audience a rdf:Property ;
+  rdfs:domain schema:BroadcastEvent .
+
+schema:broadcastOfEvent a rdf:Property ;
+  rdfs:domain schema:BroadcastEvent .
+
+schema:distribution a rdf:Property ;
+  rdfs:domain schema:BroadcastEvent .
+
+schema:hasBroadcastChannel a rdf:Property ;
+  rdfs:domain schema:BroadcastEvent .
+
+schema:inLanguage a rdf:Property ;
+  rdfs:domain schema:BroadcastEvent .
+
+schema:isPartOf a rdf:Property ;
+  rdfs:domain schema:BroadcastEvent .
+
+schema:BroadcastService a rdfs:Class .
+
+schema:broadcastDisplayName a rdf:Property ;
+  rdfs:domain schema:BroadcastService .
+
+schema:City a rdfs:Class .
+
+schema:containedInPlace a rdf:Property ;
+  rdfs:domain schema:City .
+
+schema:Country a rdfs:Class .
+
+schema:CreativeWork a rdfs:Class .
+
+schema:about a rdf:Property ;
+  rdfs:domain schema:CreativeWork .
+
+schema:creator a rdf:Property ;
+  rdfs:domain schema:CreativeWork .
+
+schema:keywords a rdf:Property ;
+  rdfs:domain schema:CreativeWork .
+
+schema:location a rdf:Property ;
+  rdfs:domain schema:CreativeWork .
+
+schema:Event a rdfs:Class .
+
+schema:additionalType a rdf:Property ;
+  rdfs:domain schema:Event .
+
+schema:isPartOf a rdf:Property ;
+  rdfs:domain schema:Event .
+
+schema:location a rdf:Property ;
+  rdfs:domain schema:Event .
+
+schema:performer a rdf:Property ;
+  rdfs:domain schema:Event .
+
+schema:MusicComposition a rdfs:Class .
+
+schema:MusicEvent a rdfs:Class .
+
+schema:about a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:additionalType a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:audience a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:broadcastOfEvent a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:duration a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:eventAttendanceMode a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:eventSchedule a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:founder a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:fundedItem a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:hasPart a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:isPartOf a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:location a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:numberOfItems a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:organizer a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:performer a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:startDate a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:subEvent a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:subjectOf a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:workPerformed a rdf:Property ;
+  rdfs:domain schema:MusicEvent .
+
+schema:MusicGroup a rdfs:Class .
+
+schema:creator a rdf:Property ;
+  rdfs:domain schema:MusicGroup .
+
+schema:foundingDate a rdf:Property ;
+  rdfs:domain schema:MusicGroup .
+
+schema:foundingLocation a rdf:Property ;
+  rdfs:domain schema:MusicGroup .
+
+schema:genre a rdf:Property ;
+  rdfs:domain schema:MusicGroup .
+
+schema:member a rdf:Property ;
+  rdfs:domain schema:MusicGroup .
+
+schema:performerIn a rdf:Property ;
+  rdfs:domain schema:MusicGroup .
+
+schema:MusicRecording a rdfs:Class .
+
+schema:award a rdf:Property ;
+  rdfs:domain schema:MusicRecording .
+
+schema:creator a rdf:Property ;
+  rdfs:domain schema:MusicRecording .
+
+schema:datePublished a rdf:Property ;
+  rdfs:domain schema:MusicRecording .
+
+schema:genre a rdf:Property ;
+  rdfs:domain schema:MusicRecording .
+
+schema:Person a rdfs:Class .
+
+schema:birthDate a rdf:Property ;
+  rdfs:domain schema:Person .
+
+schema:memberOf a rdf:Property ;
+  rdfs:domain schema:Person .
+
+schema:performerIn a rdf:Property ;
+  rdfs:domain schema:Person .
+
+schema:Place a rdfs:Class .
+
+schema:containedInPlace a rdf:Property ;
+  rdfs:domain schema:Place .
+
+schema:maximumAttendeeCapacity a rdf:Property ;
+  rdfs:domain schema:Place .
+
+schema:StadiumOrArena a rdfs:Class .
+
+schema:containedInPlace a rdf:Property ;
+  rdfs:domain schema:StadiumOrArena .
+
+schema:maximumAttendeeCapacity a rdf:Property ;
+  rdfs:domain schema:StadiumOrArena .

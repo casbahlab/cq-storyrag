@@ -1,0 +1,733 @@
+{
+  "http://example.org/HumanitarianRelief": [
+    {
+      "CQ_ID": "CQ-E1",
+      "CQ_Text": "What kind of event was [Event]?",
+      "Answer": "Live Aid was a global benefit concert held to raise funds for humanitarian relief.",
+      "Suggested": {
+        "Type": ":CharitableConcert",
+        "Parent_Type": "schema:MusicEvent",
+        "Property": ":cause",
+        "Property_Type": ":Cause"
+      }
+    }
+  ],
+  "http://example.org/BenefitConcert": [
+    {
+      "CQ_ID": "CQ-E1",
+      "CQ_Text": "What kind of event was [Event]?",
+      "Answer": "Live Aid was a global benefit concert held to raise funds for humanitarian relief.",
+      "Suggested": {
+        "Type": ":CharitableConcert",
+        "Parent_Type": "schema:MusicEvent"
+      }
+    }
+  ],
+  "http://example.org/Ethiopia": [
+    {
+      "CQ_ID": "CQ-E2",
+      "CQ_Text": "Why was [Event] organized?",
+      "Answer": "Live Aid was organized to raise funds for famine relief in Ethiopia.",
+      "Suggested": {
+        "Type": "schema:Country"
+      }
+    }
+  ],
+  "http://example.org/NewYorkCity": [
+    {
+      "CQ_ID": "CQ-E11",
+      "CQ_Text": "When did [Artist] debut?",
+      "Answer": "Madonna debuted in 1982 with a performance in New York City.",
+      "Suggested": {
+        "Type": "schema:City"
+      }
+    }
+  ],
+  "http://example.org/UK": [
+    {
+      "CQ_ID": "CQ-E12",
+      "CQ_Text": "When was [Artist] formed?",
+      "Answer": "Queen was formed in 1970 in London, UK.",
+      "Suggested": {
+        "Type": "schema:Country"
+      }
+    }
+  ],
+  "http://example.org/QueenPerformance_LiveAid": [
+    {
+      "CQ_ID": "CQ-E19",
+      "CQ_Text": "What were the reactions of the audience or media to [Artist]\u2019s [Performance] at [Event]?",
+      "Answer": "Queen\u2019s performance was widely acclaimed by critics and praised by audiences for its energy and charisma.",
+      "Suggested": {
+        "Type": ":Performance",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":reactionIntensity",
+        "Property_Type": ":Reaction"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E19",
+      "CQ_Text": "What were the reactions of the audience or media to [Artist]\u2019s [Performance] at [Event]?",
+      "Answer": "Queen\u2019s performance was widely acclaimed by critics and praised by audiences for its energy and charisma.",
+      "Suggested": {
+        "Type": ":Performance",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":audienceReactionIntensity",
+        "Property_Type": ":Reaction"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E19",
+      "CQ_Text": "What were the reactions of the audience or media to [Artist]\u2019s [Performance] at [Event]?",
+      "Answer": "Queen\u2019s performance was widely acclaimed by critics and praised by audiences for its energy and charisma.",
+      "Suggested": {
+        "Type": ":Performance",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":hasSetList",
+        "Property_Type": ":PerformanceSegment"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E19",
+      "CQ_Text": "What were the reactions of the audience or media to [Artist]\u2019s [Performance] at [Event]?",
+      "Answer": "Queen\u2019s performance was widely acclaimed by critics and praised by audiences for its energy and charisma.",
+      "Suggested": {
+        "Type": ":PerformanceSegment",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":songPerformed",
+        "Property_Type": "schema:MusicComposition"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E19",
+      "CQ_Text": "What were the reactions of the audience or media to [Artist]\u2019s [Performance] at [Event]?",
+      "Answer": "Queen\u2019s performance was widely acclaimed by critics and praised by audiences for its energy and charisma.",
+      "Suggested": {
+        "Type": ":PerformanceSegment",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":audienceReaction",
+        "Property_Type": ":Reaction"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E19",
+      "CQ_Text": "What were the reactions of the audience or media to [Artist]\u2019s [Performance] at [Event]?",
+      "Answer": "Queen\u2019s performance was widely acclaimed by critics and praised by audiences for its energy and charisma.",
+      "Suggested": {
+        "Type": ":Reaction",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":reactionIntensity"
+      }
+    }
+  ],
+  "http://example.org/MediaCritics": [
+    {
+      "CQ_ID": "CQ-E19",
+      "CQ_Text": "What were the reactions of the audience or media to [Artist]\u2019s [Performance] at [Event]?",
+      "Answer": "Queen\u2019s performance was widely acclaimed by critics and praised by audiences for its energy and charisma.",
+      "Suggested": {
+        "Type": ":Performance",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":criticalAcclaim",
+        "Property_Type": "schema:Review"
+      }
+    }
+  ],
+  "http://example.org/FamineReliefEthiopia": [
+    {
+      "CQ_ID": "CQ-E20",
+      "CQ_Text": "How much money was raised by [Event]?",
+      "Answer": "Live Aid raised over $125 million for famine relief efforts.",
+      "Suggested": {
+        "Type": ":Cause",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":reason",
+        "Property_Type": "xsd:string"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L3",
+      "CQ_Text": "Who were the organizers of [Event]?",
+      "Answer": "The event was organized by Bob Geldof and Midge Ure to raise funds for famine relief in Ethiopia.",
+      "Suggested": {
+        "Type": ":Cause",
+        "Parent_Type": "rdfs:Class",
+        "Property": "schema:location",
+        "Property_Type": "schema:Country"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L26",
+      "CQ_Text": "What was the total amount raised by [Event]?",
+      "Answer": "Live Aid raised over $125 million (USD) for famine relief.",
+      "Suggested": {
+        "Type": ":Cause",
+        "Parent_Type": "rdfs:Class",
+        "Property": "schema:sameAs",
+        "Property_Type": "schema:URL"
+      }
+    }
+  ],
+  "http://example.org/BBC": [
+    {
+      "CQ_ID": "CQ-E21",
+      "CQ_Text": "Which [Organization] archived the broadcast of [Event]?",
+      "Answer": "The BBC archived the Wembley broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastService"
+      }
+    }
+  ],
+  "http://example.org/LiveAidWembleyBroadcast": [
+    {
+      "CQ_ID": "CQ-E21",
+      "CQ_Text": "Which [Organization] archived the broadcast of [Event]?",
+      "Answer": "The BBC archived the Wembley broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastEvent"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E21",
+      "CQ_Text": "Which [Organization] archived the broadcast of [Event]?",
+      "Answer": "The BBC archived the Wembley broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastEvent",
+        "Property": ":broadcastOf",
+        "Property_Type": "schema:MusicEvent"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E21",
+      "CQ_Text": "Which [Organization] archived the broadcast of [Event]?",
+      "Answer": "The BBC archived the Wembley broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastEvent",
+        "Property": ":preservationStatus",
+        "Property_Type": "xsd:boolean"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E21",
+      "CQ_Text": "Which [Organization] archived the broadcast of [Event]?",
+      "Answer": "The BBC archived the Wembley broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastEvent",
+        "Property": ":preservationStatusReason",
+        "Property_Type": "xsd:string"
+      }
+    }
+  ],
+  "http://example.org/LiveAidPhiladelphiaBroadcast": [
+    {
+      "CQ_ID": "CQ-E22",
+      "CQ_Text": "Which [Organization] failed to archive the broadcast of [Event]?",
+      "Answer": "ABC did not preserve the Philadelphia broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastEvent"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E22",
+      "CQ_Text": "Which [Organization] failed to archive the broadcast of [Event]?",
+      "Answer": "ABC did not preserve the Philadelphia broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastEvent",
+        "Property": ":broadcastOf",
+        "Property_Type": "schema:MusicEvent"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E22",
+      "CQ_Text": "Which [Organization] failed to archive the broadcast of [Event]?",
+      "Answer": "ABC did not preserve the Philadelphia broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastEvent",
+        "Property": ":preservationStatus",
+        "Property_Type": "xsd:boolean"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E22",
+      "CQ_Text": "Which [Organization] failed to archive the broadcast of [Event]?",
+      "Answer": "ABC did not preserve the Philadelphia broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastEvent",
+        "Property": ":preservationStatusReason",
+        "Property_Type": "xsd:string"
+      }
+    }
+  ],
+  "http://example.org/ABC": [
+    {
+      "CQ_ID": "CQ-E22",
+      "CQ_Text": "Which [Organization] failed to archive the broadcast of [Event]?",
+      "Answer": "ABC did not preserve the Philadelphia broadcast of Live Aid.",
+      "Suggested": {
+        "Type": "schema:BroadcastService"
+      }
+    }
+  ],
+  "http://example.org/QueenPerformanceLiveAid": [
+    {
+      "CQ_ID": "CQ-E24",
+      "CQ_Text": "Why is [Artist]\u2019s performance at [Event] considered iconic?",
+      "Answer": "Queen\u2019s performance at Live Aid is widely praised for its energy and crowd engagement.",
+      "Suggested": {
+        "Type": "http://example.org/QueenPerformance_LiveAid"
+      }
+    }
+  ],
+  "http://example.org/BritishMusicExperience": [
+    {
+      "CQ_ID": "CQ-E25",
+      "CQ_Text": "Which artifacts at [Museum] were used by [Artist] during [Event]?",
+      "Answer": "Freddie Mercury\u2019s microphone stand, used during Queen\u2019s performance at Live Aid, is now preserved at the BME.",
+      "Suggested": {
+        "Type": "http://example.org/BME"
+      }
+    }
+  ],
+  "http://example.org/TheWorks": [
+    {
+      "CQ_ID": "CQ-E27",
+      "CQ_Text": "What creative milestones defined [Artist]\u2019s career before and after [Event]?",
+      "Answer": "Before Live Aid, Queen released 'The Works' in 1984, and after the concert, they recorded 'A Kind of Magic' in 1986.",
+      "Suggested": {
+        "Type": "schema:MusicAlbum",
+        "Property": ":datePublished",
+        "Property_Type": "xsd:date"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E27",
+      "CQ_Text": "What creative milestones defined [Artist]\u2019s career before and after [Event]?",
+      "Answer": "Before Live Aid, Queen released 'The Works' in 1984, and after the concert, they recorded 'A Kind of Magic' in 1986.",
+      "Suggested": {
+        "Type": "schema:MusicAlbum",
+        "Property": ":releasedAfter",
+        "Property_Type": "schema:MusicEvent"
+      }
+    }
+  ],
+  "http://example.org/LiveAid": [
+    {
+      "CQ_ID": "CQ-E27",
+      "CQ_Text": "What creative milestones defined [Artist]\u2019s career before and after [Event]?",
+      "Answer": "Before Live Aid, Queen released 'The Works' in 1984, and after the concert, they recorded 'A Kind of Magic' in 1986.",
+      "Suggested": {
+        "Type": "schema:MusicEvent",
+        "Property": ":startDate",
+        "Property_Type": "xsd:date"
+      }
+    },
+    {
+      "CQ_ID": "CQ-E27",
+      "CQ_Text": "What creative milestones defined [Artist]\u2019s career before and after [Event]?",
+      "Answer": "Before Live Aid, Queen released 'The Works' in 1984, and after the concert, they recorded 'A Kind of Magic' in 1986.",
+      "Suggested": {
+        "Type": "schema:MusicEvent",
+        "Property": "schema:subEvent",
+        "Property_Type": "schema:MusicEvent"
+      }
+    }
+  ],
+  "http://example.org/LiveAidWembley": [
+    {
+      "CQ_ID": "CQ-L1",
+      "CQ_Text": "What type of event was [Event]?",
+      "Answer": "The Live Aid concert was a global benefit event held on 13 July 1985, featuring simultaneous performances in London and Philadelphia.",
+      "Suggested": {
+        "Type": "schema:MusicEvent"
+      }
+    }
+  ],
+  "http://example.org/LiveAidPhiladelphia": [
+    {
+      "CQ_ID": "CQ-L1",
+      "CQ_Text": "What type of event was [Event]?",
+      "Answer": "The Live Aid concert was a global benefit event held on 13 July 1985, featuring simultaneous performances in London and Philadelphia.",
+      "Suggested": {
+        "Type": "schema:MusicEvent"
+      }
+    }
+  ],
+  "http://example.org/BandAid": [
+    {
+      "CQ_ID": "CQ-L2",
+      "CQ_Text": "How commercially successful was the Band Aid single 'Do They Know It's Christmas?' in the UK?",
+      "Answer": "The Band Aid single 'Do They Know It's Christmas?' was released in 1984 and became one of the UK's best-selling charity singles.",
+      "Suggested": {
+        "Type": "schema:MusicGroup"
+      }
+    }
+  ],
+  "http://example.org/SatelliteNetwork": [
+    {
+      "CQ_ID": "CQ-L6",
+      "CQ_Text": "How many satellites were used during [Event]\u2019s broadcast?",
+      "Answer": "Live Aid used 13 military satellites for global transmission.",
+      "Suggested": {
+        "Type": ":SatelliteNetwork",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":numberOfSatellites",
+        "Property_Type": "xsd:integer"
+      }
+    }
+  ],
+  "http://example.org/GlobalAudience": [
+    {
+      "CQ_ID": "CQ-L7",
+      "CQ_Text": "What was the global TV audience size for [Event]?",
+      "Answer": "Live Aid was viewed by approximately 1.9 billion people in 150 countries.",
+      "Suggested": {
+        "Type": "schema:Audience",
+        "Property": ":numberOfCountries",
+        "Property_Type": "xsd:integer"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L7",
+      "CQ_Text": "What was the global TV audience size for [Event]?",
+      "Answer": "Live Aid was viewed by approximately 1.9 billion people in 150 countries.",
+      "Suggested": {
+        "Type": "schema:Audience",
+        "Property": ":audienceCount",
+        "Property_Type": "xsd:integer"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L7",
+      "CQ_Text": "What was the global TV audience size for [Event]?",
+      "Answer": "Live Aid was viewed by approximately 1.9 billion people in 150 countries.",
+      "Suggested": {
+        "Type": "schema:Event",
+        "Property": ":audienceFor",
+        "Property_Type": "schema:Audience"
+      }
+    }
+  ],
+  "http://example.org/HammerToFallSegment": [
+    {
+      "CQ_ID": "CQ-L10",
+      "CQ_Text": "What was [Artist]\u2019s full setlist at [Event]?",
+      "Answer": "Queen performed a six-song medley at Live Aid including Bohemian Rhapsody, Radio Ga Ga, Hammer to Fall, Crazy Little Thing Called Love, We Will Rock You, and We Are the Champions.",
+      "Suggested": {
+        "Type": ":PerformanceSegment",
+        "Property": ":songPerformed",
+        "Property_Type": ":HammerToFall"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L11",
+      "CQ_Text": "Which [Artist] song was the third in their [Event] setlist in [Year]?",
+      "Answer": "\u201cHammer to Fall\u201d was the third song in Queen\u2019s six-song setlist at Live Aid 1985, and it was a staple of their Works and Magic tours.",
+      "Suggested": {
+        "Type": ":PerformanceSegment",
+        "Property": "schema:position",
+        "Property_Type": "xsd:integer"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L12",
+      "CQ_Text": "What visual moment involving [Performer] occurred during their performance of [Song]?",
+      "Answer": "During \u201cHammer to Fall,\u201d Freddie Mercury broke into a spontaneous ballet with a BBC cameraman, becoming a visual highlight.",
+      "Suggested": {
+        "Type": ":PerformanceSegment",
+        "Property": "schema:description",
+        "Property_Type": "xsd:string"
+      }
+    }
+  ],
+  "http://example.org/HammerToFall": [
+    {
+      "CQ_ID": "CQ-L10",
+      "CQ_Text": "What was [Artist]\u2019s full setlist at [Event]?",
+      "Answer": "Queen performed a six-song medley at Live Aid including Bohemian Rhapsody, Radio Ga Ga, Hammer to Fall, Crazy Little Thing Called Love, We Will Rock You, and We Are the Champions.",
+      "Suggested": {
+        "Type": "schema:MusicComposition",
+        "Property": ":performedIn",
+        "Property_Type": ":PerformanceSegment"
+      }
+    }
+  ],
+  "http://example.org/CrazyLittleThingCalledLove": [
+    {
+      "CQ_ID": "CQ-L10",
+      "CQ_Text": "What was [Artist]\u2019s full setlist at [Event]?",
+      "Answer": "Queen performed a six-song medley at Live Aid including Bohemian Rhapsody, Radio Ga Ga, Hammer to Fall, Crazy Little Thing Called Love, We Will Rock You, and We Are the Champions.",
+      "Suggested": {
+        "Type": "schema:MusicComposition",
+        "Property": ":performedIn",
+        "Property_Type": ":PerformanceSegment"
+      }
+    }
+  ],
+  "http://example.org/WeWillRockYou": [
+    {
+      "CQ_ID": "CQ-L10",
+      "CQ_Text": "What was [Artist]\u2019s full setlist at [Event]?",
+      "Answer": "Queen performed a six-song medley at Live Aid including Bohemian Rhapsody, Radio Ga Ga, Hammer to Fall, Crazy Little Thing Called Love, We Will Rock You, and We Are the Champions.",
+      "Suggested": {
+        "Type": "schema:MusicComposition",
+        "Property": ":performedIn",
+        "Property_Type": ":PerformanceSegment"
+      }
+    }
+  ],
+  "http://example.org/QueenPerformance": [
+    {
+      "CQ_ID": "CQ-L11",
+      "CQ_Text": "Which [Artist] song was the third in their [Event] setlist in [Year]?",
+      "Answer": "\u201cHammer to Fall\u201d was the third song in Queen\u2019s six-song setlist at Live Aid 1985, and it was a staple of their Works and Magic tours.",
+      "Suggested": {
+        "Type": "http://example.org/QueenPerformance_LiveAid"
+      }
+    }
+  ],
+  "http://example.org/SetlistEntry3": [
+    {
+      "CQ_ID": "CQ-L11",
+      "CQ_Text": "Which [Artist] song was the third in their [Event] setlist in [Year]?",
+      "Answer": "\u201cHammer to Fall\u201d was the third song in Queen\u2019s six-song setlist at Live Aid 1985, and it was a staple of their Works and Magic tours.",
+      "Suggested": {
+        "Type": "http://example.org/HammerToFallSegment"
+      }
+    }
+  ],
+  "http://example.org/FreddieDanceMoment": [
+    {
+      "CQ_ID": "CQ-L12",
+      "CQ_Text": "What visual moment involving [Performer] occurred during their performance of [Song]?",
+      "Answer": "During \u201cHammer to Fall,\u201d Freddie Mercury broke into a spontaneous ballet with a BBC cameraman, becoming a visual highlight.",
+      "Suggested": {
+        "Type": ":MemorableMoment",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":occurredDuringSegment",
+        "Property_Type": ":PerformanceSegment"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L12",
+      "CQ_Text": "What visual moment involving [Performer] occurred during their performance of [Song]?",
+      "Answer": "During \u201cHammer to Fall,\u201d Freddie Mercury broke into a spontaneous ballet with a BBC cameraman, becoming a visual highlight.",
+      "Suggested": {
+        "Type": ":MemorableMoment",
+        "Parent_Type": "rdfs:Class",
+        "Property": "schema:performer",
+        "Property_Type": "schema:Person"
+      }
+    }
+  ],
+  "http://example.org/RadioGaGaAudienceChorus": [
+    {
+      "CQ_ID": "CQ-L13",
+      "CQ_Text": "What audience interaction occurred during [Artist]\u2019s performance of [Song] at [Event]?",
+      "Answer": "During \u201cRadio Ga Ga,\u201d Mercury got the entire Wembley Stadium to sing along with the chorus, despite battling laryngitis.",
+      "Suggested": {
+        "Type": ":MemorableMoment",
+        "Parent_Type": "rdfs:Class",
+        "Property": "schema:audience"
+      }
+    }
+  ],
+  "http://example.org/WembleyAudience": [
+    {
+      "CQ_ID": "CQ-L13",
+      "CQ_Text": "What audience interaction occurred during [Artist]\u2019s performance of [Song] at [Event]?",
+      "Answer": "During \u201cRadio Ga Ga,\u201d Mercury got the entire Wembley Stadium to sing along with the chorus, despite battling laryngitis.",
+      "Suggested": {
+        "Type": ":WembleyAudience",
+        "Parent_Type": "schema:Audience",
+        "Property": "schema:audienceType",
+        "Property_Type": "xsd:string"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L13",
+      "CQ_Text": "What audience interaction occurred during [Artist]\u2019s performance of [Song] at [Event]?",
+      "Answer": "During \u201cRadio Ga Ga,\u201d Mercury got the entire Wembley Stadium to sing along with the chorus, despite battling laryngitis.",
+      "Suggested": {
+        "Type": ":WembleyAudience",
+        "Parent_Type": "schema:Audience",
+        "Property": "schema:location",
+        "Property_Type": "xsd:string"
+      }
+    }
+  ],
+  "http://example.org/WembleyStadium": [
+    {
+      "CQ_ID": "CQ-L13",
+      "CQ_Text": "What audience interaction occurred during [Artist]\u2019s performance of [Song] at [Event]?",
+      "Answer": "During \u201cRadio Ga Ga,\u201d Mercury got the entire Wembley Stadium to sing along with the chorus, despite battling laryngitis.",
+      "Suggested": {
+        "Type": ":WembleyStadium",
+        "Parent_Type": "schema:Place",
+        "Property": "schema:address",
+        "Property_Type": "xsd:string"
+      }
+    }
+  ],
+  "http://example.org/MusicGenre": [
+    {
+      "CQ_ID": "CQ-L15",
+      "CQ_Text": "What [Genre] influenced [Artist]\u2019s early music?",
+      "Answer": "Queen\u2019s early music was influenced by progressive rock, hard rock, and heavy metal.",
+      "Suggested": {
+        "Type": ":MusicGenre",
+        "Parent_Type": "rdfs:Class",
+        "Property": "rdfs:label",
+        "Property_Type": "xsd:string"
+      }
+    }
+  ],
+  "http://example.org/ProgressiveRock": [
+    {
+      "CQ_ID": "CQ-L15",
+      "CQ_Text": "What [Genre] influenced [Artist]\u2019s early music?",
+      "Answer": "Queen\u2019s early music was influenced by progressive rock, hard rock, and heavy metal.",
+      "Suggested": {
+        "Type": ":MusicGenre"
+      }
+    }
+  ],
+
+  "http://example.org/HardRock": [
+    {
+      "CQ_ID": "CQ-L15",
+      "CQ_Text": "What [Genre] influenced [Artist]\u2019s early music?",
+      "Answer": "Queen\u2019s early music was influenced by progressive rock, hard rock, and heavy metal.",
+      "Suggested": {
+        "Type": ":MusicGenre"
+      }
+    }
+  ],
+  "http://example.org/HeavyMetal": [
+    {
+      "CQ_ID": "CQ-L15",
+      "CQ_Text": "What [Genre] influenced [Artist]\u2019s early music?",
+      "Answer": "Queen\u2019s early music was influenced by progressive rock, hard rock, and heavy metal.",
+      "Suggested": {
+        "Type": ":MusicGenre"
+      }
+    }
+  ],
+  "http://example.org/ArenaRock": [
+    {
+      "CQ_ID": "CQ-L16",
+      "CQ_Text": "How did [Artist]\u2019s musical style evolve over time?",
+      "Answer": "Queen\u2019s early sound drew from progressive rock, hard rock and heavy metal, later shifting to arena rock and pop rock.",
+      "Suggested": {
+        "Type": ":MusicGenre"
+      }
+    }
+  ],
+  "http://example.org/PopRock": [
+    {
+      "CQ_ID": "CQ-L16",
+      "CQ_Text": "How did [Artist]\u2019s musical style evolve over time?",
+      "Answer": "Queen\u2019s early sound drew from progressive rock, hard rock and heavy metal, later shifting to arena rock and pop rock.",
+      "Suggested": {
+        "Type": ":MusicGenre"
+      }
+    }
+  ],
+  "http://example.org/LiveAidSchedule": [
+    {
+      "CQ_ID": "CQ-L19",
+      "CQ_Text": "What was the average length of [Event]?",
+      "Answer": "The event ran for approximately 16 hours and featured over 60 musical acts.",
+      "Suggested": {
+        "Type": "schema:MusicEvent",
+        "Property": "schema:duration",
+        "Property_Type": "xsd:duration"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L19",
+      "CQ_Text": "What was the average length of [Event]?",
+      "Answer": "The event ran for approximately 16 hours and featured over 60 musical acts.",
+      "Suggested": {
+        "Type": "schema:MusicEvent",
+        "Property": ":numberOfMusicalActs",
+        "Property_Type": "xsd:integer"
+      }
+    }
+  ],
+  "http://example.org/SatelliteBroadcast": [
+    {
+      "CQ_ID": "CQ-L21",
+      "CQ_Text": "What facilitated the simultaneous global broadcast of [Event]?",
+      "Answer": "The concert was broadcast live via satellite uplinks, enabling synchronized performances across two continents.",
+      "Suggested": {
+        "Type": ":BroadcastMethod",
+        "Property": ":facilitatedBy",
+        "Property_Type": ":SatelliteNetwork"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L21",
+      "CQ_Text": "What facilitated the simultaneous global broadcast of [Event]?",
+      "Answer": "The concert was broadcast live via satellite uplinks, enabling synchronized performances across two continents.",
+      "Suggested": {
+        "Type": ":BroadcastMethod",
+        "Property": ":enabled",
+        "Property_Type": "schema:BroadcastEvent"
+      }
+    }
+  ],
+  "http://example.org/AlternatingSlots": [
+    {
+      "CQ_ID": "CQ-L22",
+      "CQ_Text": "How were [Performance] scheduled across the [Venue1] and [Venue2] during [Event]?",
+      "Answer": "Performance slots were scheduled to alternate between the London and Philadelphia stages.",
+      "Suggested": {
+        "Type": ":PerformanceSchedulePattern",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":usedIn",
+        "Property_Type": "schema:MusicEvent"
+      }
+    },
+    {
+      "CQ_ID": "CQ-L22",
+      "CQ_Text": "How were [Performance] scheduled across the [Venue1] and [Venue2] during [Event]?",
+      "Answer": "Performance slots were scheduled to alternate between the London and Philadelphia stages.",
+      "Suggested": {
+        "Type": ":PerformanceSchedulePattern",
+        "Parent_Type": "rdfs:Class",
+        "Property": ":betweenVenues",
+        "Property_Type": "schema:Place"
+      }
+    }
+  ],
+  "http://example.org/WembleyBroadcast": [
+    {
+      "CQ_ID": "CQ-L24",
+      "CQ_Text": "Which [Organization] preserved the [Venue] broadcast of [Event]?",
+      "Answer": "The British Broadcasting Corporation (BBC) recorded and archived the full Wembley concert.",
+      "Suggested": {
+        "Type": ":BroadcastMethod"
+      }
+    }
+  ],
+  "http://example.org/PhiladelphiaBroadcast": [
+    {
+      "CQ_ID": "CQ-L25",
+      "CQ_Text": "Which [Organization] deleted the [Venue] broadcast of [Event]?",
+      "Answer": "The American Broadcasting Company (ABC) did not retain the Philadelphia master tapes.",
+      "Suggested": {
+        "Type": ":BroadcastMethod"
+      }
+    }
+  ],
+  "http://example.org/BME": [
+    {
+      "CQ_ID": "CQ-L28",
+      "CQ_Text": "Where can the public view artifacts from [Artist]\u2019s [Event] performance?",
+      "Answer": "Artifacts from Live Aid and Queen\u2019s performance are preserved in the British Music Experience (BME), available for public viewing.",
+      "Suggested": {
+        "Type": "schema:Museum"
+      }
+    }
+  ]
+}

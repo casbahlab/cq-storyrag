@@ -1,0 +1,285 @@
+# CQ-E1: What kind of event was Live Aid?
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?event ?type ?label ?sameAs ?seeAlso ?startDate ?audience ?amountRaised
+WHERE {
+  BIND(ex:LiveAid1985 AS ?event)
+  ?event a ?type ;
+         rdfs:label ?label .
+  OPTIONAL { ?event schema:sameAs ?sameAs }
+  OPTIONAL { ?event rdfs:seeAlso ?seeAlso }
+  OPTIONAL { ?event schema:startDate ?startDate }
+  OPTIONAL { ?event schema:audience ?audience }
+  OPTIONAL { ?event schema:amountRaised ?amountRaised }
+}
+
+
+# CQ-E3/CQ-L3: Which artist performed at Live Aid?
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+SELECT DISTINCT ?artist ?artistLabel ?seeAlso ?sameAs ?subjectOf
+WHERE {
+  ?performance a mm:LivePerformance ;
+               mm:hasEvent ex:LiveAid1985 ;
+               mm:hasAgentRole ?artist .
+  ?artist rdfs:label ?artistLabel .
+  OPTIONAL { ?artist rdfs:seeAlso ?seeAlso }
+  OPTIONAL { ?artist schema:sameAs ?sameAs }
+  OPTIONAL { ?artist schema:subjectOf ?subjectOf }
+}
+ORDER BY ?artistLabel
+
+
+# CQ-E10/CQ-L10: Which songs did each artist perform? (with song URLs)
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+SELECT ?artist ?artistLabel ?song ?songLabel ?songURL
+WHERE {
+  ?performance a mm:LivePerformance ;
+               mm:hasEvent ex:LiveAid1985 ;
+               mm:hasAgentRole ?artist ;
+               mm:performedWork ?song .
+  ?artist rdfs:label ?artistLabel .
+  ?song rdfs:label ?songLabel .
+  OPTIONAL { ?song schema:sameAs ?songURL }
+  OPTIONAL { ?song rdfs:seeAlso ?songURL }
+  OPTIONAL { ?song schema:subjectOf ?songURL }
+}
+ORDER BY ?artistLabel ?songLabel
+
+
+# CQ-E15/CQ-L15: What genres are associated with artists? (RAG-ready with genre URLs)
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+SELECT ?artist ?artistLabel ?genre ?genreLabel ?genreURL
+WHERE {
+  ?artist a mm:MusicArtist ;
+          mm:hasGenre ?genre ;
+          rdfs:label ?artistLabel .
+  ?genre rdfs:label ?genreLabel .
+  OPTIONAL { ?genre schema:sameAs ?genreURL }
+  OPTIONAL { ?genre rdfs:seeAlso ?genreURL }
+  OPTIONAL { ?genre schema:subjectOf ?genreURL }
+}
+ORDER BY ?artistLabel ?genreLabel
+
+
+# CQ-E14: Who were the solo artists at Live Aid? (with external links)
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+SELECT ?soloArtist ?artistLabel ?artistURL
+WHERE {
+  ?soloArtist a mm:MusicArtist ;
+              rdfs:label ?artistLabel .
+  FILTER NOT EXISTS { ?soloArtist schema:member ?band }
+  OPTIONAL { ?soloArtist schema:sameAs ?artistURL }
+  OPTIONAL { ?soloArtist rdfs:seeAlso ?artistURL }
+  OPTIONAL { ?soloArtist schema:subjectOf ?artistURL }
+}
+ORDER BY ?artistLabel
+
+
+# CQ-L5: Which performances were in London vs Philadelphia? (RAG-ready with song URLs)
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?artist ?artistLabel ?song ?songLabel ?songURL ?location ?locationLabel
+WHERE {
+  ?perf a mm:LivePerformance ;
+        mm:hasEvent ex:LiveAid1985 ;
+        mm:hasAgentRole ?artist ;
+        mm:performedWork ?song ;
+        schema:location ?location .
+  ?artist rdfs:label ?artistLabel .
+  ?song rdfs:label ?songLabel .
+  ?location rdfs:label ?locationLabel .
+  OPTIONAL { ?song schema:sameAs ?songURL }
+  OPTIONAL { ?song rdfs:seeAlso ?songURL }
+  OPTIONAL { ?song schema:subjectOf ?songURL }
+}
+ORDER BY ?locationLabel ?artistLabel ?songLabel
+
+
+# CQ-E7/CQ-L6: Which broadcasters aired Live Aid? (RAG-ready with external links)
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+SELECT ?broadcaster ?broadcasterLabel ?broadcasterURL
+WHERE {
+  ex:LiveAid1985 mm:hasBroadcaster ?broadcaster .
+  ?broadcaster rdfs:label ?broadcasterLabel .
+  OPTIONAL { ?broadcaster schema:sameAs ?broadcasterURL }
+  OPTIONAL { ?broadcaster rdfs:seeAlso ?broadcasterURL }
+  OPTIONAL { ?broadcaster schema:subjectOf ?broadcasterURL }
+}
+ORDER BY ?broadcasterLabel
+
+
+# CQ-L5 Extended: What was the attendance at each venue? (RAG-ready with external links)
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?venue ?venueLabel ?attendance ?venueURL
+WHERE {
+  ?venue a schema:Place ;
+         rdfs:label ?venueLabel ;
+         schema:audience ?attendance .
+  OPTIONAL { ?venue schema:sameAs ?venueURL }
+  OPTIONAL { ?venue rdfs:seeAlso ?venueURL }
+  OPTIONAL { ?venue schema:subjectOf ?venueURL }
+}
+ORDER BY ?venueLabel
+
+
+# CQ-L7 Extended: What was the global TV audience size?
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
+SELECT ?audienceSize
+WHERE {
+  ex:LiveAid1985 schema:audience ?audienceSize .
+}
+
+# CQ-E20/CQ-L12: How much money was raised by Live Aid?
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
+SELECT ?amount
+WHERE {
+  ex:LiveAid1985 schema:amountRaised ?amount .
+}
+
+# CQ-E12/CQ-E13: When was Queen formed and who were the members? (with external links)
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?band ?bandLabel ?bandURL ?foundingDate ?member ?memberLabel ?memberURL
+WHERE {
+  # Band info
+  ex:Queen rdfs:label ?bandLabel ;
+           schema:foundingDate ?foundingDate ;
+           schema:member ?member .
+  BIND(ex:Queen AS ?band)
+  ?member rdfs:label ?memberLabel .
+  OPTIONAL { ?band schema:sameAs ?bandURL }
+  OPTIONAL { ?band rdfs:seeAlso ?bandURL }
+  OPTIONAL { ?band schema:subjectOf ?bandURL }
+  OPTIONAL { ?member schema:sameAs ?memberURL }
+  OPTIONAL { ?member rdfs:seeAlso ?memberURL }
+  OPTIONAL { ?member schema:subjectOf ?memberURL }
+}
+ORDER BY ?bandLabel ?memberLabel
+
+
+# CQ-E20 (Exit): How much money was raised by Live Aid?
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
+SELECT ?amount
+WHERE {
+  ex:LiveAid1985 schema:amountRaised ?amount .
+}
+
+
+# CQ-E21 (Exit): Which organization preserved the Wembley broadcast? (RAG-ready)
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?broadcast ?broadcastLabel ?broadcaster ?broadcasterLabel ?broadcasterURL ?archived
+WHERE {
+  ex:WembleyBroadcast a mm:Broadcast ;
+                      rdfs:label ?broadcastLabel ;
+                      mm:hasBroadcaster ?broadcaster ;
+                      schema:archived ?archived .
+  ?broadcaster rdfs:label ?broadcasterLabel .
+  OPTIONAL { ?broadcaster schema:sameAs ?broadcasterURL }
+  OPTIONAL { ?broadcaster rdfs:seeAlso ?broadcasterURL }
+  OPTIONAL { ?broadcaster schema:subjectOf ?broadcasterURL }
+  BIND(ex:WembleyBroadcast AS ?broadcast)
+}
+ORDER BY ?broadcasterLabel
+
+
+# CQ-E22 (Exit): Which organization failed to preserve the Philadelphia broadcast? (RAG-ready)
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?broadcast ?broadcastLabel ?broadcaster ?broadcasterLabel
+       (GROUP_CONCAT(DISTINCT ?broadcasterURL; SEPARATOR="|") AS ?broadcasterURLs)
+       ?archived
+WHERE {
+  # Philadelphia broadcast node
+  ex:PhiladelphiaBroadcast a mm:Broadcast ;
+                           rdfs:label ?broadcastLabel ;
+                           mm:hasBroadcaster ?broadcaster ;
+                           schema:archived ?archived .
+  ?broadcaster rdfs:label ?broadcasterLabel .
+  OPTIONAL { ?broadcaster schema:sameAs ?broadcasterURL }
+  OPTIONAL { ?broadcaster rdfs:seeAlso ?broadcasterURL }
+  OPTIONAL { ?broadcaster schema:subjectOf ?broadcasterURL }
+  BIND(ex:PhiladelphiaBroadcast AS ?broadcast)
+}
+GROUP BY ?broadcast ?broadcastLabel ?broadcaster ?broadcasterLabel ?archived
+ORDER BY ?broadcasterLabel
+
+
+
+# CQ-E24 (Exit): Why is Queen's Live Aid performance considered iconic?
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?comment
+WHERE {
+  ex:QueenLiveAidPerformance a mm:LivePerformance ;
+                             rdfs:comment ?comment .
+}
+
+# CQ-L27 (Exit): Did Live Aid inspire later benefit concerts such as Live 8? (RAG-ready)
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?event ?eventLabel ?nextEvent ?nextEventLabel ?nextEventURL ?comment
+WHERE {
+  ex:LiveAid1985 rdfs:label ?eventLabel ;
+                 schema:influenced ?nextEvent ;
+                 rdfs:comment ?comment .
+  BIND(ex:LiveAid1985 AS ?event)
+  ?nextEvent rdfs:label ?nextEventLabel .
+  OPTIONAL { ?nextEvent schema:sameAs ?nextEventURL }
+  OPTIONAL { ?nextEvent rdfs:seeAlso ?nextEventURL }
+  OPTIONAL { ?nextEvent schema:subjectOf ?nextEventURL }
+}
+ORDER BY ?nextEventLabel
+
+
+# CQ-L28 (Exit): Which artifacts from Live Aid performances are preserved at the BME? (RAG-ready)
+PREFIX ex: <http://example.org/liveaid/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?artifact ?artifactLabel ?artifactURL
+       ?artist ?artistLabel ?artistURL
+       ?location ?locationLabel ?comment
+WHERE {
+  ?artifact schema:creator ?artist ;
+            schema:location ?location ;
+            rdfs:comment ?comment ;
+            rdfs:label ?artifactLabel .
+  ?artist rdfs:label ?artistLabel .
+  ?location rdfs:label ?locationLabel .
+  OPTIONAL { ?artifact schema:sameAs ?artifactURL }
+  OPTIONAL { ?artifact rdfs:seeAlso ?artifactURL }
+  OPTIONAL { ?artifact schema:subjectOf ?artifactURL }
+  OPTIONAL { ?artist schema:sameAs ?artistURL }
+  OPTIONAL { ?artist rdfs:seeAlso ?artistURL }
+  OPTIONAL { ?artist schema:subjectOf ?artistURL }
+}
+ORDER BY ?artifactLabel
+

@@ -1,0 +1,1909 @@
+[
+  {
+    "CQ_ID": "CQ-E1",
+    "CQ_List": [
+      "CQ-E1"
+    ],
+    "CQ_Text": "What kind of event was Live Aid?",
+    "Persona": "Emma",
+    "Category": "Entry",
+    "Results": [
+      {
+        "event": "http://example.org/liveaid/LiveAid1985",
+        "type": "http://example.org/liveaid/BroadcastMusicEvent",
+        "label": "Live Aid 1985",
+        "sameAs": "https://musicbrainz.org/event/8e0ff16a-757f-4e16-9877-4c4131621a8b",
+        "seeAlso": "https://en.wikipedia.org/wiki/Live_Aid",
+        "startDate": "1985-07-13",
+        "audience": "1500000000",
+        "amountRaised": "125000000.0"
+      },
+      {
+        "event": "http://example.org/liveaid/LiveAid1985",
+        "type": "http://example.org/liveaid/BroadcastMusicEvent",
+        "label": "Live Aid 1985",
+        "sameAs": "https://www.wikidata.org/entity/Q193740",
+        "seeAlso": "https://en.wikipedia.org/wiki/Live_Aid",
+        "startDate": "1985-07-13",
+        "audience": "1500000000",
+        "amountRaised": "125000000.0"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E3/CQ-L3",
+    "CQ_List": [
+      "CQ-E3",
+      "CQ-L3"
+    ],
+    "CQ_Text": "Which artist performed at Live Aid?",
+    "Persona": "Emma",
+    "Category": "Entry",
+    "Results": [
+      {
+        "artist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "seeAlso": "https://en.wikipedia.org/wiki/Bob_Dylan",
+        "sameAs": "http://www.wikidata.org/entity/Q392",
+        "subjectOf": "https://en.wikipedia.org/wiki/Bob_Dylan"
+      },
+      {
+        "artist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "seeAlso": "https://en.wikipedia.org/wiki/Bob_Dylan",
+        "sameAs": "https://musicbrainz.org/artist/72c536dc-7137-4477-a521-567eeb840fa8",
+        "subjectOf": "https://en.wikipedia.org/wiki/Bob_Dylan"
+      },
+      {
+        "artist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "seeAlso": "https://en.wikipedia.org/wiki/Bob_Dylan",
+        "sameAs": "https://www.wikidata.org/wiki/Q392",
+        "subjectOf": "https://en.wikipedia.org/wiki/Bob_Dylan"
+      },
+      {
+        "artist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "seeAlso": "https://en.wikipedia.org/wiki/Bryan_Adams",
+        "sameAs": "http://www.wikidata.org/entity/Q482907",
+        "subjectOf": "https://en.wikipedia.org/wiki/Bryan_Adams"
+      },
+      {
+        "artist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "seeAlso": "https://en.wikipedia.org/wiki/Bryan_Adams",
+        "sameAs": "https://musicbrainz.org/artist/4dbf5678-7a31-406a-abbe-232f8ac2cd63",
+        "subjectOf": "https://en.wikipedia.org/wiki/Bryan_Adams"
+      },
+      {
+        "artist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "seeAlso": "https://en.wikipedia.org/wiki/Bryan_Adams",
+        "sameAs": "https://www.wikidata.org/wiki/Q482907",
+        "subjectOf": "https://en.wikipedia.org/wiki/Bryan_Adams"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "seeAlso": "https://en.wikipedia.org/wiki/David_Bowie",
+        "sameAs": "https://musicbrainz.org/artist/5441c29d-3602-4898-b1a1-b77fa23b8e50",
+        "subjectOf": "https://en.wikipedia.org/wiki/David_Bowie"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "seeAlso": "https://en.wikipedia.org/wiki/David_Bowie",
+        "sameAs": "https://www.wikidata.org/entity/DavidBowie",
+        "subjectOf": "https://en.wikipedia.org/wiki/David_Bowie"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "seeAlso": "https://en.wikipedia.org/wiki/David_Bowie",
+        "sameAs": "http://www.wikidata.org/entity/Q5383",
+        "subjectOf": "https://en.wikipedia.org/wiki/David_Bowie"
+      },
+      {
+        "artist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "seeAlso": "https://en.wikipedia.org/wiki/Dire_Straits",
+        "sameAs": "http://www.wikidata.org/entity/Q50040",
+        "subjectOf": "https://en.wikipedia.org/wiki/Dire_Straits"
+      },
+      {
+        "artist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "seeAlso": "https://en.wikipedia.org/wiki/Dire_Straits",
+        "sameAs": "https://musicbrainz.org/artist/614e3804-7d34-41ba-857f-811bad7c2b7a",
+        "subjectOf": "https://en.wikipedia.org/wiki/Dire_Straits"
+      },
+      {
+        "artist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "seeAlso": "https://en.wikipedia.org/wiki/Dire_Straits",
+        "sameAs": "https://www.wikidata.org/wiki/Q50040",
+        "subjectOf": "https://en.wikipedia.org/wiki/Dire_Straits"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "seeAlso": "https://en.wikipedia.org/wiki/Elton_John",
+        "sameAs": "https://www.wikidata.org/wiki/Q2808",
+        "subjectOf": "https://en.wikipedia.org/wiki/Elton_John"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "seeAlso": "https://en.wikipedia.org/wiki/Elton_John",
+        "sameAs": "http://www.wikidata.org/entity/Q2808",
+        "subjectOf": "https://en.wikipedia.org/wiki/Elton_John"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "seeAlso": "https://en.wikipedia.org/wiki/Elton_John",
+        "sameAs": "https://musicbrainz.org/artist/b83bc61f-8451-4a5d-8b8e-7e9ed295e822",
+        "subjectOf": "https://en.wikipedia.org/wiki/Elton_John"
+      },
+      {
+        "artist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "seeAlso": "https://en.wikipedia.org/wiki/Eric_Clapton",
+        "sameAs": "http://www.wikidata.org/entity/Q48187",
+        "subjectOf": "https://en.wikipedia.org/wiki/Eric_Clapton"
+      },
+      {
+        "artist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "seeAlso": "https://en.wikipedia.org/wiki/Eric_Clapton",
+        "sameAs": "https://musicbrainz.org/artist/618b6900-0618-4f1e-b835-bccb17f84294",
+        "subjectOf": "https://en.wikipedia.org/wiki/Eric_Clapton"
+      },
+      {
+        "artist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "seeAlso": "https://en.wikipedia.org/wiki/Eric_Clapton",
+        "sameAs": "https://www.wikidata.org/wiki/Q48187",
+        "subjectOf": "https://en.wikipedia.org/wiki/Eric_Clapton"
+      },
+      {
+        "artist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "seeAlso": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+        "sameAs": "http://www.wikidata.org/entity/Q2331",
+        "subjectOf": "https://en.wikipedia.org/wiki/Led_Zeppelin"
+      },
+      {
+        "artist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "seeAlso": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+        "sameAs": "https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3",
+        "subjectOf": "https://en.wikipedia.org/wiki/Led_Zeppelin"
+      },
+      {
+        "artist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "seeAlso": "https://en.wikipedia.org/wiki/Led_Zeppelin",
+        "sameAs": "https://www.wikidata.org/wiki/Q2331",
+        "subjectOf": "https://en.wikipedia.org/wiki/Led_Zeppelin"
+      },
+      {
+        "artist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "seeAlso": "https://en.wikipedia.org/wiki/Madonna",
+        "sameAs": "https://musicbrainz.org/artist/79239441-bfd5-4981-a70c-55c3f15c1287",
+        "subjectOf": "https://en.wikipedia.org/wiki/Madonna"
+      },
+      {
+        "artist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "seeAlso": "https://en.wikipedia.org/wiki/Madonna",
+        "sameAs": "https://www.wikidata.org/wiki/Q1744",
+        "subjectOf": "https://en.wikipedia.org/wiki/Madonna"
+      },
+      {
+        "artist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "seeAlso": "https://en.wikipedia.org/wiki/Madonna",
+        "sameAs": "http://www.wikidata.org/entity/Q1744",
+        "subjectOf": "https://en.wikipedia.org/wiki/Madonna"
+      },
+      {
+        "artist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "seeAlso": "https://en.wikipedia.org/wiki/Paul_McCartney",
+        "sameAs": "http://www.wikidata.org/entity/Q2599",
+        "subjectOf": "https://en.wikipedia.org/wiki/Paul_McCartney"
+      },
+      {
+        "artist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "seeAlso": "https://en.wikipedia.org/wiki/Paul_McCartney",
+        "sameAs": "https://musicbrainz.org/artist/ba550d0e-adac-4864-b88b-407cab5e76af",
+        "subjectOf": "https://en.wikipedia.org/wiki/Paul_McCartney"
+      },
+      {
+        "artist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "seeAlso": "https://en.wikipedia.org/wiki/Paul_McCartney",
+        "sameAs": "https://www.wikidata.org/wiki/Q2599",
+        "subjectOf": "https://en.wikipedia.org/wiki/Paul_McCartney"
+      },
+      {
+        "artist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "seeAlso": "https://en.wikipedia.org/wiki/Phil_Collins",
+        "sameAs": "http://www.wikidata.org/entity/Q144622",
+        "subjectOf": "https://en.wikipedia.org/wiki/Phil_Collins"
+      },
+      {
+        "artist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "seeAlso": "https://en.wikipedia.org/wiki/Phil_Collins",
+        "sameAs": "https://musicbrainz.org/artist/401c3991-b76b-499d-8082-9f2df958ef78",
+        "subjectOf": "https://en.wikipedia.org/wiki/Phil_Collins"
+      },
+      {
+        "artist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "seeAlso": "https://en.wikipedia.org/wiki/Phil_Collins",
+        "sameAs": "https://www.wikidata.org/wiki/Q144622",
+        "subjectOf": "https://en.wikipedia.org/wiki/Phil_Collins"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "seeAlso": "https://en.wikipedia.org/wiki/Queen",
+        "sameAs": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "subjectOf": "https://en.wikipedia.org/wiki/Queen_(band)"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "seeAlso": "https://en.wikipedia.org/wiki/Queen",
+        "sameAs": "https://www.wikidata.org/entity/Queen",
+        "subjectOf": "https://en.wikipedia.org/wiki/Queen_(band)"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "seeAlso": "https://en.wikipedia.org/wiki/Queen",
+        "sameAs": "http://www.wikidata.org/entity/Q15862",
+        "subjectOf": "https://en.wikipedia.org/wiki/Queen_(band)"
+      },
+      {
+        "artist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "seeAlso": "https://en.wikipedia.org/wiki/Sting",
+        "sameAs": "http://www.wikidata.org/entity/Q483203",
+        "subjectOf": "https://en.wikipedia.org/wiki/Sting_(musician)"
+      },
+      {
+        "artist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "seeAlso": "https://en.wikipedia.org/wiki/Sting",
+        "sameAs": "https://musicbrainz.org/artist/f8306763-5570-4217-b041-fab869331b18",
+        "subjectOf": "https://en.wikipedia.org/wiki/Sting_(musician)"
+      },
+      {
+        "artist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "seeAlso": "https://en.wikipedia.org/wiki/Sting",
+        "sameAs": "https://www.wikidata.org/wiki/Q483203",
+        "subjectOf": "https://en.wikipedia.org/wiki/Sting_(musician)"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "seeAlso": "https://en.wikipedia.org/wiki/The_Cars",
+        "sameAs": "https://www.wikidata.org/wiki/Q858388",
+        "subjectOf": "https://en.wikipedia.org/wiki/The_Cars"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "seeAlso": "https://en.wikipedia.org/wiki/The_Cars",
+        "sameAs": "http://www.wikidata.org/entity/Q858388",
+        "subjectOf": "https://en.wikipedia.org/wiki/The_Cars"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "seeAlso": "https://en.wikipedia.org/wiki/The_Cars",
+        "sameAs": "https://musicbrainz.org/artist/092b603f-eb4c-4958-b10e-02420de5885b",
+        "subjectOf": "https://en.wikipedia.org/wiki/The_Cars"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "seeAlso": "https://en.wikipedia.org/wiki/The_Who",
+        "sameAs": "https://www.wikidata.org/wiki/Q93346",
+        "subjectOf": "https://en.wikipedia.org/wiki/The_Who"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "seeAlso": "https://en.wikipedia.org/wiki/The_Who",
+        "sameAs": "http://www.wikidata.org/entity/Q93346",
+        "subjectOf": "https://en.wikipedia.org/wiki/The_Who"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "seeAlso": "https://en.wikipedia.org/wiki/The_Who",
+        "sameAs": "https://musicbrainz.org/artist/9fdaa16b-a6c4-4831-b87c-bc9ca8ce7eaa",
+        "subjectOf": "https://en.wikipedia.org/wiki/The_Who"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "seeAlso": "https://en.wikipedia.org/wiki/U2",
+        "sameAs": "https://www.wikidata.org/wiki/Q396",
+        "subjectOf": "https://en.wikipedia.org/wiki/U2"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "seeAlso": "https://en.wikipedia.org/wiki/U2",
+        "sameAs": "http://www.wikidata.org/entity/Q396",
+        "subjectOf": "https://en.wikipedia.org/wiki/U2"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "seeAlso": "https://en.wikipedia.org/wiki/U2",
+        "sameAs": "https://musicbrainz.org/artist/a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432",
+        "subjectOf": "https://en.wikipedia.org/wiki/U2"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E10/CQ-L10",
+    "CQ_List": [
+      "CQ-E10",
+      "CQ-L10"
+    ],
+    "CQ_Text": "Which songs did each artist perform? (with song URLs)",
+    "Persona": "Emma",
+    "Category": "Core",
+    "Results": [
+      {
+        "artist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "song": "http://example.org/liveaid/BlowinintheWind",
+        "songLabel": "Blowin' in the Wind",
+        "songURL": "http://www.wikidata.org/entity/Q640529"
+      },
+      {
+        "artist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "song": "http://example.org/liveaid/BlowinintheWind",
+        "songLabel": "Blowin' in the Wind",
+        "songURL": "https://musicbrainz.org/work/f5a12d42-00a1-3bc2-8ed1-df2506ea3db2"
+      },
+      {
+        "artist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "song": "http://example.org/liveaid/Summerof69",
+        "songLabel": "Summer of '69",
+        "songURL": "http://www.wikidata.org/entity/Q1472791"
+      },
+      {
+        "artist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "song": "http://example.org/liveaid/Summerof69",
+        "songLabel": "Summer of '69",
+        "songURL": "https://musicbrainz.org/work/9604422e-df7a-3528-9c25-c3afa67678ae"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "song": "http://example.org/liveaid/Heroes",
+        "songLabel": "Heroes",
+        "songURL": "http://www.wikidata.org/entity/Q701655"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "song": "http://example.org/liveaid/Heroes",
+        "songLabel": "Heroes",
+        "songURL": "https://musicbrainz.org/work/e2b01286-a914-3eb9-a0ab-89e0659b878c"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "song": "http://example.org/liveaid/RebelRebel",
+        "songLabel": "Rebel Rebel",
+        "songURL": "http://www.wikidata.org/entity/Q2190364"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "song": "http://example.org/liveaid/RebelRebel",
+        "songLabel": "Rebel Rebel",
+        "songURL": "https://musicbrainz.org/work/dc6d909d-a39f-3932-a194-19703564743e"
+      },
+      {
+        "artist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "song": "http://example.org/liveaid/SultansofSwing",
+        "songLabel": "Sultans of Swing",
+        "songURL": "http://www.wikidata.org/entity/Q2270916"
+      },
+      {
+        "artist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "song": "http://example.org/liveaid/SultansofSwing",
+        "songLabel": "Sultans of Swing",
+        "songURL": "https://musicbrainz.org/work/8626823c-47f9-3053-a9c5-4b7e9343b5df"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "song": "http://example.org/liveaid/BennieandtheJets",
+        "songLabel": "Bennie and the Jets",
+        "songURL": "http://www.wikidata.org/entity/Q2560178"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "song": "http://example.org/liveaid/BennieandtheJets",
+        "songLabel": "Bennie and the Jets",
+        "songURL": "https://musicbrainz.org/work/6ef8fb46-a4dc-312f-9a18-e21682fd7550"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "song": "http://example.org/liveaid/RocketMan",
+        "songLabel": "Rocket Man",
+        "songURL": "http://www.wikidata.org/entity/Q56070897"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "song": "http://example.org/liveaid/RocketMan",
+        "songLabel": "Rocket Man",
+        "songURL": "https://musicbrainz.org/work/af9bc306-eb56-3eb1-9d37-eb46ceca1e50"
+      },
+      {
+        "artist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "song": "http://example.org/liveaid/Layla",
+        "songLabel": "Layla",
+        "songURL": "http://www.wikidata.org/entity/Q923966"
+      },
+      {
+        "artist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "song": "http://example.org/liveaid/Layla",
+        "songLabel": "Layla",
+        "songURL": "https://musicbrainz.org/work/beb76331-bb4b-30b3-b4f4-ca80742ebd47"
+      },
+      {
+        "artist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "song": "http://example.org/liveaid/StairwaytoHeaven",
+        "songLabel": "Stairway to Heaven",
+        "songURL": "http://www.wikidata.org/entity/Q192023"
+      },
+      {
+        "artist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "song": "http://example.org/liveaid/StairwaytoHeaven",
+        "songLabel": "Stairway to Heaven",
+        "songURL": "https://musicbrainz.org/work/968ee3c5-21fa-35de-88f9-bd1c300ac3ee"
+      },
+      {
+        "artist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "song": "http://example.org/liveaid/LikeaVirgin",
+        "songLabel": "Like a Virgin",
+        "songURL": "http://www.wikidata.org/entity/Q542497"
+      },
+      {
+        "artist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "song": "http://example.org/liveaid/LikeaVirgin",
+        "songLabel": "Like a Virgin",
+        "songURL": "https://musicbrainz.org/work/2ae1284a-3eb2-3b00-bb8c-9597593f2309"
+      },
+      {
+        "artist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "song": "http://example.org/liveaid/LetItBe",
+        "songLabel": "Let It Be",
+        "songURL": "http://www.wikidata.org/entity/Q184259"
+      },
+      {
+        "artist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "song": "http://example.org/liveaid/LetItBe",
+        "songLabel": "Let It Be",
+        "songURL": "https://musicbrainz.org/work/ef5b9074-84d2-3e46-81ba-cdbe57898033"
+      },
+      {
+        "artist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "song": "http://example.org/liveaid/IntheAirTonight",
+        "songLabel": "In the Air Tonight",
+        "songURL": "http://www.wikidata.org/entity/Q546425"
+      },
+      {
+        "artist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "song": "http://example.org/liveaid/IntheAirTonight",
+        "songLabel": "In the Air Tonight",
+        "songURL": "https://musicbrainz.org/work/b9a05cea-1b4d-3139-980e-a48e14537800"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/BohemianRhapsody",
+        "songLabel": "Bohemian Rhapsody",
+        "songURL": "http://www.wikidata.org/entity/Q187745"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/BohemianRhapsody",
+        "songLabel": "Bohemian Rhapsody",
+        "songURL": "https://musicbrainz.org/recording/f1248820-11bf-4c35-8b70-0660b05325e5"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/BohemianRhapsody",
+        "songLabel": "Bohemian Rhapsody",
+        "songURL": "https://musicbrainz.org/work/41c94a08-a551-3c86-bb17-d9a52e3a618b"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/BohemianRhapsody",
+        "songLabel": "Bohemian Rhapsody",
+        "songURL": "https://www.wikidata.org/wiki/Q187745"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/RadioGaGa",
+        "songLabel": "Radio Ga Ga",
+        "songURL": "http://www.wikidata.org/entity/Q605031"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/RadioGaGa",
+        "songLabel": "Radio Ga Ga",
+        "songURL": "https://musicbrainz.org/work/2c76fe20-59d5-3dd9-93ee-be2107ac977c"
+      },
+      {
+        "artist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "song": "http://example.org/liveaid/Roxanne",
+        "songLabel": "Roxanne",
+        "songURL": "http://www.wikidata.org/entity/Q1631268"
+      },
+      {
+        "artist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "song": "http://example.org/liveaid/Roxanne",
+        "songLabel": "Roxanne",
+        "songURL": "https://musicbrainz.org/work/0ddba90a-83cd-3edc-9335-14460903952e"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "song": "http://example.org/liveaid/Drive",
+        "songLabel": "Drive",
+        "songURL": "http://www.wikidata.org/entity/Q169987"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "song": "http://example.org/liveaid/Drive",
+        "songLabel": "Drive",
+        "songURL": "https://musicbrainz.org/work/4cbcd04d-3b93-30b1-bd33-3ace8d4a1826"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "song": "http://example.org/liveaid/MyGeneration",
+        "songLabel": "My Generation",
+        "songURL": "http://www.wikidata.org/entity/Q8353114"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "song": "http://example.org/liveaid/MyGeneration",
+        "songLabel": "My Generation",
+        "songURL": "https://musicbrainz.org/work/a55b5d5b-cc47-304c-98c1-460fe91e1cd7"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "song": "http://example.org/liveaid/PinballWizard",
+        "songLabel": "Pinball Wizard",
+        "songURL": "http://www.wikidata.org/entity/Q2321342"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "song": "http://example.org/liveaid/PinballWizard",
+        "songLabel": "Pinball Wizard",
+        "songURL": "https://musicbrainz.org/work/6ef8cd26-d0a7-36a1-84f5-5d872364d7c6"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "song": "http://example.org/liveaid/Bad",
+        "songLabel": "Bad",
+        "songURL": "http://www.wikidata.org/entity/Q2602667"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "song": "http://example.org/liveaid/Bad",
+        "songLabel": "Bad",
+        "songURL": "https://musicbrainz.org/work/62d0a051-20ff-3fce-961c-c9157e38a07d"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "song": "http://example.org/liveaid/SundayBloodySunday",
+        "songLabel": "Sunday Bloody Sunday",
+        "songURL": "http://www.wikidata.org/entity/Q1779491"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "song": "http://example.org/liveaid/SundayBloodySunday",
+        "songLabel": "Sunday Bloody Sunday",
+        "songURL": "https://musicbrainz.org/work/dc2c1143-4ef4-3406-873f-e3158942e363"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E15/CQ-L15",
+    "CQ_List": [
+      "CQ-E15",
+      "CQ-L15"
+    ],
+    "CQ_Text": "What genres are associated with artists? (RAG-ready with genre URLs)",
+    "Persona": "Emma",
+    "Category": "Core",
+    "Results": [
+      {
+        "artist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "genre": "http://example.org/liveaid/PopRock",
+        "genreLabel": "Pop Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q484641"
+      },
+      {
+        "artist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "genre": "http://example.org/liveaid/Pop",
+        "genreLabel": "Pop",
+        "genreURL": "https://www.wikidata.org/entity/Q37073"
+      },
+      {
+        "artist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "genre": "http://example.org/liveaid/PopRock",
+        "genreLabel": "Pop Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q484641"
+      },
+      {
+        "artist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "genre": "http://example.org/liveaid/PopRock",
+        "genreLabel": "Pop Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q484641"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "genre": "http://example.org/liveaid/Rock",
+        "genreLabel": "Rock",
+        "genreURL": "https://www.wikidata.org/entity/Q11399"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E14",
+    "CQ_List": [
+      "CQ-E14"
+    ],
+    "CQ_Text": "Who were the solo artists at Live Aid? (with external links)",
+    "Persona": "Emma",
+    "Category": "Core",
+    "Results": [
+      {
+        "soloArtist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "artistURL": "http://www.wikidata.org/entity/Q392"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "artistURL": "https://musicbrainz.org/artist/72c536dc-7137-4477-a521-567eeb840fa8"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "artistURL": "https://www.wikidata.org/wiki/Q392"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BrianMay",
+        "artistLabel": "Brian May",
+        "artistURL": "http://www.wikidata.org/entity/Q15873"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BrianMay",
+        "artistLabel": "Brian May",
+        "artistURL": "https://musicbrainz.org/artist/6d24f102-5c43-453a-8664-4ee092f441cf"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "artistURL": "http://www.wikidata.org/entity/Q482907"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "artistURL": "https://musicbrainz.org/artist/4dbf5678-7a31-406a-abbe-232f8ac2cd63"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "artistURL": "https://www.wikidata.org/wiki/Q482907"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "artistURL": "https://musicbrainz.org/artist/5441c29d-3602-4898-b1a1-b77fa23b8e50"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "artistURL": "https://www.wikidata.org/entity/DavidBowie"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "artistURL": "http://www.wikidata.org/entity/Q5383"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "artistURL": "http://www.wikidata.org/entity/Q50040"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "artistURL": "https://musicbrainz.org/artist/614e3804-7d34-41ba-857f-811bad7c2b7a"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "artistURL": "https://www.wikidata.org/wiki/Q50040"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "artistURL": "https://www.wikidata.org/wiki/Q2808"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "artistURL": "http://www.wikidata.org/entity/Q2808"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "artistURL": "https://musicbrainz.org/artist/b83bc61f-8451-4a5d-8b8e-7e9ed295e822"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "artistURL": "http://www.wikidata.org/entity/Q48187"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "artistURL": "https://musicbrainz.org/artist/618b6900-0618-4f1e-b835-bccb17f84294"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "artistURL": "https://www.wikidata.org/wiki/Q48187"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/FreddieMercury",
+        "artistLabel": "Freddie Mercury",
+        "artistURL": "http://www.wikidata.org/entity/Q15869"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/FreddieMercury",
+        "artistLabel": "Freddie Mercury",
+        "artistURL": "https://musicbrainz.org/artist/022589ac-7177-460d-a178-9976cf70e29f"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/JohnDeacon",
+        "artistLabel": "John Deacon",
+        "artistURL": "http://www.wikidata.org/entity/Q192103"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/JohnDeacon",
+        "artistLabel": "John Deacon",
+        "artistURL": "https://musicbrainz.org/artist/a0b77a10-ecff-4b84-b1f3-008391038d67"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "artistURL": "http://www.wikidata.org/entity/Q2331"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "artistURL": "https://musicbrainz.org/artist/678d88b2-87b0-403b-b63d-5da7465aecc3"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "artistURL": "https://www.wikidata.org/wiki/Q2331"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "artistURL": "https://musicbrainz.org/artist/79239441-bfd5-4981-a70c-55c3f15c1287"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "artistURL": "https://www.wikidata.org/wiki/Q1744"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "artistURL": "http://www.wikidata.org/entity/Q1744"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "artistURL": "http://www.wikidata.org/entity/Q2599"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "artistURL": "https://musicbrainz.org/artist/ba550d0e-adac-4864-b88b-407cab5e76af"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "artistURL": "https://www.wikidata.org/wiki/Q2599"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "artistURL": "http://www.wikidata.org/entity/Q144622"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "artistURL": "https://musicbrainz.org/artist/401c3991-b76b-499d-8082-9f2df958ef78"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "artistURL": "https://www.wikidata.org/wiki/Q144622"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/RogerTaylor",
+        "artistLabel": "Roger Taylor",
+        "artistURL": "http://www.wikidata.org/entity/Q15880"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/RogerTaylor",
+        "artistLabel": "Roger Taylor",
+        "artistURL": "https://musicbrainz.org/artist/558302b1-07ae-4be1-9edb-2a2b1f036313"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "artistURL": "http://www.wikidata.org/entity/Q483203"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "artistURL": "https://musicbrainz.org/artist/f8306763-5570-4217-b041-fab869331b18"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "artistURL": "https://www.wikidata.org/wiki/Q483203"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "artistURL": "https://www.wikidata.org/wiki/Q858388"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "artistURL": "http://www.wikidata.org/entity/Q858388"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "artistURL": "https://musicbrainz.org/artist/092b603f-eb4c-4958-b10e-02420de5885b"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "artistURL": "https://www.wikidata.org/wiki/Q93346"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "artistURL": "http://www.wikidata.org/entity/Q93346"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "artistURL": "https://musicbrainz.org/artist/9fdaa16b-a6c4-4831-b87c-bc9ca8ce7eaa"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "artistURL": "https://www.wikidata.org/wiki/Q396"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "artistURL": "http://www.wikidata.org/entity/Q396"
+      },
+      {
+        "soloArtist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "artistURL": "https://musicbrainz.org/artist/a3cb23fc-acd3-4ce0-8f36-1e5aa6a18432"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L5",
+    "CQ_List": [
+      "CQ-L5"
+    ],
+    "CQ_Text": "Which performances were in London vs Philadelphia? (RAG-ready with song URLs)",
+    "Persona": "Luca",
+    "Category": "Entry",
+    "Results": [
+      {
+        "artist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "song": "http://example.org/liveaid/Summerof69",
+        "songLabel": "Summer of '69",
+        "songURL": "http://www.wikidata.org/entity/Q1472791",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/BryanAdams",
+        "artistLabel": "Bryan Adams",
+        "song": "http://example.org/liveaid/Summerof69",
+        "songLabel": "Summer of '69",
+        "songURL": "https://musicbrainz.org/work/9604422e-df7a-3528-9c25-c3afa67678ae",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "song": "http://example.org/liveaid/Heroes",
+        "songLabel": "Heroes",
+        "songURL": "http://www.wikidata.org/entity/Q701655",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "song": "http://example.org/liveaid/Heroes",
+        "songLabel": "Heroes",
+        "songURL": "https://musicbrainz.org/work/e2b01286-a914-3eb9-a0ab-89e0659b878c",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "song": "http://example.org/liveaid/RebelRebel",
+        "songLabel": "Rebel Rebel",
+        "songURL": "http://www.wikidata.org/entity/Q2190364",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/DavidBowie",
+        "artistLabel": "David Bowie",
+        "song": "http://example.org/liveaid/RebelRebel",
+        "songLabel": "Rebel Rebel",
+        "songURL": "https://musicbrainz.org/work/dc6d909d-a39f-3932-a194-19703564743e",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "song": "http://example.org/liveaid/SultansofSwing",
+        "songLabel": "Sultans of Swing",
+        "songURL": "http://www.wikidata.org/entity/Q2270916",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/DireStraits",
+        "artistLabel": "Dire Straits",
+        "song": "http://example.org/liveaid/SultansofSwing",
+        "songLabel": "Sultans of Swing",
+        "songURL": "https://musicbrainz.org/work/8626823c-47f9-3053-a9c5-4b7e9343b5df",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "song": "http://example.org/liveaid/Layla",
+        "songLabel": "Layla",
+        "songURL": "http://www.wikidata.org/entity/Q923966",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/EricClapton",
+        "artistLabel": "Eric Clapton",
+        "song": "http://example.org/liveaid/Layla",
+        "songLabel": "Layla",
+        "songURL": "https://musicbrainz.org/work/beb76331-bb4b-30b3-b4f4-ca80742ebd47",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "song": "http://example.org/liveaid/LetItBe",
+        "songLabel": "Let It Be",
+        "songURL": "http://www.wikidata.org/entity/Q184259",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/PaulMcCartney",
+        "artistLabel": "Paul McCartney",
+        "song": "http://example.org/liveaid/LetItBe",
+        "songLabel": "Let It Be",
+        "songURL": "https://musicbrainz.org/work/ef5b9074-84d2-3e46-81ba-cdbe57898033",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "song": "http://example.org/liveaid/IntheAirTonight",
+        "songLabel": "In the Air Tonight",
+        "songURL": "http://www.wikidata.org/entity/Q546425",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/PhilCollins",
+        "artistLabel": "Phil Collins",
+        "song": "http://example.org/liveaid/IntheAirTonight",
+        "songLabel": "In the Air Tonight",
+        "songURL": "https://musicbrainz.org/work/b9a05cea-1b4d-3139-980e-a48e14537800",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/BohemianRhapsody",
+        "songLabel": "Bohemian Rhapsody",
+        "songURL": "http://www.wikidata.org/entity/Q187745",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/BohemianRhapsody",
+        "songLabel": "Bohemian Rhapsody",
+        "songURL": "https://musicbrainz.org/recording/f1248820-11bf-4c35-8b70-0660b05325e5",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/BohemianRhapsody",
+        "songLabel": "Bohemian Rhapsody",
+        "songURL": "https://musicbrainz.org/work/41c94a08-a551-3c86-bb17-d9a52e3a618b",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/BohemianRhapsody",
+        "songLabel": "Bohemian Rhapsody",
+        "songURL": "https://www.wikidata.org/wiki/Q187745",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/RadioGaGa",
+        "songLabel": "Radio Ga Ga",
+        "songURL": "http://www.wikidata.org/entity/Q605031",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "song": "http://example.org/liveaid/RadioGaGa",
+        "songLabel": "Radio Ga Ga",
+        "songURL": "https://musicbrainz.org/work/2c76fe20-59d5-3dd9-93ee-be2107ac977c",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "song": "http://example.org/liveaid/Roxanne",
+        "songLabel": "Roxanne",
+        "songURL": "http://www.wikidata.org/entity/Q1631268",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/Sting",
+        "artistLabel": "Sting",
+        "song": "http://example.org/liveaid/Roxanne",
+        "songLabel": "Roxanne",
+        "songURL": "https://musicbrainz.org/work/0ddba90a-83cd-3edc-9335-14460903952e",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "song": "http://example.org/liveaid/Bad",
+        "songLabel": "Bad",
+        "songURL": "http://www.wikidata.org/entity/Q2602667",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "song": "http://example.org/liveaid/Bad",
+        "songLabel": "Bad",
+        "songURL": "https://musicbrainz.org/work/62d0a051-20ff-3fce-961c-c9157e38a07d",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "song": "http://example.org/liveaid/SundayBloodySunday",
+        "songLabel": "Sunday Bloody Sunday",
+        "songURL": "http://www.wikidata.org/entity/Q1779491",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/U2",
+        "artistLabel": "U2",
+        "song": "http://example.org/liveaid/SundayBloodySunday",
+        "songLabel": "Sunday Bloody Sunday",
+        "songURL": "https://musicbrainz.org/work/dc2c1143-4ef4-3406-873f-e3158942e363",
+        "location": "http://example.org/liveaid/London",
+        "locationLabel": "London"
+      },
+      {
+        "artist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "song": "http://example.org/liveaid/BlowinintheWind",
+        "songLabel": "Blowin' in the Wind",
+        "songURL": "http://www.wikidata.org/entity/Q640529",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/BobDylan",
+        "artistLabel": "Bob Dylan",
+        "song": "http://example.org/liveaid/BlowinintheWind",
+        "songLabel": "Blowin' in the Wind",
+        "songURL": "https://musicbrainz.org/work/f5a12d42-00a1-3bc2-8ed1-df2506ea3db2",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "song": "http://example.org/liveaid/BennieandtheJets",
+        "songLabel": "Bennie and the Jets",
+        "songURL": "http://www.wikidata.org/entity/Q2560178",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "song": "http://example.org/liveaid/BennieandtheJets",
+        "songLabel": "Bennie and the Jets",
+        "songURL": "https://musicbrainz.org/work/6ef8fb46-a4dc-312f-9a18-e21682fd7550",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "song": "http://example.org/liveaid/RocketMan",
+        "songLabel": "Rocket Man",
+        "songURL": "http://www.wikidata.org/entity/Q56070897",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/EltonJohn",
+        "artistLabel": "Elton John",
+        "song": "http://example.org/liveaid/RocketMan",
+        "songLabel": "Rocket Man",
+        "songURL": "https://musicbrainz.org/work/af9bc306-eb56-3eb1-9d37-eb46ceca1e50",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "song": "http://example.org/liveaid/StairwaytoHeaven",
+        "songLabel": "Stairway to Heaven",
+        "songURL": "http://www.wikidata.org/entity/Q192023",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/LedZeppelin",
+        "artistLabel": "Led Zeppelin",
+        "song": "http://example.org/liveaid/StairwaytoHeaven",
+        "songLabel": "Stairway to Heaven",
+        "songURL": "https://musicbrainz.org/work/968ee3c5-21fa-35de-88f9-bd1c300ac3ee",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "song": "http://example.org/liveaid/LikeaVirgin",
+        "songLabel": "Like a Virgin",
+        "songURL": "http://www.wikidata.org/entity/Q542497",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/Madonna",
+        "artistLabel": "Madonna",
+        "song": "http://example.org/liveaid/LikeaVirgin",
+        "songLabel": "Like a Virgin",
+        "songURL": "https://musicbrainz.org/work/2ae1284a-3eb2-3b00-bb8c-9597593f2309",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "song": "http://example.org/liveaid/Drive",
+        "songLabel": "Drive",
+        "songURL": "http://www.wikidata.org/entity/Q169987",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheCars",
+        "artistLabel": "The Cars",
+        "song": "http://example.org/liveaid/Drive",
+        "songLabel": "Drive",
+        "songURL": "https://musicbrainz.org/work/4cbcd04d-3b93-30b1-bd33-3ace8d4a1826",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "song": "http://example.org/liveaid/MyGeneration",
+        "songLabel": "My Generation",
+        "songURL": "http://www.wikidata.org/entity/Q8353114",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "song": "http://example.org/liveaid/MyGeneration",
+        "songLabel": "My Generation",
+        "songURL": "https://musicbrainz.org/work/a55b5d5b-cc47-304c-98c1-460fe91e1cd7",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "song": "http://example.org/liveaid/PinballWizard",
+        "songLabel": "Pinball Wizard",
+        "songURL": "http://www.wikidata.org/entity/Q2321342",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      },
+      {
+        "artist": "http://example.org/liveaid/TheWho",
+        "artistLabel": "The Who",
+        "song": "http://example.org/liveaid/PinballWizard",
+        "songLabel": "Pinball Wizard",
+        "songURL": "https://musicbrainz.org/work/6ef8cd26-d0a7-36a1-84f5-5d872364d7c6",
+        "location": "http://example.org/liveaid/Philadelphia",
+        "locationLabel": "Philadelphia"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E7/CQ-L6",
+    "CQ_List": [
+      "CQ-E7",
+      "CQ-L6"
+    ],
+    "CQ_Text": "Which broadcasters aired Live Aid? (RAG-ready with external links)",
+    "Persona": "Emma",
+    "Category": "Entry",
+    "Results": [
+      {
+        "broadcaster": "http://example.org/liveaid/ABC",
+        "broadcasterLabel": "ABC",
+        "broadcasterURL": "https://www.wikidata.org/entity/Q169889"
+      },
+      {
+        "broadcaster": "http://example.org/liveaid/BBC",
+        "broadcasterLabel": "BBC",
+        "broadcasterURL": "https://www.wikidata.org/wiki/Q9531"
+      },
+      {
+        "broadcaster": "http://example.org/liveaid/MTV",
+        "broadcasterLabel": "MTV",
+        "broadcasterURL": "https://www.wikidata.org/wiki/Q43359"
+      },
+      {
+        "broadcaster": "http://example.org/liveaid/MTV",
+        "broadcasterLabel": "MTV",
+        "broadcasterURL": "https://www.wikidata.org/entity/Q43359"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L5 Extended",
+    "CQ_List": [
+      "CQ-L5"
+    ],
+    "CQ_Text": "What was the attendance at each venue? (RAG-ready with external links)",
+    "Persona": "Luca",
+    "Category": "Entry",
+    "Results": [
+      {
+        "venue": "http://example.org/liveaid/JFKStadium",
+        "venueLabel": "JFK Stadium",
+        "attendance": "89000",
+        "venueURL": "https://www.wikidata.org/entity/Q128468"
+      },
+      {
+        "venue": "http://example.org/liveaid/WembleyStadium",
+        "venueLabel": "Wembley Stadium",
+        "attendance": "72000",
+        "venueURL": "https://www.wikidata.org/entity/Q43279"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L7 Extended",
+    "CQ_List": [
+      "CQ-L7"
+    ],
+    "CQ_Text": "What was the global TV audience size?",
+    "Persona": "Luca",
+    "Category": "Entry",
+    "Results": [
+      {
+        "audienceSize": "1500000000"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E20/CQ-L12",
+    "CQ_List": [
+      "CQ-E20",
+      "CQ-L12"
+    ],
+    "CQ_Text": "How much money was raised by Live Aid?",
+    "Persona": "Emma",
+    "Category": "Exit",
+    "Results": [
+      {
+        "amount": "125000000.0"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E12/CQ-E13",
+    "CQ_List": [
+      "CQ-E12",
+      "CQ-E13"
+    ],
+    "CQ_Text": "When was Queen formed and who were the members? (with external links)",
+    "Persona": "Emma",
+    "Category": "Core",
+    "Results": [
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/BrianMay",
+        "memberLabel": "Brian May",
+        "memberURL": "http://www.wikidata.org/entity/Q15873"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/BrianMay",
+        "memberLabel": "Brian May",
+        "memberURL": "https://musicbrainz.org/artist/6d24f102-5c43-453a-8664-4ee092f441cf"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://www.wikidata.org/entity/Queen",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/BrianMay",
+        "memberLabel": "Brian May",
+        "memberURL": "http://www.wikidata.org/entity/Q15873"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://www.wikidata.org/entity/Queen",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/BrianMay",
+        "memberLabel": "Brian May",
+        "memberURL": "https://musicbrainz.org/artist/6d24f102-5c43-453a-8664-4ee092f441cf"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "http://www.wikidata.org/entity/Q15862",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/BrianMay",
+        "memberLabel": "Brian May",
+        "memberURL": "http://www.wikidata.org/entity/Q15873"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "http://www.wikidata.org/entity/Q15862",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/BrianMay",
+        "memberLabel": "Brian May",
+        "memberURL": "https://musicbrainz.org/artist/6d24f102-5c43-453a-8664-4ee092f441cf"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/FreddieMercury",
+        "memberLabel": "Freddie Mercury",
+        "memberURL": "http://www.wikidata.org/entity/Q15869"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/FreddieMercury",
+        "memberLabel": "Freddie Mercury",
+        "memberURL": "https://musicbrainz.org/artist/022589ac-7177-460d-a178-9976cf70e29f"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://www.wikidata.org/entity/Queen",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/FreddieMercury",
+        "memberLabel": "Freddie Mercury",
+        "memberURL": "http://www.wikidata.org/entity/Q15869"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://www.wikidata.org/entity/Queen",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/FreddieMercury",
+        "memberLabel": "Freddie Mercury",
+        "memberURL": "https://musicbrainz.org/artist/022589ac-7177-460d-a178-9976cf70e29f"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "http://www.wikidata.org/entity/Q15862",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/FreddieMercury",
+        "memberLabel": "Freddie Mercury",
+        "memberURL": "http://www.wikidata.org/entity/Q15869"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "http://www.wikidata.org/entity/Q15862",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/FreddieMercury",
+        "memberLabel": "Freddie Mercury",
+        "memberURL": "https://musicbrainz.org/artist/022589ac-7177-460d-a178-9976cf70e29f"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/JohnDeacon",
+        "memberLabel": "John Deacon",
+        "memberURL": "http://www.wikidata.org/entity/Q192103"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/JohnDeacon",
+        "memberLabel": "John Deacon",
+        "memberURL": "https://musicbrainz.org/artist/a0b77a10-ecff-4b84-b1f3-008391038d67"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://www.wikidata.org/entity/Queen",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/JohnDeacon",
+        "memberLabel": "John Deacon",
+        "memberURL": "http://www.wikidata.org/entity/Q192103"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://www.wikidata.org/entity/Queen",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/JohnDeacon",
+        "memberLabel": "John Deacon",
+        "memberURL": "https://musicbrainz.org/artist/a0b77a10-ecff-4b84-b1f3-008391038d67"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "http://www.wikidata.org/entity/Q15862",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/JohnDeacon",
+        "memberLabel": "John Deacon",
+        "memberURL": "http://www.wikidata.org/entity/Q192103"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "http://www.wikidata.org/entity/Q15862",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/JohnDeacon",
+        "memberLabel": "John Deacon",
+        "memberURL": "https://musicbrainz.org/artist/a0b77a10-ecff-4b84-b1f3-008391038d67"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/RogerTaylor",
+        "memberLabel": "Roger Taylor",
+        "memberURL": "http://www.wikidata.org/entity/Q15880"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/RogerTaylor",
+        "memberLabel": "Roger Taylor",
+        "memberURL": "https://musicbrainz.org/artist/558302b1-07ae-4be1-9edb-2a2b1f036313"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://www.wikidata.org/entity/Queen",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/RogerTaylor",
+        "memberLabel": "Roger Taylor",
+        "memberURL": "http://www.wikidata.org/entity/Q15880"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "https://www.wikidata.org/entity/Queen",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/RogerTaylor",
+        "memberLabel": "Roger Taylor",
+        "memberURL": "https://musicbrainz.org/artist/558302b1-07ae-4be1-9edb-2a2b1f036313"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "http://www.wikidata.org/entity/Q15862",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/RogerTaylor",
+        "memberLabel": "Roger Taylor",
+        "memberURL": "http://www.wikidata.org/entity/Q15880"
+      },
+      {
+        "band": "http://example.org/liveaid/Queen",
+        "bandLabel": "Queen",
+        "bandURL": "http://www.wikidata.org/entity/Q15862",
+        "foundingDate": "1970-01-01",
+        "member": "http://example.org/liveaid/RogerTaylor",
+        "memberLabel": "Roger Taylor",
+        "memberURL": "https://musicbrainz.org/artist/558302b1-07ae-4be1-9edb-2a2b1f036313"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E20 (Exit)",
+    "CQ_List": [
+      "CQ-E20"
+    ],
+    "CQ_Text": "How much money was raised by Live Aid?",
+    "Persona": "Emma",
+    "Category": "Exit",
+    "Results": [
+      {
+        "amount": "125000000.0"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E21 (Exit)",
+    "CQ_List": [
+      "CQ-E21"
+    ],
+    "CQ_Text": "Which organization preserved the Wembley broadcast? (RAG-ready)",
+    "Persona": "Emma",
+    "Category": "Exit",
+    "Results": [
+      {
+        "broadcast": "http://example.org/liveaid/WembleyBroadcast",
+        "broadcastLabel": "Wembley Broadcast",
+        "broadcaster": "http://example.org/liveaid/BBC",
+        "broadcasterLabel": "BBC",
+        "broadcasterURL": "https://www.wikidata.org/wiki/Q9531",
+        "archived": "true"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E22 (Exit)",
+    "CQ_List": [
+      "CQ-E22"
+    ],
+    "CQ_Text": "Which organization failed to preserve the Philadelphia broadcast? (RAG-ready)",
+    "Persona": "Emma",
+    "Category": "Exit",
+    "Results": [
+      {
+        "broadcast": "http://example.org/liveaid/PhiladelphiaBroadcast",
+        "broadcastLabel": "Philadelphia Broadcast",
+        "broadcaster": "http://example.org/liveaid/ABC",
+        "broadcasterLabel": "ABC",
+        "broadcasterURLs": "https://www.wikidata.org/entity/Q169889",
+        "archived": "false"
+      },
+      {
+        "broadcast": "http://example.org/liveaid/PhiladelphiaBroadcast",
+        "broadcastLabel": "Philadelphia Broadcast",
+        "broadcaster": "http://example.org/liveaid/MTV",
+        "broadcasterLabel": "MTV",
+        "broadcasterURLs": "https://www.wikidata.org/wiki/Q43359|https://www.wikidata.org/entity/Q43359",
+        "archived": "false"
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-E24 (Exit)",
+    "CQ_List": [
+      "CQ-E24"
+    ],
+    "CQ_Text": "Why is Queen's Live Aid performance considered iconic?",
+    "Persona": "Emma",
+    "Category": "Exit",
+    "Results": [
+      {
+        "comment": "Considered iconic for Freddie Mercury's showmanship, the crowd participation, and the lasting impact on Live Aid history."
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L27 (Exit)",
+    "CQ_List": [
+      "CQ-L27"
+    ],
+    "CQ_Text": "Did Live Aid inspire later benefit concerts such as Live 8? (RAG-ready)",
+    "Persona": "Luca",
+    "Category": "Exit",
+    "Results": [
+      {
+        "event": "http://example.org/liveaid/LiveAid1985",
+        "eventLabel": "Live Aid 1985",
+        "nextEvent": "http://example.org/liveaid/Live8",
+        "nextEventLabel": "Live 8",
+        "nextEventURL": "https://www.wikidata.org/entity/Q193892",
+        "comment": "Live Aid's success inspired later global benefit concerts such as Live 8 in 2005."
+      }
+    ]
+  },
+  {
+    "CQ_ID": "CQ-L28 (Exit)",
+    "CQ_List": [
+      "CQ-L28"
+    ],
+    "CQ_Text": "Which artifacts from Live Aid performances are preserved at the BME? (RAG-ready)",
+    "Persona": "Luca",
+    "Category": "Exit",
+    "Results": [
+      {
+        "artifact": "http://example.org/liveaid/BrianMayGuitar",
+        "artifactLabel": "Brian May's Red Special Guitar",
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "artistURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "location": "http://example.org/liveaid/BME",
+        "locationLabel": "British Music Experience",
+        "comment": "Brian May's Red Special guitar used at Live Aid is displayed at the British Music Experience."
+      },
+      {
+        "artifact": "http://example.org/liveaid/BrianMayGuitar",
+        "artifactLabel": "Brian May's Red Special Guitar",
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "artistURL": "https://www.wikidata.org/entity/Queen",
+        "location": "http://example.org/liveaid/BME",
+        "locationLabel": "British Music Experience",
+        "comment": "Brian May's Red Special guitar used at Live Aid is displayed at the British Music Experience."
+      },
+      {
+        "artifact": "http://example.org/liveaid/BrianMayGuitar",
+        "artifactLabel": "Brian May's Red Special Guitar",
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "artistURL": "http://www.wikidata.org/entity/Q15862",
+        "location": "http://example.org/liveaid/BME",
+        "locationLabel": "British Music Experience",
+        "comment": "Brian May's Red Special guitar used at Live Aid is displayed at the British Music Experience."
+      },
+      {
+        "artifact": "http://example.org/liveaid/FreddieMicrophone",
+        "artifactLabel": "Freddie Mercury's Live Aid Microphone",
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "artistURL": "https://musicbrainz.org/artist/0383dadf-2a4e-4d10-a46a-e9e041da8eb3",
+        "location": "http://example.org/liveaid/BME",
+        "locationLabel": "British Music Experience",
+        "comment": "The microphone used by Freddie Mercury during Live Aid 1985 is preserved at the British Music Experience."
+      },
+      {
+        "artifact": "http://example.org/liveaid/FreddieMicrophone",
+        "artifactLabel": "Freddie Mercury's Live Aid Microphone",
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "artistURL": "https://www.wikidata.org/entity/Queen",
+        "location": "http://example.org/liveaid/BME",
+        "locationLabel": "British Music Experience",
+        "comment": "The microphone used by Freddie Mercury during Live Aid 1985 is preserved at the British Music Experience."
+      },
+      {
+        "artifact": "http://example.org/liveaid/FreddieMicrophone",
+        "artifactLabel": "Freddie Mercury's Live Aid Microphone",
+        "artist": "http://example.org/liveaid/Queen",
+        "artistLabel": "Queen",
+        "artistURL": "http://www.wikidata.org/entity/Q15862",
+        "location": "http://example.org/liveaid/BME",
+        "locationLabel": "British Music Experience",
+        "comment": "The microphone used by Freddie Mercury during Live Aid 1985 is preserved at the British Music Experience."
+      }
+    ]
+  }
+]

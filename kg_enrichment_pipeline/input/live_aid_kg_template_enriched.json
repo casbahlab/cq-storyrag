@@ -1,0 +1,129 @@
+{
+    "Event": {
+        "class": "mm:LivePerformance",
+        "example": "Live Aid 1985",
+        "properties": {
+            "schema:startDate": "1985-07-13",
+            "schema:endDate": "1985-07-13",
+            "schema:location": [
+                "Wembley Stadium",
+                "JFK Stadium"
+            ],
+            "mm:hasSubEvent": [
+                "Concert@Wembley",
+                "Concert@Philadelphia"
+            ],
+            "schema:organizer": [
+                "Band Aid Trust",
+                "Bob Geldof",
+                "Midge Ure"
+            ],
+            "schema:sameAs": [
+                "wikidata:Q18058"
+            ],
+            "schema:purpose": "Raise funds for famine relief in Ethiopia",
+            "schema:about": [
+                "Famine in Ethiopia",
+                "Humanitarian Aid"
+            ]
+        }
+    },
+    "Concert": {
+        "class": "mm:LivePerformance",
+        "example": "Live Aid 1985 - Wembley",
+        "properties": {
+            "schema:location": "Wembley Stadium",
+            "schema:performer": [
+                "Queen",
+                "U2"
+            ],
+            "mm:hasPerformance": [
+                "Performance@Queen_Wembley"
+            ],
+            "schema:broadcastedBy": [
+                "BBC",
+                "MTV",
+                "ABC"
+            ],
+            "ex:topPerformer": "Queen",
+            "schema:sameAs": [
+                "musicbrainz:event_id"
+            ]
+        }
+    },
+    "Performance": {
+        "class": "mm:Performance",
+        "example": "Queen at Live Aid (Wembley)",
+        "properties": {
+            "schema:performer": "Queen",
+            "mm:setlist": [
+                "Bohemian Rhapsody",
+                "Radio Ga Ga"
+            ],
+            "ex:audienceComment": [
+                "Iconic crowd singalong captured on TV",
+                "Considered one of the greatest live performances in rock history"
+            ],
+            "schema:sameAs": [
+                "musicbrainz:performance_id"
+            ],
+            "schema:isPartOf": "Live Aid 1985 - Wembley"
+        }
+    },
+    "Song": {
+        "class": "mm:MusicalWork",
+        "example": "Bohemian Rhapsody",
+        "properties": {
+            "schema:lyrics": "https://genius.com/Queen-Bohemian-Rhapsody-lyrics",
+            "schema:datePublished": "1975-10-31",
+            "schema:sameAs": [
+                "wikidata:Q18788",
+                "https://musicbrainz.org/work/BohemianRhapsody"
+            ],
+            "ex:performanceNote": [
+                "Performed as part of Queen's legendary 20-minute set at Live Aid"
+            ]
+        }
+    },
+    "Artist": {
+        "class": "mm:MusicArtist",
+        "example": "Queen",
+        "properties": {
+            "schema:genre": [
+                "Rock"
+            ],
+            "schema:memberOf": [
+                "Band"
+            ],
+            "schema:sameAs": [
+                "wikidata:Q17737"
+            ]
+        }
+    },
+    "Broadcaster": {
+        "class": "schema:Organization",
+        "example": "BBC",
+        "properties": {
+            "schema:owns": [
+                "Live Aid 1985 broadcast rights"
+            ],
+            "ex:archived": true,
+            "schema:sameAs": [
+                "wikidata:Q9531"
+            ],
+            "schema:location": "London, UK",
+            "ex:coverageNote": "Broadcasted globally, archived by BBC"
+        }
+    },
+    "Location": {
+        "class": "schema:StadiumOrArena",
+        "example": "Wembley Stadium",
+        "properties": {
+            "schema:address": "London, UK",
+            "schema:geo": "51.556, -0.279",
+            "schema:sameAs": [
+                "wikidata:Q11377"
+            ]
+        }
+    }
+}

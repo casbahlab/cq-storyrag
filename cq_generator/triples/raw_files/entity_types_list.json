@@ -1,0 +1,269 @@
+[
+  {
+    "entity": "http://example.org/HumanitarianRelief",
+    "types": [
+      ":CharitableConcert"
+    ]
+  },
+  {
+    "entity": "http://example.org/BenefitConcert",
+    "types": [
+      ":CharitableConcert"
+    ]
+  },
+  {
+    "entity": "http://example.org/Ethiopia",
+    "types": [
+      "schema:Country"
+    ]
+  },
+  {
+    "entity": "http://example.org/NewYorkCity",
+    "types": [
+      "schema:City"
+    ]
+  },
+  {
+    "entity": "http://example.org/UK",
+    "types": [
+      "schema:Country"
+    ]
+  },
+  {
+    "entity": "http://example.org/QueenPerformance_LiveAid",
+    "types": [
+      ":Performance",
+      ":PerformanceSegment",
+      ":Reaction"
+    ]
+  },
+  {
+    "entity": "http://example.org/MediaCritics",
+    "types": [
+      ":Performance"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAudience",
+    "types": [
+      "Drop this"
+    ]
+  },
+  {
+    "entity": "http://example.org/FamineReliefEthiopia",
+    "types": [
+      ":Cause"
+    ]
+  },
+  {
+    "entity": "http://example.org/BBC",
+    "types": [
+      "schema:BroadcastService"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidWembleyBroadcast",
+    "types": [
+      "schema:BroadcastEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidPhiladelphiaBroadcast",
+    "types": [
+      "schema:BroadcastEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/ABC",
+    "types": [
+      "schema:BroadcastService"
+    ]
+  },
+  {
+    "entity": "http://example.org/QueenPerformanceLiveAid",
+    "types": [
+      "http://example.org/QueenPerformance_LiveAid"
+    ]
+  },
+  {
+    "entity": "http://example.org/BritishMusicExperience",
+    "types": [
+      "http://example.org/BME"
+    ]
+  },
+  {
+    "entity": "http://example.org/TheWorks",
+    "types": [
+      "schema:MusicAlbum"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAid",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidWembley",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidPhiladelphia",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/BandAid",
+    "types": [
+      "schema:MusicGroup"
+    ]
+  },
+  {
+    "entity": "http://example.org/SatelliteNetwork",
+    "types": [
+      ":SatelliteNetwork"
+    ]
+  },
+  {
+    "entity": "http://example.org/GlobalAudience",
+    "types": [
+      "schema:Event",
+      "schema:Audience"
+    ]
+  },
+  {
+    "entity": "http://example.org/HammerToFallSegment",
+    "types": [
+      ":PerformanceSegment"
+    ]
+  },
+  {
+    "entity": "http://example.org/HammerToFall",
+    "types": [
+      "schema:MusicComposition"
+    ]
+  },
+  {
+    "entity": "http://example.org/CrazyLittleThingCalledLove",
+    "types": [
+      "schema:MusicComposition"
+    ]
+  },
+  {
+    "entity": "http://example.org/WeWillRockYou",
+    "types": [
+      "schema:MusicComposition"
+    ]
+  },
+  {
+    "entity": "http://example.org/QueenPerformance",
+    "types": [
+      "http://example.org/QueenPerformance_LiveAid"
+    ]
+  },
+  {
+    "entity": "http://example.org/SetlistEntry3",
+    "types": [
+      "http://example.org/HammerToFallSegment"
+    ]
+  },
+  {
+    "entity": "http://example.org/FreddieDanceMoment",
+    "types": [
+      ":MemorableMoment"
+    ]
+  },
+  {
+    "entity": "http://example.org/RadioGaGaAudienceChorus",
+    "types": [
+      ":MemorableMoment"
+    ]
+  },
+  {
+    "entity": "http://example.org/WembleyAudience",
+    "types": [
+      ":WembleyAudience"
+    ]
+  },
+  {
+    "entity": "http://example.org/WembleyStadium",
+    "types": [
+      ":WembleyStadium"
+    ]
+  },
+  {
+    "entity": "http://example.org/MusicGenre",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/ProgressiveRock",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/HardRock",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/HeavyMetal",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/ArenaRock",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/PopRock",
+    "types": [
+      ":MusicGenre"
+    ]
+  },
+  {
+    "entity": "http://example.org/LiveAidSchedule",
+    "types": [
+      "schema:MusicEvent"
+    ]
+  },
+  {
+    "entity": "http://example.org/SatelliteBroadcast",
+    "types": [
+      ":BroadcastMethod"
+    ]
+  },
+  {
+    "entity": "http://example.org/AlternatingSlots",
+    "types": [
+      ":PerformanceSchedulePattern"
+    ]
+  },
+  {
+    "entity": "http://example.org/WembleyBroadcast",
+    "types": [
+      ":BroadcastMethod"
+    ]
+  },
+  {
+    "entity": "http://example.org/PhiladelphiaBroadcast",
+    "types": [
+      ":BroadcastMethod"
+    ]
+  },
+  {
+    "entity": "http://example.org/BME",
+    "types": [
+      "schema:Museum"
+    ]
+  }
+]

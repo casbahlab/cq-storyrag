@@ -1,0 +1,3 @@
+Entity,Label,Current_Type,Suggested_mm_Type,Confidence
+http://example.org/liveaid/WembleyStadium,Wembley Stadium,https://schema.org/Place,https://w3id.org/polifonia/ontology/music-meta/BroadcastingSituation,Heuristic
+http://example.org/liveaid/Philadelphia,Philadelphia,https://schema.org/Place,https://w3id.org/polifonia/ontology/music-meta/BroadcastingSituation,Heuristic
