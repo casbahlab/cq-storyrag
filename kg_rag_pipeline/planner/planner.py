@@ -4,135 +4,133 @@ import numpy as np
 import random
 from ollama import embed
 from datetime import datetime
+import pandas as pd
+from typing import Dict, List
 
-# --- Config ---
+# --- Config (keep defaults; allow overrides via function args) ---
 INDEX_FILE = "index_prep/faiss_index/cq_embeddings.index"
 META_FILE = "index_prep/faiss_index/metadata.json"
-OUTPUT_PLAN = f"plan_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 OLLAMA_MODEL = "nomic-embed-text"
 
-# Parameters
-TOP_N = 10       # number of nearest neighbours from FAISS
-PICKS_PER_BEAT = 2
+TOP_N = 10            # nearest neighbours from FAISS
+PICKS_PER_BEAT = 2    # how many to pick per beat
+SEED = 42             # set None for nondeterministic
+NORMALIZE_EMB = True  # set False if your index expects L2
 
 # Categories are fixed
 CATEGORIES = ["Entry", "Core", "Exit"]
+CSV_FILE = "data/WembleyRewindCQs_categories_with_beats.csv"
 
-# Example beats — replace with actual beats list from your CSV if needed
-BEATS = [
-    "Introduction of the Event",
-    "Artist Performance Highlight",
-    "Behind-the-scenes Insight",
-    "Cultural Impact",
-    "Closing Sentiment"
-]
+# Preload CSV
+df = pd.read_csv(CSV_FILE)
+BEATS = df["Beats"].dropna().unique().tolist()
 
-# --- Load FAISS index & metadata ---
-print("[INFO] Loading FAISS index and metadata...")
+# Load FAISS index & metadata once
 index = faiss.read_index(INDEX_FILE)
-
 with open(META_FILE, "r") as f:
     metadata = json.load(f)
 
-print(f"[INFO] Metadata entries: {len(metadata)}")
+if SEED is not None:
+    random.seed(SEED)
 
-# --- Planner Function ---
-def build_plan_for_persona(persona: dict):
-    plan = []
+def _maybe_normalize(v: np.ndarray) -> np.ndarray:
+    if not NORMALIZE_EMB:
+        return v
+    n = np.linalg.norm(v) + 1e-8
+    return v / n
+
+def _embed(text: str) -> np.ndarray:
+    out = embed(model=OLLAMA_MODEL, input=text)["embeddings"][0]
+    v = np.array(out, dtype="float32")
+    v = _maybe_normalize(v)
+    return v.reshape(1, -1)
+
+def build_plan_for_persona(persona: Dict, *, top_n:int=TOP_N, picks_per_beat:int=PICKS_PER_BEAT) -> Dict:
+    """
+    Persona: dict with persona settings (tone/length/etc.).
+    Returns a plan dict with detailed/execution sections and diagnostics.
+    """
     seen_cq_ids = set()
-
     picks_per_category = {}
-    for category in CATEGORIES:
-        picks_per_beat = []
-        for beat in BEATS:
-            # Step 1: Create composite search text
-            composite_text = f"{category} | {beat} | {persona}"
+    diagnostics = {"skipped": {}, "empty": []}
 
-            # Step 2: Embed composite text
+    k = min(int(top_n), max(index.ntotal, 1))
+
+    for category in CATEGORIES:
+        picks = []
+        for beat in BEATS:
+            composite_text = f"{category} | {beat} | {persona.get('name', persona)}"
             try:
-                emb = embed(model=OLLAMA_MODEL, input=composite_text)["embeddings"][0]
+                q = _embed(composite_text)
+                D, I = index.search(q, k)
             except Exception as e:
-                print(f"[ERROR] Embedding failed for {composite_text}: {e}")
+                diagnostics["skipped"].setdefault(category, []).append({"beat": beat, "reason": str(e)})
                 continue
 
-            # Step 3: Query FAISS index
-            D, I = index.search(np.array([emb], dtype="float32"), TOP_N)
+            # Build (score, item) pairs, filter invalid ids
+            pairs = []
+            for dist, idx in zip(D[0], I[0]):
+                if 0 <= idx < len(metadata):
+                    m = metadata[idx]
+                    score = float(dist)  # sort asc for L2 / adjust if IP
+                    pairs.append((score, m))
 
-            # Step 4: Collect matching metadata
-            matches = [metadata[i] for i in I[0] if i < len(metadata)]
+            # Sort deterministically by score (ascending typical for L2)
+            pairs.sort(key=lambda x: x[0])
+            ranked = [m for _, m in pairs if m.get("cq_id") not in seen_cq_ids]
 
-            # Step 5: Randomly pick without repeating CQ IDs
-            filtered_matches = [m for m in matches if m["cq_id"] not in seen_cq_ids]
-            picks = random.sample(filtered_matches, min(PICKS_PER_BEAT, len(filtered_matches)))
-            picks_per_beat.append(picks)
-        flat_picks = [p for beat_picks in picks_per_beat for p in beat_picks]
-        picks_per_category[category] = flat_picks
-    return build_plan(persona, metadata, picks_per_category)
+            if not ranked:
+                diagnostics["empty"].append({"category": category, "beat": beat})
+                continue
 
-def build_plan(persona: dict, cq_catalog: list, picks_per_category: dict):
-    """
-    persona: str -> Persona name
-    cq_catalog: list[dict] -> Metadata list from metadata.json
-    picks_per_category: dict -> Number of CQs to pick from each category
-    """
-    # Build a map for quick lookup
-    by_cat = {}
-    for c in cq_catalog:
-        by_cat.setdefault(c["category"], []).append(c)
+            # Deterministic take
+            take = ranked[:picks_per_beat]
+            for t in take:
+                if cid := t.get("cq_id"):
+                    seen_cq_ids.add(cid)
+            picks.extend(take)
 
-    # Categories are fixed: Entry, Core, Exit
+        picks_per_category[category] = picks
+
+    return build_plan(persona, picks_per_category, diagnostics)
+
+def build_plan(persona: Dict, picks_per_category: Dict, diagnostics: Dict) -> Dict:
     detailed_plan = {}
-    execution_plan = {"Entry": [], "Core": [], "Exit": []}
+    execution_plan = {}
 
-    for category in ["Entry", "Core", "Exit"]:
-
-        category_picks = picks_per_category[category]
-        # Add to detailed plan (full CQ info)
+    for category in CATEGORIES:
+        category_picks = picks_per_category.get(category, [])
         detailed_plan[category] = [
             {
-                "cq_id": c["cq_id"],
-                "text": c["text"],
-                "category": c["category"],
+                "cq_id": c.get("cq_id"),
+                "text": c.get("text"),
+                "category": c.get("category"),
                 "beat": c.get("beat", ""),
                 "sparql": c.get("sparql", "")
             }
             for c in category_picks
         ]
-
-        # Add to execution plan (only what retriever needs)
         execution_plan[category] = [
             {
-                "cq_id": c["cq_id"],
+                "cq_id": c.get("cq_id"),
                 "sparql": c.get("sparql", ""),
                 "question": c.get("text", "")
             }
             for c in category_picks
         ]
 
-    # Final plan object
     plan = {
         "persona": persona,
         "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "detailed_plan": detailed_plan,
-        "execution": execution_plan
+        "execution": execution_plan,
+        "diagnostics": diagnostics
     }
 
-    # Save to file
-    out_file = f"plan_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-    with open(out_file, "w") as f:
-        json.dump(plan, f, indent=2)
-
-    print(f"[SUCCESS] Plan saved to {out_file}")
+    # The caller (run_pipeline) is responsible for saving artifacts into a run folder.
     return plan
 
-
-# --- Run Planner ---
 if __name__ == "__main__":
-    persona_name = "Emma"  # Example; replace dynamically if needed
-    print(f"[INFO] Building plan for persona: {persona_name}")
-    plan = build_plan_for_persona(persona_name)
-
-    with open(OUTPUT_PLAN, "w") as f:
-        json.dump(plan, f, indent=2)
-
-    print(f"[SUCCESS] Plan saved to {OUTPUT_PLAN}")
+    persona = {"name": "Emma", "tone": "educational", "length": "short"}
+    plan = build_plan_for_persona(persona)
+    print(json.dumps({k: (v if k!="detailed_plan" else {kk: len(vv) for kk, vv in v.items()}) for k,v in plan.items()}, indent=2))
