@@ -7,7 +7,7 @@ WHERE {
     ?event rdf:type ?type .
     ?event schema:name ?eventName .
     ?event schema:description ?description .
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
 }
 GROUP BY ?eventName ?type
 
@@ -18,7 +18,7 @@ SELECT ?eventName (GROUP_CONCAT(DISTINCT ?purpose; separator=", ") AS ?purposeOf
 WHERE {
     ?event schema:about ?purpose .
     ?event schema:name ?eventName .
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
 }
 GROUP BY ?eventName
 
@@ -35,8 +35,8 @@ WHERE {
     ?event schema:name ?eventName .
     ?venue schema:name ?venueName .
     ?artist schema:name ?artistName .
-    FILTER(?event = {event})
-    FILTER(?venue = {venue})
+    FILTER(?event = ex:LiveAid1985)
+    FILTER(?venue = ex:WembleyStadium)
 }
 GROUP BY ?eventName ?venueName
 
@@ -50,7 +50,7 @@ WHERE {
            schema:performer ?artist .
     ?event schema:name ?eventName .
     ?artist schema:name ?artistName .
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
 }
 GROUP BY ?eventName
 
@@ -69,7 +69,7 @@ WHERE {
         		?city schema:name ?cityName .
         		?country schema:name ?countryName .
     			}
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
 }
 
 #CQ-ID:CQ-E6 Which [Venue] hosted [Event]?
@@ -82,7 +82,7 @@ WHERE {
     ?venue a schema:Place ;
            schema:name ?venueName .
     ?event schema:name ?eventName .
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
 }
 GROUP BY ?eventName
 
@@ -93,7 +93,7 @@ PREFIX ex: <http://wembrewind.live/ex#>
 SELECT ?eventName ?description ?about
 WHERE {
   ?broadcastEvent a schema:BroadcastEvent ;
-                  schema:broadcastOfEvent {event} ;
+                  schema:broadcastOfEvent ex:LiveAid1985 ;
                   schema:name ?eventName ;
                   schema:description ?description ;
                   schema:about ?about .
@@ -107,7 +107,7 @@ WHERE {
     ?event schema:organizer ?organizer .
     ?event schema:name ?eventName .
     OPTIONAL { ?organizer schema:name ?organizerName }
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
 }
 GROUP BY ?eventName
 
@@ -127,7 +127,7 @@ WHERE {
     ?artist schema:name ?artistName .
     OPTIONAL {?song schema:itemListElement ?songEntry .
     			?songEntry schema:name ?songName .}
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
     FILTER(?isIconic = true)
 }
 GROUP BY ?artistName ?description ?isIconic
@@ -143,8 +143,8 @@ WHERE {
                  schema:isPartOf ?event ;
                  mm:isCreatedBy ?artist ;
                  mm:creates ?setlist .
-    FILTER(?event = {event})
-    FILTER(?artist = {musicgroup})
+    FILTER(?event = ex:LiveAid1985)
+    FILTER(?artist = ex:Queen)
     ?artist schema:name ?artistname .
     ?setlist schema:itemListElement ?items .
     ?items schema:name ?performedSong .
@@ -166,7 +166,7 @@ WHERE {
     OPTIONAL { ?debutRelease schema:name ?debutName }
     OPTIONAL { ?debutRelease mm:hasPublisher ?debutLabel }
     OPTIONAL { ?debutLabel schema:name ?debutLabelName }
-    FILTER(?artist = {singleartist})
+    FILTER(?artist = ex:Madonna)
 }
 
 
@@ -192,7 +192,7 @@ WHERE {
             ?country schema:name ?countryName .
         }
     }
-    FILTER(?artist = {musicgroup})
+    FILTER(?artist = ex:Queen)
 }
 GROUP BY ?artist ?artistName ?formationYear
 
@@ -209,7 +209,7 @@ WHERE {
         ?artist schema:member ?member .
         ?member schema:name ?memberName .
     }
-    FILTER(?artist = {musicgroup})
+    FILTER(?artist = ex:Queen)
 }
 GROUP BY ?artistName
 
@@ -224,7 +224,7 @@ WHERE {
     ?event schema:name ?eventName .
     ?artist a schema:Person ;
             schema:name ?artistName .
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
 }
 GROUP BY ?eventName
 
@@ -241,7 +241,7 @@ WHERE {
     OPTIONAL { ?genre schema:name ?genreLabel . }
     OPTIONAL { ?genre rdfs:label ?genreLabel . }
     BIND(STRAFTER(STR(?genre), "#") AS ?localName)
-    FILTER(?artist = {musicgroup})
+    FILTER(?artist = ex:Queen)
 }
 GROUP BY ?artistName
 
@@ -258,7 +258,7 @@ WHERE {
     OPTIONAL { ?enabler schema:name ?lbl2 }
     BIND(STRAFTER(STR(?enabler), "#") AS ?fallback)
     BIND(COALESCE(?lbl1, ?lbl2, ?fallback) AS ?enablerLabel)
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
 }
 ORDER BY ?enablerLabel
 
@@ -270,7 +270,7 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?eventName ?challenge
 WHERE {
-    VALUES ?event { {event} }
+    VALUES ?event { ex:LiveAid1985 }
     ?event schema:name ?eventName .
 	?event ex:hasChallenge ?challenge .
 }
@@ -293,7 +293,7 @@ WHERE {
     			?inspiredLocation schema:containedInPlace ?inspiredCountry .
         		?inspiredCountry schema:name ?inspiredCountryName .
     			}
-    FILTER(?event = {event})
+    FILTER(?event = ex:LiveAid1985)
 }
 
 
@@ -316,18 +316,18 @@ WHERE {
     OPTIONAL {
         ?performance schema:comment ?audienceComment
     }
-    FILTER(?artist = {musicgroup})
-    FILTER(?event = {event})
+    FILTER(?artist = ex:Queen)
+    FILTER(?event = ex:LiveAid1985)
 }
 
 
-#CQ-ID:CQ-E20  How much money was raised by [Event]?,
+#CQ-ID:CQ-E20 How much money was raised by [Event]?,
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT ?eventName ?currency ?raisedAmountValue
 WHERE {
-    VALUES ?event { {event} }
+    VALUES ?event { ex:LiveAid1985 }
     ?event ex:raisedAmount ?raisedAmount .
     ?amount a schema:MonetaryAmount .
     ?event schema:name ?eventName .
@@ -342,7 +342,7 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?eventName (GROUP_CONCAT(DISTINCT ?broadcastingCompanyName; separator=", ") AS ?broadcastingCompanies)
 WHERE {
-    BIND ({event} as ?event )
+    BIND (ex:LiveAid1985 as ?event )
     ?event ex:hadBroadcast ?broadcast .
     ?event schema:name ?eventName .
     OPTIONAL { ?broadcast schema:provider ?broadcastingCompany . }
@@ -359,7 +359,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved
 WHERE {
-    BIND ({event} as ?mainEvent)
+    BIND (ex:LiveAid1985 as ?mainEvent)
     ?mainEvent schema:name ?eventName .
     ?mainEvent ex:hadBroadcast ?mainBroadcast .
     ?mainBroadcast schema:subEvent ?subBroadcast .
@@ -379,7 +379,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved
 WHERE {
-    VALUES ?mainEvent { {event} }
+    VALUES ?mainEvent { ex:LiveAid1985 }
     ?mainEvent ex:hadBroadcast ?mainBroadcast .
     ?mainEvent schema:name ?eventName .
     ?mainBroadcast schema:subEvent ?subBroadcast .
@@ -398,8 +398,8 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT ?performance ?reason
 WHERE {
     ?performance a mm:LivePerformance ;
-                 schema:isPartOf {event} ;
-                 mm:isCreatedBy {musicgroup} ;
+                 schema:isPartOf ex:LiveAid1985 ;
+                 mm:isCreatedBy ex:Queen ;
                  schema:review ?review .
     ?review schema:reviewBody ?reason .
 }
@@ -411,8 +411,8 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?artistName ?title ?year ?period ?eventName ?sentence
 WHERE {
-    BIND({musicgroup} AS ?artist)
-    BIND({event} AS ?event)
+    BIND(ex:Queen AS ?artist)
+    BIND(ex:LiveAid1985 AS ?event)
     ?event schema:startDate ?eventDate ;
            schema:name ?eventName .
     ?artist schema:name ?artistName ;
@@ -440,7 +440,7 @@ PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 SELECT ?name ?type
 WHERE {
-    BIND({event} AS ?event)
+    BIND(ex:LiveAid1985 AS ?event)
     ?event a ?type ;
            schema:name ?name .
 }
@@ -450,7 +450,7 @@ WHERE {
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-SELECT ?song ?name ?release ?predicate ?object
+SELECT ?name ?release ?predicate ?object
 WHERE {
   ?song schema:name ?name ;
         schema:datePublished ?release ;
@@ -464,7 +464,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT DISTINCT ?organizerName
 WHERE {
-  {event} (schema:organizer) ?organizer .
+  ex:LiveAid1985 (schema:organizer) ?organizer .
   ?organizer schema:name ?organizerName .
 }
 
@@ -473,7 +473,7 @@ PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 SELECT DISTINCT ?eventName ?venueName ?city
 WHERE {
-  {event} a schema:MusicEvent;
+  ex:LiveAid1985 a schema:MusicEvent;
         schema:name ?eventName ;
         schema:location ?venue .
   ?venue schema:name ?venueName .
@@ -488,7 +488,7 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX ex: <http://wembrewind.live/ex#>
 SELECT ?eventName ?venueName ?attendance
 WHERE {
-    BIND({event} AS ?event)
+    BIND(ex:LiveAid1985 AS ?event)
     ?event schema:name ?eventName .
     ?subEvent ex:attendance ?attendance ;
               schema:location ?venue .
@@ -504,7 +504,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX ex: <http://wembrewind.live/ex#>
 SELECT ?eventName ?satelliteNetworkDescription (SUM(?count) AS ?totalSatellites)
 WHERE {
-    BIND({event} AS ?event)
+    BIND(ex:LiveAid1985 AS ?event)
     ?event schema:name ?eventName .
     ?broadcast a schema:BroadcastEvent ;
                schema:superEvent ?event ;
@@ -521,7 +521,7 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX ex: <http://wembrewind.live/ex#>
 SELECT ?eventName ?audienceType ?viewers
 WHERE {
-    BIND({event} AS ?event)
+    BIND(ex:LiveAid1985 AS ?event)
     ?broadcast a schema:BroadcastEvent ;
                schema:superEvent ?event ;
                schema:audience ?audience .
@@ -535,7 +535,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX ex: <http://wembrewind.live/ex#>
 SELECT ?eventName ?date
 WHERE {
-    BIND({event} AS ?event)
+    BIND(ex:LiveAid1985 AS ?event)
     ?event schema:name ?eventName .
     ?event schema:startDate ?date .
 }
@@ -545,7 +545,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX ex: <http://wembrewind.live/ex#>
 SELECT ?eventName ?founderName
 WHERE {
-    BIND({event} AS ?event)
+    BIND(ex:LiveAid1985 AS ?event)
     ?event schema:name ?eventName .
     ?event schema:organizer ?founder .
     ?founder schema:name ?founderName .
@@ -558,8 +558,8 @@ PREFIX schema: <http://schema.org/>
 SELECT ?artist (GROUP_CONCAT(DISTINCT ?performedSong; separator=", ") AS ?performedSongs)
 WHERE {
   ?performance a mm:LivePerformance ;
-               mm:isCreatedBy {musicgroup} ;
-               schema:isPartOf {event} ;
+               mm:isCreatedBy ex:Queen ;
+               schema:isPartOf ex:LiveAid1985 ;
                mm:creates ?setlist .
   ?performance mm:isCreatedBy ?performer .
   ?performer schema:name ?artist .
@@ -576,8 +576,8 @@ PREFIX schema: <http://schema.org/>
 SELECT ?songName
 WHERE {
   ?performance a mm:LivePerformance ;
-               mm:isCreatedBy {musicgroup} ;
-               schema:isPartOf {event} .
+               mm:isCreatedBy ex:Queen ;
+               schema:isPartOf ex:LiveAid1985 .
   ?subPerf a mm:LivePerformance ;
            schema:isPartOf ?performance ;
            schema:position 2 ;
@@ -593,10 +593,10 @@ PREFIX schema: <http://schema.org/>
 SELECT ?momentDescription
 WHERE {
   ?performance a mm:LivePerformance ;
-               schema:isPartOf {event} .
+               schema:isPartOf ex:LiveAid1985 .
   ?subPerf a mm:LivePerformance ;
            schema:isPartOf ?performance ;
-           mm:isCreatedBy {musicgroup} ;
+           mm:isCreatedBy ex:Queen ;
            mm:creates ex:HammerToFall ;
            schema:hasPart ?moment .
   ?moment schema:description ?momentDescription .
@@ -610,10 +610,10 @@ PREFIX schema: <http://schema.org/>
 SELECT ?interactionDescription
 WHERE {
   ?performance a mm:LivePerformance ;
-               schema:isPartOf {event} .
+               schema:isPartOf ex:LiveAid1985 .
   ?subPerf a mm:LivePerformance ;
            schema:isPartOf ?performance ;
-           mm:isCreatedBy {musicgroup} ;
+           mm:isCreatedBy ex:Queen ;
            mm:creates ex:RadioGaGa ;
            schema:hasPart ?interaction .
   ?interaction schema:description ?interactionDescription .
@@ -626,7 +626,7 @@ PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?artistName ?founderName ?joinYear
 WHERE {
-    BIND ({musicgroup} as ?artist)
+    BIND (ex:Queen as ?artist)
   ?artist a schema:MusicGroup ;
            schema:name ?artistName ;
            schema:foundingDate ?foundingYear .
@@ -642,7 +642,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX ex: <http://wembrewind.live/ex#>
 SELECT ?artistName (GROUP_CONCAT(DISTINCT ?genreName; separator=", ") AS ?earlyMusicInfluenceGenre)
 WHERE {
-    BIND({musicgroup} as ?artist)
+    BIND(ex:Queen as ?artist)
   ?artist schema:name ?artistName .
   ?artist ex:earlyMusicInfluence ?genre .
   ?genre schema:name ?genreName .
@@ -659,7 +659,7 @@ SELECT ?artistName
        (GROUP_CONCAT(DISTINCT ?earlyName; separator=", ") AS ?earlyGenres)
        (GROUP_CONCAT(DISTINCT ?laterName; separator=", ") AS ?laterGenres)
 WHERE {
-    BIND ({musicgroup} as ?artist)
+    BIND (ex:Queen as ?artist)
   ?artist a schema:MusicGroup ;
            schema:name ?artistName ;
            ex:earlyMusicInfluence ?earlyGenre ;
@@ -680,7 +680,7 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT ?artistName
        (GROUP_CONCAT(DISTINCT ?laterName; separator=", ") AS ?laterGenres)
 WHERE {
-    BIND ({musicgroup} as ?artist)
+    BIND (ex:Queen as ?artist)
   ?artist a schema:MusicGroup ;
            schema:name ?artistName ;
            mm:hasGenre ?allGenre .
@@ -701,7 +701,7 @@ SELECT ?performanceName
        (GROUP_CONCAT(DISTINCT ?body; separator=" | ") AS ?criticReviews)
        (GROUP_CONCAT(DISTINCT ?aspect; separator=", ") AS ?reviewAspects)
 WHERE {
-  VALUES (?artist ?event) { ({musicgroup} {event}) }
+  VALUES (?artist ?event) { (ex:Queen ex:LiveAid1985) }
   ?performance a mm:LivePerformance ;
                schema:name ?performanceName ;
                mm:isCreatedBy ?artist ;
@@ -719,7 +719,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT ?eventName ?duration ?actCount
 WHERE {
-  {event} a schema:MusicEvent ;
+  ex:LiveAid1985 a schema:MusicEvent ;
                  schema:name ?eventName ;
                  schema:duration ?duration ;
                  ex:numberOfActs ?actCount .
@@ -733,7 +733,7 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?eventName ?audienceType ?viewerCount ?countryCount
 WHERE {
-    BIND({event} as ?event)
+    BIND(ex:LiveAid1985 as ?event)
     ?event ex:hadBroadcast ?broadcast .
     ?event schema:name ?eventName .
     ?broadcast schema:audience ?audience .
@@ -750,7 +750,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?infrastructureName ?tech
 WHERE {
   ?broadcast a schema:BroadcastEvent ;
-             schema:broadcastOfEvent {event} ;
+             schema:broadcastOfEvent ex:LiveAid1985 ;
              ex:usedBroadcastInfrastructure ?infrastructure ;
              ex:distributedVia ?tech .
   # Infrastructure label/name fallback
@@ -761,7 +761,7 @@ WHERE {
 ORDER BY ?infrastructureName ?techName
 
 
-#CQ-ID:CQ-L22  How were [Performance] scheduled across the [Venue1] and [Venue2] during [Event]?
+#CQ-ID:CQ-L22 How were [Performance] scheduled across the [Venue1] and [Venue2] during [Event]?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
@@ -775,12 +775,12 @@ WHERE {
   ?event schema:name ?eventName .
   OPTIONAL { ?artist schema:name ?artistName }
   OPTIONAL { ?venue schema:name ?venueName }
-  FILTER(?event = {event})
+  FILTER(?event = ex:LiveAid1985)
 }
 ORDER BY ?startTime
 
 
-#CQ-ID:CQ-L23  What [Song] were performed by [Artist] at [Venue]?
+#CQ-ID:CQ-L23 What [Song] were performed by [Artist] at [Venue]?
 PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX ex: <http://wembrewind.live/ex#>
@@ -795,8 +795,8 @@ WHERE {
   ?venue schema:name ?venueName .
   ?setlist schema:itemListElement ?song .
   ?song schema:name ?songName .
-  FILTER (?artist = {musicgroup})
-  FILTER (?event = {event})
+  FILTER (?artist = ex:Queen)
+  FILTER (?event = ex:LiveAid1985)
 }
 GROUP BY ?artistName ?venueName
 
@@ -809,7 +809,7 @@ PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT  ?venueName ?broadcastDescription ?broadcastCorpName ?preservationState
 WHERE {
-  {event} ex:hadBroadcast ?broadcast .
+  ex:LiveAid1985 ex:hadBroadcast ?broadcast .
   ?broadcast a schema:BroadcastEvent ;
              schema:subEvent ?broadcastVenue .
   ?broadcastVenue a schema:BroadcastEvent ;
@@ -830,7 +830,7 @@ PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT  ?venueName ?broadcastDescription ?broadcastCorpName ?preservationState
 WHERE {
-  {event} ex:hadBroadcast ?broadcast .
+  ex:LiveAid1985 ex:hadBroadcast ?broadcast .
   ?broadcast a schema:BroadcastEvent ;
              schema:subEvent ?broadcastVenue .
   ?broadcastVenue a schema:BroadcastEvent ;
@@ -849,7 +849,7 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX ex: <http://wembrewind.live/ex#>
 SELECT ?eventName ?amount ?currency
 WHERE {
-  {event} schema:name ?eventName ;
+  ex:LiveAid1985 schema:name ?eventName ;
                  ex:raisedAmount ?amountNode .
   ?amountNode schema:value ?amount ;
               schema:currency ?currency .
@@ -862,7 +862,7 @@ PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 SELECT ?eventName ?inspiredEventName ?inspiredEventType ?inspiredStartDate ?city ?countryName
 WHERE {
-  {event} schema:name ?eventName ;
+  ex:LiveAid1985 schema:name ?eventName ;
                  ex:inspiredEvent ?inspiredEvent .
     OPTIONAL { ?inspiredEvent schema:name ?inspiredEventName . }
     OPTIONAL { ?inspiredEvent rdf:type ?inspiredEventType . }
