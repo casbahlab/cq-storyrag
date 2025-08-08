@@ -1,0 +1,883 @@
+#CQ-E1 What kind of event was [Event]
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?event ?type
+WHERE {
+    ?event rdf:type ?type .
+    FILTER(?event = {event})
+}
+
+#CQ‑E2 Why was [Event] organized?
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX schema: <http://schema.org/>
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?event ?purpose
+WHERE {
+    ?event schema:about ?purpose .
+    FILTER(?event = {event})
+}
+
+
+#CQ‑E3 Which [Artist] performed at [Event] held at [Venue]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+SELECT DISTINCT ?event ?venue ?artist
+WHERE {
+    ?event a schema:MusicEvent ;
+           schema:location ?venue ;
+           schema:performer ?artist .
+    FILTER(?event = {event})
+    FILTER(?venue = {venue})
+}
+
+
+#CQ‑E4 Which [Artist] performed during [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+SELECT DISTINCT ?event ?artist
+WHERE {
+    ?event a schema:Event ;
+           schema:performer ?artist .
+    FILTER(?event = {event})
+}
+
+#CQ‑E5 Which [City] or [Country] hosted [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+SELECT DISTINCT ?event ?location ?city ?country
+WHERE {
+    ?event a schema:Event ;
+           schema:location ?location .
+    OPTIONAL { ?location schema:addressLocality ?city . }
+    OPTIONAL { ?location schema:addressCountry ?country . }
+    FILTER(?event = {event})
+}
+
+#CQ‑E6 Which [Venue] hosted [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+SELECT DISTINCT ?event ?venue ?venueName
+WHERE {
+    ?event a schema:Event ;
+           schema:location ?venue .
+    ?venue a schema:Place ;
+           schema:name ?venueName .
+    FILTER(?event = {event})
+}
+
+
+#CQ‑E7 What role did television and media coverage play in [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT DISTINCT ?event ?subEvent ?broadcast ?broadcaster
+WHERE {
+    ?event a schema:MusicEvent .
+    ?event schema:subEvent ?subEvent .
+    ?subEvent mm:recordedAs ?broadcast .
+    OPTIONAL { ?broadcast schema:broadcastedBy ?broadcaster }
+    FILTER(?event = {event})
+}
+
+#CQ-E8 Who organized [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+SELECT DISTINCT ?event ?organizer ?organizerName
+WHERE {
+    ?event schema:organizer ?organizer .
+    OPTIONAL { ?organizer schema:name ?organizerName }
+    FILTER(?event = {event})
+}
+
+
+#CQ-E9 Which [Performance] at [Event] is considered iconic?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT DISTINCT ?artist ?song ?description ?isIconic
+WHERE {
+    ?performance a mm:LivePerformance ;
+                 mm:performedAt ?event ;
+                 mm:performer ?artist ;
+                 mm:performedWork ?song ;
+    			 ex:isIconic ?isIconic ;
+                 schema:description ?description .
+    FILTER(?event = {event})
+    FILTER(?isIconic = true)
+}
+
+
+#CQ-E10 Which [Song] did [Artist] perform at [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX schema1: <http://schema.org/>
+SELECT DISTINCT ?artistname ?predicate ?itemname
+WHERE {
+    ?performance a mm:LivePerformance ;
+                 mm:performedAt ?event ;
+                 mm:performer ?artist ;
+                 mm:performedWork ?setlist .
+    FILTER(?event = {event})
+    FILTER(?artist = {artist})
+    BIND("performedWork" AS ?predicate)
+    ?artist schema1:name ?artistname .
+    ?setlist schema1:itemListElement ?items .
+    ?items schema1:name ?itemname .
+}
+
+
+#CQ-E11 When did [Artist] debut?,[Artist] debuted in [Year] with a performance or release in [City/Country].
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT DISTINCT ?artist ?artistName ?debutYear
+                ?debutPerformance ?performanceDate ?venue ?venueName ?song
+WHERE {
+    ?artist a ?type ;
+            schema:name ?artistName ;
+            mm:debutYear ?debutYear ;
+            mm:hasDebutPerformance ?debutPerformance .
+    OPTIONAL { ?debutPerformance schema:startDate ?performanceDate }
+    OPTIONAL {
+        ?debutPerformance schema:location ?venue .
+        OPTIONAL { ?venue schema:name ?venueName }
+    }
+    OPTIONAL { ?debutPerformance mm:performedWork ?song }
+    FILTER(?artist = {artist}})
+}
+
+
+
+#CQ-E12 When was [Artist] formed?,[Artist] was formed in [Year] in [City/Country].
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT DISTINCT
+    ?artist
+    ?artistName
+    ?formationYear
+    (SAMPLE(?city) AS ?formationCity)
+    (SAMPLE(?cityName) AS ?formationCityName)
+    (SAMPLE(?country) AS ?formationCountry)
+    (SAMPLE(?countryName) AS ?formationCountryName)
+WHERE {
+    ?artist schema:name ?artistName .
+    OPTIONAL {
+        ?artist schema:foundingDate|mm:formationYear|mm:formedInYear ?formationYear .
+    }
+    OPTIONAL {
+        ?artist schema:foundingLocation|mm:formedIn|mm:formedInLocation ?city .
+        ?city a schema:City ;
+              schema:name ?cityName .
+        OPTIONAL {
+            ?city schema:containedInPlace|mm:location ?country .
+            ?country schema:name ?countryName .
+        }
+    }
+    FILTER(?artist = {artist})
+}
+GROUP BY ?artist ?artistName ?formationYear
+
+
+
+CQ-E13,,Who were the members of [Artist]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT DISTINCT ?artist ?artistName ?member ?memberName
+WHERE {
+    ?artist schema:name ?artistName .
+    OPTIONAL {
+        ?artist schema:member|mm:hasMember ?member .
+        ?member schema:name ?memberName .
+    }
+    FILTER(?artist = {artist})
+}
+ORDER BY ?memberName
+
+
+#CQ-E14 Who were the solo artists that performed at [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+
+SELECT DISTINCT ?event ?artist ?artistName
+WHERE {
+    ?event schema:performer|mm:hadPerformer ?artist .
+    ?artist a schema:Person ;
+            schema:name ?artistName .
+    FILTER(?event = {event})
+}
+ORDER BY ?artistName
+
+
+
+#CQ-E15 What [Genre] are associated with [Artist]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?artist ?artistName ?genre
+       (COALESCE(?genreLabel, ?localName) AS ?label)
+WHERE {
+    ?artist schema:name ?artistName .
+    { ?artist schema:genre ?genre } UNION { ?artist mm:hasGenre ?genre } .
+    OPTIONAL { ?genre schema:name ?genreLabel . }
+    OPTIONAL { ?genre rdfs:label ?genreLabel . }
+    BIND(STRAFTER(STR(?genre), "#") AS ?localName)
+    FILTER(?artist = ex:Queen)
+}
+ORDER BY ?label
+
+#CQ-E16 What enabled the global broadcast of [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?event ?enabler ?enablerLabel
+WHERE {
+    ?event mm:usedBroadcastInfrastructure|mm:wasBroadcastVia ?enabler .
+    OPTIONAL { ?enabler rdfs:label ?lbl1 }
+    OPTIONAL { ?enabler schema:name ?lbl2 }
+    BIND(STRAFTER(STR(?enabler), "#") AS ?fallback)
+    BIND(COALESCE(?lbl1, ?lbl2, ?fallback) AS ?enablerLabel)
+    FILTER(?event = {event})
+}
+ORDER BY ?enablerLabel
+
+
+#CQ-E17 What were the challenges in organizing [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?event ?challenge ?challengeLabel ?challengeDescription ?description
+WHERE {
+    VALUES ?event { ex:LiveAid1985 }  # Replace with {event} for runtime parameter
+    OPTIONAL {
+        ?event mm:hasTechnicalChallenge|mm:logisticalChallenge ?challenge .
+        OPTIONAL { ?challenge rdfs:label ?lbl1 }
+        OPTIONAL { ?challenge schema:name ?lbl2 }
+        BIND(COALESCE(?lbl1, ?lbl2, STRAFTER(STR(?challenge), "#")) AS ?challengeLabel)
+        OPTIONAL { ?challenge schema:description|rdfs:comment ?challengeDescription . }
+    }
+    OPTIONAL { ?event schema:description ?description }
+}
+ORDER BY ?challengeLabel
+
+
+#CQ-E18,,How did [Event] influence future benefit concerts?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT DISTINCT ?event ?eventName ?description ?inspiredEvent ?inspiredEventName ?inspiredEventType ?inspiredEventDate ?inspiredLocation
+WHERE {
+    ?event schema:name ?eventName ;
+           schema:description ?description ;
+           mm:inspiredEvent ?inspiredEvent .
+    OPTIONAL { ?inspiredEvent schema:name ?inspiredEventName . }
+    OPTIONAL { ?inspiredEvent a ?inspiredEventType . }
+    OPTIONAL { ?inspiredEvent schema:startDate ?inspiredEventDate . }
+    OPTIONAL { ?inspiredEvent schema:location ?inspiredLocation . }
+    FILTER(?event = {event})
+}
+ORDER BY ?inspiredEventName
+
+
+#CQ-E19 What were the reactions of the audience or media to [Artist]’s [Performance] at [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <https://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX schema1: <http://schema.org/>
+SELECT ?artist ?event ?performance
+#?review ?reviewText ?reviewer ?audienceComment
+       (GROUP_CONCAT(DISTINCT ?reviewText; separator=" || ") AS ?reviews)
+       (GROUP_CONCAT(DISTINCT ?reviewer; separator=" || ") AS ?reviewers)
+       (GROUP_CONCAT(DISTINCT ?audienceComment; separator=" || ") AS ?audienceReactions)
+WHERE {
+    ?performance mm:performer ?artist ;
+                 mm:performedAt|schema:isPartOf ?event .
+    OPTIONAL {
+        ?performance schema1:review ?review .
+        OPTIONAL { ?review schema1:reviewBody ?reviewText }
+        OPTIONAL { ?review schema1:author ?reviewer }
+    }
+    OPTIONAL {
+        ?performance schema1:comment ?audienceComment
+    }
+    FILTER(?artist = {artist})
+    FILTER(?event = {event})
+}
+GROUP BY ?artist ?event ?performance
+
+
+#CQ-E20,,How much money was raised by [Event]?,
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?eventName ?raisedAmount ?currency ?numericValue
+WHERE {
+    VALUES ?event { {event} }
+    ?event mm:raisedAmount|schema:raisedAmount ?raisedAmount .
+    ?amount a schema:MonetaryAmount .
+    ?event schema:name ?eventName .
+    OPTIONAL { ?amount schema:currency ?currency }
+    OPTIONAL { ?amount schema:value ?numericValue }
+}
+
+#CQ-E21 Which [Organization] archived the broadcast of [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?event ?broadcast ?broadcastingCompany ?broadcastingCompanyName
+WHERE {
+    VALUES ?event { {event} }
+    ?event mm:hadBroadcast|schema:subEvent ?broadcast .
+    ?broadcast schema:provider|mm:archived ?broadcastingCompany .
+    OPTIONAL { ?broadcastingCompany schema:name ?broadcastingCompanyName }
+    OPTIONAL { ?broadcastingCompany rdfs:label ?broadcastingCompanyName }
+}
+ORDER BY ?broadcastingCompanyName
+
+
+#CQ-E22 Which[Organization] failed to archive the broadcast of [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?mainEvent ?mainBroadcast ?subBroadcast ?broadcastCompanyName ?preserved
+WHERE {
+    VALUES ?mainEvent { {event} }
+    ?mainEvent ex:hadBroadcast ?mainBroadcast .
+    ?mainBroadcast schema:subEvent ?subBroadcast .
+    ?subBroadcast schema:provider ?broadcastCompany .
+    ?subBroadcast ex:wasBroadcastPreserved ?preserved .
+    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }
+    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }
+    FILTER(?preserved = false)
+}
+ORDER BY DESC(?preserved)
+
+
+#CQ-E23 What is the preservation status of [Event] broadcasts at [Venue]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?mainEvent ?mainBroadcast ?subBroadcast ?broadcastCompanyName ?preserved
+WHERE {
+    VALUES ?mainEvent { {event} }
+    ?mainEvent ex:hadBroadcast ?mainBroadcast .
+    ?mainBroadcast schema:subEvent ?subBroadcast .
+    ?subBroadcast schema:provider ?broadcastCompany .
+    ?subBroadcast ex:wasBroadcastPreserved ?preserved .
+    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }
+    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }
+}
+ORDER BY DESC(?preserved)
+
+#CQ-E24 Why is [Artist]’s performance at [Event] considered iconic?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?performance ?reason
+WHERE {
+    ?performance a mm:LivePerformance ;
+                 mm:performedAt {event} ;
+                 mm:performer {artist} ;
+                 schema:review ?review .
+    ?review schema:reviewBody ?reason .
+}
+
+#CQ-E27 What creative milestones defined [Artist]’s career before and after [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?artist ?artistName ?work ?title ?year ?period ?eventName ?sentence
+WHERE {
+    BIND({artist} AS ?artist)
+    BIND({event} AS ?event)
+    ?event schema1:startDate ?eventDate ;
+           schema1:name ?eventName .
+    ?artist schema1:name ?artistName ;
+            mm:releasedAlbum ?work .
+    ?work schema1:name ?title ;
+          schema1:datePublished ?year .
+    BIND(
+        IF(xsd:date(?year) < xsd:date(?eventDate),
+           "Before Event",
+           "After Event"
+        ) AS ?period
+    )
+    BIND(
+        IF(xsd:date(?year) < xsd:date(?eventDate),
+           CONCAT("Before ", ?eventName, ", ", ?artistName, " released ", ?title, " in ", STR(YEAR(?year)), "."),
+           CONCAT("After ", ?eventName, ", ", ?artistName, " released ", ?title, " in ", STR(YEAR(?year)), ".")
+        ) AS ?sentence
+    )
+}
+ORDER BY ?year
+
+
+#CQ-L1 What type of event was [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+SELECT ?event ?name ?date
+       (GROUP_CONCAT(
+          REPLACE(REPLACE(STR(?type), "http://wembrewind.live/ex#", ""), "http://schema.org/", "");
+          separator=", "
+       ) AS ?types)
+WHERE {
+    BIND({event} AS ?event)
+    ?event a ?type ;
+           schema1:name ?name ;
+           schema1:startDate ?date .
+}
+GROUP BY ?event ?name ?date
+
+
+#CQ-L2 How commercially successful was the Band Aid single 'Do They Know It's Christmas?' in the UK?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?song ?name ?release ?predicate ?object
+WHERE {
+  ?song schema1:name ?name ;
+        schema1:datePublished ?release ;
+        ?predicate ?object .
+  FILTER (?predicate IN (mm:isBestSellingIn, mm:charitySingle))
+}
+
+#CQ-L3 Who were the organizers of [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT DISTINCT ?organizerName
+WHERE {
+  {event} (schema1:organizer|mm:organizedBy) ?organizer .
+  ?organizer schema1:name ?organizerName .
+}
+
+#CQ-L4 What were the locations that hosted [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+SELECT DISTINCT ?eventName ?venueName ?city
+WHERE {
+  {event} a schema1:MusicEvent;
+        schema1:name ?eventName ;
+        schema1:location ?venue .
+  ?venue schema1:name ?venueName .
+  ?venue schema1:addressLocality ?city .
+  FILTER(?venue != ex:Global)
+}
+ORDER BY ?city
+
+#CQ-L5 What was the attendance at each venue of [Event]?
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?event ?subEvent ?venue ?venueName ?attendance
+WHERE {
+    BIND({event} AS ?event)
+    ?subEvent mm:attendance ?attendance ;
+              schema1:location ?venue .
+    OPTIONAL { ?event schema1:subEvent ?subEvent }
+    OPTIONAL { ?subEvent schema1:superEvent ?event }
+    FILTER(BOUND(?event))
+    ?venue schema1:name ?venueName .
+}
+ORDER BY ?venueName
+
+#CQ-L6 How many satellites were used during [Event]’s broadcast?
+PREFIX schema: <http://schema.org/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?event ?broadcast ?satelliteNetworkDescription (SUM(?count) AS ?totalSatellites)
+WHERE {
+    BIND({event} AS ?event)
+    ?broadcast a schema:BroadcastEvent ;
+               schema:superEvent ?event ;
+               ex:facilitatedBy ?satelliteNetwork .
+    ?satelliteNetwork schema:hasPart ?fleet .
+    ?satelliteNetwork schema:description ?satelliteNetworkDescription .
+    ?fleet schema:numberOfItems ?count .
+}
+GROUP BY ?event ?broadcast ?satelliteNetworkDescription
+
+#CQ-L7 What was the global TV audience size for [Event]?
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?eventName ?audienceType ?viewers
+WHERE {
+    BIND({event} AS ?event)
+    ?broadcast a schema1:BroadcastEvent ;
+               schema1:superEvent ?event ;
+               schema1:audience ?audience .
+    ?audience schema1:audienceType ?audienceType .
+    ?audience ex:viewerCount ?viewers .
+    ?event schema1:name ?eventName .
+}
+
+#CQ-L8 When did [Event] take place?
+PREFIX schema1: <http://schema.org/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?eventName ?date
+WHERE {
+    BIND({event} AS ?event)
+    ?event schema1:name ?eventName .
+    ?event schema1:startDate ?date .
+}
+
+#CQ-L9 Who founded [Event]?
+PREFIX schema1: <http://schema.org/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?eventName ?founderName
+WHERE {
+    BIND({event} AS ?event)
+    ?event schema1:name ?eventName .
+    ?event schema1:organizer ?founder .
+    ?founder schema1:name ?founderName .
+}
+
+#CQ-L10 What was [Artist]’s full setlist at [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX schema: <http://schema.org/>
+SELECT ?artist ?performedSong
+WHERE {
+  ?performance a mm:LivePerformance ;
+               mm:performer {artist} ;
+               mm:performedAt {event};
+               mm:performedWork ?setlist .
+  ?performance mm:performer ?performer .
+  ?performer schema:name ?artist .
+  ?setlist a schema:ItemList ;
+           schema:itemListElement ?song .
+  ?song schema:name ?performedSong .
+}
+
+#CQ-L11 Which [Artist] song was the third in their [Event] setlist
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX schema: <http://schema.org/>
+SELECT ?songName
+WHERE {
+  ?performance a mm:LivePerformance ;
+               mm:performer {artist} ;
+               schema:isPartOf {event} .
+  ?subPerf a mm:LivePerformance ;
+           schema:isPartOf ?performance ;
+           schema:position {position} ;
+           mm:performedWork ?song .
+  ?song schema:name ?songName .
+}
+
+
+#CQ-L12 What visual moment involving [Performer] occurred during their performance of [Song]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX schema: <http://schema.org/>
+SELECT ?momentDescription
+WHERE {
+  ?performance a mm:LivePerformance ;
+               schema:isPartOf {event} .
+  ?subPerf a mm:LivePerformance ;
+           schema:isPartOf ?performance ;
+           mm:performer {artist} ;
+           mm:performedWork {song} ;
+           schema:hasPart ?moment .
+  ?moment schema:description ?momentDescription .
+}
+
+
+#CQ-L13 What audience interaction occurred during [Artist]’s performance of [Song] at [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX schema: <http://schema.org/>
+SELECT ?interactionDescription
+WHERE {
+  ?performance a mm:LivePerformance ;
+               schema:isPartOf {event} .
+  ?subPerf a mm:LivePerformance ;
+           schema:isPartOf ?performance ;
+           mm:performer {artist} ;
+           mm:performedWork {song} ;
+           schema:hasPart ?interaction .
+  ?interaction schema:description ?interactionDescription .
+}
+
+#CQ-L14 Who were the founding members of [Artist]?
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?founder ?founderName ?joinYear
+WHERE {
+    BIND ({artist} as ?artist)
+  ?artist a schema:MusicGroup ;
+           schema:foundingDate ?foundingYear .
+  ?founder mm:isMemberOf ?artist ;
+           schema:name ?founderName ;
+           schema:startDate ?joinYear .
+  FILTER(?joinYear = ?foundingYear)
+}
+ORDER BY ?founderName
+
+#CQ-L15 What [Genre] influenced [Artist]’s early music?
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?genre ?genreName
+WHERE {
+  {artist} mm:earlyMusicInfluence ?genre .
+  ?genre schema:name ?genreName .
+}
+ORDER BY ?genreName
+
+
+
+#CQ-L16 How did [Artist]’s musical style evolve over time?
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?artistName
+       (GROUP_CONCAT(DISTINCT ?earlyName; separator=", ") AS ?earlyGenres)
+       (GROUP_CONCAT(DISTINCT ?laterName; separator=", ") AS ?laterGenres)
+WHERE {
+    BIND (ex:Queen as ?artist)
+  ?artist a schema1:MusicGroup ;
+           schema1:name ?artistName ;
+           mm:earlyMusicInfluence ?earlyGenre ;
+           mm:hasGenre ?allGenre .
+  ?earlyGenre schema1:name ?earlyName .
+  ?allGenre schema1:name ?allName .
+  FILTER NOT EXISTS {
+    ?artist mm:earlyMusicInfluence ?allGenre .
+  }
+  BIND(?allName AS ?laterName)
+}
+GROUP BY ?artistName
+
+#CQ-L17 What [Genre] did [Artist] incorporate later in their career?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?artistName
+       (GROUP_CONCAT(DISTINCT ?laterName; separator=", ") AS ?laterGenres)
+WHERE {
+    BIND ({artist} as ?artist)
+  ?artist a schema1:MusicGroup ;
+           schema1:name ?artistName ;
+           mm:hasGenre ?allGenre .
+  ?allGenre schema1:name ?laterName .
+  FILTER NOT EXISTS {
+    ?artist mm:earlyMusicInfluence ?allGenre .
+  }
+}
+GROUP BY ?artistName
+
+
+#CQ-L18 Why is [Artist]’s [Event][Performance] considered iconic?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?performance
+       (GROUP_CONCAT(DISTINCT ?comment; separator=" | ") AS ?fanComments)
+       (GROUP_CONCAT(DISTINCT ?body; separator=" | ") AS ?criticReviews)
+       (GROUP_CONCAT(DISTINCT ?aspect; separator=", ") AS ?reviewAspects)
+WHERE {
+  VALUES (?artist ?event) { ({artist} {event}) }
+  ?performance a mm:LivePerformance ;
+               mm:performer ?artist ;
+               mm:performedAt ?event ;
+               schema1:review ?review .
+  ?review schema1:reviewBody ?body .
+  OPTIONAL { ?review schema1:reviewAspect ?aspect . }
+  OPTIONAL { ?performance schema1:comment ?comment . }
+}
+GROUP BY ?performance
+
+#CQ-L19 What was the average length of [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?eventName ?duration ?actCount
+WHERE {
+  {event} a schema1:Event ;
+                 schema1:name ?eventName ;
+                 schema1:duration ?duration ;
+                 mm:numberOfActs ?actCount .
+}
+
+
+#CQ-L20 How many viewers watched [Event] globally?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?eventName ?audienceType ?viewerCount ?countryCount
+WHERE {
+    BIND({event} as ?event)
+    ?event ex:hadBroadcast ?broadcast .
+    ?event schema:name ?eventName .
+    ?broadcast schema:audience ?audience .
+    ?audience schema:audienceType ?audienceType .
+    ?audience ex:countryCount ?countryCount .
+    ?audience ex:viewerCount ?viewerCount .
+}
+
+#CQ-L21 What facilitated the simultaneous global broadcast of [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?infrastructureName ?techName
+WHERE {
+  ?broadcast a schema1:BroadcastEvent ;
+             schema1:broadcastOfEvent {event} ;
+             mm:usedBroadcastInfrastructure ?infrastructure ;
+             mm:distributedVia ?tech .
+  # Infrastructure label/name fallback
+  OPTIONAL { ?infrastructure rdfs:label ?infraLabel }
+  OPTIONAL { ?infrastructure schema1:name ?infraNameRaw }
+  BIND(COALESCE(?infraLabel, ?infraNameRaw, STRAFTER(STR(?infrastructure), "#")) AS ?infrastructureName)
+  # Technology label/name fallback
+  OPTIONAL { ?tech rdfs:label ?techLabel }
+  OPTIONAL { ?tech schema1:name ?techNameRaw }
+  BIND(COALESCE(?techLabel, ?techNameRaw, STRAFTER(STR(?tech), "#")) AS ?techName)
+}
+ORDER BY ?infrastructureName ?techName
+
+
+#CQ-L22,,How were [Performance] scheduled across the [Venue1] and [Venue2] during [Event]?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT ?performance ?artistName ?venueName ?startTime
+WHERE {
+  ?performance a mm:LivePerformance ;
+               schema1:isPartOf ?event ;
+               schema1:startDate ?startTime ;
+               mm:performer ?artist ;
+               schema1:location ?venue .
+  ?event schema1:name ?eventName .
+  OPTIONAL { ?artist schema1:name ?artistName }
+  OPTIONAL { ?venue schema1:name ?venueName }
+  FILTER(?event = {event})
+}
+ORDER BY ?startTime
+
+
+#CQ-L23,,What [Song] were performed by [Artist] at [Venue]?
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?artistName ?venueName ?songName
+WHERE {
+  ?performance a mm:LivePerformance ;
+               mm:performer ?artist ;
+               mm:performedAt ?event ;
+               schema1:location ?venue ;
+               mm:performedWork ?setlist .
+  ?artist schema1:name ?artistName .
+  ?venue schema1:name ?venueName .
+  ?setlist schema1:itemListElement ?song .
+  ?song schema1:name ?songName .
+  FILTER (?artist = ex:Queen)
+  FILTER (?event = ex:LiveAid1985)
+}
+ORDER BY ?artistName ?venueName ?songName
+
+
+
+#CQ-L24 Which [Organization] preserved the [Venue] broadcast of [Event]?
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?preservationState ?venueName ?broadcastVenue ?broadcastCorpName
+WHERE {
+  {event} ex:hadBroadcast ?broadcast .
+  ?broadcast a schema1:BroadcastEvent ;
+             schema1:subEvent ?broadcastVenue .
+  ?broadcastVenue a schema1:BroadcastEvent ;
+                  schema1:location ?venue ;
+                  schema1:provider ?broadcastCorp ;
+                  ex:wasBroadcastPreserved ?preservationState .
+  ?venue schema1:name ?venueName .
+  ?broadcastCorp schema1:name ?broadcastCorpName .
+  FILTER(?preservationState = "true"^^xsd:boolean)
+}
+
+
+#CQ-L25 Which [Organization] deleted the [Venue] broadcast of [Event]?
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+SELECT ?preservationState ?venueName ?broadcastVenue ?broadcastCorpName
+WHERE {
+  {event} ex:hadBroadcast ?broadcast .
+  ?broadcast a schema1:BroadcastEvent ;
+             schema1:subEvent ?broadcastVenue .
+  ?broadcastVenue a schema1:BroadcastEvent ;
+                  schema1:location ?venue ;
+                  schema1:provider ?broadcastCorp ;
+                  ex:wasBroadcastPreserved ?preservationState .
+  ?venue schema1:name ?venueName .
+  ?broadcastCorp schema1:name ?broadcastCorpName .
+  FILTER(?preservationState = "false"^^xsd:boolean)
+}
+
+#CQ-L26 What was the total amount raised by [Event]?
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?eventName ?amount ?currency
+WHERE {
+  ex:LiveAid1985 schema1:name ?eventName ;
+                 mm:raisedAmount ?amountNode .
+  ?amountNode schema1:value ?amount ;
+              schema1:currency ?currency .
+}
+
+
+#CQ-L27 Did [Event] serve as a model for subsequent charitable music events?
+PREFIX schema1: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX ex: <http://wembrewind.live/ex#>
+SELECT ?eventName ?inspiredEventName ?inspiredEventDescription ?inspiredStartDate ?inspiredLocation
+WHERE {
+  {event} schema1:name ?eventName ;
+                 mm:inspiredEvent ?inspiredEvent .
+    OPTIONAL { ?inspiredEvent schema1:name ?inspiredEventName . }
+    OPTIONAL { ?inspiredEvent schema1:description ?inspiredEventDescription . }
+    OPTIONAL { ?inspiredEvent schema1:startDate ?inspiredStartDate . }
+    OPTIONAL { ?inspiredEvent schema1:location ?inspiredLocation . }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

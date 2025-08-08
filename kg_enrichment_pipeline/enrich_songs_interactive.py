@@ -143,7 +143,7 @@ def approve_candidate(song_label, candidates):
             "wikipedia": cand.get("wikipedia", {}).get("value", "")
         }
     else:
-        print("⚠ Invalid input, skipping.")
+        print("sInvalid input, skipping.")
         return None
 
 # ---- Enrich Song ----
@@ -199,7 +199,7 @@ def main():
 
             # Skip if already cached
             if label in verified_cache:
-                print(f"✅ Using cached mapping for {label}")
+                print(f"Using cached mapping for {label}")
                 enriched_entry = enrich_song(g, song, verified_cache[label])
                 verified_cache[label] = enriched_entry
                 writer.writerow({
@@ -214,7 +214,7 @@ def main():
             # Lookup candidates
             candidates = wikidata_lookup(label)
             if not candidates:
-                print(f"⚠ No candidates found for {label}, skipping.")
+                print(f"No candidates found for {label}, skipping.")
                 continue
 
             # Interactive approval
@@ -229,9 +229,9 @@ def main():
                     "MusicBrainz": enriched_entry.get("musicbrainz", ""),
                     "Wikipedia": enriched_entry.get("wikipedia", "")
                 })
-                print(f"  ✅ Enriched {label} with {enriched_entry}")
+                print(f"  Enriched {label} with {enriched_entry}")
             else:
-                print(f"  ⏭ Skipped {label}")
+                print(f"  Skipped {label}")
 
     # Save cache + KG
     with open(CACHE_FILE, "w", encoding="utf-8") as f:

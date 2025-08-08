@@ -11,7 +11,6 @@ sentence-transformers~=5.0.0
 spacy~=3.8.7
 h11~=0.14.0
 ipython~=8.18.1
-numpy~=1.24.4
 future~=0.18.3
 pillow~=11.2.1
 pip~=25.1.1
@@ -79,7 +78,7 @@ annotated-types~=0.7.0
 zipp~=3.23.0
 smart-open~=7.3.0.post1
 wrapt~=1.17.2
-tokenizers~=0.19.1
+tokenizers>=0.21,<0.22
 safetensors~=0.5.3
 spacy-legacy~=3.0.12
 huggingface-hub~=0.33.4
@@ -100,4 +99,9 @@ google-generativeai
 SPARQLWrapper
 faiss-cpu
 ollama
+sentence-transformers
+scikit-learn
+pandas
 numpy
+pyvis
+jinja2

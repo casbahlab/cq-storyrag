@@ -9,7 +9,7 @@ INDEX_FILE = "embeddings/cq_results_faiss.index"
 META_FILE = "embeddings/faiss_metadata.json"
 EMBED_MODEL = "nomic-embed-text"
 GEN_MODEL = "llama3.1"
-TOP_K = 8
+TOP_K = 3
 
 OUTPUT_JSON = f"embeddings/persona_full_narratives_streaming_{TOP_K}.json"
 OUTPUT_MD = f"embeddings/persona_full_narratives_streaming_{TOP_K}.md"

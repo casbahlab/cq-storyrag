@@ -102,7 +102,7 @@ def main():
             label = perf["label"]
 
             if label in verified_cache:
-                print(f"✅ Using cached enrichment for {label}")
+                print(f"Using cached enrichment for {label}")
                 continue
 
             enriched_entry = enrich_synthetic_performance(g, perf)
