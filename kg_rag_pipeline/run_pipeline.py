@@ -10,6 +10,7 @@ from retriever.retriever import retrieve
 from generator.generator import generate
 from utils_llm import get_llm_client
 from config import load_config, deep_get
+from evaluation.trace import trace_fact_alignment
 
 # Optional baseline evaluator (unchanged)
 try:
@@ -49,13 +50,64 @@ def run(persona: Dict[str, Any], kg_ttl: str, out_root: str, planner_cfg: Dict[s
     my_plan = build_plan_for_persona(
         persona,
         top_n=planner_cfg.get("top_n", 10),
-        picks_per_beat=planner_cfg.get("picks_per_beat", 2),
+        picks_per_beat=planner_cfg.get("picks_per_beat", None),
         seed=planner_cfg.get("seed", 42),
         normalize_embeddings=planner_cfg.get("normalize_embeddings", True),
+        length_style=persona.get("length")  # <-- important
     )
 
-    # 2) Retrieve facts
+    # 2) Retrieve facts (with gap top-up loop)
+    length = (persona.get("length") or "short").lower()
+
+    # length → minimum facts we want per category (tune to taste)
+    min_by_length = {
+        "short":  {"Entry": 2, "Core": 3, "Exit": 3},
+        "medium": {"Entry": 3, "Core": 5, "Exit": 4},
+        "long":   {"Entry": 4, "Core": 8, "Exit": 6},
+    }
+    min_required = min_by_length.get(length, min_by_length["short"])
+
+    # helper to count retrieved facts (non-empty rows) per category
+    def _facts_count_by_cat(facts_dict):
+        out = {c: 0 for c in ["Entry", "Core", "Exit"]}
+        for c in out:
+            for it in (facts_dict.get(c, []) or []):
+                if it.get("rows"):
+                    out[c] += 1
+        return out
+
+    # First pass
     facts = retrieve(my_plan, kg_ttl)
+    counts = _facts_count_by_cat(facts)
+
+    # Up to 2 top-up rounds if any category is under target
+    MAX_TOPUPS = 2
+    rounds = 0
+    while rounds < MAX_TOPUPS:
+        need = {c: max(0, min_required[c] - counts.get(c, 0)) for c in ["Entry", "Core", "Exit"]}
+        if all(v <= 0 for v in need.values()):
+            break  # we’re good
+
+        print(f"[INFO] Coverage top-up needed: {need}")
+        # augment plan in-place
+        from planner.planner import top_up_plan  # local import to avoid cycles at module load
+        my_plan = top_up_plan(
+            persona=persona,
+            plan_obj=my_plan,
+            need_by_cat=need,
+            top_n=planner_cfg.get("top_n", 10),
+            seed=planner_cfg.get("seed", 42),
+            normalize_embeddings=planner_cfg.get("normalize_embeddings", True),
+        )
+
+        # Re-retrieve with the augmented plan
+        facts = retrieve(my_plan, kg_ttl)
+        counts = _facts_count_by_cat(facts)
+        rounds += 1
+
+    if rounds:
+        print(f"[INFO] Top-up rounds applied: {rounds} (final counts: {counts})")
+
 
     # 3) Choose LLM client and adapt to generator's single-arg signature
     provider = (cfg.get("llm") or {}).get("provider", "ollama")
@@ -100,6 +152,17 @@ def run(persona: Dict[str, Any], kg_ttl: str, out_root: str, planner_cfg: Dict[s
                 (run_dir / "EVAL_SUMMARY.md").write_text(summarize_markdown(enhanced))
         except Exception as e:
             print(f"[WARN] Enhanced evaluation not run: {e}")
+
+    trace = trace_fact_alignment(narrative, facts)
+
+    # Save artifacts (existing code)
+    (run_dir / "prompt.txt").write_text(prompt)
+    (run_dir / "narrative.md").write_text(narrative)
+
+    # NEW: save trace
+    (run_dir / "trace.json").write_text(
+        json.dumps(trace, indent=2, ensure_ascii=False)
+    )
 
     # 8) README summary
     md = ["# KG-RAG Run Summary\n"]

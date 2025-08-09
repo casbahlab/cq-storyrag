@@ -287,7 +287,7 @@ def evaluate_enhanced(
         coverage[cat] = {"selected": s, "answered": a, "answer_rate_pct": pct}
     total_selected = sum(len(selected[c]) for c in selected)
     total_answered = sum(len(answered[c]) for c in answered)
-    overall_pct = round(100.0 * float(total_answered) / max(float(total_selected), 1.0), 1)
+    overall_pct = round(100.0 * float(total_answered) / max(total_selected, 1), 1)
     coverage["overall"] = {
         "selected": total_selected,
         "answered": total_answered,
