@@ -1,0 +1,19 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:BrianMay owl:sameAs <http://www.wikidata.org/entity/Q15873> .
+
+ex:DavidBowie owl:sameAs <http://www.wikidata.org/entity/Q5383> .
+
+ex:EltonJohn owl:sameAs <http://www.wikidata.org/entity/Q2808> .
+
+ex:FreddieMercury owl:sameAs <http://www.wikidata.org/entity/Q15869> .
+
+ex:JohnDeacon owl:sameAs <http://www.wikidata.org/entity/Q192103> .
+
+ex:MadonnaDebutAlbum owl:sameAs <http://www.wikidata.org/entity/Q1744> .
+
+ex:Queen owl:sameAs <http://www.wikidata.org/entity/Q15862> .
+
+ex:RogerTaylor owl:sameAs <http://www.wikidata.org/entity/Q15880> .
+

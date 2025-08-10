@@ -1,0 +1,88 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:BBCCameraman a schema:Person ;
+    schema:performer ex:BalletWithFreddieMercury .
+
+ex:BobGeldof a schema:Person ;
+    schema:name "Bob Geldof" .
+
+ex:DavidBowie a schema:Person ;
+    schema:name "David Bowie" ;
+    ex:performedAt ex:LiveAid1985 .
+
+ex:David_Bowie a schema:Person .
+
+ex:EltonJohn a schema:Person ;
+    schema:name "Elton John" ;
+    ex:performedAt ex:LiveAid1985 .
+
+ex:Elton_John a schema:Person .
+
+ex:Madonna a schema:Person ;
+    schema:name "Madonna" ;
+    ex:debutYear "1982"^^xsd:gYear ;
+    ex:hasDebutRelease ex:MadonnaDebutAlbum ;
+    ex:performedAt ex:LiveAid1985 .
+
+ex:MidgeUre a schema:Person ;
+    schema:name "Midge Ure" .
+
+ex:BrianMay a schema:Person,
+        mm:Musician ;
+    schema:memberOf ex:Queen ;
+    schema:name "Brian May" ;
+    schema:startDate "1970"^^xsd:gYear ;
+    ex:playsInstrument ex:ElectricGuitar .
+
+ex:FreddieMercury a schema:Person,
+        mm:Musician ;
+    schema:memberOf ex:Queen ;
+    schema:name "Freddie Mercury" ;
+    schema:startDate "1970"^^xsd:gYear ;
+    ex:battledCondition ex:LaryngitisDuringLiveAid1985 ;
+    ex:experiencedCondition ex:Laryngitis ;
+    ex:performedVisualHighlightDuring ex:HammerToFall_VisualMoment ;
+    ex:playsInstrument ex:Piano .
+
+ex:JohnDeacon a schema:Person,
+        mm:Musician ;
+    schema:memberOf ex:Queen ;
+    schema:name "John Deacon" ;
+    schema:startDate "1971"^^xsd:gYear ;
+    ex:playsInstrument ex:BassGuitar .
+
+ex:RogerTaylor a schema:Person,
+        mm:Musician ;
+    schema:memberOf ex:Queen ;
+    schema:name "Roger Taylor" ;
+    schema:startDate "1970"^^xsd:gYear ;
+    ex:playsInstrument ex:DrumKit .
+
+ex:Queen a schema:MusicGroup,
+        mm:MusicArtist ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:foundingLocation ex:LondonUK ;
+    schema:genre ex:Rock ;
+    schema:member ex:BrianMay,
+        ex:FreddieMercury,
+        ex:JohnDeacon,
+        ex:RogerTaylor ;
+    schema:name "Queen" ;
+    schema:nationality ex:UnitedKingdom ;
+    schema:sameAs <https://www.wikidata.org/entity/Q17737> ;
+    ex:earlyMusicInfluence ex:HardRock,
+        ex:HeavyMetal,
+        ex:ProgressiveRock ;
+    ex:performedAt ex:LiveAid1985,
+        ex:LiveAid1985_Wembley ;
+    mm:creates ex:TheWorks ;
+    mm:hasGenre ex:ArenaRock,
+        ex:GlamRock,
+        ex:HardRock,
+        ex:HeavyMetal,
+        ex:PopRock,
+        ex:ProgressiveRock .
+

@@ -1,0 +1,13 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+
+ex:LiveAid1985_Queen_Setlist a schema:ItemList ;
+    schema:itemListElement ex:AyOh,
+        ex:BohemianRhapsody,
+        ex:CrazyLittleThingCalledLove,
+        ex:HammerToFall,
+        ex:RadioGaGa,
+        ex:WeAreTheChampions,
+        ex:WeWillRockYou ;
+    schema:itemListOrder "ItemListOrderAscending" .
+

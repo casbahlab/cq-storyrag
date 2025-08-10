@@ -1,0 +1,41 @@
+@prefix ex:     <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix mm:     <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+
+### Classes
+ex:MusicInstrument a owl:Class ;
+  rdfs:label "Music Instrument" ;
+  rdfs:subClassOf schema:MusicInstrument .
+
+ex:PerformanceAspect a owl:Class ;
+  rdfs:label "Performance Aspect" ;
+  rdfs:comment "Qualitative or technical aspect of a performance (e.g., vocal range, stamina, projection)." .
+
+### Properties — instruments
+ex:performedWithInstrument a owl:ObjectProperty ;
+  rdfs:label "performed with instrument" ;
+  rdfs:comment "Links a LivePerformance to an instrument used during that performance." ;
+  rdfs:domain mm:LivePerformance ;
+  rdfs:range  ex:MusicInstrument ;
+  rdfs:subPropertyOf schema:instrument .
+
+# optional (for song-level tagging, used by L31 pattern if adopted later)
+ex:featuresInstrument a owl:ObjectProperty ;
+  rdfs:label "features instrument" ;
+  rdfs:comment "Links a Song (or a SongPerformance node) to an instrument featured in that piece." ;
+  rdfs:domain schema:CreativeWork ;
+  rdfs:range  ex:MusicInstrument .
+
+### Properties — performance qualities (for condition CQs)
+ex:hasPerformanceAspect a owl:ObjectProperty ;
+  rdfs:label "has performance aspect" ;
+  rdfs:domain mm:LivePerformance ;
+  rdfs:range  ex:PerformanceAspect .
+
+ex:affectedAspect a owl:ObjectProperty ;
+  rdfs:label "affected aspect" ;
+  rdfs:comment "Relates a medical condition to the performance aspect it affected." ;
+  rdfs:domain schema:MedicalCondition ;
+  rdfs:range  ex:PerformanceAspect .

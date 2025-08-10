@@ -105,3 +105,4 @@ pandas
 numpy
 pyvis
 jinja2
+google-generativeai

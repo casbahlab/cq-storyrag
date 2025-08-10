@@ -1,0 +1,15 @@
+
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+
+ex:FreddieMercuryLaryngitis schema:citation "Contemporary reports and retrospectives note that Mercury had laryngitis during Queen's Live Aid performance." ;
+    schema:isBasedOn <https://en.wikipedia.org/wiki/Queen_at_Live_Aid>,
+        <https://www.bbc.co.uk/archive/live-aid/> .
+
+ex:LiveAid1985 schema:isBasedOn <https://en.wikipedia.org/wiki/Live_Aid> .
+
+ex:Queen schema:isBasedOn <https://en.wikipedia.org/wiki/Queen_(band)> .
+
+ex:Queen_LiveAid1985_Performance schema:isBasedOn <https://en.wikipedia.org/wiki/Live_Aid>,
+        <https://en.wikipedia.org/wiki/Queen_at_Live_Aid> .
+

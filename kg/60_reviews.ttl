@@ -1,0 +1,24 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:QueenLiveAid1985_RollingStoneReview a schema:Review ;
+    schema:author ex:RollingStone ;
+    schema:datePublished "2013-02-05"^^xsd:date ;
+    schema:itemReviewed ex:Queen_LiveAid1985_Performance ;
+    schema:reviewAspect "Charisma",
+        "Crowd Engagement",
+        "Legacy" ;
+    schema:reviewBody "Queen never sounded better and many critics said they stole the show, even though U2 put up a very good fight." ;
+    schema:url <https://www.rollingstone.com/music/music-news/flashback-queen-steal-the-show-at-live-aid-60831/> .
+
+ex:QueenLiveAid1985_uDiscoverReview a schema:Review ;
+    schema:author ex:uDiscoverMusic ;
+    schema:datePublished "2025-07-13"^^xsd:date ;
+    schema:itemReviewed ex:Queen_LiveAid1985_Performance ;
+    schema:reviewAspect "Iconic Status",
+        "Legendary Impact",
+        "Show‑Stealing Energy" ;
+    schema:reviewBody "The article declares Queen’s Live Aid set the day’s show‑stopping event and ‘one of the greatest live concerts of all time.’" ;
+    schema:url <https://www.udiscovermusic.com/stories/queen-live-aid-concert-performance/> .
+

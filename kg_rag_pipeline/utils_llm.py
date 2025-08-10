@@ -142,6 +142,41 @@ def _ensure_gemini_configured():
         raise RuntimeError("Set GOOGLE_API_KEY environment variable for Gemini.")
     genai.configure(api_key=api_key)
 
+def _extract_gemini_text(resp) -> str:
+    """
+    Safely extract concatenated text from a Gemini response.
+    Works even if response.text is unavailable.
+    """
+    if resp is None:
+        return ""
+    text_chunks = []
+
+    # Newer client: resp.candidates -> candidate.content.parts[*].text
+    candidates = getattr(resp, "candidates", None) or []
+    for cand in candidates:
+        # finish_reason for debug
+        fr = getattr(cand, "finish_reason", None)
+        content = getattr(cand, "content", None)
+        parts = getattr(content, "parts", None) if content else None
+        if parts:
+            for p in parts:
+                t = getattr(p, "text", None)
+                if t:
+                    text_chunks.append(t)
+
+    if text_chunks:
+        return "\n".join(text_chunks).strip()
+
+    # Fallback: resp.prompt_feedback (block reason)
+    pf = getattr(resp, "prompt_feedback", None)
+    block_reason = getattr(pf, "block_reason", None) if pf else None
+
+    # As a last resort, try repr
+    return f""  # keep empty so caller can decide to retry/log with finish_reason/block_reason
+
+
+from typing import Optional
+import os
 
 def gemini_chat(
     system_prompt: str,
@@ -151,38 +186,78 @@ def gemini_chat(
     temperature: Optional[float] = None,
     max_tokens: Optional[int] = None
 ) -> str:
-    """
-    Chat wrapper for Gemini with same signature as ollama_chat.
-    """
-    _ensure_gemini_configured()
+    try:
+        import google.generativeai as genai
+        from google.generativeai.types import HarmCategory, HarmBlockThreshold
+    except Exception as e:
+        raise RuntimeError("google-generativeai not installed. Run: pip install google-generativeai") from e
 
-    model_name = model or os.environ.get("GEMINI_MODEL", "gemini-1.5-pro")
-    temp = temperature if temperature is not None else float(os.environ.get("GEMINI_TEMPERATURE", "0.2"))
-    mtok = max_tokens if max_tokens is not None else int(os.environ.get("GEMINI_MAX_TOKENS", "800"))
+    api_key = os.environ.get("GOOGLE_API_KEY")
+    if not api_key:
+        raise RuntimeError("GOOGLE_API_KEY not set in environment")
 
-    # Gemini supports 'system_instruction' on model creation
-    gmodel = genai.GenerativeModel(
-        model_name,
+    genai.configure(api_key=api_key)
+
+    mname = model or os.environ.get("GEMINI_MODEL", "models/gemini-1.5-pro")
+    temp = 0.7 if temperature is None else float(temperature)
+    mtok = 4000 if max_tokens is None else int(max_tokens)
+
+    # Prefer system_instruction to stuffing system text into user content
+    model_obj = genai.GenerativeModel(
+        mname,
         system_instruction=system_prompt.strip()
     )
 
-    gen_cfg = genai.types.GenerationConfig(
-        temperature=temp,
-        max_output_tokens=mtok,
+    generation_config = {
+        "temperature": temp,
+        "max_output_tokens": mtok,
+    }
+
+    # Relax safety just enough to avoid over-blocking factual museum content
+    safety_settings = {
+        HarmCategory.HARM_CATEGORY_HATE_SPEECH: HarmBlockThreshold.BLOCK_ONLY_HIGH,
+        HarmCategory.HARM_CATEGORY_HARASSMENT: HarmBlockThreshold.BLOCK_ONLY_HIGH
+    }
+
+    resp = model_obj.generate_content(
+        user_prompt.strip(),
+        generation_config=generation_config,
+        safety_settings=safety_settings,
     )
 
-    # Single-turn call; you can upgrade to chat sessions if needed
-    resp = gmodel.generate_content(user_prompt.strip(), generation_config=gen_cfg)
-    # Newer SDK: resp.text; fallback to candidates
-    text = getattr(resp, "text", None)
-    if text:
-        return text.strip()
+    # Robust extraction (don’t use resp.text)
+    text = _extract_gemini_text(resp)
 
-    # Fallback extraction
-    try:
-        return resp.candidates[0].content.parts[0].text.strip()
-    except Exception:
-        return ""
+    if text:
+        return text
+
+    # If empty, log some useful debug info and try one gentle retry
+    candidates = getattr(resp, "candidates", None) or []
+    finish_reasons = [getattr(c, "finish_reason", None) for c in candidates]
+    block_reason = getattr(getattr(resp, "prompt_feedback", None), "block_reason", None)
+
+    print(f"[WARN] Gemini returned no text. finish_reasons={finish_reasons}, block_reason={block_reason}")
+
+    # Retry once with lower temp & more tokens (covers MAX_TOKENS early stops)
+    if mtok < 2048:
+        try:
+            resp2 = model_obj.generate_content(
+                user_prompt.strip(),
+                generation_config={"temperature": 0.4, "max_output_tokens": max(2048, mtok*2)},
+                safety_settings=safety_settings,
+            )
+            text2 = _extract_gemini_text(resp2)
+            if text2:
+                return text2
+            fr2 = [getattr(c, "finish_reason", None) for c in (getattr(resp2, "candidates", None) or [])]
+            br2 = getattr(getattr(resp2, "prompt_feedback", None), "block_reason", None)
+            print(f"[WARN] Retry also empty. finish_reasons={fr2}, block_reason={br2}")
+        except Exception as e:
+            print(f"[WARN] Retry failed: {e}")
+
+    # Final fallback so pipeline doesn’t crash; return empty string
+    return ""
+
 
 
 # -------- Registry --------

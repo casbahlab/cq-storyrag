@@ -26,6 +26,13 @@ ex:wasBroadcastPreserved a rdf:Property ;
     rdfs:domain schema:BroadcastEvent ;
     rdfs:range xsd:boolean .
 
+ex:performedWithInstrument a owl:ObjectProperty ;
+    rdfs:label "performed with instrument" ;
+    rdfs:comment "Links a LivePerformance to a musical instrument used during the performance." ;
+    rdfs:domain mm:LivePerformance ;
+    rdfs:range ex:MusicInstrument ;
+    rdfs:subPropertyOf schema:instrument .
+
 ex:charitySingle a rdf:Property ;
     rdfs:label "charity single" ;
     rdfs:comment "Indicates whether a music release is a charity single." ;
@@ -400,6 +407,7 @@ ex:Queen_LiveAid1985_Performance
                  ex:QueenLiveAid1985_uDiscoverReview ;
     ex:isIconic true ;
     schema:description "Widely regarded as one of the most iconic live performances in rock history due to Freddie Mercury's showmanship and audience engagement." ;
+    ex:performedWithInstrument ex:Piano, ex:ElectricGuitar, ex:DrumKit, ex:BassGuitar ;
     ex:occurredDuring ex:FreddieMercuryLaryngitis .
 
 ex:LiveAid1985_Queen_Setlist
@@ -686,6 +694,7 @@ ex:FreddieMercury
     # Health condition / performance narrative
     ex:experiencedCondition ex:Laryngitis ;
     ex:battledCondition ex:LaryngitisDuringLiveAid1985 ;
+    ex:playsInstrument ex:Piano ;
 
     # Link to visual highlight (CQ-L12)
     ex:performedVisualHighlightDuring ex:HammerToFall_VisualMoment .
@@ -719,6 +728,9 @@ ex:DrumKit a ex:MusicInstrument ;
 
 ex:BassGuitar a ex:MusicInstrument ;
     schema:name "Bass Guitar" .
+
+ex:Piano a ex:MusicInstrument ;
+  schema:name "Piano" .
 
 # =========================
 # Places and Genres

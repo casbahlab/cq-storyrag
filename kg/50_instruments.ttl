@@ -1,0 +1,15 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+
+ex:BassGuitar a ex:MusicInstrument ;
+    schema:name "Bass Guitar" .
+
+ex:DrumKit a ex:MusicInstrument ;
+    schema:name "Drum Kit" .
+
+ex:ElectricGuitar a ex:MusicInstrument ;
+    schema:name "Electric Guitar" .
+
+ex:Piano a ex:MusicInstrument ;
+    schema:name "Piano" .
+

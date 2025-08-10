@@ -1,0 +1,18 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:FreddieMercuryLaryngitis a schema:MedicalCondition ;
+    schema:affectedBy ex:FreddieMercury ;
+    schema:description "Freddie Mercury was battling laryngitis during the Live Aid performance." ;
+    schema:endDate "1985-07-14"^^xsd:date ;
+    schema:name "Laryngitis" ;
+    schema:startDate "1985-07-12"^^xsd:date .
+
+ex:FreddieMercuryLaryngitisBattle a schema:MedicalCondition ;
+    schema:about ex:FreddieMercury ;
+    schema:associatedMedia ex:Queen_LiveAid1985_Performance .
+
+ex:Laryngitis a schema:MedicalCondition ;
+    schema:name "Laryngitis" .
+
