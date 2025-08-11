@@ -14,6 +14,9 @@ Writes to: kg/82_external_ids_artists.ttl
 import json, os
 from rdflib import Graph, Namespace, URIRef, Literal, BNode
 from rdflib.namespace import RDF
+from pathlib import Path
+from utils_normalize import normalize_schema_prefixes_in_file
+
 
 KG_DIR = os.path.dirname(os.path.dirname(__file__))
 INPUT_TTL = os.path.join(KG_DIR, "liveaid_instances_master.ttl")
@@ -31,6 +34,8 @@ def add_identifier(gx, subj, system, value):
     gx.add((pv, SCHEMA.value, Literal(value)))
 
 def main():
+    normalize_schema_prefixes_in_file(Path(INPUT_TTL), inplace=False)
+
     ref = Graph().parse(INPUT_TTL, format="turtle")
 
     # Build label->URI map for artists

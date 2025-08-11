@@ -106,3 +106,4 @@ numpy
 pyvis
 jinja2
 google-generativeai
+pyshacl

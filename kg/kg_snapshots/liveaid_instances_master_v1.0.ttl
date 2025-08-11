@@ -1,9 +1,10 @@
+@prefix schema: <http://schema.org/> .
 @prefix ex: <http://wembrewind.live/ex#> .
 @prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix schema: <http://schema.org/> .
+
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ex:MedicalEvent a rdfs:Class ;
@@ -43,7 +44,6 @@ ex:CrowdEngagement a schema:DefinedTerm ;
 ex:DavidBowieLiveAid1985Performance a mm:LivePerformance ;
     schema:isPartOf ex:LiveAid1985 ;
     schema:location ex:WembleyStadium ;
-    schema:name "David Bowie at Live Aid 1985 (Wembley Stadium)" ;
     mm:isCreatedBy ex:DavidBowie .
 
 ex:David_Bowie a schema:Person .
@@ -55,7 +55,6 @@ ex:DoTheyKnowItsChristmas schema:datePublished "1984"^^xsd:gYear ;
 
 ex:EltonJohnPerformance1985 a mm:LivePerformance ;
     schema:isPartOf ex:LiveAid1985 ;
-    schema:name "Elton John at Live Aid 1985" ;
     mm:isCreatedBy ex:EltonJohn .
 
 ex:Elton_John a schema:Person .
@@ -109,21 +108,18 @@ ex:PhiladelphiaMasterTapes1985 schema:location ex:PhiladelphiaUSA .
 
 ex:QueenLiveAid1985_AyOh a mm:LivePerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    schema:name "Freddie Mercury at Queen's Live Aid Performance" ;
     mm:creates ex:AyOh ;
     mm:isCreatedBy ex:FreddieMercury,
         ex:Queen .
 
 ex:QueenLiveAid1985_BohemianRhapsody a mm:LivePerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    schema:name "Queen at Queen's Live Aid Performance" ;
     schema:position 1 ;
     mm:creates ex:BohemianRhapsody ;
     mm:isCreatedBy ex:Queen .
 
 ex:QueenLiveAid1985_CrazyLittleThingCalledLove a mm:LivePerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    schema:name "Queen at Queen's Live Aid Performance" ;
     schema:position 4 ;
     mm:creates ex:CrazyLittleThingCalledLove ;
     mm:isCreatedBy ex:Queen .
@@ -131,7 +127,6 @@ ex:QueenLiveAid1985_CrazyLittleThingCalledLove a mm:LivePerformance ;
 ex:QueenLiveAid1985_HammerToFall a mm:LivePerformance ;
     schema:hasPart ex:HammerToFall_CameramanMoment ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    schema:name "Freddie Mercury at Queen's Live Aid Performance" ;
     schema:position 3 ;
     mm:creates ex:HammerToFall ;
     mm:isCreatedBy ex:FreddieMercury,
@@ -140,7 +135,6 @@ ex:QueenLiveAid1985_HammerToFall a mm:LivePerformance ;
 ex:QueenLiveAid1985_RadioGaGa a mm:LivePerformance ;
     schema:hasPart ex:RadioGaGa_AudienceInteraction ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    schema:name "Freddie Mercury at Queen's Live Aid Performance" ;
     schema:position 2 ;
     mm:creates ex:RadioGaGa ;
     mm:isCreatedBy ex:FreddieMercury,
@@ -148,14 +142,12 @@ ex:QueenLiveAid1985_RadioGaGa a mm:LivePerformance ;
 
 ex:QueenLiveAid1985_WeAreTheChampions a mm:LivePerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    schema:name "Queen at Queen's Live Aid Performance" ;
     schema:position 6 ;
     mm:creates ex:WeAreTheChampions ;
     mm:isCreatedBy ex:Queen .
 
 ex:QueenLiveAid1985_WeWillRockYou a mm:LivePerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    schema:name "Queen at Queen's Live Aid Performance" ;
     schema:position 5 ;
     mm:creates ex:WeWillRockYou ;
     mm:isCreatedBy ex:Queen .

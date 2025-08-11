@@ -28,3 +28,17 @@ ex:MedicalConditionShape a sh:NodeShape ;
 ex:MusicWorkShape a sh:NodeShape ;
   sh:targetClass schema:MusicComposition ;
   sh:property [ sh:path schema:name ; sh:minCount 1 ; sh:datatype xsd:string ] .
+
+ex:EventCountsShape a sh:NodeShape ;
+  sh:targetClass schema:Event ;
+  sh:property [ sh:path ex:numberOfActs ; sh:datatype xsd:integer ] ;
+  sh:property [ sh:path ex:attendance   ; sh:datatype xsd:integer ] .
+
+ex:BroadcastShape a sh:NodeShape ;
+  sh:targetClass schema:BroadcastEvent ;
+  sh:property [ sh:path ex:wasBroadcastPreserved ; sh:datatype xsd:boolean ] ;
+  sh:property [ sh:path ex:wasBroadcastVia ; sh:datatype xsd:string ] .
+
+ex:ArtistDebutShape a sh:NodeShape ;
+  sh:targetClass schema:MusicArtist ;
+  sh:property [ sh:path ex:debutYear ; sh:datatype xsd:gYear ] .

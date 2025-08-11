@@ -6,28 +6,29 @@
 ex:BBCCameraman a schema:Person ;
     schema:performer ex:BalletWithFreddieMercury .
 
-ex:BobGeldof a schema:Person ;
+ex:BobGeldof a schema:Person,
+        mm:Musician ;
     schema:name "Bob Geldof" .
 
-ex:DavidBowie a schema:Person ;
+ex:DavidBowie a schema:Person,
+        mm:Musician ;
     schema:name "David Bowie" ;
     ex:performedAt ex:LiveAid1985 .
 
-ex:David_Bowie a schema:Person .
-
-ex:EltonJohn a schema:Person ;
+ex:EltonJohn a schema:Person,
+        mm:Musician ;
     schema:name "Elton John" ;
     ex:performedAt ex:LiveAid1985 .
 
-ex:Elton_John a schema:Person .
-
-ex:Madonna a schema:Person ;
+ex:Madonna a schema:Person,
+        mm:Musician ;
     schema:name "Madonna" ;
     ex:debutYear "1982"^^xsd:gYear ;
     ex:hasDebutRelease ex:MadonnaDebutAlbum ;
     ex:performedAt ex:LiveAid1985 .
 
-ex:MidgeUre a schema:Person ;
+ex:MidgeUre a schema:Person,
+        mm:Musician ;
     schema:name "Midge Ure" .
 
 ex:BrianMay a schema:Person,

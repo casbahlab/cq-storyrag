@@ -10,27 +10,28 @@ ex:DavidBowieLiveAid1985Performance a mm:LivePerformance ;
 
 ex:EltonJohnPerformance1985 a mm:LivePerformance ;
     schema:isPartOf ex:LiveAid1985 ;
+    schema:location ex:WembleyStadium ;
     mm:isCreatedBy ex:EltonJohn .
 
-ex:QueenLiveAid1985_AyOh a mm:LivePerformance ;
+ex:QueenLiveAid1985_AyOh a ex:SongPerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
     mm:creates ex:AyOh ;
     mm:isCreatedBy ex:FreddieMercury,
         ex:Queen .
 
-ex:QueenLiveAid1985_BohemianRhapsody a mm:LivePerformance ;
+ex:QueenLiveAid1985_BohemianRhapsody a ex:SongPerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
     schema:position 1 ;
     mm:creates ex:BohemianRhapsody ;
     mm:isCreatedBy ex:Queen .
 
-ex:QueenLiveAid1985_CrazyLittleThingCalledLove a mm:LivePerformance ;
+ex:QueenLiveAid1985_CrazyLittleThingCalledLove a ex:SongPerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    schema:position 4 ;
+    ex:setOrder 4 ;
     mm:creates ex:CrazyLittleThingCalledLove ;
     mm:isCreatedBy ex:Queen .
 
-ex:QueenLiveAid1985_HammerToFall a mm:LivePerformance ;
+ex:QueenLiveAid1985_HammerToFall a ex:SongPerformance ;
     schema:hasPart ex:HammerToFall_CameramanMoment ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
     schema:position 3 ;
@@ -38,7 +39,7 @@ ex:QueenLiveAid1985_HammerToFall a mm:LivePerformance ;
     mm:isCreatedBy ex:FreddieMercury,
         ex:Queen .
 
-ex:QueenLiveAid1985_RadioGaGa a mm:LivePerformance ;
+ex:QueenLiveAid1985_RadioGaGa a ex:SongPerformance ;
     schema:hasPart ex:RadioGaGa_AudienceInteraction ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
     schema:position 2 ;
@@ -46,13 +47,13 @@ ex:QueenLiveAid1985_RadioGaGa a mm:LivePerformance ;
     mm:isCreatedBy ex:FreddieMercury,
         ex:Queen .
 
-ex:QueenLiveAid1985_WeAreTheChampions a mm:LivePerformance ;
+ex:QueenLiveAid1985_WeAreTheChampions a ex:SongPerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
     schema:position 6 ;
     mm:creates ex:WeAreTheChampions ;
     mm:isCreatedBy ex:Queen .
 
-ex:QueenLiveAid1985_WeWillRockYou a mm:LivePerformance ;
+ex:QueenLiveAid1985_WeWillRockYou a ex:SongPerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
     schema:position 5 ;
     mm:creates ex:WeWillRockYou ;
@@ -64,6 +65,8 @@ ex:Queen_LiveAid1985_Performance a mm:LivePerformance ;
         "The crowd participated enthusiastically, especially during 'Radio Ga Ga' and 'Ay‑Oh'." ;
     schema:description "Widely regarded as one of the most iconic live performances in rock history due to Freddie Mercury's showmanship and audience engagement." ;
     schema:duration "PT21M"^^xsd:duration ;
+    schema:isBasedOn <https://en.wikipedia.org/wiki/Live_Aid>,
+        <https://en.wikipedia.org/wiki/Queen_at_Live_Aid> ;
     schema:isPartOf ex:LiveAid1985 ;
     schema:location ex:WembleyStadium ;
     schema:name "Queen's Live Aid Performance" ;

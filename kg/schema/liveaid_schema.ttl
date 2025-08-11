@@ -3,39 +3,215 @@
 @prefix mm:     <https://w3id.org/polifonia/ontology/music-meta/> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 
-### Classes
-ex:MusicInstrument a owl:Class ;
-  rdfs:label "Music Instrument" ;
-  rdfs:subClassOf schema:MusicInstrument .
+### Classes observed in instances but not yet declared
+ex:MedicalEvent a rdfs:Class ;
+    rdfs:label "Medical Event" ;
+    rdfs:comment "A medical or health-related incident relevant to a music performance or event." ;
+    rdfs:subClassOf schema:Event .
 
-ex:PerformanceAspect a owl:Class ;
-  rdfs:label "Performance Aspect" ;
-  rdfs:comment "Qualitative or technical aspect of a performance (e.g., vocal range, stamina, projection)." .
+ex:MusicInstrument a rdfs:Class ;
+    rdfs:label "Musical Instrument" ;
+    rdfs:comment "A physical or digital instrument used to perform music." ;
+    rdfs:subClassOf schema:Thing .
 
-### Properties — instruments
+
+# If you use it (hasChallenge range hints at it)
+ex:EventChallenge a owl:Class ;
+  rdfs:label "Event Challenge" ;
+  rdfs:comment "A logistical or technical challenge faced by an event." .
+
+### Properties — broadcast / event context
+ex:hadBroadcast a owl:ObjectProperty ;
+  rdfs:label "had broadcast" ;
+  rdfs:comment "Links an event to a related broadcast." ;
+  rdfs:domain schema:Event ;
+  rdfs:range schema:BroadcastEvent ;
+  owl:inverseOf schema:broadcastOfEvent .
+
+ex:wasBroadcastBy a owl:ObjectProperty ;
+  rdfs:label "was broadcast by" ;
+  rdfs:comment "Organizations that broadcast or carried the event." ;
+  rdfs:domain schema:BroadcastEvent , schema:Event ;
+  rdfs:range schema:Organization ;
+  rdfs:subPropertyOf schema:provider .
+
+ex:usedBroadcastInfrastructure a owl:ObjectProperty ;
+  rdfs:label "used broadcast infrastructure" ;
+  rdfs:comment "Infrastructure/organization used to broadcast the event." ;
+  rdfs:domain schema:BroadcastEvent , schema:Event ;
+  rdfs:range schema:Organization ;
+  rdfs:subPropertyOf schema:provider .
+
+ex:facilitatedBy a owl:ObjectProperty ;
+  rdfs:label "facilitated by" ;
+  rdfs:comment "Satellite or infrastructure that facilitated transmission." ;
+  rdfs:domain schema:BroadcastEvent ;
+  rdfs:range schema:Thing .
+
+ex:distributedVia a owl:DatatypeProperty ;
+  rdfs:label "distributed via" ;
+  rdfs:comment "Medium/method for broadcast distribution (e.g., 'global satellite feed')." ;
+  rdfs:domain schema:BroadcastEvent ;
+  rdfs:range xsd:string .
+
+ex:wasBroadcastVia a owl:DatatypeProperty ;
+  rdfs:label "was broadcast via" ;
+  rdfs:comment "Medium used (radio, TV, satellite) as text label." ;
+  rdfs:domain schema:BroadcastEvent , schema:Event ;
+  rdfs:range xsd:string .
+
+ex:wasBroadcastPreserved a owl:DatatypeProperty ;
+  rdfs:label "was broadcast preserved" ;
+  rdfs:comment "Whether the broadcast was preserved/archived." ;
+  rdfs:domain schema:BroadcastEvent ;
+  rdfs:range xsd:boolean .
+
+### Properties — performance / instruments / conditions
 ex:performedWithInstrument a owl:ObjectProperty ;
   rdfs:label "performed with instrument" ;
-  rdfs:comment "Links a LivePerformance to an instrument used during that performance." ;
+  rdfs:comment "Links a LivePerformance to an instrument used during the performance." ;
   rdfs:domain mm:LivePerformance ;
-  rdfs:range  ex:MusicInstrument ;
+  rdfs:range ex:MusicInstrument ;
   rdfs:subPropertyOf schema:instrument .
 
-# optional (for song-level tagging, used by L31 pattern if adopted later)
-ex:featuresInstrument a owl:ObjectProperty ;
-  rdfs:label "features instrument" ;
-  rdfs:comment "Links a Song (or a SongPerformance node) to an instrument featured in that piece." ;
-  rdfs:domain schema:CreativeWork ;
-  rdfs:range  ex:MusicInstrument .
+ex:playsInstrument a owl:ObjectProperty ;
+  rdfs:label "plays instrument" ;
+  rdfs:comment "Indicates an instrument that a person plays." ;
+  rdfs:domain schema:Person ;
+  rdfs:range ex:MusicInstrument ;
+  rdfs:subPropertyOf schema:instrument .
 
-### Properties — performance qualities (for condition CQs)
-ex:hasPerformanceAspect a owl:ObjectProperty ;
-  rdfs:label "has performance aspect" ;
+# Keep equivalent to mm:occurredDuring (instances already use ex:occurredDuring)
+ex:occurredDuring a owl:ObjectProperty ;
+  rdfs:label "occurred during" ;
+  rdfs:comment "A performance occurred during a specific medical condition." ;
   rdfs:domain mm:LivePerformance ;
-  rdfs:range  ex:PerformanceAspect .
+  rdfs:range schema:MedicalCondition ;
+  owl:equivalentProperty mm:occurredDuring .
 
-ex:affectedAspect a owl:ObjectProperty ;
-  rdfs:label "affected aspect" ;
-  rdfs:comment "Relates a medical condition to the performance aspect it affected." ;
-  rdfs:domain schema:MedicalCondition ;
-  rdfs:range  ex:PerformanceAspect .
+# Sequencing relations between events (used sparsely; no strict domain to avoid clashes)
+ex:occurredBefore a owl:ObjectProperty ;
+  rdfs:label "occurred before" ;
+  rdfs:comment "Happened before another event." ;
+  rdfs:range schema:Event .
+
+ex:occurredAfter a owl:ObjectProperty ;
+  rdfs:label "occurred after" ;
+  rdfs:comment "Happened after another event." ;
+  rdfs:range schema:Event .
+
+ex:occurredSimultaneouslyWith a owl:ObjectProperty ;
+  rdfs:label "occurred simultaneously with" ;
+  rdfs:comment "Happened at the same time as another event." ;
+  rdfs:range schema:Event .
+
+### Properties — events, attendance, money
+ex:numberOfActs a owl:DatatypeProperty ;
+  rdfs:label "number of acts" ;
+  rdfs:comment "Number of acts/performances at an event." ;
+  rdfs:domain schema:Event ;
+  rdfs:range xsd:integer .
+
+ex:attendance a owl:DatatypeProperty ;
+  rdfs:label "attendance" ;
+  rdfs:comment "Number of people attending a live event (or at a venue for the event)." ;
+  rdfs:domain schema:Event , schema:Place ;  # broadened to match current data
+  rdfs:range xsd:integer .
+
+ex:raisedAmount a owl:ObjectProperty ;
+  rdfs:label "raised amount" ;
+  rdfs:comment "Total amount raised by the event." ;
+  rdfs:domain schema:Event ;
+  rdfs:range schema:MonetaryAmount .
+
+### Properties — artist/recording metadata
+ex:charitySingle a owl:DatatypeProperty ;
+  rdfs:label "charity single" ;
+  rdfs:comment "Boolean flag indicating a charity single." ;
+  rdfs:domain schema:MusicRecording ;
+  rdfs:range xsd:boolean .
+
+ex:debutYear a owl:DatatypeProperty ;
+  rdfs:label "debut year" ;
+  rdfs:comment "Year in which an artist or group debuted." ;
+  rdfs:domain schema:MusicArtist ;
+  rdfs:range xsd:gYear .
+
+ex:hasDebutRelease a owl:ObjectProperty ;
+  rdfs:label "has debut release" ;
+  rdfs:comment "Links a music artist to their first release (album or single)." ;
+  rdfs:domain schema:MusicArtist ;
+  rdfs:range schema:MusicRelease .
+
+ex:earlyMusicInfluence a owl:ObjectProperty ;
+  rdfs:label "early music influence" ;
+  rdfs:comment "Links an artist to a genre that influenced their early style." ;
+  rdfs:domain schema:MusicArtist ;
+  rdfs:range mm:MusicGenre ;
+  rdfs:subPropertyOf schema:genre .
+
+ex:isBestSellingIn a owl:ObjectProperty ;
+  rdfs:label "is best selling in" ;
+  rdfs:comment "Country where the recording was best selling." ;
+  rdfs:domain schema:MusicRecording ;
+  rdfs:range schema:Country .
+
+### Properties — misc relations/notes currently in use
+ex:archived a owl:DatatypeProperty ;
+  rdfs:label "archived" ;
+  rdfs:comment "Whether an organization/archive holds preserved material." ;
+  rdfs:domain schema:Organization ;
+  rdfs:range xsd:boolean .
+
+ex:countryCount a owl:DatatypeProperty ;
+  rdfs:label "country count" ;
+  rdfs:comment "Count of countries represented within an audience." ;
+  rdfs:domain schema:Audience ;
+  rdfs:range xsd:integer .
+
+ex:viewerCount a owl:DatatypeProperty ;
+  rdfs:label "viewer count" ;
+  rdfs:comment "Viewers counted for a broadcast/audience." ;
+  rdfs:domain schema:Audience ;
+  rdfs:range xsd:integer .
+
+ex:coverageNote a owl:DatatypeProperty ;
+  rdfs:label "coverage note" ;
+  rdfs:comment "Free-text note about coverage decisions/logistics." ;
+  rdfs:domain schema:Organization ;
+  rdfs:range xsd:string .
+
+ex:relatedFact a owl:DatatypeProperty ;
+  rdfs:label "related fact" ;
+  rdfs:comment "A free-text related fact for narrative use." ;
+  rdfs:domain schema:Event ;
+  rdfs:range xsd:string .
+
+# person/event participation shortcuts used in the data
+ex:performedAt a owl:ObjectProperty ;
+  rdfs:label "performed at" ;
+  rdfs:comment "Artist performed at a specific event." ;
+  rdfs:domain schema:MusicArtist ;  # Person or MusicGroup branches from MusicArtist
+  rdfs:range schema:Event .
+
+ex:participatedIn a owl:ObjectProperty ;
+  rdfs:label "participated in" ;
+  rdfs:comment "Audience participated in / attended an event." ;
+  rdfs:domain schema:Audience ;
+  rdfs:range schema:Event .
+
+# narrative convenience: link to visual highlight (e.g., 'crowd handclap segment')
+ex:performedVisualHighlightDuring a owl:ObjectProperty ;
+  rdfs:label "performed visual highlight during" ;
+  rdfs:comment "A person performed a notable visual moment during a work/segment." ;
+  rdfs:domain schema:Person ;
+  rdfs:range schema:CreativeWork .
+
+
+# A single song-level performance inside an artist's set
+ex:SongPerformance a owl:Class ;
+  rdfs:label "Song Performance" ;
+  rdfs:subClassOf mm:LivePerformance ;
+  rdfs:comment "An individual song (or medley segment) performed as part of a larger LivePerformance." .

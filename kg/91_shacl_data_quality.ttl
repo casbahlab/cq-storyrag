@@ -1,0 +1,25 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# SongPerformance must link to parent set, work, and have integer position
+ex:SongPerformanceShape a sh:NodeShape ;
+  sh:targetClass ex:SongPerformance ;
+  sh:property [ sh:path schema:isPartOf ; sh:minCount 1 ] ;
+  sh:property [ sh:path mm:creates ; sh:minCount 1 ] ;
+  sh:property [ sh:path schema:position ; sh:datatype xsd:integer ; sh:minInclusive 1 ] .
+
+# LivePerformance creator type is either Musician (person) or MusicGroup (band)
+ex:PerformanceCreatorTypeShape a sh:NodeShape ;
+  sh:targetClass mm:LivePerformance ;
+  sh:property [
+    sh:path mm:isCreatedBy ;
+    sh:minCount 1 ;
+    sh:or (
+      [ sh:class mm:Musician ]
+      [ sh:class schema:MusicGroup ]
+    ) ;
+    sh:message "mm:isCreatedBy must be a mm:Musician (person) or a schema:MusicGroup (band)."
+  ] .

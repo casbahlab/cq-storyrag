@@ -1,0 +1,42 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <http://schema.org/> .
+
+ex:AyOh a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "Ay‑Oh" .
+
+ex:BohemianRhapsody a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:identifier [ ] ;
+    schema:name "Bohemian Rhapsody" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bohemian_Rhapsody> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q187745> .
+
+ex:CrazyLittleThingCalledLove a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "Crazy Little Thing Called Love" .
+
+ex:HammerToFall a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "Hammer to Fall" .
+
+ex:RadioGaGa a schema:MusicComposition,
+        schema:MusicRecording,
+        mm:MusicEntity ;
+    schema:byArtist ex:Queen ;
+    schema:identifier [ ] ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:name "Radio Ga Ga" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Radio_Ga_Ga> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q605031> .
+
+ex:WeAreTheChampions a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "We Are the Champions" .
+
+ex:WeWillRockYou a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "We Will Rock You" .
+

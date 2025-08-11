@@ -2,23 +2,17 @@
 """
 One-click KG release (self-contained, strict vocab validation).
 
-Steps:
+Pipeline:
   1) Merge modules -> kg/liveaid_instances_master.ttl
-  2) STRICT vocabulary validation (inline):
-       - Loads ontologies from kg/schema/: schemaorg.ttl, musicmeta.owl, liveaid_schema.ttl
-       - Builds allowed class/property sets + allows known namespaces
-       - Fails release if any unknown class/property is detected
-  3) Run CQ coverage if kg/run_cq_coverage.py exists
-  4) Freeze a versioned snapshot via freeze_master_snapshot.py (with --no-strict to avoid re-check)
-
-Usage:
-  python kg/scripts/release_one_click.py
-  python kg/scripts/release_one_click.py --label "Baseline after schema lock"
-  python kg/scripts/release_one_click.py --major
-  python kg/scripts/release_one_click.py --patch
+  2) Normalize schema prefixes (schema1: -> schema:, https->http)
+  3) STRICT vocabulary validation (inline) against kg/schema/{schemaorg.ttl, musicmeta.owl, liveaid_schema.ttl}
+  4) Run SHACL data-quality checks (pySHACL) if shapes present
+  5) Run minimal SPARQL tests
+  6) Run CQ coverage (if kg/cqs/run_cq_coverage.py exists)
+  7) Freeze a versioned snapshot via freeze_master_snapshot.py
 """
 
-import argparse, sys, subprocess
+import argparse, sys, subprocess, re
 from pathlib import Path
 from rdflib import Graph, RDF, RDFS, OWL
 
@@ -26,6 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS = ROOT / "scripts"
 SCHEMA = ROOT / "schema"
 CQS_DIR = ROOT / "cqs"
+TESTS_DIR = ROOT / "tests"
 MASTER = ROOT / "liveaid_instances_master.ttl"
 
 ALLOWED_NAMESPACES = [
@@ -60,7 +55,6 @@ def load_ontology_terms(path: Path):
     for s, _, _ in g.triples((None, RDF.type, OWL.ObjectProperty)): properties.add(str(s))
     for s, _, _ in g.triples((None, RDF.type, OWL.DatatypeProperty)): properties.add(str(s))
     for s, _, _ in g.triples((None, RDF.type, OWL.AnnotationProperty)): properties.add(str(s))
-    # normalize schema.org IRIs
     classes = {normalize_schema_iri(x) for x in classes}
     properties = {normalize_schema_iri(x) for x in properties}
     return classes, properties
@@ -106,6 +100,21 @@ def strict_vocab_validate(master_path: Path):
 
     print("[ok] Strict vocab validation passed.")
 
+def normalize_schema_prefixes(ttl_path: Path):
+    """Ensure schema.org uses 'schema:' + HTTP IRIs; strip any 'schema1:' usage."""
+    import re
+    txt = ttl_path.read_text(encoding="utf-8")
+    txt = txt.replace("https://schema.org/", "http://schema.org/")
+    if "@prefix schema:" not in txt and "prefix schema:" not in txt:
+        txt = txt.replace(
+            "@prefix ex:",
+            "@prefix schema: <http://schema.org/> .\n@prefix ex:"
+        )
+    txt = re.sub(r"(?im)^\s*@?prefix\s+schema1:\s*<https?://schema\.org/>\s*\.\s*$", "", txt)
+    txt = txt.replace("schema1:", "schema:")
+    ttl_path.write_text(txt, encoding="utf-8")
+    print(f"[normalize] schema prefixes fixed in {ttl_path.name}")
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--label", default="", help="Optional label for the snapshot")
@@ -120,7 +129,6 @@ def main():
     if merge_py.exists():
         run([sys.executable, str(merge_py)])
     else:
-        # Inline simple merge if helper missing
         modules = [
             "10_core_entities.ttl","20_artists.ttl","21_artist_labels.ttl",
             "30_performances.ttl","31_performance_labels.ttl","32_performance_labels_rdfs.ttl",
@@ -132,17 +140,39 @@ def main():
         ]
         g = Graph()
         for m in modules:
-            p = ROOT / m if m.startswith("10_") else ROOT / m  # simple join
-            p = ROOT / m  # modules live under kg/
+            p = ROOT / m
             if p.exists():
                 g.parse(str(p), format="turtle")
         g.serialize(str(MASTER), format="turtle")
         print("[merge] Wrote", MASTER)
 
-    # 2) Strict vocab validation (inline)
+    # 2) Normalize schema prefixes
+    normalize_schema_prefixes(MASTER)
+
+    # 3) Strict vocab validation
     strict_vocab_validate(MASTER)
 
-    # 3) CQ coverage (optional)
+    # 4) SHACL data-quality (optional but recommended)
+    shacl_shapes = SCHEMA / "91_shacl_data_quality.ttl"
+    shacl_runner = SCRIPTS / "run_shacl.py"
+    if shacl_shapes.exists() and shacl_runner.exists():
+        report = ROOT / "validation" / "shacl_report.txt"
+        (ROOT / "validation").mkdir(parents=True, exist_ok=True)
+        run([sys.executable, str(shacl_runner),
+             "--data", str(MASTER),
+             "--shapes", str(shacl_shapes),
+             "--report", str(report)])
+    else:
+        print("[warn] SHACL skipped (missing shapes or runner)")
+
+    # 5) Minimal SPARQL tests
+    tests_runner = TESTS_DIR / "run_minimal_tests.py"
+    if tests_runner.exists():
+        run([sys.executable, str(tests_runner), "--kg", str(MASTER)])
+    else:
+        print("[warn] Minimal tests skipped (runner not found)")
+
+    # 6) CQ coverage (optional)
     coverage_runner = SCRIPTS / "run_cq_coverage.py"
     if coverage_runner.exists():
         kg_file = ROOT / "liveaid_instances_master.ttl"
@@ -158,7 +188,7 @@ def main():
     else:
         print("[warn] CQ runner not found, skipping:", coverage_runner)
 
-    # 4) Freeze snapshot (avoid duplicate validation by passing --no-strict)
+    # 7) Freeze snapshot
     freezer = SCRIPTS / "freeze_master_snapshot.py"
     if not freezer.exists():
         raise SystemExit(f"[ERR] missing: {freezer}")
@@ -169,7 +199,6 @@ def main():
     if args.label:
         cmd += ["--label", args.label]
     run(cmd)
-
     print("[DONE] One-click release completed.")
 
 if __name__ == "__main__":
