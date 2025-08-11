@@ -2,26 +2,17 @@
 @prefix ex: <http://wembrewind.live/ex#> .
 @prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:MedicalEvent a rdfs:Class ;
-    rdfs:label "Medical Event" ;
-    rdfs:comment "A medical or health-related incident relevant to a music performance or event." ;
-    rdfs:subClassOf schema:Event .
-
-ex:MusicInstrument a rdfs:Class ;
-    rdfs:label "Musical Instrument" ;
-    rdfs:comment "A physical or digital instrument used to perform music." ;
-    rdfs:subClassOf schema:Thing .
-
 ex:150Countries a schema:Place ;
     rdfs:label "150 Countries" .
 
-ex:AKindOfMagicRecording schema:recordedIn "1986"^^xsd:gYear ;
-    schema:recordingOf ex:AKindOfMagic ;
+ex:AKindOfMagic a schema:MusicAlbum,
+        mm:Release ;
+    schema:datePublished "1986-06-02"^^xsd:date ;
+    schema:name "A Kind of Magic" ;
     ex:occurredAfter ex:LiveAid1985 ;
     mm:isCreatedBy ex:Queen .
 
@@ -46,7 +37,8 @@ ex:DavidBowieLiveAid1985Performance a mm:LivePerformance ;
     schema:location ex:WembleyStadium ;
     mm:isCreatedBy ex:DavidBowie .
 
-ex:DoTheyKnowItsChristmas schema:datePublished "1984"^^xsd:gYear ;
+ex:DoTheyKnowItsChristmas a mm:Recording ;
+    schema:datePublished "1984"^^xsd:gYear ;
     schema:name "Do They Know It's Christmas?" ;
     ex:charitySingle true ;
     ex:isBestSellingIn ex:UnitedKingdom .
@@ -60,22 +52,11 @@ ex:Energy a schema:DefinedTerm ;
     schema:description "A lively and dynamic quality of performance." ;
     schema:name "Energy" .
 
-ex:FamineInEthiopia schema:location ex:Ethiopia ;
-    schema:name "Famine in Ethiopia" .
+ex:Ethiopia a schema:Country .
 
 ex:FreddieMercuryLaryngitisBattle a schema:MedicalCondition ;
     schema:about ex:FreddieMercury ;
     schema:associatedMedia ex:Queen_LiveAid1985_Performance .
-
-ex:Fundraising schema:name "Raise funds" .
-
-ex:GlobalBroadcast1985 schema:description "Live global broadcast across multiple countries and networks" .
-
-ex:GlobalBroadcasters rdfs:label "Global Television Broadcasters" .
-
-ex:HumanitarianAid schema:name "Humanitarian Aid" .
-
-ex:LiveAid1985GlobalAudience schema:description "Global television audience across 150 countries." .
 
 ex:LiveAid1985JFK a schema:MusicEvent,
         schema:Place,
@@ -83,11 +64,6 @@ ex:LiveAid1985JFK a schema:MusicEvent,
     schema:location ex:JFKStadium ;
     schema:name "Live Aid 1985 - JFK Stadium" ;
     ex:attendance 89484 .
-
-ex:LiveAid1985Wembley schema:location ex:WembleyStadium ;
-    ex:attendance 72000 ;
-    ex:occurredSimultaneouslyWith ex:LiveAid1985Philadelphia ;
-    ex:usedBroadcastInfrastructure ex:SatelliteNetwork .
 
 ex:LiveAidAudience a schema:Audience .
 
@@ -100,8 +76,6 @@ ex:LiveAidBroadcast a schema:BroadcastEvent ;
     ex:facilitatedBy ex:SatelliteNetwork .
 
 ex:MusicCriticsGroup a schema:Organization .
-
-ex:PhiladelphiaMasterTapes1985 schema:location ex:PhiladelphiaUSA .
 
 ex:QueenLiveAid1985_AyOh a ex:SongPerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
@@ -117,7 +91,7 @@ ex:QueenLiveAid1985_BohemianRhapsody a ex:SongPerformance ;
 
 ex:QueenLiveAid1985_CrazyLittleThingCalledLove a ex:SongPerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    ex:setOrder 4 ;
+    schema:position 4 ;
     mm:creates ex:CrazyLittleThingCalledLove ;
     mm:isCreatedBy ex:Queen .
 
@@ -149,137 +123,7 @@ ex:QueenLiveAid1985_WeWillRockYou a ex:SongPerformance ;
     mm:creates ex:WeWillRockYou ;
     mm:isCreatedBy ex:Queen .
 
-ex:WembleyConcert1985 schema:location ex:WembleyStadium .
-
-ex:WorksTour schema:name "The Works Tour" .
-
-ex:attendance a rdf:Property ;
-    rdfs:label "attendance" ;
-    rdfs:comment "Number of people attending a live event or performance." ;
-    rdfs:domain schema:Event ;
-    rdfs:range xsd:integer .
-
-ex:charitySingle a rdf:Property ;
-    rdfs:label "charity single" ;
-    rdfs:comment "Indicates whether a music release is a charity single." ;
-    rdfs:domain schema:MusicRecording ;
-    rdfs:range xsd:boolean .
-
-ex:debutYear a rdf:Property ;
-    rdfs:label "debut year" ;
-    rdfs:comment "The year in which a musical artist or group first debuted." ;
-    rdfs:domain schema:MusicArtist ;
-    rdfs:range xsd:gYear .
-
-ex:distributedVia a rdf:Property ;
-    rdfs:label "distributed via" ;
-    rdfs:comment "Describes the medium or method through which a broadcast event was distributed, as a literal string." ;
-    rdfs:domain schema:BroadcastEvent ;
-    rdfs:range xsd:string .
-
-ex:earlyMusicInfluence a rdf:Property ;
-    rdfs:label "early music influence" ;
-    rdfs:comment "Links a music artist to a music genre that influenced their early style." ;
-    rdfs:domain mm:MusicArtist ;
-    rdfs:range mm:MusicGenre .
-
-ex:facilitatedBy a rdf:Property,
-        owl:ObjectProperty ;
-    rdfs:label "facilitated by" ;
-    rdfs:comment "Indicates the satellite or broadcast infrastructure that facilitated the transmission of a broadcast event." ;
-    rdfs:domain schema:BroadcastEvent ;
-    rdfs:range schema:Satellite .
-
-ex:hadBroadcast a rdf:Property ;
-    rdfs:domain schema:MusicEvent ;
-    rdfs:range schema:BroadcastEvent .
-
-ex:hasChallenge a rdf:Property ;
-    rdfs:label "has challenge" ;
-    rdfs:comment "Links an event to a challenge it faced, such as logistical or technical issues." ;
-    rdfs:domain schema:Event ;
-    rdfs:range ex:EventChallenge .
-
-ex:hasDebutRelease a rdf:Property ;
-    rdfs:label "has debut release" ;
-    rdfs:comment "Links a music artist to their first release (album or single)." ;
-    rdfs:domain schema:MusicArtist ;
-    rdfs:range schema:MusicRelease .
-
-ex:inspiredEvent a rdf:Property ;
-    rdfs:label "inspired event" ;
-    rdfs:comment "Indicates that an event inspired the creation of another event." ;
-    rdfs:domain schema:Event ;
-    rdfs:range schema:Event .
-
-ex:isBestSellingIn a rdf:Property ;
-    rdfs:label "is best selling in" ;
-    rdfs:comment "Links a music release to the country where it was the best seller." ;
-    rdfs:domain schema:MusicRecording ;
-    rdfs:range schema:Country .
-
-ex:numberOfActs a rdf:Property ;
-    rdfs:label "number of acts" ;
-    rdfs:comment "Number of acts or performances at an event." ;
-    rdfs:domain schema:Event ;
-    rdfs:range schema:Number .
-
-ex:occurredDuring a rdf:Property ;
-    rdfs:label "occurred during" ;
-    rdfs:comment "Indicates that an event occurred during a specific condition or circumstance." ;
-    rdfs:domain schema:Event ;
-    rdfs:range schema:MedicalCondition .
-
-ex:performedAt a rdf:Property ;
-    rdfs:label "performed at" ;
-    rdfs:comment "Indicates that a music artist performed at a specific live event." ;
-    rdfs:domain schema:MusicArtist ;
-    rdfs:range schema:Event .
-
-ex:performedWithInstrument a owl:ObjectProperty ;
-    rdfs:label "performed with instrument" ;
-    rdfs:comment "Links a LivePerformance to a musical instrument used during the performance." ;
-    rdfs:domain mm:LivePerformance ;
-    rdfs:range ex:MusicInstrument ;
-    rdfs:subPropertyOf schema:instrument .
-
-ex:playsInstrument a rdf:Property ;
-    rdfs:label "plays instrument" ;
-    rdfs:comment "Indicates the musical instrument a person plays." ;
-    rdfs:domain schema:Person ;
-    rdfs:range ex:MusicInstrument .
-
-ex:raisedAmount a rdf:Property ;
-    rdfs:label "raised amount" ;
-    rdfs:comment "Total amount of money raised by the event." ;
-    rdfs:domain schema:Event ;
-    rdfs:range schema:MonetaryAmount .
-
-ex:usedBroadcastInfrastructure a rdf:Property ;
-    rdfs:label "used broadcast infrastructure" ;
-    rdfs:comment "Infrastructure used to broadcast the event." ;
-    rdfs:domain schema:BroadcastEvent ;
-    rdfs:range schema:Organization .
-
-ex:wasBroadcastBy a rdf:Property ;
-    rdfs:label "was broadcast by" ;
-    rdfs:comment "The organizations that broadcast the event." ;
-    rdfs:domain schema:BroadcastEvent ;
-    rdfs:range schema:Organization .
-
-ex:wasBroadcastPreserved a rdf:Property ;
-    rdfs:domain schema:BroadcastEvent ;
-    rdfs:range xsd:boolean .
-
-ex:wasBroadcastVia a rdf:Property ;
-    rdfs:label "was broadcast via" ;
-    rdfs:comment "Mediums through which the event was broadcast (radio, TV, satellite, etc.)." ;
-    rdfs:domain schema:BroadcastEvent ;
-    rdfs:range schema:Text .
-
 mm:LondonStage a schema:Place .
-
-ex:AKindOfMagic a schema:MusicAlbum .
 
 ex:ArenaRock a mm:MusicGenre ;
     schema:name "Arena Rock" .
@@ -310,10 +154,6 @@ ex:BrianMay a schema:Person,
 
 ex:ChorusSingalong a schema:Event ;
     schema:description "Audience sang along with the chorus during Queen's performance at Live Aid 1985." .
-
-ex:ConcertPhiladelphia1985 schema:location ex:PhiladelphiaUSA .
-
-ex:Ethiopia a schema:Country .
 
 ex:FreddieMercuryLaryngitis a schema:MedicalCondition ;
     schema:affectedBy ex:FreddieMercury ;
@@ -388,14 +228,10 @@ ex:LiveAid1985BroadcastWembley a schema:BroadcastEvent ;
     schema:provider ex:BBC ;
     ex:wasBroadcastPreserved true .
 
-ex:LiveAid1985Philadelphia ex:usedBroadcastInfrastructure ex:SatelliteNetwork .
-
 ex:LiveAid1985_Philadelphia a schema:MusicEvent ;
     schema:location ex:JFKStadium ;
     schema:name "Live Aid 1985 - Philadelphia" ;
     schema:recordedIn ex:LiveAid1985_Philadelphia_Broadcast .
-
-ex:LiveAid1985_Philadelphia_Broadcast schema:provider ex:ABC .
 
 ex:LiveAid1985_Queen_Setlist a schema:ItemList ;
     schema:itemListElement ex:AyOh,
@@ -406,8 +242,6 @@ ex:LiveAid1985_Queen_Setlist a schema:ItemList ;
         ex:WeAreTheChampions,
         ex:WeWillRockYou ;
     schema:itemListOrder "ItemListOrderAscending" .
-
-ex:LiveAid1985_Wembley_Broadcast schema:provider ex:BBC .
 
 ex:LiveAidAudience1985 a schema:Audience ;
     schema:audienceType "Live concert audience" ;
@@ -441,6 +275,10 @@ ex:OtherCommercialSatelliteFleet a schema:Collection ;
     schema:description "Commercial satellites operated by various providers, used alongside Intelsat satellites for Live Aid's international broadcast." ;
     schema:name "Other Commercial Satellite Fleet" ;
     schema:numberOfItems 8 .
+
+ex:PhiladelphiaUSA a schema:City ;
+    schema:containedInPlace ex:UnitedStatesOfAmerica ;
+    schema:name "Philadelphia" .
 
 ex:PopRock a mm:MusicGenre ;
     schema:name "Pop Rock" .
@@ -497,7 +335,8 @@ ex:SpontaneousAttribute a schema:DefinedTerm ;
     schema:description "Performed without prior planning or rehearsal." ;
     schema:name "Spontaneous" .
 
-ex:TheWorks schema:byArtist ex:Queen ;
+ex:TheWorks a schema:MusicAlbum,
+        mm:Release ;
     schema:datePublished "1984-02-27"^^xsd:date ;
     schema:name "The Works" ;
     ex:occurredBefore ex:LiveAid1985 ;
@@ -525,7 +364,8 @@ ex:BohemianRhapsody a schema:MusicComposition,
         mm:MusicEntity ;
     schema:identifier [ a schema:PropertyValue ;
             schema:propertyID "musicbrainz" ;
-            schema:value "41c94a08-a551-3c86-bb17-d9a52e3a618b" ] ;
+            schema:value "41c94a08-a551-3c86-bb17-d9a52e3a618b" ],
+        [ ] ;
     schema:name "Bohemian Rhapsody" ;
     schema:sameAs <https://en.wikipedia.org/wiki/Bohemian_Rhapsody> ;
     owl:sameAs <http://www.wikidata.org/entity/Q187745> .
@@ -582,7 +422,8 @@ ex:RadioGaGa a schema:MusicComposition,
     schema:byArtist ex:Queen ;
     schema:identifier [ a schema:PropertyValue ;
             schema:propertyID "musicbrainz" ;
-            schema:value "2c76fe20-59d5-3dd9-93ee-be2107ac977c" ] ;
+            schema:value "2c76fe20-59d5-3dd9-93ee-be2107ac977c" ],
+        [ ] ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
     schema:name "Radio Ga Ga" ;
     schema:sameAs <https://en.wikipedia.org/wiki/Radio_Ga_Ga> ;
@@ -600,6 +441,18 @@ ex:WeWillRockYou a schema:MusicComposition,
     schema:name "We Will Rock You" .
 
 schema:StadiumOrArena a schema:Place .
+
+ex:ABC a schema:Organization ;
+    schema:alternateName "ABC" ;
+    schema:name "ABC" .
+
+ex:BBC a schema:Organization ;
+    schema:alternateName "BBC" ;
+    schema:location "London, UK" ;
+    schema:name "BBC" ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q9531> ;
+    ex:archived true ;
+    ex:coverageNote "Broadcasted globally, archived by BBC" .
 
 ex:HammerToFall a schema:MusicComposition,
         mm:MusicEntity ;
@@ -633,24 +486,14 @@ ex:LondonUK a schema:City ;
 ex:MTV a schema:Organization ;
     schema:name "MTV" .
 
-ex:PhiladelphiaUSA a schema:City ;
-    schema:containedInPlace ex:UnitedStatesOfAmerica ;
-    schema:name "Philadelphia" .
+ex:SatelliteNetwork a schema:Organization ;
+    schema:description "A network of commercial telecommunications satellites including five Intelsat satellites, which were integral to the global broadcast of the 1985 Live Aid concert." ;
+    schema:hasPart ex:IntelsatSatelliteFleet,
+        ex:OtherCommercialSatelliteFleet ;
+    schema:name "Commercial Satellite Network" .
 
 ex:UnitedKingdom a schema:Country ;
     schema:name "United Kingdom" .
-
-ex:ABC a schema:Organization ;
-    schema:alternateName "ABC" ;
-    schema:name "ABC" .
-
-ex:BBC a schema:Organization ;
-    schema:alternateName "BBC" ;
-    schema:location "London, UK" ;
-    schema:name "BBC" ;
-    schema:sameAs <https://www.wikidata.org/wiki/Q9531> ;
-    ex:archived true ;
-    ex:coverageNote "Broadcasted globally, archived by BBC" .
 
 ex:JFKStadium a schema:MusicVenue,
         schema:Place,
@@ -659,12 +502,6 @@ ex:JFKStadium a schema:MusicVenue,
     schema:addressLocality "Philadelphia" ;
     schema:location ex:PhiladelphiaUSA ;
     schema:name "John F. Kennedy Stadium" .
-
-ex:SatelliteNetwork a schema:Organization ;
-    schema:description "A network of commercial telecommunications satellites including five Intelsat satellites, which were integral to the global broadcast of the 1985 Live Aid concert." ;
-    schema:hasPart ex:IntelsatSatelliteFleet,
-        ex:OtherCommercialSatelliteFleet ;
-    schema:name "Commercial Satellite Network" .
 
 ex:FreddieMercury a schema:Person,
         mm:Musician ;

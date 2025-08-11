@@ -578,7 +578,7 @@ WHERE {
   ?performance a mm:LivePerformance ;
                mm:isCreatedBy   ex:Queen ;
                schema:isPartOf   ex:LiveAid1985 .
-  ?subPerf a mm:LivePerformance ;
+  ?subPerf a ex:SongPerformance ;
            schema:isPartOf ?performance ;
            schema:position 2 ;
            mm:creates ?song .
@@ -594,7 +594,7 @@ SELECT ?momentDescription
 WHERE {
   ?performance a mm:LivePerformance ;
                schema:isPartOf   ex:LiveAid1985 .
-  ?subPerf a mm:LivePerformance ;
+  ?subPerf a ex:SongPerformance ;
            schema:isPartOf ?performance ;
            mm:isCreatedBy   ex:Queen ;
            mm:creates ex:HammerToFall ;
@@ -611,7 +611,7 @@ SELECT ?interactionDescription
 WHERE {
   ?performance a mm:LivePerformance ;
                schema:isPartOf   ex:LiveAid1985 .
-  ?subPerf a mm:LivePerformance ;
+  ?subPerf a ex:SongPerformance ;
            schema:isPartOf ?performance ;
            mm:isCreatedBy   ex:Queen ;
            mm:creates ex:RadioGaGa ;

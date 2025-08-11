@@ -16,19 +16,18 @@ KG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 MASTER_OUT = os.path.join(KG_DIR, "liveaid_instances_master.ttl")
 
 MODULES_IN_ORDER = [
-    "10_core_entities.ttl",
-    "20_artists.ttl",
-    "30_performances.ttl",
-    "40_setlists_songs.ttl",
-    "50_instruments.ttl",
-    "60_reviews.ttl",
-    "70_conditions.ttl",
-    "80_provenance.ttl",
-    "81_links_sameAs.ttl",
-    "82_external_ids_artists.ttl",
-    "83_external_ids_songs.ttl",
-    "84_external_links_performances.ttl",
-    "85_artist_mbids.ttl",
+    #"10_core_entities.ttl",
+            "11_genre.ttl", "12_event_broadcast_entities.ttl" , "13_city_country_venue.ttl" ,
+            "14_organizations.ttl", "15_creativeevents.ttl" , "16_audience.ttl" , "17_miscellaneaous.ttl" ,
+            #"20_artists.ttl",
+            "21_solo_artists.ttl",
+            "22_music_groups.ttl",
+            "30_performances.ttl","31_songs.ttl", "32_albums.ttl", "33_recordings.ttl",
+            "40_setlists_songs.ttl","41_song_labels.ttl",
+            "50_instruments.ttl","51_instrument_labels.ttl",
+            "60_reviews.ttl","70_conditions.ttl",
+            "80_provenance.ttl","81_links_sameAs.ttl","82_external_ids_artists.ttl",
+            "83_external_ids_songs.ttl","84_external_links_performances.ttl","85_artist_mbids.ttl",
 ]
 
 def main():

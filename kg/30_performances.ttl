@@ -27,7 +27,7 @@ ex:QueenLiveAid1985_BohemianRhapsody a ex:SongPerformance ;
 
 ex:QueenLiveAid1985_CrazyLittleThingCalledLove a ex:SongPerformance ;
     schema:isPartOf ex:Queen_LiveAid1985_Performance ;
-    ex:setOrder 4 ;
+    schema:position 4 ;
     mm:creates ex:CrazyLittleThingCalledLove ;
     mm:isCreatedBy ex:Queen .
 

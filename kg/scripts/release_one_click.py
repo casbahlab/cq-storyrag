@@ -130,8 +130,13 @@ def main():
         run([sys.executable, str(merge_py)])
     else:
         modules = [
-            "10_core_entities.ttl","20_artists.ttl","21_artist_labels.ttl",
-            "30_performances.ttl","31_performance_labels.ttl","32_performance_labels_rdfs.ttl",
+            #"10_core_entities.ttl",
+            "11_genre.ttl", "12_event_broadcast_entities.ttl" , "13_city_country_venue.ttl" ,
+            "14_organizations.ttl", "15_creativeevents.ttl" , "16_audience.ttl" , "17_miscellaneaous.ttl" ,
+            #"20_artists.ttl",
+            "21_solo_artists.ttl",
+            "22_music_groups.ttl",
+            "30_performances.ttl","31_songs.ttl", "32_albums.ttl", "33_recordings.ttl",
             "40_setlists_songs.ttl","41_song_labels.ttl",
             "50_instruments.ttl","51_instrument_labels.ttl",
             "60_reviews.ttl","70_conditions.ttl",

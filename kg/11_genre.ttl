@@ -1,0 +1,25 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix schema1: <http://schema.org/> .
+
+ex:ArenaRock a mm:MusicGenre ;
+    schema1:name "Arena Rock" .
+
+ex:GlamRock a mm:MusicGenre ;
+    schema1:name "Glam Rock" .
+
+ex:HardRock a mm:MusicGenre ;
+    schema1:name "Hard Rock" .
+
+ex:HeavyMetal a mm:MusicGenre ;
+    schema1:name "Heavy Metal" .
+
+ex:PopRock a mm:MusicGenre ;
+    schema1:name "Pop Rock" .
+
+ex:ProgressiveRock a mm:MusicGenre ;
+    schema1:name "Progressive Rock" .
+
+ex:Rock a mm:MusicGenre ;
+    schema1:name "Rock" .
+
