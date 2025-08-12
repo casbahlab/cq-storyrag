@@ -298,9 +298,6 @@ def evaluate_enhanced(
     # 2) Retrieval stats
     rows_stats = _row_stats(facts)
 
-    # 3) Label presence on items (legacy)
-    label_presence_pct = _item_label_presence_pct(facts)
-
     # 4) Utilization (mentions / values)
     #    Uses all row+label values as candidates and checks containment.
     def _extract_all_values(facts_dict: Dict[str, Any]) -> Dict[str, List[str]]:
@@ -353,7 +350,6 @@ def evaluate_enhanced(
         "coverage_pass": coverage_pass,
 
         "rows_stats": rows_stats,
-        "label_coverage_pct": label_presence_pct,
 
         "utilization": {
             "by_category": util_by_cat,
@@ -380,7 +376,6 @@ def summarize_markdown(results: Dict[str, Any]) -> str:
     cov = results.get("coverage", {}).get("overall", {})
     util = results.get("utilization", {}).get("overall", {})
     row = results.get("rows_stats", {}).get("overall", {})
-    lab_overall = results.get("label_coverage_pct", {}).get("overall", 0.0)
     length = results.get("length_report", {})
     flow = results.get("flow_report", {})
     fp = results.get("fact_presence", {}).get("overall", {})
@@ -407,7 +402,6 @@ def summarize_markdown(results: Dict[str, Any]) -> str:
                  f"— target {int(ue*100)}% {upass}")
     lines.append(f"- **Retrieval yield:** {row.get('total_rows', 0)} total rows; "
                  f"avg rows/CQ ≈ {row.get('avg_rows_per_cq', 0)}")
-    lines.append(f"- **Items with labels:** {lab_overall}%")
     if length:
         ok = "✅" if length.get("within_target") else "⚠️"
         lines.append(f"- **Length target ({length.get('length_setting', '')}):** {ok} "

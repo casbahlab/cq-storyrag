@@ -19,15 +19,19 @@ MODULES_IN_ORDER = [
     #"10_core_entities.ttl",
             "11_genre.ttl", "12_event_broadcast_entities.ttl" , "13_city_country_venue.ttl" ,
             "14_organizations.ttl", "15_creativeevents.ttl" , "16_audience.ttl" , "17_miscellaneaous.ttl" ,
-            #"20_artists.ttl",
-            "21_solo_artists.ttl",
-            "22_music_groups.ttl",
-            "30_performances.ttl","31_songs.ttl", "32_albums.ttl", "33_recordings.ttl",
-            "40_setlists_songs.ttl","41_song_labels.ttl",
-            "50_instruments.ttl","51_instrument_labels.ttl",
+            "20_artists.ttl",
+            "27_external_links_only.ttl",
+            "27_removed_nonlink_content.ttl",
+            # "21_solo_artists.ttl",
+            # "22_music_groups.ttl",
+            # "30_performances.ttl","31_songs.ttl",
+            "32_albums.ttl", "33_recordings_works.ttl",
+            "40_setlists_songs.ttl",
+            "50_instruments.ttl",
             "60_reviews.ttl","70_conditions.ttl",
             "80_provenance.ttl","81_links_sameAs.ttl","82_external_ids_artists.ttl",
-            "83_external_ids_songs.ttl","84_external_links_performances.ttl","85_artist_mbids.ttl",
+            "83_external_ids_songs.ttl","84_external_links_performances.ttl",
+            "90_iconic_performances.ttl"
 ]
 
 def main():

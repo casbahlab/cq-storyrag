@@ -1,15 +1,64 @@
 @prefix ex: <http://wembrewind.live/ex#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
 
-ex:BassGuitar a ex:MusicInstrument ;
-    schema:name "Bass Guitar" .
+ex:AcousticGuitar a ex:MusicInstrument ;
+    rdfs:label "Acoustic Guitar" ;
+    schema:name "Acoustic Guitar" .
 
-ex:DrumKit a ex:MusicInstrument ;
-    schema:name "Drum Kit" .
+ex:BassGuitar a ex:MusicInstrument ;
+    rdfs:label "Bassguitar" ;
+    schema:name "Bassguitar" .
+
+ex:DrumsDrumSet a ex:MusicInstrument ;
+    rdfs:label "Drums (Drum Set)" ;
+    schema:name "Drums (Drum Set)" .
+
+ex:ElectricBassGuitar a ex:MusicInstrument ;
+    rdfs:label "Electric Bass Guitar" ;
+    schema:name "Electric Bass Guitar" .
 
 ex:ElectricGuitar a ex:MusicInstrument ;
+    rdfs:label "Electric Guitar" ;
     schema:name "Electric Guitar" .
 
+ex:Guitar a ex:MusicInstrument ;
+    rdfs:label "Guitar" ;
+    schema:name "Guitar" .
+
+ex:GuitarFamily a ex:MusicInstrument ;
+    rdfs:label "Guitar Family" ;
+    schema:name "Guitar Family" .
+
+ex:Harmonica a ex:MusicInstrument ;
+    rdfs:label "Harmonica" ;
+    schema:name "Harmonica" .
+
+ex:Keyboard a ex:MusicInstrument ;
+    rdfs:label "Keyboard" ;
+    schema:name "Keyboard" .
+
+ex:Percussion a ex:MusicInstrument ;
+    rdfs:label "Percussion" ;
+    schema:name "Percussion" .
+
 ex:Piano a ex:MusicInstrument ;
+    rdfs:label "Piano" ;
     schema:name "Piano" .
+
+ex:Saxophone a ex:MusicInstrument ;
+    rdfs:label "Saxophone" ;
+    schema:name "Saxophone" .
+
+ex:Synthesizer a ex:MusicInstrument ;
+    rdfs:label "Synthesizer" ;
+    schema:name "Synthesizer" .
+
+ex:Trumpet a ex:MusicInstrument ;
+    rdfs:label "Trumpet" ;
+    schema:name "Trumpet" .
+
+ex:Voice a ex:MusicInstrument ;
+    rdfs:label "Voice" ;
+    schema:name "Voice" .
 

@@ -145,6 +145,12 @@ ex:hasDebutRelease a owl:ObjectProperty ;
   rdfs:domain schema:MusicArtist ;
   rdfs:range schema:MusicRelease .
 
+ex:isDebutAlbum a owl:DatatypeProperty ;
+  rdfs:label "is debut album" ;
+  rdfs:comment "Indicates whether the album is the artist's debut release." ;
+  rdfs:domain schema:MusicAlbum ;
+  rdfs:range xsd:boolean .
+
 ex:earlyMusicInfluence a owl:ObjectProperty ;
   rdfs:label "early music influence" ;
   rdfs:comment "Links an artist to a genre that influenced their early style." ;

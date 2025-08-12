@@ -1,0 +1,2783 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema1: <http://schema.org/> .
+
+<http://wembrewind.live/ex#AdamAnt> schema1:identifier <http://wembrewind.live/ex#AdamAnt_prop_P2373_60803500>,
+        <http://wembrewind.live/ex#AdamAnt_prop_P5287_80061164>,
+        <http://wembrewind.live/ex#AdamAnt_prop_P6351_69655630> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Adam_Ant_by_Aaron_Rubin_at_The_Masonic.jpg> ;
+    schema1:sameAs <https://genius.com/artists/67857>,
+        <https://genius.com/artists/Adam-ant>,
+        <https://www.songfacts.com/songs/adam-ant>,
+        <https://www.wikidata.org/wiki/Q348658> .
+
+<http://wembrewind.live/ex#AshfordSimpson> schema1:identifier <http://wembrewind.live/ex#AshfordSimpson_prop_P5287_7384065> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Ashford_and_Simpson.jpg> ;
+    schema1:sameAs <https://www.songfacts.com/songs/ashford-simpson>,
+        <https://www.wikidata.org/wiki/Q725246> .
+
+<http://wembrewind.live/ex#BandAid> schema1:sameAs <https://www.wikidata.org/wiki/Q806231> .
+
+<http://wembrewind.live/ex#BernardWalton> schema1:sameAs <https://www.wikidata.org/wiki/Q4893732> .
+
+<http://wembrewind.live/ex#BillyOcean> schema1:identifier <http://wembrewind.live/ex#BillyOcean_prop_P5287_58528388> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/BillyOcean.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Billy_Ocean_in_january_2012.jpg> ;
+    schema1:sameAs <https://www.songfacts.com/songs/billy-ocean>,
+        <https://www.wikidata.org/wiki/Q356745> .
+
+<http://wembrewind.live/ex#BlackSabbath> schema1:identifier <http://wembrewind.live/ex#BlackSabbath_prop_P2373_11787129> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Black_Sabbath_%281970%29.png> ;
+    schema1:sameAs <https://genius.com/artists/Black-sabbath>,
+        <https://www.wikidata.org/wiki/Q47670> .
+
+<http://wembrewind.live/ex#BobDylan> schema1:identifier <http://wembrewind.live/ex#BobDylan_prop_P2373_19589627>,
+        <http://wembrewind.live/ex#BobDylan_prop_P5287_90105983>,
+        <http://wembrewind.live/ex#BobDylan_prop_P6351_79674976> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Bob_Dylan_in_November_1963.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Joan_Baez_Bob_Dylan_crop.jpg> ;
+    schema1:sameAs <https://genius.com/artists/181>,
+        <https://genius.com/artists/Bob-dylan>,
+        <https://www.songfacts.com/songs/bob-dylan>,
+        <https://www.wikidata.org/wiki/Q392> .
+
+<http://wembrewind.live/ex#BranfordMarsalis> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Branford_Marsalis.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q454819> .
+
+<http://wembrewind.live/ex#BrianMay> schema1:identifier <http://wembrewind.live/ex#BrianMay_prop_P2373_22612436>,
+        <http://wembrewind.live/ex#BrianMay_prop_P6351_55166767> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Queen_2005_1010016.JPG>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/TaylorHawkTributeWemb030922_%28208_copped%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/16631>,
+        <https://genius.com/artists/Brian-may>,
+        <https://www.wikidata.org/wiki/Q15873> .
+
+<http://wembrewind.live/ex#BryanAdams> schema1:identifier <http://wembrewind.live/ex#BryanAdams_prop_P2373_70705807>,
+        <http://wembrewind.live/ex#BryanAdams_prop_P6351_79197440> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/20130710-ByanAdamsLucca-0019_%289273168286%29.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/BryAdamsMargate130624_%2839_of_43%29_%2853789411882%29_Cropped.jpg> ;
+    schema1:sameAs <https://genius.com/artists/32823>,
+        <https://genius.com/artists/Bryan-adams>,
+        <https://www.wikidata.org/wiki/Q482907> .
+
+<http://wembrewind.live/ex#BryanFerry> schema1:identifier <http://wembrewind.live/ex#BryanFerry_prop_P2373_43333642>,
+        <http://wembrewind.live/ex#BryanFerry_prop_P5287_67036615>,
+        <http://wembrewind.live/ex#BryanFerry_prop_P6351_498637> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Bryan_ferry_VieillesCharrues2007.JPG> ;
+    schema1:sameAs <https://genius.com/artists/204913>,
+        <https://genius.com/artists/Bryan-ferry>,
+        <https://www.songfacts.com/songs/bryan-ferry>,
+        <https://www.wikidata.org/wiki/Q216179> .
+
+<http://wembrewind.live/ex#CrosbyStillsNash> schema1:identifier <http://wembrewind.live/ex#CrosbyStillsNash_prop_P2373_30149194> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Csny-8-20-06.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Crosby-stills-and-nash>,
+        <https://www.wikidata.org/wiki/Q733159> .
+
+<http://wembrewind.live/ex#CrosbyStillsNashYoung> schema1:identifier <http://wembrewind.live/ex#CrosbyStillsNashYoung_prop_P2373_79739753> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/CSNY_8-1974_%281%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Crosby-stills-nash-and-young>,
+        <https://www.wikidata.org/wiki/Q10461933> .
+
+<http://wembrewind.live/ex#DarylHallJohnOates> schema1:identifier <http://wembrewind.live/ex#DarylHallJohnOates_prop_P2373_30501715>,
+        <http://wembrewind.live/ex#DarylHallJohnOates_prop_P5287_15047867> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Daryl_Hall_and_John_Oates_%22Voices%22_%281980_RCA_press_photo%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Hall-and-oates>,
+        <https://www.songfacts.com/songs/daryl-hall-john-oates>,
+        <https://www.wikidata.org/wiki/Q733182> .
+
+<http://wembrewind.live/ex#DavidBowie> schema1:identifier <http://wembrewind.live/ex#DavidBowie_prop_P2373_2213344>,
+        <http://wembrewind.live/ex#DavidBowie_prop_P5287_66868988>,
+        <http://wembrewind.live/ex#DavidBowie_prop_P6351_87810513> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/David-Bowie_Chicago_2002-08-08_photoby_Adam-Bielawski-cropped.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Heathen_Tour_Bowie.jpg> ;
+    schema1:sameAs <https://genius.com/artists/9534>,
+        <https://genius.com/artists/David-bowie>,
+        <https://www.songfacts.com/songs/david-bowie>,
+        <https://www.wikidata.org/wiki/Q5383> .
+
+<http://wembrewind.live/ex#DavidGilmour> schema1:identifier <http://wembrewind.live/ex#DavidGilmour_prop_P2373_27143824> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/DGilmour-Royal_Albert_Hall%2C_Oct_2015.jpg> ;
+    schema1:sameAs <https://genius.com/artists/David-gilmour>,
+        <https://www.wikidata.org/wiki/Q178517> .
+
+<http://wembrewind.live/ex#DavidRuffin> schema1:identifier <http://wembrewind.live/ex#DavidRuffin_prop_P2373_65790015>,
+        <http://wembrewind.live/ex#DavidRuffin_prop_P6351_65790193> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/David_Ruffin_1969_press_photo.jpg> ;
+    schema1:sameAs <https://genius.com/artists/7037>,
+        <https://genius.com/artists/David-ruffin>,
+        <https://www.wikidata.org/wiki/Q1176417> .
+
+<http://wembrewind.live/ex#DireStraits> schema1:identifier <http://wembrewind.live/ex#DireStraits_prop_P2373_73743709>,
+        <http://wembrewind.live/ex#DireStraits_prop_P5287_25660612> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Dire_Straits_1978_Hamburg_1.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Dire_straits_22101985_23_800.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Dire-straits>,
+        <https://www.songfacts.com/songs/dire-straits>,
+        <https://www.wikidata.org/wiki/Q50040> .
+
+<http://wembrewind.live/ex#DuranDuran> schema1:identifier <http://wembrewind.live/ex#DuranDuran_prop_P2373_93088836> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Duran_Duran_1983.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Duran-duran>,
+        <https://www.wikidata.org/wiki/Q58381> .
+
+<http://wembrewind.live/ex#EddieKendricks> schema1:identifier <http://wembrewind.live/ex#EddieKendricks_prop_P2373_38734293>,
+        <http://wembrewind.live/ex#EddieKendricks_prop_P6351_79947558> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Eddie_Kendricks_%281972%29.png> ;
+    schema1:sameAs <https://genius.com/artists/144365>,
+        <https://genius.com/artists/Eddie-kendricks>,
+        <https://www.wikidata.org/wiki/Q1282863> .
+
+<http://wembrewind.live/ex#EltonJohn> schema1:identifier <http://wembrewind.live/ex#EltonJohn_prop_P2373_97908933>,
+        <http://wembrewind.live/ex#EltonJohn_prop_P5287_32967513>,
+        <http://wembrewind.live/ex#EltonJohn_prop_P6351_19773686> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Elton_John_2023.jpg> ;
+    schema1:sameAs <https://genius.com/artists/560>,
+        <https://genius.com/artists/Elton-john>,
+        <https://www.songfacts.com/songs/elton-john>,
+        <https://www.wikidata.org/wiki/Q2808> .
+
+<http://wembrewind.live/ex#ElvisCostello> schema1:identifier <http://wembrewind.live/ex#ElvisCostello_prop_P2373_62188673>,
+        <http://wembrewind.live/ex#ElvisCostello_prop_P5287_97451565>,
+        <http://wembrewind.live/ex#ElvisCostello_prop_P6351_98487254> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Elvis_Costello_2012.JPG> ;
+    schema1:sameAs <https://genius.com/artists/24308>,
+        <https://genius.com/artists/Elvis-costello>,
+        <https://www.songfacts.com/songs/elvis-costello>,
+        <https://www.wikidata.org/wiki/Q206939> .
+
+<http://wembrewind.live/ex#EricClapton> schema1:identifier <http://wembrewind.live/ex#EricClapton_prop_P5287_98954467> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Clapton_-_Royal_Albert_Hall_-_Wednesday_24th_May_2017_EricClaptonRAH240517-30_%2834987232355%29_%28cropped%29.jpg> ;
+    schema1:sameAs <https://www.songfacts.com/songs/eric-clapton>,
+        <https://www.wikidata.org/wiki/Q48187> .
+
+<http://wembrewind.live/ex#FourTops> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Gala_du_Disque_._The_Four_Tops%2C_Bestanddeelnr_921-1504.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q653480> .
+
+<http://wembrewind.live/ex#FreddieMercury> schema1:identifier <http://wembrewind.live/ex#FreddieMercury_prop_P2373_68664250>,
+        <http://wembrewind.live/ex#FreddieMercury_prop_P5287_33731282>,
+        <http://wembrewind.live/ex#FreddieMercury_prop_P6351_85505662> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Freddie_Mercury_at_Sheraton_Hotel_Buenos_Aires.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Freddie_Mercury_performing_in_New_Haven%2C_CT%2C_November_1977.jpg> ;
+    schema1:sameAs <https://genius.com/artists/60493>,
+        <https://genius.com/artists/Freddie-mercury>,
+        <https://www.songfacts.com/songs/freddie-mercury>,
+        <https://www.wikidata.org/wiki/Q15869> .
+
+<http://wembrewind.live/ex#GeorgeThorogoodTheDestroyers> schema1:sameAs <https://www.wikidata.org/wiki/Q113578416> .
+
+<http://wembrewind.live/ex#HowardJones> schema1:identifier <http://wembrewind.live/ex#HowardJones_prop_P2373_97244533>,
+        <http://wembrewind.live/ex#HowardJones_prop_P5287_52300266> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Howard_Jones_-_7-10-08.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Howard-jones>,
+        <https://www.songfacts.com/songs/howard-jones>,
+        <https://www.wikidata.org/wiki/Q712820> .
+
+<http://wembrewind.live/ex#JimmyPage> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_Page_at_the_Echo_music_award_2013.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_Page_early.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q165467> .
+
+<http://wembrewind.live/ex#JoanBaez> schema1:identifier <http://wembrewind.live/ex#JoanBaez_prop_P2373_67311080>,
+        <http://wembrewind.live/ex#JoanBaez_prop_P5287_32551590>,
+        <http://wembrewind.live/ex#JoanBaez_prop_P6351_39432921> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Joan_Baez%2C_gtfy.00430.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Joan_Baez_1963_crop.jpg> ;
+    schema1:sameAs <https://genius.com/artists/37184>,
+        <https://genius.com/artists/Joan-baez>,
+        <https://www.songfacts.com/songs/joan-baez>,
+        <https://www.wikidata.org/wiki/Q131725> .
+
+<http://wembrewind.live/ex#JohnPaulJones> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/John-Paul-Jones2.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/John_Paul_Jones_-_2010.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q190243> .
+
+<http://wembrewind.live/ex#JudasPriest> schema1:identifier <http://wembrewind.live/ex#JudasPriest_prop_P2373_99452748> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Judas_Priest_-_Wacken_Open_Air_2018_01.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Judas-priest>,
+        <https://www.wikidata.org/wiki/Q83468> .
+
+<http://wembrewind.live/ex#KeithRichards> schema1:identifier <http://wembrewind.live/ex#KeithRichards_prop_P2373_97263026>,
+        <http://wembrewind.live/ex#KeithRichards_prop_P5287_2126077>,
+        <http://wembrewind.live/ex#KeithRichards_prop_P6351_99572247> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Keith_Richards_2_Berlinale_2008.jpg> ;
+    schema1:sameAs <https://genius.com/artists/52212>,
+        <https://genius.com/artists/Keith-richards>,
+        <https://www.songfacts.com/songs/keith-richards>,
+        <https://www.wikidata.org/wiki/Q189599> .
+
+<http://wembrewind.live/ex#KennyLoggins> schema1:identifier <http://wembrewind.live/ex#KennyLoggins_prop_P2373_79891001> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Loggins_FP5_%28cropped%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Kenny-loggins>,
+        <https://www.wikidata.org/wiki/Q435965> .
+
+<http://wembrewind.live/ex#Madonna> schema1:identifier <http://wembrewind.live/ex#Madonna_prop_P2373_65959788>,
+        <http://wembrewind.live/ex#Madonna_prop_P5287_65253259>,
+        <http://wembrewind.live/ex#Madonna_prop_P6351_50618089> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Madonna_Rebel_Heart_Tour_2015_-_Stockholm_%2823051472299%29_%28cropped%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/276>,
+        <https://genius.com/artists/Madonna>,
+        <https://www.songfacts.com/songs/madonna>,
+        <https://www.wikidata.org/wiki/Q1744> .
+
+<http://wembrewind.live/ex#MickJagger> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Mick_Jagger_Deauville_2014.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Rolling_Stones_04.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q128121> .
+
+<http://wembrewind.live/ex#NeilYoung> schema1:identifier <http://wembrewind.live/ex#NeilYoung_prop_P2373_2735984> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Neil_Young_Stavernfestivalen_2016_%28220929%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Neil-young>,
+        <https://www.wikidata.org/wiki/Q633> .
+
+<http://wembrewind.live/ex#NikKershaw> schema1:identifier <http://wembrewind.live/ex#NikKershaw_prop_P2373_16703204>,
+        <http://wembrewind.live/ex#NikKershaw_prop_P6351_59184691> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Nik_Kershaw_%2814521468196%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/354486>,
+        <https://genius.com/artists/Nik-kershaw>,
+        <https://www.wikidata.org/wiki/Q453812> .
+
+<http://wembrewind.live/ex#PatMetheny> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Pat_Metheny_Barcelona_2008.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q213887> .
+
+<http://wembrewind.live/ex#PattiLabelle> schema1:identifier <http://wembrewind.live/ex#PattiLabelle_prop_P2373_53759606>,
+        <http://wembrewind.live/ex#PattiLabelle_prop_P6351_67032053> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Patti_Labelle.jpg> ;
+    schema1:sameAs <https://genius.com/artists/1146>,
+        <https://genius.com/artists/Patti-labelle>,
+        <https://www.wikidata.org/wiki/Q31013> .
+
+<http://wembrewind.live/ex#PaulMartinez> schema1:sameAs <https://www.wikidata.org/wiki/Q7152244> .
+
+<http://wembrewind.live/ex#PaulMccartney> schema1:identifier <http://wembrewind.live/ex#PaulMccartney_prop_P2373_93155383>,
+        <http://wembrewind.live/ex#PaulMccartney_prop_P6351_96205416> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/ACL18051018-122_%2843716152470%29.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Paul_McCartney_in_October_2018.jpg> ;
+    schema1:sameAs <https://genius.com/artists/1601>,
+        <https://genius.com/artists/Paul-mccartney>,
+        <https://www.wikidata.org/wiki/Q2599> .
+
+<http://wembrewind.live/ex#PaulYoung> schema1:identifier <http://wembrewind.live/ex#PaulYoung_prop_P2373_40734048> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Young%2C_Kiel_2009.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Paul-young>,
+        <https://www.wikidata.org/wiki/Q360501> .
+
+<http://wembrewind.live/ex#PhilCollins> schema1:identifier <http://wembrewind.live/ex#PhilCollins_prop_P2373_62838005>,
+        <http://wembrewind.live/ex#PhilCollins_prop_P6351_15061841> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Phil_Collins_-_Royal_Albert_Hall_-_Wednesday_7th_June_2017_PhilCollinsRAH070617-3_%2835215802836%29_%28cropped%29.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Phil_Collins_1_%28cropped%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/3927>,
+        <https://genius.com/artists/Phil-collins>,
+        <https://www.wikidata.org/wiki/Q144622> .
+
+<http://wembrewind.live/ex#Pretenders> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Pretenders_Dubai_200702.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q667389> .
+
+<http://wembrewind.live/ex#Queen> schema1:identifier <http://wembrewind.live/ex#Queen_prop_P2373_36409118> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Queen_A_Night_At_The_Opera_%281975_Elektra_publicity_photo_02%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Queen>,
+        <https://www.wikidata.org/wiki/Q15862> .
+
+<http://wembrewind.live/ex#Recording_A1985Rewind_38d05d49> owl:sameAs <https://musicbrainz.org/recording/38d05d49-7f93-426d-9aaa-6ec274eb5903> .
+
+<http://wembrewind.live/ex#Recording_A1985Rewind_38d05d49_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_A4TheTearsInYourEyes_454a89c8> owl:sameAs <https://musicbrainz.org/recording/454a89c8-f034-449d-8af3-0885fb88a65d> .
+
+<http://wembrewind.live/ex#Recording_A4TheTearsInYourEyes_454a89c8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AViewToAKill_a694f876> owl:sameAs <https://musicbrainz.org/recording/a694f876-2be6-4c73-b1f6-92ebb90e6e0b> .
+
+<http://wembrewind.live/ex#Recording_AViewToAKill_a694f876_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AWorldOfDifference_adbcfa3e> owl:sameAs <https://musicbrainz.org/recording/adbcfa3e-c3c5-451b-a426-2f9670b6794d> .
+
+<http://wembrewind.live/ex#Recording_AWorldOfDifference_adbcfa3e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_09b943a8> owl:sameAs <https://musicbrainz.org/recording/09b943a8-7625-4d96-8fb7-d9882f86bb27> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_09b943a8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_6130bf23> owl:sameAs <https://musicbrainz.org/recording/6130bf23-967b-4844-9eaf-24d25a039a33> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_6130bf23_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_95c8f136> owl:sameAs <https://musicbrainz.org/recording/95c8f136-7b86-40e0-a1cd-0a24f7d508bb> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_95c8f136_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_00f9da60> owl:sameAs <https://musicbrainz.org/recording/00f9da60-613c-4ee9-a4a9-c9ee7055959e> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_00f9da60_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_49a45fef> owl:sameAs <https://musicbrainz.org/recording/49a45fef-96ab-4cf2-8fd6-e0f242288b50> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_49a45fef_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_81ed5a7e> owl:sameAs <https://musicbrainz.org/recording/81ed5a7e-ddb4-4c51-8645-c1c0f219489c> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_81ed5a7e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_83775933> owl:sameAs <https://musicbrainz.org/recording/83775933-5eaf-410a-8481-4204b0eedcc3> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_83775933_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_85f07145> owl:sameAs <https://musicbrainz.org/recording/85f07145-9eb6-4461-b95f-dcac6352e185> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_85f07145_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AgainstAllOdds_158681cb> owl:sameAs <https://musicbrainz.org/recording/158681cb-f4de-4b4a-a315-fa60b8b6cf20> .
+
+<http://wembrewind.live/ex#Recording_AgainstAllOdds_158681cb_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AgainstAllOdds_50b4150f> owl:sameAs <https://musicbrainz.org/recording/50b4150f-c9cb-4ce1-8a19-6f68c51b295b> .
+
+<http://wembrewind.live/ex#Recording_AgainstAllOdds_50b4150f_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AinTTooProudToBeg_98a1fc06> owl:sameAs <https://musicbrainz.org/recording/98a1fc06-5f6b-4004-837c-e3e19af23a7f> .
+
+<http://wembrewind.live/ex#Recording_AinTTooProudToBeg_98a1fc06_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AllOfUs_eaa279da> owl:sameAs <https://musicbrainz.org/recording/eaa279da-e857-4296-b92c-ee4ac274d9e9> .
+
+<http://wembrewind.live/ex#Recording_AllOfUs_eaa279da_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AllYouNeedIsLove_f6f9aebe> owl:sameAs <https://musicbrainz.org/recording/f6f9aebe-6947-4461-b75d-2d9305964244> .
+
+<http://wembrewind.live/ex#Recording_AllYouNeedIsLove_f6f9aebe_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AllYouZombies_bfd09d22> owl:sameAs <https://musicbrainz.org/recording/bfd09d22-10d0-4c84-9abe-00b5da64aa5d> .
+
+<http://wembrewind.live/ex#Recording_AllYouZombies_bfd09d22_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AmazingGrace_7eaf7963> owl:sameAs <https://musicbrainz.org/recording/7eaf7963-4c8d-47a5-8cb8-be8399d24311> .
+
+<http://wembrewind.live/ex#Recording_AmazingGrace_7eaf7963_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AmericanGirl_7ef5bce9> owl:sameAs <https://musicbrainz.org/recording/7ef5bce9-7aa0-4a2b-b567-3dedf2af0428> .
+
+<http://wembrewind.live/ex#Recording_AmericanGirl_7ef5bce9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_AndWeDanced_095b10f0> owl:sameAs <https://musicbrainz.org/recording/095b10f0-77da-41a0-ba35-0a9e4ae54ae5> .
+
+<http://wembrewind.live/ex#Recording_AndWeDanced_095b10f0_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Annoncement_4a0a49dd> owl:sameAs <https://musicbrainz.org/recording/4a0a49dd-55d4-4450-b13c-6bd120db523d> .
+
+<http://wembrewind.live/ex#Recording_Annoncement_4a0a49dd_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Announcement_4a0a49dd> owl:sameAs <https://musicbrainz.org/recording/4a0a49dd-55d4-4450-b13c-6bd120db523d> .
+
+<http://wembrewind.live/ex#Recording_Announcement_4a0a49dd_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BackOnTheChainGang_e955dd67> owl:sameAs <https://musicbrainz.org/recording/e955dd67-6130-4bb7-ab3e-371783ca95e9> .
+
+<http://wembrewind.live/ex#Recording_BackOnTheChainGang_e955dd67_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Bad_79932b83> owl:sameAs <https://musicbrainz.org/recording/79932b83-a426-40a8-b830-0e511590f7e7> .
+
+<http://wembrewind.live/ex#Recording_Bad_79932b83_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BandAidNewReport_513cb62a> owl:sameAs <https://musicbrainz.org/recording/513cb62a-7456-4091-a622-050f301a73fd> .
+
+<http://wembrewind.live/ex#Recording_BandAidNewReport_513cb62a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BandPresentation_dd6bf224> owl:sameAs <https://musicbrainz.org/recording/dd6bf224-b8c8-4ab3-ad5e-4ed882fef886> .
+
+<http://wembrewind.live/ex#Recording_BandPresentation_dd6bf224_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermissionAbcIntermission_19c74232> owl:sameAs <https://musicbrainz.org/recording/19c74232-bb20-4587-94ab-5ee9ece4b4f7> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermissionAbcIntermission_19c74232_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_0227b235> owl:sameAs <https://musicbrainz.org/recording/0227b235-760b-4e76-a95c-7728802846cd> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_0227b235_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_041c8ce9> owl:sameAs <https://musicbrainz.org/recording/041c8ce9-a8e5-4c38-80fb-ab86787f1133> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_041c8ce9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_07eca73d> owl:sameAs <https://musicbrainz.org/recording/07eca73d-ebc5-40ca-bbc0-afc28dd6ae4f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_07eca73d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_18eb5d75> owl:sameAs <https://musicbrainz.org/recording/18eb5d75-f1dd-4d32-a28d-6faf99e2b545> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_18eb5d75_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_1e29381d> owl:sameAs <https://musicbrainz.org/recording/1e29381d-1ba9-42ad-a7f7-dfa0c4da30fc> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_1e29381d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_22b6ae23> owl:sameAs <https://musicbrainz.org/recording/22b6ae23-48f3-4229-a505-7c1fdf60d3a8> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_22b6ae23_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_22fdaf96> owl:sameAs <https://musicbrainz.org/recording/22fdaf96-212f-4f46-8f56-17b394fc1d55> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_22fdaf96_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_25727208> owl:sameAs <https://musicbrainz.org/recording/25727208-98b4-4a29-a918-cd9fffe39d33> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_25727208_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_2b4ee3ba> owl:sameAs <https://musicbrainz.org/recording/2b4ee3ba-6cad-4c5a-8357-045b52da4643> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_2b4ee3ba_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_30ab381b> owl:sameAs <https://musicbrainz.org/recording/30ab381b-621a-4e8e-968e-f61189e28bfc> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_30ab381b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_354ab3f5> owl:sameAs <https://musicbrainz.org/recording/354ab3f5-f5b0-422c-b9ed-f9ea4ab34bf4> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_354ab3f5_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_3a6bb6fc> owl:sameAs <https://musicbrainz.org/recording/3a6bb6fc-8566-4b5c-ac4d-193c8cb10aa8> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_3a6bb6fc_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_3d9e29bb> owl:sameAs <https://musicbrainz.org/recording/3d9e29bb-abb1-4bde-addd-0022c4cb1e0d> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_3d9e29bb_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_414f2255> owl:sameAs <https://musicbrainz.org/recording/414f2255-9811-4699-aee3-39da3ad921a9> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_414f2255_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_49990f09> owl:sameAs <https://musicbrainz.org/recording/49990f09-f796-406e-96ff-cb8580b42450> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_49990f09_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_574d5d52> owl:sameAs <https://musicbrainz.org/recording/574d5d52-b89f-49a9-b205-0ac5a56f347b> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_574d5d52_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5a19ddad> owl:sameAs <https://musicbrainz.org/recording/5a19ddad-c3a1-4d99-86a8-78b5ea04a8fe> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5a19ddad_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5cbe9bcb> owl:sameAs <https://musicbrainz.org/recording/5cbe9bcb-e17a-48f0-9725-a82ad9bd2529> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5cbe9bcb_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5d90b210> owl:sameAs <https://musicbrainz.org/recording/5d90b210-a96c-4051-b417-7cae0ca6cbb9> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5d90b210_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_61a8469b> owl:sameAs <https://musicbrainz.org/recording/61a8469b-7d5a-46e9-bab4-c49eddeb7d10> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_61a8469b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_6fc44463> owl:sameAs <https://musicbrainz.org/recording/6fc44463-d566-4b47-af50-63545ad96ef0> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_6fc44463_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_789ff269> owl:sameAs <https://musicbrainz.org/recording/789ff269-c6b7-49ad-b2e4-2fe79c854b52> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_789ff269_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_90beb67b> owl:sameAs <https://musicbrainz.org/recording/90beb67b-fe2b-4665-bbee-632ccae41ca7> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_90beb67b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_99bb5db6> owl:sameAs <https://musicbrainz.org/recording/99bb5db6-cd9b-4c72-abc0-c6304c5214ad> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_99bb5db6_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_9ac4324d> owl:sameAs <https://musicbrainz.org/recording/9ac4324d-c589-4cf5-941b-e9b5ef7a0e2d> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_9ac4324d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_a9ef78d9> owl:sameAs <https://musicbrainz.org/recording/a9ef78d9-6c57-45fe-ae11-1b18999cc9b6> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_a9ef78d9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_ad7a3e54> owl:sameAs <https://musicbrainz.org/recording/ad7a3e54-75f4-4252-b43c-d3df7c722bb5> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_ad7a3e54_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_aec51e68> owl:sameAs <https://musicbrainz.org/recording/aec51e68-4bc6-439f-bcbd-f770aaf92932> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_aec51e68_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_bfd18769> owl:sameAs <https://musicbrainz.org/recording/bfd18769-3b65-4dad-965b-1136ea6efb3b> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_bfd18769_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_cceeb1c3> owl:sameAs <https://musicbrainz.org/recording/cceeb1c3-4262-46d1-8e26-09d493080eda> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_cceeb1c3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_da0cfdf6> owl:sameAs <https://musicbrainz.org/recording/da0cfdf6-93b9-461f-a0db-ff9245bd6443> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_da0cfdf6_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_dad155e9> owl:sameAs <https://musicbrainz.org/recording/dad155e9-7308-4b2c-a68b-8d0b48c20237> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_dad155e9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_db87a546> owl:sameAs <https://musicbrainz.org/recording/db87a546-1506-4cf8-9d70-b8a52735ea17> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_db87a546_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_defdd523> owl:sameAs <https://musicbrainz.org/recording/defdd523-34b4-4550-a372-729faaff7909> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_defdd523_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_e92e7051> owl:sameAs <https://musicbrainz.org/recording/e92e7051-51fb-48f1-9a86-0bce0c97a106> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_e92e7051_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_f63c2ff1> owl:sameAs <https://musicbrainz.org/recording/f63c2ff1-ba55-402b-bc71-a141668d0be4> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_f63c2ff1_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_f890491e> owl:sameAs <https://musicbrainz.org/recording/f890491e-96c4-47b8-baa6-ef549e63df96> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_f890491e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_faf9e1a6> owl:sameAs <https://musicbrainz.org/recording/faf9e1a6-917e-4679-9434-b4595cdbd860> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_faf9e1a6_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_ff043393> owl:sameAs <https://musicbrainz.org/recording/ff043393-5745-47c4-a725-e81ecc940254> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_ff043393_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BeachBoysCaliforniaGirls_4fbf7149> owl:sameAs <https://musicbrainz.org/recording/4fbf7149-bc19-4b2f-970a-81ac73174862> .
+
+<http://wembrewind.live/ex#Recording_BeachBoysCaliforniaGirls_4fbf7149_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BennieAndTheJets_6e546f44> owl:sameAs <https://musicbrainz.org/recording/6e546f44-eb91-4127-8f17-34e6d889c033> .
+
+<http://wembrewind.live/ex#Recording_BennieAndTheJets_6e546f44_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Bernadette_af9d9185> owl:sameAs <https://musicbrainz.org/recording/af9d9185-4840-4b56-8081-33f34bcd0000> .
+
+<http://wembrewind.live/ex#Recording_Bernadette_af9d9185_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BigBossGroove_a1d2bfd4> owl:sameAs <https://musicbrainz.org/recording/a1d2bfd4-bbd1-4884-86d3-158072cc365f> .
+
+<http://wembrewind.live/ex#Recording_BigBossGroove_a1d2bfd4_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BlowinInTheWind_63170ff1> owl:sameAs <https://musicbrainz.org/recording/63170ff1-9a9f-42ff-aa47-124ca3c84fa1> .
+
+<http://wembrewind.live/ex#Recording_BlowinInTheWind_63170ff1_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BobGeldofSnippet_3cfd8fdd> owl:sameAs <https://musicbrainz.org/recording/3cfd8fdd-a901-40a0-a470-25da288adbbb> .
+
+<http://wembrewind.live/ex#Recording_BobGeldofSnippet_3cfd8fdd_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BobGeldofSnippet_e3840161> owl:sameAs <https://musicbrainz.org/recording/e3840161-90d2-4fbc-904e-cc7084606af6> .
+
+<http://wembrewind.live/ex#Recording_BobGeldofSnippet_e3840161_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BohemianRhapsody_6b547796> owl:sameAs <https://musicbrainz.org/recording/6b547796-91cc-4637-ae97-fb7acd9094c7> .
+
+<http://wembrewind.live/ex#Recording_BohemianRhapsody_6b547796_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BonoOnChristmas_7b56ed1b> owl:sameAs <https://musicbrainz.org/recording/7b56ed1b-441d-4b0b-85f6-45759f7d4f3c> .
+
+<http://wembrewind.live/ex#Recording_BonoOnChristmas_7b56ed1b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_BoysAndGirls_7cb4fb3d> owl:sameAs <https://musicbrainz.org/recording/7cb4fb3d-d199-4b6a-95b8-84ec551a9fc7> .
+
+<http://wembrewind.live/ex#Recording_BoysAndGirls_7cb4fb3d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Brotherhood_d1e40685> owl:sameAs <https://musicbrainz.org/recording/d1e40685-b462-4245-b306-d38c164c5ee5> .
+
+<http://wembrewind.live/ex#Recording_Brotherhood_d1e40685_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ByThePool_2140460b> owl:sameAs <https://musicbrainz.org/recording/2140460b-6da2-4ec5-8db6-4045131707e6> .
+
+<http://wembrewind.live/ex#Recording_ByThePool_2140460b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_CanIGetAWitness_d38daca0> owl:sameAs <https://musicbrainz.org/recording/d38daca0-e726-4f1c-b5e4-013fe2792c33> .
+
+<http://wembrewind.live/ex#Recording_CanIGetAWitness_d38daca0_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_CanTFightThisFeeling_6b4e30bc> owl:sameAs <https://musicbrainz.org/recording/6b4e30bc-e404-4a0a-9634-d9db5cfbb732> .
+
+<http://wembrewind.live/ex#Recording_CanTFightThisFeeling_6b4e30bc_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_CaribbeanQueen_1dacb861> owl:sameAs <https://musicbrainz.org/recording/1dacb861-6049-42b6-be68-856b8ccf81c4> .
+
+<http://wembrewind.live/ex#Recording_CaribbeanQueen_1dacb861_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Caroline_a514cf78> owl:sameAs <https://musicbrainz.org/recording/a514cf78-793a-41cb-8036-bb7e40a724c0> .
+
+<http://wembrewind.live/ex#Recording_Caroline_a514cf78_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Cherish_1b54ade8> owl:sameAs <https://musicbrainz.org/recording/1b54ade8-5cea-460a-a248-ef9c76e55212> .
+
+<http://wembrewind.live/ex#Recording_Cherish_1b54ade8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ChildrenOfTheGrave_26fa12f1> owl:sameAs <https://musicbrainz.org/recording/26fa12f1-5c16-4a36-911a-5152500fc361> .
+
+<http://wembrewind.live/ex#Recording_ChildrenOfTheGrave_26fa12f1_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ComeBackAndStay_4f38bb16> owl:sameAs <https://musicbrainz.org/recording/4f38bb16-9687-4739-9178-72b403876941> .
+
+<http://wembrewind.live/ex#Recording_ComeBackAndStay_4f38bb16_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_CrazyLittleThingCalledLove_20b2a2c3> owl:sameAs <https://musicbrainz.org/recording/20b2a2c3-9625-4ed5-ae1d-909005468a49> .
+
+<http://wembrewind.live/ex#Recording_CrazyLittleThingCalledLove_20b2a2c3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_CutsLikeAKnife_44359dd2> owl:sameAs <https://musicbrainz.org/recording/44359dd2-9363-4183-bdfa-b1b46362b902> .
+
+<http://wembrewind.live/ex#Recording_CutsLikeAKnife_44359dd2_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DancingInTheStreetsIntroductionFromJfk_cc322142> owl:sameAs <https://musicbrainz.org/recording/cc322142-ad3a-48b1-aee4-91f4d00f9c01> .
+
+<http://wembrewind.live/ex#Recording_DancingInTheStreetsIntroductionFromJfk_cc322142_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DancingInTheStreets_8a9a317a> owl:sameAs <https://musicbrainz.org/recording/8a9a317a-1513-4d35-a579-48b326ab024f> .
+
+<http://wembrewind.live/ex#Recording_DancingInTheStreets_8a9a317a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DancingWithTearsInMyEyes_d32e9ce2> owl:sameAs <https://musicbrainz.org/recording/d32e9ce2-d942-4b96-a008-16aeffd81a09> .
+
+<http://wembrewind.live/ex#Recording_DancingWithTearsInMyEyes_d32e9ce2_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DayligthAgain_3c59521b> owl:sameAs <https://musicbrainz.org/recording/3c59521b-e832-47f9-8c97-e59edaf24330> .
+
+<http://wembrewind.live/ex#Recording_DayligthAgain_3c59521b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DoTheyKnowItSChristmas_57b2fa68> owl:sameAs <https://musicbrainz.org/recording/57b2fa68-b666-4d1d-9ac9-b71424470e3b> .
+
+<http://wembrewind.live/ex#Recording_DoTheyKnowItSChristmas_57b2fa68_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DonQuixote_029c9aed> owl:sameAs <https://musicbrainz.org/recording/029c9aed-9233-4c79-a9f5-325b1aebb525> .
+
+<http://wembrewind.live/ex#Recording_DonQuixote_029c9aed_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DonTAnswerTheDoor_337917c4> owl:sameAs <https://musicbrainz.org/recording/337917c4-805b-4522-8272-4ef2e296eb12> .
+
+<http://wembrewind.live/ex#Recording_DonTAnswerTheDoor_337917c4_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DonTChange_0faebebd> owl:sameAs <https://musicbrainz.org/recording/0faebebd-43a3-4d43-9d04-28e15b9819af> .
+
+<http://wembrewind.live/ex#Recording_DonTChange_0faebebd_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DonTGoBreakingMyHeart_05923cfc> owl:sameAs <https://musicbrainz.org/recording/05923cfc-25ac-4122-abc1-9a6c2fc2f644> .
+
+<http://wembrewind.live/ex#Recording_DonTGoBreakingMyHeart_05923cfc_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DonTLetTheSunGoDownOnMe_118dd83a> owl:sameAs <https://musicbrainz.org/recording/118dd83a-5fdf-41e0-a770-3e6324960c39> .
+
+<http://wembrewind.live/ex#Recording_DonTLetTheSunGoDownOnMe_118dd83a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DonTSpeakNoEvil_0c0af31b> owl:sameAs <https://musicbrainz.org/recording/0c0af31b-85ce-4776-b4f9-47530e4d7395> .
+
+<http://wembrewind.live/ex#Recording_DonTSpeakNoEvil_0c0af31b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DonTWasteMyTime_627b88ac> owl:sameAs <https://musicbrainz.org/recording/627b88ac-724d-45f4-bf8d-95a15c8ff5cd> .
+
+<http://wembrewind.live/ex#Recording_DonTWasteMyTime_627b88ac_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DonTYouForgetAboutMe_bdf2301c> owl:sameAs <https://musicbrainz.org/recording/bdf2301c-51b1-4a02-a87b-416a68571958> .
+
+<http://wembrewind.live/ex#Recording_DonTYouForgetAboutMe_bdf2301c_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DragMeDown_6e154953> owl:sameAs <https://musicbrainz.org/recording/6e154953-7973-4828-b4a6-b972ba57c8c5> .
+
+<http://wembrewind.live/ex#Recording_DragMeDown_6e154953_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Drive_d9f86097> owl:sameAs <https://musicbrainz.org/recording/d9f86097-a3fb-4c36-8b54-4efce3787836> .
+
+<http://wembrewind.live/ex#Recording_Drive_d9f86097_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_DrivenToTears_b08c7df3> owl:sameAs <https://musicbrainz.org/recording/b08c7df3-82f4-4101-af6b-67be65ae0da5> .
+
+<http://wembrewind.live/ex#Recording_DrivenToTears_b08c7df3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_EndlessNights_8e1282b4> owl:sameAs <https://musicbrainz.org/recording/8e1282b4-11f8-492b-bf42-801017ead5d6> .
+
+<http://wembrewind.live/ex#Recording_EndlessNights_8e1282b4_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_EpiReportFromLondon_83334b2c> owl:sameAs <https://musicbrainz.org/recording/83334b2c-f7c7-4233-8277-74c994ed419e> .
+
+<http://wembrewind.live/ex#Recording_EpiReportFromLondon_83334b2c_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_EsGehtVoran_8cf70891> owl:sameAs <https://musicbrainz.org/recording/8cf70891-0d3d-4fab-95f4-f32c0aa8832f> .
+
+<http://wembrewind.live/ex#Recording_EsGehtVoran_8cf70891_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_EveryBreathYouTake_fe77b125> owl:sameAs <https://musicbrainz.org/recording/fe77b125-2901-4e4a-8cc5-6b07652131b4> .
+
+<http://wembrewind.live/ex#Recording_EveryBreathYouTake_fe77b125_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_EverytimeYouGoAway_86704278> owl:sameAs <https://musicbrainz.org/recording/86704278-512c-45d3-89bd-60b16ff36415> .
+
+<http://wembrewind.live/ex#Recording_EverytimeYouGoAway_86704278_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_849ef639> owl:sameAs <https://musicbrainz.org/recording/849ef639-fb77-4817-b1aa-619688bf1633> .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_849ef639_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_936ca70a> owl:sameAs <https://musicbrainz.org/recording/936ca70a-0356-4b73-a487-ce0eb1106a60> .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_936ca70a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_ffa6934b> owl:sameAs <https://musicbrainz.org/recording/ffa6934b-b49b-4ebb-8f75-ebc657e020f2> .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_ffa6934b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Footloose_570d9d64> owl:sameAs <https://musicbrainz.org/recording/570d9d64-8e74-44c2-849b-776d2701b5e6> .
+
+<http://wembrewind.live/ex#Recording_Footloose_570d9d64_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Footloose_570d9d64_on_a835ceb0> schema1:name "Footloose (Live Aid)" ;
+    owl:sameAs <https://musicbrainz.org/release/a835ceb0-2fc7-4217-82e6-cf154d0b5138> .
+
+<http://wembrewind.live/ex#Recording_ForeverYoung_9268848f> owl:sameAs <https://musicbrainz.org/recording/9268848f-329b-477b-9b20-ba995cc4519c> .
+
+<http://wembrewind.live/ex#Recording_ForeverYoung_9268848f_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_GetItOn_6d6c207b> owl:sameAs <https://musicbrainz.org/recording/6d6c207b-f6fb-4b08-95a5-ea5fb7f51de9> .
+
+<http://wembrewind.live/ex#Recording_GetItOn_6d6c207b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_GetReady_bac9a200> owl:sameAs <https://musicbrainz.org/recording/bac9a200-c87f-4f44-bdc6-160599f48833> .
+
+<http://wembrewind.live/ex#Recording_GetReady_bac9a200_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_GhostDancing_5773e1ad> owl:sameAs <https://musicbrainz.org/recording/5773e1ad-476a-4efd-848c-663af8cbfb87> .
+
+<http://wembrewind.live/ex#Recording_GhostDancing_5773e1ad_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_GoodVibrations_7acd0668> owl:sameAs <https://musicbrainz.org/recording/7acd0668-7632-4b2d-8bbd-f8f888d9cead> .
+
+<http://wembrewind.live/ex#Recording_GoodVibrations_7acd0668_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_GottaFight_cf5149c8> owl:sameAs <https://musicbrainz.org/recording/cf5149c8-b3b3-4c91-8aa0-8b27ad67e2bb> .
+
+<http://wembrewind.live/ex#Recording_GottaFight_cf5149c8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_HammerToFall_159f3644> owl:sameAs <https://musicbrainz.org/recording/159f3644-d3c3-4461-9ff5-558024902bb1> .
+
+<http://wembrewind.live/ex#Recording_HammerToFall_159f3644_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_HeartbeatCity_b310b1b8> owl:sameAs <https://musicbrainz.org/recording/b310b1b8-d312-481f-a05e-777742a9e775> .
+
+<http://wembrewind.live/ex#Recording_HeartbeatCity_b310b1b8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_HelloFromTheSovietUnion_26fcd54e> owl:sameAs <https://musicbrainz.org/recording/26fcd54e-920b-4a57-ab98-063da15dc6ea> .
+
+<http://wembrewind.live/ex#Recording_HelloFromTheSovietUnion_26fcd54e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_HelpMeRhonda_09c194b8> owl:sameAs <https://musicbrainz.org/recording/09c194b8-9d07-4124-a9a5-e5c88c7b08e3> .
+
+<http://wembrewind.live/ex#Recording_HelpMeRhonda_09c194b8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Helpless_ecc0334e> owl:sameAs <https://musicbrainz.org/recording/ecc0334e-f4c0-420f-9f3f-f79c6a5e80f9> .
+
+<http://wembrewind.live/ex#Recording_Helpless_ecc0334e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Heroes_9ad9811b> owl:sameAs <https://musicbrainz.org/recording/9ad9811b-68b1-4604-88ce-b26d55fe9af8> .
+
+<http://wembrewind.live/ex#Recording_Heroes_9ad9811b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_HideAndSeek_220dceb7> owl:sameAs <https://musicbrainz.org/recording/220dceb7-6234-4d7f-9add-b754874b92ae> .
+
+<http://wembrewind.live/ex#Recording_HideAndSeek_220dceb7_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_HoldMeNow_0489bbef> owl:sameAs <https://musicbrainz.org/recording/0489bbef-da5c-411a-89cd-a1da4e6c3488> .
+
+<http://wembrewind.live/ex#Recording_HoldMeNow_0489bbef_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Holiday_9ddf03bc> owl:sameAs <https://musicbrainz.org/recording/9ddf03bc-01e9-4f94-8235-b9d2a75826ad> .
+
+<http://wembrewind.live/ex#Recording_Holiday_9ddf03bc_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_HollandLinkUp_23f27730> owl:sameAs <https://musicbrainz.org/recording/23f27730-ddad-44f0-8737-d9a133e0fc94> .
+
+<http://wembrewind.live/ex#Recording_HollandLinkUp_23f27730_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_HumanTouch_c6c0bf1a> owl:sameAs <https://musicbrainz.org/recording/c6c0bf1a-ddfb-4c3b-8100-38fb6d0fe0d0> .
+
+<http://wembrewind.live/ex#Recording_HumanTouch_c6c0bf1a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ICanTHelpMyselfSugarPieHoneyBunch_aac9c2e3> owl:sameAs <https://musicbrainz.org/recording/aac9c2e3-1ce7-42db-a8d6-9fd2b75ee7fb> .
+
+<http://wembrewind.live/ex#Recording_ICanTHelpMyselfSugarPieHoneyBunch_aac9c2e3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_IDonTLikeMondays_679ee6ca> owl:sameAs <https://musicbrainz.org/recording/679ee6ca-252b-4de0-8d23-f0838b8d62fe> .
+
+<http://wembrewind.live/ex#Recording_IDonTLikeMondays_679ee6ca_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_IMStillStanding_f390bbb2> owl:sameAs <https://musicbrainz.org/recording/f390bbb2-9e50-4752-be56-0cdb4798f38e> .
+
+<http://wembrewind.live/ex#Recording_IMStillStanding_f390bbb2_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Imagine_314e559d> owl:sameAs <https://musicbrainz.org/recording/314e559d-4717-45e4-a34c-66545903b27b> .
+
+<http://wembrewind.live/ex#Recording_Imagine_314e559d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_InTheAirTonight_3bd855ce> owl:sameAs <https://musicbrainz.org/recording/3bd855ce-80fd-4c69-9902-5a7bc1f26f95> .
+
+<http://wembrewind.live/ex#Recording_InTheAirTonight_3bd855ce_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_InTheAirTonight_8b47f77a> owl:sameAs <https://musicbrainz.org/recording/8b47f77a-788b-41fe-aab4-dd393ba3d1ef> .
+
+<http://wembrewind.live/ex#Recording_InTheAirTonight_8b47f77a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Intermission_06433087> owl:sameAs <https://musicbrainz.org/recording/06433087-5623-43a9-928e-8398565286b7> .
+
+<http://wembrewind.live/ex#Recording_Intermission_06433087_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Intermission_23d59455> owl:sameAs <https://musicbrainz.org/recording/23d59455-e426-4179-a0f0-aedf032da008> .
+
+<http://wembrewind.live/ex#Recording_Intermission_23d59455_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Intermission_5a1f491d> owl:sameAs <https://musicbrainz.org/recording/5a1f491d-ca1b-4154-bf1d-4aba1c91931d> .
+
+<http://wembrewind.live/ex#Recording_Intermission_5a1f491d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Intermission_9a046ec9> owl:sameAs <https://musicbrainz.org/recording/9a046ec9-4174-4170-b566-798f2681856d> .
+
+<http://wembrewind.live/ex#Recording_Intermission_9a046ec9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Intermission_a9023e6b> owl:sameAs <https://musicbrainz.org/recording/a9023e6b-e66d-4ae7-9b0e-d175e4316abd> .
+
+<http://wembrewind.live/ex#Recording_Intermission_a9023e6b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Intermission_a9dfaa12> owl:sameAs <https://musicbrainz.org/recording/a9dfaa12-3491-47a5-b7eb-d942d2fb8d6a> .
+
+<http://wembrewind.live/ex#Recording_Intermission_a9dfaa12_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Internationalists_08ca2301> owl:sameAs <https://musicbrainz.org/recording/08ca2301-187c-4fed-ae84-c5a420d8cdec> .
+
+<http://wembrewind.live/ex#Recording_Internationalists_08ca2301_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_IntoTheGroove_301a7f9c> owl:sameAs <https://musicbrainz.org/recording/301a7f9c-7337-4d2d-b728-734c57b89243> .
+
+<http://wembrewind.live/ex#Recording_IntoTheGroove_301a7f9c_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_IntroducingJackNicholsonAtJfk_130c0c25> owl:sameAs <https://musicbrainz.org/recording/130c0c25-c0b0-4e44-9360-d4b6fc6d702a> .
+
+<http://wembrewind.live/ex#Recording_IntroducingJackNicholsonAtJfk_130c0c25_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_IntroducingJoanBaez_0d0d4160> owl:sameAs <https://musicbrainz.org/recording/0d0d4160-61d4-470a-9521-adb315c12069> .
+
+<http://wembrewind.live/ex#Recording_IntroducingJoanBaez_0d0d4160_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_IntroductionFromJfk_2397d2a8> owl:sameAs <https://musicbrainz.org/recording/2397d2a8-9d8c-48ba-b982-2396de7aa522> .
+
+<http://wembrewind.live/ex#Recording_IntroductionFromJfk_2397d2a8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_IronMan_10c9d7e1> owl:sameAs <https://musicbrainz.org/recording/10c9d7e1-3e04-4820-974a-76bb48bcfba9> .
+
+<http://wembrewind.live/ex#Recording_IronMan_10c9d7e1_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_IsItACrime_3cb8e20f> owl:sameAs <https://musicbrainz.org/recording/3cb8e20f-40e9-49dc-b6b6-9e7a8e7f69da> .
+
+<http://wembrewind.live/ex#Recording_IsItACrime_3cb8e20f_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_IsThisTheWorldWeCreated_9ad485f5> owl:sameAs <https://musicbrainz.org/recording/9ad485f5-e9e3-4bf9-8315-833fe04e57dd> .
+
+<http://wembrewind.live/ex#Recording_IsThisTheWorldWeCreated_9ad485f5_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ItSOnlyRockAndRoll_84d84f97> owl:sameAs <https://musicbrainz.org/recording/84d84f97-936b-4ce2-85f7-39f6dc58c84b> .
+
+<http://wembrewind.live/ex#Recording_ItSOnlyRockAndRoll_84d84f97_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ItSTheSameOldSong_f19f6599> owl:sameAs <https://musicbrainz.org/recording/f19f6599-4176-4378-ae81-dd3ab6839c53> .
+
+<http://wembrewind.live/ex#Recording_ItSTheSameOldSong_f19f6599_on_101e8cc7> schema1:name "Reach Out I'll Be There" ;
+    owl:sameAs <https://musicbrainz.org/release/101e8cc7-a7cc-4847-a046-7d678ab4fcff> .
+
+<http://wembrewind.live/ex#Recording_ItSTheSameOldSong_f19f6599_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_JamMasterJay_745685a1> owl:sameAs <https://musicbrainz.org/recording/745685a1-80f0-43e3-8e0e-b12072d20745> .
+
+<http://wembrewind.live/ex#Recording_JamMasterJay_745685a1_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_JealousGuy_5ef0d284> owl:sameAs <https://musicbrainz.org/recording/5ef0d284-8649-4e62-ab8e-9bf080fbb47a> .
+
+<http://wembrewind.live/ex#Recording_JealousGuy_5ef0d284_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_JustAnotherNight_d6663e8f> owl:sameAs <https://musicbrainz.org/recording/d6663e8f-f283-4594-bd0d-98acbef1b00e> .
+
+<http://wembrewind.live/ex#Recording_JustAnotherNight_d6663e8f_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_JustWhatINeeded_0ce2996b> owl:sameAs <https://musicbrainz.org/recording/0ce2996b-7c2d-49be-ad07-d72cc640bfd3> .
+
+<http://wembrewind.live/ex#Recording_JustWhatINeeded_0ce2996b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_KidsWannaRock_c1ffea2d> owl:sameAs <https://musicbrainz.org/recording/c1ffea2d-6cfc-4b8b-8947-20118f5a4712> .
+
+<http://wembrewind.live/ex#Recording_KidsWannaRock_c1ffea2d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Layla_e63a72d2> owl:sameAs <https://musicbrainz.org/recording/e63a72d2-0bed-4cb7-8bea-2893b2ca807c> .
+
+<http://wembrewind.live/ex#Recording_Layla_e63a72d2_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LetItBe_a581c536> owl:sameAs <https://musicbrainz.org/recording/a581c536-294c-4d29-8e31-bb6a8318ab4f> .
+
+<http://wembrewind.live/ex#Recording_LetItBe_a581c536_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LinkUp_edab5679> owl:sameAs <https://musicbrainz.org/recording/edab5679-2a1a-468b-85c1-b4820cfa6d59> .
+
+<http://wembrewind.live/ex#Recording_LinkUp_edab5679_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LiveAidMessage1_2d69e5ba> owl:sameAs <https://musicbrainz.org/recording/2d69e5ba-da32-4997-88fa-3deea2c8dd35> .
+
+<http://wembrewind.live/ex#Recording_LiveAidMessage1_2d69e5ba_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LiveAidMessage1_fd3c6e4f> owl:sameAs <https://musicbrainz.org/recording/fd3c6e4f-0ddd-4fda-b063-f65cb30b087a> .
+
+<http://wembrewind.live/ex#Recording_LiveAidMessage1_fd3c6e4f_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56> owl:sameAs <https://musicbrainz.org/recording/4e135c56-ef31-4978-8e29-09cc908b3b24> .
+
+<http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56_on_8fb392fe> schema1:name "Live Aid (Live, 13th July 1985)" ;
+    owl:sameAs <https://musicbrainz.org/release/8fb392fe-6325-4950-9311-0282d7a06379> .
+
+<http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56_on_d9c19883> schema1:name "Live Aid: The Day the Music Changed the World: July 13, 1985" ;
+    owl:sameAs <https://musicbrainz.org/release/d9c19883-fd32-405d-bafc-e0488d5b17da> .
+
+<http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56> owl:sameAs <https://musicbrainz.org/recording/4e135c56-ef31-4978-8e29-09cc908b3b24> .
+
+<http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56_on_8fb392fe> schema1:name "Live Aid (Live, 13th July 1985)" ;
+    owl:sameAs <https://musicbrainz.org/release/8fb392fe-6325-4950-9311-0282d7a06379> .
+
+<http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56_on_d9c19883> schema1:name "Live Aid: The Day the Music Changed the World: July 13, 1985" ;
+    owl:sameAs <https://musicbrainz.org/release/d9c19883-fd32-405d-bafc-e0488d5b17da> .
+
+<http://wembrewind.live/ex#Recording_LonelyAtTheTop_156cc230> owl:sameAs <https://musicbrainz.org/recording/156cc230-fdf9-4aa1-a350-630fa0a7c41b> .
+
+<http://wembrewind.live/ex#Recording_LonelyAtTheTop_156cc230_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LongLongWayToGo_4ff594bf> owl:sameAs <https://musicbrainz.org/recording/4ff594bf-4f02-4480-ab04-b8c1efa6dff6> .
+
+<http://wembrewind.live/ex#Recording_LongLongWayToGo_4ff594bf_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LoveMakesTheWorldGoRound_5479ad4a> owl:sameAs <https://musicbrainz.org/recording/5479ad4a-92e0-4b92-a2af-a562503a2444> .
+
+<http://wembrewind.live/ex#Recording_LoveMakesTheWorldGoRound_5479ad4a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LoveReignOErMe_5fa0efda> owl:sameAs <https://musicbrainz.org/recording/5fa0efda-8f45-4523-9bd7-db264c53107f> .
+
+<http://wembrewind.live/ex#Recording_LoveReignOErMe_5fa0efda_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_LoveSomebody_b884a1ca> owl:sameAs <https://musicbrainz.org/recording/b884a1ca-8302-4082-8bf3-c97636789f8a> .
+
+<http://wembrewind.live/ex#Recording_LoveSomebody_b884a1ca_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Loverboy_558af7ff> owl:sameAs <https://musicbrainz.org/recording/558af7ff-49c2-4e9d-b5cc-3f04af0d2fc7> .
+
+<http://wembrewind.live/ex#Recording_Loverboy_558af7ff_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MadisonBlues_2135bbf8> owl:sameAs <https://musicbrainz.org/recording/2135bbf8-000b-4eed-9e3f-1b0896e7f35e> .
+
+<http://wembrewind.live/ex#Recording_MadisonBlues_2135bbf8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Maneater_b6a526a8> owl:sameAs <https://musicbrainz.org/recording/b6a526a8-a468-4e15-bf25-d2accc92d0e2> .
+
+<http://wembrewind.live/ex#Recording_Maneater_b6a526a8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MessageInABottle_3e4b4e90> owl:sameAs <https://musicbrainz.org/recording/3e4b4e90-e242-4b24-860e-104a73f9a8a0> .
+
+<http://wembrewind.live/ex#Recording_MessageInABottle_3e4b4e90_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MessageOfLove_733e6470> owl:sameAs <https://musicbrainz.org/recording/733e6470-a62a-470a-8305-c82d916e7747> .
+
+<http://wembrewind.live/ex#Recording_MessageOfLove_733e6470_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MickJaggerAndTinaTurnerRehearsals_5a4e9694> owl:sameAs <https://musicbrainz.org/recording/5a4e9694-1b05-4cca-a407-34267e3a26cc> .
+
+<http://wembrewind.live/ex#Recording_MickJaggerAndTinaTurnerRehearsals_5a4e9694_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MiddleOfTheRoad_ebe661e5> owl:sameAs <https://musicbrainz.org/recording/ebe661e5-fd99-4881-8502-e59a58445c60> .
+
+<http://wembrewind.live/ex#Recording_MiddleOfTheRoad_ebe661e5_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MissYou_4ed24c6c> owl:sameAs <https://musicbrainz.org/recording/4ed24c6c-600f-4432-9a2a-c6e74b102f9c> .
+
+<http://wembrewind.live/ex#Recording_MissYou_4ed24c6c_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ModernLove_a1ae373f> owl:sameAs <https://musicbrainz.org/recording/a1ae373f-0490-43ca-8351-c563f8c09200> .
+
+<http://wembrewind.live/ex#Recording_ModernLove_a1ae373f_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MoneyForNothing_e3536a52> owl:sameAs <https://musicbrainz.org/recording/e3536a52-9b54-4af0-98e2-10bff8ef844e> .
+
+<http://wembrewind.live/ex#Recording_MoneyForNothing_e3536a52_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MtvIntermissionBbcIntermission_9ce09d10> owl:sameAs <https://musicbrainz.org/recording/9ce09d10-21fe-47f6-b680-c30ae1985f12> .
+
+<http://wembrewind.live/ex#Recording_MtvIntermissionBbcIntermission_9ce09d10_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MtvIntermission_e2f35e5e> owl:sameAs <https://musicbrainz.org/recording/e2f35e5e-2c8e-434e-87c4-dff668b11a46> .
+
+<http://wembrewind.live/ex#Recording_MtvIntermission_e2f35e5e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Murderess_889583de> owl:sameAs <https://musicbrainz.org/recording/889583de-728f-4749-b13c-ee4cd84480d9> .
+
+<http://wembrewind.live/ex#Recording_Murderess_889583de_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MyGeneration_f800e8ee> owl:sameAs <https://musicbrainz.org/recording/f800e8ee-e8d1-4830-a5e0-bd7e60f7903d> .
+
+<http://wembrewind.live/ex#Recording_MyGeneration_f800e8ee_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_MyGirl_2144d2ac> owl:sameAs <https://musicbrainz.org/recording/2144d2ac-ef4c-4b9d-a5e8-0320ec3a0c0a> .
+
+<http://wembrewind.live/ex#Recording_MyGirl_2144d2ac_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_NacktImWind_234936eb> owl:sameAs <https://musicbrainz.org/recording/234936eb-ca72-4466-921b-873ae55b210d> .
+
+<http://wembrewind.live/ex#Recording_NacktImWind_234936eb_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_NewAttitude_839ef1c3> owl:sameAs <https://musicbrainz.org/recording/839ef1c3-08ca-4d66-8a51-9c3b1dfe887b> .
+
+<http://wembrewind.live/ex#Recording_NewAttitude_839ef1c3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_NightOwl_50c2fff9> owl:sameAs <https://musicbrainz.org/recording/50c2fff9-98a9-4e70-8afc-2cf8ca6e415a> .
+
+<http://wembrewind.live/ex#Recording_NightOwl_50c2fff9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_NothingIsPerfect_4ee7077f> owl:sameAs <https://musicbrainz.org/recording/4ee7077f-233f-4df8-b7e5-aa317776e290> .
+
+<http://wembrewind.live/ex#Recording_NothingIsPerfect_4ee7077f_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_OneSmallDay_6e7eade1> owl:sameAs <https://musicbrainz.org/recording/6e7eade1-e028-4e4d-96bd-451818f30459> .
+
+<http://wembrewind.live/ex#Recording_OneSmallDay_6e7eade1_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_OnlyLoveCanBreakYourHeart_be3169b8> owl:sameAs <https://musicbrainz.org/recording/be3169b8-16f7-4ead-beed-7a658187ba13> .
+
+<http://wembrewind.live/ex#Recording_OnlyLoveCanBreakYourHeart_be3169b8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_OnlyWhenYouLeave_518df094> owl:sameAs <https://musicbrainz.org/recording/518df094-6aad-4b8b-bb4c-6d4f85724edd> .
+
+<http://wembrewind.live/ex#Recording_OnlyWhenYouLeave_518df094_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_OpenInvitation_3c2f1252> owl:sameAs <https://musicbrainz.org/recording/3c2f1252-e69d-4de7-bcba-50d022fbaf89> .
+
+<http://wembrewind.live/ex#Recording_OpenInvitation_3c2f1252_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_OutOfTouch_cccaefcf> owl:sameAs <https://musicbrainz.org/recording/cccaefcf-f45a-46fc-8fbf-5b1510019bad> .
+
+<http://wembrewind.live/ex#Recording_OutOfTouch_cccaefcf_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_OverTheRainbow_9d50a5e3> owl:sameAs <https://musicbrainz.org/recording/9d50a5e3-c13a-43e3-bfca-83a07eb8ed32> .
+
+<http://wembrewind.live/ex#Recording_OverTheRainbow_9d50a5e3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Overkill_db1cc1d2> owl:sameAs <https://musicbrainz.org/recording/db1cc1d2-2903-4286-8acd-89b6dcc45146> .
+
+<http://wembrewind.live/ex#Recording_Overkill_db1cc1d2_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_OzForAfricaLinkOut_6b2fd5cb> owl:sameAs <https://musicbrainz.org/recording/6b2fd5cb-09b3-419d-80cc-d4a56b7924a0> .
+
+<http://wembrewind.live/ex#Recording_OzForAfricaLinkOut_6b2fd5cb_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_OzForAfricaLinkUp_be84d0a4> owl:sameAs <https://musicbrainz.org/recording/be84d0a4-5bed-46c4-a1a5-74e4a5f50126> .
+
+<http://wembrewind.live/ex#Recording_OzForAfricaLinkUp_be84d0a4_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Paranoid_fd08b596> owl:sameAs <https://musicbrainz.org/recording/fd08b596-89c0-4b3e-843d-15d3d45ae2dc> .
+
+<http://wembrewind.live/ex#Recording_Paranoid_fd08b596_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_PinballWizard_49f4bb45> owl:sameAs <https://musicbrainz.org/recording/49f4bb45-3662-42bf-bed2-3f17494448c9> .
+
+<http://wembrewind.live/ex#Recording_PinballWizard_49f4bb45_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Powderfinger_377962db> owl:sameAs <https://musicbrainz.org/recording/377962db-88c2-473b-8978-b3a20ad9716f> .
+
+<http://wembrewind.live/ex#Recording_Powderfinger_377962db_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_PrimeraInvasion_3f8669be> owl:sameAs <https://musicbrainz.org/recording/3f8669be-2d26-46bb-afda-edd214379f3d> .
+
+<http://wembrewind.live/ex#Recording_PrimeraInvasion_3f8669be_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_PromisedYouAMiracle_eb1d4910> owl:sameAs <https://musicbrainz.org/recording/eb1d4910-2dde-429a-8f2a-8d8cf4900723> .
+
+<http://wembrewind.live/ex#Recording_PromisedYouAMiracle_eb1d4910_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_RadioGaga_40401938> owl:sameAs <https://musicbrainz.org/recording/40401938-0aff-43eb-8e2f-b9710a1b37a4> .
+
+<http://wembrewind.live/ex#Recording_RadioGaga_40401938_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_RatTrap_3e80d77e> owl:sameAs <https://musicbrainz.org/recording/3e80d77e-4ddc-4de9-839e-32ad7b126a4a> .
+
+<http://wembrewind.live/ex#Recording_RatTrap_3e80d77e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ReachAndTouchSomebodySHand_65653667> owl:sameAs <https://musicbrainz.org/recording/65653667-be28-4cfe-ae59-61084d3a7909> .
+
+<http://wembrewind.live/ex#Recording_ReachAndTouchSomebodySHand_65653667_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ReachOutILlBeThere_cf659519> owl:sameAs <https://musicbrainz.org/recording/cf659519-5e3d-4d0c-9647-9aee13352a1d> .
+
+<http://wembrewind.live/ex#Recording_ReachOutILlBeThere_cf659519_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ReapTheWildWind_51237118> owl:sameAs <https://musicbrainz.org/recording/51237118-e2e1-4dc0-b1c1-7c88357cc353> .
+
+<http://wembrewind.live/ex#Recording_ReapTheWildWind_51237118_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_RebelRebel_a3fd1fde> owl:sameAs <https://musicbrainz.org/recording/a3fd1fde-c375-4d94-9d57-4337c5cdf557> .
+
+<http://wembrewind.live/ex#Recording_RebelRebel_a3fd1fde_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Rebels_7b896cb6> owl:sameAs <https://musicbrainz.org/recording/7b896cb6-44ea-467e-91c4-f8bbcc19889f> .
+
+<http://wembrewind.live/ex#Recording_Rebels_7b896cb6_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Refugee_f67560d9> owl:sameAs <https://musicbrainz.org/recording/f67560d9-555a-47d8-98f0-e8d68c7d8bf3> .
+
+<http://wembrewind.live/ex#Recording_Refugee_f67560d9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Revolution_691fb7d6> owl:sameAs <https://musicbrainz.org/recording/691fb7d6-f2c9-490b-81ce-3dd5e6b796e2> .
+
+<http://wembrewind.live/ex#Recording_Revolution_691fb7d6_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_RightNow_658166c0> owl:sameAs <https://musicbrainz.org/recording/658166c0-673e-4219-80de-990e177d0eca> .
+
+<http://wembrewind.live/ex#Recording_RightNow_658166c0_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_RockAndRoll_c38a9c1e> owl:sameAs <https://musicbrainz.org/recording/c38a9c1e-55dd-41ae-ad1e-2f550ddb8968> .
+
+<http://wembrewind.live/ex#Recording_RockAndRoll_c38a9c1e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_RocketMan_ea6fbaf0> owl:sameAs <https://musicbrainz.org/recording/ea6fbaf0-24f8-4c33-8973-c5887a75a577> .
+
+<http://wembrewind.live/ex#Recording_RocketMan_ea6fbaf0_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_RockinAllOverTheWorld_ff3aa159> owl:sameAs <https://musicbrainz.org/recording/ff3aa159-0f29-4dcd-9839-7a0ca444efb7> .
+
+<http://wembrewind.live/ex#Recording_RockinAllOverTheWorld_ff3aa159_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_RollWithTheChanges_a86ab6c4> owl:sameAs <https://musicbrainz.org/recording/a86ab6c4-05af-44d6-adeb-a0ac65491729> .
+
+<http://wembrewind.live/ex#Recording_RollWithTheChanges_a86ab6c4_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Roxanne_cbabd27e> owl:sameAs <https://musicbrainz.org/recording/cbabd27e-4d4d-4600-985a-22f1f88662b1> .
+
+<http://wembrewind.live/ex#Recording_Roxanne_cbabd27e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SaveAPrayer_4c2713e9> owl:sameAs <https://musicbrainz.org/recording/4c2713e9-1db4-43b6-a053-8a4df60523ce> .
+
+<http://wembrewind.live/ex#Recording_SaveAPrayer_4c2713e9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Sensation_db2cf95b> owl:sameAs <https://musicbrainz.org/recording/db2cf95b-55a4-4b7c-a6b6-8065ba376000> .
+
+<http://wembrewind.live/ex#Recording_Sensation_db2cf95b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ShakeMeWakeMeWhenItSOver_2ea33e6c> owl:sameAs <https://musicbrainz.org/recording/2ea33e6c-1b1a-4c4f-9fac-a0b986248922> .
+
+<http://wembrewind.live/ex#Recording_ShakeMeWakeMeWhenItSOver_2ea33e6c_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Shame_55d6af65> owl:sameAs <https://musicbrainz.org/recording/55d6af65-d6cc-444b-a3e0-f1c433855fe4> .
+
+<http://wembrewind.live/ex#Recording_Shame_55d6af65_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SheSWaiting_7a849b5b> owl:sameAs <https://musicbrainz.org/recording/7a849b5b-66bc-4bfa-98d9-4dc966e897db> .
+
+<http://wembrewind.live/ex#Recording_SheSWaiting_7a849b5b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SimpleMindsFeedLostBbcIntermission_7201a832> owl:sameAs <https://musicbrainz.org/recording/7201a832-d3da-44ee-ad30-897118d1613b> .
+
+<http://wembrewind.live/ex#Recording_SimpleMindsFeedLostBbcIntermission_7201a832_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1> owl:sameAs <https://musicbrainz.org/recording/b31e1ae1-b22e-4d72-8aca-c739cd5d6399> .
+
+<http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1_on_8fb392fe> schema1:name "Live Aid (Live, 13th July 1985)" ;
+    owl:sameAs <https://musicbrainz.org/release/8fb392fe-6325-4950-9311-0282d7a06379> .
+
+<http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1_on_d9c19883> schema1:name "Live Aid: The Day the Music Changed the World: July 13, 1985" ;
+    owl:sameAs <https://musicbrainz.org/release/d9c19883-fd32-405d-bafc-e0488d5b17da> .
+
+<http://wembrewind.live/ex#Recording_SolidRock_8c3a6e00> owl:sameAs <https://musicbrainz.org/recording/8c3a6e00-cf59-4f22-bae5-64c262299ab4> .
+
+<http://wembrewind.live/ex#Recording_SolidRock_8c3a6e00_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Solid_936fd477> owl:sameAs <https://musicbrainz.org/recording/936fd477-6083-451c-bb15-3566504688be> .
+
+<http://wembrewind.live/ex#Recording_Solid_936fd477_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SouthernCross_a9c4179d> owl:sameAs <https://musicbrainz.org/recording/a9c4179d-010a-47e4-95c4-5e48277f0417> .
+
+<http://wembrewind.live/ex#Recording_SouthernCross_a9c4179d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_StageIntermission_c148e598> owl:sameAs <https://musicbrainz.org/recording/c148e598-251f-4555-bae9-ad3c9f62d65b> .
+
+<http://wembrewind.live/ex#Recording_StageIntermission_c148e598_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_StairwayToHeaven_35ec4330> owl:sameAs <https://musicbrainz.org/recording/35ec4330-0df0-4ac9-9a73-e3f5d7d52703> .
+
+<http://wembrewind.live/ex#Recording_StairwayToHeaven_35ec4330_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_StandUpAndSing_108255cb> owl:sameAs <https://musicbrainz.org/recording/108255cb-dce9-428d-922c-ba8a08ec72a1> .
+
+<http://wembrewind.live/ex#Recording_StandUpAndSing_108255cb_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_StateOfShock_a9becd00> owl:sameAs <https://musicbrainz.org/recording/a9becd00-a466-40ee-9e7c-1f186c1c2672> .
+
+<http://wembrewind.live/ex#Recording_StateOfShock_a9becd00_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_StateOfTheHeart_65dfffa0> owl:sameAs <https://musicbrainz.org/recording/65dfffa0-44f8-4f2c-9ae5-8dc64a631434> .
+
+<http://wembrewind.live/ex#Recording_StateOfTheHeart_65dfffa0_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_StirItUp_e32aea71> owl:sameAs <https://musicbrainz.org/recording/e32aea71-ee2b-4a3f-892d-106d194c6eb8> .
+
+<http://wembrewind.live/ex#Recording_StirItUp_e32aea71_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_StopYourSobbing_9282c957> owl:sameAs <https://musicbrainz.org/recording/9282c957-4119-4cb3-b7ac-b21ebe330a45> .
+
+<http://wembrewind.live/ex#Recording_StopYourSobbing_9282c957_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SugarMountain_c23f61cd> owl:sameAs <https://musicbrainz.org/recording/c23f61cd-12c9-4b2a-9d27-1c891cdbf1ee> .
+
+<http://wembrewind.live/ex#Recording_SugarMountain_c23f61cd_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SuiteJudyBlueEyes_ad8433ec> owl:sameAs <https://musicbrainz.org/recording/ad8433ec-aecb-4ef8-ace8-1c790c381e86> .
+
+<http://wembrewind.live/ex#Recording_SuiteJudyBlueEyes_ad8433ec_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SultansOfSwing_9a5b1ff6> owl:sameAs <https://musicbrainz.org/recording/9a5b1ff6-2e1e-4145-9dd1-c8eb1f47d003> .
+
+<http://wembrewind.live/ex#Recording_SultansOfSwing_9a5b1ff6_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SummerOf69_315af4d0> owl:sameAs <https://musicbrainz.org/recording/315af4d0-dd13-4e99-b570-d1a6bc46ed3a> .
+
+<http://wembrewind.live/ex#Recording_SummerOf69_315af4d0_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SundayBloodySunday_b0ce8594> owl:sameAs <https://musicbrainz.org/recording/b0ce8594-cf56-4ff6-9387-9261b5a972f2> .
+
+<http://wembrewind.live/ex#Recording_SundayBloodySunday_b0ce8594_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_SurfinUsa_df04837c> owl:sameAs <https://musicbrainz.org/recording/df04837c-c67f-40f0-a75b-555fc70eb04d> .
+
+<http://wembrewind.live/ex#Recording_SurfinUsa_df04837c_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TakeItTime_b814544d> owl:sameAs <https://musicbrainz.org/recording/b814544d-3b28-4461-a033-78105fe66508> .
+
+<http://wembrewind.live/ex#Recording_TakeItTime_b814544d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TeachYourChildren_e91e1321> owl:sameAs <https://musicbrainz.org/recording/e91e1321-a361-40fb-b684-40865afde4a2> .
+
+<http://wembrewind.live/ex#Recording_TeachYourChildren_e91e1321_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TearsAreNotEnough_d4e824e9> owl:sameAs <https://musicbrainz.org/recording/d4e824e9-4371-431b-99d9-591d2557c47b> .
+
+<http://wembrewind.live/ex#Recording_TearsAreNotEnough_d4e824e9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ThatSForTheTearsInYourEyes_454a89c8> owl:sameAs <https://musicbrainz.org/recording/454a89c8-f034-449d-8af3-0885fb88a65d> .
+
+<http://wembrewind.live/ex#Recording_ThatSForTheTearsInYourEyes_454a89c8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ThatSTheWayLoveIs_4f7d61d0> owl:sameAs <https://musicbrainz.org/recording/4f7d61d0-3b48-4169-b819-3b388bb706fa> .
+
+<http://wembrewind.live/ex#Recording_ThatSTheWayLoveIs_4f7d61d0_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TheBalladOfHollisBrown_ae1feb90> owl:sameAs <https://musicbrainz.org/recording/ae1feb90-2082-48ad-bbb1-988f3d00d663> .
+
+<http://wembrewind.live/ex#Recording_TheBalladOfHollisBrown_ae1feb90_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TheGreenManalishi_7049eb5c> owl:sameAs <https://musicbrainz.org/recording/7049eb5c-5bfc-4b08-bc2a-4987bfe020dc> .
+
+<http://wembrewind.live/ex#Recording_TheGreenManalishi_7049eb5c_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TheNeedleAndTheDamageDone_882ef9db> owl:sameAs <https://musicbrainz.org/recording/882ef9db-2e72-4229-9ada-47f592dca8c4> .
+
+<http://wembrewind.live/ex#Recording_TheNeedleAndTheDamageDone_882ef9db_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TheReflex_73ff1d7a> owl:sameAs <https://musicbrainz.org/recording/73ff1d7a-7838-417c-82bd-13bba121af0e> .
+
+<http://wembrewind.live/ex#Recording_TheReflex_73ff1d7a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TheRiddle_59101c84> owl:sameAs <https://musicbrainz.org/recording/59101c84-c023-4829-9ce0-faebed92e13c> .
+
+<http://wembrewind.live/ex#Recording_TheRiddle_59101c84_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TheSkyIsCrying_30b104f5> owl:sameAs <https://musicbrainz.org/recording/30b104f5-541b-4168-bbce-768bf4332c94> .
+
+<http://wembrewind.live/ex#Recording_TheSkyIsCrying_30b104f5_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TheWaiting_eb9d24b9> owl:sameAs <https://musicbrainz.org/recording/eb9d24b9-8dd7-47da-8281-e45f52aef34d> .
+
+<http://wembrewind.live/ex#Recording_TheWaiting_eb9d24b9_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TheWayYouDoTheThingsYouDo_2d19e310> owl:sameAs <https://musicbrainz.org/recording/2d19e310-4bca-4053-bd20-0802eae58ed8> .
+
+<http://wembrewind.live/ex#Recording_TheWayYouDoTheThingsYouDo_2d19e310_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_TimeTheAvenger_c74a5c06> owl:sameAs <https://musicbrainz.org/recording/c74a5c06-606d-4dd6-9d44-fd82d0fd96ba> .
+
+<http://wembrewind.live/ex#Recording_TimeTheAvenger_c74a5c06_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_True_ca2c82a1> owl:sameAs <https://musicbrainz.org/recording/ca2c82a1-3aca-4080-b6c9-703c0407be16> .
+
+<http://wembrewind.live/ex#Recording_True_ca2c82a1_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Tvc15_4ccc6c6b> owl:sameAs <https://musicbrainz.org/recording/4ccc6c6b-b0a8-4307-a630-fde21109a8a1> .
+
+<http://wembrewind.live/ex#Recording_Tvc15_4ccc6c6b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_U2IntroductionFromJfk_34b8b69a> owl:sameAs <https://musicbrainz.org/recording/34b8b69a-7db8-4907-bc16-0df2aac0de86> .
+
+<http://wembrewind.live/ex#Recording_U2IntroductionFromJfk_34b8b69a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_UkFinale_e52b59cf> owl:sameAs <https://musicbrainz.org/recording/e52b59cf-a079-4c42-93af-b086257f9553> .
+
+<http://wembrewind.live/ex#Recording_UkFinale_e52b59cf_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_UnionOfTheSnake_d1a8cfd3> owl:sameAs <https://musicbrainz.org/recording/d1a8cfd3-1fac-45fc-9a32-f653dab6d8e1> .
+
+<http://wembrewind.live/ex#Recording_UnionOfTheSnake_d1a8cfd3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_UnknownNewsReport_658df5b3> owl:sameAs <https://musicbrainz.org/recording/658df5b3-7fa4-4215-bb30-08a0426d77c4> .
+
+<http://wembrewind.live/ex#Recording_UnknownNewsReport_658df5b3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Unknown_32ae9adc> owl:sameAs <https://musicbrainz.org/recording/32ae9adc-e831-46c8-86ab-4f15c6456dc3> .
+
+<http://wembrewind.live/ex#Recording_Unknown_32ae9adc_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Unknown_5b8d7f98> owl:sameAs <https://musicbrainz.org/recording/5b8d7f98-cafe-4244-899a-74e0509d1245> .
+
+<http://wembrewind.live/ex#Recording_Unknown_5b8d7f98_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Unknown_d0d61d3a> owl:sameAs <https://musicbrainz.org/recording/d0d61d3a-ba10-4cbe-8c35-629972c9824e> .
+
+<http://wembrewind.live/ex#Recording_Unknown_d0d61d3a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_UsFinale_f5a06f66> owl:sameAs <https://musicbrainz.org/recording/f5a06f66-c933-462d-8ccb-3e787ffbd156> .
+
+<http://wembrewind.live/ex#Recording_UsFinale_f5a06f66_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Vienna_1d8f82e2> owl:sameAs <https://musicbrainz.org/recording/1d8f82e2-28ea-4fc4-8a98-7f4ebb823333> .
+
+<http://wembrewind.live/ex#Recording_Vienna_1d8f82e2_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_Virgin_4625d665> owl:sameAs <https://musicbrainz.org/recording/4625d665-9059-47ec-9f84-dab733b683b2> .
+
+<http://wembrewind.live/ex#Recording_Virgin_4625d665_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_ViveLeRock_e09de3f8> owl:sameAs <https://musicbrainz.org/recording/e09de3f8-95ee-49dd-8d34-b8b81b7749b4> .
+
+<http://wembrewind.live/ex#Recording_ViveLeRock_e09de3f8_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WallsComeTumblingDown_203a982d> owl:sameAs <https://musicbrainz.org/recording/203a982d-e9c1-4bb3-b173-ec57028c04f4> .
+
+<http://wembrewind.live/ex#Recording_WallsComeTumblingDown_203a982d_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WallsComeTumblingDown_203a982d_on_9d3527a2> schema1:name "The Style Council at Live Aid" ;
+    owl:sameAs <https://musicbrainz.org/release/9d3527a2-7b89-4da5-a5f6-37f07ef0f1c3> .
+
+<http://wembrewind.live/ex#Recording_Warum_717380bd> owl:sameAs <https://musicbrainz.org/recording/717380bd-2120-4bd1-962d-f04bfdaea2fc> .
+
+<http://wembrewind.live/ex#Recording_Warum_717380bd_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WeAreTheChampions_ab0796fb> owl:sameAs <https://musicbrainz.org/recording/ab0796fb-0539-40d0-bb19-9e5f34c8a4e2> .
+
+<http://wembrewind.live/ex#Recording_WeAreTheChampions_ab0796fb_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WeAreTheWorld_35a488c3> owl:sameAs <https://musicbrainz.org/recording/35a488c3-97c3-4f5b-82a6-fd67a20cf9cc> .
+
+<http://wembrewind.live/ex#Recording_WeAreTheWorld_35a488c3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WeWillRockYou_2f58f9a6> owl:sameAs <https://musicbrainz.org/recording/2f58f9a6-2c6a-49be-aafe-5932b518d815> .
+
+<http://wembrewind.live/ex#Recording_WeWillRockYou_2f58f9a6_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WelcomingAmerica_b815d586> owl:sameAs <https://musicbrainz.org/recording/b815d586-cab7-422b-a82f-0e4a24cb378a> .
+
+<http://wembrewind.live/ex#Recording_WelcomingAmerica_b815d586_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WembleyLinkUpToJfk_c7ae20df> owl:sameAs <https://musicbrainz.org/recording/c7ae20df-bde9-4951-a130-1e4635332580> .
+
+<http://wembrewind.live/ex#Recording_WembleyLinkUpToJfk_c7ae20df_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WhatYouNeed_7f30e02a> owl:sameAs <https://musicbrainz.org/recording/7f30e02a-8a14-47eb-86d7-df8f804617d7> .
+
+<http://wembrewind.live/ex#Recording_WhatYouNeed_7f30e02a_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WhenTheShipsComesIn_3bfc4b19> owl:sameAs <https://musicbrainz.org/recording/3bfc4b19-189b-4423-8fdd-46e4340d243c> .
+
+<http://wembrewind.live/ex#Recording_WhenTheShipsComesIn_3bfc4b19_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WhiteRoom_6919d285> owl:sameAs <https://musicbrainz.org/recording/6919d285-3470-4924-8b3f-fb33e2569b34> .
+
+<http://wembrewind.live/ex#Recording_WhiteRoom_6919d285_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WhoDoYouLove_2918fca0> owl:sameAs <https://musicbrainz.org/recording/2918fca0-0c01-433c-9dd7-3f1fb57e34f5> .
+
+<http://wembrewind.live/ex#Recording_WhoDoYouLove_2918fca0_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WholeLottaLove_c24368f1> owl:sameAs <https://musicbrainz.org/recording/c24368f1-8700-4e12-b244-221e48b205db> .
+
+<http://wembrewind.live/ex#Recording_WholeLottaLove_c24368f1_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WhyCanTIGetItOver_dc308b4b> owl:sameAs <https://musicbrainz.org/recording/dc308b4b-f550-4a8c-8669-02651b5a8e02> .
+
+<http://wembrewind.live/ex#Recording_WhyCanTIGetItOver_dc308b4b_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WhyCanTWeLiveTogether_0bf0a51e> owl:sameAs <https://musicbrainz.org/recording/0bf0a51e-31c2-4167-8657-69e72329bc29> .
+
+<http://wembrewind.live/ex#Recording_WhyCanTWeLiveTogether_0bf0a51e_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WhyISingTheBlues_4b1f43fc> owl:sameAs <https://musicbrainz.org/recording/4b1f43fc-e70b-4f32-aab1-e4df607b0c86> .
+
+<http://wembrewind.live/ex#Recording_WhyISingTheBlues_4b1f43fc_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WideBoy_2e405de3> owl:sameAs <https://musicbrainz.org/recording/2e405de3-ce5e-4ecf-8a24-5c9beff162c5> .
+
+<http://wembrewind.live/ex#Recording_WideBoy_2e405de3_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WonTGetFooledAgain_e7c6be90> owl:sameAs <https://musicbrainz.org/recording/e7c6be90-d2b2-46bd-a298-44340640b0ce> .
+
+<http://wembrewind.live/ex#Recording_WonTGetFooledAgain_e7c6be90_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WouldnTItBeGood_f01b6a95> owl:sameAs <https://musicbrainz.org/recording/f01b6a95-5d1d-483b-8a88-ffd4cb390570> .
+
+<http://wembrewind.live/ex#Recording_WouldnTItBeGood_f01b6a95_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_WouldnTItBeNice_de5d8181> owl:sameAs <https://musicbrainz.org/recording/de5d8181-40d6-4f85-affe-f96000e420da> .
+
+<http://wembrewind.live/ex#Recording_WouldnTItBeNice_de5d8181_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_YouMightThink_62b257d5> owl:sameAs <https://musicbrainz.org/recording/62b257d5-0e49-465a-893a-96720e706bc3> .
+
+<http://wembrewind.live/ex#Recording_YouMightThink_62b257d5_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_YouReTheBestThing_85650129> owl:sameAs <https://musicbrainz.org/recording/85650129-2fea-4193-beb1-beff6769c482> .
+
+<http://wembrewind.live/ex#Recording_YouReTheBestThing_85650129_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_YouVeGotAnotherThingComin_b48f9409> owl:sameAs <https://musicbrainz.org/recording/b48f9409-f06b-4469-a6b8-687ec4987a62> .
+
+<http://wembrewind.live/ex#Recording_YouVeGotAnotherThingComin_b48f9409_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_YourLoveIsKing_a214b8ab> owl:sameAs <https://musicbrainz.org/recording/a214b8ab-9eb5-4f49-b8b7-531123cb6ef2> .
+
+<http://wembrewind.live/ex#Recording_YourLoveIsKing_a214b8ab_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#Recording_YuRockMissionForAMillionYears_573da091> owl:sameAs <https://musicbrainz.org/recording/573da091-f802-4eb4-8c19-c554c3192cf9> .
+
+<http://wembrewind.live/ex#Recording_YuRockMissionForAMillionYears_573da091_on_8aef762f> schema1:name "1985-07-13: Live Aid: The Global Jukebox: [various locations]" ;
+    owl:sameAs <https://musicbrainz.org/release/8aef762f-6a9d-4596-90af-436a515628ff> .
+
+<http://wembrewind.live/ex#ReoSpeedwagon> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/REO_Speedwagon.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/REO_Speedwagon_at_Red_Rocks_July_2010_%28cropped%29.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q845084> .
+
+<http://wembrewind.live/ex#RickSpringfield> schema1:identifier <http://wembrewind.live/ex#RickSpringfield_prop_P2373_44639644>,
+        <http://wembrewind.live/ex#RickSpringfield_prop_P6351_31672053> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Rick_Springfield_in_Boston_2011.jpg> ;
+    schema1:sameAs <https://genius.com/artists/195363>,
+        <https://genius.com/artists/Rick-springfield>,
+        <https://www.wikidata.org/wiki/Q707446> .
+
+<http://wembrewind.live/ex#RobertPlant> schema1:identifier <http://wembrewind.live/ex#RobertPlant_prop_P2373_22368250>,
+        <http://wembrewind.live/ex#RobertPlant_prop_P6351_16494487> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Plant_at_the_Palace_Theatre%2C_Manchester.jpg> ;
+    schema1:sameAs <https://genius.com/artists/12999>,
+        <https://genius.com/artists/Robert-plant>,
+        <https://www.wikidata.org/wiki/Q428223> .
+
+<http://wembrewind.live/ex#RonnieWood> schema1:identifier <http://wembrewind.live/ex#RonnieWood_prop_P2373_38453130>,
+        <http://wembrewind.live/ex#RonnieWood_prop_P6351_89235205> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Ronnie_Wood_%2855208398%29.jpeg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Ronnie_Wood_plays_guitar_onstage_-_Rolling_Stones%2C_London_22_May_2018_%2840532922340%29_-_crop.jpg> ;
+    schema1:sameAs <https://genius.com/artists/386840>,
+        <https://genius.com/artists/Ronnie-wood>,
+        <https://www.wikidata.org/wiki/Q211094> .
+
+<http://wembrewind.live/ex#RunDMC> schema1:identifier <http://wembrewind.live/ex#RunDMC_prop_P2373_497319> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Run_DMC_%28cropped%29.png> ;
+    schema1:sameAs <https://genius.com/artists/Run-dmc>,
+        <https://www.wikidata.org/wiki/Q159351> .
+
+<http://wembrewind.live/ex#Sade> schema1:identifier <http://wembrewind.live/ex#Sade_prop_P2373_46707602> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Sade_Adu_Band.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Sade>,
+        <https://www.wikidata.org/wiki/Q658182> .
+
+<http://wembrewind.live/ex#Santana> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Santana_%281971%29.png> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q873384> .
+
+<http://wembrewind.live/ex#SimpleMinds> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/-NIMES_-170618_Nimes_SM2018_mk2_MG_9308-Edit.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q748836> .
+
+<http://wembrewind.live/ex#SpandauBallet> schema1:identifier <http://wembrewind.live/ex#SpandauBallet_prop_P2373_82098567>,
+        <http://wembrewind.live/ex#SpandauBallet_prop_P5287_57781880> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Spandau_Ballet_%22True%22_%281983_Chrysalis_publicity_photo%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Spandau-ballet>,
+        <https://www.songfacts.com/songs/spandau-ballet>,
+        <https://www.wikidata.org/wiki/Q16011> .
+
+<http://wembrewind.live/ex#StatusQuo> schema1:identifier <http://wembrewind.live/ex#StatusQuo_prop_P2373_35851071> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Status_quo_2005.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Status-quo>,
+        <https://www.wikidata.org/wiki/Q322265> .
+
+<http://wembrewind.live/ex#Sting> schema1:identifier <http://wembrewind.live/ex#Sting_prop_P2373_68104611>,
+        <http://wembrewind.live/ex#Sting_prop_P6351_30237597> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Sting_in_April_2018.jpg> ;
+    schema1:sameAs <https://genius.com/artists/679>,
+        <https://genius.com/artists/Sting>,
+        <https://www.wikidata.org/wiki/Q483203> .
+
+<http://wembrewind.live/ex#TheBandOfTheColdstreamGuards> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Diamond_Jubilee-_5th_June_2012_%287500007900%29.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q4854267> .
+
+<http://wembrewind.live/ex#TheBeachBoys> schema1:identifier <http://wembrewind.live/ex#TheBeachBoys_prop_P2373_67138700>,
+        <http://wembrewind.live/ex#TheBeachBoys_prop_P5287_79925448> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/The_Beach_Boys%2C_May_29%2C_2012.jpg> ;
+    schema1:sameAs <https://genius.com/artists/The-beach-boys>,
+        <https://www.songfacts.com/songs/the-beach-boys>,
+        <https://www.wikidata.org/wiki/Q183048> .
+
+<http://wembrewind.live/ex#TheBoomtownRats> schema1:identifier <http://wembrewind.live/ex#TheBoomtownRats_prop_P2373_91699445> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/TheBoomtownRatsKBF1981.jpg> ;
+    schema1:sameAs <https://genius.com/artists/The-boomtown-rats>,
+        <https://www.wikidata.org/wiki/Q573471> .
+
+<http://wembrewind.live/ex#TheCars> schema1:identifier <http://wembrewind.live/ex#TheCars_prop_P2373_2313358>,
+        <http://wembrewind.live/ex#TheCars_prop_P6351_45967714> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/The_Cars_1984_%28Elektra_Press_Kit_Photo%29.jpg> ;
+    schema1:sameAs <https://genius.com/artists/90849>,
+        <https://genius.com/artists/The-cars>,
+        <https://www.wikidata.org/wiki/Q858388> .
+
+<http://wembrewind.live/ex#TheHooters> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/The_Hooters.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q1257490> .
+
+<http://wembrewind.live/ex#ThePowerStation> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/The_Power_Station_%281985_Capitol_publicity_photo%29_02.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q2107050> .
+
+<http://wembrewind.live/ex#TheStyleCouncil> schema1:sameAs <https://www.wikidata.org/wiki/Q676522> .
+
+<http://wembrewind.live/ex#TheWho> schema1:identifier <http://wembrewind.live/ex#TheWho_prop_P2373_83838751> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Who_-_1975.jpg> ;
+    schema1:sameAs <https://genius.com/artists/The-who>,
+        <https://www.wikidata.org/wiki/Q93346> .
+
+<http://wembrewind.live/ex#ThomasDolby> schema1:identifier <http://wembrewind.live/ex#ThomasDolby_prop_P2373_92310548> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Thomas_Dolby%2C_2006.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Thomas-dolby>,
+        <https://www.wikidata.org/wiki/Q553790> .
+
+<http://wembrewind.live/ex#ThompsonTwins> schema1:identifier <http://wembrewind.live/ex#ThompsonTwins_prop_P2373_62110772>,
+        <http://wembrewind.live/ex#ThompsonTwins_prop_P5287_52301287> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Thompson_Twins_1985.jpg> ;
+    schema1:sameAs <https://genius.com/artists/Thompson-twins>,
+        <https://www.songfacts.com/songs/thompson-twins>,
+        <https://www.wikidata.org/wiki/Q1500069> .
+
+<http://wembrewind.live/ex#TinaTurner> schema1:identifier <http://wembrewind.live/ex#TinaTurner_prop_P2373_15363937>,
+        <http://wembrewind.live/ex#TinaTurner_prop_P5287_35449336>,
+        <http://wembrewind.live/ex#TinaTurner_prop_P6351_56988100> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Tina_Turner_1970.jpg>,
+        <https://commons.wikimedia.org/wiki/Special:FilePath/Tina_Turner_50th_Anniversary_Tour.jpg> ;
+    schema1:sameAs <https://genius.com/artists/28334>,
+        <https://genius.com/artists/Tina-turner>,
+        <https://www.songfacts.com/songs/tina-turner>,
+        <https://www.wikidata.org/wiki/Q131814> .
+
+<http://wembrewind.live/ex#TomPettyAndTheHeartbreakers> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Tompetty_indy.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q2117272> .
+
+<http://wembrewind.live/ex#TonyThompson> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Tony_Thompson_1985.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q1366840> .
+
+<http://wembrewind.live/ex#U2> schema1:identifier <http://wembrewind.live/ex#U2_prop_P2373_78989832> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/U2_on_Joshua_Tree_Tour_2017_Brussels_8-1-17.jpg> ;
+    schema1:sameAs <https://genius.com/artists/U2>,
+        <https://www.wikidata.org/wiki/Q396> .
+
+<http://wembrewind.live/ex#Ultravox> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Ultravox_Duisburg_2009.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q316485> .
+
+<http://wembrewind.live/ex#UsaForAfrica> schema1:identifier <http://wembrewind.live/ex#UsaForAfrica_prop_P2373_76053809> ;
+    schema1:sameAs <https://genius.com/artists/Usa-for-africa>,
+        <https://www.wikidata.org/wiki/Q1165609> .
+
+<http://wembrewind.live/ex#Work_AViewToAKill_f9b82c4a_2> schema1:sameAs <https://www.wikidata.org/wiki/Q300610> .
+
+<http://wembrewind.live/ex#Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2> schema1:sameAs <https://www.wikidata.org/wiki/Q390134> .
+
+<http://wembrewind.live/ex#Work_AinTTooProudToBeg_d97a13df_2> schema1:sameAs <https://www.wikidata.org/wiki/Q3645415> .
+
+<http://wembrewind.live/ex#Work_AllYouNeedIsLove_0dfca25e_2> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Vietnam%2C_All_You_Need_Is_Love.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q176098> .
+
+<http://wembrewind.live/ex#Work_AmazingGrace_a5393197> schema1:identifier <http://wembrewind.live/ex#Work_AmazingGrace_a5393197_prop_P5241_15702552> ;
+    schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Amazing_Grace-Olney_1779.jpg> ;
+    schema1:sameAs <https://www.songfacts.com/facts/traditional/amazing-grace>,
+        <https://www.wikidata.org/wiki/Q210211> .
+
+<http://wembrewind.live/ex#Work_AmericanGirl_667f5519_2> schema1:sameAs <https://www.wikidata.org/wiki/Q4743896> .
+
+<http://wembrewind.live/ex#Work_BackOnTheChainGang_31d4aa2c> schema1:sameAs <https://www.wikidata.org/wiki/Q4839352> .
+
+<http://wembrewind.live/ex#Work_Bad_62d0a051> schema1:sameAs <https://www.wikidata.org/wiki/Q2602667> ;
+    schema1:video <http://wembrewind.live/ex#Work_Bad_62d0a051_YT_LCdltGg4EzM> .
+
+<http://wembrewind.live/ex#Work_BalladOfHollisBrown_5ed18d5c> schema1:sameAs <https://www.wikidata.org/wiki/Q2881101> .
+
+<http://wembrewind.live/ex#Work_BennieAndTheJets_6ef8fb46_2> schema1:sameAs <https://www.wikidata.org/wiki/Q2560178> .
+
+<http://wembrewind.live/ex#Work_Bernadette_78a776b8_2> schema1:sameAs <https://www.wikidata.org/wiki/Q2564311> .
+
+<http://wembrewind.live/ex#Work_BlowinInTheWind_f5a12d42> schema1:sameAs <https://www.wikidata.org/wiki/Q640529> .
+
+<http://wembrewind.live/ex#Work_BohemianRhapsody_41c94a08> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Bohemian_Rhapsody_by_Queen_US_vinyl_red_label.png> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q187745> ;
+    schema1:video <http://wembrewind.live/ex#Work_BohemianRhapsody_41c94a08_YT_fJ9rUzIMcZQ> .
+
+<http://wembrewind.live/ex#Work_CaliforniaGirls_9c56c803> schema1:sameAs <https://www.wikidata.org/wiki/Q176544> .
+
+<http://wembrewind.live/ex#Work_CanIGetAWitness_238819bb_2> schema1:sameAs <https://www.wikidata.org/wiki/Q5029054> .
+
+<http://wembrewind.live/ex#Work_CanTFightThisFeeling_4b497a42_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1034041> .
+
+<http://wembrewind.live/ex#Work_CaribbeanQueen_d4d2cc6d> schema1:sameAs <https://www.wikidata.org/wiki/Q977668> ;
+    schema1:video <http://wembrewind.live/ex#Work_CaribbeanQueen_d4d2cc6d_YT_uxX2gA18grk> .
+
+<http://wembrewind.live/ex#Work_Caroline_c758c89e_2> schema1:sameAs <https://www.wikidata.org/wiki/Q2939947> .
+
+<http://wembrewind.live/ex#Work_Cherish_7331e730> schema1:sameAs <https://www.wikidata.org/wiki/Q1070253> .
+
+<http://wembrewind.live/ex#Work_ChildrenOfTheGrave_08b8087b> schema1:sameAs <https://www.wikidata.org/wiki/Q860604> .
+
+<http://wembrewind.live/ex#Work_ComeBackAndStay_ad4e5fd6_2> schema1:sameAs <https://www.wikidata.org/wiki/Q5151096> .
+
+<http://wembrewind.live/ex#Work_CrazyLittleThingCalledLove_dad1c2a9> schema1:sameAs <https://www.wikidata.org/wiki/Q178905> .
+
+<http://wembrewind.live/ex#Work_CutsLikeAKnife_aa289c4d> schema1:sameAs <https://www.wikidata.org/wiki/Q2678990> ;
+    schema1:video <http://wembrewind.live/ex#Work_CutsLikeAKnife_aa289c4d_YT_6VZhSkREYBc> .
+
+<http://wembrewind.live/ex#Work_DancingWithTearsInMyEyes_a88ba41e_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1159377> .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2> schema1:identifier <http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_prop_P5241_56510414>,
+        <http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_prop_P5241_65921839>,
+        <http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_prop_P5241_94658583> ;
+    schema1:sameAs <https://www.songfacts.com/facts/1579>,
+        <https://www.songfacts.com/facts/band-aid-30/do-they-know-its-christmas>,
+        <https://www.songfacts.com/facts/band-aid/do-they-know-its-christmas>,
+        <https://www.wikidata.org/wiki/Q1188494> ;
+    schema1:video <http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_YT_Zc8TYsYb5i0> .
+
+<http://wembrewind.live/ex#Work_DonTChange_f0e75ada_2> schema1:sameAs <https://www.wikidata.org/wiki/Q3035652> ;
+    schema1:video <http://wembrewind.live/ex#Work_DonTChange_f0e75ada_2_YT_sLm3Khusq_8> .
+
+<http://wembrewind.live/ex#Work_DonTGoBreakingMyHeart_f8d529ad_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1242292> ;
+    schema1:video <http://wembrewind.live/ex#Work_DonTGoBreakingMyHeart_f8d529ad_2_YT_z0qW9P-uYfM> .
+
+<http://wembrewind.live/ex#Work_DonTLetTheSunGoDownOnMe_75ed39fe> schema1:sameAs <https://www.wikidata.org/wiki/Q2558068> .
+
+<http://wembrewind.live/ex#Work_DonTYouForgetAboutMe_4694f742> schema1:sameAs <https://www.wikidata.org/wiki/Q1242376> .
+
+<http://wembrewind.live/ex#Work_Drive_4cbcd04d_2> schema1:sameAs <https://www.wikidata.org/wiki/Q169987> ;
+    schema1:video <http://wembrewind.live/ex#Work_Drive_4cbcd04d_2_YT_xuZA6qiJVfU> .
+
+<http://wembrewind.live/ex#Work_DrivenToTears_d7c50a9a> schema1:sameAs <https://www.wikidata.org/wiki/Q5307974> .
+
+<http://wembrewind.live/ex#Work_EveryBreathYouTake_f88369e2> schema1:sameAs <https://www.wikidata.org/wiki/Q122603256> .
+
+<http://wembrewind.live/ex#Work_EverytimeYouGoAway_677d42d6_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1139941> .
+
+<http://wembrewind.live/ex#Work_Footloose_fee797bd> schema1:sameAs <https://www.wikidata.org/wiki/Q653189> .
+
+<http://wembrewind.live/ex#Work_ForeverYoung_f978ba1e> schema1:sameAs <https://www.wikidata.org/wiki/Q1437266> .
+
+<http://wembrewind.live/ex#Work_GetItOn_29ff18d1_2> schema1:sameAs <https://www.wikidata.org/wiki/Q5553947> .
+
+<http://wembrewind.live/ex#Work_GetReady_3df4f8a5> schema1:sameAs <https://www.wikidata.org/wiki/Q2596211> .
+
+<http://wembrewind.live/ex#Work_GoodVibrations_ede10e9a> schema1:sameAs <https://www.wikidata.org/wiki/Q842176> ;
+    schema1:video <http://wembrewind.live/ex#Work_GoodVibrations_ede10e9a_YT_apBWI6xrbLY> .
+
+<http://wembrewind.live/ex#Work_HammerToFall_1e807fa4_2> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Hammer_To_Fall_Queen.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q1033415> ;
+    schema1:video <http://wembrewind.live/ex#Work_HammerToFall_1e807fa4_2_YT_JU5LMG3WFBw> .
+
+<http://wembrewind.live/ex#Work_HelpMeRhonda_21404af0> schema1:sameAs <https://www.wikidata.org/wiki/Q263436> .
+
+<http://wembrewind.live/ex#Work_Helpless_295f4446_2> schema1:sameAs <https://www.wikidata.org/wiki/Q5710274> .
+
+<http://wembrewind.live/ex#Work_Heroes_e2b01286> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Heroes_by_David_Bowie_UK_vinyl_single.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q701655> .
+
+<http://wembrewind.live/ex#Work_HoldMeNow_d77e1b17> schema1:sameAs <https://www.wikidata.org/wiki/Q5879183> .
+
+<http://wembrewind.live/ex#Work_Holiday_1c03c879> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Madonna-holiday-1983-us-vinyl.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q1340989> ;
+    schema1:video <http://wembrewind.live/ex#Work_Holiday_1c03c879_YT_5Rswx2Z7SDw> .
+
+<http://wembrewind.live/ex#Work_HumanTouch_f9c6ee89> schema1:sameAs <https://www.wikidata.org/wiki/Q17011484> .
+
+<http://wembrewind.live/ex#Work_ICanTHelpMyselfSugarPieHoneyBunch_209a62bf> schema1:sameAs <https://www.wikidata.org/wiki/Q3057105> .
+
+<http://wembrewind.live/ex#Work_IDonTLikeMondays_d998a80c> schema1:sameAs <https://www.wikidata.org/wiki/Q1030840> ;
+    schema1:video <http://wembrewind.live/ex#Work_IDonTLikeMondays_d998a80c_YT_-Kobdb37Cwc> .
+
+<http://wembrewind.live/ex#Work_IMStillStanding_4ae45d33> schema1:sameAs <https://www.wikidata.org/wiki/Q2354146> ;
+    schema1:video <http://wembrewind.live/ex#Work_IMStillStanding_4ae45d33_YT_ZHwVBirqD2s> .
+
+<http://wembrewind.live/ex#Work_Imagine_517ff96c_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1971> ;
+    schema1:video <http://wembrewind.live/ex#Work_Imagine_517ff96c_2_YT_rAn-AWXtHv0> .
+
+<http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea> schema1:identifier <http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea_prop_P6218_82327223> ;
+    schema1:sameAs <https://genius.com/Phil-collins-in-the-air-tonight-lyrics>,
+        <https://www.wikidata.org/wiki/Q546425> ;
+    schema1:video <http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea_YT_YkADj0TPrJA> .
+
+<http://wembrewind.live/ex#Work_IntoTheGroove_35b448bb_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1458640> .
+
+<http://wembrewind.live/ex#Work_IronMan_4a43511c_2> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/BS_IronMan.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q910905> .
+
+<http://wembrewind.live/ex#Work_IsThisTheWorldWeCreated_3a6c7da6> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Is_This_the_World_We_Created...%3F_by_Queen_Ireland_vinyl.png> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q1098078> .
+
+<http://wembrewind.live/ex#Work_ItSTheSameOldSong_1c0a52ff> schema1:sameAs <https://www.wikidata.org/wiki/Q2586597> .
+
+<http://wembrewind.live/ex#Work_JealousGuy_056b839a> schema1:sameAs <https://www.wikidata.org/wiki/Q27722> .
+
+<http://wembrewind.live/ex#Work_JustAnotherNight_1adedf0f_2> schema1:sameAs <https://www.wikidata.org/wiki/Q16995536> .
+
+<http://wembrewind.live/ex#Work_JustWhatINeeded_f5128e1e_2> schema1:sameAs <https://www.wikidata.org/wiki/Q6316441> ;
+    schema1:video <http://wembrewind.live/ex#Work_JustWhatINeeded_f5128e1e_2_YT_gvy2yqUHLLg> .
+
+<http://wembrewind.live/ex#Work_Layla_beb76331> schema1:sameAs <https://www.wikidata.org/wiki/Q923966> .
+
+<http://wembrewind.live/ex#Work_LetItBe_ef5b9074> schema1:sameAs <https://www.wikidata.org/wiki/Q184259> ;
+    schema1:video <http://wembrewind.live/ex#Work_LetItBe_ef5b9074_YT_atLK2RIZzWk> .
+
+<http://wembrewind.live/ex#Work_LivingAfterMidnight_c2f04756> schema1:sameAs <https://www.wikidata.org/wiki/Q4349119> .
+
+<http://wembrewind.live/ex#Work_LoveReignOErMe_e2318c2e> schema1:sameAs <https://www.wikidata.org/wiki/Q2531425> .
+
+<http://wembrewind.live/ex#Work_Loverboy_ccf61ac6_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1872480> .
+
+<http://wembrewind.live/ex#Work_Maneater_59e765fb> schema1:sameAs <https://www.wikidata.org/wiki/Q1143166> ;
+    schema1:video <http://wembrewind.live/ex#Work_Maneater_59e765fb_YT_yRYFKcMa_Ek> .
+
+<http://wembrewind.live/ex#Work_MessageInABottle_d4bbeea9> schema1:identifier <http://wembrewind.live/ex#Work_MessageInABottle_d4bbeea9_prop_P6218_27643505> ;
+    schema1:sameAs <https://genius.com/The-police-message-in-a-bottle-lyrics>,
+        <https://www.wikidata.org/wiki/Q2469156> ;
+    schema1:video <http://wembrewind.live/ex#Work_MessageInABottle_d4bbeea9_YT_MbXWrmQW-OE> .
+
+<http://wembrewind.live/ex#Work_MessageOfLove_43dd26dc_2> schema1:sameAs <https://www.wikidata.org/wiki/Q46606663> .
+
+<http://wembrewind.live/ex#Work_MiddleOfTheRoad_ba390ae8> schema1:sameAs <https://www.wikidata.org/wiki/Q6841680> .
+
+<http://wembrewind.live/ex#Work_MissYou_be9728e0_2> schema1:sameAs <https://www.wikidata.org/wiki/Q2312462> ;
+    schema1:video <http://wembrewind.live/ex#Work_MissYou_be9728e0_2_YT_hic-dnps6MU> .
+
+<http://wembrewind.live/ex#Work_ModernLove_508a3dac_2> schema1:sameAs <https://www.wikidata.org/wiki/Q2577736> .
+
+<http://wembrewind.live/ex#Work_MoneyForNothing_d6f71ddf> schema1:sameAs <https://www.wikidata.org/wiki/Q1165404> ;
+    schema1:video <http://wembrewind.live/ex#Work_MoneyForNothing_d6f71ddf_YT_wTP2RUD_cL0> .
+
+<http://wembrewind.live/ex#Work_MyGeneration_a55b5d5b> schema1:sameAs <https://www.wikidata.org/wiki/Q8353114> .
+
+<http://wembrewind.live/ex#Work_MyGirl_e8f22db4> schema1:sameAs <https://www.wikidata.org/wiki/Q1541182> ;
+    schema1:video <http://wembrewind.live/ex#Work_MyGirl_e8f22db4_YT_y3KJ7d2qBoA> .
+
+<http://wembrewind.live/ex#Work_NewAttitude_f2d275ad_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1430032> .
+
+<http://wembrewind.live/ex#Work_OnlyLoveCanBreakYourHeart_8558d07e> schema1:sameAs <https://www.wikidata.org/wiki/Q3352752> .
+
+<http://wembrewind.live/ex#Work_OnlyWhenYouLeave_ab26cb3a> schema1:sameAs <https://www.wikidata.org/wiki/Q7094274> .
+
+<http://wembrewind.live/ex#Work_OutOfTouch_937a13f3> schema1:sameAs <https://www.wikidata.org/wiki/Q1305203> ;
+    schema1:video <http://wembrewind.live/ex#Work_OutOfTouch_937a13f3_YT_0fZJfQhABro> .
+
+<http://wembrewind.live/ex#Work_OverTheRainbow_f8217125_2> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Judy_Garland_Over_the_Rainbow_2.jpg> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q161402> .
+
+<http://wembrewind.live/ex#Work_Overkill_23300222_2> schema1:sameAs <https://www.wikidata.org/wiki/Q2042343> ;
+    schema1:video <http://wembrewind.live/ex#Work_Overkill_23300222_2_YT_RY7S6EgSlCI> .
+
+<http://wembrewind.live/ex#Work_Paranoid_7949591a_2> schema1:sameAs <https://www.wikidata.org/wiki/Q910912> .
+
+<http://wembrewind.live/ex#Work_PinballWizard_6ef8cd26> schema1:sameAs <https://www.wikidata.org/wiki/Q2321342> .
+
+<http://wembrewind.live/ex#Work_Powderfinger_e4de49b8> schema1:sameAs <https://www.wikidata.org/wiki/Q3756063> .
+
+<http://wembrewind.live/ex#Work_RadioGaGa_2c76fe20_2> schema1:sameAs <https://www.wikidata.org/wiki/Q605031> .
+
+<http://wembrewind.live/ex#Work_RatTrap_a09a4c84_2> schema1:sameAs <https://www.wikidata.org/wiki/Q3420006> .
+
+<http://wembrewind.live/ex#Work_ReachOutAndTouchSomebodySHand_d76165e1_2> schema1:sameAs <https://www.wikidata.org/wiki/Q7300182> .
+
+<http://wembrewind.live/ex#Work_ReachOutILlBeThere_f82341b9_2> schema1:sameAs <https://www.wikidata.org/wiki/Q2334683> .
+
+<http://wembrewind.live/ex#Work_RebelRebel_dc6d909d_2> schema1:image <https://commons.wikimedia.org/wiki/Special:FilePath/Rebel_Rebel_by_David_Bowie_UK_vinyl_pressing.png> ;
+    schema1:sameAs <https://www.wikidata.org/wiki/Q2190364> .
+
+<http://wembrewind.live/ex#Work_Refugee_df6f6edd_2> schema1:sameAs <https://www.wikidata.org/wiki/Q7307640> .
+
+<http://wembrewind.live/ex#Work_Revolution_fc6e50dd_2> schema1:sameAs <https://www.wikidata.org/wiki/Q2619535> .
+
+<http://wembrewind.live/ex#Work_RockAndRoll_d47cdd1d> schema1:sameAs <https://www.wikidata.org/wiki/Q2331674> .
+
+<http://wembrewind.live/ex#Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306> schema1:sameAs <https://www.wikidata.org/wiki/Q56070897> .
+
+<http://wembrewind.live/ex#Work_RockinAllOverTheWorld_5b31460f_2> schema1:identifier <http://wembrewind.live/ex#Work_RockinAllOverTheWorld_5b31460f_2_prop_P5241_69582449> ;
+    schema1:sameAs <https://www.songfacts.com/facts/electric-light-orchestra/all-over-the-world>,
+        <https://www.wikidata.org/wiki/Q661375> .
+
+<http://wembrewind.live/ex#Work_Roxanne_0ddba90a> schema1:sameAs <https://www.wikidata.org/wiki/Q1631268> .
+
+<http://wembrewind.live/ex#Work_SaveAPrayer_604f7422> schema1:sameAs <https://www.wikidata.org/wiki/Q2413614> ;
+    schema1:video <http://wembrewind.live/ex#Work_SaveAPrayer_604f7422_YT_6Uxc9eFcZyM> .
+
+<http://wembrewind.live/ex#Work_ShakeMeWakeMeWhenItSOver_29237a79> schema1:sameAs <https://www.wikidata.org/wiki/Q2560236> .
+
+<http://wembrewind.live/ex#Work_SlaveToLove_01cf29f1> schema1:sameAs <https://www.wikidata.org/wiki/Q12718436> .
+
+<http://wembrewind.live/ex#Work_Solid_552d2380> schema1:sameAs <https://www.wikidata.org/wiki/Q2298769> .
+
+<http://wembrewind.live/ex#Work_StairwayToHeaven_968ee3c5_2> schema1:sameAs <https://www.wikidata.org/wiki/Q192023> ;
+    schema1:video <http://wembrewind.live/ex#Work_StairwayToHeaven_968ee3c5_2_YT_iXQUu5Dti4g> .
+
+<http://wembrewind.live/ex#Work_StateOfShock_8e0f121d_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1969529> .
+
+<http://wembrewind.live/ex#Work_StateOfTheHeart_5f9be140_2> schema1:sameAs <https://www.wikidata.org/wiki/Q7603829> .
+
+<http://wembrewind.live/ex#Work_StirItUp_fa22c5e3> schema1:sameAs <https://www.wikidata.org/wiki/Q2350318> .
+
+<http://wembrewind.live/ex#Work_StopYourSobbing_9533d2bf> schema1:sameAs <https://www.wikidata.org/wiki/Q17038992> .
+
+<http://wembrewind.live/ex#Work_SugarMountain_36ab6f4c_2> schema1:sameAs <https://www.wikidata.org/wiki/Q7634881> .
+
+<http://wembrewind.live/ex#Work_SultansOfSwing_8626823c> schema1:sameAs <https://www.wikidata.org/wiki/Q2270916> .
+
+<http://wembrewind.live/ex#Work_SummerOf69_9604422e_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1472791> ;
+    schema1:video <http://wembrewind.live/ex#Work_SummerOf69_9604422e_2_YT_9f06QZCVUHg> .
+
+<http://wembrewind.live/ex#Work_SundayBloodySunday_dc2c1143_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1779491> .
+
+<http://wembrewind.live/ex#Work_SurfinUSA_537d49de_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1089109> .
+
+<http://wembrewind.live/ex#Work_TeachYourChildren_ea98da58> schema1:sameAs <https://www.wikidata.org/wiki/Q7691171> ;
+    schema1:video <http://wembrewind.live/ex#Work_TeachYourChildren_ea98da58_YT_EkaKwXddT_I> .
+
+<http://wembrewind.live/ex#Work_TearsAreNotEnough_b78023a3> schema1:sameAs <https://www.wikidata.org/wiki/Q746270> .
+
+<http://wembrewind.live/ex#Work_ThatSTheWayLoveIs_431780d2> schema1:sameAs <https://www.wikidata.org/wiki/Q7711118> .
+
+<http://wembrewind.live/ex#Work_TheGreenManalishiWithTheTwoProngCrown_784d31f1> schema1:sameAs <https://www.wikidata.org/wiki/Q107222245> .
+
+<http://wembrewind.live/ex#Work_TheNeedleAndTheDamageDone_6d0d3f75_2> schema1:sameAs <https://www.wikidata.org/wiki/Q3136771> .
+
+<http://wembrewind.live/ex#Work_TheReflex_50ec521b> schema1:sameAs <https://www.wikidata.org/wiki/Q1138861> .
+
+<http://wembrewind.live/ex#Work_TheRiddle_b5c6086c> schema1:sameAs <https://www.wikidata.org/wiki/Q1483257> .
+
+<http://wembrewind.live/ex#Work_TheSkyIsCrying_ea9996dc> schema1:sameAs <https://www.wikidata.org/wiki/Q2414277> .
+
+<http://wembrewind.live/ex#Work_TheWaiting_dd9f2a88_2> schema1:sameAs <https://www.wikidata.org/wiki/Q7773222> .
+
+<http://wembrewind.live/ex#Work_TheWayYouDoTheThingsYouDo_44ddc0a7_2> schema1:sameAs <https://www.wikidata.org/wiki/Q2268630> .
+
+<http://wembrewind.live/ex#Work_True_022cacb2_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1605038> .
+
+<http://wembrewind.live/ex#Work_Tvc15_126ed430> schema1:sameAs <https://www.wikidata.org/wiki/Q2577751> .
+
+<http://wembrewind.live/ex#Work_Vienna_33826c32> schema1:sameAs <https://www.wikidata.org/wiki/Q9304410> ;
+    schema1:video <http://wembrewind.live/ex#Work_Vienna_33826c32_YT_xJeWySiuq1I> .
+
+<http://wembrewind.live/ex#Work_WallsComeTumblingDown_2f64618a> schema1:sameAs <https://www.wikidata.org/wiki/Q20202040> .
+
+<http://wembrewind.live/ex#Work_WeAreTheChampions_0b3da969_2> schema1:sameAs <https://www.wikidata.org/wiki/Q238564> .
+
+<http://wembrewind.live/ex#Work_WeAreTheWorld_0b9a2e1d_2> schema1:sameAs <https://www.wikidata.org/wiki/Q130464783> .
+
+<http://wembrewind.live/ex#Work_WeWillRockYou_3623f3af_2> schema1:sameAs <https://www.wikidata.org/wiki/Q326487> .
+
+<http://wembrewind.live/ex#Work_WhatYouNeed_5e27c4a3_2> schema1:sameAs <https://www.wikidata.org/wiki/Q7991493> .
+
+<http://wembrewind.live/ex#Work_WhenTheShipComesIn_e393936f> schema1:sameAs <https://www.wikidata.org/wiki/Q2259987> .
+
+<http://wembrewind.live/ex#Work_WhiteRoom_7549fd84_2> schema1:sameAs <https://www.wikidata.org/wiki/Q3122019> ;
+    schema1:video <http://wembrewind.live/ex#Work_WhiteRoom_7549fd84_2_YT_V5BF1V1pbTs> .
+
+<http://wembrewind.live/ex#Work_WhoDoYouLove_4f19a475_2> schema1:sameAs <https://www.wikidata.org/wiki/Q4019600> .
+
+<http://wembrewind.live/ex#Work_WholeLottaLove_36df44f5_2> schema1:sameAs <https://www.wikidata.org/wiki/Q643423> .
+
+<http://wembrewind.live/ex#Work_WhyCanTWeLiveTogether_8bae3d24_2> schema1:sameAs <https://www.wikidata.org/wiki/Q7997740> .
+
+<http://wembrewind.live/ex#Work_WonTGetFooledAgain_f00616af_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1754167> .
+
+<http://wembrewind.live/ex#Work_WouldnTItBeGood_6a8be284_2> schema1:sameAs <https://www.wikidata.org/wiki/Q1319400> .
+
+<http://wembrewind.live/ex#Work_WouldnTItBeNice_8d9c97e9_2> schema1:sameAs <https://www.wikidata.org/wiki/Q919198> .
+
+<http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e> schema1:sameAs <https://www.wikidata.org/wiki/Q3432165> ;
+    schema1:video <http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e_YT_3dOx510kyOs>,
+        <http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e_YT_h9rU5gHcsAw> .
+
+<http://wembrewind.live/ex#Work_YouReTheBestThing_318c96a9_2> schema1:sameAs <https://www.wikidata.org/wiki/Q20202039> .
+
+<http://wembrewind.live/ex#Work_YouVeGotAnotherThingComin_24f7f4ea> schema1:sameAs <https://www.wikidata.org/wiki/Q2268474> .
+
+<http://wembrewind.live/ex#Work_YourLoveIsKing_89d27ad0> schema1:sameAs <https://www.wikidata.org/wiki/Q4053479> ;
+    schema1:video <http://wembrewind.live/ex#Work_YourLoveIsKing_89d27ad0_YT_k1ljpLQ1V6Y> .
+
+<http://wembrewind.live/ex#AdamAnt_prop_P2373_60803500> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Adam-ant" .
+
+<http://wembrewind.live/ex#AdamAnt_prop_P5287_80061164> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "adam-ant" .
+
+<http://wembrewind.live/ex#AdamAnt_prop_P6351_69655630> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "67857" .
+
+<http://wembrewind.live/ex#AshfordSimpson_prop_P5287_7384065> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "ashford-simpson" .
+
+<http://wembrewind.live/ex#BillyOcean_prop_P5287_58528388> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "billy-ocean" .
+
+<http://wembrewind.live/ex#BlackSabbath_prop_P2373_11787129> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Black-sabbath" .
+
+<http://wembrewind.live/ex#BobDylan_prop_P2373_19589627> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Bob-dylan" .
+
+<http://wembrewind.live/ex#BobDylan_prop_P5287_90105983> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "bob-dylan" .
+
+<http://wembrewind.live/ex#BobDylan_prop_P6351_79674976> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "181" .
+
+<http://wembrewind.live/ex#BrianMay_prop_P2373_22612436> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Brian-may" .
+
+<http://wembrewind.live/ex#BrianMay_prop_P6351_55166767> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "16631" .
+
+<http://wembrewind.live/ex#BryanAdams_prop_P2373_70705807> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Bryan-adams" .
+
+<http://wembrewind.live/ex#BryanAdams_prop_P6351_79197440> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "32823" .
+
+<http://wembrewind.live/ex#BryanFerry_prop_P2373_43333642> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Bryan-ferry" .
+
+<http://wembrewind.live/ex#BryanFerry_prop_P5287_67036615> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "bryan-ferry" .
+
+<http://wembrewind.live/ex#BryanFerry_prop_P6351_498637> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "204913" .
+
+<http://wembrewind.live/ex#CrosbyStillsNashYoung_prop_P2373_79739753> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Crosby-stills-nash-and-young" .
+
+<http://wembrewind.live/ex#CrosbyStillsNash_prop_P2373_30149194> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Crosby-stills-and-nash" .
+
+<http://wembrewind.live/ex#DarylHallJohnOates_prop_P2373_30501715> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Hall-and-oates" .
+
+<http://wembrewind.live/ex#DarylHallJohnOates_prop_P5287_15047867> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "daryl-hall-john-oates" .
+
+<http://wembrewind.live/ex#DavidBowie_prop_P2373_2213344> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "David-bowie" .
+
+<http://wembrewind.live/ex#DavidBowie_prop_P5287_66868988> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "david-bowie" .
+
+<http://wembrewind.live/ex#DavidBowie_prop_P6351_87810513> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "9534" .
+
+<http://wembrewind.live/ex#DavidGilmour_prop_P2373_27143824> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "David-gilmour" .
+
+<http://wembrewind.live/ex#DavidRuffin_prop_P2373_65790015> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "David-ruffin" .
+
+<http://wembrewind.live/ex#DavidRuffin_prop_P6351_65790193> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "7037" .
+
+<http://wembrewind.live/ex#DireStraits_prop_P2373_73743709> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Dire-straits" .
+
+<http://wembrewind.live/ex#DireStraits_prop_P5287_25660612> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "dire-straits" .
+
+<http://wembrewind.live/ex#DuranDuran_prop_P2373_93088836> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Duran-duran" .
+
+<http://wembrewind.live/ex#EddieKendricks_prop_P2373_38734293> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Eddie-kendricks" .
+
+<http://wembrewind.live/ex#EddieKendricks_prop_P6351_79947558> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "144365" .
+
+<http://wembrewind.live/ex#EltonJohn_prop_P2373_97908933> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Elton-john" .
+
+<http://wembrewind.live/ex#EltonJohn_prop_P5287_32967513> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "elton-john" .
+
+<http://wembrewind.live/ex#EltonJohn_prop_P6351_19773686> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "560" .
+
+<http://wembrewind.live/ex#ElvisCostello_prop_P2373_62188673> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Elvis-costello" .
+
+<http://wembrewind.live/ex#ElvisCostello_prop_P5287_97451565> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "elvis-costello" .
+
+<http://wembrewind.live/ex#ElvisCostello_prop_P6351_98487254> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "24308" .
+
+<http://wembrewind.live/ex#EricClapton_prop_P5287_98954467> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "eric-clapton" .
+
+<http://wembrewind.live/ex#FreddieMercury_prop_P2373_68664250> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Freddie-mercury" .
+
+<http://wembrewind.live/ex#FreddieMercury_prop_P5287_33731282> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "freddie-mercury" .
+
+<http://wembrewind.live/ex#FreddieMercury_prop_P6351_85505662> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "60493" .
+
+<http://wembrewind.live/ex#HowardJones_prop_P2373_97244533> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Howard-jones" .
+
+<http://wembrewind.live/ex#HowardJones_prop_P5287_52300266> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "howard-jones" .
+
+<http://wembrewind.live/ex#JoanBaez_prop_P2373_67311080> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Joan-baez" .
+
+<http://wembrewind.live/ex#JoanBaez_prop_P5287_32551590> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "joan-baez" .
+
+<http://wembrewind.live/ex#JoanBaez_prop_P6351_39432921> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "37184" .
+
+<http://wembrewind.live/ex#JudasPriest_prop_P2373_99452748> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Judas-priest" .
+
+<http://wembrewind.live/ex#KeithRichards_prop_P2373_97263026> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Keith-richards" .
+
+<http://wembrewind.live/ex#KeithRichards_prop_P5287_2126077> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "keith-richards" .
+
+<http://wembrewind.live/ex#KeithRichards_prop_P6351_99572247> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "52212" .
+
+<http://wembrewind.live/ex#KennyLoggins_prop_P2373_79891001> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Kenny-loggins" .
+
+<http://wembrewind.live/ex#Madonna_prop_P2373_65959788> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Madonna" .
+
+<http://wembrewind.live/ex#Madonna_prop_P5287_65253259> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "madonna" .
+
+<http://wembrewind.live/ex#Madonna_prop_P6351_50618089> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "276" .
+
+<http://wembrewind.live/ex#NeilYoung_prop_P2373_2735984> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Neil-young" .
+
+<http://wembrewind.live/ex#NikKershaw_prop_P2373_16703204> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Nik-kershaw" .
+
+<http://wembrewind.live/ex#NikKershaw_prop_P6351_59184691> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "354486" .
+
+<http://wembrewind.live/ex#PattiLabelle_prop_P2373_53759606> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Patti-labelle" .
+
+<http://wembrewind.live/ex#PattiLabelle_prop_P6351_67032053> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "1146" .
+
+<http://wembrewind.live/ex#PaulMccartney_prop_P2373_93155383> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Paul-mccartney" .
+
+<http://wembrewind.live/ex#PaulMccartney_prop_P6351_96205416> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "1601" .
+
+<http://wembrewind.live/ex#PaulYoung_prop_P2373_40734048> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Paul-young" .
+
+<http://wembrewind.live/ex#PhilCollins_prop_P2373_62838005> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Phil-collins" .
+
+<http://wembrewind.live/ex#PhilCollins_prop_P6351_15061841> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "3927" .
+
+<http://wembrewind.live/ex#Queen_prop_P2373_36409118> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Queen" .
+
+<http://wembrewind.live/ex#RickSpringfield_prop_P2373_44639644> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Rick-springfield" .
+
+<http://wembrewind.live/ex#RickSpringfield_prop_P6351_31672053> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "195363" .
+
+<http://wembrewind.live/ex#RobertPlant_prop_P2373_22368250> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Robert-plant" .
+
+<http://wembrewind.live/ex#RobertPlant_prop_P6351_16494487> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "12999" .
+
+<http://wembrewind.live/ex#RonnieWood_prop_P2373_38453130> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Ronnie-wood" .
+
+<http://wembrewind.live/ex#RonnieWood_prop_P6351_89235205> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "386840" .
+
+<http://wembrewind.live/ex#RunDMC_prop_P2373_497319> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Run-dmc" .
+
+<http://wembrewind.live/ex#Sade_prop_P2373_46707602> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Sade" .
+
+<http://wembrewind.live/ex#SpandauBallet_prop_P2373_82098567> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Spandau-ballet" .
+
+<http://wembrewind.live/ex#SpandauBallet_prop_P5287_57781880> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "spandau-ballet" .
+
+<http://wembrewind.live/ex#StatusQuo_prop_P2373_35851071> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Status-quo" .
+
+<http://wembrewind.live/ex#Sting_prop_P2373_68104611> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Sting" .
+
+<http://wembrewind.live/ex#Sting_prop_P6351_30237597> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "679" .
+
+<http://wembrewind.live/ex#TheBeachBoys_prop_P2373_67138700> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "The-beach-boys" .
+
+<http://wembrewind.live/ex#TheBeachBoys_prop_P5287_79925448> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "the-beach-boys" .
+
+<http://wembrewind.live/ex#TheBoomtownRats_prop_P2373_91699445> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "The-boomtown-rats" .
+
+<http://wembrewind.live/ex#TheCars_prop_P2373_2313358> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "The-cars" .
+
+<http://wembrewind.live/ex#TheCars_prop_P6351_45967714> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "90849" .
+
+<http://wembrewind.live/ex#TheWho_prop_P2373_83838751> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "The-who" .
+
+<http://wembrewind.live/ex#ThomasDolby_prop_P2373_92310548> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Thomas-dolby" .
+
+<http://wembrewind.live/ex#ThompsonTwins_prop_P2373_62110772> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Thompson-twins" .
+
+<http://wembrewind.live/ex#ThompsonTwins_prop_P5287_52301287> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "thompson-twins" .
+
+<http://wembrewind.live/ex#TinaTurner_prop_P2373_15363937> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Tina-turner" .
+
+<http://wembrewind.live/ex#TinaTurner_prop_P5287_35449336> a schema1:PropertyValue ;
+    schema1:propertyID "P5287" ;
+    schema1:value "tina-turner" .
+
+<http://wembrewind.live/ex#TinaTurner_prop_P6351_56988100> a schema1:PropertyValue ;
+    schema1:propertyID "P6351" ;
+    schema1:value "28334" .
+
+<http://wembrewind.live/ex#U2_prop_P2373_78989832> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "U2" .
+
+<http://wembrewind.live/ex#UsaForAfrica_prop_P2373_76053809> a schema1:PropertyValue ;
+    schema1:propertyID "P2373" ;
+    schema1:value "Usa-for-africa" .
+
+<http://wembrewind.live/ex#Work_AmazingGrace_a5393197_prop_P5241_15702552> a schema1:PropertyValue ;
+    schema1:propertyID "P5241" ;
+    schema1:value "traditional/amazing-grace" .
+
+<http://wembrewind.live/ex#Work_Bad_62d0a051_YT_LCdltGg4EzM> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=LCdltGg4EzM> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=LCdltGg4EzM> .
+
+<http://wembrewind.live/ex#Work_BohemianRhapsody_41c94a08_YT_fJ9rUzIMcZQ> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=fJ9rUzIMcZQ> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=fJ9rUzIMcZQ> .
+
+<http://wembrewind.live/ex#Work_CaribbeanQueen_d4d2cc6d_YT_uxX2gA18grk> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=uxX2gA18grk> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=uxX2gA18grk> .
+
+<http://wembrewind.live/ex#Work_CutsLikeAKnife_aa289c4d_YT_6VZhSkREYBc> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=6VZhSkREYBc> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=6VZhSkREYBc> .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_YT_Zc8TYsYb5i0> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=Zc8TYsYb5i0> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=Zc8TYsYb5i0> .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_prop_P5241_56510414> a schema1:PropertyValue ;
+    schema1:propertyID "P5241" ;
+    schema1:value "band-aid/do-they-know-its-christmas" .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_prop_P5241_65921839> a schema1:PropertyValue ;
+    schema1:propertyID "P5241" ;
+    schema1:value "1579" .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_prop_P5241_94658583> a schema1:PropertyValue ;
+    schema1:propertyID "P5241" ;
+    schema1:value "band-aid-30/do-they-know-its-christmas" .
+
+<http://wembrewind.live/ex#Work_DonTChange_f0e75ada_2_YT_sLm3Khusq_8> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=sLm3Khusq_8> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=sLm3Khusq_8> .
+
+<http://wembrewind.live/ex#Work_DonTGoBreakingMyHeart_f8d529ad_2_YT_z0qW9P-uYfM> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=z0qW9P-uYfM> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=z0qW9P-uYfM> .
+
+<http://wembrewind.live/ex#Work_Drive_4cbcd04d_2_YT_xuZA6qiJVfU> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=xuZA6qiJVfU> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=xuZA6qiJVfU> .
+
+<http://wembrewind.live/ex#Work_GoodVibrations_ede10e9a_YT_apBWI6xrbLY> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=apBWI6xrbLY> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=apBWI6xrbLY> .
+
+<http://wembrewind.live/ex#Work_HammerToFall_1e807fa4_2_YT_JU5LMG3WFBw> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=JU5LMG3WFBw> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=JU5LMG3WFBw> .
+
+<http://wembrewind.live/ex#Work_Holiday_1c03c879_YT_5Rswx2Z7SDw> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=5Rswx2Z7SDw> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=5Rswx2Z7SDw> .
+
+<http://wembrewind.live/ex#Work_IDonTLikeMondays_d998a80c_YT_-Kobdb37Cwc> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=-Kobdb37Cwc> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=-Kobdb37Cwc> .
+
+<http://wembrewind.live/ex#Work_IMStillStanding_4ae45d33_YT_ZHwVBirqD2s> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=ZHwVBirqD2s> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=ZHwVBirqD2s> .
+
+<http://wembrewind.live/ex#Work_Imagine_517ff96c_2_YT_rAn-AWXtHv0> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=rAn-AWXtHv0> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=rAn-AWXtHv0> .
+
+<http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea_YT_YkADj0TPrJA> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=YkADj0TPrJA> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=YkADj0TPrJA> .
+
+<http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea_prop_P6218_82327223> a schema1:PropertyValue ;
+    schema1:propertyID "P6218" ;
+    schema1:value "Phil-collins-in-the-air-tonight-lyrics" .
+
+<http://wembrewind.live/ex#Work_JustWhatINeeded_f5128e1e_2_YT_gvy2yqUHLLg> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=gvy2yqUHLLg> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=gvy2yqUHLLg> .
+
+<http://wembrewind.live/ex#Work_LetItBe_ef5b9074_YT_atLK2RIZzWk> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=atLK2RIZzWk> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=atLK2RIZzWk> .
+
+<http://wembrewind.live/ex#Work_Maneater_59e765fb_YT_yRYFKcMa_Ek> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=yRYFKcMa_Ek> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=yRYFKcMa_Ek> .
+
+<http://wembrewind.live/ex#Work_MessageInABottle_d4bbeea9_YT_MbXWrmQW-OE> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=MbXWrmQW-OE> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=MbXWrmQW-OE> .
+
+<http://wembrewind.live/ex#Work_MessageInABottle_d4bbeea9_prop_P6218_27643505> a schema1:PropertyValue ;
+    schema1:propertyID "P6218" ;
+    schema1:value "The-police-message-in-a-bottle-lyrics" .
+
+<http://wembrewind.live/ex#Work_MissYou_be9728e0_2_YT_hic-dnps6MU> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=hic-dnps6MU> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=hic-dnps6MU> .
+
+<http://wembrewind.live/ex#Work_MoneyForNothing_d6f71ddf_YT_wTP2RUD_cL0> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=wTP2RUD_cL0> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=wTP2RUD_cL0> .
+
+<http://wembrewind.live/ex#Work_MyGirl_e8f22db4_YT_y3KJ7d2qBoA> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=y3KJ7d2qBoA> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=y3KJ7d2qBoA> .
+
+<http://wembrewind.live/ex#Work_OutOfTouch_937a13f3_YT_0fZJfQhABro> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=0fZJfQhABro> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=0fZJfQhABro> .
+
+<http://wembrewind.live/ex#Work_Overkill_23300222_2_YT_RY7S6EgSlCI> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=RY7S6EgSlCI> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=RY7S6EgSlCI> .
+
+<http://wembrewind.live/ex#Work_RockinAllOverTheWorld_5b31460f_2_prop_P5241_69582449> a schema1:PropertyValue ;
+    schema1:propertyID "P5241" ;
+    schema1:value "electric-light-orchestra/all-over-the-world" .
+
+<http://wembrewind.live/ex#Work_SaveAPrayer_604f7422_YT_6Uxc9eFcZyM> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=6Uxc9eFcZyM> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=6Uxc9eFcZyM> .
+
+<http://wembrewind.live/ex#Work_StairwayToHeaven_968ee3c5_2_YT_iXQUu5Dti4g> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=iXQUu5Dti4g> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=iXQUu5Dti4g> .
+
+<http://wembrewind.live/ex#Work_SummerOf69_9604422e_2_YT_9f06QZCVUHg> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=9f06QZCVUHg> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=9f06QZCVUHg> .
+
+<http://wembrewind.live/ex#Work_TeachYourChildren_ea98da58_YT_EkaKwXddT_I> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=EkaKwXddT_I> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=EkaKwXddT_I> .
+
+<http://wembrewind.live/ex#Work_Vienna_33826c32_YT_xJeWySiuq1I> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=xJeWySiuq1I> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=xJeWySiuq1I> .
+
+<http://wembrewind.live/ex#Work_WhiteRoom_7549fd84_2_YT_V5BF1V1pbTs> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=V5BF1V1pbTs> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=V5BF1V1pbTs> .
+
+<http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e_YT_3dOx510kyOs> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=3dOx510kyOs> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=3dOx510kyOs> .
+
+<http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e_YT_h9rU5gHcsAw> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=h9rU5gHcsAw> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=h9rU5gHcsAw> .
+
+<http://wembrewind.live/ex#Work_YourLoveIsKing_89d27ad0_YT_k1ljpLQ1V6Y> a schema1:VideoObject ;
+    schema1:embedUrl <https://www.youtube.com/watch?v=k1ljpLQ1V6Y> ;
+    schema1:provider <https://www.youtube.com/> ;
+    schema1:url <https://www.youtube.com/watch?v=k1ljpLQ1V6Y> .
+

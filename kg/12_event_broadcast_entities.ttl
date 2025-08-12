@@ -1,6 +1,7 @@
 @prefix ex: <http://wembrewind.live/ex#> .
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 ex:BalletWithFreddieMercury a schema:Event ;
     schema:description "A spontaneous ballet during 'Hammer to Fall' performance involving Freddie Mercury and a BBC cameraman." ;
@@ -86,6 +87,7 @@ ex:LiveAid1985BroadcastWembley a schema:BroadcastEvent ;
     ex:wasBroadcastPreserved true .
 
 ex:LiveAid1985_Philadelphia a schema:MusicEvent ;
+    owl:sameAs <https://musicbrainz.org/event/08657c50-71c6-4a3d-b7c4-3db6efbf07fd>, <https://www.wikidata.org/wiki/Q193740> ;
     schema:location ex:JFKStadium ;
     schema:name "Live Aid 1985 - Philadelphia" ;
     schema:recordedIn ex:LiveAid1985_Philadelphia_Broadcast .
@@ -103,6 +105,7 @@ ex:VisualHighlight a schema:DefinedTerm ;
     schema:name "Visual Highlight" .
 
 ex:LiveAid1985_Wembley a schema:MusicEvent ;
+    owl:sameAs <https://musicbrainz.org/event/08657c50-71c6-4a3d-b7c4-3db6efbf07fd> , <https://www.wikidata.org/wiki/Q193740> ;
     schema:location ex:WembleyStadium ;
     schema:name "Live Aid 1985 - Wembley" ;
     schema:recordedIn ex:LiveAid1985_Wembley_Broadcast ;
@@ -124,6 +127,7 @@ ex:LiveAid1985Broadcast a schema:BroadcastEvent ;
     ex:usedBroadcastInfrastructure ex:SatelliteNetwork .
 
 ex:LiveAid1985 a schema:MusicEvent ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q193740> , <https://musicbrainz.org/event/8e0ff16a-757f-4e16-9877-4c4131621a8b>, <https://en.wikipedia.org/wiki/Live_Aid> ;
     schema:about "Famine Relief in Ethiopia",
         "Humanitarian relief" ;
     schema:description "A benefit concert to raise funds for humanitarian relief efforts.",

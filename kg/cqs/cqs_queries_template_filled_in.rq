@@ -116,40 +116,34 @@ GROUP BY ?eventName
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-SELECT DISTINCT ?artistName ?description ?isIconic (GROUP_CONCAT(DISTINCT ?songName; separator=", ") AS ?songsPerformed)
+SELECT DISTINCT ?eventName ?iconicPerformanceDescription
 WHERE {
     ?performance a mm:LivePerformance ;
                  schema:isPartOf ?event ;
-                 mm:isCreatedBy ?artist ;
-                 mm:creates ?song ;
-    			 ex:isIconic ?isIconic ;
-                 schema:description ?description .
-    ?artist schema:name ?artistName .
-    OPTIONAL {?song schema:itemListElement ?songEntry .
-    			?songEntry schema:name ?songName .}
+    			 ex:isIconic ?isIconic .
+    ?performance schema:description ?iconicPerformanceDescription .
+    ?event schema:name ?eventName .
     FILTER(?event =   ex:LiveAid1985)
     FILTER(?isIconic = true)
 }
-GROUP BY ?artistName ?description ?isIconic
 
 
 #CQ-ID:CQ-E10 Which [Song] did [Artist] perform at [Event]?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-SELECT DISTINCT ?artistname (GROUP_CONCAT(DISTINCT ?performedSong; separator=", ") AS ?songsPerformed)
+SELECT (GROUP_CONCAT(DISTINCT ?workName; separator=", ") AS ?allWorkName)
 WHERE {
     ?performance a mm:LivePerformance ;
                  schema:isPartOf ?event ;
-                 mm:isCreatedBy ?artist ;
-                 mm:creates ?setlist .
+    			 ex:isIconic ?isIconic .
+    ?performance mm:performedWork ?work .
+    ?performance schema:performer ?artist .
+    ?work schema:name ?workName .
     FILTER(?event =   ex:LiveAid1985)
-    FILTER(?artist =   ex:Queen)
-    ?artist schema:name ?artistname .
-    ?setlist schema:itemListElement ?items .
-    ?items schema:name ?performedSong .
+    FILTER(?artist = ex:Queen)
 }
-GROUP BY ?artistname
+
 
 
 #CQ-ID:CQ-E11 When did [Artist] debut?,[Artist] debuted in [Year] with a performance or release in [City/Country].

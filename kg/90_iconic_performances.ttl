@@ -1,0 +1,48 @@
+@prefix ex:     <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix mm:     <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+# Wembley (London)
+
+ex:Queen_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "Queen’s 20-minute masterclass—‘Bohemian Rhapsody’, ‘Radio Ga Ga’, and Freddie’s ‘Ay-Oh’ call-and-response—widely cited as the standout set of Live Aid."@en .
+
+ex:U2_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "U2 stretch ‘Bad’; Bono jumps into the crowd and dances with a fan—often described as the band’s breakout TV moment."@en .
+
+ex:DavidBowie_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "Bowie’s ‘Heroes’ and the decision to cut a song to air the famine appeal footage—credited with catalysing donations."@en .
+
+ex:DireStraits_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "Dire Straits with Sting on ‘Money for Nothing’—a zeitgeist moment of 1985 performed live at Wembley."@en .
+
+ex:TheWho_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "The Who return to the stage; a mid-set power cut during ‘My Generation’ only adds to the legend."@en .
+
+ex:PaulMcCartney_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "‘Let It Be’ begins with a dead mic; Wembley and an all-star chorus (Bowie, Townshend, Moyet…) carry the sing-along rescue."@en .
+
+# Philadelphia (JFK)
+
+ex:MickJagger_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "Mick Jagger & Tina Turner tear through ‘State of Shock’ / ‘It’s Only Rock ’n’ Roll’; high-voltage duet etched into Live Aid lore."@en .
+
+ex:TinaTurner_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "Tina Turner’s Philadelphia appearance, including the famed Jagger duet—ferocious energy and star power on global TV."@en .
+
+ex:PhilCollins_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "The only artist to play both Wembley and Philadelphia the same day (by Concorde); also drums for Clapton and Led Zeppelin."@en .
+
+ex:Madonna_LiveAid1985_Performance
+  ex:isIconic true ;
+  schema:description "Career-defining set in Philadelphia; quips about keeping the jacket on, then delivers a hit-packed performance."@en .
