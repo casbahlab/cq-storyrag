@@ -6,14 +6,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX oa: <http://www.w3.org/ns/oa#>
 PREFIX dct: <http://purl.org/dc/terms/>
-SELECT ?eventName ?eventDescription
+SELECT ?eventName ?text ?url
 WHERE {
     BIND (ex:LiveAid1985 AS ?event)
     ?annotation a oa:Annotation ;
            dct:subject ex:Background ;
            oa:hasTarget ?event ;
            oa:hasBody ?background .
-    ?background schema:description ?eventDescription .
+    ?background schema:citation ?url .
+    ?background schema:description ?text .
     ?event schema:name ?eventName .
 }
 
@@ -26,14 +27,15 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX oa: <http://www.w3.org/ns/oa#>
 PREFIX dct: <http://purl.org/dc/terms/>
-SELECT ?eventName ?eventDescription
+SELECT ?eventName ?text ?url
 WHERE {
     BIND (ex:LiveAid1985 AS ?event)
     ?annotation a oa:Annotation ;
            dct:subject ex:Background ;
            oa:hasTarget ?event ;
            oa:hasBody ?background .
-    ?background schema:description ?eventDescription .
+    ?background schema:citation ?url .
+    ?background schema:description ?text .
     ?event schema:name ?eventName .
 }
 
@@ -41,35 +43,50 @@ WHERE {
 #CQ-ID:CQ-E3 Which [Artist] performed at [Event] held at [Venue]?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
-PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-SELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=", ") AS ?allPerformingArtists)
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?sourceUrl ?exactSelector ?refinedBy
 WHERE {
-    ?performance a schema:Event, mm:LivePerformance ;
-           schema:isPartOf ?event ;
-           schema:location ?venue ;
-           schema:performer ?artist .
+    BIND (ex:LiveAid1985 AS ?event)
+    BIND (ex:WembleyStadium AS ?venue)
+    ?annotation a oa:Annotation ;
+           dct:subject ex:Performances ;
+           schema:spatial ?venue ;
+           oa:hasTarget ?event ;
+           oa:hasBody ?background .
+    ?background oa:hasSource ?sourceUrl ;
+                oa:hasSelector ?secSel .
+    OPTIONAL {
+        ?secSel oa:refinedBy ?subSel .
+        ?secSel oa:exact ?exactSelector .
+        OPTIONAL { ?subSel oa:exact ?refinedBy }
+        OPTIONAL { ?subSel oa:start ?start ; oa:end ?end }
+      }
     ?event schema:name ?eventName .
-    ?artist schema:name ?artistName .
-    FILTER(?event =   ex:LiveAid1985)
-    FILTER(?venue = ex:WembleyStadium)
 }
-GROUP BY ?eventName
 
 
 #CQ-ID:CQ-E4 Which [Artist] performed during [Event]?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
-PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-SELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=", ") AS ?allPerformingArtists)
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?eventName ?url
 WHERE {
-    ?performance a schema:Event, mm:LivePerformance ;
-           schema:isPartOf ?event ;
-           schema:performer ?artist .
+    BIND (ex:LiveAid1985 AS ?event)
+    ?annotation a oa:Annotation ;
+           dct:subject ex:Performances ;
+           oa:hasTarget ?event ;
+           oa:hasBody ?background .
+    ?background schema:citation ?url .
     ?event schema:name ?eventName .
-    ?artist schema:name ?artistName .
-    FILTER(?event =   ex:LiveAid1985)
 }
-GROUP BY ?eventName
 
 #CQ-ID:CQ-E5 Which [City] or [Country] hosted [Event]?
 PREFIX ex: <http://wembrewind.live/ex#>
@@ -105,15 +122,23 @@ GROUP BY ?eventName
 
 
 #CQ-ID:CQ-E7 What role did television and media coverage play in [Event]?
-PREFIX schema: <http://schema.org/>
 PREFIX ex: <http://wembrewind.live/ex#>
-SELECT ?eventName ?description ?about
+PREFIX schema: <http://schema.org/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?eventName ?text ?url
 WHERE {
-  ?broadcastEvent a schema:BroadcastEvent ;
-                  schema:broadcastOfEvent   ex:LiveAid1985 ;
-                  schema:name ?eventName ;
-                  schema:description ?description ;
-                  schema:about ?about .
+    BIND (ex:LiveAid1985 AS ?event)
+    ?annotation a oa:Annotation ;
+           dct:subject ex:Broadcasts ;
+           oa:hasTarget ?event ;
+           oa:hasBody ?broadcast .
+    ?broadcast schema:citation ?url .
+    ?broadcast schema:description ?text .
+    ?event schema:name ?eventName .
 }
 
 
@@ -248,52 +273,63 @@ GROUP BY ?artistName
 #CQ-ID:CQ-E16 What enabled the global broadcast of [Event]?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
-PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?eventName ?enabler ?enablerLabel
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?eventName ?text ?url
 WHERE {
-    ?event ex:usedBroadcastInfrastructure|ex:wasBroadcastVia ?enabler .
+    BIND (ex:LiveAid1985 AS ?event)
+    ?annotation a oa:Annotation ;
+           dct:subject ex:Broadcasts ;
+           oa:hasTarget ?event ;
+           oa:hasBody ?broadcast .
+    ?broadcast schema:citation ?url .
+    ?broadcast schema:description ?text .
     ?event schema:name ?eventName .
-    OPTIONAL { ?enabler rdfs:label ?lbl1 }
-    OPTIONAL { ?enabler schema:name ?lbl2 }
-    BIND(STRAFTER(STR(?enabler), "#") AS ?fallback)
-    BIND(COALESCE(?lbl1, ?lbl2, ?fallback) AS ?enablerLabel)
-    FILTER(?event =   ex:LiveAid1985)
 }
-ORDER BY ?enablerLabel
 
 
 #CQ-ID:CQ-E17 What were the challenges in organizing [Event]?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
-PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?eventName ?challenge
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?eventName ?challengeText ?challengeUrl
 WHERE {
-    VALUES ?event {   ex:LiveAid1985 }
+    BIND (ex:LiveAid1985 AS ?event)
+    ?annotation a oa:Annotation ;
+           dct:subject ex:Challenge ;
+           oa:hasTarget ?event ;
+           oa:hasBody ?challenge .
+    ?challenge schema:citation ?challengeUrl .
+    ?challenge schema:description ?challengeText .
     ?event schema:name ?eventName .
-	?event ex:hasChallenge ?challenge .
 }
 
 
 #CQ-ID:CQ-E18 How did [Event] influence future benefit concerts?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
-PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-SELECT DISTINCT ?eventName ?inspiredEventName ?inspiredEventType ?inspiredEventDate ?inspiredCity ?inspiredCountryName
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?eventName ?text ?url
 WHERE {
-    ?event schema:name ?eventName ;
-           schema:description ?description ;
-           ex:inspiredEvent ?inspiredEvent .
-    OPTIONAL { ?inspiredEvent schema:name ?inspiredEventName . }
-    OPTIONAL { ?inspiredEvent a ?inspiredEventType . }
-    OPTIONAL { ?inspiredEvent schema:startDate ?inspiredEventDate . }
-    OPTIONAL { ?inspiredEvent schema:location ?inspiredLocation .
-    			?inspiredLocation schema:name ?inspiredCity .
-    			?inspiredLocation schema:containedInPlace ?inspiredCountry .
-        		?inspiredCountry schema:name ?inspiredCountryName .
-    			}
-    FILTER(?event =   ex:LiveAid1985)
+    BIND (ex:LiveAid1985 AS ?event)
+    ?annotation a oa:Annotation ;
+           dct:subject ex:Legacy ;
+           oa:hasTarget ?event ;
+           oa:hasBody ?legacy .
+    ?legacy schema:citation ?url .
+    ?legacy schema:description ?text .
+    ?event schema:name ?eventName .
 }
 
 
@@ -301,7 +337,7 @@ WHERE {
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 PREFIX schema: <http://schema.org/>
-SELECT DISTINCT ?artistName ?eventName ?reviewerName ?reviewText
+SELECT DISTINCT ?artistName ?eventName ?reviewerName ?reviewText ?url
 WHERE {
     ?performance schema:performer ?artist ;
                  schema:isPartOf|schema:isPartOf ?event .
@@ -312,6 +348,7 @@ WHERE {
         ?review schema:reviewBody ?reviewText .
         ?review schema:author ?reviewer .
         ?reviewer schema:name ?reviewerName .
+        ?review schema:url ?url
     }
     OPTIONAL {
         ?performance schema:comment ?audienceComment
@@ -324,15 +361,21 @@ WHERE {
 #CQ-ID:CQ-E20  How much money was raised by [Event]?,
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
-PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-SELECT DISTINCT ?eventName ?currency ?raisedAmountValue
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?eventName ?text ?url
 WHERE {
-    VALUES ?event {   ex:LiveAid1985 }
-    ?event ex:raisedAmount ?raisedAmount .
-    ?amount a schema:MonetaryAmount .
+    BIND (ex:LiveAid1985 AS ?event)
+    ?annotation a oa:Annotation ;
+           dct:subject ex:Fundraising ;
+           oa:hasTarget ?event ;
+           oa:hasBody ?fundraising .
+    ?fundraising schema:citation ?url .
+    ?fundraising schema:description ?text .
     ?event schema:name ?eventName .
-    OPTIONAL { ?amount schema:currency ?currency }
-    OPTIONAL { ?amount schema:value ?raisedAmountValue }
 }
 
 #CQ-ID:CQ-E21 Which [Organization] archived the broadcast of [Event]?
@@ -395,13 +438,17 @@ ORDER BY DESC(?preserved)
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
-SELECT ?performance ?reason
+SELECT ?artistName ?reason ?url
 WHERE {
+    BIND (ex:Queen as ?artist)
+    BIND (ex:LiveAid1985 as ?event)
     ?performance a mm:LivePerformance ;
-                 schema:isPartOf   ex:LiveAid1985 ;
-                 schema:performer   ex:Queen .
+                 schema:isPartOf   ?event ;
+                 schema:performer   ?artist .
+    ?artist schema:name ?artistName .
     ?review schema:itemReviewed ?performance .
     ?review schema:reviewBody ?reason .
+    ?review schema:url ?url .
 }
 
 #CQ-ID:CQ-E27 What creative milestones defined [Artist]’s career after [Event]?
@@ -585,6 +632,7 @@ WHERE {
 }
 GROUP BY ?artistName
 
+
 #CQ-ID:CQ-L19 What was the average length of [Event]?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
@@ -617,49 +665,43 @@ WHERE {
 #CQ-ID:CQ-L21 What facilitated the simultaneous global broadcast of [Event]?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
-PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?infrastructureName ?tech
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?eventName ?text ?url
 WHERE {
-  ?broadcast a schema:BroadcastEvent ;
-             schema:broadcastOfEvent   ex:LiveAid1985 ;
-             ex:usedBroadcastInfrastructure ?infrastructure ;
-             ex:distributedVia ?tech .
-  # Infrastructure label/name fallback
-  OPTIONAL { ?infrastructure rdfs:label ?infraLabel }
-  OPTIONAL { ?infrastructure schema:name ?infraNameRaw }
-  BIND(COALESCE(?infraLabel, ?infraNameRaw, STRAFTER(STR(?infrastructure), "#")) AS ?infrastructureName)
+    BIND (ex:LiveAid1985 AS ?event)
+    ?annotation a oa:Annotation ;
+           dct:subject ex:Satellite ;
+           oa:hasTarget ?event ;
+           oa:hasBody ?satellite .
+    ?satellite schema:citation ?url .
+    ?satellite schema:description ?text .
+    ?event schema:name ?eventName .
 }
-ORDER BY ?infrastructureName ?techName
 
 
 #CQ-ID:CQ-L22  How were [Performance] scheduled across the [Venue1] and [Venue2] during [Event]?
-PREFIX ex:     <http://wembrewind.live/ex#>
+PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
-PREFIX mm:     <https://w3id.org/polifonia/ontology/music-meta/>
-PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#>
-SELECT ?artistName ?venueDisplay ?performanceStartTime
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX oa: <http://www.w3.org/ns/oa#>
+PREFIX dct: <http://purl.org/dc/terms/>
+SELECT ?eventName ?text ?url
 WHERE {
-  BIND (ex:LiveAid1985 AS ?event)
-  VALUES ?venue { ex:WembleyStadium ex:JFKStadium }
-
-  ?performance a mm:LivePerformance ;
-               schema:isPartOf ?event ;
-               schema:performer ?artist ;
-               schema:location ?venue .
-
-  # Start time (pick whichever exists)
-  OPTIONAL { ?performance schema:startDateTime ?sdt }
-  OPTIONAL { ?performance schema:startDate ?sd }
-  OPTIONAL { ?performance schema:startTime ?st }
-  BIND(COALESCE(?sdt, ?sd, ?st) AS ?performanceStartTime)
-
-  OPTIONAL { ?artist schema:name ?artistName }
-  OPTIONAL { ?venue schema:name ?venueName }
-  OPTIONAL { ?venue rdfs:label ?venueLabel }
-  BIND(COALESCE(?venueName, ?venueLabel, STRAFTER(STR(?venue), "#")) AS ?venueDisplay)
+    BIND (ex:LiveAid1985 AS ?event)
+    ?annotation a oa:Annotation ;
+           dct:subject ex:Performances ;
+           oa:hasTarget ?event ;
+           oa:hasBody ?performances .
+    ?performances schema:citation ?url .
+    ?performances schema:description ?text .
+    ?event schema:name ?eventName .
 }
-ORDER BY ?performanceStartTime
 
 
 #CQ-ID:CQ-E28  What instruments were used in [Event]?
@@ -692,5 +734,44 @@ WHERE {
 ORDER BY ?instrumentName
 
 
+#CQ-ID:CQ-H-AF1 What are some notable facts about the music artist {artist}?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+SELECT DISTINCT ?artist ?songfactsUrl
+WHERE {
+  BIND (ex:Madonna AS ?artist)
+  ?artist a ?type ;
+          schema:sameAs ?songfactsUrl .
+  VALUES ?type { schema:MusicGroup schema:Person }
+  FILTER( STRSTARTS(LCASE(STR(?songfactsUrl)), "https://www.songfacts.com/facts") )
+}
 
 
+#CQ-ID:CQ-H-SF1 What are some notable facts about the songs by {artist}?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT DISTINCT ?artist ?songfactsUrl
+WHERE {
+  BIND (ex:Queen AS ?artist)
+  ?performance a mm:LivePerformance ;
+          schema:performer ?artist ;
+          mm:performedWork ?works .
+  ?works schema:sameAs ?songfactsUrl .
+  FILTER( STRSTARTS(LCASE(STR(?songfactsUrl)), "https://www.songfacts.com/facts") )
+}
+
+
+#CQ-ID:CQ-H-GS1 What are the lyrics to the songs performed by {artist}?
+PREFIX ex: <http://wembrewind.live/ex#>
+PREFIX schema: <http://schema.org/>
+PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
+SELECT DISTINCT ?artist ?songfactsUrl
+WHERE {
+  BIND (ex:Queen AS ?artist)
+  ?performance a mm:LivePerformance ;
+          schema:performer ?artist ;
+          mm:performedWork ?works .
+  ?works schema:sameAs ?songfactsUrl .
+  FILTER( STRSTARTS(LCASE(STR(?songfactsUrl)), "https://genius.com") )
+}

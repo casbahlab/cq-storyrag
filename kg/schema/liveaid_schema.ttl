@@ -126,6 +126,19 @@ ex:raisedAmount a owl:ObjectProperty ;
   rdfs:domain schema:Event ;
   rdfs:range schema:MonetaryAmount .
 
+ex:setList a owl:ObjectProperty ;
+    rdfs:label "set list" ;
+    rdfs:comment "Links a music performance to the list of works performed during that performance." ;
+    rdfs:domain mm:LivePerformance ;
+    rdfs:range schema:ItemList .
+
+
+ex:isOriginalMember a owl:DatatypeProperty ;
+    rdfs:label "is original member" ;
+    rdfs:comment "Boolean flag indicating whether the artist was an original founding member of a music group." ;
+    rdfs:domain <http://schema.org/MusicGroup> ;
+    rdfs:range xsd:boolean .
+
 ### Properties — artist/recording metadata
 ex:charitySingle a owl:DatatypeProperty ;
   rdfs:label "charity single" ;

@@ -92,9 +92,26 @@ ex:LiveAid1985_Philadelphia a schema:MusicEvent ;
     schema:name "Live Aid 1985 - Philadelphia" ;
     schema:recordedIn ex:LiveAid1985_Philadelphia_Broadcast .
 
-ex:RaisedAmount125k a schema:MonetaryAmount ;
-    schema:currency "USD" ;
-    schema:value 100000000.0 .
+# Total (GBP)
+ex:LiveAid1985_Raised_GBP_Total a schema:MonetaryAmount ;
+  schema:currency "GBP" ;
+  schema:value "150000000"^^xsd:decimal ;
+  schema:description "Estimated total raised (GBP)." ;
+  schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Fundraising> .
+
+# Day-of (GBP)
+ex:LiveAid1985_Raised_GBP_DayOf a schema:MonetaryAmount ;
+  schema:currency "GBP" ;
+  schema:value "45000000"^^xsd:decimal ;  # midpoint of £40–50m band
+  schema:description "Estimated raised on the day (GBP), midpoint of reported £40–£50m range." ;
+  schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Fundraising> .
+
+# Total (USD)
+ex:LiveAid1985_Raised_USD_Total a schema:MonetaryAmount ;
+  schema:currency "USD" ;
+  schema:value "127000000"^^xsd:decimal ;
+  schema:description "Estimated total raised (USD)." ;
+  schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Fundraising> .
 
 ex:SpontaneousAttribute a schema:DefinedTerm ;
     schema:description "Performed without prior planning or rehearsal." ;
@@ -154,12 +171,19 @@ ex:LiveAid1985 a schema:MusicEvent ;
         ex:LiveAid1985_Philadelphia,
         ex:LiveAid1985_Wembley ;
     ex:hadBroadcast ex:LiveAid1985Broadcast ;
-    ex:hasChallenge "Managing venues, schedules, and live broadcast posed logistical challenges.",
-        "The coordination event presented technical challenges" ;
+    ex:hasChallenge "The concert was organised in just 12 weeks."@en ;
+    ex:hasChallenge "Some artists, including Queen, were announced as confirmed before they had agreed to perform."@en ;
+    ex:hasChallenge "Criticism from The Voice for allegedly excluding black British artists; several prominent black American artists declined to participate."@en ;
+    ex:hasChallenge "Dire Straits had to rush from Live Aid to a separate concert at Wembley Arena on the same day."@en ;
+    ex:hasChallenge "Phil Collins performed at both Wembley and Philadelphia using the Concorde, but faced technical and performance issues with Led Zeppelin."@en ;
+    ex:hasChallenge "During the Moscow broadcast, audio played correctly but visuals initially showed a cherry harvest documentary instead of the band Autograph."@en ;
+    ex:hasChallenge "Bands performed without sound checks, leading to problems like U2 nearly pulling out and Paul McCartney starting with no sound in the stadium."@en ;
     ex:inspiredEvent ex:GlobalCitizen,
         ex:Live8 ;
     ex:numberOfActs 60 ;
-    ex:raisedAmount ex:RaisedAmount125k ;
+    ex:raisedAmount ex:LiveAid1985_Raised_GBP_Total ,
+                               ex:LiveAid1985_Raised_GBP_DayOf ,
+                               ex:LiveAid1985_Raised_USD_Total ;
     ex:usedBroadcastInfrastructure ex:SatelliteNetwork ;
     ex:wasBroadcastBy ex:ABC,
         ex:BBC,

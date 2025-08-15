@@ -108,4 +108,4 @@ jinja2
 google-generativeai
 pyshacl
 musicbrainzngs
-urllib3<2
+urllib3~=2.5.0

@@ -62,13 +62,16 @@ def load_ontology_terms(path: Path):
 def strict_vocab_validate(master_path: Path):
     schema_ttl = SCHEMA / "schemaorg.ttl"
     mm_owl     = SCHEMA / "musicmeta.owl"
+    dc_terms_ttl = SCHEMA / "dublin_core_terms.ttl"
+    oa_ttl = SCHEMA / "oa.ttl"
+    skos_ttl = SCHEMA / "skos.ttl"
     custom_ttl = SCHEMA / "liveaid_schema.ttl"
-    missing = [p for p in (schema_ttl, mm_owl, custom_ttl) if not p.exists()]
+    missing = [p for p in (schema_ttl, mm_owl, custom_ttl,dc_terms_ttl,oa_ttl,skos_ttl) if not p.exists()]
     if missing:
         raise SystemExit("[ABORT] Missing local ontology files for strict validation:\n - " + "\n - ".join(map(str, missing)))
 
     known_classes, known_props = set(), set()
-    for p in (schema_ttl, mm_owl, custom_ttl):
+    for p in (schema_ttl, mm_owl, custom_ttl,dc_terms_ttl,oa_ttl,skos_ttl):
         cset, pset = load_ontology_terms(p)
         known_classes |= cset
         known_props |= pset
@@ -131,21 +134,26 @@ def main():
     else:
         modules =  [
             #"10_core_entities.ttl",
+            "10_event_sections_wiki_evidence.ttl",
             "11_genre.ttl", "12_event_broadcast_entities.ttl" , "13_city_country_venue.ttl" ,
             "14_organizations.ttl", "15_creativeevents.ttl" , "16_audience.ttl" , "17_miscellaneaous.ttl" ,
             "20_artists.ttl",
+            "20_artists_songfacts.ttl",
             "27_external_links_only.ttl",
             "27_removed_nonlink_content.ttl",
             # "21_solo_artists.ttl",
             # "22_music_groups.ttl",
             # "30_performances.ttl","31_songs.ttl",
-            "32_albums.ttl", "33_recordings.ttl",
+            "32_albums.ttl",
+            "33_works_genius.ttl",
+            "33_works_songfacts.ttl",
+            "33_recordings_works.ttl",
             "40_setlists_songs.ttl",
             "50_instruments.ttl",
             "60_reviews.ttl","70_conditions.ttl",
             "80_provenance.ttl","81_links_sameAs.ttl","82_external_ids_artists.ttl",
             "83_external_ids_songs.ttl","84_external_links_performances.ttl",
-            "90_iconic_performances.ttl",
+            "90_iconic_performances.ttl"
         ]
         g = Graph()
         for m in modules:

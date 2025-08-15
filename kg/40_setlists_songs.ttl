@@ -3,43 +3,8 @@
 @prefix schema1: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:AdamAnt_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "AdamAnt – LiveAid1985 performance" ;
-    schema1:performer ex:AdamAnt ;
-    mm:performedWork ex:Work_ViveLeRock_b8fa9822 ;
-    mm:recordedAs ex:Recording_ViveLeRock_e09de3f8 .
-
-ex:AdamAnt_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_ViveLeRock_b8fa9822 ;
-            schema1:position 1 ] ;
-    schema1:name "Adam Ant – Live Aid set" .
-
 ex:AndrewRigeley_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Andrew Rigeley – Live Aid set" .
-
-ex:AshfordSimpson_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "AshfordSimpson – LiveAid1985 performance" ;
-    schema1:performer ex:AshfordSimpson ;
-    mm:performedWork ex:Work_ReachOutAndTouchSomebodySHand_d76165e1_2,
-        ex:Work_Solid_552d2380 ;
-    mm:recordedAs ex:Recording_ReachAndTouchSomebodySHand_65653667,
-        ex:Recording_Solid_936fd477 .
-
-ex:AshfordSimpson_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_ReachOutAndTouchSomebodySHand_d76165e1_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Solid_552d2380 ;
-            schema1:position 1 ] ;
-    schema1:name "Ashford & Simpson – Live Aid set" .
 
 ex:AustriaFRAfrika_LiveAid1985_Set a schema1:ItemList ;
     schema1:itemListElement [ a schema1:ListItem ;
@@ -61,14 +26,14 @@ ex:Autograph_LiveAid1985_Set a schema1:ItemList ;
 
 ex:BBKing_LiveAid1985_Set a schema1:ItemList ;
     schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_WhyISingTheBlues_72989758_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
             schema1:item ex:Work_Unknown_4bac182d ;
             schema1:position 1 ],
         [ a schema1:ListItem ;
             schema1:item ex:Work_DonTAnswerTheDoor_3e70085c ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WhyISingTheBlues_72989758_2 ;
-            schema1:position 2 ] ;
+            schema1:position 3 ] ;
     schema1:name "B.B. King – Live Aid set" .
 
 ex:BandFRAfrika_LiveAid1985_Set a schema1:ItemList ;
@@ -98,76 +63,6 @@ ex:BillGraham_LiveAid1985_Set a schema1:ItemList ;
             schema1:position 1 ] ;
     schema1:name "Bill Graham – Live Aid set" .
 
-ex:BillyOcean_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "BillyOcean – LiveAid1985 performance" ;
-    schema1:performer ex:BillyOcean ;
-    mm:performedWork ex:Work_CaribbeanQueen_d4d2cc6d,
-        ex:Work_Loverboy_ccf61ac6_2 ;
-    mm:recordedAs ex:Recording_CaribbeanQueen_1dacb861,
-        ex:Recording_Loverboy_558af7ff .
-
-ex:BillyOcean_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_CaribbeanQueen_d4d2cc6d ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Loverboy_ccf61ac6_2 ;
-            schema1:position 2 ] ;
-    schema1:name "Billy Ocean – Live Aid set" .
-
-ex:BlackSabbath_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "BlackSabbath – LiveAid1985 performance" ;
-    schema1:performer ex:BlackSabbath ;
-    mm:performedWork ex:Work_ChildrenOfTheGrave_08b8087b,
-        ex:Work_IronMan_4a43511c_2,
-        ex:Work_Paranoid_7949591a_2 ;
-    mm:recordedAs ex:Recording_ChildrenOfTheGrave_26fa12f1,
-        ex:Recording_IronMan_10c9d7e1,
-        ex:Recording_Paranoid_fd08b596 .
-
-ex:BlackSabbath_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_Paranoid_7949591a_2 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_ChildrenOfTheGrave_08b8087b ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_IronMan_4a43511c_2 ;
-            schema1:position 2 ] ;
-    schema1:name "Black Sabbath – Live Aid set" .
-
-ex:BobDylan_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "BobDylan – LiveAid1985 performance" ;
-    schema1:performer ex:BobDylan ;
-    mm:performedWork ex:Work_BalladOfHollisBrown_5ed18d5c,
-        ex:Work_BlowinInTheWind_f5a12d42,
-        ex:Work_WhenTheShipComesIn_e393936f ;
-    mm:recordedAs ex:Recording_BlowinInTheWind_63170ff1,
-        ex:Recording_TheBalladOfHollisBrown_ae1feb90,
-        ex:Recording_WhenTheShipsComesIn_3bfc4b19 .
-
-ex:BobDylan_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_BalladOfHollisBrown_5ed18d5c ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WhenTheShipComesIn_e393936f ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_BlowinInTheWind_f5a12d42 ;
-            schema1:position 3 ] ;
-    schema1:name "Bob Dylan – Live Aid set" .
-
 ex:BobGeldof_LiveAid1985_Set a schema1:ItemList ;
     schema1:itemListElement [ a schema1:ListItem ;
             schema1:item ex:Work_WelcomingAmerica_2afd59a6 ;
@@ -188,66 +83,6 @@ ex:BradfordMorse_LiveAid1985_Set a schema1:ItemList ;
 
 ex:BrianWilson_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Brian Wilson – Live Aid set" .
-
-ex:BryanAdams_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "BryanAdams – LiveAid1985 performance" ;
-    schema1:performer ex:BryanAdams ;
-    mm:performedWork ex:Work_CutsLikeAKnife_aa289c4d,
-        ex:Work_KidsWannaRock_1f056781,
-        ex:Work_SummerOf69_9604422e_2,
-        ex:Work_TearsAreNotEnough_b78023a3 ;
-    mm:recordedAs ex:Recording_CutsLikeAKnife_44359dd2,
-        ex:Recording_KidsWannaRock_c1ffea2d,
-        ex:Recording_SummerOf69_315af4d0,
-        ex:Recording_TearsAreNotEnough_d4e824e9 .
-
-ex:BryanAdams_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_CutsLikeAKnife_aa289c4d ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_SummerOf69_9604422e_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_TearsAreNotEnough_b78023a3 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_KidsWannaRock_1f056781 ;
-            schema1:position 1 ] ;
-    schema1:name "Bryan Adams – Live Aid set" .
-
-ex:BryanFerry_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "BryanFerry – LiveAid1985 performance" ;
-    schema1:performer ex:BryanFerry ;
-    mm:performedWork ex:Work_BoysAndGirls_4af8cc8e_2,
-        ex:Work_JealousGuy_056b839a,
-        ex:Work_Sensation_a1d723b4,
-        ex:Work_SlaveToLove_01cf29f1 ;
-    mm:recordedAs ex:Recording_BoysAndGirls_7cb4fb3d,
-        ex:Recording_JealousGuy_5ef0d284,
-        ex:Recording_Sensation_db2cf95b,
-        ex:Recording_SlaveToLove_b31e1ae1 .
-
-ex:BryanFerry_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_SlaveToLove_01cf29f1 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_JealousGuy_056b839a ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_BoysAndGirls_4af8cc8e_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Sensation_a1d723b4 ;
-            schema1:position 1 ] ;
-    schema1:name "Bryan Ferry – Live Aid set" .
 
 ex:BurtLancaster_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Burt Lancaster – Live Aid set" .
@@ -276,246 +111,17 @@ ex:CliffRichard_LiveAid1985_Set a schema1:ItemList ;
 ex:CorettaScottKing_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Coretta Scott King – Live Aid set" .
 
-ex:CrosbyStillsNashYoung_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "CrosbyStillsNashYoung – LiveAid1985 performance" ;
-    schema1:performer ex:CrosbyStillsNashYoung ;
-    mm:performedWork ex:Work_DaylightAgain_aa4b2c0d_2,
-        ex:Work_FindTheCostOfFreedom_1d8593a1,
-        ex:Work_OnlyLoveCanBreakYourHeart_8558d07e ;
-    mm:recordedAs ex:Recording_DayligthAgain_3c59521b,
-        ex:Recording_OnlyLoveCanBreakYourHeart_be3169b8 .
-
-ex:CrosbyStillsNashYoung_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_DaylightAgain_aa4b2c0d_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_OnlyLoveCanBreakYourHeart_8558d07e ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_FindTheCostOfFreedom_1d8593a1 ;
-            schema1:position 3 ] ;
-    schema1:name "Crosby, Stills, Nash & Young – Live Aid set" .
-
-ex:CrosbyStillsNash_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "CrosbyStillsNash – LiveAid1985 performance" ;
-    schema1:performer ex:CrosbyStillsNash ;
-    mm:performedWork ex:Work_SouthernCross_45c1e559_2,
-        ex:Work_SuiteJudyBlueEyes_bea79f68,
-        ex:Work_TeachYourChildren_ea98da58 ;
-    mm:recordedAs ex:Recording_SouthernCross_a9c4179d,
-        ex:Recording_SuiteJudyBlueEyes_ad8433ec,
-        ex:Recording_TeachYourChildren_e91e1321 .
-
-ex:CrosbyStillsNash_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_SuiteJudyBlueEyes_bea79f68 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_TeachYourChildren_ea98da58 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_SouthernCross_45c1e559_2 ;
-            schema1:position 1 ] ;
-    schema1:name "Crosby, Stills & Nash – Live Aid set" .
-
-ex:DarylHallJohnOates_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "DarylHallJohnOates – LiveAid1985 performance" ;
-    schema1:performer ex:DarylHallJohnOates ;
-    mm:performedWork ex:Work_AinTTooProudToBeg_d97a13df_2,
-        ex:Work_GetReady_3df4f8a5,
-        ex:Work_Maneater_59e765fb,
-        ex:Work_MyGirl_e8f22db4,
-        ex:Work_OutOfTouch_937a13f3,
-        ex:Work_TheWayYouDoTheThingsYouDo_44ddc0a7_2 ;
-    mm:recordedAs ex:Recording_AinTTooProudToBeg_98a1fc06,
-        ex:Recording_GetReady_bac9a200,
-        ex:Recording_Maneater_b6a526a8,
-        ex:Recording_MyGirl_2144d2ac,
-        ex:Recording_OutOfTouch_cccaefcf,
-        ex:Recording_TheWayYouDoTheThingsYouDo_2d19e310 .
-
-ex:DarylHallJohnOates_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_TheWayYouDoTheThingsYouDo_44ddc0a7_2 ;
-            schema1:position 5 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_OutOfTouch_937a13f3 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_GetReady_3df4f8a5 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_AinTTooProudToBeg_d97a13df_2 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_MyGirl_e8f22db4 ;
-            schema1:position 6 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Maneater_59e765fb ;
-            schema1:position 2 ] ;
-    schema1:name "Daryl Hall & John Oates – Live Aid set" .
-
-ex:DavidBowie_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "DavidBowie – LiveAid1985 performance" ;
-    schema1:performer ex:DavidBowie ;
-    mm:performedWork ex:Work_Heroes_e2b01286,
-        ex:Work_ModernLove_508a3dac_2,
-        ex:Work_RebelRebel_dc6d909d_2,
-        ex:Work_Tvc15_126ed430 ;
-    mm:recordedAs ex:Recording_Heroes_9ad9811b,
-        ex:Recording_ModernLove_a1ae373f,
-        ex:Recording_RebelRebel_a3fd1fde,
-        ex:Recording_Tvc15_4ccc6c6b .
-
-ex:DavidBowie_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_ModernLove_508a3dac_2 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Tvc15_126ed430 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_RebelRebel_dc6d909d_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Heroes_e2b01286 ;
-            schema1:position 4 ] ;
-    schema1:name "David Bowie – Live Aid set" .
-
 ex:DianeKeaton_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Diane Keaton – Live Aid set" .
 
 ex:DionneWarwick_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Dionne Warwick – Live Aid set" .
 
-ex:DireStraits_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "DireStraits – LiveAid1985 performance" ;
-    schema1:performer ex:DireStraits ;
-    mm:performedWork ex:Work_MoneyForNothing_d6f71ddf,
-        ex:Work_SultansOfSwing_8626823c ;
-    mm:recordedAs ex:Recording_MoneyForNothing_e3536a52,
-        ex:Recording_SultansOfSwing_9a5b1ff6 .
-
-ex:DireStraits_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_MoneyForNothing_d6f71ddf ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_SultansOfSwing_8626823c ;
-            schema1:position 2 ] ;
-    schema1:name "Dire Straits – Live Aid set" .
-
 ex:DragonBaby_LiveAid1985_Set a schema1:ItemList ;
     schema1:itemListElement [ a schema1:ListItem ;
             schema1:item ex:Work_SpeakNoEvil_67b72fdb ;
             schema1:position 1 ] ;
     schema1:name "Dragon Baby – Live Aid set" .
-
-ex:DuranDuran_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "DuranDuran – LiveAid1985 performance" ;
-    schema1:performer ex:DuranDuran ;
-    mm:performedWork ex:Work_AViewToAKill_f9b82c4a_2,
-        ex:Work_SaveAPrayer_604f7422,
-        ex:Work_TheReflex_50ec521b,
-        ex:Work_UnionOfTheSnake_5287e415 ;
-    mm:recordedAs ex:Recording_AViewToAKill_a694f876,
-        ex:Recording_SaveAPrayer_4c2713e9,
-        ex:Recording_TheReflex_73ff1d7a,
-        ex:Recording_UnionOfTheSnake_d1a8cfd3 .
-
-ex:DuranDuran_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_TheReflex_50ec521b ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_AViewToAKill_f9b82c4a_2 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_SaveAPrayer_604f7422 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_UnionOfTheSnake_5287e415 ;
-            schema1:position 2 ] ;
-    schema1:name "Duran Duran – Live Aid set" .
-
-ex:EltonJohn_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "EltonJohn – LiveAid1985 performance" ;
-    schema1:performer ex:EltonJohn ;
-    mm:performedWork ex:Work_BandPresentation_3906ac72,
-        ex:Work_BennieAndTheJets_6ef8fb46_2,
-        ex:Work_CanIGetAWitness_238819bb_2,
-        ex:Work_DonTGoBreakingMyHeart_f8d529ad_2,
-        ex:Work_DonTLetTheSunGoDownOnMe_75ed39fe,
-        ex:Work_IMStillStanding_4ae45d33,
-        ex:Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306 ;
-    mm:recordedAs ex:Recording_BandPresentation_dd6bf224,
-        ex:Recording_BennieAndTheJets_6e546f44,
-        ex:Recording_CanIGetAWitness_d38daca0,
-        ex:Recording_DonTGoBreakingMyHeart_05923cfc,
-        ex:Recording_DonTLetTheSunGoDownOnMe_118dd83a,
-        ex:Recording_IMStillStanding_f390bbb2,
-        ex:Recording_RocketMan_ea6fbaf0 .
-
-ex:EltonJohn_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_IMStillStanding_4ae45d33 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_BennieAndTheJets_6ef8fb46_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_DonTGoBreakingMyHeart_f8d529ad_2 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_DonTLetTheSunGoDownOnMe_75ed39fe ;
-            schema1:position 6 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_CanIGetAWitness_238819bb_2 ;
-            schema1:position 7 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_BandPresentation_3906ac72 ;
-            schema1:position 5 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306 ;
-            schema1:position 3 ] ;
-    schema1:name "Elton John – Live Aid set" .
-
-ex:ElvisCostello_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "ElvisCostello – LiveAid1985 performance" ;
-    schema1:performer ex:ElvisCostello ;
-    mm:performedWork ex:Work_AllYouNeedIsLove_0dfca25e_2 ;
-    mm:recordedAs ex:Recording_AllYouNeedIsLove_f6f9aebe .
-
-ex:ElvisCostello_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_AllYouNeedIsLove_0dfca25e_2 ;
-            schema1:position 1 ] ;
-    schema1:name "Elvis Costello – Live Aid set" .
 
 ex:Entity2_LiveAid1985_Set a schema1:ItemList ;
     schema1:itemListElement [ a schema1:ListItem ;
@@ -528,81 +134,6 @@ ex:Entity_LiveAid1985_Set a schema1:ItemList ;
             schema1:item ex:Work_TakeItTime_070b1032_2 ;
             schema1:position 1 ] ;
     schema1:name "矢沢永吉 – Live Aid set" .
-
-ex:EricClapton_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "EricClapton – LiveAid1985 performance" ;
-    schema1:performer ex:EricClapton ;
-    mm:performedWork ex:Work_Layla_beb76331,
-        ex:Work_SheSWaiting_2f2e1ed1,
-        ex:Work_WhiteRoom_7549fd84_2 ;
-    mm:recordedAs ex:Recording_Layla_e63a72d2,
-        ex:Recording_SheSWaiting_7a849b5b,
-        ex:Recording_WhiteRoom_6919d285 .
-
-ex:EricClapton_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_SheSWaiting_2f2e1ed1 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WhiteRoom_7549fd84_2 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Layla_beb76331 ;
-            schema1:position 3 ] ;
-    schema1:name "Eric Clapton – Live Aid set" .
-
-ex:FourTops_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "FourTops – LiveAid1985 performance" ;
-    schema1:performer ex:FourTops ;
-    mm:performedWork ex:Work_Bernadette_78a776b8_2,
-        ex:Work_ICanTHelpMyselfSugarPieHoneyBunch_209a62bf,
-        ex:Work_ItSTheSameOldSong_1c0a52ff,
-        ex:Work_ReachOutILlBeThere_f82341b9_2,
-        ex:Work_ShakeMeWakeMeWhenItSOver_29237a79 ;
-    mm:recordedAs ex:Recording_Bernadette_af9d9185,
-        ex:Recording_ICanTHelpMyselfSugarPieHoneyBunch_aac9c2e3,
-        ex:Recording_ItSTheSameOldSong_f19f6599,
-        ex:Recording_ReachOutILlBeThere_cf659519,
-        ex:Recording_ShakeMeWakeMeWhenItSOver_2ea33e6c .
-
-ex:FourTops_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_ItSTheSameOldSong_1c0a52ff ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_ShakeMeWakeMeWhenItSOver_29237a79 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_ICanTHelpMyselfSugarPieHoneyBunch_209a62bf ;
-            schema1:position 5 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_ReachOutILlBeThere_f82341b9_2 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Bernadette_78a776b8_2 ;
-            schema1:position 2 ] ;
-    schema1:name "Four Tops – Live Aid set" .
-
-ex:FreddieMercury_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "FreddieMercury – LiveAid1985 performance" ;
-    schema1:performer ex:FreddieMercury ;
-    mm:performedWork ex:Work_IsThisTheWorldWeCreated_3a6c7da6 ;
-    mm:recordedAs ex:Recording_IsThisTheWorldWeCreated_9ad485f5 .
-
-ex:FreddieMercury_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_IsThisTheWorldWeCreated_3a6c7da6 ;
-            schema1:position 1 ] ;
-    schema1:name "Freddie Mercury – Live Aid set" .
 
 ex:GaryKemp_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Gary Kemp – Live Aid set" .
@@ -634,21 +165,6 @@ ex:HaingSNgor_LiveAid1985_Set a schema1:ItemList ;
 ex:HarveyCoreman_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Harvey Coreman – Live Aid set" .
 
-ex:HowardJones_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "HowardJones – LiveAid1985 performance" ;
-    schema1:performer ex:HowardJones ;
-    mm:performedWork ex:Work_HideAndSeek_1a1cf738 ;
-    mm:recordedAs ex:Recording_HideAndSeek_220dceb7 .
-
-ex:HowardJones_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_HideAndSeek_1a1cf738 ;
-            schema1:position 1 ] ;
-    schema1:name "Howard Jones – Live Aid set" .
-
 ex:Inxs_LiveAid1985_Set a schema1:ItemList ;
     schema1:itemListElement [ a schema1:ListItem ;
             schema1:item ex:Work_DonTChange_f0e75ada_2 ;
@@ -679,52 +195,6 @@ ex:JeffBridges_LiveAid1985_Set a schema1:ItemList ;
 ex:JessieJackson_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Jessie Jackson – Live Aid set" .
 
-ex:JoanBaez_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "JoanBaez – LiveAid1985 performance" ;
-    schema1:performer ex:JoanBaez ;
-    mm:performedWork ex:Work_AmazingGrace_a5393197,
-        ex:Work_WeAreTheWorld_0b9a2e1d_2 ;
-    mm:recordedAs ex:Recording_AmazingGrace_7eaf7963,
-        ex:Recording_WeAreTheWorld_35a488c3 .
-
-ex:JoanBaez_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_AmazingGrace_a5393197 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WeAreTheWorld_0b9a2e1d_2 ;
-            schema1:position 2 ] ;
-    schema1:name "Joan Baez – Live Aid set" .
-
-ex:JudasPriest_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "JudasPriest – LiveAid1985 performance" ;
-    schema1:performer ex:JudasPriest ;
-    mm:performedWork ex:Work_LivingAfterMidnight_c2f04756,
-        ex:Work_TheGreenManalishiWithTheTwoProngCrown_784d31f1,
-        ex:Work_YouVeGotAnotherThingComin_24f7f4ea ;
-    mm:recordedAs ex:Recording_LivinAfterMidnight_4e135c56,
-        ex:Recording_LivingAfterMidnight_4e135c56,
-        ex:Recording_TheGreenManalishi_7049eb5c,
-        ex:Recording_YouVeGotAnotherThingComin_b48f9409 .
-
-ex:JudasPriest_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_TheGreenManalishiWithTheTwoProngCrown_784d31f1 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_LivingAfterMidnight_c2f04756 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_YouVeGotAnotherThingComin_24f7f4ea ;
-            schema1:position 3 ] ;
-    schema1:name "Judas Priest – Live Aid set" .
-
 ex:JulioIglesias_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Julio Iglesias – Live Aid set" .
 
@@ -733,21 +203,6 @@ ex:KareemAbdulJabbar_LiveAid1985_Set a schema1:ItemList ;
 
 ex:KenKragen_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Ken Kragen – Live Aid set" .
-
-ex:KennyLoggins_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "KennyLoggins – LiveAid1985 performance" ;
-    schema1:performer ex:KennyLoggins ;
-    mm:performedWork ex:Work_Footloose_fee797bd ;
-    mm:recordedAs ex:Recording_Footloose_570d9d64 .
-
-ex:KennyLoggins_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_Footloose_fee797bd ;
-            schema1:position 1 ] ;
-    schema1:name "Kenny Loggins – Live Aid set" .
 
 ex:KevinCronin_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Kevin Cronin – Live Aid set" .
@@ -794,31 +249,6 @@ ex:Loudness_LiveAid1985_Set a schema1:ItemList ;
             schema1:position 1 ] ;
     schema1:name "LOUDNESS – Live Aid set" .
 
-ex:Madonna_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "Madonna – LiveAid1985 performance" ;
-    schema1:performer ex:Madonna ;
-    mm:performedWork ex:Work_Holiday_1c03c879,
-        ex:Work_IntoTheGroove_35b448bb_2,
-        ex:Work_LoveMakesTheWorldGoRound_b79da28d_2 ;
-    mm:recordedAs ex:Recording_Holiday_9ddf03bc,
-        ex:Recording_IntoTheGroove_301a7f9c,
-        ex:Recording_LoveMakesTheWorldGoRound_5479ad4a .
-
-ex:Madonna_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_Holiday_1c03c879 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_IntoTheGroove_35b448bb_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_LoveMakesTheWorldGoRound_b79da28d_2 ;
-            schema1:position 3 ] ;
-    schema1:name "Madonna – Live Aid set" .
-
 ex:MarilynMccoo_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Marilyn McCoo – Live Aid set" .
 
@@ -837,46 +267,6 @@ ex:MenAtWork_LiveAid1985_Set a schema1:ItemList ;
             schema1:position 1 ] ;
     schema1:name "Men at Work – Live Aid set" .
 
-ex:MickJagger_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "MickJagger – LiveAid1985 performance" ;
-    schema1:performer ex:MickJagger ;
-    mm:performedWork ex:Work_ItSOnlyRockNRoll_e8f15c53_2,
-        ex:Work_JustAnotherNight_1adedf0f_2,
-        ex:Work_LonelyAtTheTop_62617910,
-        ex:Work_MickJaggerAndTinaTurnerRehearsals_95b7c1db,
-        ex:Work_MissYou_be9728e0_2,
-        ex:Work_StateOfShock_8e0f121d_2 ;
-    mm:recordedAs ex:Recording_ItSOnlyRockAndRoll_84d84f97,
-        ex:Recording_JustAnotherNight_d6663e8f,
-        ex:Recording_LonelyAtTheTop_156cc230,
-        ex:Recording_MickJaggerAndTinaTurnerRehearsals_5a4e9694,
-        ex:Recording_MissYou_4ed24c6c,
-        ex:Recording_StateOfShock_a9becd00 .
-
-ex:MickJagger_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_JustAnotherNight_1adedf0f_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_LonelyAtTheTop_62617910 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_ItSOnlyRockNRoll_e8f15c53_2 ;
-            schema1:position 5 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_MissYou_be9728e0_2 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_MickJaggerAndTinaTurnerRehearsals_95b7c1db ;
-            schema1:position 6 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_StateOfShock_8e0f121d_2 ;
-            schema1:position 4 ] ;
-    schema1:name "Mick Jagger – Live Aid set" .
-
 ex:MickeyLeland_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Mickey Leland – Live Aid set" .
 
@@ -888,71 +278,6 @@ ex:MikhaelAivanhov_LiveAid1985_Set a schema1:ItemList ;
 
 ex:MoritaAkia_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Morita Akia – Live Aid set" .
-
-ex:NeilYoung_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "NeilYoung – LiveAid1985 performance" ;
-    schema1:performer ex:NeilYoung ;
-    mm:performedWork ex:Work_Helpless_295f4446_2,
-        ex:Work_NothingIsPerfect_e3684af2,
-        ex:Work_Powderfinger_e4de49b8,
-        ex:Work_SugarMountain_36ab6f4c_2,
-        ex:Work_TheNeedleAndTheDamageDone_6d0d3f75_2 ;
-    mm:recordedAs ex:Recording_Helpless_ecc0334e,
-        ex:Recording_NothingIsPerfect_4ee7077f,
-        ex:Recording_Powderfinger_377962db,
-        ex:Recording_SugarMountain_c23f61cd,
-        ex:Recording_TheNeedleAndTheDamageDone_882ef9db .
-
-ex:NeilYoung_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_NothingIsPerfect_e3684af2 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Helpless_295f4446_2 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_SugarMountain_36ab6f4c_2 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_TheNeedleAndTheDamageDone_6d0d3f75_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Powderfinger_e4de49b8 ;
-            schema1:position 5 ] ;
-    schema1:name "Neil Young – Live Aid set" .
-
-ex:NikKershaw_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "NikKershaw – LiveAid1985 performance" ;
-    schema1:performer ex:NikKershaw ;
-    mm:performedWork ex:Work_DonQuixote_7e7b9a3f,
-        ex:Work_TheRiddle_b5c6086c,
-        ex:Work_WideBoy_d3b9738a,
-        ex:Work_WouldnTItBeGood_6a8be284_2 ;
-    mm:recordedAs ex:Recording_DonQuixote_029c9aed,
-        ex:Recording_TheRiddle_59101c84,
-        ex:Recording_WideBoy_2e405de3,
-        ex:Recording_WouldnTItBeGood_f01b6a95 .
-
-ex:NikKershaw_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_WouldnTItBeGood_6a8be284_2 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WideBoy_d3b9738a ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_TheRiddle_b5c6086c ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_DonQuixote_7e7b9a3f ;
-            schema1:position 2 ] ;
-    schema1:name "Nik Kershaw – Live Aid set" .
 
 ex:NoArtist_LiveAid1985_Set a schema1:ItemList ;
     schema1:itemListElement [ a schema1:ListItem ;
@@ -1035,166 +360,14 @@ ex:OffCause_LiveAid1985_Set a schema1:ItemList ;
             schema1:position 1 ] ;
     schema1:name "Off Cause – Live Aid set" .
 
-ex:PattiLabelle_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "PattiLabelle – LiveAid1985 performance" ;
-    schema1:performer ex:PattiLabelle ;
-    mm:performedWork ex:Work_ForeverYoung_f978ba1e,
-        ex:Work_Imagine_517ff96c_2,
-        ex:Work_NewAttitude_f2d275ad_2,
-        ex:Work_OverTheRainbow_f8217125_2,
-        ex:Work_StirItUp_fa22c5e3,
-        ex:Work_WhyCanTIGetItOver_e08b06d9 ;
-    mm:recordedAs ex:Recording_ForeverYoung_9268848f,
-        ex:Recording_Imagine_314e559d,
-        ex:Recording_NewAttitude_839ef1c3,
-        ex:Recording_OverTheRainbow_9d50a5e3,
-        ex:Recording_StirItUp_e32aea71,
-        ex:Recording_WhyCanTIGetItOver_dc308b4b .
-
-ex:PattiLabelle_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_OverTheRainbow_f8217125_2 ;
-            schema1:position 5 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_ForeverYoung_f978ba1e ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_NewAttitude_f2d275ad_2 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Imagine_517ff96c_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_StirItUp_fa22c5e3 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WhyCanTIGetItOver_e08b06d9 ;
-            schema1:position 6 ] ;
-    schema1:name "Patti LaBelle – Live Aid set" .
-
-ex:PaulMccartney_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "PaulMccartney – LiveAid1985 performance" ;
-    schema1:performer ex:PaulMccartney ;
-    mm:performedWork ex:Work_LetItBe_ef5b9074 ;
-    mm:recordedAs ex:Recording_LetItBe_a581c536 .
-
-ex:PaulMccartney_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_LetItBe_ef5b9074 ;
-            schema1:position 1 ] ;
-    schema1:name "Paul McCartney – Live Aid set" .
-
 ex:PaulStanley_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Paul Stanley – Live Aid set" .
-
-ex:PaulYoung_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "PaulYoung – LiveAid1985 performance" ;
-    schema1:performer ex:PaulYoung ;
-    mm:performedWork ex:Work_ComeBackAndStay_ad4e5fd6_2,
-        ex:Work_DoTheyKnowItSChristmas_d64306b1_2,
-        ex:Work_EverytimeYouGoAway_677d42d6_2,
-        ex:Work_ThatSTheWayLoveIs_431780d2 ;
-    mm:recordedAs ex:Recording_ComeBackAndStay_4f38bb16,
-        ex:Recording_DoTheyKnowItSChristmas_57b2fa68,
-        ex:Recording_EverytimeYouGoAway_86704278,
-        ex:Recording_ThatSTheWayLoveIs_4f7d61d0 .
-
-ex:PaulYoung_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_DoTheyKnowItSChristmas_d64306b1_2 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_EverytimeYouGoAway_677d42d6_2 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_ThatSTheWayLoveIs_431780d2 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_ComeBackAndStay_ad4e5fd6_2 ;
-            schema1:position 2 ] ;
-    schema1:name "Paul Young – Live Aid set" .
 
 ex:PeterUeberroth_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Peter Ueberroth – Live Aid set" .
 
-ex:PhilCollins_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "PhilCollins – LiveAid1985 performance" ;
-    schema1:performer ex:PhilCollins ;
-    mm:performedWork ex:Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2,
-        ex:Work_EveryBreathYouTake_f88369e2,
-        ex:Work_InTheAirTonight_b9a05cea,
-        ex:Work_LongLongWayToGo_2bff2bbb_2 ;
-    mm:recordedAs ex:Recording_AgainstAllOdds_158681cb,
-        ex:Recording_AgainstAllOdds_50b4150f,
-        ex:Recording_EveryBreathYouTake_fe77b125,
-        ex:Recording_InTheAirTonight_3bd855ce,
-        ex:Recording_InTheAirTonight_8b47f77a,
-        ex:Recording_LongLongWayToGo_4ff594bf .
-
-ex:PhilCollins_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_EveryBreathYouTake_f88369e2 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_InTheAirTonight_b9a05cea ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_LongLongWayToGo_2bff2bbb_2 ;
-            schema1:position 3 ] ;
-    schema1:name "Phil Collins – Live Aid set" .
-
 ex:PrestonKeevami_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Preston Keevami – Live Aid set" .
-
-ex:Pretenders_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "Pretenders – LiveAid1985 performance" ;
-    schema1:performer ex:Pretenders ;
-    mm:performedWork ex:Work_BackOnTheChainGang_31d4aa2c,
-        ex:Work_MessageOfLove_43dd26dc_2,
-        ex:Work_MiddleOfTheRoad_ba390ae8,
-        ex:Work_StopYourSobbing_9533d2bf,
-        ex:Work_TimeTheAvenger_34b57a63_2 ;
-    mm:recordedAs ex:Recording_BackOnTheChainGang_e955dd67,
-        ex:Recording_MessageOfLove_733e6470,
-        ex:Recording_MiddleOfTheRoad_ebe661e5,
-        ex:Recording_StopYourSobbing_9282c957,
-        ex:Recording_TimeTheAvenger_c74a5c06 .
-
-ex:Pretenders_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_MiddleOfTheRoad_ba390ae8 ;
-            schema1:position 5 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_TimeTheAvenger_34b57a63_2 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_StopYourSobbing_9533d2bf ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_MessageOfLove_43dd26dc_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_BackOnTheChainGang_31d4aa2c ;
-            schema1:position 4 ] ;
-    schema1:name "Pretenders – Live Aid set" .
 
 ex:PrinceSultan_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Prince Sultan – Live Aid set" .
@@ -1205,96 +378,11 @@ ex:Prince_LiveAid1985_Set a schema1:ItemList ;
             schema1:position 1 ] ;
     schema1:name "Prince – Live Aid set" .
 
-ex:Queen_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "Queen – LiveAid1985 performance" ;
-    schema1:performer ex:Queen ;
-    mm:performedWork ex:Work_BohemianRhapsody_41c94a08,
-        ex:Work_CrazyLittleThingCalledLove_dad1c2a9,
-        ex:Work_HammerToFall_1e807fa4_2,
-        ex:Work_RadioGaGa_2c76fe20_2,
-        ex:Work_WeAreTheChampions_0b3da969_2,
-        ex:Work_WeWillRockYou_3623f3af_2 ;
-    mm:recordedAs ex:Recording_BohemianRhapsody_6b547796,
-        ex:Recording_CrazyLittleThingCalledLove_20b2a2c3,
-        ex:Recording_HammerToFall_159f3644,
-        ex:Recording_RadioGaga_40401938,
-        ex:Recording_WeAreTheChampions_ab0796fb,
-        ex:Recording_WeWillRockYou_2f58f9a6 .
-
-ex:Queen_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_CrazyLittleThingCalledLove_dad1c2a9 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WeAreTheChampions_0b3da969_2 ;
-            schema1:position 6 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WeWillRockYou_3623f3af_2 ;
-            schema1:position 5 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_BohemianRhapsody_41c94a08 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_RadioGaGa_2c76fe20_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_HammerToFall_1e807fa4_2 ;
-            schema1:position 3 ] ;
-    schema1:name "Queen – Live Aid set" .
-
 ex:RebbeccaHolden_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Rebbecca Holden – Live Aid set" .
 
-ex:ReoSpeedwagon_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "ReoSpeedwagon – LiveAid1985 performance" ;
-    schema1:performer ex:ReoSpeedwagon ;
-    mm:performedWork ex:Work_CanTFightThisFeeling_4b497a42_2,
-        ex:Work_RollWithTheChanges_831ed988_2 ;
-    mm:recordedAs ex:Recording_CanTFightThisFeeling_6b4e30bc,
-        ex:Recording_RollWithTheChanges_a86ab6c4 .
-
-ex:ReoSpeedwagon_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_RollWithTheChanges_831ed988_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_CanTFightThisFeeling_4b497a42_2 ;
-            schema1:position 1 ] ;
-    schema1:name "REO Speedwagon – Live Aid set" .
-
 ex:RichardAttenborough_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Richard Attenborough – Live Aid set" .
-
-ex:RickSpringfield_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "RickSpringfield – LiveAid1985 performance" ;
-    schema1:performer ex:RickSpringfield ;
-    mm:performedWork ex:Work_HumanTouch_f9c6ee89,
-        ex:Work_LoveSomebody_85410af7_2,
-        ex:Work_StateOfTheHeart_5f9be140_2 ;
-    mm:recordedAs ex:Recording_HumanTouch_c6c0bf1a,
-        ex:Recording_LoveSomebody_b884a1ca,
-        ex:Recording_StateOfTheHeart_65dfffa0 .
-
-ex:RickSpringfield_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_StateOfTheHeart_5f9be140_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_HumanTouch_f9c6ee89 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_LoveSomebody_85410af7_2 ;
-            schema1:position 1 ] ;
-    schema1:name "Rick Springfield – Live Aid set" .
 
 ex:RobHalford_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Rob Halford – Live Aid set" .
@@ -1302,405 +390,11 @@ ex:RobHalford_LiveAid1985_Set a schema1:ItemList ;
 ex:RogertEnrico_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Rogert Enrico – Live Aid set" .
 
-ex:RunDMC_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "RunDMC – LiveAid1985 performance" ;
-    schema1:performer ex:RunDMC ;
-    mm:performedWork ex:Work_JamMasterJay_c0b69956_2 ;
-    mm:recordedAs ex:Recording_JamMasterJay_745685a1 .
-
-ex:RunDMC_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_JamMasterJay_c0b69956_2 ;
-            schema1:position 1 ] ;
-    schema1:name "Run‐D.M.C. – Live Aid set" .
-
-ex:Sade_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "Sade – LiveAid1985 performance" ;
-    schema1:performer ex:Sade ;
-    mm:performedWork ex:Work_IsItACrime_14db4b5e_2,
-        ex:Work_WhyCanTWeLiveTogether_8bae3d24_2,
-        ex:Work_YourLoveIsKing_89d27ad0 ;
-    mm:recordedAs ex:Recording_IsItACrime_3cb8e20f,
-        ex:Recording_WhyCanTWeLiveTogether_0bf0a51e,
-        ex:Recording_YourLoveIsKing_a214b8ab .
-
-ex:Sade_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_IsItACrime_14db4b5e_2 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_YourLoveIsKing_89d27ad0 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WhyCanTWeLiveTogether_8bae3d24_2 ;
-            schema1:position 1 ] ;
-    schema1:name "Sade – Live Aid set" .
-
-ex:Santana_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "Santana – LiveAid1985 performance" ;
-    schema1:performer ex:Santana ;
-    mm:performedWork ex:Work_Brotherhood_92d118d8_2,
-        ex:Work_ByThePool_7eeea52e,
-        ex:Work_OpenInvitation_13ca1e44,
-        ex:Work_PrimeraInvasion_1a3c7702_2,
-        ex:Work_RightNow_3778dd5b ;
-    mm:recordedAs ex:Recording_Brotherhood_d1e40685,
-        ex:Recording_ByThePool_2140460b,
-        ex:Recording_OpenInvitation_3c2f1252,
-        ex:Recording_PrimeraInvasion_3f8669be,
-        ex:Recording_RightNow_658166c0 .
-
-ex:Santana_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_ByThePool_7eeea52e ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_PrimeraInvasion_1a3c7702_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_RightNow_3778dd5b ;
-            schema1:position 5 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_OpenInvitation_13ca1e44 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Brotherhood_92d118d8_2 ;
-            schema1:position 1 ] ;
-    schema1:name "Santana – Live Aid set" .
-
-ex:SimpleMinds_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "SimpleMinds – LiveAid1985 performance" ;
-    schema1:performer ex:SimpleMinds ;
-    mm:performedWork ex:Work_DonTYouForgetAboutMe_4694f742,
-        ex:Work_Ghostdancing_84c1a403_2,
-        ex:Work_PromisedYouAMiracle_5d09ac47 ;
-    mm:recordedAs ex:Recording_DonTYouForgetAboutMe_bdf2301c,
-        ex:Recording_GhostDancing_5773e1ad,
-        ex:Recording_PromisedYouAMiracle_eb1d4910 .
-
-ex:SimpleMinds_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_Ghostdancing_84c1a403_2 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_DonTYouForgetAboutMe_4694f742 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_PromisedYouAMiracle_5d09ac47 ;
-            schema1:position 3 ] ;
-    schema1:name "Simple Minds – Live Aid set" .
-
 ex:SmithJones_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Smith Jones – Live Aid set" .
 
-ex:SpandauBallet_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "SpandauBallet – LiveAid1985 performance" ;
-    schema1:performer ex:SpandauBallet ;
-    mm:performedWork ex:Work_OnlyWhenYouLeave_ab26cb3a,
-        ex:Work_True_022cacb2_2,
-        ex:Work_Virgin_be856f58 ;
-    mm:recordedAs ex:Recording_OnlyWhenYouLeave_518df094,
-        ex:Recording_True_ca2c82a1,
-        ex:Recording_Virgin_4625d665 .
-
-ex:SpandauBallet_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_Virgin_be856f58 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_OnlyWhenYouLeave_ab26cb3a ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_True_022cacb2_2 ;
-            schema1:position 3 ] ;
-    schema1:name "Spandau Ballet – Live Aid set" .
-
-ex:StatusQuo_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "StatusQuo – LiveAid1985 performance" ;
-    schema1:performer ex:StatusQuo ;
-    mm:performedWork ex:Work_Caroline_c758c89e_2,
-        ex:Work_DonTWasteMyTime_8ac35dd3,
-        ex:Work_RockinAllOverTheWorld_5b31460f_2 ;
-    mm:recordedAs ex:Recording_Caroline_a514cf78,
-        ex:Recording_DonTWasteMyTime_627b88ac,
-        ex:Recording_RockinAllOverTheWorld_ff3aa159 .
-
-ex:StatusQuo_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_DonTWasteMyTime_8ac35dd3 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Caroline_c758c89e_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_RockinAllOverTheWorld_5b31460f_2 ;
-            schema1:position 1 ] ;
-    schema1:name "Status Quo – Live Aid set" .
-
-ex:Sting_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "Sting – LiveAid1985 performance" ;
-    schema1:performer ex:Sting ;
-    mm:performedWork ex:Work_DrivenToTears_d7c50a9a,
-        ex:Work_MessageInABottle_d4bbeea9,
-        ex:Work_Roxanne_0ddba90a ;
-    mm:recordedAs ex:Recording_DrivenToTears_b08c7df3,
-        ex:Recording_MessageInABottle_3e4b4e90,
-        ex:Recording_Roxanne_cbabd27e .
-
-ex:Sting_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_DrivenToTears_d7c50a9a ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_MessageInABottle_d4bbeea9 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Roxanne_0ddba90a ;
-            schema1:position 1 ] ;
-    schema1:name "Sting – Live Aid set" .
-
 ex:TeddyKennedyJr_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Teddy Kennedy Jr. – Live Aid set" .
-
-ex:TheBeachBoys_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "TheBeachBoys – LiveAid1985 performance" ;
-    schema1:performer ex:TheBeachBoys ;
-    mm:performedWork ex:Work_CaliforniaGirls_9c56c803,
-        ex:Work_GoodVibrations_ede10e9a,
-        ex:Work_HelpMeRhonda_21404af0,
-        ex:Work_SurfinUSA_537d49de_2,
-        ex:Work_WouldnTItBeNice_8d9c97e9_2 ;
-    mm:recordedAs ex:Recording_BeachBoysCaliforniaGirls_4fbf7149,
-        ex:Recording_GoodVibrations_7acd0668,
-        ex:Recording_HelpMeRhonda_09c194b8,
-        ex:Recording_SurfinUsa_df04837c,
-        ex:Recording_WouldnTItBeNice_de5d8181 .
-
-ex:TheBeachBoys_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_HelpMeRhonda_21404af0 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_CaliforniaGirls_9c56c803 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WouldnTItBeNice_8d9c97e9_2 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_GoodVibrations_ede10e9a ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_SurfinUSA_537d49de_2 ;
-            schema1:position 5 ] ;
-    schema1:name "The Beach Boys – Live Aid set" .
-
-ex:TheBoomtownRats_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "TheBoomtownRats – LiveAid1985 performance" ;
-    schema1:performer ex:TheBoomtownRats ;
-    mm:performedWork ex:Work_DragMeDown_3024d565_2,
-        ex:Work_IDonTLikeMondays_d998a80c,
-        ex:Work_RatTrap_a09a4c84_2 ;
-    mm:recordedAs ex:Recording_DragMeDown_6e154953,
-        ex:Recording_IDonTLikeMondays_679ee6ca,
-        ex:Recording_RatTrap_3e80d77e .
-
-ex:TheBoomtownRats_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_DragMeDown_3024d565_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_IDonTLikeMondays_d998a80c ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_RatTrap_a09a4c84_2 ;
-            schema1:position 3 ] ;
-    schema1:name "The Boomtown Rats – Live Aid set" .
-
-ex:TheCars_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "TheCars – LiveAid1985 performance" ;
-    schema1:performer ex:TheCars ;
-    mm:performedWork ex:Work_Drive_4cbcd04d_2,
-        ex:Work_HeartbeatCity_75dc9fbb_2,
-        ex:Work_JustWhatINeeded_f5128e1e_2,
-        ex:Work_YouMightThink_9bd7d77e ;
-    mm:recordedAs ex:Recording_Drive_d9f86097,
-        ex:Recording_HeartbeatCity_b310b1b8,
-        ex:Recording_JustWhatINeeded_0ce2996b,
-        ex:Recording_YouMightThink_62b257d5 .
-
-ex:TheCars_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_YouMightThink_9bd7d77e ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Drive_4cbcd04d_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_HeartbeatCity_75dc9fbb_2 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_JustWhatINeeded_f5128e1e_2 ;
-            schema1:position 3 ] ;
-    schema1:name "The Cars – Live Aid set" .
-
-ex:TheHooters_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "TheHooters – LiveAid1985 performance" ;
-    schema1:performer ex:TheHooters ;
-    mm:performedWork ex:Work_AllYouZombies_ca255d52_2,
-        ex:Work_AndWeDanced_55e8031f ;
-    mm:recordedAs ex:Recording_AllYouZombies_bfd09d22,
-        ex:Recording_AndWeDanced_095b10f0 .
-
-ex:TheHooters_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_AndWeDanced_55e8031f ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_AllYouZombies_ca255d52_2 ;
-            schema1:position 2 ] ;
-    schema1:name "The Hooters – Live Aid set" .
-
-ex:ThePowerStation_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "ThePowerStation – LiveAid1985 performance" ;
-    schema1:performer ex:ThePowerStation ;
-    mm:performedWork ex:Work_GetItOn_29ff18d1_2,
-        ex:Work_Murderess_bc3b1534 ;
-    mm:recordedAs ex:Recording_GetItOn_6d6c207b,
-        ex:Recording_Murderess_889583de .
-
-ex:ThePowerStation_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_Murderess_bc3b1534 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_GetItOn_29ff18d1_2 ;
-            schema1:position 2 ] ;
-    schema1:name "The Power Station – Live Aid set" .
-
-ex:TheStyleCouncil_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "TheStyleCouncil – LiveAid1985 performance" ;
-    schema1:performer ex:TheStyleCouncil ;
-    mm:performedWork ex:Work_Internationalists_25434796,
-        ex:Work_TheBigBossGroove_bddd59cc_2,
-        ex:Work_WallsComeTumblingDown_2f64618a,
-        ex:Work_YouReTheBestThing_318c96a9_2 ;
-    mm:recordedAs ex:Recording_BigBossGroove_a1d2bfd4,
-        ex:Recording_Internationalists_08ca2301,
-        ex:Recording_WallsComeTumblingDown_203a982d,
-        ex:Recording_YouReTheBestThing_85650129 .
-
-ex:TheStyleCouncil_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_WallsComeTumblingDown_2f64618a ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Internationalists_25434796 ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_TheBigBossGroove_bddd59cc_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_YouReTheBestThing_318c96a9_2 ;
-            schema1:position 1 ] ;
-    schema1:name "The Style Council – Live Aid set" .
-
-ex:TheWho_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "TheWho – LiveAid1985 performance" ;
-    schema1:performer ex:TheWho ;
-    mm:performedWork ex:Work_LoveReignOErMe_e2318c2e,
-        ex:Work_MyGeneration_a55b5d5b,
-        ex:Work_PinballWizard_6ef8cd26,
-        ex:Work_WonTGetFooledAgain_f00616af_2 ;
-    mm:recordedAs ex:Recording_LoveReignOErMe_5fa0efda,
-        ex:Recording_MyGeneration_f800e8ee,
-        ex:Recording_PinballWizard_49f4bb45,
-        ex:Recording_WonTGetFooledAgain_e7c6be90 .
-
-ex:TheWho_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_PinballWizard_6ef8cd26 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_WonTGetFooledAgain_f00616af_2 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_LoveReignOErMe_e2318c2e ;
-            schema1:position 3 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_MyGeneration_a55b5d5b ;
-            schema1:position 1 ] ;
-    schema1:name "The Who – Live Aid set" .
-
-ex:ThompsonTwins_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:JohnFKennedyStadium ;
-    schema1:name "ThompsonTwins – LiveAid1985 performance" ;
-    schema1:performer ex:ThompsonTwins ;
-    mm:performedWork ex:Work_HoldMeNow_d77e1b17,
-        ex:Work_Revolution_fc6e50dd_2 ;
-    mm:recordedAs ex:Recording_HoldMeNow_0489bbef,
-        ex:Recording_Revolution_691fb7d6 .
-
-ex:ThompsonTwins_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_HoldMeNow_d77e1b17 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Revolution_fc6e50dd_2 ;
-            schema1:position 2 ] ;
-    schema1:name "Thompson Twins – Live Aid set" .
-
-ex:TinaTurner_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:name "TinaTurner – LiveAid1985 performance" ;
-    schema1:performer ex:TinaTurner .
-
-ex:TinaTurner_LiveAid1985_Set a schema1:ItemList ;
-    schema1:name "Tina Turner – Live Aid set" .
 
 ex:TomBailey_LiveAid1985_Set a schema1:ItemList ;
     schema1:name "Tom Bailey – Live Aid set" .
@@ -1731,56 +425,6 @@ ex:TomPetty_LiveAid1985_Set a schema1:ItemList ;
             schema1:item ex:Work_TheWaiting_dd9f2a88_2 ;
             schema1:position 2 ] ;
     schema1:name "Tom Petty – Live Aid set" .
-
-ex:U2_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "U2 – LiveAid1985 performance" ;
-    schema1:performer ex:U2 ;
-    mm:performedWork ex:Work_Bad_62d0a051,
-        ex:Work_SundayBloodySunday_dc2c1143_2 ;
-    mm:recordedAs ex:Recording_Bad_79932b83,
-        ex:Recording_SundayBloodySunday_b0ce8594 .
-
-ex:U2_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_Bad_62d0a051 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_SundayBloodySunday_dc2c1143_2 ;
-            schema1:position 1 ] ;
-    schema1:name "U2 – Live Aid set" .
-
-ex:Ultravox_LiveAid1985_Performance a schema1:Event,
-        mm:LivePerformance ;
-    schema1:isPartOf ex:LiveAid1985 ;
-    schema1:location ex:WembleyStadium ;
-    schema1:name "Ultravox – LiveAid1985 performance" ;
-    schema1:performer ex:Ultravox ;
-    mm:performedWork ex:Work_DancingWithTearsInMyEyes_a88ba41e_2,
-        ex:Work_OneSmallDay_d09d4f20,
-        ex:Work_ReapTheWildWind_ab62d196_2,
-        ex:Work_Vienna_33826c32 ;
-    mm:recordedAs ex:Recording_DancingWithTearsInMyEyes_d32e9ce2,
-        ex:Recording_OneSmallDay_6e7eade1,
-        ex:Recording_ReapTheWildWind_51237118,
-        ex:Recording_Vienna_1d8f82e2 .
-
-ex:Ultravox_LiveAid1985_Set a schema1:ItemList ;
-    schema1:itemListElement [ a schema1:ListItem ;
-            schema1:item ex:Work_ReapTheWildWind_ab62d196_2 ;
-            schema1:position 1 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_DancingWithTearsInMyEyes_a88ba41e_2 ;
-            schema1:position 2 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_Vienna_33826c32 ;
-            schema1:position 4 ],
-        [ a schema1:ListItem ;
-            schema1:item ex:Work_OneSmallDay_d09d4f20 ;
-            schema1:position 3 ] ;
-    schema1:name "Ultravox – Live Aid set" .
 
 ex:Unknown_LiveAid1985_Set a schema1:ItemList ;
     schema1:itemListElement [ a schema1:ListItem ;
@@ -1814,4 +458,1619 @@ ex:YuRockMisija_LiveAid1985_Set a schema1:ItemList ;
             schema1:item ex:Work_ZaMilionGodinaForAMillionYears_ef428638_2 ;
             schema1:position 1 ] ;
     schema1:name "YU Rock Misija – Live Aid set" .
+
+ex:AdamAnt_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T13:01:00"^^xsd:dateTime ;
+    schema1:name "AdamAnt – LiveAid1985 performance" ;
+    schema1:performer ex:AdamAnt ;
+    ex:setList ex:AdamAnt_LiveAid1985_Set ;
+    mm:performedWork ex:Work_ViveLeRock_b8fa9822 ;
+    mm:recordedAs ex:Recording_ViveLeRock_e09de3f8 .
+
+ex:AdamAnt_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:AdamAnt_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_ViveLeRock_b8fa9822 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Adam Ant – Live Aid set" ;
+    schema1:numberOfItems 1 .
+
+ex:AshfordSimpson_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T15:57:00-04:00"^^xsd:dateTime ;
+    schema1:name "AshfordSimpson – LiveAid1985 performance" ;
+    schema1:performer ex:AshfordSimpson ;
+    ex:setList ex:AshfordSimpson_LiveAid1985_Set ;
+    mm:performedWork ex:Work_ReachOutAndTouchSomebodySHand_d76165e1_2,
+        ex:Work_Solid_552d2380 ;
+    mm:recordedAs ex:Recording_ReachAndTouchSomebodySHand_65653667,
+        ex:Recording_Solid_936fd477 .
+
+ex:AshfordSimpson_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:AshfordSimpson_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_ReachOutAndTouchSomebodySHand_d76165e1_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Solid_552d2380 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Ashford & Simpson – Live Aid set" ;
+    schema1:numberOfItems 2 .
+
+ex:BillyOcean_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T09:45:00-04:00"^^xsd:dateTime ;
+    schema1:name "BillyOcean – LiveAid1985 performance" ;
+    schema1:performer ex:BillyOcean ;
+    ex:setList ex:BillyOcean_LiveAid1985_Set ;
+    mm:performedWork ex:Work_CaribbeanQueen_d4d2cc6d,
+        ex:Work_Loverboy_ccf61ac6_2 ;
+    mm:recordedAs ex:Recording_CaribbeanQueen_1dacb861,
+        ex:Recording_Loverboy_558af7ff .
+
+ex:BillyOcean_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:BillyOcean_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_CaribbeanQueen_d4d2cc6d ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Loverboy_ccf61ac6_2 ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Billy Ocean – Live Aid set" ;
+    schema1:numberOfItems 2 .
+
+ex:BlackSabbath_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T09:55:00-04:00"^^xsd:dateTime ;
+    schema1:name "BlackSabbath – LiveAid1985 performance" ;
+    schema1:performer ex:BlackSabbath ;
+    ex:setList ex:BlackSabbath_LiveAid1985_Set ;
+    mm:performedWork ex:Work_ChildrenOfTheGrave_08b8087b,
+        ex:Work_IronMan_4a43511c_2,
+        ex:Work_Paranoid_7949591a_2 ;
+    mm:recordedAs ex:Recording_ChildrenOfTheGrave_26fa12f1,
+        ex:Recording_IronMan_10c9d7e1,
+        ex:Recording_Paranoid_fd08b596 .
+
+ex:BlackSabbath_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:BlackSabbath_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_Paranoid_7949591a_2 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_ChildrenOfTheGrave_08b8087b ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_IronMan_4a43511c_2 ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Black Sabbath – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:BobDylan_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T22:39:00-04:00"^^xsd:dateTime ;
+    schema1:name "BobDylan – LiveAid1985 performance" ;
+    schema1:performer ex:BobDylan ;
+    ex:setList ex:BobDylan_LiveAid1985_Set ;
+    mm:performedWork ex:Work_BalladOfHollisBrown_5ed18d5c,
+        ex:Work_BlowinInTheWind_f5a12d42,
+        ex:Work_WhenTheShipComesIn_e393936f ;
+    mm:recordedAs ex:Recording_BlowinInTheWind_63170ff1,
+        ex:Recording_TheBalladOfHollisBrown_ae1feb90,
+        ex:Recording_WhenTheShipsComesIn_3bfc4b19 .
+
+ex:BobDylan_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:BobDylan_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_BalladOfHollisBrown_5ed18d5c ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WhenTheShipComesIn_e393936f ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_BlowinInTheWind_f5a12d42 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Bob Dylan – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:BryanAdams_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T12:01:00-04:00"^^xsd:dateTime ;
+    schema1:name "BryanAdams – LiveAid1985 performance" ;
+    schema1:performer ex:BryanAdams ;
+    ex:setList ex:BryanAdams_LiveAid1985_Set ;
+    mm:performedWork ex:Work_CutsLikeAKnife_aa289c4d,
+        ex:Work_KidsWannaRock_1f056781,
+        ex:Work_SummerOf69_9604422e_2,
+        ex:Work_TearsAreNotEnough_b78023a3 ;
+    mm:recordedAs ex:Recording_CutsLikeAKnife_44359dd2,
+        ex:Recording_KidsWannaRock_c1ffea2d,
+        ex:Recording_SummerOf69_315af4d0,
+        ex:Recording_TearsAreNotEnough_d4e824e9 .
+
+ex:BryanAdams_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:BryanAdams_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_CutsLikeAKnife_aa289c4d ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_SummerOf69_9604422e_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_TearsAreNotEnough_b78023a3 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_KidsWannaRock_1f056781 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Bryan Adams – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:BryanFerry_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T16:08:00"^^xsd:dateTime ;
+    schema1:name "BryanFerry – LiveAid1985 performance" ;
+    schema1:performer ex:BryanFerry ;
+    ex:setList ex:BryanFerry_LiveAid1985_Set ;
+    mm:performedWork ex:Work_BoysAndGirls_4af8cc8e_2,
+        ex:Work_JealousGuy_056b839a,
+        ex:Work_Sensation_a1d723b4,
+        ex:Work_SlaveToLove_01cf29f1 ;
+    mm:recordedAs ex:Recording_BoysAndGirls_7cb4fb3d,
+        ex:Recording_JealousGuy_5ef0d284,
+        ex:Recording_Sensation_db2cf95b,
+        ex:Recording_SlaveToLove_b31e1ae1 .
+
+ex:BryanFerry_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:BryanFerry_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_SlaveToLove_01cf29f1 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_JealousGuy_056b839a ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_BoysAndGirls_4af8cc8e_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Sensation_a1d723b4 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Bryan Ferry – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:CrosbyStillsNashYoung_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T20:39:00-04:00"^^xsd:dateTime ;
+    schema1:name "CrosbyStillsNashYoung – LiveAid1985 performance" ;
+    schema1:performer ex:CrosbyStillsNashYoung ;
+    ex:setList ex:CrosbyStillsNashYoung_LiveAid1985_Set ;
+    mm:performedWork ex:Work_DaylightAgain_aa4b2c0d_2,
+        ex:Work_FindTheCostOfFreedom_1d8593a1,
+        ex:Work_OnlyLoveCanBreakYourHeart_8558d07e ;
+    mm:recordedAs ex:Recording_DayligthAgain_3c59521b,
+        ex:Recording_OnlyLoveCanBreakYourHeart_be3169b8 .
+
+ex:CrosbyStillsNashYoung_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:CrosbyStillsNashYoung_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_DaylightAgain_aa4b2c0d_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_OnlyLoveCanBreakYourHeart_8558d07e ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_FindTheCostOfFreedom_1d8593a1 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Crosby, Stills, Nash & Young – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:CrosbyStillsNash_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T11:12:00-04:00"^^xsd:dateTime ;
+    schema1:name "CrosbyStillsNash – LiveAid1985 performance" ;
+    schema1:performer ex:CrosbyStillsNash ;
+    ex:setList ex:CrosbyStillsNash_LiveAid1985_Set ;
+    mm:performedWork ex:Work_SouthernCross_45c1e559_2,
+        ex:Work_SuiteJudyBlueEyes_bea79f68,
+        ex:Work_TeachYourChildren_ea98da58 ;
+    mm:recordedAs ex:Recording_SouthernCross_a9c4179d,
+        ex:Recording_SuiteJudyBlueEyes_ad8433ec,
+        ex:Recording_TeachYourChildren_e91e1321 .
+
+
+ex:CrosbyStillsNash_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:CrosbyStillsNash_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_SuiteJudyBlueEyes_bea79f68 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_TeachYourChildren_ea98da58 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_SouthernCross_45c1e559_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Crosby, Stills & Nash – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:DarylHallJohnOates_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T21:21:50-04:00"^^xsd:dateTime ;
+    schema1:name "DarylHallJohnOates – LiveAid1985 performance" ;
+    schema1:performer ex:DarylHallJohnOates ;
+    ex:setList ex:DarylHallJohnOates_LiveAid1985_Set ;
+    mm:performedWork ex:Work_AinTTooProudToBeg_d97a13df_2,
+        ex:Work_GetReady_3df4f8a5,
+        ex:Work_Maneater_59e765fb,
+        ex:Work_MyGirl_e8f22db4,
+        ex:Work_OutOfTouch_937a13f3,
+        ex:Work_TheWayYouDoTheThingsYouDo_44ddc0a7_2 ;
+    mm:recordedAs ex:Recording_AinTTooProudToBeg_98a1fc06,
+        ex:Recording_GetReady_bac9a200,
+        ex:Recording_Maneater_b6a526a8,
+        ex:Recording_MyGirl_2144d2ac,
+        ex:Recording_OutOfTouch_cccaefcf,
+        ex:Recording_TheWayYouDoTheThingsYouDo_2d19e310 .
+
+ex:DarylHallJohnOates_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:DarylHallJohnOates_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_TheWayYouDoTheThingsYouDo_44ddc0a7_2 ;
+            schema1:position 5 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_OutOfTouch_937a13f3 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_GetReady_3df4f8a5 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_AinTTooProudToBeg_d97a13df_2 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_MyGirl_e8f22db4 ;
+            schema1:position 6 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Maneater_59e765fb ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Daryl Hall & John Oates – Live Aid set" ;
+    schema1:numberOfItems 6 .
+
+ex:DavidBowie_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T18:23:00"^^xsd:dateTime ;
+    schema1:name "DavidBowie – LiveAid1985 performance" ;
+    schema1:performer ex:DavidBowie ;
+    ex:setList ex:DavidBowie_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Heroes_e2b01286,
+        ex:Work_ModernLove_508a3dac_2,
+        ex:Work_RebelRebel_dc6d909d_2,
+        ex:Work_Tvc15_126ed430 ;
+    mm:recordedAs ex:Recording_Heroes_9ad9811b,
+        ex:Recording_ModernLove_a1ae373f,
+        ex:Recording_RebelRebel_a3fd1fde,
+        ex:Recording_Tvc15_4ccc6c6b .
+
+ex:DavidBowie_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:DavidBowie_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_ModernLove_508a3dac_2 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Tvc15_126ed430 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_RebelRebel_dc6d909d_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Heroes_e2b01286 ;
+            schema1:position 4 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "David Bowie – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:DireStraits_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T18:00:00"^^xsd:dateTime ;
+    schema1:name "DireStraits – LiveAid1985 performance" ;
+    schema1:performer ex:DireStraits ;
+    ex:setList ex:DireStraits_LiveAid1985_Set ;
+    mm:performedWork ex:Work_MoneyForNothing_d6f71ddf,
+        ex:Work_SultansOfSwing_8626823c ;
+    mm:recordedAs ex:Recording_MoneyForNothing_e3536a52,
+        ex:Recording_SultansOfSwing_9a5b1ff6 .
+
+ex:DireStraits_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:DireStraits_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_MoneyForNothing_d6f71ddf ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_SultansOfSwing_8626823c ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Dire Straits – Live Aid set" ;
+    schema1:numberOfItems 2 .
+
+ex:DuranDuran_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T20:46:00-04:00"^^xsd:dateTime ;
+    schema1:name "DuranDuran – LiveAid1985 performance" ;
+    schema1:performer ex:DuranDuran ;
+    ex:setList ex:DuranDuran_LiveAid1985_Set ;
+    mm:performedWork ex:Work_AViewToAKill_f9b82c4a_2,
+        ex:Work_SaveAPrayer_604f7422,
+        ex:Work_TheReflex_50ec521b,
+        ex:Work_UnionOfTheSnake_5287e415 ;
+    mm:recordedAs ex:Recording_AViewToAKill_a694f876,
+        ex:Recording_SaveAPrayer_4c2713e9,
+        ex:Recording_TheReflex_73ff1d7a,
+        ex:Recording_UnionOfTheSnake_d1a8cfd3 .
+
+ex:DuranDuran_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:DuranDuran_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_TheReflex_50ec521b ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_AViewToAKill_f9b82c4a_2 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_SaveAPrayer_604f7422 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_UnionOfTheSnake_5287e415 ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Duran Duran – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:EltonJohn_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T20:50:00"^^xsd:dateTime ;
+    schema1:name "EltonJohn – LiveAid1985 performance" ;
+    schema1:performer ex:EltonJohn ;
+    ex:setList ex:EltonJohn_LiveAid1985_Set ;
+    mm:performedWork ex:Work_BandPresentation_3906ac72,
+        ex:Work_BennieAndTheJets_6ef8fb46_2,
+        ex:Work_CanIGetAWitness_238819bb_2,
+        ex:Work_DonTGoBreakingMyHeart_f8d529ad_2,
+        ex:Work_DonTLetTheSunGoDownOnMe_75ed39fe,
+        ex:Work_IMStillStanding_4ae45d33,
+        ex:Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306 ;
+    mm:recordedAs ex:Recording_BandPresentation_dd6bf224,
+        ex:Recording_BennieAndTheJets_6e546f44,
+        ex:Recording_CanIGetAWitness_d38daca0,
+        ex:Recording_DonTGoBreakingMyHeart_05923cfc,
+        ex:Recording_DonTLetTheSunGoDownOnMe_118dd83a,
+        ex:Recording_IMStillStanding_f390bbb2,
+        ex:Recording_RocketMan_ea6fbaf0 .
+
+ex:EltonJohn_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:EltonJohn_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_IMStillStanding_4ae45d33 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_BennieAndTheJets_6ef8fb46_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_DonTGoBreakingMyHeart_f8d529ad_2 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_DonTLetTheSunGoDownOnMe_75ed39fe ;
+            schema1:position 6 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_CanIGetAWitness_238819bb_2 ;
+            schema1:position 7 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_BandPresentation_3906ac72 ;
+            schema1:position 5 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Elton John – Live Aid set" ;
+    schema1:numberOfItems 7 .
+
+ex:ElvisCostello_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T14:07:00"^^xsd:dateTime ;
+    schema1:name "ElvisCostello – LiveAid1985 performance" ;
+    schema1:performer ex:ElvisCostello ;
+    ex:setList ex:ElvisCostello_LiveAid1985_Set ;
+    mm:performedWork ex:Work_AllYouNeedIsLove_0dfca25e_2 ;
+    mm:recordedAs ex:Recording_AllYouNeedIsLove_f6f9aebe .
+
+ex:ElvisCostello_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:ElvisCostello_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_AllYouNeedIsLove_0dfca25e_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Elvis Costello – Live Aid set" ;
+    schema1:numberOfItems 1 .
+
+ex:EricClapton_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T19:38:00-04:00"^^xsd:dateTime ;
+    schema1:name "EricClapton – LiveAid1985 performance" ;
+    schema1:performer ex:EricClapton ;
+    ex:setList ex:EricClapton_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Layla_beb76331,
+        ex:Work_SheSWaiting_2f2e1ed1,
+        ex:Work_WhiteRoom_7549fd84_2 ;
+    mm:recordedAs ex:Recording_Layla_e63a72d2,
+        ex:Recording_SheSWaiting_7a849b5b,
+        ex:Recording_WhiteRoom_6919d285 .
+
+ex:EricClapton_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:EricClapton_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_SheSWaiting_2f2e1ed1 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WhiteRoom_7549fd84_2 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Layla_beb76331 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Eric Clapton – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:FourTops_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T09:32:00-04:00"^^xsd:dateTime ;
+    schema1:name "FourTops – LiveAid1985 performance" ;
+    schema1:performer ex:FourTops ;
+    ex:setList ex:FourTops_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Bernadette_78a776b8_2,
+        ex:Work_ICanTHelpMyselfSugarPieHoneyBunch_209a62bf,
+        ex:Work_ItSTheSameOldSong_1c0a52ff,
+        ex:Work_ReachOutILlBeThere_f82341b9_2,
+        ex:Work_ShakeMeWakeMeWhenItSOver_29237a79 ;
+    mm:recordedAs ex:Recording_Bernadette_af9d9185,
+        ex:Recording_ICanTHelpMyselfSugarPieHoneyBunch_aac9c2e3,
+        ex:Recording_ItSTheSameOldSong_f19f6599,
+        ex:Recording_ReachOutILlBeThere_cf659519,
+        ex:Recording_ShakeMeWakeMeWhenItSOver_2ea33e6c .
+
+ex:FourTops_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:FourTops_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_ItSTheSameOldSong_1c0a52ff ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_ShakeMeWakeMeWhenItSOver_29237a79 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_ICanTHelpMyselfSugarPieHoneyBunch_209a62bf ;
+            schema1:position 5 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_ReachOutILlBeThere_f82341b9_2 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Bernadette_78a776b8_2 ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Four Tops – Live Aid set" ;
+    schema1:numberOfItems 5 .
+
+ex:FreddieMercury_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T21:48:00"^^xsd:dateTime ;
+    schema1:name "FreddieMercury – LiveAid1985 performance" ;
+    schema1:performer ex:FreddieMercury ;
+    ex:setList ex:FreddieMercury_LiveAid1985_Set ;
+    mm:performedWork ex:Work_IsThisTheWorldWeCreated_3a6c7da6 ;
+    mm:recordedAs ex:Recording_IsThisTheWorldWeCreated_9ad485f5 .
+
+ex:FreddieMercury_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:FreddieMercury_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_IsThisTheWorldWeCreated_3a6c7da6 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Freddie Mercury – Live Aid set" ;
+    schema1:numberOfItems 1 .
+
+ex:HowardJones_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T15:49:00"^^xsd:dateTime ;
+    schema1:name "HowardJones – LiveAid1985 performance" ;
+    schema1:performer ex:HowardJones ;
+    ex:setList ex:HowardJones_LiveAid1985_Set ;
+    mm:performedWork ex:Work_HideAndSeek_1a1cf738 ;
+    mm:recordedAs ex:Recording_HideAndSeek_220dceb7 .
+
+ex:HowardJones_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:HowardJones_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_HideAndSeek_1a1cf738 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Howard Jones – Live Aid set" ;
+    schema1:numberOfItems 1 .
+
+ex:JoanBaez_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T09:01:00-04:00"^^xsd:dateTime ;
+    schema1:name "JoanBaez – LiveAid1985 performance" ;
+    schema1:performer ex:JoanBaez ;
+    ex:setList ex:JoanBaez_LiveAid1985_Set ;
+    mm:performedWork ex:Work_AmazingGrace_a5393197,
+        ex:Work_WeAreTheWorld_0b9a2e1d_2 ;
+    mm:recordedAs ex:Recording_AmazingGrace_7eaf7963,
+        ex:Recording_WeAreTheWorld_35a488c3 .
+
+ex:JoanBaez_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:JoanBaez_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_AmazingGrace_a5393197 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WeAreTheWorld_0b9a2e1d_2 ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Joan Baez – Live Aid set" ;
+    schema1:numberOfItems 2 .
+
+ex:JudasPriest_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T11:29:00-04:00"^^xsd:dateTime ;
+    schema1:name "JudasPriest – LiveAid1985 performance" ;
+    schema1:performer ex:JudasPriest ;
+    ex:setList ex:JudasPriest_LiveAid1985_Set ;
+    mm:performedWork ex:Work_LivingAfterMidnight_c2f04756,
+        ex:Work_TheGreenManalishiWithTheTwoProngCrown_784d31f1,
+        ex:Work_YouVeGotAnotherThingComin_24f7f4ea ;
+    mm:recordedAs ex:Recording_LivinAfterMidnight_4e135c56,
+        ex:Recording_LivingAfterMidnight_4e135c56,
+        ex:Recording_TheGreenManalishi_7049eb5c,
+        ex:Recording_YouVeGotAnotherThingComin_b48f9409 .
+
+ex:JudasPriest_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:JudasPriest_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_TheGreenManalishiWithTheTwoProngCrown_784d31f1 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_LivingAfterMidnight_c2f04756 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_YouVeGotAnotherThingComin_24f7f4ea ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Judas Priest – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:KennyLoggins_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T17:30:00-04:00"^^xsd:dateTime ;
+    schema1:name "KennyLoggins – LiveAid1985 performance" ;
+    schema1:performer ex:KennyLoggins ;
+    ex:setList ex:KennyLoggins_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Footloose_fee797bd ;
+    mm:recordedAs ex:Recording_Footloose_570d9d64 .
+
+ex:KennyLoggins_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:KennyLoggins_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_Footloose_fee797bd ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Kenny Loggins – Live Aid set" ;
+    schema1:numberOfItems 1 .
+
+ex:Madonna_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T16:27:00-04:00"^^xsd:dateTime ;
+    schema1:name "Madonna – LiveAid1985 performance" ;
+    schema1:performer ex:Madonna ;
+    ex:setList ex:Madonna_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Holiday_1c03c879,
+        ex:Work_IntoTheGroove_35b448bb_2,
+        ex:Work_LoveMakesTheWorldGoRound_b79da28d_2 ;
+    mm:recordedAs ex:Recording_Holiday_9ddf03bc,
+        ex:Recording_IntoTheGroove_301a7f9c,
+        ex:Recording_LoveMakesTheWorldGoRound_5479ad4a .
+
+ex:Madonna_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:Madonna_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_Holiday_1c03c879 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_IntoTheGroove_35b448bb_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_LoveMakesTheWorldGoRound_b79da28d_2 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Madonna – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:MickJagger_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T22:15:00-04:00"^^xsd:dateTime ;
+    schema1:name "MickJagger – LiveAid1985 performance" ;
+    schema1:performer ex:MickJagger ;
+    ex:setList ex:MickJagger_LiveAid1985_Set ;
+    mm:performedWork ex:Work_ItSOnlyRockNRoll_e8f15c53_2,
+        ex:Work_JustAnotherNight_1adedf0f_2,
+        ex:Work_LonelyAtTheTop_62617910,
+        ex:Work_MickJaggerAndTinaTurnerRehearsals_95b7c1db,
+        ex:Work_MissYou_be9728e0_2,
+        ex:Work_StateOfShock_8e0f121d_2 ;
+    mm:recordedAs ex:Recording_ItSOnlyRockAndRoll_84d84f97,
+        ex:Recording_JustAnotherNight_d6663e8f,
+        ex:Recording_LonelyAtTheTop_156cc230,
+        ex:Recording_MickJaggerAndTinaTurnerRehearsals_5a4e9694,
+        ex:Recording_MissYou_4ed24c6c,
+        ex:Recording_StateOfShock_a9becd00 .
+
+ex:MickJagger_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:MickJagger_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_JustAnotherNight_1adedf0f_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_LonelyAtTheTop_62617910 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_ItSOnlyRockNRoll_e8f15c53_2 ;
+            schema1:position 5 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_MissYou_be9728e0_2 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_MickJaggerAndTinaTurnerRehearsals_95b7c1db ;
+            schema1:position 6 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_StateOfShock_8e0f121d_2 ;
+            schema1:position 4 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Mick Jagger – Live Aid set" ;
+    schema1:numberOfItems 6 .
+
+ex:NeilYoung_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T18:06:00-04:00"^^xsd:dateTime ;
+    schema1:name "NeilYoung – LiveAid1985 performance" ;
+    schema1:performer ex:NeilYoung ;
+    ex:setList ex:NeilYoung_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Helpless_295f4446_2,
+        ex:Work_NothingIsPerfect_e3684af2,
+        ex:Work_Powderfinger_e4de49b8,
+        ex:Work_SugarMountain_36ab6f4c_2,
+        ex:Work_TheNeedleAndTheDamageDone_6d0d3f75_2 ;
+    mm:recordedAs ex:Recording_Helpless_ecc0334e,
+        ex:Recording_NothingIsPerfect_4ee7077f,
+        ex:Recording_Powderfinger_377962db,
+        ex:Recording_SugarMountain_c23f61cd,
+        ex:Recording_TheNeedleAndTheDamageDone_882ef9db .
+
+ex:NeilYoung_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:NeilYoung_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_NothingIsPerfect_e3684af2 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Helpless_295f4446_2 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_SugarMountain_36ab6f4c_2 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_TheNeedleAndTheDamageDone_6d0d3f75_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Powderfinger_e4de49b8 ;
+            schema1:position 5 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Neil Young – Live Aid set" ;
+    schema1:numberOfItems 5 .
+
+ex:NikKershaw_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T14:22:00"^^xsd:dateTime ;
+    schema1:name "NikKershaw – LiveAid1985 performance" ;
+    schema1:performer ex:NikKershaw ;
+    ex:setList ex:NikKershaw_LiveAid1985_Set ;
+    mm:performedWork ex:Work_DonQuixote_7e7b9a3f,
+        ex:Work_TheRiddle_b5c6086c,
+        ex:Work_WideBoy_d3b9738a,
+        ex:Work_WouldnTItBeGood_6a8be284_2 ;
+    mm:recordedAs ex:Recording_DonQuixote_029c9aed,
+        ex:Recording_TheRiddle_59101c84,
+        ex:Recording_WideBoy_2e405de3,
+        ex:Recording_WouldnTItBeGood_f01b6a95 .
+
+ex:NikKershaw_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:NikKershaw_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_WouldnTItBeGood_6a8be284_2 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WideBoy_d3b9738a ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_TheRiddle_b5c6086c ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_DonQuixote_7e7b9a3f ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Nik Kershaw – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:PattiLabelle_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T21:20:00-04:00"^^xsd:dateTime ;
+    schema1:name "PattiLabelle – LiveAid1985 performance" ;
+    schema1:performer ex:PattiLabelle ;
+    ex:setList ex:PattiLabelle_LiveAid1985_Set ;
+    mm:performedWork ex:Work_ForeverYoung_f978ba1e,
+        ex:Work_Imagine_517ff96c_2,
+        ex:Work_NewAttitude_f2d275ad_2,
+        ex:Work_OverTheRainbow_f8217125_2,
+        ex:Work_StirItUp_fa22c5e3,
+        ex:Work_WhyCanTIGetItOver_e08b06d9 ;
+    mm:recordedAs ex:Recording_ForeverYoung_9268848f,
+        ex:Recording_Imagine_314e559d,
+        ex:Recording_NewAttitude_839ef1c3,
+        ex:Recording_OverTheRainbow_9d50a5e3,
+        ex:Recording_StirItUp_e32aea71,
+        ex:Recording_WhyCanTIGetItOver_dc308b4b .
+
+ex:PattiLabelle_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:PattiLabelle_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_OverTheRainbow_f8217125_2 ;
+            schema1:position 5 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_ForeverYoung_f978ba1e ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_NewAttitude_f2d275ad_2 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Imagine_517ff96c_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_StirItUp_fa22c5e3 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WhyCanTIGetItOver_e08b06d9 ;
+            schema1:position 6 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Patti LaBelle – Live Aid set" ;
+    schema1:numberOfItems 6 .
+
+ex:PaulMccartney_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T21:51:00"^^xsd:dateTime ;
+    schema1:name "PaulMccartney – LiveAid1985 performance" ;
+    schema1:performer ex:PaulMccartney ;
+    ex:setList ex:PaulMccartney_LiveAid1985_Set ;
+    mm:performedWork ex:Work_LetItBe_ef5b9074 ;
+    mm:recordedAs ex:Recording_LetItBe_a581c536 .
+
+ex:PaulMccartney_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:PaulMccartney_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_LetItBe_ef5b9074 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Paul McCartney – Live Aid set" ;
+    schema1:numberOfItems 1 .
+
+ex:PaulYoung_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T16:40:00"^^xsd:dateTime ;
+    schema1:name "PaulYoung – LiveAid1985 performance" ;
+    schema1:performer ex:PaulYoung ;
+    ex:setList ex:PaulYoung_LiveAid1985_Set ;
+    mm:performedWork ex:Work_ComeBackAndStay_ad4e5fd6_2,
+        ex:Work_DoTheyKnowItSChristmas_d64306b1_2,
+        ex:Work_EverytimeYouGoAway_677d42d6_2,
+        ex:Work_ThatSTheWayLoveIs_431780d2 ;
+    mm:recordedAs ex:Recording_ComeBackAndStay_4f38bb16,
+        ex:Recording_DoTheyKnowItSChristmas_57b2fa68,
+        ex:Recording_EverytimeYouGoAway_86704278,
+        ex:Recording_ThatSTheWayLoveIs_4f7d61d0 .
+
+ex:PaulYoung_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:PaulYoung_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_DoTheyKnowItSChristmas_d64306b1_2 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_EverytimeYouGoAway_677d42d6_2 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_ThatSTheWayLoveIs_431780d2 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_ComeBackAndStay_ad4e5fd6_2 ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Paul Young – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:PhilCollins_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T15:18:00"^^xsd:dateTime ;
+    schema1:name "PhilCollins – LiveAid1985 performance" ;
+    schema1:performer ex:PhilCollins ;
+    ex:setList ex:PhilCollins_LiveAid1985_Set ;
+    mm:performedWork ex:Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2,
+        ex:Work_EveryBreathYouTake_f88369e2,
+        ex:Work_InTheAirTonight_b9a05cea,
+        ex:Work_LongLongWayToGo_2bff2bbb_2 ;
+    mm:recordedAs ex:Recording_AgainstAllOdds_158681cb,
+        ex:Recording_AgainstAllOdds_50b4150f,
+        ex:Recording_EveryBreathYouTake_fe77b125,
+        ex:Recording_InTheAirTonight_3bd855ce,
+        ex:Recording_InTheAirTonight_8b47f77a,
+        ex:Recording_LongLongWayToGo_4ff594bf .
+
+ex:PhilCollins_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:PhilCollins_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_EveryBreathYouTake_f88369e2 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_InTheAirTonight_b9a05cea ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_LongLongWayToGo_2bff2bbb_2 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Phil Collins – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:Pretenders_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T14:41:00-04:00"^^xsd:dateTime ;
+    schema1:name "Pretenders – LiveAid1985 performance" ;
+    schema1:performer ex:Pretenders ;
+    ex:setList ex:Pretenders_LiveAid1985_Set ;
+    mm:performedWork ex:Work_BackOnTheChainGang_31d4aa2c,
+        ex:Work_MessageOfLove_43dd26dc_2,
+        ex:Work_MiddleOfTheRoad_ba390ae8,
+        ex:Work_StopYourSobbing_9533d2bf,
+        ex:Work_TimeTheAvenger_34b57a63_2 ;
+    mm:recordedAs ex:Recording_BackOnTheChainGang_e955dd67,
+        ex:Recording_MessageOfLove_733e6470,
+        ex:Recording_MiddleOfTheRoad_ebe661e5,
+        ex:Recording_StopYourSobbing_9282c957,
+        ex:Recording_TimeTheAvenger_c74a5c06 .
+
+ex:Pretenders_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:Pretenders_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_MiddleOfTheRoad_ba390ae8 ;
+            schema1:position 5 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_TimeTheAvenger_34b57a63_2 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_StopYourSobbing_9533d2bf ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_MessageOfLove_43dd26dc_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_BackOnTheChainGang_31d4aa2c ;
+            schema1:position 4 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Pretenders – Live Aid set" ;
+    schema1:numberOfItems 5 .
+
+ex:Queen_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:name "Queen – LiveAid1985 performance" ;
+    schema1:performer ex:Queen ;
+    schema1:startDate "1985-07-13T18:41:00"^^xsd:dateTime ;
+    ex:setList ex:Queen_LiveAid1985_Set ;
+    mm:performedWork ex:Work_BohemianRhapsody_41c94a08,
+        ex:Work_CrazyLittleThingCalledLove_dad1c2a9,
+        ex:Work_HammerToFall_1e807fa4_2,
+        ex:Work_RadioGaGa_2c76fe20_2,
+        ex:Work_WeAreTheChampions_0b3da969_2,
+        ex:Work_WeWillRockYou_3623f3af_2 ;
+    mm:recordedAs ex:Recording_BohemianRhapsody_6b547796,
+        ex:Recording_CrazyLittleThingCalledLove_20b2a2c3,
+        ex:Recording_HammerToFall_159f3644,
+        ex:Recording_RadioGaga_40401938,
+        ex:Recording_WeAreTheChampions_ab0796fb,
+        ex:Recording_WeWillRockYou_2f58f9a6 .
+
+ex:Queen_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:Queen_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_CrazyLittleThingCalledLove_dad1c2a9 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WeAreTheChampions_0b3da969_2 ;
+            schema1:position 6 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WeWillRockYou_3623f3af_2 ;
+            schema1:position 5 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_BohemianRhapsody_41c94a08 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_RadioGaGa_2c76fe20_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_HammerToFall_1e807fa4_2 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Queen – Live Aid set" ;
+    schema1:numberOfItems 6 .
+
+ex:ReoSpeedwagon_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T10:47:00-04:00"^^xsd:dateTime ;
+    schema1:name "ReoSpeedwagon – LiveAid1985 performance" ;
+    schema1:performer ex:ReoSpeedwagon ;
+    ex:setList ex:ReoSpeedwagon_LiveAid1985_Set ;
+    mm:performedWork ex:Work_CanTFightThisFeeling_4b497a42_2,
+        ex:Work_RollWithTheChanges_831ed988_2 ;
+    mm:recordedAs ex:Recording_CanTFightThisFeeling_6b4e30bc,
+        ex:Recording_RollWithTheChanges_a86ab6c4 .
+
+ex:ReoSpeedwagon_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:ReoSpeedwagon_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_RollWithTheChanges_831ed988_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_CanTFightThisFeeling_4b497a42_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "REO Speedwagon – Live Aid set" ;
+    schema1:numberOfItems 2 .
+
+ex:RickSpringfield_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T10:27:00-04:00"^^xsd:dateTime ;
+    schema1:name "RickSpringfield – LiveAid1985 performance" ;
+    schema1:performer ex:RickSpringfield ;
+    ex:setList ex:RickSpringfield_LiveAid1985_Set ;
+    mm:performedWork ex:Work_HumanTouch_f9c6ee89,
+        ex:Work_LoveSomebody_85410af7_2,
+        ex:Work_StateOfTheHeart_5f9be140_2 ;
+    mm:recordedAs ex:Recording_HumanTouch_c6c0bf1a,
+        ex:Recording_LoveSomebody_b884a1ca,
+        ex:Recording_StateOfTheHeart_65dfffa0 .
+
+ex:RickSpringfield_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:RickSpringfield_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_StateOfTheHeart_5f9be140_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_HumanTouch_f9c6ee89 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_LoveSomebody_85410af7_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Rick Springfield – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:RunDMC_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T10:12:00-04:00"^^xsd:dateTime ;
+    schema1:name "RunDMC – LiveAid1985 performance" ;
+    schema1:performer ex:RunDMC ;
+    ex:setList ex:RunDMC_LiveAid1985_Set ;
+    mm:performedWork ex:Work_JamMasterJay_c0b69956_2 ;
+    mm:recordedAs ex:Recording_JamMasterJay_745685a1 .
+
+ex:RunDMC_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:RunDMC_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_JamMasterJay_c0b69956_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Run‐D.M.C. – Live Aid set" ;
+    schema1:numberOfItems 1 .
+
+ex:Sade_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T14:53:00"^^xsd:dateTime ;
+    schema1:name "Sade – LiveAid1985 performance" ;
+    schema1:performer ex:Sade ;
+    ex:setList ex:Sade_LiveAid1985_Set ;
+    mm:performedWork ex:Work_IsItACrime_14db4b5e_2,
+        ex:Work_WhyCanTWeLiveTogether_8bae3d24_2,
+        ex:Work_YourLoveIsKing_89d27ad0 ;
+    mm:recordedAs ex:Recording_IsItACrime_3cb8e20f,
+        ex:Recording_WhyCanTWeLiveTogether_0bf0a51e,
+        ex:Recording_YourLoveIsKing_a214b8ab .
+
+ex:Sade_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:Sade_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_IsItACrime_14db4b5e_2 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_YourLoveIsKing_89d27ad0 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WhyCanTWeLiveTogether_8bae3d24_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Sade – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:Santana_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T15:21:00-04:00"^^xsd:dateTime ;
+    schema1:name "Santana – LiveAid1985 performance" ;
+    schema1:performer ex:Santana ;
+    ex:setList ex:Santana_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Brotherhood_92d118d8_2,
+        ex:Work_ByThePool_7eeea52e,
+        ex:Work_OpenInvitation_13ca1e44,
+        ex:Work_PrimeraInvasion_1a3c7702_2,
+        ex:Work_RightNow_3778dd5b ;
+    mm:recordedAs ex:Recording_Brotherhood_d1e40685,
+        ex:Recording_ByThePool_2140460b,
+        ex:Recording_OpenInvitation_3c2f1252,
+        ex:Recording_PrimeraInvasion_3f8669be,
+        ex:Recording_RightNow_658166c0 .
+
+ex:Santana_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:Santana_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_ByThePool_7eeea52e ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_PrimeraInvasion_1a3c7702_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_RightNow_3778dd5b ;
+            schema1:position 5 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_OpenInvitation_13ca1e44 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Brotherhood_92d118d8_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Santana – Live Aid set" ;
+    schema1:numberOfItems 5 .
+
+ex:SimpleMinds_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T14:05:00-04:00"^^xsd:dateTime ;
+    schema1:name "SimpleMinds – LiveAid1985 performance" ;
+    schema1:performer ex:SimpleMinds ;
+    ex:setList ex:SimpleMinds_LiveAid1985_Set ;
+    mm:performedWork ex:Work_DonTYouForgetAboutMe_4694f742,
+        ex:Work_Ghostdancing_84c1a403_2,
+        ex:Work_PromisedYouAMiracle_5d09ac47 ;
+    mm:recordedAs ex:Recording_DonTYouForgetAboutMe_bdf2301c,
+        ex:Recording_GhostDancing_5773e1ad,
+        ex:Recording_PromisedYouAMiracle_eb1d4910 .
+
+ex:SimpleMinds_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:SimpleMinds_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_Ghostdancing_84c1a403_2 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_DonTYouForgetAboutMe_4694f742 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_PromisedYouAMiracle_5d09ac47 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Simple Minds – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:SpandauBallet_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T13:46:00"^^xsd:dateTime ;
+    schema1:name "SpandauBallet – LiveAid1985 performance" ;
+    schema1:performer ex:SpandauBallet ;
+    ex:setList ex:SpandauBallet_LiveAid1985_Set ;
+    mm:performedWork ex:Work_OnlyWhenYouLeave_ab26cb3a,
+        ex:Work_True_022cacb2_2,
+        ex:Work_Virgin_be856f58 ;
+    mm:recordedAs ex:Recording_OnlyWhenYouLeave_518df094,
+        ex:Recording_True_ca2c82a1,
+        ex:Recording_Virgin_4625d665 .
+
+ex:SpandauBallet_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:SpandauBallet_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_Virgin_be856f58 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_OnlyWhenYouLeave_ab26cb3a ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_True_022cacb2_2 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Spandau Ballet – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:StatusQuo_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T12:00:00"^^xsd:dateTime ;
+    schema1:name "StatusQuo – LiveAid1985 performance" ;
+    schema1:performer ex:StatusQuo ;
+    ex:setList ex:StatusQuo_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Caroline_c758c89e_2,
+        ex:Work_DonTWasteMyTime_8ac35dd3,
+        ex:Work_RockinAllOverTheWorld_5b31460f_2 ;
+    mm:recordedAs ex:Recording_Caroline_a514cf78,
+        ex:Recording_DonTWasteMyTime_627b88ac,
+        ex:Recording_RockinAllOverTheWorld_ff3aa159 .
+
+ex:StatusQuo_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:StatusQuo_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_DonTWasteMyTime_8ac35dd3 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Caroline_c758c89e_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_RockinAllOverTheWorld_5b31460f_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Status Quo – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:Sting_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T15:18:00"^^xsd:dateTime ;
+    schema1:name "Sting – LiveAid1985 performance" ;
+    schema1:performer ex:Sting ;
+    ex:setList ex:Sting_LiveAid1985_Set ;
+    mm:performedWork ex:Work_DrivenToTears_d7c50a9a,
+        ex:Work_MessageInABottle_d4bbeea9,
+        ex:Work_Roxanne_0ddba90a ;
+    mm:recordedAs ex:Recording_DrivenToTears_b08c7df3,
+        ex:Recording_MessageInABottle_3e4b4e90,
+        ex:Recording_Roxanne_cbabd27e .
+
+ex:Sting_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:Sting_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_DrivenToTears_d7c50a9a ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_MessageInABottle_d4bbeea9 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Roxanne_0ddba90a ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Sting – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:TheBeachBoys_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T12:39:00-04:00"^^xsd:dateTime ;
+    schema1:name "TheBeachBoys – LiveAid1985 performance" ;
+    schema1:performer ex:TheBeachBoys ;
+    ex:setList ex:TheBeachBoys_LiveAid1985_Set ;
+    mm:performedWork ex:Work_CaliforniaGirls_9c56c803,
+        ex:Work_GoodVibrations_ede10e9a,
+        ex:Work_HelpMeRhonda_21404af0,
+        ex:Work_SurfinUSA_537d49de_2,
+        ex:Work_WouldnTItBeNice_8d9c97e9_2 ;
+    mm:recordedAs ex:Recording_BeachBoysCaliforniaGirls_4fbf7149,
+        ex:Recording_GoodVibrations_7acd0668,
+        ex:Recording_HelpMeRhonda_09c194b8,
+        ex:Recording_SurfinUsa_df04837c,
+        ex:Recording_WouldnTItBeNice_de5d8181 .
+
+ex:TheBeachBoys_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:TheBeachBoys_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_HelpMeRhonda_21404af0 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_CaliforniaGirls_9c56c803 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WouldnTItBeNice_8d9c97e9_2 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_GoodVibrations_ede10e9a ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_SurfinUSA_537d49de_2 ;
+            schema1:position 5 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "The Beach Boys – Live Aid set" ;
+    schema1:numberOfItems 5 .
+
+ex:TheBoomtownRats_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T12:44:00"^^xsd:dateTime ;
+    schema1:name "TheBoomtownRats – LiveAid1985 performance" ;
+    schema1:performer ex:TheBoomtownRats ;
+    ex:setList ex:TheBoomtownRats_LiveAid1985_Set ;
+    mm:performedWork ex:Work_DragMeDown_3024d565_2,
+        ex:Work_IDonTLikeMondays_d998a80c,
+        ex:Work_RatTrap_a09a4c84_2 ;
+    mm:recordedAs ex:Recording_DragMeDown_6e154953,
+        ex:Recording_IDonTLikeMondays_679ee6ca,
+        ex:Recording_RatTrap_3e80d77e .
+
+ex:TheBoomtownRats_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:TheBoomtownRats_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_DragMeDown_3024d565_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_IDonTLikeMondays_d998a80c ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_RatTrap_a09a4c84_2 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "The Boomtown Rats – Live Aid set" ;
+    schema1:numberOfItems 3 .
+
+ex:TheCars_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T17:39:00-04:00"^^xsd:dateTime ;
+    schema1:name "TheCars – LiveAid1985 performance" ;
+    schema1:performer ex:TheCars ;
+    ex:setList ex:TheCars_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Drive_4cbcd04d_2,
+        ex:Work_HeartbeatCity_75dc9fbb_2,
+        ex:Work_JustWhatINeeded_f5128e1e_2,
+        ex:Work_YouMightThink_9bd7d77e ;
+    mm:recordedAs ex:Recording_Drive_d9f86097,
+        ex:Recording_HeartbeatCity_b310b1b8,
+        ex:Recording_JustWhatINeeded_0ce2996b,
+        ex:Recording_YouMightThink_62b257d5 .
+
+ex:TheCars_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:TheCars_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_YouMightThink_9bd7d77e ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Drive_4cbcd04d_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_HeartbeatCity_75dc9fbb_2 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_JustWhatINeeded_f5128e1e_2 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "The Cars – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:TheHooters_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T09:10:00-04:00"^^xsd:dateTime ;
+    schema1:name "TheHooters – LiveAid1985 performance" ;
+    schema1:performer ex:TheHooters ;
+    ex:setList ex:TheHooters_LiveAid1985_Set ;
+    mm:performedWork ex:Work_AllYouZombies_ca255d52_2,
+        ex:Work_AndWeDanced_55e8031f ;
+    mm:recordedAs ex:Recording_AllYouZombies_bfd09d22,
+        ex:Recording_AndWeDanced_095b10f0 .
+
+ex:TheHooters_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:TheHooters_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_AndWeDanced_55e8031f ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_AllYouZombies_ca255d52_2 ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "The Hooters – Live Aid set" ;
+    schema1:numberOfItems 2 .
+
+ex:ThePowerStation_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T18:42:00-04:00"^^xsd:dateTime ;
+    schema1:name "ThePowerStation – LiveAid1985 performance" ;
+    schema1:performer ex:ThePowerStation ;
+    ex:setList ex:ThePowerStation_LiveAid1985_Set ;
+    mm:performedWork ex:Work_GetItOn_29ff18d1_2,
+        ex:Work_Murderess_bc3b1534 ;
+    mm:recordedAs ex:Recording_GetItOn_6d6c207b,
+        ex:Recording_Murderess_889583de .
+
+ex:ThePowerStation_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:ThePowerStation_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_Murderess_bc3b1534 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_GetItOn_29ff18d1_2 ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "The Power Station – Live Aid set" ;
+    schema1:numberOfItems 2 .
+
+ex:TheStyleCouncil_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T12:19:00"^^xsd:dateTime ;
+    schema1:name "TheStyleCouncil – LiveAid1985 performance" ;
+    schema1:performer ex:TheStyleCouncil ;
+    ex:setList ex:TheStyleCouncil_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Internationalists_25434796,
+        ex:Work_TheBigBossGroove_bddd59cc_2,
+        ex:Work_WallsComeTumblingDown_2f64618a,
+        ex:Work_YouReTheBestThing_318c96a9_2 ;
+    mm:recordedAs ex:Recording_BigBossGroove_a1d2bfd4,
+        ex:Recording_Internationalists_08ca2301,
+        ex:Recording_WallsComeTumblingDown_203a982d,
+        ex:Recording_YouReTheBestThing_85650129 .
+
+ex:TheStyleCouncil_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:TheStyleCouncil_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_WallsComeTumblingDown_2f64618a ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Internationalists_25434796 ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_TheBigBossGroove_bddd59cc_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_YouReTheBestThing_318c96a9_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "The Style Council – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:TheWho_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T19:59:00"^^xsd:dateTime ;
+    schema1:name "TheWho – LiveAid1985 performance" ;
+    schema1:performer ex:TheWho ;
+    ex:setList ex:TheWho_LiveAid1985_Set ;
+    mm:performedWork ex:Work_LoveReignOErMe_e2318c2e,
+        ex:Work_MyGeneration_a55b5d5b,
+        ex:Work_PinballWizard_6ef8cd26,
+        ex:Work_WonTGetFooledAgain_f00616af_2 ;
+    mm:recordedAs ex:Recording_LoveReignOErMe_5fa0efda,
+        ex:Recording_MyGeneration_f800e8ee,
+        ex:Recording_PinballWizard_49f4bb45,
+        ex:Recording_WonTGetFooledAgain_e7c6be90 .
+
+ex:TheWho_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:TheWho_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_PinballWizard_6ef8cd26 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_WonTGetFooledAgain_f00616af_2 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_LoveReignOErMe_e2318c2e ;
+            schema1:position 3 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_MyGeneration_a55b5d5b ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "The Who – Live Aid set" ;
+    schema1:numberOfItems 4 .
+
+ex:ThompsonTwins_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:JFKStadium ;
+    schema1:startDate "1985-07-13T19:21:00-04:00"^^xsd:dateTime ;
+    schema1:name "ThompsonTwins – LiveAid1985 performance" ;
+    schema1:performer ex:ThompsonTwins ;
+    ex:setList ex:ThompsonTwins_LiveAid1985_Set ;
+    mm:performedWork ex:Work_HoldMeNow_d77e1b17,
+        ex:Work_Revolution_fc6e50dd_2 ;
+    mm:recordedAs ex:Recording_HoldMeNow_0489bbef,
+        ex:Recording_Revolution_691fb7d6 .
+
+ex:ThompsonTwins_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:ThompsonTwins_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_HoldMeNow_d77e1b17 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Revolution_fc6e50dd_2 ;
+            schema1:position 2 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Thompson Twins – Live Aid set" ;
+    schema1:numberOfItems 2 .
+
+ex:TinaTurner_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:name "TinaTurner – LiveAid1985 performance" ;
+    schema1:performer ex:TinaTurner ;
+    ex:setList ex:TinaTurner_LiveAid1985_Set .
+
+ex:TinaTurner_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:TinaTurner_LiveAid1985_Performance ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Tina Turner – Live Aid set" .
+
+ex:U2_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T17:19:00"^^xsd:dateTime ;
+    schema1:name "U2 – LiveAid1985 performance" ;
+    schema1:performer ex:U2 ;
+    ex:setList ex:U2_LiveAid1985_Set ;
+    mm:performedWork ex:Work_Bad_62d0a051,
+        ex:Work_SundayBloodySunday_dc2c1143_2 ;
+    mm:recordedAs ex:Recording_Bad_79932b83,
+        ex:Recording_SundayBloodySunday_b0ce8594 .
+
+ex:U2_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:U2_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_Bad_62d0a051 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_SundayBloodySunday_dc2c1143_2 ;
+            schema1:position 1 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "U2 – Live Aid set" ;
+    schema1:numberOfItems 2 .
+
+ex:Ultravox_LiveAid1985_Performance a schema1:Event,
+        mm:LivePerformance ;
+    schema1:isPartOf ex:LiveAid1985 ;
+    schema1:location ex:WembleyStadium ;
+    schema1:startDate "1985-07-13T13:17:00"^^xsd:dateTime ;
+    schema1:name "Ultravox – LiveAid1985 performance" ;
+    schema1:performer ex:Ultravox ;
+    ex:setList ex:Ultravox_LiveAid1985_Set ;
+    mm:performedWork ex:Work_DancingWithTearsInMyEyes_a88ba41e_2,
+        ex:Work_OneSmallDay_d09d4f20,
+        ex:Work_ReapTheWildWind_ab62d196_2,
+        ex:Work_Vienna_33826c32 ;
+    mm:recordedAs ex:Recording_DancingWithTearsInMyEyes_d32e9ce2,
+        ex:Recording_OneSmallDay_6e7eade1,
+        ex:Recording_ReapTheWildWind_51237118,
+        ex:Recording_Vienna_1d8f82e2 .
+
+ex:Ultravox_LiveAid1985_Set a schema1:ItemList ;
+    schema1:about ex:Ultravox_LiveAid1985_Performance ;
+    schema1:itemListElement [ a schema1:ListItem ;
+            schema1:item ex:Work_ReapTheWildWind_ab62d196_2 ;
+            schema1:position 1 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_DancingWithTearsInMyEyes_a88ba41e_2 ;
+            schema1:position 2 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_Vienna_33826c32 ;
+            schema1:position 4 ],
+        [ a schema1:ListItem ;
+            schema1:item ex:Work_OneSmallDay_d09d4f20 ;
+            schema1:position 3 ] ;
+    schema1:itemListOrder schema1:ItemListOrderAscending ;
+    schema1:name "Ultravox – Live Aid set" ;
+    schema1:numberOfItems 4 .
 

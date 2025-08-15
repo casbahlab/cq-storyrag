@@ -2546,6 +2546,15 @@ ex:Work_MiddleOfTheRoad_ba390ae8 a schema1:MusicComposition,
     owl:sameAs <https://musicbrainz.org/work/ba390ae8-1cc9-374d-86e2-0871a9184882> ;
     mm:hasRecording ex:Recording_MiddleOfTheRoad_ebe661e5 .
 
+
+ex:Work_DoTheyKnowItsChristmas_d64306b1
+    a schema1:MusicComposition,
+      mm:MusicEntity ;
+    rdfs:label "Do They Know It's Christmas?" ;
+    schema1:name "Do They Know It's Christmas?" ;
+    owl:sameAs <https://musicbrainz.org/work/d64306b1-d7f0-3954-8c8c-2a0e0ce7689f> ;
+    mm:hasRecording ex:Recording_DoTheyKnowItsChristmas_d64306b1 .
+
 ex:Work_MissYou_be9728e0_2 a schema1:MusicComposition,
         mm:MusicEntity ;
     rdfs:label "Miss You" ;

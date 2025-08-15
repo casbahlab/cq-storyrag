@@ -1,0 +1,242 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Aspect Vocabulary
+#################################################################
+ex:LiveAidAspectScheme a skos:ConceptScheme ;
+    skos:prefLabel "Live Aid Aspects"@en ;
+    skos:hasTopConcept ex:Background , ex:Broadcasts , ex:Fundraising , ex:Organisation , ex:Performances .
+
+ex:Background a skos:Concept ;
+    skos:inScheme ex:LiveAidAspectScheme ;
+    skos:prefLabel "Background"@en .
+
+ex:Broadcasts a skos:Concept ;
+    skos:inScheme ex:LiveAidAspectScheme ;
+    skos:prefLabel "Broadcasts"@en .
+
+ex:Fundraising a skos:Concept ;
+    skos:inScheme ex:LiveAidAspectScheme ;
+    skos:prefLabel "Fundraising"@en .
+
+ex:Organisation a skos:Concept ;
+    skos:inScheme ex:LiveAidAspectScheme ;
+    skos:prefLabel "Organisation"@en .
+
+ex:Performances a skos:Concept ;
+  skos:inScheme ex:LiveAidAspectScheme ;
+  skos:prefLabel "Performances"@en .
+
+ex:Satellite a skos:Concept ;
+  skos:inScheme ex:LiveAidAspectScheme ;
+  skos:prefLabel "Satellite"@en .
+
+ex:Legacy a skos:Concept ;
+  skos:inScheme ex:LiveAidAspectScheme ;
+  skos:prefLabel "Legacy & Influence"@en .
+
+ex:Challenge a skos:Concept ;
+    skos:inScheme ex:LiveAidAspectScheme ;
+    skos:prefLabel "Challenges"@en .
+
+ex:CareerMilestones a skos:Concept ;
+    skos:inScheme ex:LiveAidAspectScheme ;
+    skos:prefLabel "CareerMilestones"@en .
+
+#################################################################
+# External References (Modeled as oa:Annotation targeting ex:LiveAid1985)
+#################################################################
+
+# Background
+ex:LiveAid_Background_Annotation a oa:Annotation ;
+    oa:hasTarget ex:LiveAid1985 ;
+    oa:hasBody ex:LiveAidWiki_Background ;
+    dct:subject ex:Background .
+
+ex:LiveAidWiki_Background a schema:CreativeWork ;
+    schema:name "Live Aid — Background" ;
+    schema:url <https://en.wikipedia.org/wiki/Live_Aid#Background> ;
+    schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Background> ;
+    schema:description "Live Aid was a dual-venue global benefit concert held on 13 July 1985, inspired by the Band Aid charity single “Do They Know It’s Christmas?” to raise funds for famine relief in Ethiopia. Conceived by Bob Geldof and Midge Ure, it was broadcast to nearly 2 billion viewers worldwide and became a landmark in humanitarian fundraising and popular culture." ;
+    schema:isPartOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    schema:about ex:LiveAid1985 .
+
+# Broadcasts
+ex:LiveAid_Broadcasts_Annotation a oa:Annotation ;
+    oa:hasTarget ex:LiveAid1985 ;
+    oa:hasBody ex:LiveAidWiki_Broadcasts ;
+    dct:subject ex:Broadcasts .
+
+ex:LiveAidWiki_Broadcasts a schema:CreativeWork ;
+    schema:name "Live Aid — Broadcasts" ;
+    schema:url <https://en.wikipedia.org/wiki/Live_Aid#Broadcasts> ;
+    schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Broadcasts> ;
+    schema:description "Live Aid featured one of the most ambitious international satellite television broadcasts of its time. In the UK, the BBC (in collaboration with the EBU) provided the feed, while in the US the broadcast was handled by ABC—with syndicated distribution by Orbis Communications—and MTV offering a separate stereo cable feed." ;
+    schema:isPartOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    schema:about ex:LiveAid1985 .
+
+# Fundraising
+ex:LiveAid_Fundraising_Annotation a oa:Annotation ;
+    oa:hasTarget ex:LiveAid1985 ;
+    oa:hasBody ex:LiveAidWiki_Fundraising ;
+    dct:subject ex:Fundraising .
+
+ex:LiveAidWiki_Fundraising a schema:CreativeWork ;
+    schema:name "Live Aid — Fundraising" ;
+    schema:url <https://en.wikipedia.org/wiki/Live_Aid#Fundraising> ;
+    schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Fundraising> ;
+    schema:description "During the concert, Bob Geldof frequently encouraged donations—reportedly prompting a dramatic surge with heartfelt appeals like “give us your money!” (though he later said he’d never uttered the phrase), leading to a pace of roughly £300 in donations every second. By the end of the event, estimates place £150 million raised overall, with some reports indicating £40–50 million collected on the day, all aimed at alleviating the Ethiopian famine." ;
+    schema:isPartOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    schema:about ex:LiveAid1985 .
+
+ex:LiveAid_Organisation_Annotation a oa:Annotation ;
+    oa:hasTarget ex:LiveAid1985 ;
+    oa:hasBody ex:LiveAidWiki_Organisation ;
+    dct:subject ex:Organisation .
+
+ex:LiveAidWiki_Organisation a schema:CreativeWork ;
+    schema:name "Live Aid — Organisation" ;
+    schema:url <https://en.wikipedia.org/wiki/Live_Aid#Organisation> ;
+    schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Organisation> ;
+    schema:description "The concert was organized by Bob Geldof—who spearheaded the project—and Midge Ure, with promoter Harvey Goldsmith overseeing the London (Wembley) leg and Michael C. Mitchell managing the U.S. (Philadelphia) component. Tony Verna and Hal Uplinger handled the technical and broadcast logistics, designing the satellite feed, securing the JFK Stadium venue, and coordinating the U.S. prime-time broadcast arrangements." ;
+    schema:isPartOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    schema:about ex:LiveAid1985 .
+
+ex:LiveAid_Performances_Annotation a oa:Annotation ;
+  oa:hasTarget ex:LiveAid1985 ;
+  oa:hasBody   ex:LiveAidWiki_Performances ;
+  dct:subject  ex:Performances .
+
+ex:LiveAidWiki_Performances a schema:CreativeWork ;
+  schema:name "Live Aid — Performances"@en ;
+  schema:url <https://en.wikipedia.org/wiki/Live_Aid#Performances> ;
+  schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Performances> ;
+  schema:isPartOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+  schema:about ex:LiveAid1985 ;
+  schema:description "Queen; U2; David Bowie; Elton John; The Who; Paul McCartney; Dire Straits; ..."@en .
+
+# Wembley leg
+ex:Ann_LiveAid_Performances_Wembley a oa:Annotation ;
+  oa:hasTarget  ex:LiveAid1985 ;
+  dct:subject   ex:Performances ;
+  schema:spatial ex:WembleyStadium ;
+  oa:hasBody    ex:Res_LiveAid_Performances_Wembley ;
+  dct:created   "2025-08-14"^^xsd:date .
+
+# Specific resource = page + hierarchical selectors
+ex:Res_LiveAid_Performances_Wembley
+  a oa:SpecificResource ;
+  oa:hasSource  <https://en.wikipedia.org/wiki/Live_Aid> ;
+  oa:hasSelector [
+    a oa:TextQuoteSelector ;
+    oa:exact  "Performances" ;
+    oa:prefix "== " ;
+    oa:suffix " ==" ;
+    oa:refinedBy [
+      a oa:TextQuoteSelector ;
+      oa:exact  "London, Wembley Stadium" ;
+      oa:prefix "=== " ;
+      oa:suffix " ==="
+    ]
+  ] .
+
+# Philadelphia leg
+ex:Ann_LiveAid_Performances_Philadelphia a oa:Annotation ;
+  oa:hasTarget  ex:LiveAid1985 ;
+  dct:subject   ex:Performances ;
+  schema:spatial ex:JohnFKennedyStadium ;
+  oa:hasBody    ex:Res_LiveAid_Performances_Philadelphia ;
+  dct:created   "2025-08-14"^^xsd:date .
+
+
+ex:Res_LiveAid_Performances_Philadelphia
+  a oa:SpecificResource ;
+  oa:hasSource  <https://en.wikipedia.org/wiki/Live_Aid> ;
+  oa:hasSelector [
+    a oa:TextQuoteSelector ;
+    oa:exact  "Performances" ;
+    oa:prefix "== " ;
+    oa:suffix " ==" ;
+    oa:refinedBy [
+      a oa:TextQuoteSelector ;
+      oa:exact  "Philadelphia, John F. Kennedy Stadium" ;
+      oa:prefix "=== " ;
+      oa:suffix " ==="
+    ]
+  ] .
+
+
+
+# Annotation linking event to the CreativeWork entry
+ex:LiveAid_Challenge_Annotation a oa:Annotation ;
+    oa:hasTarget ex:LiveAid1985 ;
+    oa:hasBody ex:LiveAidWiki_Challenge ;
+    dct:subject ex:Challenge .
+
+# CreativeWork entry for BBC article
+ex:LiveAidWiki_Challenge a schema:CreativeWork ;
+    schema:name "Live Aid — Challenges"@en ;
+    schema:url <https://www.bbc.co.uk/bitesize/articles/zrynjfr> ;
+    schema:citation <https://www.bbc.co.uk/bitesize/articles/zrynjfr> ;
+    schema:description "BBC Bitesize article outlining logistical, technical, and organisational challenges faced during the Live Aid 1985 event, including unconfirmed line-ups, accusations of exclusion, scheduling conflicts, travel complications, broadcast errors, and lack of sound checks."@en ;
+    schema:isPartOf <https://en.wikipedia.org/wiki/Live_Aid> ;
+    schema:about ex:LiveAid1985 .
+
+
+
+
+# Annotation linking Live Aid to legacy source
+ex:Ann_LiveAid_Legacy a oa:Annotation ;
+  oa:hasTarget ex:LiveAid1985 ;
+  dct:subject  ex:Legacy ;
+  oa:hasBody   ex:LiveAid_Legacy_HistoryArticle .
+
+ex:LiveAid_Legacy_HistoryArticle a schema:CreativeWork ;
+  schema:name "The legacy of Live Aid"@en ;
+  schema:url <https://www.history.co.uk/articles/live-aid-history> ;
+  schema:citation <https://www.history.co.uk/articles/live-aid-history> ;
+  schema:description "An overview of Live Aid’s lasting impact, highlighting how it inspired future benefit concerts and shaped the model for large-scale charitable events worldwide."@en ;
+  schema:about ex:LiveAid1985 .
+
+
+ex:LiveAid_Broadcasts_Annotation a oa:Annotation ;
+    oa:hasTarget ex:LiveAid1985 ;
+    oa:hasBody ex:LiveAid_Broadcasts_Resource ;
+    dct:subject ex:Broadcasts .
+
+ex:LiveAid_Broadcasts_Resource a schema:CreativeWork ;
+    schema:name "Live Aid Broadcast Details" ;
+    schema:url <http://liveaid.free.fr/pages/broadcasts.html> ;
+    schema:citation <http://liveaid.free.fr/pages/broadcasts.html> ;
+    schema:description "A fan-curated resource listing the worldwide television and radio broadcasts of Live Aid, including regions and stations that did not archive their coverage." ;
+    schema:about ex:LiveAid1985 .
+
+ex:Queen_LiveAid_CareerMilestones_Annotation a oa:Annotation ;
+    oa:hasTarget ex:Queen ;
+    oa:hasBody ex:Queen_LiveAid_CareerMilestones_Resource ;
+    dct:subject ex:CareerMilestones .
+
+ex:Queen_LiveAid_CareerMilestones_Resource a schema:CreativeWork ;
+    schema:name "What Happened to Queen After Live Aid" ;
+    schema:url <https://www.ranker.com/list/what-happened-to-queen-after-live-aid/melissa-sartore> ;
+    schema:citation <https://www.ranker.com/list/what-happened-to-queen-after-live-aid/melissa-sartore> ;
+    schema:description "Queen’s Live Aid performance in 1985 revitalized their popularity and public image, leading to a surge in momentum for the band. They embarked on successful tours, most notably the Magic Tour in 1986, and released new music including the album A Kind of Magic (1986). In the years that followed, Freddie Mercury’s health began to decline due to AIDS, but the band continued to record acclaimed works such as The Miracle (1989) and Innuendo (1991). Mercury’s death in 1991 marked the end of an era, yet Queen’s legacy continued to resonate globally, cementing their status as one of the most influential rock bands in history." ;
+    schema:about ex:Queen, ex:LiveAid1985 .
+
+ex:LiveAid_Satellite_Annotation a oa:Annotation ;
+    oa:hasTarget ex:LiveAid1985 ;
+    oa:hasBody ex:LiveAid_Satellite_Resource ;
+    dct:subject ex:Satellite .
+
+ex:LiveAid_Satellite_Resource a schema:CreativeWork ;
+    schema:name "Live Aid Satellite Details" ;
+    schema:url <https://www.intelsat.com/resources/blog/live-aid-35-years-later-celebrating-satellite-history/> ;
+    schema:citation <https://www.intelsat.com/resources/blog/live-aid-35-years-later-celebrating-satellite-history/> ;
+    schema:description "Details the satellite technology and coordination that enabled Live Aid's 1985 global broadcast." ;
+    schema:about ex:LiveAid1985 .
