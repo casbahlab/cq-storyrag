@@ -1,0 +1,176 @@
+@prefix schema1: <http://schema.org/> .
+
+<http://wembrewind.live/ex#Work_AViewToAKill_f9b82c4a_2> schema1:sameAs <https://www.songfacts.com/facts/duran-duran/a-view-to-a-kill> .
+
+<http://wembrewind.live/ex#Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2> schema1:sameAs <https://www.songfacts.com/facts/phil-collins/against-all-odds-take-a-look-at-me-now> .
+
+<http://wembrewind.live/ex#Work_AllYouZombies_ca255d52_2> schema1:sameAs <https://www.songfacts.com/facts/the-hooters/all-you-zombies> .
+
+<http://wembrewind.live/ex#Work_AndWeDanced_55e8031f> schema1:sameAs <https://www.songfacts.com/facts/the-hooters/and-we-danced> .
+
+<http://wembrewind.live/ex#Work_BackOnTheChainGang_31d4aa2c> schema1:sameAs <https://www.songfacts.com/facts/pretenders/back-on-the-chain-gang> .
+
+<http://wembrewind.live/ex#Work_Bad_62d0a051> schema1:sameAs <https://www.songfacts.com/facts/u2/bad> .
+
+<http://wembrewind.live/ex#Work_BalladOfHollisBrown_5ed18d5c> schema1:sameAs <https://www.songfacts.com/facts/bob-dylan/ballad-of-hollis-brown> .
+
+<http://wembrewind.live/ex#Work_BennieAndTheJets_6ef8fb46_2> schema1:sameAs <https://www.songfacts.com/facts/elton-john/bennie-and-the-jets> .
+
+<http://wembrewind.live/ex#Work_BlowinInTheWind_f5a12d42> schema1:sameAs <https://www.songfacts.com/facts/bob-dylan/blowin-in-the-wind> .
+
+<http://wembrewind.live/ex#Work_BohemianRhapsody_41c94a08> schema1:sameAs <https://www.songfacts.com/facts/queen/bohemian-rhapsody> .
+
+<http://wembrewind.live/ex#Work_CaliforniaGirls_9c56c803> schema1:sameAs <https://www.songfacts.com/facts/the-beach-boys/california-girls> .
+
+<http://wembrewind.live/ex#Work_CanTFightThisFeeling_4b497a42_2> schema1:sameAs <https://www.songfacts.com/facts/reo-speedwagon/cant-fight-this-feeling> .
+
+<http://wembrewind.live/ex#Work_Caroline_c758c89e_2> schema1:sameAs <https://www.songfacts.com/facts/status-quo/caroline> .
+
+<http://wembrewind.live/ex#Work_ChildrenOfTheGrave_08b8087b> schema1:sameAs <https://www.songfacts.com/facts/black-sabbath/children-of-the-grave> .
+
+<http://wembrewind.live/ex#Work_ComeBackAndStay_ad4e5fd6_2> schema1:sameAs <https://www.songfacts.com/facts/paul-young/come-back-and-stay> .
+
+<http://wembrewind.live/ex#Work_CrazyLittleThingCalledLove_dad1c2a9> schema1:sameAs <https://www.songfacts.com/facts/queen/crazy-little-thing-called-love> .
+
+<http://wembrewind.live/ex#Work_CutsLikeAKnife_aa289c4d> schema1:sameAs <https://www.songfacts.com/facts/bryan-adams/cuts-like-a-knife> .
+
+<http://wembrewind.live/ex#Work_DancingWithTearsInMyEyes_a88ba41e_2> schema1:sameAs <https://www.songfacts.com/facts/ultravox/dancing-with-tears-in-my-eyes> .
+
+<http://wembrewind.live/ex#Work_DonTLetTheSunGoDownOnMe_75ed39fe> schema1:sameAs <https://www.songfacts.com/facts/elton-john/dont-let-the-sun-go-down-on-me> .
+
+<http://wembrewind.live/ex#Work_DonTYouForgetAboutMe_4694f742> schema1:sameAs <https://www.songfacts.com/facts/simple-minds/dont-you-forget-about-me> .
+
+<http://wembrewind.live/ex#Work_Drive_4cbcd04d_2> schema1:sameAs <https://www.songfacts.com/facts/the-cars/drive> .
+
+<http://wembrewind.live/ex#Work_EverytimeYouGoAway_677d42d6_2> schema1:sameAs <https://www.songfacts.com/facts/paul-young/everytime-you-go-away> .
+
+<http://wembrewind.live/ex#Work_Footloose_fee797bd> schema1:sameAs <https://www.songfacts.com/facts/kenny-loggins/footloose> .
+
+<http://wembrewind.live/ex#Work_GoodVibrations_ede10e9a> schema1:sameAs <https://www.songfacts.com/facts/the-beach-boys/good-vibrations> .
+
+<http://wembrewind.live/ex#Work_HammerToFall_1e807fa4_2> schema1:sameAs <https://www.songfacts.com/facts/queen/hammer-to-fall> .
+
+<http://wembrewind.live/ex#Work_HelpMeRhonda_21404af0> schema1:sameAs <https://www.songfacts.com/facts/the-beach-boys/help-me-rhonda> .
+
+<http://wembrewind.live/ex#Work_Helpless_295f4446_2> schema1:sameAs <https://www.songfacts.com/facts/neil-young/helpless> .
+
+<http://wembrewind.live/ex#Work_Heroes_e2b01286> schema1:sameAs <https://www.songfacts.com/facts/david-bowie/heroes> .
+
+<http://wembrewind.live/ex#Work_HideAndSeek_1a1cf738> schema1:sameAs <https://www.songfacts.com/facts/howard-jones/hide-and-seek> .
+
+<http://wembrewind.live/ex#Work_HoldMeNow_d77e1b17> schema1:sameAs <https://www.songfacts.com/facts/thompson-twins/hold-me-now> .
+
+<http://wembrewind.live/ex#Work_Holiday_1c03c879> schema1:sameAs <https://www.songfacts.com/facts/madonna/holiday> .
+
+<http://wembrewind.live/ex#Work_IDonTLikeMondays_d998a80c> schema1:sameAs <https://www.songfacts.com/facts/the-boomtown-rats/i-dont-like-mondays> .
+
+<http://wembrewind.live/ex#Work_IMStillStanding_4ae45d33> schema1:sameAs <https://www.songfacts.com/facts/elton-john/im-still-standing> .
+
+<http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea> schema1:sameAs <https://www.songfacts.com/facts/phil-collins/in-the-air-tonight> .
+
+<http://wembrewind.live/ex#Work_IntoTheGroove_35b448bb_2> schema1:sameAs <https://www.songfacts.com/facts/madonna/into-the-groove> .
+
+<http://wembrewind.live/ex#Work_IronMan_4a43511c_2> schema1:sameAs <https://www.songfacts.com/facts/black-sabbath/iron-man> .
+
+<http://wembrewind.live/ex#Work_IsItACrime_14db4b5e_2> schema1:sameAs <https://www.songfacts.com/facts/sade/is-it-a-crime> .
+
+<http://wembrewind.live/ex#Work_JustWhatINeeded_f5128e1e_2> schema1:sameAs <https://www.songfacts.com/facts/the-cars/just-what-i-needed> .
+
+<http://wembrewind.live/ex#Work_LivingAfterMidnight_c2f04756> schema1:sameAs <https://www.songfacts.com/facts/judas-priest/living-after-midnight> .
+
+<http://wembrewind.live/ex#Work_LoveReignOErMe_e2318c2e> schema1:sameAs <https://www.songfacts.com/facts/the-who/love-reign-oer-me> .
+
+<http://wembrewind.live/ex#Work_Loverboy_ccf61ac6_2> schema1:sameAs <https://www.songfacts.com/facts/billy-ocean/loverboy> .
+
+<http://wembrewind.live/ex#Work_Maneater_59e765fb> schema1:sameAs <https://www.songfacts.com/facts/daryl-hall-john-oates/maneater> .
+
+<http://wembrewind.live/ex#Work_MessageOfLove_43dd26dc_2> schema1:sameAs <https://www.songfacts.com/facts/pretenders/message-of-love> .
+
+<http://wembrewind.live/ex#Work_MiddleOfTheRoad_ba390ae8> schema1:sameAs <https://www.songfacts.com/facts/pretenders/middle-of-the-road> .
+
+<http://wembrewind.live/ex#Work_ModernLove_508a3dac_2> schema1:sameAs <https://www.songfacts.com/facts/david-bowie/modern-love> .
+
+<http://wembrewind.live/ex#Work_MoneyForNothing_d6f71ddf> schema1:sameAs <https://www.songfacts.com/facts/dire-straits/money-for-nothing> .
+
+<http://wembrewind.live/ex#Work_MyGeneration_a55b5d5b> schema1:sameAs <https://www.songfacts.com/facts/the-who/my-generation> .
+
+<http://wembrewind.live/ex#Work_NewAttitude_f2d275ad_2> schema1:sameAs <https://www.songfacts.com/facts/patti-labelle/new-attitude> .
+
+<http://wembrewind.live/ex#Work_OnlyWhenYouLeave_ab26cb3a> schema1:sameAs <https://www.songfacts.com/facts/spandau-ballet/only-when-you-leave> .
+
+<http://wembrewind.live/ex#Work_OutOfTouch_937a13f3> schema1:sameAs <https://www.songfacts.com/facts/daryl-hall-john-oates/out-of-touch> .
+
+<http://wembrewind.live/ex#Work_Paranoid_7949591a_2> schema1:sameAs <https://www.songfacts.com/facts/black-sabbath/paranoid> .
+
+<http://wembrewind.live/ex#Work_PinballWizard_6ef8cd26> schema1:sameAs <https://www.songfacts.com/facts/the-who/pinball-wizard> .
+
+<http://wembrewind.live/ex#Work_Powderfinger_e4de49b8> schema1:sameAs <https://www.songfacts.com/facts/neil-young/powderfinger> .
+
+<http://wembrewind.live/ex#Work_PromisedYouAMiracle_5d09ac47> schema1:sameAs <https://www.songfacts.com/facts/simple-minds/promised-you-a-miracle> .
+
+<http://wembrewind.live/ex#Work_RadioGaGa_2c76fe20_2> schema1:sameAs <https://www.songfacts.com/facts/queen/radio-ga-ga> .
+
+<http://wembrewind.live/ex#Work_RatTrap_a09a4c84_2> schema1:sameAs <https://www.songfacts.com/facts/the-boomtown-rats/rat-trap> .
+
+<http://wembrewind.live/ex#Work_RebelRebel_dc6d909d_2> schema1:sameAs <https://www.songfacts.com/facts/david-bowie/rebel-rebel> .
+
+<http://wembrewind.live/ex#Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306> schema1:sameAs <https://www.songfacts.com/facts/elton-john/rocket-man> .
+
+<http://wembrewind.live/ex#Work_RollWithTheChanges_831ed988_2> schema1:sameAs <https://www.songfacts.com/facts/reo-speedwagon/roll-with-the-changes> .
+
+<http://wembrewind.live/ex#Work_SaveAPrayer_604f7422> schema1:sameAs <https://www.songfacts.com/facts/duran-duran/save-a-prayer> .
+
+<http://wembrewind.live/ex#Work_SlaveToLove_01cf29f1> schema1:sameAs <https://www.songfacts.com/facts/bryan-ferry/slave-to-love> .
+
+<http://wembrewind.live/ex#Work_Solid_552d2380> schema1:sameAs <https://www.songfacts.com/facts/ashford-simpson/solid> .
+
+<http://wembrewind.live/ex#Work_SouthernCross_45c1e559_2> schema1:sameAs <https://www.songfacts.com/facts/crosby-stills-nash/southern-cross> .
+
+<http://wembrewind.live/ex#Work_StirItUp_fa22c5e3> schema1:sameAs <https://www.songfacts.com/facts/patti-labelle/stir-it-up> .
+
+<http://wembrewind.live/ex#Work_StopYourSobbing_9533d2bf> schema1:sameAs <https://www.songfacts.com/facts/pretenders/stop-your-sobbing> .
+
+<http://wembrewind.live/ex#Work_SugarMountain_36ab6f4c_2> schema1:sameAs <https://www.songfacts.com/facts/neil-young/sugar-mountain> .
+
+<http://wembrewind.live/ex#Work_SuiteJudyBlueEyes_bea79f68> schema1:sameAs <https://www.songfacts.com/facts/crosby-stills-nash/suite-judy-blue-eyes> .
+
+<http://wembrewind.live/ex#Work_SultansOfSwing_8626823c> schema1:sameAs <https://www.songfacts.com/facts/dire-straits/sultans-of-swing> .
+
+<http://wembrewind.live/ex#Work_SummerOf69_9604422e_2> schema1:sameAs <https://www.songfacts.com/facts/bryan-adams/summer-of-69> .
+
+<http://wembrewind.live/ex#Work_SundayBloodySunday_dc2c1143_2> schema1:sameAs <https://www.songfacts.com/facts/u2/sunday-bloody-sunday> .
+
+<http://wembrewind.live/ex#Work_TheNeedleAndTheDamageDone_6d0d3f75_2> schema1:sameAs <https://www.songfacts.com/facts/neil-young/the-needle-and-the-damage-done> .
+
+<http://wembrewind.live/ex#Work_TheReflex_50ec521b> schema1:sameAs <https://www.songfacts.com/facts/duran-duran/the-reflex> .
+
+<http://wembrewind.live/ex#Work_TheRiddle_b5c6086c> schema1:sameAs <https://www.songfacts.com/facts/nik-kershaw/the-riddle> .
+
+<http://wembrewind.live/ex#Work_True_022cacb2_2> schema1:sameAs <https://www.songfacts.com/facts/spandau-ballet/true> .
+
+<http://wembrewind.live/ex#Work_Tvc15_126ed430> schema1:sameAs <https://www.songfacts.com/facts/david-bowie/tvc-15> .
+
+<http://wembrewind.live/ex#Work_UnionOfTheSnake_5287e415> schema1:sameAs <https://www.songfacts.com/facts/duran-duran/union-of-the-snake> .
+
+<http://wembrewind.live/ex#Work_Vienna_33826c32> schema1:sameAs <https://www.songfacts.com/facts/ultravox/vienna> .
+
+<http://wembrewind.live/ex#Work_WallsComeTumblingDown_2f64618a> schema1:sameAs <https://www.songfacts.com/facts/the-style-council/walls-come-tumbling-down> .
+
+<http://wembrewind.live/ex#Work_WeAreTheChampions_0b3da969_2> schema1:sameAs <https://www.songfacts.com/facts/queen/we-are-the-champions> .
+
+<http://wembrewind.live/ex#Work_WeWillRockYou_3623f3af_2> schema1:sameAs <https://www.songfacts.com/facts/queen/we-will-rock-you> .
+
+<http://wembrewind.live/ex#Work_WhenTheShipComesIn_e393936f> schema1:sameAs <https://www.songfacts.com/facts/bob-dylan/when-the-ship-comes-in> .
+
+<http://wembrewind.live/ex#Work_WonTGetFooledAgain_f00616af_2> schema1:sameAs <https://www.songfacts.com/facts/the-who/wont-get-fooled-again> .
+
+<http://wembrewind.live/ex#Work_WouldnTItBeGood_6a8be284_2> schema1:sameAs <https://www.songfacts.com/facts/nik-kershaw/wouldnt-it-be-good> .
+
+<http://wembrewind.live/ex#Work_WouldnTItBeNice_8d9c97e9_2> schema1:sameAs <https://www.songfacts.com/facts/the-beach-boys/wouldnt-it-be-nice> .
+
+<http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e> schema1:sameAs <https://www.songfacts.com/facts/the-cars/you-might-think> .
+
+<http://wembrewind.live/ex#Work_YouVeGotAnotherThingComin_24f7f4ea> schema1:sameAs <https://www.songfacts.com/facts/judas-priest/youve-got-another-thing-comin> .
+
+<http://wembrewind.live/ex#Work_YourLoveIsKing_89d27ad0> schema1:sameAs <https://www.songfacts.com/facts/sade/your-love-is-king> .
+

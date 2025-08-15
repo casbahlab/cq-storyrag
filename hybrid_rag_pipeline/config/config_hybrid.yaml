@@ -1,0 +1,18 @@
+
+# Hybrid RAG configuration (planner + retriever)
+seed: 42
+
+planner:
+  entry:
+    - { name: "Context Setup", picks: 2 }
+  core:
+    - { name: "Performance Detail", picks: 3 }
+    - { name: "Behind the Scenes", picks: 2 }
+  exit:
+    - { name: "Legacy", picks: 2 }
+
+retriever:
+  top_k: 8
+  alpha_embed: 0.5
+  alpha_bm25: 0.3
+  alpha_kg: 0.2

@@ -1,0 +1,122 @@
+@prefix schema1: <http://schema.org/> .
+
+<http://wembrewind.live/ex#AdamAnt> schema1:sameAs <https://www.songfacts.com/facts/adam-ant> .
+
+<http://wembrewind.live/ex#AshfordSimpson> schema1:sameAs <https://www.songfacts.com/facts/ashford-simpson> .
+
+<http://wembrewind.live/ex#BandAid> schema1:sameAs <https://www.songfacts.com/facts/band-aid> .
+
+<http://wembrewind.live/ex#BillyOcean> schema1:sameAs <https://www.songfacts.com/facts/billy-ocean> .
+
+<http://wembrewind.live/ex#BlackSabbath> schema1:sameAs <https://www.songfacts.com/facts/black-sabbath> .
+
+<http://wembrewind.live/ex#BobDylan> schema1:sameAs <https://www.songfacts.com/facts/bob-dylan> .
+
+<http://wembrewind.live/ex#Bono> schema1:sameAs <https://www.songfacts.com/facts/bono> .
+
+<http://wembrewind.live/ex#BrianMay> schema1:sameAs <https://www.songfacts.com/facts/brian-may> .
+
+<http://wembrewind.live/ex#BryanAdams> schema1:sameAs <https://www.songfacts.com/facts/bryan-adams> .
+
+<http://wembrewind.live/ex#BryanFerry> schema1:sameAs <https://www.songfacts.com/facts/bryan-ferry> .
+
+<http://wembrewind.live/ex#CrosbyStillsNash> schema1:sameAs <https://www.songfacts.com/facts/crosby-stills-nash> .
+
+<http://wembrewind.live/ex#CrosbyStillsNashYoung> schema1:sameAs <https://www.songfacts.com/facts/crosby-stills-nash-young> .
+
+<http://wembrewind.live/ex#DarylHallJohnOates> schema1:sameAs <https://www.songfacts.com/facts/daryl-hall-john-oates> .
+
+<http://wembrewind.live/ex#DavidBowie> schema1:sameAs <https://www.songfacts.com/facts/david-bowie> .
+
+<http://wembrewind.live/ex#DavidGilmour> schema1:sameAs <https://www.songfacts.com/facts/david-gilmour> .
+
+<http://wembrewind.live/ex#DireStraits> schema1:sameAs <https://www.songfacts.com/facts/dire-straits> .
+
+<http://wembrewind.live/ex#Dmc> schema1:sameAs <https://www.songfacts.com/facts/dmc> .
+
+<http://wembrewind.live/ex#DuranDuran> schema1:sameAs <https://www.songfacts.com/facts/duran-duran> .
+
+<http://wembrewind.live/ex#EddieKendricks> schema1:sameAs <https://www.songfacts.com/facts/eddie-kendricks> .
+
+<http://wembrewind.live/ex#EltonJohn> schema1:sameAs <https://www.songfacts.com/facts/elton-john> .
+
+<http://wembrewind.live/ex#ElvisCostello> schema1:sameAs <https://www.songfacts.com/facts/elvis-costello> .
+
+<http://wembrewind.live/ex#EricClapton> schema1:sameAs <https://www.songfacts.com/facts/eric-clapton> .
+
+<http://wembrewind.live/ex#FreddieMercury> schema1:sameAs <https://www.songfacts.com/facts/freddie-mercury> .
+
+<http://wembrewind.live/ex#HowardJones> schema1:sameAs <https://www.songfacts.com/facts/howard-jones> .
+
+<http://wembrewind.live/ex#JoanBaez> schema1:sameAs <https://www.songfacts.com/facts/joan-baez> .
+
+<http://wembrewind.live/ex#JudasPriest> schema1:sameAs <https://www.songfacts.com/facts/judas-priest> .
+
+<http://wembrewind.live/ex#KeithRichards> schema1:sameAs <https://www.songfacts.com/facts/keith-richards> .
+
+<http://wembrewind.live/ex#KennyLoggins> schema1:sameAs <https://www.songfacts.com/facts/kenny-loggins> .
+
+<http://wembrewind.live/ex#Madonna> schema1:sameAs <https://www.songfacts.com/facts/madonna> .
+
+<http://wembrewind.live/ex#MickJagger> schema1:sameAs <https://www.songfacts.com/facts/mick-jagger> .
+
+<http://wembrewind.live/ex#NeilYoung> schema1:sameAs <https://www.songfacts.com/facts/neil-young> .
+
+<http://wembrewind.live/ex#NikKershaw> schema1:sameAs <https://www.songfacts.com/facts/nik-kershaw> .
+
+<http://wembrewind.live/ex#PattiLabelle> schema1:sameAs <https://www.songfacts.com/facts/patti-labelle> .
+
+<http://wembrewind.live/ex#PaulMccartney> schema1:sameAs <https://www.songfacts.com/facts/paul-mccartney> .
+
+<http://wembrewind.live/ex#PaulYoung> schema1:sameAs <https://www.songfacts.com/facts/paul-young> .
+
+<http://wembrewind.live/ex#PhilCollins> schema1:sameAs <https://www.songfacts.com/facts/phil-collins> .
+
+<http://wembrewind.live/ex#Pretenders> schema1:sameAs <https://www.songfacts.com/facts/pretenders> .
+
+<http://wembrewind.live/ex#Queen> schema1:sameAs <https://www.songfacts.com/facts/queen> .
+
+<http://wembrewind.live/ex#ReoSpeedwagon> schema1:sameAs <https://www.songfacts.com/facts/reo-speedwagon> .
+
+<http://wembrewind.live/ex#RickSpringfield> schema1:sameAs <https://www.songfacts.com/facts/rick-springfield> .
+
+<http://wembrewind.live/ex#RobertPlant> schema1:sameAs <https://www.songfacts.com/facts/robert-plant> .
+
+<http://wembrewind.live/ex#Sade> schema1:sameAs <https://www.songfacts.com/facts/sade> .
+
+<http://wembrewind.live/ex#Santana> schema1:sameAs <https://www.songfacts.com/facts/santana> .
+
+<http://wembrewind.live/ex#SimpleMinds> schema1:sameAs <https://www.songfacts.com/facts/simple-minds> .
+
+<http://wembrewind.live/ex#SpandauBallet> schema1:sameAs <https://www.songfacts.com/facts/spandau-ballet> .
+
+<http://wembrewind.live/ex#StatusQuo> schema1:sameAs <https://www.songfacts.com/facts/status-quo> .
+
+<http://wembrewind.live/ex#Sting> schema1:sameAs <https://www.songfacts.com/facts/sting> .
+
+<http://wembrewind.live/ex#TheBeachBoys> schema1:sameAs <https://www.songfacts.com/facts/the-beach-boys> .
+
+<http://wembrewind.live/ex#TheBoomtownRats> schema1:sameAs <https://www.songfacts.com/facts/the-boomtown-rats> .
+
+<http://wembrewind.live/ex#TheCars> schema1:sameAs <https://www.songfacts.com/facts/the-cars> .
+
+<http://wembrewind.live/ex#TheHooters> schema1:sameAs <https://www.songfacts.com/facts/the-hooters> .
+
+<http://wembrewind.live/ex#ThePowerStation> schema1:sameAs <https://www.songfacts.com/facts/the-power-station> .
+
+<http://wembrewind.live/ex#TheStyleCouncil> schema1:sameAs <https://www.songfacts.com/facts/the-style-council> .
+
+<http://wembrewind.live/ex#TheWho> schema1:sameAs <https://www.songfacts.com/facts/the-who> .
+
+<http://wembrewind.live/ex#ThomasDolby> schema1:sameAs <https://www.songfacts.com/facts/thomas-dolby> .
+
+<http://wembrewind.live/ex#ThompsonTwins> schema1:sameAs <https://www.songfacts.com/facts/thompson-twins> .
+
+<http://wembrewind.live/ex#TinaTurner> schema1:sameAs <https://www.songfacts.com/facts/tina-turner> .
+
+<http://wembrewind.live/ex#U2> schema1:sameAs <https://www.songfacts.com/facts/u2> .
+
+<http://wembrewind.live/ex#Ultravox> schema1:sameAs <https://www.songfacts.com/facts/ultravox> .
+
+<http://wembrewind.live/ex#UsaForAfrica> schema1:sameAs <https://www.songfacts.com/facts/usa-for-africa> .
+
