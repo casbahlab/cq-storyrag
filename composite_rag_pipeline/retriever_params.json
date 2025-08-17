@@ -1,0 +1,8 @@
+{
+  "event": "ex:LiveAid1985",
+  "musicgroup": "ex:Queen",
+  "singleartist": "ex:Madonna",
+  "bandmember": "ex:BrianMay",
+  "venue" : "ex:WembleyStadium",
+  "venue2" : "ex:JFKStadium"
+}
