@@ -109,3 +109,5 @@ google-generativeai
 pyshacl
 musicbrainzngs
 urllib3~=2.5.0
+wikitextparser
+lxml

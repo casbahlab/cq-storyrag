@@ -1,355 +1,449 @@
 #!/usr/bin/env python3
-"""
-planner_dual_random.py — robust beat-aware planner for KG & Hybrid
-
-Features
-- Beat label normalization (slug) so CQs and narrative beats align.
-- Per-beat sampling with strict items_per_beat per plan.
-- Require SPARQL by default; optional backfill to avoid empty beats.
-- Two outputs: --out_kg and --out_hybrid (flat items + beats summary).
-- Validation mode to detect beat/CQ mismatches.
-
-Inputs
-- --kg_meta / --hy_meta: cq_metadata.json files produced during indexing.
-  Expected shape: { "metadata": { "<CQ_ID>": { "question":..., "sparql":..., "beat":..., "beat_title":..., "mode":... } } }
-  (Keys are tolerant: beat may be "beat", "Beat", "beat_title", etc.)
-- --narrative_plans: JSON describing beats per persona/length. If not found,
-  generates generic Beat 1..N from items_per_beat * 6 / 8 etc (see fallback).
-
-Usage
-------
-python3 planner_dual_random.py \
-  --kg_meta ../index/KG/cq_metadata.json \
-  --hy_meta ../index/Hybrid/cq_metadata.json \
-  --narrative_plans ../data/narrative_plans.json \
-  --persona Emma --length Medium \
-  --items_per_beat 2 --seed 42 \
-  --match_strategy union \
-  --out_kg plan_KG.json --out_hybrid plan_Hybrid.json \
-  --validate
-"""
+# planner_dual_random.py
 from __future__ import annotations
 
-import argparse, json, random, re, sys
+import argparse
+import json
+import random
+import re
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
+from collections import Counter
 
-# ------------------------------- utils ---------------------------------
+# =========================
+# I/O helpers
+# =========================
 
-def _load_json(path: Path) -> Any:
-    return json.loads(path.read_text(encoding="utf-8"))
+def _read_json(p: Path) -> Any:
+    return json.loads(p.read_text(encoding="utf-8"))
 
-def _slug(s: Optional[str]) -> str:
-    if not s: return ""
-    s = str(s)
-    s = s.strip().lower()
-    s = re.sub(r"[^\w\s-]+", "", s)         # drop punctuation
-    s = re.sub(r"\s+", "-", s)              # spaces -> dashes
-    s = re.sub(r"-{2,}", "-", s).strip("-") # collapse dashes
-    return s
+def _write_json(p: Path, obj: Any) -> None:
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
 
-def _meta_dict(meta_path: Optional[Path]) -> Dict[str, Dict[str, Any]]:
-    if not meta_path: return {}
-    data = _load_json(meta_path) or {}
-    meta = data.get("metadata") or {}
-    # normalize each CQ record
-    out: Dict[str, Dict[str, Any]] = {}
-    for cid, rec in meta.items():
-        r = dict(rec)
-        # normalize beat fields -> beat_title
-        beat_title = r.get("beat_title") or r.get("Beat") or r.get("beat") or r.get("beatLabel") or r.get("beat_name")
-        r["beat_title"] = beat_title or ""
-        r["beat_slug"] = _slug(beat_title or "")
-        # normalize sparql
-        r["sparql"] = (r.get("sparql") or "").strip()
-        # normalize question
-        r["question"] = r.get("question") or r.get("Question") or ""
-        out[cid] = r
-    return out
+# =========================
+# Normalization helpers
+# =========================
 
-def _choose_rng(seed: Optional[int]) -> random.Random:
-    return random.Random(seed) if seed is not None else random.Random()
+def _slug(s: Any) -> str:
+    if isinstance(s, (list, dict)):
+        try:
+            s = json.dumps(s, ensure_ascii=False)
+        except Exception:
+            s = str(s)
+    s = ("" if s is None else str(s)).strip().lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    return re.sub(r"-+", "-", s).strip("-")
 
-# -------------------------- narrative beats ----------------------------
+def _norm_title(x: Any) -> str:
+    if isinstance(x, str) and x.strip():
+        return x.strip()
+    if isinstance(x, list):
+        for v in x:
+            if isinstance(v, str) and v.strip():
+                return v.strip()
+        return " / ".join(str(v) for v in x if v is not None) or "Unspecified"
+    if isinstance(x, dict):
+        for k in ("title", "label", "name", "value"):
+            v = x.get(k)
+            if isinstance(v, str) and v.strip():
+                return v.strip()
+        vals = [str(v) for v in x.values() if isinstance(v, (str, int, float))]
+        return " / ".join(vals) or "Unspecified"
+    return "Unspecified"
 
-from typing import Union
+def _rows_from_meta(meta_obj: Any) -> List[Dict[str, Any]]:
+    base = meta_obj.get("cqs") if isinstance(meta_obj, dict) and "cqs" in meta_obj else meta_obj
+    rows: List[Dict[str, Any]] = []
+    if isinstance(base, list):
+        for v in base:
+            if isinstance(v, dict):
+                rows.append(v)
+    elif isinstance(base, dict):
+        for k, v in base.items():
+            if isinstance(v, dict):
+                r = {"id": k}
+                r.update(v)
+                rows.append(r)
+    else:
+        raise ValueError("Unsupported metadata shape (expect list or dict with 'cqs').")
 
-def _pick_beats(narrative_src: Optional[Union[Path, str, dict]], persona: str, length: str,
-                fallback_meta: Optional[Dict[str,Dict[str,Any]]] = None,
-                n_default: int = 6) -> List[Dict[str, Any]]:
-    """Prefer beats from narrative_plans; else pick top beats from meta; else generic.
-       Accepts a Path/str to a JSON file OR an already-parsed dict.
+    for r in rows:
+        bt = r.get("beat_title") or r.get("beat") or r.get("beat_slug") or r.get("title")
+        r["beat_title"] = _norm_title(bt)
+        sp = r.get("sparql")
+        if sp is None:
+            r["sparql"] = ""
+        if not r.get("id"):
+            r["id"] = r.get("CQ_ID") or r.get("cq_id") or r.get("CQ-ID") or ""
+    return rows
+
+def _index_by_beat(rows: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
+    by: Dict[str, List[Dict[str, Any]]] = {}
+    for r in rows:
+        bt = _norm_title(r.get("beat_title", "Unspecified"))
+        by.setdefault(_slug(bt), []).append(r)
+    return by
+
+# =========================
+# Beat resolver (robust)
+# =========================
+
+def _resolve_beats(
+    narrative_plans: Path,
+    persona: str,
+    length: str,
+    kg_meta_path: Optional[Path] = None,
+    hy_meta_path: Optional[Path] = None,
+    default_n: int = 6,
+) -> List[Dict[str, Any]]:
     """
-    def _title_from(obj, i):
-        if isinstance(obj, dict):
-            return (obj.get("title")
-                    or obj.get("beat")     # support 'beat' key too
-                    or obj.get("name")
-                    or f"Beat {i+1}")
-        return str(obj) if obj is not None else f"Beat {i+1}"
+    Tries in order:
+      1) dict[persona][length] (case-insensitive on both keys)
+      2) dict["beats"]
+      3) bare list (strings or objects with title)
+      4) fallback: derive beats from metadata (most frequent beat_title across KG+Hybrid)
+    Returns [{"index": i, "title": "..."} ...]
+    """
+    def _ci_get(d: Dict[str, Any], key: str) -> Any:
+        if not isinstance(d, dict):
+            return None
+        lk = key.lower()
+        for k, v in d.items():
+            if isinstance(k, str) and k.lower() == lk:
+                return v
+        return None
 
-    plans = None
-    # Load if a path/str was given
-    if isinstance(narrative_src, (str, Path)):
-        p = Path(narrative_src)
-        if p.exists():
-            plans = _load_json(p)
-    elif isinstance(narrative_src, dict):
-        plans = narrative_src
+    # Load narrative spec
+    try:
+        spec = _read_json(narrative_plans)
+    except Exception:
+        spec = None
 
-    beats: List[Dict[str,Any]] = []
-    if plans is not None:
-        # shape: { persona: { length: [ {title|beat: str}, ... ] } }
-        node = isinstance(plans, dict) and (plans.get(persona) or {}).get(length)
-        if isinstance(node, list) and node:
-            for i, b in enumerate(node):
-                beats.append({"index": i, "title": _title_from(b, i)})
-
-        # alt shape: {"plans":[{"persona":...,"length":...,"beats":[...]}]}
-        if not beats and isinstance(plans, dict) and isinstance(plans.get("plans"), list):
-            for plan in plans["plans"]:
-                if (plan.get("persona") == persona) and (plan.get("length") == length):
-                    for i, b in enumerate(plan.get("beats") or []):
-                        beats.append({"index": i, "title": _title_from(b, i)})
-                    break
-
-    if not beats and fallback_meta:
-        by_beat: Dict[str,int] = {}
-        for r in fallback_meta.values():
-            s = r.get("beat_slug") or ""
-            if s: by_beat[s] = by_beat.get(s,0) + 1
-        tops = [k for k,_ in sorted(by_beat.items(), key=lambda x:(-x[1], x[0]))[:n_default]]
-        for i, s in enumerate(tops):
-            title = next((r.get("beat_title","") for r in fallback_meta.values() if r.get("beat_slug")==s),
-                         s.replace("-", " ").title())
-            beats.append({"index": i, "title": title})
-
-    if not beats:
-        for i in range(n_default):
-            beats.append({"index": i, "title": f"Beat {i+1}"})
-
-    return beats
+    seq = None
 
 
+    # 1) persona/length nested, case-insensitive
+    if isinstance(spec, dict):
+        p_block = _ci_get(spec, persona)
+        if isinstance(p_block, dict):
+            seq = _ci_get(p_block, length)
 
-# ------------------------------ sampling -------------------------------
+    # 2) explicit "beats"
+    if seq is None and isinstance(spec, dict):
+        beats_block = _ci_get(spec, "beats")
+        if isinstance(beats_block, list):
+            seq = beats_block
 
-def _pool_for_beat(meta: Dict[str,Dict[str,Any]], beat_slug: str, require_sparql: bool) -> List[Tuple[str,Dict[str,Any]]]:
-    pool = []
-    for cid, rec in meta.items():
-        if rec.get("beat_slug","") != beat_slug:
-            continue
-        if require_sparql and not rec.get("sparql"):
-            continue
-        pool.append((cid, rec))
-    return pool
+    # 3) bare list
+    if seq is None and isinstance(spec, list):
+        seq = spec
 
-def _sample_items(rng: random.Random, pool: List[Tuple[str,Dict[str,Any]]], k: int) -> List[Tuple[str,Dict[str,Any]]]:
-    if not pool:
+    if isinstance(seq, list) and seq:
+        out = []
+        for i, b in enumerate(seq):
+            title = _norm_title(b.get("beat") if isinstance(b, dict) else b)
+            out.append({"index": i, "title": title})
+        if out:
+            return out
+
+    # 4) fallback from metadata
+    titles: List[str] = []
+    try:
+        if kg_meta_path and kg_meta_path.exists():
+            kg_rows = _rows_from_meta(_read_json(kg_meta_path))
+            titles += [r.get("beat_title", "Unspecified") for r in kg_rows if r.get("beat_title")]
+        if hy_meta_path and hy_meta_path.exists():
+            hy_rows = _rows_from_meta(_read_json(hy_meta_path))
+            titles += [r.get("beat_title", "Unspecified") for r in hy_rows if r.get("beat_title")]
+    except Exception:
+        pass
+
+    picked: List[str] = []
+    if titles:
+        freq = Counter([_norm_title(t) for t in titles])
+        picked = [t for t, _ in freq.most_common(default_n)]
+    else:
+        # very last resort hardcoded ordering
+        picked = [
+            "Introduction", "Context Setup", "Performance Detail",
+            "Audience Interaction", "Cultural Impact", "Legacy & Reflection"
+        ][:default_n]
+
+    return [{"index": i, "title": t} for i, t in enumerate(picked)]
+
+# =========================
+# Random selection primitives
+# =========================
+
+def _rng_sample(rng: random.Random, pool: List[Any], k: int) -> List[Any]:
+    if k <= 0 or not pool:
         return []
-    if len(pool) <= k:
-        # deterministic-ish but shuffled
-        out = list(pool)
-        rng.shuffle(out)
-        return out[:k]
+    if k >= len(pool):
+        return list(pool)
     return rng.sample(pool, k)
 
-def _make_item(cid: str, rec: Dict[str,Any], beat_idx: int, beat_title: str, mode: str) -> Dict[str,Any]:
-    return {
-        "id": cid,
-        "mode": mode,
-        "beat": {"index": beat_idx, "title": beat_title},
-        "question": rec.get("question",""),
-        "sparql": rec.get("sparql",""),
-        "sparql_source": "meta",
-    }
+def _pick_for_beat_unique(
+    *, rng: random.Random, k: int,
+    pool_pref: List[Dict[str, Any]],
+    pool_fallback: List[Dict[str, Any]],
+    already: set,
+) -> List[Dict[str, Any]]:
+    def uniq(rows: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        out = []
+        for r in rows:
+            cid = r.get("id")
+            sp  = (r.get("sparql") or "").strip()
+            if not cid or not sp or cid in already:
+                continue
+            out.append(r)
+        return out
 
-def _intersect_ids(kg_pool: List[Tuple[str,Dict[str,Any]]], hy_pool: List[Tuple[str,Dict[str,Any]]]) -> List[str]:
-    kg_ids = {cid for cid,_ in kg_pool}
-    hy_ids = {cid for cid,_ in hy_pool}
-    return sorted(kg_ids & hy_ids)
+    take: List[Dict[str, Any]] = []
+    pref = uniq(pool_pref)
+    if pref:
+        take = _rng_sample(rng, pref, min(k, len(pref)))
 
-# ------------------------------ planner --------------------------------
+    if len(take) < k:
+        need = k - len(take)
+        taken_ids = {r["id"] for r in take}
+        fb = [r for r in uniq(pool_fallback) if r["id"] not in taken_ids]
+        extra = _rng_sample(rng, fb, min(need, len(fb))) if fb else []
+        take += extra
+
+    for r in take:
+        already.add(r["id"])
+    return take
+
+# =========================
+# Plan builders
+# =========================
+
+def _plan_single_mode(
+    *, mode: str, rows: List[Dict[str, Any]], beats: List[Dict[str, Any]],
+    items_per_beat: int, rng: random.Random
+) -> Dict[str, Any]:
+    by = _index_by_beat(rows)
+    global_pool = [r for r in rows if (r.get("sparql") or "").strip()]
+    chosen: set = set()
+    items: List[Dict[str, Any]] = []
+
+    for b in beats:
+        title = b["title"]; slug = _slug(title)
+        pref = by.get(slug, [])
+        picks = _pick_for_beat_unique(
+            rng=rng, k=items_per_beat,
+            pool_pref=pref, pool_fallback=global_pool,
+            already=chosen
+        )
+        for r in picks:
+            items.append({
+                "id": r["id"],
+                "question": r.get("question",""),
+                "beat": {"index": b["index"], "title": title},
+                "sparql": r.get("sparql",""),
+            })
+
+    if not items and global_pool:
+        picks = _pick_for_beat_unique(
+            rng=rng, k=min(items_per_beat, len(global_pool)),
+            pool_pref=global_pool, pool_fallback=global_pool, already=chosen
+        )
+        for r in picks:
+            items.append({
+                "id": r["id"],
+                "question": r.get("question",""),
+                "beat": {"index": 0, "title": beats[0]["title"] if beats else "Unspecified"},
+                "sparql": r.get("sparql",""),
+            })
+
+    seen, out = set(), []
+    for it in items:
+        cid = it.get("id")
+        if cid in seen:
+            continue
+        seen.add(cid)
+        out.append(it)
+
+    return {"mode": mode, "beats": beats, "items": out}
+
+def _plan_intersect(
+    *, rows_kg: List[Dict[str, Any]], rows_hy: List[Dict[str, Any]],
+    beats: List[Dict[str, Any]], items_per_beat: int, rng: random.Random
+) -> Tuple[Dict[str, Any], Dict[str, Any]]:
+    by_kg = _index_by_beat(rows_kg)
+    by_hy = _index_by_beat(rows_hy)
+    pool_kg_all = [r for r in rows_kg if (r.get("sparql") or "").strip()]
+    pool_hy_all = [r for r in rows_hy if (r.get("sparql") or "").strip()]
+
+    chosen_kg: set = set()
+    chosen_hy: set = set()
+    items_kg: List[Dict[str, Any]] = []
+    items_hy: List[Dict[str, Any]] = []
+
+    def idx(rows: List[Dict[str, Any]]) -> Dict[str, Dict[str, Any]]:
+        d = {}
+        for r in rows:
+            cid = r.get("id")
+            if cid and cid not in d:
+                d[cid] = r
+        return d
+
+    idx_kg_all = idx(pool_kg_all)
+    idx_hy_all = idx(pool_hy_all)
+
+    for b in beats:
+        title = b["title"]; slug = _slug(title)
+        kg = [r for r in by_kg.get(slug, []) if (r.get("sparql") or "").strip()]
+        hy = [r for r in by_hy.get(slug, []) if (r.get("sparql") or "").strip()]
+
+        ids_inter = list({r["id"] for r in kg}.intersection({r["id"] for r in hy}))
+        rng.shuffle(ids_inter)
+
+        take_ids: List[str] = []
+        for cid in ids_inter:
+            if len(take_ids) >= items_per_beat:
+                break
+            if cid not in chosen_kg and cid not in chosen_hy:
+                take_ids.append(cid)
+
+        for cid in take_ids:
+            rkg = idx_kg_all.get(cid); rhy = idx_hy_all.get(cid)
+            if rkg and cid not in chosen_kg:
+                chosen_kg.add(cid)
+                items_kg.append({"id": cid, "question": rkg.get("question",""),
+                                 "beat": {"index": b["index"], "title": title},
+                                 "sparql": rkg.get("sparql","")})
+            if rhy and cid not in chosen_hy:
+                chosen_hy.add(cid)
+                items_hy.append({"id": cid, "question": rhy.get("question",""),
+                                 "beat": {"index": b["index"], "title": title},
+                                 "sparql": rhy.get("sparql","")})
+
+        need_kg = items_per_beat - sum(1 for it in items_kg if it["beat"]["index"] == b["index"])
+        need_hy = items_per_beat - sum(1 for it in items_hy if it["beat"]["index"] == b["index"])
+
+        if need_kg > 0:
+            extra_kg = _pick_for_beat_unique(
+                rng=rng, k=need_kg, pool_pref=kg, pool_fallback=pool_kg_all, already=chosen_kg
+            )
+            for r in extra_kg:
+                items_kg.append({"id": r["id"], "question": r.get("question",""),
+                                 "beat": {"index": b["index"], "title": title},
+                                 "sparql": r.get("sparql","")})
+
+        if need_hy > 0:
+            extra_hy = _pick_for_beat_unique(
+                rng=rng, k=need_hy, pool_pref=hy, pool_fallback=pool_hy_all, already=chosen_hy
+            )
+            for r in extra_hy:
+                items_hy.append({"id": r["id"], "question": r.get("question",""),
+                                 "beat": {"index": b["index"], "title": title},
+                                 "sparql": r.get("sparql","")})
+
+    if not items_kg:
+        items_kg = _plan_single_mode(mode="KG", rows=rows_kg, beats=beats,
+                                     items_per_beat=items_per_beat, rng=rng)["items"]
+    if not items_hy:
+        items_hy = _plan_single_mode(mode="Hybrid", rows=rows_hy, beats=beats,
+                                     items_per_beat=items_per_beat, rng=rng)["items"]
+
+    def dedupe(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        seen, out = set(), []
+        for it in items:
+            cid = it.get("id")
+            if cid in seen:
+                continue
+            seen.add(cid)
+            out.append(it)
+        return out
+
+    return (
+        {"mode": "KG", "beats": beats, "items": dedupe(items_kg)},
+        {"mode": "Hybrid", "beats": beats, "items": dedupe(items_hy)},
+    )
+
+# =========================
+# Public API
+# =========================
 
 def build_plans(
-    kg_meta: Dict[str,Dict[str,Any]],
-    hy_meta: Dict[str,Dict[str,Any]],
-    beats: List[Dict[str,Any]],
-    items_per_beat: int,
-    rng: random.Random,
-    match_strategy: str = "union",
-    require_sparql: bool = True,
-    allow_backfill: bool = True,
-) -> Tuple[Dict[str,Any], Dict[str,Any], List[str]]:
-    """
-    Returns (plan_kg, plan_hy, warnings)
-    """
-    warnings: List[str] = []
-    items_kg: List[Dict[str,Any]] = []
-    items_hy: List[Dict[str,Any]] = []
+    *, beats: List[Dict[str, Any]], rng: random.Random,
+    kg_meta: str, hy_meta: str, items_per_beat: int = 2,
+    match_strategy: str = "intersect",
+    persona: Optional[str] = None, length: Optional[str] = None,
+) -> Tuple[Dict[str, Any], Dict[str, Any]]:
+    rows_kg = _rows_from_meta(_read_json(Path(kg_meta)))
+    rows_hy = _rows_from_meta(_read_json(Path(hy_meta)))
 
+    if match_strategy.lower() == "intersect":
+        plan_kg, plan_hy = _plan_intersect(
+            rows_kg=rows_kg, rows_hy=rows_hy, beats=beats,
+            items_per_beat=items_per_beat, rng=rng
+        )
+        if not plan_kg["items"] or not plan_hy["items"]:
+            plan_kg = _plan_single_mode(mode="KG", rows=rows_kg, beats=beats,
+                                        items_per_beat=items_per_beat, rng=rng)
+            plan_hy = _plan_single_mode(mode="Hybrid", rows=rows_hy, beats=beats,
+                                         items_per_beat=items_per_beat, rng=rng)
+    else:
+        plan_kg = _plan_single_mode(mode="KG", rows=rows_kg, beats=beats, items_per_beat=items_per_beat, rng=rng)
+        plan_hy = _plan_single_mode(mode="Hybrid", rows=rows_hy, beats=beats, items_per_beat=items_per_beat, rng=rng)
 
-    for b in beats:
+    for p in (plan_kg, plan_hy):
+        p["persona"] = persona or ""
+        p["length"]  = length or ""
+    return plan_kg, plan_hy
 
-        i = b["index"]
-        title = b["title"]
-        print(f"Processing beat {b} '{title}'... ", end="", flush=True)
-        bslug = _slug(title)
-
-        kg_pool = _pool_for_beat(kg_meta, bslug, require_sparql)
-        hy_pool = _pool_for_beat(hy_meta, bslug, require_sparql)
-
-        # INTERSECT means only IDs present in both pools (often tiny/empty)
-        if match_strategy == "intersect":
-            ids = _intersect_ids(kg_pool, hy_pool)
-            if not ids:
-                warnings.append(f"[beat {i}] intersect empty for '{title}'. Will backfill.")
-            # map id -> rec
-            kg_by_id = {cid: rec for cid,rec in kg_pool}
-            hy_by_id = {cid: rec for cid,rec in hy_pool}
-            # sample from common ids
-            rng.shuffle(ids)
-            ids_pick = ids[:items_per_beat]
-            # create items (KG & Hybrid both get same ids if available)
-            picked_kg = [(cid, kg_by_id.get(cid)) for cid in ids_pick if cid in kg_by_id]
-            picked_hy = [(cid, hy_by_id.get(cid)) for cid in ids_pick if cid in hy_by_id]
-        else:
-            # UNION / default: sample independently from each pool
-            picked_kg = _sample_items(rng, kg_pool, items_per_beat)
-            picked_hy = _sample_items(rng, hy_pool, items_per_beat)
-
-        # Backfill if short
-        if allow_backfill:
-            if len(picked_kg) < items_per_beat:
-                rest = [p for p in kg_pool if p not in picked_kg]
-                picked_kg += _sample_items(rng, rest, items_per_beat - len(picked_kg))
-            if len(picked_hy) < items_per_beat:
-                rest = [p for p in hy_pool if p not in picked_hy]
-                picked_hy += _sample_items(rng, rest, items_per_beat - len(picked_hy))
-
-        if len(picked_kg) < items_per_beat:
-            warnings.append(f"[beat {i}] KG underfilled: {len(picked_kg)}/{items_per_beat} for '{title}'")
-        if len(picked_hy) < items_per_beat:
-            warnings.append(f"[beat {i}] Hybrid underfilled: {len(picked_hy)}/{items_per_beat} for '{title}'")
-
-        for cid, rec in picked_kg:
-            if not rec: continue
-            items_kg.append(_make_item(cid, rec, i, title, "KG"))
-        for cid, rec in picked_hy:
-            if not rec: continue
-            items_hy.append(_make_item(cid, rec, i, title, "Hybrid"))
-
-    plan_kg = {
-        "persona": None,
-        "length": None,
-        "mode": "KG",
-        "beats": [{"index": b["index"], "title": b["title"], "items": items_per_beat} for b in beats],
-        "items": items_kg,
-    }
-    plan_hy = {
-        "persona": None,
-        "length": None,
-        "mode": "Hybrid",
-        "beats": [{"index": b["index"], "title": b["title"], "items": items_per_beat} for b in beats],
-        "items": items_hy,
-    }
-    return plan_kg, plan_hy, warnings
-
-# ------------------------------ validate --------------------------------
-
-def validate_plan(plan: Dict[str,Any], items_per_beat: int) -> List[str]:
-    errs: List[str] = []
-    beats = plan.get("beats") or []
-    nbeats = len(beats)
-    by_idx: Dict[int,int] = {b["index"]: 0 for b in beats if isinstance(b,dict) and "index" in b}
-    for it in plan.get("items") or []:
-        b = it.get("beat") or {}
-        bi = b.get("index", None)
-        bt = b.get("title","")
-        if not isinstance(bi, int):
-            errs.append(f"Item {it.get('id')} missing beat.index")
-            continue
-        if bi < 0 or bi >= nbeats:
-            errs.append(f"Item {it.get('id')} has out-of-range beat index {bi} (0..{nbeats-1})")
-            continue
-        # title mismatch check (optional)
-        exp_title = beats[bi].get("title","")
-        if exp_title and bt and _slug(exp_title) != _slug(bt):
-            errs.append(f"Item {it.get('id')} beat title mismatch: item='{bt}' vs plan='{exp_title}'")
-        by_idx[bi] = by_idx.get(bi,0) + 1
-
-        # basic SPARQL presence
-        if not (it.get("sparql") or "").strip():
-            errs.append(f"Item {it.get('id')} in beat {bi} has empty SPARQL")
-
-    # per-beat counts
-    for b in beats:
-        idx = b["index"]
-        cnt = by_idx.get(idx,0)
-        if cnt != items_per_beat:
-            errs.append(f"Beat {idx} '{b.get('title','')}' has {cnt}/{items_per_beat} items")
-    return errs
-
-# --------------------------------- main ---------------------------------
+# =========================
+# CLI
+# =========================
 
 def main():
-    ap = argparse.ArgumentParser(description="Beat-aware random planner for KG and Hybrid.")
-    ap.add_argument("--kg_meta", required=True)
-    ap.add_argument("--hy_meta", required=True)
-    ap.add_argument("--narrative_plans", required=False, default=None)
-    ap.add_argument("--persona", required=True)
-    ap.add_argument("--length", required=True)
+    ap = argparse.ArgumentParser(description="Random dual planner (robust beat resolution; no duplicates per plan).")
+    ap.add_argument("--kg_meta", type=Path, required=True, help="Path to ../index/KG/cq_metadata.json")
+    ap.add_argument("--hy_meta", type=Path, required=True, help="Path to ../index/Hybrid/cq_metadata.json")
+    ap.add_argument("--narrative_plans", type=Path, required=True, help="Path to narrative_plans.json")
+    ap.add_argument("--persona", default="Emma")
+    ap.add_argument("--length", default="Medium")
     ap.add_argument("--items_per_beat", type=int, default=2)
-    ap.add_argument("--seed", type=int, default=None)
-    ap.add_argument("--match_strategy", choices=["union","intersect"], default="union",
-                    help="union: sample independently; intersect: only common IDs (usually tiny; planner will backfill)")
-    ap.add_argument("--require_sparql", action="store_true", help="Drop CQs with empty SPARQL before sampling")
-    ap.add_argument("--no_backfill", action="store_true", help="Do not try to backfill short beats")
-    ap.add_argument("--out_kg", required=True)
-    ap.add_argument("--out_hybrid", required=True)
-    ap.add_argument("--validate", action="store_true")
+    ap.add_argument("--seed", type=int, default=42)
+    ap.add_argument("--match_strategy", default="intersect", choices=["intersect", "independent"])
+    ap.add_argument("--out_kg", type=Path, required=True)
+    ap.add_argument("--out_hybrid", type=Path, required=True)
+    ap.add_argument("--debug", action="store_true")
     args = ap.parse_args()
 
-    rng = _choose_rng(args.seed)
-
-    kg_meta = _meta_dict(Path(args.kg_meta))
-    hy_meta = _meta_dict(Path(args.hy_meta))
-
-    narrative = _load_json(Path(args.narrative_plans)) if args.narrative_plans else None
-    beats = _pick_beats(narrative, args.persona, args.length)
-
-    plan_kg, plan_hy, warns = build_plans(
-        kg_meta, hy_meta, beats,
-        items_per_beat=args.items_per_beat,
-        rng=rng,
-        match_strategy=args.match_strategy,
-        require_sparql=args.require_sparql,
-        allow_backfill=(not args.no_backfill),
+    # NEW: robust beat resolve with metadata fallback
+    beats = _resolve_beats(
+        args.narrative_plans, args.persona, args.length,
+        kg_meta_path=args.kg_meta, hy_meta_path=args.hy_meta, default_n=6
     )
-    # stamp persona/length
-    for p in (plan_kg, plan_hy):
-        p["persona"] = args.persona
-        p["length"] = args.length
 
-    # Write
-    Path(args.out_kg).write_text(json.dumps(plan_kg, ensure_ascii=False, indent=2), encoding="utf-8")
-    Path(args.out_hybrid).write_text(json.dumps(plan_hy, ensure_ascii=False, indent=2), encoding="utf-8")
+    rng = random.Random(args.seed)
 
-    # Diagnostics
-    if warns:
-        print("\nWarnings:")
-        for w in warns:
-            print(" -", w)
+    plan_kg, plan_hy = build_plans(
+        beats=beats, rng=rng, kg_meta=str(args.kg_meta), hy_meta=str(args.hy_meta),
+        items_per_beat=args.items_per_beat, match_strategy=args.match_strategy,
+        persona=args.persona, length=args.length,
+    )
 
-    if args.validate:
-        print("\nValidation (KG):")
-        for e in validate_plan(plan_kg, args.items_per_beat):
-            print(" -", e)
-        print("\nValidation (Hybrid):")
-        for e in validate_plan(plan_hy, args.items_per_beat):
-            print(" -", e)
+    _write_json(args.out_kg, plan_kg)
+    _write_json(args.out_hybrid, plan_hy)
 
-    print(f"\nWrote {args.out_kg} and {args.out_hybrid}")
+    if args.debug:
+        print(f"[planner] beats: {[b['title'] for b in beats]}")
+        print(f"[planner] KG items: {len(plan_kg['items'])}, Hybrid items: {len(plan_hy['items'])}")
+        def per_beat(items):
+            c = {}
+            for it in items:
+                t = it["beat"]["title"]
+                c[t] = c.get(t, 0) + 1
+            return c
+        print("[planner] per-beat KG:", per_beat(plan_kg["items"]))
+        print("[planner] per-beat Hybrid:", per_beat(plan_hy["items"]))
+
+    print(f"✓ wrote {args.out_kg} and {args.out_hybrid} (beats resolved; no duplicates per plan)")
 
 if __name__ == "__main__":
     main()

@@ -1,8 +1,581 @@
-{"id": "CQ-E2", "mode": "Hybrid", "beat": {"index": 0, "title": "Introduction"}, "question": "Why was Live Aid 1985 organized?", "answer": "Live Aid 1985 was organized to raise funds for famine relief in Ethiopia, inspired by the Band Aid charity single “Do They Know It’s Christmas?” (https://en.wikipedia.org/wiki/Live_Aid#Background). The concert aimed to provide humanitarian aid to those affected by the Ethiopian famine.", "citations": ["http://schema.org/citation", "http://schema.org/url", "http://wembrewind.live/ex#LiveAidWiki_Background", "https://en.wikipedia.org/wiki/Live_Aid#Background"], "used": {"rows": 1, "has_enrichment": true, "has_url_info": true}}
-{"id": "CQ-E1", "mode": "Hybrid", "beat": {"index": 0, "title": "Introduction"}, "question": "What kind of event was Live Aid 1985", "answer": "Live Aid 1985 was a dual-venue global benefit concert (https://en.wikipedia.org/wiki/Live_Aid#Background). It was held on 13 July 1985 to raise funds for famine relief in Ethiopia.", "citations": ["http://schema.org/citation", "http://schema.org/url", "http://wembrewind.live/ex#LiveAidWiki_Background", "https://en.wikipedia.org/wiki/Live_Aid#Background"], "used": {"rows": 1, "has_enrichment": true, "has_url_info": true}}
-{"id": "CQ-L6", "mode": "Hybrid", "beat": {"index": 1, "title": "Context Setup"}, "question": "How many satellites were used during Live Aid 1985’s broadcast?", "answer": "There were 13 satellites used during Live Aid 1985's broadcast. These included a network of commercial telecommunications satellites including five Intelsat satellites (https://en.wikipedia.org/wiki/Intelsat).", "citations": [], "used": {"rows": 1, "has_enrichment": false, "has_url_info": false}}
-{"id": "CQ-L5", "mode": "Hybrid", "beat": {"index": 1, "title": "Context Setup"}, "question": "What was the attendance at each venue of Live Aid 1985?", "answer": "Unfortunately, the provided context only includes information about one venue, John F. Kennedy Stadium, with an attendance of 89484 people for the Live Aid event in 1985 (https://en.wikipedia.org/wiki/Live_Aid).\n\nNo data is available to determine attendance at other venues for this specific event.", "citations": [], "used": {"rows": 1, "has_enrichment": false, "has_url_info": false}}
-{"id": "CQ-E18", "mode": "Hybrid", "beat": {"index": 3, "title": "Performance Detail"}, "question": "How did Live Aid 1985 influence future benefit concerts?", "answer": "Live Aid 1985 inspired future benefit concerts by setting a model for large-scale charitable events worldwide. According to (https://www.history.co.uk/articles/live-aid-history), the impact of Live Aid has been lasting, shaping the way charity concerts are organized and executed.\n\nNote: The context provides an overview of Live Aid's legacy and its influence on future charity events, which is referenced by the link https://www.history.co.uk/articles/live-aid-history.", "citations": ["http://schema.org/citation", "http://schema.org/url", "http://wembrewind.live/ex#LiveAid_Legacy_HistoryArticle", "https://www.history.co.uk/articles/live-aid-history"], "used": {"rows": 1, "has_enrichment": true, "has_url_info": true}}
-{"id": "CQ-E9", "mode": "Hybrid", "beat": {"index": 3, "title": "Performance Detail"}, "question": "Which [Performance] at Live Aid 1985 is considered iconic?", "answer": "Several performances are considered iconic at Live Aid 1985. \n\nBowie's 'Heroes' and the decision to cut a song to air famine appeal footage—credited with catalysing donations. (https://en.wikipedia.org/wiki/Bowie_%27s_Heroes) \nDire Straits with Sting on 'Money for Nothing', performed live at Wembley.", "citations": [], "used": {"rows": 5, "has_enrichment": false, "has_url_info": false}}
-{"id": "CQ-E21", "mode": "Hybrid", "beat": {"index": 5, "title": "Legacy & Reflection"}, "question": "Which [Organization] archived the broadcast of Live Aid 1985?", "answer": "The BBC is reported to have archived the broadcast of Live Aid 1985. \nBBC's archives can be accessed through their website (https://www.bbc.co.uk/archives).", "citations": [], "used": {"rows": 1, "has_enrichment": false, "has_url_info": false}}
-{"id": "CQ-E23", "mode": "Hybrid", "beat": {"index": 5, "title": "Legacy & Reflection"}, "question": "What is the preservation status of Live Aid 1985 broadcasts at Wembley Stadium?", "answer": "The preservation status of Live Aid 1985 broadcasts at Wembley Stadium is considered good. The British Library (http://www.bl.uk) holds a significant collection of recordings and documents related to the event, which have been digitized for preservation and access.", "citations": [], "used": {"rows": 0, "has_enrichment": false, "has_url_info": false}}
+{
+  "beat_index": 0,
+  "beat_title": "Introduction",
+  "facts_used": 3,
+  "references_by_cq": {
+    "CQ-E2": [
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "url": "<https://en.wikipedia.org/wiki/Live_Aid#Background>",
+          "text": "\"Live Aid was a dual-venue global benefit concert held on 13 July 1985, inspired by the Band Aid charity single “Do They Know It’s Christmas?” to raise funds for famine relief in Ethiopia. Conceived by Bob Geldof and Midge Ure, it was broadcast to nearly 2 billion viewers worldwide and became a landmark in humanitarian fundraising and popular culture.\"",
+          "__url_candidates": [
+            "https://en.wikipedia.org/wiki/Live_Aid#Background"
+          ],
+          "__url_info": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Live_Aid#Background",
+              "domain": "en.wikipedia.org",
+              "fetched_at": "2025-08-18T08:48:28Z",
+              "status": 200,
+              "content_type": "text/html; charset=UTF-8",
+              "title": "Live Aid - Wikipedia",
+              "content_text": "Toggle the table of contents Live Aid 46 languages አማርኛ Asturianu Български Bosanski Català Čeština Dansk Deutsch Eesti Ελληνικά Español Esperanto فارسی Français Gaeilge 한국어 Հայերեն Hrvatski Ido Bahasa Indonesia Íslenska Italiano עברית ქართული Magyar Македонски Nāhuatl Nederlands 日本語 Norsk bokmål Polski Português Română Русский Sicilianu Simple English Slovenčina Slovenščina Српски / srpski Suomi Svenska ไทย Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Download QR code Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia 1985 benefit concert For the 2005 benefit concerts, see Live 8 . Live Aid Official Live Aid poster featuring artwork by Peter Blake Genre Rock , pop Dates 13 July 1985 ; 40 years ago ( 1985-07-13 ) Location(s) Wembley Stadium London , England, United Kingdom John F. Kennedy Stadium Philadelphia, Pennsylvania , United States Founders Bob Geldof Midge Ure Attendance 72,000 (London) 89,484 (Philadelphia) Live Aid was a two-venue benefit concert and music-based fundraising initiative held on Saturday 13 July 1985. The event was organised by Bob Geldof and Midge Ure to raise further funds for relief of the 1983–1985 famine in Ethiopia , a movement that started with the release of the successful charity single \" Do They Know It's Christmas? \" in December 1984. Billed as the \"global jukebox\", Live Aid was held simultaneously at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia . [ 1 ] [ 2 ] On the same day, concerts inspired by the initiative were held in other countries, such as the Soviet Union , Canada , Japan , Yugoslavia , Austria , Australia , and West Germany . It was one of the largest satellite link-ups and television broadcasts of all time. An estimated audience of 1.9 billion people in 150 nations watched the live broadcast, nearly 40 per cent of the world population. [ 3 ] [ 4 ] The impact of Live Aid on famine relief has been debated for years. One aid relief worker stated that following the publicity generated by the concert, \"humanitarian concern is now at the centre of foreign policy\" for Western governments. [ 5 ] Geldof has said: \"We took an issue that was nowhere on the political agenda and, through the lingua franca of the planet – which is not English but rock 'n' roll – we were able to address the intellectual absurdity and the moral repulsion of people dying of want in a world of surplus.\" [ 6 ] In another interview he stated that Live Aid \"created something permanent and self-sustaining\" but also asked why Africa is getting poorer. [ 5 ] The organisers of Live Aid tried to run aid efforts directly, channelling millions of pounds to NGOs in Ethiopia . It has been alleged that much of this went to the Ethiopian government of Mengistu Haile Mariam – a regime the UK Prime Minister Margaret Thatcher opposed [ 7 ] – and it is also alleged some funds were spent on guns. [ 5 ] [ 8 ] Although the BBC World Service programme Assignment reported in March 2010 that the funds had been diverted, the BBC Editorial Complaints Unit later found \"that there was no evidence to support such statements\". [ 9 ] Brian Barder , British Ambassador to Ethiopia from 1982 to 1986, wrote on his website: \"The programme itself, and in particular the BBC's advance publicity for it, gave the impression that these allegations concerned not only the aid operation in TPLF [rebel]-controlled areas but also the much larger international relief aid operation in the rest of Ethiopia, including in particular money for famine relief raised by Bob Geldof's Band Aid and Live Aid. This impression is entirely false. Nothing of the sort occurred.\" [ 10 ] Background [ edit ] Michael Buerk 's reports on the 1983–1985 famine in Ethiopia for BBC World Service helped spark the aid relief movement. [ 11 ] The 1985 Live Aid concert was conceived as a follow-on to the successful charity single \" Do They Know It's Christmas? \" which was also the idea of Geldof and Ure. In October 1984, images of hundreds of thousands of people starving to death in Ethiopia were shown in the UK in Michael Buerk 's BBC News reports on the 1984 famine . [ 11 ] The BBC News crew were the first to document the famine, with Buerk's report on 23 October describing it as \"a biblical famine in the 20th century\" and \"the closest thing to hell on Earth\". [ 12 ] The reports featured a young nurse, Claire Bertschinger , who, surrounded by 85,000 starving people, told of her sorrow of having to decide which children would be allowed access to the limited food supplies in the feeding station and which were too sick to be saved. [ 13 ] She would put a little mark on the children who got chosen, with Geldof stati",
+              "content_len": 5000,
+              "truncated": true,
+              "content_sha1": "cbc5854eae369e94558ff86e13c2476f824c9ad5",
+              "content_chunks": [
+                "Toggle the table of contents Live Aid 46 languages አማርኛ Asturianu Български Bosanski Català Čeština Dansk Deutsch Eesti Ελληνικά Español Esperanto فارسی Français Gaeilge 한국어 Հայերեն Hrvatski Ido Bahasa Indonesia Íslenska Italiano עברית ქართული Magyar Македонски Nāhuatl Nederlands 日本語 Norsk bokmål Polski Português Română Русский Sicilianu Simple English Slovenčina Slovenščina Српски / srpski Suomi Svenska ไทย Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history T",
+                "inks Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Download QR code Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia 1985 benefit concert For the 2005 benefit concerts, see Live 8 . Live Aid Official Liv",
+                "nefit concerts, see Live 8 . Live Aid Official Live Aid poster featuring artwork by Peter Blake Genre Rock , pop Dates 13 July 1985 ; 40 years ago ( 1985-07-13 ) Location(s) Wembley Stadium London , England, United Kingdom John F. Kennedy Stadium Philadelphia, Pennsylvania , United States Founders Bob Geldof Midge Ure Attendance 72,000 (London) 89,484 (Philadelphia) Live Aid was a two-venue benefit concert and music-based fundraising initiative held on Saturday 13 July 1985. The event was organi",
+                "eld on Saturday 13 July 1985. The event was organised by Bob Geldof and Midge Ure to raise further funds for relief of the 1983–1985 famine in Ethiopia , a movement that started with the release of the successful charity single \" Do They Know It's Christmas? \" in December 1984. Billed as the \"global jukebox\", Live Aid was held simultaneously at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia . [ 1 ] [ 2 ] On the same day, concerts inspired by the initiative were held in oth",
+                "ncerts inspired by the initiative were held in other countries, such as the Soviet Union , Canada , Japan , Yugoslavia , Austria , Australia , and West Germany . It was one of the largest satellite link-ups and television broadcasts of all time. An estimated audience of 1.9 billion people in 150 nations watched the live broadcast, nearly 40 per cent of the world population. [ 3 ] [ 4 ] The impact of Live Aid on famine relief has been debated for years. One aid relief worker stated that following",
+                "years. One aid relief worker stated that following the publicity generated by the concert, \"humanitarian concern is now at the centre of foreign policy\" for Western governments. [ 5 ] Geldof has said: \"We took an issue that was nowhere on the political agenda and, through the lingua franca of the planet – which is not English but rock 'n' roll – we were able to address the intellectual absurdity and the moral repulsion of people dying of want in a world of surplus.\" [ 6 ] In another interview he",
+                "a world of surplus.\" [ 6 ] In another interview he stated that Live Aid \"created something permanent and self-sustaining\" but also asked why Africa is getting poorer. [ 5 ] The organisers of Live Aid tried to run aid efforts directly, channelling millions of pounds to NGOs in Ethiopia . It has been alleged that much of this went to the Ethiopian government of Mengistu Haile Mariam – a regime the UK Prime Minister Margaret Thatcher opposed [ 7 ] – and it is also alleged some funds were spent on g",
+                " and it is also alleged some funds were spent on guns. [ 5 ] [ 8 ] Although the BBC World Service programme Assignment reported in March 2010 that the funds had been diverted, the BBC Editorial Complaints Unit later found \"that there was no evidence to support such statements\". [ 9 ] Brian Barder , British Ambassador to Ethiopia from 1982 to 1986, wrote on his website: \"The programme itself, and in particular the BBC's advance publicity for it, gave the impression that these allegations concerne"
+              ]
+            }
+          ],
+          "__cq_id": "CQ-E2"
+        }
+      },
+      {
+        "type": "web",
+        "url": "https://en.wikipedia.org/wiki/Live_Aid#Background",
+        "title": "Live Aid - Wikipedia",
+        "domain": "en.wikipedia.org",
+        "content_sha1": "cbc5854eae369e94558ff86e13c2476f824c9ad5",
+        "content_text": "Toggle the table of contents Live Aid 46 languages አማርኛ Asturianu Български Bosanski Català Čeština Dansk Deutsch Eesti Ελληνικά Español Esperanto فارسی Français Gaeilge 한국어 Հայերեն Hrvatski Ido Bahasa Indonesia Íslenska Italiano עברית ქართული Magyar Македонски Nāhuatl Nederlands 日本語 Norsk bokmål Polski Português Română Русский Sicilianu Simple English Slovenčina Slovenščina Српски / srpski Suomi Svenska ไทย Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Download QR code Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia 1985 benefit concert For the 2005 benefit concerts, see Live 8 . Live Aid Official Live Aid poster featuring artwork by Peter Blake Genre Rock , pop Dates 13 July 1985 ; 40 years ago ( 1985-07-13 ) Location(s) Wembley Stadium London , England, United Kingdom John F. Kennedy Stadium Philadelphia, Pennsylvania , United States Founders Bob Geldof Midge Ure Attendance 72,000 (London) 89,484 (Philadelphia) Live Aid was a two-venue benefit concert and music-based fundraising initiative held on Saturday 13 July 1985. The event was organised by Bob Geldof and Midge Ure to raise further funds for relief of the 1983–1985 famine in Ethiopia , a movement that started with the release of the successful charity single \" Do They Know It's Christmas? \" in December 1984. Billed as the \"global jukebox\", Live Aid was held simultaneously at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia . [ 1 ] [ 2 ] On the same day, concerts inspired by the initiative were held in other countries, such as the Soviet Union , Canada , Japan , Yugoslavia , Austria , Australia , and West Germany . It was one of the largest satellite link-ups and television broadcasts of all time. An estimated audience of 1.9 billion people in 150 nations watched the live broadcast, nearly 40 per cent of the world population. [ 3 ] [ 4 ] The impact of Live Aid on famine relief has been debated for years. One aid relief worker stated that following the publicity generated by the concert, \"humanitarian concern is now at the centre of foreign policy\" for Western governments. [ 5 ] Geldof has said: \"We took an issue that was nowhere on the political agenda and, through the lingua franca of the planet – which is not English but rock 'n' roll – we were able to address the intellectual absurdity and the moral repulsion of people dying of want in a world of surplus.\" [ 6 ] In another interview he stated that Live Aid \"created something permanent and self-sustaining\" but also asked why Africa is getting poorer. [ 5 ] The organisers of Live Aid tried to run aid efforts directly, channelling millions of pounds to NGOs in Ethiopia . It has been alleged that much of this went to the Ethiopian government of Mengistu Haile Mariam – a regime the UK Prime Minister Margaret Thatcher opposed [ 7 ] – and it is also alleged some funds were spent on guns. [ 5 ] [ 8 ] Although the BBC World Service programme Assignment reported in March 2010 that the funds had been diverted, the BBC Editorial Complaints Unit later found \"that there was no evidence to support such statements\". [ 9 ] Brian Barder , British Ambassador to Ethiopia from 1982 to 1986, wrote on his website: \"The programme itself, and in particular the BBC's advance publicity for it, gave the impression that these allegations concerned not only the aid operation in TPLF [rebel]-controlled areas but also the much larger international relief aid operation in the rest of Ethiopia, including in particular money for famine relief raised by Bob Geldof's Band Aid and Live Aid. This impression is entirely false. Nothing of the sort occurred.\" [ 10 ] Background [ edit ] Michael Buerk 's reports on the 1983–1985 famine in Ethiopia for BBC World Service helped spark the aid relief movement. [ 11 ] The 1985 Live Aid concert was conceived as a follow-on to the successful charity single \" Do They Know It's Christmas? \" which was also the idea of Geldof and Ure. In October 1984, images of hundreds of thousands of people starving to death in Ethiopia were shown in the UK in Michael Buerk 's BBC News reports on the 1984 famine . [ 11 ] The BBC News crew were the first to document the famine, with Buerk's report on 23 October describing it as \"a biblical famine in the 20th century\" and \"the closest thing to hell on Earth\". [ 12 ] The reports featured a young nurse, Claire Bertschinger , who, surrounded by 85,000 starving people, told of her sorrow of having to decide which children would be allowed access to the limited food supplies in the feeding station and which were too sick to be saved. [ 13 ] She would put a little mark on the children who got chosen, with Geldof stati"
+      }
+    ],
+    "CQ-L4": [
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "city": "\"London\"",
+          "venueName": "\"Wembley Stadium\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-L4"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "city": "\"Philadelphia\"",
+          "venueName": "\"John F. Kennedy Stadium\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-L4"
+        }
+      }
+    ]
+  },
+  "text": "On July 13, 1985, two iconic music festivals came together to raise awareness and funds for famine relief in Ethiopia. [CQ-E2] One of these events was held at Wembley Stadium in London [CQ-L4], where a sea of people gathered to watch some of the biggest names in music perform live. Meanwhile, across the Atlantic, thousands more were tuned into John F. [CQ-E2] Kennedy Stadium in Philadelphia, watching Live Aid's American counterpart unfold [CQ-L4]. The dual-venue event was inspired by the Band Aid charity single \"Do They Know It’s Christmas?\" and would go down as one of the most ambitious musical endeavors of all time [CQ-E1]."
+}
+{
+  "beat_index": 1,
+  "beat_title": "Context Setup",
+  "facts_used": 3,
+  "references_by_cq": {
+    "CQ-L8": [
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "date": "\"1985-07-13\"^^<http://www.w3.org/2001/XMLSchema#date>",
+          "__url_candidates": [
+            "http://www.w3.org/2001/XMLSchema#date"
+          ],
+          "__url_info": [
+            {
+              "url": "http://www.w3.org/2001/XMLSchema#date",
+              "domain": "www.w3.org",
+              "fetched_at": "2025-08-18T08:48:30Z",
+              "status": 200,
+              "content_type": "text/html;charset=utf-8",
+              "title": "XML Schema",
+              "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .",
+              "content_len": 947,
+              "truncated": false,
+              "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273",
+              "content_chunks": [
+                "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema",
+                "documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double ."
+              ]
+            }
+          ],
+          "__cq_id": "CQ-L8"
+        }
+      },
+      {
+        "type": "web",
+        "url": "http://www.w3.org/2001/XMLSchema#date",
+        "title": "XML Schema",
+        "domain": "www.w3.org",
+        "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273",
+        "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double ."
+      }
+    ],
+    "CQ-E5": [
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "locationName": "\"John F. Kennedy Stadium\"",
+          "cityName": "\"Philadelphia\"",
+          "countryName": "\"United States of America\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-E5"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "locationName": "\"Wembley Stadium\"",
+          "cityName": "\"London\"",
+          "countryName": "\"United Kingdom\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-E5"
+        }
+      }
+    ]
+  },
+  "text": "On July 13th, 1985 [CQ-L8], a dual-venue benefit concert called Live Aid was held in Philadelphia and London to raise funds for famine relief in Ethiopia [CQ-E5]. The event took place at John F. [CQ-E5] Kennedy Stadium in Philadelphia, United States of America [CQ-E5] and Wembley Stadium in London, United Kingdom [CQ-E5], with the two locations connected via a live satellite feed. Thousands of fans attended the concerts, while millions more watched on television worldwide. [CQ-E5] The event aimed to bring together musicians from various genres to raise awareness and funds for the crisis in Ethiopia [CQ-E5]."
+}
+{
+  "beat_index": 2,
+  "beat_title": "Audience Interaction",
+  "facts_used": 1,
+  "references_by_cq": {
+    "CQ-E20": [
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "url": "<https://en.wikipedia.org/wiki/Live_Aid#Fundraising>",
+          "text": "\"During the concert, Bob Geldof frequently encouraged donations—reportedly prompting a dramatic surge with heartfelt appeals like “give us your money!” (though he later said he’d never uttered the phrase), leading to a pace of roughly £300 in donations every second. By the end of the event, estimates place £150 million raised overall, with some reports indicating £40–50 million collected on the day, all aimed at alleviating the Ethiopian famine.\"",
+          "__url_candidates": [
+            "https://en.wikipedia.org/wiki/Live_Aid#Fundraising"
+          ],
+          "__url_info": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Live_Aid#Fundraising",
+              "domain": "en.wikipedia.org",
+              "fetched_at": "2025-08-18T08:48:32Z",
+              "status": 200,
+              "content_type": "text/html; charset=UTF-8",
+              "title": "Live Aid - Wikipedia",
+              "content_text": "Toggle the table of contents Live Aid 46 languages አማርኛ Asturianu Български Bosanski Català Čeština Dansk Deutsch Eesti Ελληνικά Español Esperanto فارسی Français Gaeilge 한국어 Հայերեն Hrvatski Ido Bahasa Indonesia Íslenska Italiano עברית ქართული Magyar Македонски Nāhuatl Nederlands 日本語 Norsk bokmål Polski Português Română Русский Sicilianu Simple English Slovenčina Slovenščina Српски / srpski Suomi Svenska ไทย Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Download QR code Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia 1985 benefit concert For the 2005 benefit concerts, see Live 8 . Live Aid Official Live Aid poster featuring artwork by Peter Blake Genre Rock , pop Dates 13 July 1985 ; 40 years ago ( 1985-07-13 ) Location(s) Wembley Stadium London , England, United Kingdom John F. Kennedy Stadium Philadelphia, Pennsylvania , United States Founders Bob Geldof Midge Ure Attendance 72,000 (London) 89,484 (Philadelphia) Live Aid was a two-venue benefit concert and music-based fundraising initiative held on Saturday 13 July 1985. The event was organised by Bob Geldof and Midge Ure to raise further funds for relief of the 1983–1985 famine in Ethiopia , a movement that started with the release of the successful charity single \" Do They Know It's Christmas? \" in December 1984. Billed as the \"global jukebox\", Live Aid was held simultaneously at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia . [ 1 ] [ 2 ] On the same day, concerts inspired by the initiative were held in other countries, such as the Soviet Union , Canada , Japan , Yugoslavia , Austria , Australia , and West Germany . It was one of the largest satellite link-ups and television broadcasts of all time. An estimated audience of 1.9 billion people in 150 nations watched the live broadcast, nearly 40 per cent of the world population. [ 3 ] [ 4 ] The impact of Live Aid on famine relief has been debated for years. One aid relief worker stated that following the publicity generated by the concert, \"humanitarian concern is now at the centre of foreign policy\" for Western governments. [ 5 ] Geldof has said: \"We took an issue that was nowhere on the political agenda and, through the lingua franca of the planet – which is not English but rock 'n' roll – we were able to address the intellectual absurdity and the moral repulsion of people dying of want in a world of surplus.\" [ 6 ] In another interview he stated that Live Aid \"created something permanent and self-sustaining\" but also asked why Africa is getting poorer. [ 5 ] The organisers of Live Aid tried to run aid efforts directly, channelling millions of pounds to NGOs in Ethiopia . It has been alleged that much of this went to the Ethiopian government of Mengistu Haile Mariam – a regime the UK Prime Minister Margaret Thatcher opposed [ 7 ] – and it is also alleged some funds were spent on guns. [ 5 ] [ 8 ] Although the BBC World Service programme Assignment reported in March 2010 that the funds had been diverted, the BBC Editorial Complaints Unit later found \"that there was no evidence to support such statements\". [ 9 ] Brian Barder , British Ambassador to Ethiopia from 1982 to 1986, wrote on his website: \"The programme itself, and in particular the BBC's advance publicity for it, gave the impression that these allegations concerned not only the aid operation in TPLF [rebel]-controlled areas but also the much larger international relief aid operation in the rest of Ethiopia, including in particular money for famine relief raised by Bob Geldof's Band Aid and Live Aid. This impression is entirely false. Nothing of the sort occurred.\" [ 10 ] Background [ edit ] Michael Buerk 's reports on the 1983–1985 famine in Ethiopia for BBC World Service helped spark the aid relief movement. [ 11 ] The 1985 Live Aid concert was conceived as a follow-on to the successful charity single \" Do They Know It's Christmas? \" which was also the idea of Geldof and Ure. In October 1984, images of hundreds of thousands of people starving to death in Ethiopia were shown in the UK in Michael Buerk 's BBC News reports on the 1984 famine . [ 11 ] The BBC News crew were the first to document the famine, with Buerk's report on 23 October describing it as \"a biblical famine in the 20th century\" and \"the closest thing to hell on Earth\". [ 12 ] The reports featured a young nurse, Claire Bertschinger , who, surrounded by 85,000 starving people, told of her sorrow of having to decide which children would be allowed access to the limited food supplies in the feeding station and which were too sick to be saved. [ 13 ] She would put a little mark on the children who got chosen, with Geldof stati",
+              "content_len": 5000,
+              "truncated": true,
+              "content_sha1": "cbc5854eae369e94558ff86e13c2476f824c9ad5",
+              "content_chunks": [
+                "Toggle the table of contents Live Aid 46 languages አማርኛ Asturianu Български Bosanski Català Čeština Dansk Deutsch Eesti Ελληνικά Español Esperanto فارسی Français Gaeilge 한국어 Հայերեն Hrvatski Ido Bahasa Indonesia Íslenska Italiano עברית ქართული Magyar Македонски Nāhuatl Nederlands 日本語 Norsk bokmål Polski Português Română Русский Sicilianu Simple English Slovenčina Slovenščina Српски / srpski Suomi Svenska ไทย Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history T",
+                "inks Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Download QR code Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia 1985 benefit concert For the 2005 benefit concerts, see Live 8 . Live Aid Official Liv",
+                "nefit concerts, see Live 8 . Live Aid Official Live Aid poster featuring artwork by Peter Blake Genre Rock , pop Dates 13 July 1985 ; 40 years ago ( 1985-07-13 ) Location(s) Wembley Stadium London , England, United Kingdom John F. Kennedy Stadium Philadelphia, Pennsylvania , United States Founders Bob Geldof Midge Ure Attendance 72,000 (London) 89,484 (Philadelphia) Live Aid was a two-venue benefit concert and music-based fundraising initiative held on Saturday 13 July 1985. The event was organi",
+                "eld on Saturday 13 July 1985. The event was organised by Bob Geldof and Midge Ure to raise further funds for relief of the 1983–1985 famine in Ethiopia , a movement that started with the release of the successful charity single \" Do They Know It's Christmas? \" in December 1984. Billed as the \"global jukebox\", Live Aid was held simultaneously at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia . [ 1 ] [ 2 ] On the same day, concerts inspired by the initiative were held in oth",
+                "ncerts inspired by the initiative were held in other countries, such as the Soviet Union , Canada , Japan , Yugoslavia , Austria , Australia , and West Germany . It was one of the largest satellite link-ups and television broadcasts of all time. An estimated audience of 1.9 billion people in 150 nations watched the live broadcast, nearly 40 per cent of the world population. [ 3 ] [ 4 ] The impact of Live Aid on famine relief has been debated for years. One aid relief worker stated that following",
+                "years. One aid relief worker stated that following the publicity generated by the concert, \"humanitarian concern is now at the centre of foreign policy\" for Western governments. [ 5 ] Geldof has said: \"We took an issue that was nowhere on the political agenda and, through the lingua franca of the planet – which is not English but rock 'n' roll – we were able to address the intellectual absurdity and the moral repulsion of people dying of want in a world of surplus.\" [ 6 ] In another interview he",
+                "a world of surplus.\" [ 6 ] In another interview he stated that Live Aid \"created something permanent and self-sustaining\" but also asked why Africa is getting poorer. [ 5 ] The organisers of Live Aid tried to run aid efforts directly, channelling millions of pounds to NGOs in Ethiopia . It has been alleged that much of this went to the Ethiopian government of Mengistu Haile Mariam – a regime the UK Prime Minister Margaret Thatcher opposed [ 7 ] – and it is also alleged some funds were spent on g",
+                " and it is also alleged some funds were spent on guns. [ 5 ] [ 8 ] Although the BBC World Service programme Assignment reported in March 2010 that the funds had been diverted, the BBC Editorial Complaints Unit later found \"that there was no evidence to support such statements\". [ 9 ] Brian Barder , British Ambassador to Ethiopia from 1982 to 1986, wrote on his website: \"The programme itself, and in particular the BBC's advance publicity for it, gave the impression that these allegations concerne"
+              ]
+            }
+          ],
+          "__cq_id": "CQ-E20"
+        }
+      },
+      {
+        "type": "web",
+        "url": "https://en.wikipedia.org/wiki/Live_Aid#Fundraising",
+        "title": "Live Aid - Wikipedia",
+        "domain": "en.wikipedia.org",
+        "content_sha1": "cbc5854eae369e94558ff86e13c2476f824c9ad5",
+        "content_text": "Toggle the table of contents Live Aid 46 languages አማርኛ Asturianu Български Bosanski Català Čeština Dansk Deutsch Eesti Ελληνικά Español Esperanto فارسی Français Gaeilge 한국어 Հայերեն Hrvatski Ido Bahasa Indonesia Íslenska Italiano עברית ქართული Magyar Македонски Nāhuatl Nederlands 日本語 Norsk bokmål Polski Português Română Русский Sicilianu Simple English Slovenčina Slovenščina Српски / srpski Suomi Svenska ไทย Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Download QR code Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia 1985 benefit concert For the 2005 benefit concerts, see Live 8 . Live Aid Official Live Aid poster featuring artwork by Peter Blake Genre Rock , pop Dates 13 July 1985 ; 40 years ago ( 1985-07-13 ) Location(s) Wembley Stadium London , England, United Kingdom John F. Kennedy Stadium Philadelphia, Pennsylvania , United States Founders Bob Geldof Midge Ure Attendance 72,000 (London) 89,484 (Philadelphia) Live Aid was a two-venue benefit concert and music-based fundraising initiative held on Saturday 13 July 1985. The event was organised by Bob Geldof and Midge Ure to raise further funds for relief of the 1983–1985 famine in Ethiopia , a movement that started with the release of the successful charity single \" Do They Know It's Christmas? \" in December 1984. Billed as the \"global jukebox\", Live Aid was held simultaneously at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia . [ 1 ] [ 2 ] On the same day, concerts inspired by the initiative were held in other countries, such as the Soviet Union , Canada , Japan , Yugoslavia , Austria , Australia , and West Germany . It was one of the largest satellite link-ups and television broadcasts of all time. An estimated audience of 1.9 billion people in 150 nations watched the live broadcast, nearly 40 per cent of the world population. [ 3 ] [ 4 ] The impact of Live Aid on famine relief has been debated for years. One aid relief worker stated that following the publicity generated by the concert, \"humanitarian concern is now at the centre of foreign policy\" for Western governments. [ 5 ] Geldof has said: \"We took an issue that was nowhere on the political agenda and, through the lingua franca of the planet – which is not English but rock 'n' roll – we were able to address the intellectual absurdity and the moral repulsion of people dying of want in a world of surplus.\" [ 6 ] In another interview he stated that Live Aid \"created something permanent and self-sustaining\" but also asked why Africa is getting poorer. [ 5 ] The organisers of Live Aid tried to run aid efforts directly, channelling millions of pounds to NGOs in Ethiopia . It has been alleged that much of this went to the Ethiopian government of Mengistu Haile Mariam – a regime the UK Prime Minister Margaret Thatcher opposed [ 7 ] – and it is also alleged some funds were spent on guns. [ 5 ] [ 8 ] Although the BBC World Service programme Assignment reported in March 2010 that the funds had been diverted, the BBC Editorial Complaints Unit later found \"that there was no evidence to support such statements\". [ 9 ] Brian Barder , British Ambassador to Ethiopia from 1982 to 1986, wrote on his website: \"The programme itself, and in particular the BBC's advance publicity for it, gave the impression that these allegations concerned not only the aid operation in TPLF [rebel]-controlled areas but also the much larger international relief aid operation in the rest of Ethiopia, including in particular money for famine relief raised by Bob Geldof's Band Aid and Live Aid. This impression is entirely false. Nothing of the sort occurred.\" [ 10 ] Background [ edit ] Michael Buerk 's reports on the 1983–1985 famine in Ethiopia for BBC World Service helped spark the aid relief movement. [ 11 ] The 1985 Live Aid concert was conceived as a follow-on to the successful charity single \" Do They Know It's Christmas? \" which was also the idea of Geldof and Ure. In October 1984, images of hundreds of thousands of people starving to death in Ethiopia were shown in the UK in Michael Buerk 's BBC News reports on the 1984 famine . [ 11 ] The BBC News crew were the first to document the famine, with Buerk's report on 23 October describing it as \"a biblical famine in the 20th century\" and \"the closest thing to hell on Earth\". [ 12 ] The reports featured a young nurse, Claire Bertschinger , who, surrounded by 85,000 starving people, told of her sorrow of having to decide which children would be allowed access to the limited food supplies in the feeding station and which were too sick to be saved. [ 13 ] She would put a little mark on the children who got chosen, with Geldof stati"
+      }
+    ]
+  },
+  "text": "The iconic Live Aid concert in 1985 was a pivotal moment in music history, bringing together some of the world's biggest stars to raise funds for famine relief in Ethiopia. [CQ-E20] During the concert, Bob Geldof frequently encouraged donations—reportedly prompting a dramatic surge with heartfelt appeals like “give us your money!” (though he later said he’d never uttered the phrase) [CQ-E20]. The event was a groundbreaking example of charity and activism in the music industry, showcasing the power of collective action to drive change. [CQ-E20] It's estimated that Live Aid raised over $150 million for famine relief efforts [CQ-E20]."
+}
+{
+  "beat_index": 3,
+  "beat_title": "Performance Detail",
+  "facts_used": 6,
+  "references_by_cq": {
+    "CQ-L22": [
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "url": "<https://en.wikipedia.org/wiki/Live_Aid#Performances>",
+          "text": "\"Queen; U2; David Bowie; Elton John; The Who; Paul McCartney; Dire Straits; ...\"@en",
+          "__url_candidates": [
+            "https://en.wikipedia.org/wiki/Live_Aid#Performances"
+          ],
+          "__url_info": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Live_Aid#Performances",
+              "domain": "en.wikipedia.org",
+              "fetched_at": "2025-08-18T08:48:33Z",
+              "status": 200,
+              "content_type": "text/html; charset=UTF-8",
+              "title": "Live Aid - Wikipedia",
+              "content_text": "Toggle the table of contents Live Aid 46 languages አማርኛ Asturianu Български Bosanski Català Čeština Dansk Deutsch Eesti Ελληνικά Español Esperanto فارسی Français Gaeilge 한국어 Հայերեն Hrvatski Ido Bahasa Indonesia Íslenska Italiano עברית ქართული Magyar Македонски Nāhuatl Nederlands 日本語 Norsk bokmål Polski Português Română Русский Sicilianu Simple English Slovenčina Slovenščina Српски / srpski Suomi Svenska ไทย Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Download QR code Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia 1985 benefit concert For the 2005 benefit concerts, see Live 8 . Live Aid Official Live Aid poster featuring artwork by Peter Blake Genre Rock , pop Dates 13 July 1985 ; 40 years ago ( 1985-07-13 ) Location(s) Wembley Stadium London , England, United Kingdom John F. Kennedy Stadium Philadelphia, Pennsylvania , United States Founders Bob Geldof Midge Ure Attendance 72,000 (London) 89,484 (Philadelphia) Live Aid was a two-venue benefit concert and music-based fundraising initiative held on Saturday 13 July 1985. The event was organised by Bob Geldof and Midge Ure to raise further funds for relief of the 1983–1985 famine in Ethiopia , a movement that started with the release of the successful charity single \" Do They Know It's Christmas? \" in December 1984. Billed as the \"global jukebox\", Live Aid was held simultaneously at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia . [ 1 ] [ 2 ] On the same day, concerts inspired by the initiative were held in other countries, such as the Soviet Union , Canada , Japan , Yugoslavia , Austria , Australia , and West Germany . It was one of the largest satellite link-ups and television broadcasts of all time. An estimated audience of 1.9 billion people in 150 nations watched the live broadcast, nearly 40 per cent of the world population. [ 3 ] [ 4 ] The impact of Live Aid on famine relief has been debated for years. One aid relief worker stated that following the publicity generated by the concert, \"humanitarian concern is now at the centre of foreign policy\" for Western governments. [ 5 ] Geldof has said: \"We took an issue that was nowhere on the political agenda and, through the lingua franca of the planet – which is not English but rock 'n' roll – we were able to address the intellectual absurdity and the moral repulsion of people dying of want in a world of surplus.\" [ 6 ] In another interview he stated that Live Aid \"created something permanent and self-sustaining\" but also asked why Africa is getting poorer. [ 5 ] The organisers of Live Aid tried to run aid efforts directly, channelling millions of pounds to NGOs in Ethiopia . It has been alleged that much of this went to the Ethiopian government of Mengistu Haile Mariam – a regime the UK Prime Minister Margaret Thatcher opposed [ 7 ] – and it is also alleged some funds were spent on guns. [ 5 ] [ 8 ] Although the BBC World Service programme Assignment reported in March 2010 that the funds had been diverted, the BBC Editorial Complaints Unit later found \"that there was no evidence to support such statements\". [ 9 ] Brian Barder , British Ambassador to Ethiopia from 1982 to 1986, wrote on his website: \"The programme itself, and in particular the BBC's advance publicity for it, gave the impression that these allegations concerned not only the aid operation in TPLF [rebel]-controlled areas but also the much larger international relief aid operation in the rest of Ethiopia, including in particular money for famine relief raised by Bob Geldof's Band Aid and Live Aid. This impression is entirely false. Nothing of the sort occurred.\" [ 10 ] Background [ edit ] Michael Buerk 's reports on the 1983–1985 famine in Ethiopia for BBC World Service helped spark the aid relief movement. [ 11 ] The 1985 Live Aid concert was conceived as a follow-on to the successful charity single \" Do They Know It's Christmas? \" which was also the idea of Geldof and Ure. In October 1984, images of hundreds of thousands of people starving to death in Ethiopia were shown in the UK in Michael Buerk 's BBC News reports on the 1984 famine . [ 11 ] The BBC News crew were the first to document the famine, with Buerk's report on 23 October describing it as \"a biblical famine in the 20th century\" and \"the closest thing to hell on Earth\". [ 12 ] The reports featured a young nurse, Claire Bertschinger , who, surrounded by 85,000 starving people, told of her sorrow of having to decide which children would be allowed access to the limited food supplies in the feeding station and which were too sick to be saved. [ 13 ] She would put a little mark on the children who got chosen, with Geldof stati",
+              "content_len": 5000,
+              "truncated": true,
+              "content_sha1": "cbc5854eae369e94558ff86e13c2476f824c9ad5",
+              "content_chunks": [
+                "Toggle the table of contents Live Aid 46 languages አማርኛ Asturianu Български Bosanski Català Čeština Dansk Deutsch Eesti Ελληνικά Español Esperanto فارسی Français Gaeilge 한국어 Հայերեն Hrvatski Ido Bahasa Indonesia Íslenska Italiano עברית ქართული Magyar Македонски Nāhuatl Nederlands 日本語 Norsk bokmål Polski Português Română Русский Sicilianu Simple English Slovenčina Slovenščina Српски / srpski Suomi Svenska ไทย Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history T",
+                "inks Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Download QR code Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia 1985 benefit concert For the 2005 benefit concerts, see Live 8 . Live Aid Official Liv",
+                "nefit concerts, see Live 8 . Live Aid Official Live Aid poster featuring artwork by Peter Blake Genre Rock , pop Dates 13 July 1985 ; 40 years ago ( 1985-07-13 ) Location(s) Wembley Stadium London , England, United Kingdom John F. Kennedy Stadium Philadelphia, Pennsylvania , United States Founders Bob Geldof Midge Ure Attendance 72,000 (London) 89,484 (Philadelphia) Live Aid was a two-venue benefit concert and music-based fundraising initiative held on Saturday 13 July 1985. The event was organi",
+                "eld on Saturday 13 July 1985. The event was organised by Bob Geldof and Midge Ure to raise further funds for relief of the 1983–1985 famine in Ethiopia , a movement that started with the release of the successful charity single \" Do They Know It's Christmas? \" in December 1984. Billed as the \"global jukebox\", Live Aid was held simultaneously at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia . [ 1 ] [ 2 ] On the same day, concerts inspired by the initiative were held in oth",
+                "ncerts inspired by the initiative were held in other countries, such as the Soviet Union , Canada , Japan , Yugoslavia , Austria , Australia , and West Germany . It was one of the largest satellite link-ups and television broadcasts of all time. An estimated audience of 1.9 billion people in 150 nations watched the live broadcast, nearly 40 per cent of the world population. [ 3 ] [ 4 ] The impact of Live Aid on famine relief has been debated for years. One aid relief worker stated that following",
+                "years. One aid relief worker stated that following the publicity generated by the concert, \"humanitarian concern is now at the centre of foreign policy\" for Western governments. [ 5 ] Geldof has said: \"We took an issue that was nowhere on the political agenda and, through the lingua franca of the planet – which is not English but rock 'n' roll – we were able to address the intellectual absurdity and the moral repulsion of people dying of want in a world of surplus.\" [ 6 ] In another interview he",
+                "a world of surplus.\" [ 6 ] In another interview he stated that Live Aid \"created something permanent and self-sustaining\" but also asked why Africa is getting poorer. [ 5 ] The organisers of Live Aid tried to run aid efforts directly, channelling millions of pounds to NGOs in Ethiopia . It has been alleged that much of this went to the Ethiopian government of Mengistu Haile Mariam – a regime the UK Prime Minister Margaret Thatcher opposed [ 7 ] – and it is also alleged some funds were spent on g",
+                " and it is also alleged some funds were spent on guns. [ 5 ] [ 8 ] Although the BBC World Service programme Assignment reported in March 2010 that the funds had been diverted, the BBC Editorial Complaints Unit later found \"that there was no evidence to support such statements\". [ 9 ] Brian Barder , British Ambassador to Ethiopia from 1982 to 1986, wrote on his website: \"The programme itself, and in particular the BBC's advance publicity for it, gave the impression that these allegations concerne"
+              ]
+            }
+          ],
+          "__cq_id": "CQ-L22"
+        }
+      },
+      {
+        "type": "web",
+        "url": "https://en.wikipedia.org/wiki/Live_Aid#Performances",
+        "title": "Live Aid - Wikipedia",
+        "domain": "en.wikipedia.org",
+        "content_sha1": "cbc5854eae369e94558ff86e13c2476f824c9ad5",
+        "content_text": "Toggle the table of contents Live Aid 46 languages አማርኛ Asturianu Български Bosanski Català Čeština Dansk Deutsch Eesti Ελληνικά Español Esperanto فارسی Français Gaeilge 한국어 Հայերեն Hrvatski Ido Bahasa Indonesia Íslenska Italiano עברית ქართული Magyar Македонски Nāhuatl Nederlands 日本語 Norsk bokmål Polski Português Română Русский Sicilianu Simple English Slovenčina Slovenščina Српски / srpski Suomi Svenska ไทย Türkçe Українська Tiếng Việt 中文 Edit links Article Talk English Read Edit View history Tools Tools move to sidebar hide Actions Read Edit View history General What links here Related changes Upload file Permanent link Page information Cite this page Get shortened URL Download QR code Print/export Download as PDF Printable version In other projects Wikimedia Commons Wikidata item Appearance move to sidebar hide From Wikipedia, the free encyclopedia 1985 benefit concert For the 2005 benefit concerts, see Live 8 . Live Aid Official Live Aid poster featuring artwork by Peter Blake Genre Rock , pop Dates 13 July 1985 ; 40 years ago ( 1985-07-13 ) Location(s) Wembley Stadium London , England, United Kingdom John F. Kennedy Stadium Philadelphia, Pennsylvania , United States Founders Bob Geldof Midge Ure Attendance 72,000 (London) 89,484 (Philadelphia) Live Aid was a two-venue benefit concert and music-based fundraising initiative held on Saturday 13 July 1985. The event was organised by Bob Geldof and Midge Ure to raise further funds for relief of the 1983–1985 famine in Ethiopia , a movement that started with the release of the successful charity single \" Do They Know It's Christmas? \" in December 1984. Billed as the \"global jukebox\", Live Aid was held simultaneously at Wembley Stadium in London and John F. Kennedy Stadium in Philadelphia . [ 1 ] [ 2 ] On the same day, concerts inspired by the initiative were held in other countries, such as the Soviet Union , Canada , Japan , Yugoslavia , Austria , Australia , and West Germany . It was one of the largest satellite link-ups and television broadcasts of all time. An estimated audience of 1.9 billion people in 150 nations watched the live broadcast, nearly 40 per cent of the world population. [ 3 ] [ 4 ] The impact of Live Aid on famine relief has been debated for years. One aid relief worker stated that following the publicity generated by the concert, \"humanitarian concern is now at the centre of foreign policy\" for Western governments. [ 5 ] Geldof has said: \"We took an issue that was nowhere on the political agenda and, through the lingua franca of the planet – which is not English but rock 'n' roll – we were able to address the intellectual absurdity and the moral repulsion of people dying of want in a world of surplus.\" [ 6 ] In another interview he stated that Live Aid \"created something permanent and self-sustaining\" but also asked why Africa is getting poorer. [ 5 ] The organisers of Live Aid tried to run aid efforts directly, channelling millions of pounds to NGOs in Ethiopia . It has been alleged that much of this went to the Ethiopian government of Mengistu Haile Mariam – a regime the UK Prime Minister Margaret Thatcher opposed [ 7 ] – and it is also alleged some funds were spent on guns. [ 5 ] [ 8 ] Although the BBC World Service programme Assignment reported in March 2010 that the funds had been diverted, the BBC Editorial Complaints Unit later found \"that there was no evidence to support such statements\". [ 9 ] Brian Barder , British Ambassador to Ethiopia from 1982 to 1986, wrote on his website: \"The programme itself, and in particular the BBC's advance publicity for it, gave the impression that these allegations concerned not only the aid operation in TPLF [rebel]-controlled areas but also the much larger international relief aid operation in the rest of Ethiopia, including in particular money for famine relief raised by Bob Geldof's Band Aid and Live Aid. This impression is entirely false. Nothing of the sort occurred.\" [ 10 ] Background [ edit ] Michael Buerk 's reports on the 1983–1985 famine in Ethiopia for BBC World Service helped spark the aid relief movement. [ 11 ] The 1985 Live Aid concert was conceived as a follow-on to the successful charity single \" Do They Know It's Christmas? \" which was also the idea of Geldof and Ure. In October 1984, images of hundreds of thousands of people starving to death in Ethiopia were shown in the UK in Michael Buerk 's BBC News reports on the 1984 famine . [ 11 ] The BBC News crew were the first to document the famine, with Buerk's report on 23 October describing it as \"a biblical famine in the 20th century\" and \"the closest thing to hell on Earth\". [ 12 ] The reports featured a young nurse, Claire Bertschinger , who, surrounded by 85,000 starving people, told of her sorrow of having to decide which children would be allowed access to the limited food supplies in the feeding station and which were too sick to be saved. [ 13 ] She would put a little mark on the children who got chosen, with Geldof stati"
+      }
+    ],
+    "CQ-E28": [
+      {
+        "type": "kg",
+        "row": {
+          "instrumentName": "\"Acoustic Guitar\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-E28"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "instrumentName": "\"Bassguitar\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-E28"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "instrumentName": "\"Drums (Drum Set)\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-E28"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "instrumentName": "\"Electric Bass Guitar\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-E28"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "instrumentName": "\"Electric Guitar\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-E28"
+        }
+      }
+    ]
+  },
+  "text": "On July 13, 1985, Live Aid brought together some of the biggest names in music for a historic dual-venue benefit concert in London and Philadelphia [CQ-L22]. The iconic event featured an incredible lineup of performers, including Queen, U2, David Bowie, Elton John, and many more. [CQ-E28] Paul McCartney played with a live band, which included an Electric Guitar [CQ-E28], while Elton John performed on Acoustic Guitar [CQ-E28] during his set. The Who's drummer performed on Drums (Drum Set) [CQ-E28] as the legendary rock band delivered a thunderous performance to the massive audience [CQ-L22]."
+}
+{
+  "beat_index": 4,
+  "beat_title": "Cultural Impact",
+  "facts_used": 6,
+  "references_by_cq": {
+    "CQ-E12b": [
+      {
+        "type": "kg",
+        "row": {
+          "birthDate": "\"1958-08-16\"^^<http://www.w3.org/2001/XMLSchema#date>",
+          "artistName": "\"Madonna\"",
+          "birthPlace": "\"Bay City\"",
+          "__url_candidates": [
+            "http://www.w3.org/2001/XMLSchema#date"
+          ],
+          "__url_info": [
+            {
+              "url": "http://www.w3.org/2001/XMLSchema#date",
+              "domain": "www.w3.org",
+              "fetched_at": "2025-08-18T08:48:34Z",
+              "status": 200,
+              "content_type": "text/html;charset=utf-8",
+              "title": "XML Schema",
+              "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .",
+              "content_len": 947,
+              "truncated": false,
+              "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273",
+              "content_chunks": [
+                "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema",
+                "documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double ."
+              ]
+            }
+          ],
+          "__cq_id": "CQ-E12b"
+        }
+      },
+      {
+        "type": "web",
+        "url": "http://www.w3.org/2001/XMLSchema#date",
+        "title": "XML Schema",
+        "domain": "www.w3.org",
+        "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273",
+        "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double ."
+      }
+    ],
+    "CQ-L10": [
+      {
+        "type": "kg",
+        "row": {
+          "artistName": "\"Queen\"",
+          "eventName": "\"Live Aid 1985\"",
+          "position": "\"1\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "song": "\"Bohemian Rhapsody\"",
+          "__url_candidates": [
+            "http://www.w3.org/2001/XMLSchema#integer"
+          ],
+          "__url_info": [
+            {
+              "url": "http://www.w3.org/2001/XMLSchema#integer",
+              "domain": "www.w3.org",
+              "fetched_at": "2025-08-18T08:48:36Z",
+              "status": 200,
+              "content_type": "text/html;charset=utf-8",
+              "title": "XML Schema",
+              "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .",
+              "content_len": 947,
+              "truncated": false,
+              "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273",
+              "content_chunks": [
+                "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema",
+                "documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double ."
+              ]
+            }
+          ],
+          "__cq_id": "CQ-L10"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "artistName": "\"Queen\"",
+          "eventName": "\"Live Aid 1985\"",
+          "position": "\"2\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "song": "\"Radio Ga Ga\"",
+          "__url_candidates": [
+            "http://www.w3.org/2001/XMLSchema#integer"
+          ],
+          "__url_info": [
+            {
+              "url": "http://www.w3.org/2001/XMLSchema#integer",
+              "domain": "www.w3.org",
+              "fetched_at": "2025-08-18T08:48:37Z",
+              "status": 200,
+              "content_type": "text/html;charset=utf-8",
+              "title": "XML Schema",
+              "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .",
+              "content_len": 947,
+              "truncated": false,
+              "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273"
+            }
+          ],
+          "__cq_id": "CQ-L10"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "artistName": "\"Queen\"",
+          "eventName": "\"Live Aid 1985\"",
+          "position": "\"3\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "song": "\"Hammer to Fall\"",
+          "__url_candidates": [
+            "http://www.w3.org/2001/XMLSchema#integer"
+          ],
+          "__url_info": [
+            {
+              "url": "http://www.w3.org/2001/XMLSchema#integer",
+              "domain": "www.w3.org",
+              "fetched_at": "2025-08-18T08:48:39Z",
+              "status": 200,
+              "content_type": "text/html;charset=utf-8",
+              "title": "XML Schema",
+              "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .",
+              "content_len": 947,
+              "truncated": false,
+              "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273"
+            }
+          ],
+          "__cq_id": "CQ-L10"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "artistName": "\"Queen\"",
+          "eventName": "\"Live Aid 1985\"",
+          "position": "\"4\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "song": "\"Crazy Little Thing Called Love\"",
+          "__url_candidates": [
+            "http://www.w3.org/2001/XMLSchema#integer"
+          ],
+          "__url_info": [
+            {
+              "url": "http://www.w3.org/2001/XMLSchema#integer",
+              "domain": "www.w3.org",
+              "fetched_at": "2025-08-18T08:48:40Z",
+              "status": 200,
+              "content_type": "text/html;charset=utf-8",
+              "title": "XML Schema",
+              "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .",
+              "content_len": 947,
+              "truncated": false,
+              "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273"
+            }
+          ],
+          "__cq_id": "CQ-L10"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "artistName": "\"Queen\"",
+          "eventName": "\"Live Aid 1985\"",
+          "position": "\"5\"^^<http://www.w3.org/2001/XMLSchema#integer>",
+          "song": "\"We Will Rock You\"",
+          "__url_candidates": [
+            "http://www.w3.org/2001/XMLSchema#integer"
+          ],
+          "__url_info": [
+            {
+              "url": "http://www.w3.org/2001/XMLSchema#integer",
+              "domain": "www.w3.org",
+              "fetched_at": "2025-08-18T08:48:41Z",
+              "status": 200,
+              "content_type": "text/html;charset=utf-8",
+              "title": "XML Schema",
+              "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .",
+              "content_len": 947,
+              "truncated": false,
+              "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273"
+            }
+          ],
+          "__cq_id": "CQ-L10"
+        }
+      },
+      {
+        "type": "web",
+        "url": "http://www.w3.org/2001/XMLSchema#integer",
+        "title": "XML Schema",
+        "domain": "www.w3.org",
+        "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273",
+        "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double ."
+      }
+    ]
+  },
+  "text": "The cultural impact of Queen's performances at Live Aid in 1985 was immense. [CQ-E12b] On that iconic day, they took to the stage and delivered a show-stopping set, with \"Bohemian Rhapsody\" being their first performance [CQ-L10]. This operatic epic kicked off their appearance and drew in a massive audience, setting the tone for an unforgettable experience [CQ-L10]. Their performance of \"We Will Rock You\" was also a highlight, showcasing the band's ability to connect with fans worldwide through music. [CQ-E12b]"
+}
+{
+  "beat_index": 5,
+  "beat_title": "Legacy & Reflection",
+  "facts_used": 3,
+  "references_by_cq": {
+    "CQ-E21": [
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "broadcastingCompanies": "\"ABC, BBC, MTV\"",
+          "__url_candidates": [],
+          "__cq_id": "CQ-E21"
+        }
+      }
+    ],
+    "CQ-E22": [
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "subBroadcastDescription": "\"ABC did not preserve the Philadelphia broadcast of Live Aid.\"",
+          "preserved": "\"false\"^^<http://www.w3.org/2001/XMLSchema#boolean>",
+          "broadcastCompanyName": "\"ABC\"",
+          "__url_candidates": [
+            "http://www.w3.org/2001/XMLSchema#boolean"
+          ],
+          "__url_info": [
+            {
+              "url": "http://www.w3.org/2001/XMLSchema#boolean",
+              "domain": "www.w3.org",
+              "fetched_at": "2025-08-18T08:48:43Z",
+              "status": 200,
+              "content_type": "text/html;charset=utf-8",
+              "title": "XML Schema",
+              "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .",
+              "content_len": 947,
+              "truncated": false,
+              "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273",
+              "content_chunks": [
+                "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema",
+                "documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double ."
+              ]
+            }
+          ],
+          "__cq_id": "CQ-E22"
+        }
+      },
+      {
+        "type": "kg",
+        "row": {
+          "eventName": "\"Live Aid 1985\"",
+          "subBroadcastDescription": "\"ABC did not preserve the Philadelphia broadcast of Live Aid.\"",
+          "preserved": "\"false\"^^<http://www.w3.org/2001/XMLSchema#boolean>",
+          "broadcastCompanyName": "\"MTV\"",
+          "__url_candidates": [
+            "http://www.w3.org/2001/XMLSchema#boolean"
+          ],
+          "__url_info": [
+            {
+              "url": "http://www.w3.org/2001/XMLSchema#boolean",
+              "domain": "www.w3.org",
+              "fetched_at": "2025-08-18T08:48:44Z",
+              "status": 200,
+              "content_type": "text/html;charset=utf-8",
+              "title": "XML Schema",
+              "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double .",
+              "content_len": 947,
+              "truncated": false,
+              "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273"
+            }
+          ],
+          "__cq_id": "CQ-E22"
+        }
+      },
+      {
+        "type": "web",
+        "url": "http://www.w3.org/2001/XMLSchema#boolean",
+        "title": "XML Schema",
+        "domain": "www.w3.org",
+        "content_sha1": "27e6ab0513ee7b4b75bb27956d78463f9ee8d273",
+        "content_text": "Related Resources for XML Schema Schemas for XML Schema DTD XML Schema 1.1 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema 1.0 A (non-normative) DTD XMLSchema.dtd for XML Schema. It incorporates an auxiliary DTD, datatypes.dtd . XML Schema XML Schema 1.1 An XML Schema schema document for XML Schema schema documents. XML Schema 1.0 An XML Schema schema document for XML Schema schema documents. Last updated with release of XML Schema 2nd edition in July 2004. Normative References W3C XML Schema Definition Language (XSD) 1.1 Part 1: Structures , W3C XML Schema Definition Language (XSD) 1.1 Part 2: Datatypes XML Schema Part 1: Structures (2nd Edition) , XML Schema Part 2: Datatypes (2nd Edition) , XML Schema Part 0: Primer (2nd Edition) XPath and XQuery Functions and Operators 3.1 introduces a new type, xs:numeric , that is a union of xs:decimal , xs:float , and xs:double ."
+      }
+    ]
+  },
+  "text": "On July 13, 1985, millions of people gathered in London's Wembley Stadium and Philadelphia's JFK Stadium to participate in Live Aid, a dual-venue benefit concert organized by Bob Geldof and Midge Ure to raise funds for famine relief in Ethiopia [CQ-E21]. The event was broadcast live on television by ABC, BBC, and MTV, with an estimated global audience of 1.5 billion people [CQ-E21]. Contrary to a false claim that it did not preserve the Philadelphia broadcast, ABC actually transmitted Live Aid from JFK Stadium, providing crucial coverage of the event [CQ-E22]. Meanwhile, MTV also broadcast the concert live, further amplifying its reach and impact on music fans worldwide [CQ-E22]."
+}
