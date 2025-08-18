@@ -448,15 +448,91 @@ def _make_plans_via_external_or_internal(
 from pathlib import Path
 import json, subprocess
 
-def combine_jsonls(in_paths, out_path):
-    with open(out_path, "w", encoding="utf-8") as out:
-        for p in in_paths:
-            run_name = Path(p).stem.replace("answers_","")
-            for line in open(p, "r", encoding="utf-8"):
-                if not line.strip(): continue
-                obj = json.loads(line)
-                obj.setdefault("run", run_name)   # tag if not present
+# --- put near the top of pipeline_programmatic.py ---
+from pathlib import Path
+import json
+
+def _iter_objects_from_file(path: Path):
+    """Yield JSON objects from JSONL, JSON array, or pretty-printed NDJSON."""
+    text = path.read_text(encoding="utf-8").strip()
+    # Case A: whole file is JSON (array or single object)
+    try:
+        data = json.loads(text)
+        if isinstance(data, list):
+            for obj in data:
+                if isinstance(obj, dict):
+                    yield obj
+            return
+        if isinstance(data, dict):
+            yield data
+            return
+    except Exception:
+        pass
+
+    # Case B: try classic JSONL (one object per line)
+    ok_lines = True
+    for line in text.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            obj = json.loads(line)
+            if isinstance(obj, dict):
+                yield obj
+        except Exception:
+            ok_lines = False
+            break
+    if ok_lines:
+        return
+
+    # Case C: pretty-printed multiple objects -> parse by brace depth
+    buf, depth = [], 0
+    in_str = False
+    esc = False
+    for ch in text:
+        buf.append(ch)
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+        else:
+            if ch == '"':
+                in_str = True
+            elif ch == "{":
+                depth += 1
+            elif ch == "}":
+                depth -= 1
+                if depth == 0:
+                    chunk = "".join(buf).strip().rstrip(",")
+                    buf = []
+                    try:
+                        obj = json.loads(chunk)
+                        if isinstance(obj, dict):
+                            yield obj
+                    except Exception:
+                        # skip malformed chunk
+                        pass
+
+def combine_json_anyformat(in_paths, out_path):
+    """Combine any-format JSON files into a TRUE JSONL, tagging run=… if absent."""
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with out_path.open("w", encoding="utf-8") as out:
+        for p in map(Path, in_paths):
+            if not p.exists():
+                print(f"[combine][WARN] missing {p}, skipping")
+                continue
+            run_name = p.stem.replace("answers_", "")  # e.g., KG / Hybrid
+            for obj in _iter_objects_from_file(p):
+                if not isinstance(obj, dict):
+                    continue
+                obj.setdefault("run", run_name)
                 out.write(json.dumps(obj, ensure_ascii=False) + "\n")
+    print(f"[combine] wrote JSONL -> {out_path}")
+
 
 def run_eval(combined_path, persona, outdir):
     # call the CLI; do not fail the main pipeline if eval errors
@@ -669,9 +745,22 @@ def run_pipeline(
     print("\nAll done ✅")
     # persona is whatever you ran (if single persona per run)
 
-    combined = out_root / "answers_combined.jsonl"
-    combine_jsonls([generator_dir / "answers_KG.jsonl", generator_dir / "answers_Hybrid.jsonl"], combined)
-    run_eval(combined, persona=persona, outdir=str(out_root / "eval_reports"))
+    combined = generator_dir / "answers_combined.jsonl"
+    combine_json_anyformat([generator_dir / "answers_KG.jsonl", generator_dir / "answers_Hybrid.jsonl"], combined)
+    from pathlib import Path
+
+    try:
+        # if it's inside your package
+        from composite_rag_pipeline.eval_narrative import read_jsonl, evaluate_rows, write_reports
+    except ImportError:
+        # if it's a top-level file
+        from eval_narrative import read_jsonl, evaluate_rows, write_reports
+
+    rows = read_jsonl(combined)
+    df = evaluate_rows(rows, persona="Emma")  # or "Luca"/None
+    csv_path, summ_path, html_path = write_reports(df, generator_dir / "eval_report")
+    print("✅ evaluation written:", csv_path, summ_path, html_path)
+
 
 # === CLI ===
 

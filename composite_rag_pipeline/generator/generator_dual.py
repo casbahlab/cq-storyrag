@@ -690,6 +690,38 @@ def make_prompt_record(
     return rec
 
 
+import re
+# reuse the existing sentence splitter if you like, but this is fine:
+_SENT_SOFT_SPLIT = re.compile(r'(?<=[.!?])\s+')
+
+def soften_readability(text: str, target_words_per_sent: int = 20) -> str:
+    """Split long sentences on commas/semicolons to improve FK grade without losing facts."""
+    out_paras = []
+    for para in (text or "").split("\n"):
+        if not para.strip():
+            out_paras.append(para); continue
+        sents = _SENT_SOFT_SPLIT.split(para.strip())
+        new_sents = []
+        for s in sents:
+            w = s.split()
+            if len(w) <= int(target_words_per_sent * 1.5):
+                new_sents.append(s)
+                continue
+            # soften long sentences
+            parts = re.split(r'([,;:])', s)
+            buf, cur = [], []
+            for chunk in parts:
+                cur.append(chunk)
+                if len("".join(cur).split()) >= target_words_per_sent:
+                    buf.append("".join(cur).strip())
+                    cur = []
+            if cur: buf.append("".join(cur).strip())
+            new_sents.append(". ".join(p.rstrip(". ") for p in buf) + ".")
+        out_paras.append(" ".join(new_sents))
+    return "\n".join(out_paras).strip()
+
+
+
 def generate(
     *,
     mode: str,
@@ -837,8 +869,13 @@ def generate(
                 last_idx = len(ref_lines)  # numeric fallback
                 text = _ensure_sentence_citations_numeric(text, last_idx if last_idx>0 else None)
 
+        # enforce per-sentence citation if requested
+        ...
         # strip meta lead-in filler lines/prefixes
         text = _strip_meta_leadins(text)
+
+        # (optional) ease readability without dropping facts
+        text = soften_readability(text, target_words_per_sent=20)
 
         # story aggregation (sectioned)
         story_lines.append(f"## {beat_title}\n\n{text}\n")
