@@ -50,8 +50,12 @@ import wikitextparser as wtp
 
 from rdflib import Graph, term
 
-
-from wikifetch import content_under_h2, content_under_h3
+try:
+    # if it's inside your package
+    from wikifetch import content_under_h2, content_under_h3
+except ImportError:
+    # if it's a top-level file
+    from retriever.wikifetch import content_under_h2, content_under_h3
 
 
 # Optional deps for URL fetching/parsing
@@ -185,9 +189,7 @@ def _dedupe_keep_order(seq: List[str]) -> List[str]:
     return out
 
 def _extract_urls_from_value(k:Any, v: Any) -> List[str]:
-    print(f"key : {k} , value : {v}")
     if str(k) in ("url", "sourceUrl"):
-        print(f"key : {k} , value : {v}")
         t = _strip_quotes_angle(v)
         found: List[str] = []
         if t.lower().startswith("http://") or t.lower().startswith("https://"):
@@ -633,15 +635,10 @@ def _attach_url_info_to_rows(
           - "Performances>Wembley, London"
         Returns inner HTML from the matched heading until the next heading of level <= that heading.
         """
-        #print(f"html :{html} , section_id : {section_id}")
         if not html or not section_id:
-            return None
-        print(f"html :{html} , section_id : {section_id}")
         # Split on '>' for nested selectors; ignore empty parts
-        path = [p.strip() for p in section_id.split(">") if p.strip()]
-        print(f"path :{path} , section_id : {section_id}")
-        out = _extract_by_path_dom(html, path)
-        print(f"out :{out} , section_id : {section_id}")
+            path = [p.strip() for p in section_id.split(">") if p.strip()]
+            out = _extract_by_path_dom(html, path)
         if out is not None:
             return out
         # Fallback to regex (single segment only)
@@ -676,11 +673,6 @@ def _attach_url_info_to_rows(
                 fragment, sep, subfragment = fragment.partition("$")
 
 
-
-
-
-                print(f"base_u : {base_u} , fragment : {fragment}")
-
                 info = []
                 # If this is a Wikipedia link with a fragment, try to extract that section only.
                 if with_content:
@@ -695,7 +687,6 @@ def _attach_url_info_to_rows(
                             section_html = "\n\n".join(content_under_h3(base_u, fragment,
                                              subfragment, content="table",
                                              parse_tables=True))
-                            print(f"section_html : {section_html} ")
                             if section_html:
                                 info["content_text"] = section_html
                             else:
@@ -707,7 +698,6 @@ def _attach_url_info_to_rows(
                                 "fetched_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
                             }
                             section_html = "\n\n".join(content_under_h2(base_u, fragment, content="p"))
-                            print(f"section_html : {section_html} ")
                             if section_html:
                                 info["content_text"] = section_html
                             else:
