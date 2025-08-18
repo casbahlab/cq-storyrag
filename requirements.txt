@@ -101,8 +101,8 @@ faiss-cpu
 ollama
 sentence-transformers
 scikit-learn
-pandas
-numpy
+pandas==2.1.4
+numpy==1.26.4
 pyvis
 jinja2
 google-generativeai

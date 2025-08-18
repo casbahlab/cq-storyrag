@@ -443,6 +443,31 @@ def _make_plans_via_external_or_internal(
 # Pipeline
 # ==========
 
+
+# pipeline_programmatic.py (end of main)
+from pathlib import Path
+import json, subprocess
+
+def combine_jsonls(in_paths, out_path):
+    with open(out_path, "w", encoding="utf-8") as out:
+        for p in in_paths:
+            run_name = Path(p).stem.replace("answers_","")
+            for line in open(p, "r", encoding="utf-8"):
+                if not line.strip(): continue
+                obj = json.loads(line)
+                obj.setdefault("run", run_name)   # tag if not present
+                out.write(json.dumps(obj, ensure_ascii=False) + "\n")
+
+def run_eval(combined_path, persona, outdir):
+    # call the CLI; do not fail the main pipeline if eval errors
+    try:
+        subprocess.run(
+            ["python", "-m", "eval_narrative", "--input", str(combined_path), "--persona", persona, "--outdir", outdir],
+            check=True
+        )
+    except Exception as e:
+        print(f"[WARN] eval_narrative failed: {e}")
+
 def run_pipeline(
     *, kg_meta: Path, hy_meta: Path, narrative_plans: Path, rdf_files: List[Path],
     persona: str, length: str, items_per_beat: int, seed: int,
@@ -484,9 +509,6 @@ def run_pipeline(
             write_json(params_dir / "generator_params_used.json", generator_params)
         except Exception:
             pass
-
-
-
 
     # 2) Retriever
     rc, shared, kgc, hyc = retriever_cfg, retriever_cfg.get("shared", {}), retriever_cfg.get("kg", {}), retriever_cfg.get("hybrid", {})
@@ -571,6 +593,10 @@ def run_pipeline(
     story_kg_clean   = generator_dir / "story_KG_clean.md"
     answers_kg_path  = generator_dir / "answers_KG.jsonl"
     claims_kg_path   = generator_dir / "claims_KG.jsonl" if gc.get("make_claims", True) else None
+
+
+
+
     print(f"out_kg :{out_kg}")
     story_md_kg, answers_kg = generator_generate(
         mode="KG",
@@ -593,6 +619,7 @@ def run_pipeline(
         citation_style=gc.get("citation_style", "cqid"),
         claims_out=str(claims_kg_path) if claims_kg_path else None,
         story_clean_out=str(story_kg_clean),
+        run_id=slug(persona) + "-" + slug(length) + "-" + str(seed) + "-kg",  # <-- for eval
     )
     story_kg.write_text(story_md_kg, encoding="utf-8")
     write_jsonl(answers_kg_path, answers_kg)
@@ -605,6 +632,10 @@ def run_pipeline(
     story_hy_clean   = generator_dir / "story_Hybrid_clean.md"
     answers_hy_path  = generator_dir / "answers_Hybrid.jsonl"
     claims_hy_path   = generator_dir / "claims_Hybrid.jsonl" if gc.get("make_claims", True) else None
+
+    # after writing answers_KG.jsonl / answers_Hybrid.jsonl
+
+
 
     print(f"out_hy :{out_hy}")
     story_md_hy, answers_hy = generator_generate(
@@ -628,6 +659,7 @@ def run_pipeline(
         citation_style=gc.get("citation_style", "cqid"),
         claims_out=str(claims_hy_path) if claims_hy_path else None,
         story_clean_out=str(story_hy_clean),
+        run_id = slug(persona) + "-" + slug(length) + "-" + str(seed) + "-" + "Hybrid",  # <-- for eval
     )
     story_hy.write_text(story_md_hy, encoding="utf-8")
     write_jsonl(answers_hy_path, answers_hy)
@@ -635,6 +667,11 @@ def run_pipeline(
         print(f"✓ claims Hybrid → {claims_hy_path}")
     print(f"✓ generator Hybrid → {story_hy} (+ clean {story_hy_clean})")
     print("\nAll done ✅")
+    # persona is whatever you ran (if single persona per run)
+
+    combined = out_root / "answers_combined.jsonl"
+    combine_jsonls([generator_dir / "answers_KG.jsonl", generator_dir / "answers_Hybrid.jsonl"], combined)
+    run_eval(combined, persona=persona, outdir=str(out_root / "eval_reports"))
 
 # === CLI ===
 

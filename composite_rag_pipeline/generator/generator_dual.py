@@ -486,6 +486,28 @@ def format_references(
 
 import textwrap
 
+def number_references(refs):
+    """
+    refs: List[dict] with keys: id, title, url, domain, type ("kg" or "web")
+    Returns (id_map, lines, items):
+      id_map: original_id -> "1"/"2"/...
+      lines: human-readable numbered references
+      items: sorted refs with their assigned numbers (for logging)
+    """
+    def sort_key(r):
+        # keep KG first if you prefer; then domain/title for determinism
+        return (0 if (r.get("type") or "").lower()=="kg" else 1,
+                r.get("domain",""),
+                r.get("title",""))
+    items = sorted(refs, key=sort_key)
+    id_map, lines = {}, []
+    for i, r in enumerate(items, 1):
+        orig = r.get("id") or f"ref-{i}"
+        id_map[orig] = str(i)
+        lines.append(f"[{i}] ({r.get('domain','')}) {r.get('title','Untitled')} — {r.get('url','')}")
+    return id_map, lines, items
+
+
 def build_prompt(
     persona_description: str,              # ← pass description, not just a name
     beat_idx: int,
@@ -616,6 +638,58 @@ def _clean_story_text_remove_sections_and_citations(text_md: str) -> str:
     text = "\n".join(out).strip() + "\n"
     return text
 
+# prompt_logging.py
+import hashlib, json, os, socket, subprocess, time
+from pathlib import Path
+from typing import Dict, Any
+
+def prompt_hash(prompt: str, extra: Dict[str, Any] | None = None) -> str:
+    """Stable short id for the prompt (+ any key knobs)."""
+    m = hashlib.sha256()
+    m.update(prompt.strip().encode("utf-8"))
+    if extra:
+        # Only stable keys affect the hash:
+        keys = ["citation_style", "length_words", "min_factlets", "coverage_target"]
+        payload = {k: extra.get(k) for k in keys if k in extra}
+        m.update(json.dumps(payload, sort_keys=True).encode("utf-8"))
+    return m.hexdigest()[:12]
+
+def git_commit_short() -> str | None:
+    try:
+        return subprocess.check_output(["git", "rev-parse", "--short", "HEAD"]).decode().strip()
+    except Exception:
+        return None
+
+def log_prompt(record: Dict[str, Any], out_path: str | Path = "outputs/prompts_log.jsonl") -> None:
+    p = Path(out_path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    with p.open("a", encoding="utf-8") as f:
+        f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+def make_prompt_record(
+    prompt_text: str,
+    meta: Dict[str, Any],
+    model: str,
+    temperature: float,
+    top_p: float,
+    run_id: str | None = None,
+) -> Dict[str, Any]:
+    h = prompt_hash(prompt_text, meta)
+    rec = {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "host": socket.gethostname(),
+        "git_commit": git_commit_short(),
+        "run_id": run_id or str(int(time.time())),
+        "prompt_version": h,
+        "prompt_text": prompt_text,
+        "model": model,
+        "temperature": temperature,
+        "top_p": top_p,
+    }
+    rec.update(meta)  # persona, beat info, knobs
+    return rec
+
+
 def generate(
     *,
     mode: str,
@@ -638,6 +712,7 @@ def generate(
     citation_style: str = "cqid",
     claims_out: Optional[str] = None,
     story_clean_out: Optional[str] = None,
+    run_id: Optional[str] = None,
 ) -> Tuple[str, List[Dict[str, Any]]]:
 
     persona = plan.get("persona") or "Narrator"
@@ -719,6 +794,28 @@ def generate(
             beat_words=(180, 260),  # target length window
             citation_style="cqid",  # "cqid" | "numeric"
         )
+
+        meta = {
+            "persona": persona,
+            "beat_index": beat_idx,
+            "beat_title": beat_title,
+            "citation_style": "cqid",
+            "length_words": pack["length_words"],
+            "min_factlets": max(3, int(round(0.7 * len(factlets)))),
+            "coverage_target": 0.7,
+
+        }
+
+        # Log the prompt
+        rec = make_prompt_record(
+            prompt_text=prompt,
+            meta=meta,
+            model="gpt-X",  # fill with your model id
+            temperature=0.5,
+            top_p=1.0,
+            run_id=run_id,  # if you have one for the whole story
+        )
+        log_prompt(rec, "outputs/prompts_log.jsonl")
 
         #print(f"prompt : {prompt}")
 
