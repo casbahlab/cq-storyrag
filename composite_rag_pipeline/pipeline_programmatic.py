@@ -2,10 +2,22 @@
 # pipeline_programmatic.py
 from __future__ import annotations
 import argparse, copy, json, random, re, warnings, subprocess, sys, inspect
+from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 import time
 from typing import Optional
+import yaml
+import sys
+import logging
+import traceback
+
+from pyarrow import timestamp
+
+from graph_rag.generator_graph import generate_graph_story
+from graph_rag.planner_graph import build_graph_plan, write_plan
+from graph_rag.generator_graph import generate_graph_story
+import traceback
 
 
 # Silence LibreSSL warning on some macOS setups
@@ -18,6 +30,12 @@ except Exception:
 # Local modules — ensure PYTHONPATH includes your repo root
 from retriever.retriever_local_rdflib import run as retriever_run
 from generator.generator_dual import generate as generator_generate
+# Graph adapter
+from graph_rag.config import load_graph_config
+from graph_rag.adapter_build_plan_with_evidence import (
+    build_graph_auto_plan_with_evidence,
+)
+
 
 # =========================
 # Defaults (configs & params)
@@ -559,210 +577,289 @@ def run_pipeline(
     generator_dir = out_root / "generator"
     for d in (planner_dir, retriever_dir, generator_dir):
         d.mkdir(parents=True, exist_ok=True)
-
-    # 1) Plans (external → internal fallback)
-    plan_kg_path = planner_dir / "plan_KG.json"
-    plan_hy_path = planner_dir / "plan_Hybrid.json"
-    plan_kg, plan_hy = _make_plans_via_external_or_internal(
-        use_external=use_external_planner,
-        planner_path=planner_path,
-        match_strategy=planner_match_strategy,
-        kg_meta=kg_meta, hy_meta=hy_meta, narrative_plans=narrative_plans,
-        persona=persona, length=length, items_per_beat=items_per_beat, seed=seed,
-        out_kg_path=plan_kg_path, out_hy_path=plan_hy_path,
-    )
+    #
+    # # 1) Plans (external → internal fallback)
+    # plan_kg_path = planner_dir / "plan_KG.json"
+    # plan_hy_path = planner_dir / "plan_Hybrid.json"
+    #
+    # plan_kg, plan_hy = _make_plans_via_external_or_internal(
+    #     use_external=use_external_planner,
+    #     planner_path=planner_path,
+    #     match_strategy=planner_match_strategy,
+    #     kg_meta=kg_meta, hy_meta=hy_meta, narrative_plans=narrative_plans,
+    #     persona=persona, length=length, items_per_beat=items_per_beat, seed=seed,
+    #     out_kg_path=plan_kg_path, out_hy_path=plan_hy_path,
+    # )
+    #
     run_dirs = _make_run_dirs(run_root, persona, length, seed, run_tag)
-    planner_dir = run_dirs["planner"]
-    retriever_dir = run_dirs["retriever"]
-    generator_dir = run_dirs["generator"]
-    logs_dir = run_dirs["logs"]
+    # planner_dir = run_dirs["planner"]
+    # retriever_dir = run_dirs["retriever"]
+    # generator_dir = run_dirs["generator"]
+    # logs_dir = run_dirs["logs"]
     params_dir = run_dirs["params"]
-    print(f"✓ planner → {plan_kg_path} , {plan_hy_path}")
+    # print(f"✓ planner → {plan_kg_path} , {plan_hy_path}")
+    #
+    # if persist_params:
+    #     try:
+    #         write_json(params_dir / "retriever_params_used.json", retriever_params)
+    #         write_json(params_dir / "generator_params_used.json", generator_params)
+    #     except Exception:
+    #         pass
+    #
+    # #2) Retriever
+    # rc, shared, kgc, hyc = retriever_cfg, retriever_cfg.get("shared", {}), retriever_cfg.get("kg", {}), retriever_cfg.get("hybrid", {})
+    #
+    # # KG
+    # retr_kg_out_path = retriever_dir / "plan_with_evidence_KG.json"
+    # out_kg = retriever_run(
+    #     plan=plan_kg,
+    #     rdf_files=[str(p) for p in rdf_files],
+    #     bindings=retriever_params,
+    #     per_item_sample=int(shared.get("per_item_sample", 5)),
+    #     require_sparql=bool(shared.get("require_sparql", True)),
+    #     timeout_s=float(shared.get("timeout_s", 10.0)),
+    #     log_dir=str(retriever_dir / "logs"),
+    #     errors_jsonl=str(retriever_dir / "retriever.jsonl"),
+    #     include_stack=True,
+    #     include_executed_query=True,
+    #     strict_bindings=False,
+    #     execute_on_unbound=False,
+    #
+    #     # enrichment (KG)
+    #     enrich_urls=bool(kgc.get("enrich_urls", False)),
+    #     fetch_url_content=bool(kgc.get("fetch_url_content", False)),
+    #     url_timeout_s=float(shared.get("url_timeout_s", 5.0)),
+    #     max_urls_per_item=int(shared.get("max_urls_per_item", 5)),
+    #     content_max_bytes=int(shared.get("content_max_bytes", 250_000)),
+    #     content_max_chars=int(shared.get("content_max_chars", 5000)),
+    #
+    #     # chunking (KG)
+    #     chunk_url_content=bool(kgc.get("chunk_url_content", False)),
+    #     chunk_chars=int(shared.get("chunk_chars", 500)),
+    #     chunk_overlap=int(shared.get("chunk_overlap", 50)),
+    #     max_chunks_per_url=int(shared.get("max_chunks_per_url", 8)),
+    #     max_url_chunks_total_per_item=int(shared.get("max_url_chunks_total_per_item", 20)),
+    # )
+    # write_json(retr_kg_out_path, out_kg)
+    # print(f"✓ retriever KG → {retr_kg_out_path}")
+    #
+    # # Hybrid
+    # retr_hy_out_path = retriever_dir / "plan_with_evidence_Hybrid.json"
+    # content_max_chars_hy = max(
+    #     int(shared.get("content_max_chars", 5000)),
+    #     int(shared.get("chunk_chars", 500)) * max(1, int(shared.get("max_chunks_per_url", 8))),
+    # )
+    # out_hy = retriever_run(
+    #     plan=plan_hy,
+    #     rdf_files=[str(p) for p in rdf_files],
+    #     bindings=retriever_params,
+    #     per_item_sample=int(shared.get("per_item_sample", 5)),
+    #     require_sparql=bool(shared.get("require_sparql", True)),
+    #     timeout_s=float(shared.get("timeout_s", 10.0)),
+    #     log_dir=str(retriever_dir / "logs"),
+    #     errors_jsonl=str(retriever_dir / "retriever.jsonl"),
+    #     include_stack=True,
+    #     include_executed_query=True,
+    #     strict_bindings=False,
+    #     execute_on_unbound=False,
+    #
+    #     # enrichment (Hybrid)
+    #     enrich_urls=bool(hyc.get("enrich_urls", True)),
+    #     fetch_url_content=bool(hyc.get("fetch_url_content", True)),
+    #     url_timeout_s=float(shared.get("url_timeout_s", 5.0)),
+    #     max_urls_per_item=int(shared.get("max_urls_per_item", 5)),
+    #     content_max_bytes=int(shared.get("content_max_bytes", 250_000)),
+    #     content_max_chars=content_max_chars_hy,
+    #
+    #     # chunking (Hybrid)
+    #     chunk_url_content=bool(hyc.get("chunk_url_content", True)),
+    #     chunk_chars=int(shared.get("chunk_chars", 500)),
+    #     chunk_overlap=int(shared.get("chunk_overlap", 50)),
+    #     max_chunks_per_url=int(shared.get("max_chunks_per_url", 8)),
+    #     max_url_chunks_total_per_item=int(shared.get("max_url_chunks_total_per_item", 20)),
+    # )
+    # write_json(retr_hy_out_path, out_hy)
+    # print(f"✓ retriever Hybrid → {retr_hy_out_path}")
+    #
+    # # 3) Generator
+    # gc = generator_cfg
+    #
+    # # KG
+    # story_kg         = generator_dir / "story_KG.md"
+    # story_kg_clean   = generator_dir / "story_KG_clean.md"
+    # answers_kg_path  = generator_dir / "answers_KG.jsonl"
+    # claims_kg_path   = generator_dir / "claims_KG.jsonl" if gc.get("make_claims", True) else None
+    #
+    #
+    #
+    #
+    # print(f"out_kg :{out_kg}")
+    # story_md_kg, answers_kg = generator_generate(
+    #     mode="KG",
+    #     plan=plan_kg,
+    #     plan_with_evidence=out_kg,
+    #     meta_path=str(kg_meta),
+    #     params=DEFAULT_GENERATOR_PARAMS,  # (can be overridden by your generator)
+    #     llm_provider=gc.get("llm_provider", "ollama"),
+    #     llm_model=gc.get("llm_model", "llama3.1-128k"),
+    #     ollama_num_ctx=gc.get("ollama_num_ctx"),
+    #     use_url_content=False,
+    #     max_url_snippets=int(gc.get("max_url_snippets", 3)),
+    #     snippet_chars=int(gc.get("snippet_chars", 40000)),
+    #     include_citations=bool(gc.get("include_citations", True)),
+    #     max_rows=int(gc.get("max_rows", 6)),
+    #     max_facts_per_beat=int(gc.get("max_facts_per_beat", 12)),
+    #     beat_sentences=int(gc.get("beat_sentences", 4)),
+    #     context_budget_chars=int(gc.get("context_budget_chars", 50000)),
+    #     enforce_citation_each_sentence=bool(gc.get("enforce_citation_each_sentence", True)),
+    #     citation_style=gc.get("citation_style", "cqid"),
+    #     claims_out=str(claims_kg_path) if claims_kg_path else None,
+    #     story_clean_out=str(story_kg_clean),
+    #     run_id=slug(persona) + "-" + slug(length) + "-" + str(seed) + "-kg",  # <-- for eval
+    # )
+    # story_kg.write_text(story_md_kg, encoding="utf-8")
+    # write_jsonl(answers_kg_path, answers_kg)
+    # if claims_kg_path:
+    #     print(f"✓ claims KG → {claims_kg_path}")
+    # print(f"✓ generator KG → {story_kg} (+ clean {story_kg_clean})")
+    #
+    # # Hybrid
+    # story_hy         = generator_dir / "story_Hybrid.md"
+    # story_hy_clean   = generator_dir / "story_Hybrid_clean.md"
+    # answers_hy_path  = generator_dir / "answers_Hybrid.jsonl"
+    # claims_hy_path   = generator_dir / "claims_Hybrid.jsonl" if gc.get("make_claims", True) else None
+    #
+    # # after writing answers_KG.jsonl / answers_Hybrid.jsonl
+    #
+    #
+    #
+    # print(f"out_hy :{out_hy}")
+    # story_md_hy, answers_hy = generator_generate(
+    #     mode="Hybrid",
+    #     plan=plan_hy,
+    #     plan_with_evidence=out_hy,
+    #     meta_path=str(hy_meta),
+    #     params=DEFAULT_GENERATOR_PARAMS,
+    #     llm_provider=gc.get("llm_provider", "ollama"),
+    #     llm_model=gc.get("llm_model", "llama3.1-128k"),
+    #     ollama_num_ctx=gc.get("ollama_num_ctx"),
+    #     use_url_content=bool(gc.get("use_url_content_hybrid", True)),
+    #     max_url_snippets=int(gc.get("max_url_snippets", 3)),
+    #     snippet_chars=int(gc.get("snippet_chars", 400)),
+    #     include_citations=bool(gc.get("include_citations", True)),
+    #     max_rows=int(gc.get("max_rows", 6)),
+    #     max_facts_per_beat=int(gc.get("max_facts_per_beat", 12)),
+    #     beat_sentences=int(gc.get("beat_sentences", 4)),
+    #     context_budget_chars=int(gc.get("context_budget_chars", 1600)),
+    #     enforce_citation_each_sentence=bool(gc.get("enforce_citation_each_sentence", True)),
+    #     citation_style=gc.get("citation_style", "cqid"),
+    #     claims_out=str(claims_hy_path) if claims_hy_path else None,
+    #     story_clean_out=str(story_hy_clean),
+    #     run_id = slug(persona) + "-" + slug(length) + "-" + str(seed) + "-" + "Hybrid",  # <-- for eval
+    # )
+    # story_hy.write_text(story_md_hy, encoding="utf-8")
+    # write_jsonl(answers_hy_path, answers_hy)
+    # if claims_hy_path:
+    #     print(f"✓ claims Hybrid → {claims_hy_path}")
+    # print(f"✓ generator Hybrid → {story_hy} (+ clean {story_hy_clean})")
+    # print("\nAll done ✅")
+    # # persona is whatever you ran (if single persona per run)
+    #
+    # combined = generator_dir / "answers_combined.jsonl"
+    # combine_json_anyformat([generator_dir / "answers_KG.jsonl", generator_dir / "answers_Hybrid.jsonl"], combined)
+    # from pathlib import Path
+    #
+    # try:
+    #     # if it's inside your package
+    #     from composite_rag_pipeline.eval_narrative import read_jsonl, evaluate_rows, write_reports
+    # except ImportError:
+    #     # if it's a top-level file
+    #     from eval_narrative import read_jsonl, evaluate_rows, write_reports
+    #
+    # rows = read_jsonl(combined)
+    # df = evaluate_rows(rows, persona="Emma")  # or "Luca"/None
+    # csv_path, summ_path, html_path = write_reports(df, generator_dir / "eval_report")
+    # print("✅ evaluation written:", csv_path, summ_path, html_path)
 
-    if persist_params:
-        try:
-            write_json(params_dir / "retriever_params_used.json", retriever_params)
-            write_json(params_dir / "generator_params_used.json", generator_params)
-        except Exception:
-            pass
+    # ---------------- Graph (adapter + reuse KG generator path) ----------------
 
-    # 2) Retriever
-    rc, shared, kgc, hyc = retriever_cfg, retriever_cfg.get("shared", {}), retriever_cfg.get("kg", {}), retriever_cfg.get("hybrid", {})
+    plan_with_evidence_graph = retriever_dir / "plan_with_evidence_Graph.json"
+    answers_graph_path = generator_dir / "answers_Graph.jsonl"
+    story_graph = generator_dir / "story_Graph.md"
+    story_graph_clean = generator_dir / "story_Graph_clean.md"
 
-    # KG
-    retr_kg_out_path = retriever_dir / "plan_with_evidence_KG.json"
-    out_kg = retriever_run(
-        plan=plan_kg,
-        rdf_files=[str(p) for p in rdf_files],
-        bindings=retriever_params,
-        per_item_sample=int(shared.get("per_item_sample", 5)),
-        require_sparql=bool(shared.get("require_sparql", True)),
-        timeout_s=float(shared.get("timeout_s", 10.0)),
-        log_dir=str(retriever_dir / "logs"),
-        errors_jsonl=str(retriever_dir / "retriever.jsonl"),
-        include_stack=True,
-        include_executed_query=True,
-        strict_bindings=False,
-        execute_on_unbound=False,
+    graph_cfg_path = Path("graph_rag/graph_config.yaml")
+    graph_cfg = load_graph_config(graph_cfg_path)  # <— resolved dict
 
-        # enrichment (KG)
-        enrich_urls=bool(kgc.get("enrich_urls", False)),
-        fetch_url_content=bool(kgc.get("fetch_url_content", False)),
-        url_timeout_s=float(shared.get("url_timeout_s", 5.0)),
-        max_urls_per_item=int(shared.get("max_urls_per_item", 5)),
-        content_max_bytes=int(shared.get("content_max_bytes", 250_000)),
-        content_max_chars=int(shared.get("content_max_chars", 5000)),
-
-        # chunking (KG)
-        chunk_url_content=bool(kgc.get("chunk_url_content", False)),
-        chunk_chars=int(shared.get("chunk_chars", 500)),
-        chunk_overlap=int(shared.get("chunk_overlap", 50)),
-        max_chunks_per_url=int(shared.get("max_chunks_per_url", 8)),
-        max_url_chunks_total_per_item=int(shared.get("max_url_chunks_total_per_item", 20)),
+    # Save resolved copy for traceability in the run folder
+    (params_dir / "graph_config_resolved.yaml").write_text(
+        yaml.safe_dump(graph_cfg, sort_keys=False, allow_unicode=True),
+        encoding="utf-8"
     )
-    write_json(retr_kg_out_path, out_kg)
-    print(f"✓ retriever KG → {retr_kg_out_path}")
 
-    # Hybrid
-    retr_hy_out_path = retriever_dir / "plan_with_evidence_Hybrid.json"
-    content_max_chars_hy = max(
-        int(shared.get("content_max_chars", 5000)),
-        int(shared.get("chunk_chars", 500)) * max(1, int(shared.get("max_chunks_per_url", 8))),
-    )
-    out_hy = retriever_run(
-        plan=plan_hy,
-        rdf_files=[str(p) for p in rdf_files],
-        bindings=retriever_params,
-        per_item_sample=int(shared.get("per_item_sample", 5)),
-        require_sparql=bool(shared.get("require_sparql", True)),
-        timeout_s=float(shared.get("timeout_s", 10.0)),
-        log_dir=str(retriever_dir / "logs"),
-        errors_jsonl=str(retriever_dir / "retriever.jsonl"),
-        include_stack=True,
-        include_executed_query=True,
-        strict_bindings=False,
-        execute_on_unbound=False,
+    # Optionally copy it into params_dir for traceability
+    try:
+        if graph_cfg_path.exists():
+            (params_dir / "graph_config.yaml").write_text(graph_cfg_path.read_text(encoding="utf-8"), encoding="utf-8")
+    except Exception:
+        pass
 
-        # enrichment (Hybrid)
-        enrich_urls=bool(hyc.get("enrich_urls", True)),
-        fetch_url_content=bool(hyc.get("fetch_url_content", True)),
-        url_timeout_s=float(shared.get("url_timeout_s", 5.0)),
-        max_urls_per_item=int(shared.get("max_urls_per_item", 5)),
-        content_max_bytes=int(shared.get("content_max_bytes", 250_000)),
-        content_max_chars=content_max_chars_hy,
+    # ---------------- Graph (pipeline-provided config passed through) ----------------
+    # Graph config already loaded:
+    # graph_cfg = load_graph_config(graph_cfg_path)
 
-        # chunking (Hybrid)
-        chunk_url_content=bool(hyc.get("chunk_url_content", True)),
-        chunk_chars=int(shared.get("chunk_chars", 500)),
-        chunk_overlap=int(shared.get("chunk_overlap", 50)),
-        max_chunks_per_url=int(shared.get("max_chunks_per_url", 8)),
-        max_url_chunks_total_per_item=int(shared.get("max_url_chunks_total_per_item", 20)),
-    )
-    write_json(retr_hy_out_path, out_hy)
-    print(f"✓ retriever Hybrid → {retr_hy_out_path}")
-
-    # 3) Generator
-    gc = generator_cfg
-
-    # KG
-    story_kg         = generator_dir / "story_KG.md"
-    story_kg_clean   = generator_dir / "story_KG_clean.md"
-    answers_kg_path  = generator_dir / "answers_KG.jsonl"
-    claims_kg_path   = generator_dir / "claims_KG.jsonl" if gc.get("make_claims", True) else None
-
-
-
-
-    print(f"out_kg :{out_kg}")
-    story_md_kg, answers_kg = generator_generate(
-        mode="KG",
-        plan=plan_kg,
-        plan_with_evidence=out_kg,
-        meta_path=str(kg_meta),
-        params=DEFAULT_GENERATOR_PARAMS,  # (can be overridden by your generator)
-        llm_provider=gc.get("llm_provider", "ollama"),
-        llm_model=gc.get("llm_model", "llama3.1-128k"),
-        ollama_num_ctx=gc.get("ollama_num_ctx"),
-        use_url_content=False,
-        max_url_snippets=int(gc.get("max_url_snippets", 3)),
-        snippet_chars=int(gc.get("snippet_chars", 40000)),
-        include_citations=bool(gc.get("include_citations", True)),
-        max_rows=int(gc.get("max_rows", 6)),
-        max_facts_per_beat=int(gc.get("max_facts_per_beat", 12)),
-        beat_sentences=int(gc.get("beat_sentences", 4)),
-        context_budget_chars=int(gc.get("context_budget_chars", 50000)),
-        enforce_citation_each_sentence=bool(gc.get("enforce_citation_each_sentence", True)),
-        citation_style=gc.get("citation_style", "cqid"),
-        claims_out=str(claims_kg_path) if claims_kg_path else None,
-        story_clean_out=str(story_kg_clean),
-        run_id=slug(persona) + "-" + slug(length) + "-" + str(seed) + "-kg",  # <-- for eval
-    )
-    story_kg.write_text(story_md_kg, encoding="utf-8")
-    write_jsonl(answers_kg_path, answers_kg)
-    if claims_kg_path:
-        print(f"✓ claims KG → {claims_kg_path}")
-    print(f"✓ generator KG → {story_kg} (+ clean {story_kg_clean})")
-
-    # Hybrid
-    story_hy         = generator_dir / "story_Hybrid.md"
-    story_hy_clean   = generator_dir / "story_Hybrid_clean.md"
-    answers_hy_path  = generator_dir / "answers_Hybrid.jsonl"
-    claims_hy_path   = generator_dir / "claims_Hybrid.jsonl" if gc.get("make_claims", True) else None
-
-    # after writing answers_KG.jsonl / answers_Hybrid.jsonl
-
-
-
-    print(f"out_hy :{out_hy}")
-    story_md_hy, answers_hy = generator_generate(
-        mode="Hybrid",
-        plan=plan_hy,
-        plan_with_evidence=out_hy,
-        meta_path=str(hy_meta),
-        params=DEFAULT_GENERATOR_PARAMS,
-        llm_provider=gc.get("llm_provider", "ollama"),
-        llm_model=gc.get("llm_model", "llama3.1-128k"),
-        ollama_num_ctx=gc.get("ollama_num_ctx"),
-        use_url_content=bool(gc.get("use_url_content_hybrid", True)),
-        max_url_snippets=int(gc.get("max_url_snippets", 3)),
-        snippet_chars=int(gc.get("snippet_chars", 400)),
-        include_citations=bool(gc.get("include_citations", True)),
-        max_rows=int(gc.get("max_rows", 6)),
-        max_facts_per_beat=int(gc.get("max_facts_per_beat", 12)),
-        beat_sentences=int(gc.get("beat_sentences", 4)),
-        context_budget_chars=int(gc.get("context_budget_chars", 1600)),
-        enforce_citation_each_sentence=bool(gc.get("enforce_citation_each_sentence", True)),
-        citation_style=gc.get("citation_style", "cqid"),
-        claims_out=str(claims_hy_path) if claims_hy_path else None,
-        story_clean_out=str(story_hy_clean),
-        run_id = slug(persona) + "-" + slug(length) + "-" + str(seed) + "-" + "Hybrid",  # <-- for eval
-    )
-    story_hy.write_text(story_md_hy, encoding="utf-8")
-    write_jsonl(answers_hy_path, answers_hy)
-    if claims_hy_path:
-        print(f"✓ claims Hybrid → {claims_hy_path}")
-    print(f"✓ generator Hybrid → {story_hy} (+ clean {story_hy_clean})")
-    print("\nAll done ✅")
-    # persona is whatever you ran (if single persona per run)
-
-    combined = generator_dir / "answers_combined.jsonl"
-    combine_json_anyformat([generator_dir / "answers_KG.jsonl", generator_dir / "answers_Hybrid.jsonl"], combined)
-    from pathlib import Path
+    # Files
+    timestamp_str = datetime.now().strftime("%Y-%m-%d_%H:%M:%S")
+    graph_out_dir = Path(".") / "graph_rag" / "out" / timestamp_str
+    plan_graph_json = graph_out_dir / "plan_with_evidence_Graph.json"
+    answers_graph = graph_out_dir / "answers_Graph.jsonl"
+    story_graph = graph_out_dir / "story_Graph.md"
+    story_graph_clean = graph_out_dir / "story_Graph_clean.md"
 
     try:
-        # if it's inside your package
-        from composite_rag_pipeline.eval_narrative import read_jsonl, evaluate_rows, write_reports
-    except ImportError:
-        # if it's a top-level file
-        from eval_narrative import read_jsonl, evaluate_rows, write_reports
+        # 1) Build a graph-led plan (outline from graph, no CQs)
+        # seeds_from = {
+        #       "entities": [
+        #         "http://wembrewind.live/ex#Queen",
+        #         "http://wembrewind.live/ex#LiveAid1985"
+        #       ],
+        #       "labels": ["Queen", "Live Aid 1985"]
+        #     }
 
-    rows = read_jsonl(combined)
-    df = evaluate_rows(rows, persona="Emma")  # or "Luca"/None
-    csv_path, summ_path, html_path = write_reports(df, generator_dir / "eval_report")
-    print("✅ evaluation written:", csv_path, summ_path, html_path)
+        seeds_from = {
+            "entities": [
+                "http://wembrewind.live/ex#LiveAid1985"
+            ],
+            "labels": [ "Live Aid 1985"]
+        }
 
+        plan_obj = build_graph_plan(
+            topic="Queen at Live Aid — Wembley",
+            rdf_files=[str(p) for p in rdf_files],
+            graph_cfg=graph_cfg,  # loaded once from graph_config.yaml
+            persona_name=persona,  # or {}
+            seeds_from=seeds_from,
+        )
+        write_plan(plan_obj, plan_graph_json)
 
-# === CLI ===
+        # 2) Generate the story from the graph-led plan (no CQ prompts)
+        gg = graph_cfg.get("generation", {}) or {}
+        generate_graph_story(
+            graph_plan_path=plan_graph_json,
+            out_jsonl=answers_graph,
+            out_story_md=story_graph,
+            out_story_clean_md=story_graph_clean,
+            llm_provider=graph_cfg.get("llm_provider", "gemini"),
+            llm_model=graph_cfg.get("llm_model", "gemini-2.5-flash"),
+            beat_sentences=int(gg.get("beat_sentences", 4)),
+        )
+
+        print(f"✓ Graph plan → {plan_graph_json}")
+        print(f"✓ Graph story → {story_graph} (+ clean {story_graph_clean})")
+    except Exception:
+        traceback.print_exc()
+
+    # === CLI ===
 
 def _load_params(defaults: Dict[str, Any], file_path: Optional[Path], json_str: Optional[str]) -> Dict[str, Any]:
     merged = copy.deepcopy(defaults)
