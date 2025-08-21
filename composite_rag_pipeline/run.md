@@ -28,3 +28,10 @@ python3 pipeline_programmatic.py \
   --retriever_params_json '{"event":"ex:LiveAid1985","musicgroup":"ex:Queen","singleartist":"ex:Madonna","bandmember":"ex:BrianMay","venue":"ex:WembleyStadium","venue2":"ex:JFKStadium"}' \
   --generator_params_json '{"Event":"Live Aid 1985","MusicGroup":"Queen","SingleArtist":"Madonna","BandMember":"Brian May","Venue":"Wembley Stadium","Venue2":"JFK Stadium"}'
   --run_root runs --persist_params
+
+
+
+python eval/eval_single_run.py \
+  --run-dir runs/Emma-Medium-20250820-223705/KG/run-01 \   
+  --persona Emma \
+  --length Medium

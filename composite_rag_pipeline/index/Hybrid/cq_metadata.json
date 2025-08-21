@@ -1122,7 +1122,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    BIND (  {event} as ?mainEvent)\n    ?mainEvent schema:name ?eventName .\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n    FILTER(?preserved = false)\n}\nORDER BY DESC(?preserved)",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    BIND ({event} as ?mainEvent)\n    ?mainEvent schema:name ?eventName .\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n    FILTER(?preserved = false)\n}\nORDER BY DESC(?preserved)",
       "source": "csv/json"
     },
     {
@@ -1141,7 +1141,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    BIND (  {event} as ?mainEvent)\n    ?mainEvent schema:name ?eventName .\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n    FILTER(?preserved = false)\n}\nORDER BY DESC(?preserved)",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    BIND ({event} as ?mainEvent)\n    ?mainEvent schema:name ?eventName .\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n    FILTER(?preserved = false)\n}\nORDER BY DESC(?preserved)",
       "source": "csv/json"
     },
     {
@@ -1160,7 +1160,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    VALUES ?mainEvent {   {event} }\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainEvent schema:name ?eventName .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n}\nORDER BY DESC(?preserved)",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    BIND ({event} as ?mainEvent)\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainEvent schema:name ?eventName .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n}\nORDER BY DESC(?preserved)",
       "source": "csv/json"
     },
     {
@@ -1179,7 +1179,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    VALUES ?mainEvent {   {event} }\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainEvent schema:name ?eventName .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n}\nORDER BY DESC(?preserved)",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    BIND ({event} as ?mainEvent)\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainEvent schema:name ?eventName .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n}\nORDER BY DESC(?preserved)",
       "source": "csv/json"
     },
     {

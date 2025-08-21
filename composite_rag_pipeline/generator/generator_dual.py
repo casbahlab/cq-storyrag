@@ -129,6 +129,47 @@ def _score_row_for_fact_density(row: dict) -> int:
     if any(k in text.lower() for k in ["wembley","stadium","final","attendance","minute","setlist","world cup"]): s += 1
     return s
 
+# --- factlet helpers (Part A) ---
+EM_DASH = " — "
+_URL_PREFIXES = ("http://", "https://", "<http")  # treat <http...> as a link token too
+
+def _strip_quotes(s: str) -> str:
+    if not isinstance(s, str):
+        return s
+    s2 = s.strip()
+    if len(s2) >= 2 and ((s2[0], s2[-1]) in {('"','"'), ("'","'")}):
+        return s2[1:-1]
+    return s2
+
+
+def _row_to_factlet(row: dict, *, include_urls: bool = False, max_len: int = 280) -> str | None:
+    """
+    Build one factlet exactly like the prompt expects:
+    join string-valued fields (excluding private __keys) with an em dash.
+    If include_urls=False, drop raw URL values.
+    """
+    if not isinstance(row, dict):
+        return None
+    parts = []
+    for k, v in row.items():
+        # filter based on KEY, not value
+        if isinstance(k, str) and k.startswith("__"):
+            continue
+        if isinstance(v, str):
+            vv = v.strip()
+            if (not include_urls) and vv.lower().startswith(_URL_PREFIXES):
+                continue
+            parts.append(_strip_quotes(vv))
+        elif isinstance(v, (list, tuple)) and v and all(isinstance(x, str) for x in v):
+            parts.append(_strip_quotes(" / ".join(v)))
+    if not parts:
+        return None
+    # normalize whitespace + cap length
+    line = re.sub(r"\s+", " ", EM_DASH.join(p for p in parts if p)).strip()
+    if len(line) > max_len:
+        line = line[:max_len].rsplit(" ", 1)[0] + "…"
+    return line
+
 def _pack_factlets(rows: list, max_factlets: int) -> list[str]:
     """Compact, deduped 'factlets' the LLM can integrate verbatim."""
     seen = set(); factlets = []
@@ -508,20 +549,109 @@ def number_references(refs):
     return id_map, lines, items
 
 
+import textwrap
+from typing import List, Dict, Tuple, Union
+
+import textwrap
+from typing import List, Dict, Tuple, Union
+
+import re
+import textwrap
+from typing import List, Dict, Tuple, Union
+
+import re
+import textwrap
+from typing import List, Dict, Tuple, Union
+
+# --- lightweight cleaners ---
+_WORDS = re.compile(r"[A-Za-z0-9']+")
+BRACKETED_CQ = re.compile(r"\s*\[(?:CQ-[A-Za-z]+[0-9]+(?:\s*;\s*CQ-[A-Za-z]+[0-9]+)*)\]\s*")
+RAW_CQ = re.compile(r"\bCQ-[A-Za-z]+[0-9]+\b")
+TYPED_LIT = re.compile(r'"\s*([^"]*?)\s*"\s*\^\^.*')  # match "value"^^type → value
+
+def _tok(s: str) -> set:
+    return set(w.lower() for w in _WORDS.findall(s or ""))
+
+def _jaccard(a: set, b: set) -> float:
+    if not a and not b: return 1.0
+    return len(a & b) / max(1, len(a | b))
+
+def _strip_noise(text: str) -> str:
+    """Remove CQ tokens/brackets, IRIs/URLs, ex:, typed literals; collapse whitespace."""
+    t = text or ""
+    # typed literals: "false"^^… → false
+    m = TYPED_LIT.fullmatch(t.strip())
+    if m:
+        t = m.group(1)
+    t = re.sub(r"https?://\S+|<[^>]+>", "", t)  # URLs, angle IRIs
+    t = re.sub(r"\bex:", "", t)
+    t = BRACKETED_CQ.sub("", t)
+    t = RAW_CQ.sub("", t)
+    t = t.replace("“", '"').replace("”", '"')
+    # strip wrapping quotes if any
+    if t.startswith('"') and t.endswith('"') and len(t) >= 2:
+        t = t[1:-1]
+    t = re.sub(r"\s+", " ", t).strip()
+    return t
+
+def _dedup_near(lines: List[str], jaccard: float = 0.80) -> List[str]:
+    kept, toks = [], []
+    for ln in lines:
+        s = _strip_noise(ln)
+        if not s:
+            continue
+        t = _tok(s)
+        if any(_jaccard(t, k) >= jaccard for k in toks):
+            continue
+        kept.append(s)
+        toks.append(t)
+    return kept
+
+def _ref_to_text(ref: Union[str, Dict[str, str]]) -> str:
+    if isinstance(ref, str):
+        return ref
+    for key in ("text", "snippet", "title", "description", "name"):
+        v = ref.get(key)
+        if isinstance(v, str) and v.strip():
+            return v
+    parts = [v for v in ref.values() if isinstance(v, str) and len(v) < 300]
+    return " — ".join(parts) if parts else ""
+
+def _max_context_items(beat_words: Tuple[int, int]) -> int:
+    lo, hi = beat_words
+    if hi <= 170:  # Short-ish
+        return 8
+    if hi <= 280:  # Medium
+        return 14
+    return 22      # Long
+
+# --- drop-in API ---
 def build_prompt(
-    persona_description: str,              # ← pass description, not just a name
+    persona_description: str,
     beat_idx: int,
     beat_title: str,
     factlets: List[str],
-    refs: Union[List[str], List[Dict[str,str]]],  # ← either old lines or structured dicts
-    include_citations: bool,
+    refs: Union[List[str], List[Dict[str,str]]],
+    include_citations: bool,                     # kept for signature; ignored
     beat_words: Tuple[int,int] = (180, 260),
-    citation_style: str = "cqid"          # "cqid" or "numeric"
+    citation_style: str = "cqid",                # kept for signature; ignored
+    citation_mode: str = "cq",                   # kept for signature; ignored
 ) -> str:
-    # 1) References block (and optional ID remapping)
-    refs_block, id_map = format_references(refs, style=citation_style)
+    """
+    Unified prompt with a single, unnumbered CONTEXT block.
+    - No numbering, no CQ, no references section.
+    - Context lines are cleaned & deduped.
+    """
+    # 1) Merge & clean inputs → CONTEXT lines
+    ref_lines = [_ref_to_text(r) for r in (refs or [])]
+    raw_items = (factlets or []) + ref_lines
+    clean_items = _dedup_near([x for x in raw_items if x and x.strip()], jaccard=0.80)
 
-    # 2) Instruction header (coverage + citations clarified)
+    # 2) Respect length budget (feed a bit more; model will compress)
+    max_items = _max_context_items(beat_words)
+    context_lines = clean_items[:max_items]
+
+    # 3) Instruction header (CONTEXT only; no citation instructions)
     lo, hi = beat_words
     instruction = [
         "You are writing a factual, engaging story section. Do NOT roleplay as the audience.",
@@ -531,41 +661,38 @@ def build_prompt(
         f"- Description: {persona_description}",
         "- Tone/style: clear, precise, evidence-driven",
         "- Dos: lead with outcomes; use named entities, dates, and numbers; keep sentences tight",
-        "- Don’ts: no first person, no speculation, no meta lead-ins",
+        "- Don’ts: no first person, no speculation, no meta lead-ins; start directly.",
         "",
-        "Use the FACTLETS and REFERENCES provided below.",
-        "- Faithfully incorporate as many FACTLETS as possible; you may paraphrase, merge, and condense while preserving meaning.",
-        "- Coverage target: use at least 70% of the FACTLETS (or all if fewer). Prefer breadth (people/place/time/action/impact) when available.",
-        f"- Length: aim for {lo}–{hi} words.",
-        "Narrate in third person; do not speak as the audience.",
-        "Do NOT write meta lead-ins like “Here is the introduction...”—start directly.",
+        "Use ONLY the CONTEXT below.",
+        f"Targets: cover at least 70% of these items; Length: {lo}–{hi} words.",
+        "",
+        "Rules:",
+        "- One paragraph; third person; no bullets or headings.",
+        "- Use display names; do not print raw IDs/URIs.",
+        "- Preserve relation direction (subject → predicate → object) in your language.",
+        "- Prefer connective tissue (because, so, therefore, as a result) to link ideas.",
+        "- If multiple songs or members appear, narrate them in a clear, logical order.",
+        "- If a detail is missing, acknowledge the gap briefly rather than inventing it.",
     ]
+    header_text = "\n".join(instruction)
 
-    if include_citations:
-        if citation_style == "cqid":
-            instruction.append(
-                "Citations: After factual clauses, add bracketed CQ IDs like [CQ-E1] or [CQ-E1; CQ-L11]. "
-                "Combine multiple IDs when a sentence uses multiple items."
-            )
-        else:
-            instruction.append(
-                "Citations: After factual clauses, add numeric brackets like [1] or [1; 3]. "
-                "Numbers refer to the REFERENCES list below."
-            )
+    # 4) Compose CONTEXT block (unnumbered, one item per line)
+    context_block = "CONTEXT\n" + ("\n".join(context_lines) if context_lines else "(none)")
 
-    # 3) Blocks
-    header = "\n".join(instruction)
-    fact_block = "FACTLETS:\n" + "\n".join(f"- {f}" for f in factlets) if factlets else "FACTLETS: (none)"
+    # 5) Final prompt
+    return textwrap.dedent(
+        f"""
+        {header_text}
 
-    return textwrap.dedent(f"""\
-    {header}
+        {context_block}
 
-    {fact_block}
+        Now write the story section in third person as one cohesive paragraph.
+        """
+    ).strip() , context_lines
 
-    {refs_block}
 
-    Now write the story section.
-    """).strip()
+
+
 
 
 # ---------------- generator core ----------------
@@ -745,6 +872,7 @@ def generate(
     claims_out: Optional[str] = None,
     story_clean_out: Optional[str] = None,
     run_id: Optional[str] = None,
+    citation_mode: str = None,
 ) -> Tuple[str, List[Dict[str, Any]]]:
 
     persona = plan.get("persona") or "Narrator"
@@ -816,7 +944,7 @@ def generate(
         persona_desc = pack["description"]
         # prompt
 
-        prompt = build_prompt(
+        prompt, context_lines = build_prompt(
             persona_description=persona_desc,
             beat_idx=beat_idx,
             beat_title=beat_title,
@@ -825,7 +953,10 @@ def generate(
             include_citations=True,
             beat_words=(180, 260),  # target length window
             citation_style="cqid",  # "cqid" | "numeric"
+            citation_mode= citation_mode,  # for logging
         )
+
+        print(f"prompt : {prompt}")
 
         meta = {
             "persona": persona,
@@ -886,6 +1017,7 @@ def generate(
                 "beat_index": beat_idx, "beat_title": beat_title,
                 "facts_used": len(factlets),
                 "references_by_cq": ref_by_cq_kept,
+                "context_lines" : context_lines,
                 "text": text,
             })
         else:
@@ -893,6 +1025,7 @@ def generate(
                 "beat_index": beat_idx, "beat_title": beat_title,
                 "facts_used": len(factlets),
                 "references": references,
+                "context_lines": context_lines,
                 "text": text,
             })
 

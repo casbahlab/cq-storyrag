@@ -1,16 +1,12 @@
 
 """
-eval_narrative.py (baked-in, robust matching, per-run defaults)
+Patched evaluator with robust sentence–evidence matching.
 
-This file replaces the sentence–evidence alignment with robust matching
-and sets sensible defaults per run pattern:
-- Graph  : ngram_n=5, jaccard_threshold=0.50
-- KG     : ngram_n=4, jaccard_threshold=0.45
-- Hybrid : ngram_n=4, jaccard_threshold=0.45
-
-Exports:
-- compute_support_from_story_and_plan(story_text, plan_with_evidence, pattern)
-- align_sentences_with_evidence(...)
+Key changes:
+- Normalization + tokenization harmonized for both story and evidence
+- Matching uses (a) exact substring, (b) n-gram overlap, (c) token Jaccard
+- Prefer plan/context evidence when available; fall back gracefully
+- Returns support_rate (sentences supported / total), coverage_rate (evidence items covered / total)
 """
 
 import re
@@ -64,38 +60,7 @@ def _clean_evidence_value(v):
     s = re.sub(r"\s+", " ", s).strip()
     return s
 
-def _flatten_context_entry(x):
-    # Flatten common context_lines shapes to strings
-    if isinstance(x, str):
-        return [x]
-    if isinstance(x, list):
-        out = []
-        for y in x:
-            out.extend(_flatten_context_entry(y))
-        return out
-    if isinstance(x, dict):
-        for k in ("text","line","content","value","snippet"):
-            if k in x and isinstance(x[k], str):
-                return [x[k]]
-        for k in ("lines","snippets","contexts"):
-            if k in x and isinstance(x[k], list):
-                return _flatten_context_entry(x[k])
-        return [json.dumps(x, ensure_ascii=False)]
-    return [str(x)]
-
-def extract_evidence_from_plan(plan_json: Dict[str, Any], prefer_context_over_factlets: bool = True) -> List[str]:
-    # 1) Prefer explicit context_lines if present
-    if prefer_context_over_factlets and plan_json.get("context_lines"):
-        seen = set(); items = []
-        for entry in plan_json["context_lines"]:
-            for s in _flatten_context_entry(entry):
-                s2 = s.strip()
-                if s2 and s2 not in seen:
-                    items.append(s2); seen.add(s2)
-        if items:
-            return items
-
-    # 2) Otherwise, mine item rows as loose evidence
+def extract_evidence_from_plan(plan_json: Dict[str, Any]) -> List[str]:
     ev = []
     for item in plan_json.get("items", []):
         for row in item.get("rows", []):
@@ -175,7 +140,7 @@ def align_sentences_with_evidence(
         )
 
         # If not matched globally, try sentence-local
-        best_idx = -1; best_score = -1.0
+        best_idx = -1; best_score = -1.0; hit_type = None
         if not matched:
             for idx, stoks in enumerate(sents_toks):
                 if not stoks:
@@ -186,18 +151,20 @@ def align_sentences_with_evidence(
                     if score > best_score:
                         best_score = score
                         best_idx = idx
+                        hit_type = "ngram"
                 else:
                     jac = _jaccard(etoks, stoks)
                     if jac >= jaccard_threshold and jac > best_score:
                         best_score = jac
                         best_idx = idx
+                        hit_type = "jaccard"
 
             matched = best_idx >= 0
 
         covered_mask.append(bool(matched))
         if matched:
             covered_indices.append(i)
-            # If we don't yet have a best sentence, pick one now based on Jaccard across all sentences
+            # If we don't yet have a best sentence, pick one now based on Jaccard
             if best_idx < 0 and sents_toks:
                 best_idx = 0; best_score = -1.0
                 for idx, stoks in enumerate(sents_toks):
@@ -210,7 +177,7 @@ def align_sentences_with_evidence(
 
     # Collect unmatched sentences (no hits)
     for i, h in enumerate(sent_hits):
-        if h == 0 and i < len(sents):
+        if h == 0:
             unmatched_sentences.append(sents[i])
 
     supported = sum(1 for h in sent_hits if h > 0)
@@ -235,30 +202,50 @@ def align_sentences_with_evidence(
         "unmatched_evidence_sample": unmatched_evidence_sample,
     }
 
-# -------------------- Public API with per-run defaults --------------------
-
-_PER_RUN_DEFAULTS = {
-    "Graph":  {"ngram_n": 5, "jaccard_threshold": 0.50, "prefer_context": True},
-    "KG":     {"ngram_n": 3, "jaccard_threshold": 0.38, "prefer_context": True},
-    "Hybrid": {"ngram_n": 3, "jaccard_threshold": 0.38, "prefer_context": True},
-}
-
+# -------------------- Public entry used by the evaluator --------------------
 
 def compute_support_from_story_and_plan(
     story_text: str,
     plan_with_evidence: Dict[str, Any],
-    pattern: str = "KG"
+    prefer_context_over_factlets: bool = True,
+    ngram_n: int = 5,
+    jaccard_threshold: float = 0.50
 ) -> Dict[str, Any]:
     """
-    Compute support/coverage using per-run defaults inferred from `pattern`
-    (Graph, KG, Hybrid). Falls back to KG defaults if unknown.
+    Pull evidence from plan (context lines if present, else rows) and compute support metrics.
     """
-    cfg = _PER_RUN_DEFAULTS.get(pattern, _PER_RUN_DEFAULTS["KG"])
-    items = extract_evidence_from_plan(plan_with_evidence, prefer_context_over_factlets=cfg["prefer_context"])
+    # Prefer explicit context_lines if present at top-level
+    items = []
+    if prefer_context_over_factlets and plan_with_evidence.get("context_lines"):
+        # context_lines might be nested; flatten to strings
+        def _flatten(x):
+            if isinstance(x, str):
+                return [x]
+            if isinstance(x, list):
+                out = []
+                for y in x:
+                    out.extend(_flatten(y))
+                return out
+            if isinstance(x, dict):
+                # common keys
+                for k in ("text","line","content","value","snippet"):
+                    if k in x and isinstance(x[k], str):
+                        return [x[k]]
+                for k in ("lines","snippets","contexts"):
+                    if k in x and isinstance(x[k], list):
+                        return _flatten(x[k])
+                return [json.dumps(x, ensure_ascii=False)]
+            return [str(x)]
+        seen = set()
+        for entry in plan_with_evidence["context_lines"]:
+            for s in _flatten(entry):
+                s2 = s.strip()
+                if s2 and s2 not in seen:
+                    items.append(s2); seen.add(s2)
+    else:
+        items = extract_evidence_from_plan(plan_with_evidence)
 
     return align_sentences_with_evidence(
-        story_text,
-        items,
-        ngram_n=cfg["ngram_n"],
-        jaccard_threshold=cfg["jaccard_threshold"]
+        story_text, items,
+        ngram_n=ngram_n, jaccard_threshold=jaccard_threshold
     )

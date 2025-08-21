@@ -147,6 +147,8 @@ def generate_graph_story(
                 facts.append(e.get("value", ""))
 
         prompt = build_section_prompt(persona, topic, beat_title, summary, facts, beat_sentences)
+
+        print(f"prompt : {prompt}")
         raw = call_model(llm_provider, llm_model, prompt, ollama_num_ctx=ollama_num_ctx)
         text = _strip_meta(raw)
 

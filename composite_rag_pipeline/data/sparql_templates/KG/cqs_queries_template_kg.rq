@@ -359,7 +359,7 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved
 WHERE {
-    BIND (  {event} as ?mainEvent)
+    BIND ({event} as ?mainEvent)
     ?mainEvent schema:name ?eventName .
     ?mainEvent ex:hadBroadcast ?mainBroadcast .
     ?mainBroadcast schema:subEvent ?subBroadcast .
@@ -379,7 +379,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved
 WHERE {
-    VALUES ?mainEvent {   {event} }
+    BIND ({event} as ?mainEvent)
     ?mainEvent ex:hadBroadcast ?mainBroadcast .
     ?mainEvent schema:name ?eventName .
     ?mainBroadcast schema:subEvent ?subBroadcast .
