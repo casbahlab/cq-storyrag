@@ -59,3 +59,33 @@ python3 support_ctx_pipeline.py fix \
   --out-fixed-story context/Emma-Medium-20250825-223330/fix/story_KG_fixed.md \
   --out-patches-csv context/Emma-Medium-20250825-223330/fix/patches_KG.csv \
   --max-repairs-per-beat 2
+
+
+
+/Users/sowjanyab/code/dissertation/comp70225-wembrewind/composite_rag_pipeline/eval/data/Emma-Medium-20250826-093041/run-01/Hybrid
+
+
+
+python3 support_ctx_pipeline.py \
+  --answers data/Emma-Medium-20250826-093041/run-01/Hybrid/answers_Hybrid.jsonl \
+  --out-csv context/Emma-Medium-20250826-093041/hybrid_det/support_sentences.csv \
+  --out-summary context/Emma-Medium-20250826-093041/hybrid_det/support_summary.csv \
+  --clean-context \
+  --tf-th 0.35 --cj-th 0.28
+
+
+
+python3 support_ctx_reset.py \
+  --answers data/Emma-Medium-20250826-093041/run-01/Hybrid/answers_Hybrid.jsonl \
+  --out-csv context/Emma-Medium-20250826-093041/hybrid_det/support_sentences.csv \
+  --out-summary context/Emma-Medium-20250826-093041/hybrid_det/support_summary.csv \
+  --clean-context \
+  --tf-th 0.35 --cj-th 0.28
+
+
+python3 support_ctx_reset.py \
+  --answers data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl \
+  --out-csv context/Emma-Medium-20250825-223330/kg_det/support_sentences.csv \
+  --out-summary context/Emma-Medium-20250825-223330/kg_det/support_summary.csv \
+  --clean-context \
+  --tf-th 0.35 --cj-th 0.28
