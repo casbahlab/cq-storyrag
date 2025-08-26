@@ -367,23 +367,36 @@ def _fallback_build_plan(topic: str, rdf_files: List[str], persona: str, seeds_f
         })
     return {"topic": topic, "persona": persona, "beats": beats}
 
+# --- replace _fallback_generate_story(...) with this version ---
 def _fallback_generate_story(plan: Dict[str, Any], out_jsonl: Path, out_story_md: Path,
                              out_story_clean_md: Path, beat_sentences: int, persona_name: str):
     beats = plan.get("beats") or plan.get("sections") or []
     answers_lines: List[str] = []
     paras: List[str] = []
-    for b in beats:
+
+    for i, b in enumerate(beats):
         title = b.get("title", "Section")
+        # naive prose (placeholder)
         sents = []
         for _ in range(max(1, int(beat_sentences))):
             sents.append(f"{title}: The narrative explores how people, place, and purpose converged at the event, linking prior moments to subsequent impact.")
         para = " ".join(sents)
         paras.append(para)
-        answers_lines.append(json.dumps({
-            "section_index": b.get("index", 0),
+
+        # NEW: collect evidence lines from the plan
+        ctx_lines = _collect_context_lines_from_beat(b)
+
+        # also emit beat_* keys for compatibility
+        rec = {
+            "section_index": b.get("index", i),
             "section_title": title,
-            "text": para
-        }, ensure_ascii=False))
+            "beat_index": b.get("index", i),
+            "beat_title": title,
+            "context_lines": ctx_lines,
+            "text": para,
+        }
+        answers_lines.append(json.dumps(rec, ensure_ascii=False))
+
     _write_text(out_jsonl, "\n".join(answers_lines) + ("\n" if answers_lines else ""))
     story_text = "\n\n".join(paras) + ("\n" if paras else "")
     _write_text(out_story_md, story_text)
@@ -397,6 +410,47 @@ def unique_sentences(sentences, seen_ngrams, n=5, thresh=1):
         if len(grams & seen_ngrams) <= thresh:
             out.append(s)
             seen_ngrams |= grams
+    return out
+
+
+# --- add near the other helpers in pipeline_graph.py ---
+def _collect_context_lines_from_beat(b: Dict[str, Any]) -> List[str]:
+    """
+    Build per-beat context_lines from the plan's evidence/rows.
+    Keeps short, atomic strings; de-duplicates case-insensitively.
+    """
+    lines: List[str] = []
+
+    # evidence: usually [{ "value": "...", ...}, ...]
+    for ev in b.get("evidence", []) or []:
+        v = (ev.get("value") or ev.get("text") or ev.get("content") or "").strip()
+        if v:
+            lines.append(v)
+
+    # rows: sometimes have text/value or triples
+    for r in b.get("rows", []) or []:
+        if isinstance(r, str):
+            lines.append(r.strip())
+            continue
+        for key in ("text", "value", "label", "object", "o"):
+            v = r.get(key)
+            if isinstance(v, str) and v.strip():
+                lines.append(v.strip())
+        tri = r.get("triple") or r.get("spo")
+        if isinstance(tri, (list, tuple)):
+            parts = [str(x).strip() for x in tri if x]
+            if parts:
+                lines.append(" — ".join(parts))
+
+    # tidy + de-dup (light)
+    seen = set()
+    out = []
+    for ln in lines:
+        s = _WS.sub(" ", ln).strip()
+        k = s.lower()
+        if s and k not in seen:
+            seen.add(k)
+            out.append(s)
     return out
 
 

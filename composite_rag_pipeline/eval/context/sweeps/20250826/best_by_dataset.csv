@@ -1,0 +1,4 @@
+dataset,answers_path,tf_th,cj_th,cleaning,canon,bm25_mode,bm25_k1,bm25_b,bm25_topk,support_pct,ok,duration_sec,sentences_supported,sentences_total
+Graph,data/Emma-Medium-20250826-201608/run-01/Graph/answers_Graph.jsonl,0.28,0.24,light,True,filter,1.2,0.5,40.0,42.3,True,0.35750274999998055,22,52
+Hybrid,data/Emma-Medium-20250826-093041/run-01/Hybrid/answers_Hybrid.jsonl,0.29,0.24,light,False,filter,1.2,0.5,60.0,65.5,True,0.2990592499999707,36,55
+KG,data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl,0.28,0.24,raw,True,off,1.2,,,64.3,True,0.294622792,36,56

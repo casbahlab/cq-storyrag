@@ -89,3 +89,103 @@ python3 support_ctx_reset.py \
   --out-summary context/Emma-Medium-20250825-223330/kg_det/support_summary.csv \
   --clean-context \
   --tf-th 0.35 --cj-th 0.28
+
+
+
+
+python3 support_ctx_reset.py \
+  --answers data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl \
+  --out-csv context/Emma-Medium-20250825-223330/kg_det/support_sentences.csv \
+  --out-summary context/Emma-Medium-20250825-223330/kg_det/support_summary.csv \
+  --tf-th 0.35 --cj-th 0.28 --light-clean
+
+
+[DET] wrote context/Emma-Medium-20250825-223330/kg_det/support_sentences.csv
+[DET] wrote context/Emma-Medium-20250825-223330/kg_det/support_summary.csv
+[DET] support: 33/56 (58.9%)  (canon=on, bm25=off)
+
+
+
+python3 support_ctx_reset.py \
+  --answers data/Emma-Medium-20250826-093041/run-01/Hybrid/answers_Hybrid.jsonl \
+  --out-csv context/Emma-Medium-20250826-093041/hybrid_det/support_sentences.csv \
+  --out-summary context/Emma-Medium-20250826-093041/hybrid_det/support_summary.csv \
+  --tf-th 0.35 --cj-th 0.28 --light-clean
+
+
+[DET] wrote context/Emma-Medium-20250826-093041/hybrid_det/support_sentences.csv
+[DET] wrote context/Emma-Medium-20250826-093041/hybrid_det/support_summary.csv
+[DET] support: 36/62 (58.1%)  (canon=on, bm25=off)
+
+
+
+
+python3 support_ctx_reset.py \
+  --answers data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl \
+  --out-csv context/Emma-Medium-20250825-223330/kg_det/support_sentences.csv \
+  --out-summary context/Emma-Medium-20250825-223330/kg_det/support_summary.csv \
+  --tf-th 0.35 --cj-th 0.28 --light-clean --bm25-mode filter --bm25-k1 1.2 --bm25-b 0.25 --bm25-topk 40
+
+[DET] wrote context/Emma-Medium-20250825-223330/kg_det/support_sentences.csv
+[DET] wrote context/Emma-Medium-20250825-223330/kg_det/support_summary.csv
+[DET] support: 33/56 (58.9%)  (canon=on, bm25=filter)
+(wemb) sowjanyab@Sowjanyas-MacBook-Pro eval % 
+
+
+
+python3 support_ctx_reset.py \
+  --answers data/Emma-Medium-20250826-093041/run-01/Hybrid/answers_Hybrid.jsonl \
+  --out-csv context/Emma-Medium-20250826-093041/hybrid_det/support_sentences.csv \
+  --out-summary context/Emma-Medium-20250826-093041/hybrid_det/support_summary.csv \
+  --tf-th 0.35 --cj-th 0.28 --light-clean --bm25-mode filter --bm25-k1 1.2 --bm25-b 0.50 --bm25-topk 50
+
+
+[DET] wrote context/Emma-Medium-20250826-093041/hybrid_det/support_sentences.csv
+[DET] wrote context/Emma-Medium-20250826-093041/hybrid_det/support_summary.csv
+[DET] support: 36/62 (58.1%)  (canon=on, bm25=filter)
+
+
+python3 support_ctx_reset.py \
+  --answers data/Emma-Medium-20250826-201608/run-01/Graph/answers_Graph.jsonl \  
+  --out-csv context/Emma-Medium-20250826-201608/graph_det/support_sentences.csv \ 
+  --out-summary context/Emma-Medium-20250826-201608/graph_det/support_summary.csv \ 
+  --tf-th 0.32 --cj-th 0.26 --bm25-mode off --bm25-topk 50 --emit-near --light-clean --alias-file alias.json
+
+ans_path : data/Emma-Medium-20250826-201608/run-01/Graph/answers_Graph.jsonl
+[DET] wrote context/Emma-Medium-20250826-201608/graph_det/near_misses.csv (near-miss window [0.28, 0.35))
+[DET] wrote context/Emma-Medium-20250826-201608/graph_det/support_sentences.csv
+[DET] wrote context/Emma-Medium-20250826-201608/graph_det/support_summary.csv
+[DET] support: 20/52 (38.5%)  (canon=on, bm25=off)
+
+
+
+python3 sweep_eval.py \                                                                                                                
+  --support-script composite_rag_pipeline/eval/support_ctx_reset.py \       
+  --workdir context/sweeps/20250826 \                                                   
+  --dataset KG=data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl \         
+  --dataset Hybrid=data/Emma-Medium-20250826-093041/run-01/Hybrid/answers_Hybrid.jsonl \
+  --dataset Graph=data/Emma-Medium-20250826-201608/run-01/Graph/answers_Graph.jsonl \
+  --tf-grid 0.31,0.32,0.33,0.34,0.35 \
+  --cj-grid 0.26,0.27,0.28 \
+  --cleaning raw,light \   
+  --canon both \ 
+  --bm25-modes off,filter \
+  --bm25-k1 1.2 \    
+  --bm25-b 0.25,0.50 \               
+  --bm25-topk 40,60 \
+  --alias-by-dataset Graph=alias.json
+  
+
+python3 sweep_eval.py \
+  --dataset KG=data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl \
+  --dataset Hybrid=data/Emma-Medium-20250826-093041/run-01/Hybrid/answers_Hybrid.jsonl \
+  --dataset Graph=data/Emma-Medium-20250826-201608/run-01/Graph/answers_Graph.jsonl \
+  --tf-grid 0.31,0.32,0.33,0.34,0.35 \
+  --cj-grid 0.26,0.27,0.28 \
+  --cleaning raw,light \
+  --canon both \
+  --bm25-modes off,filter \
+  --bm25-k1 1.2 \
+  --bm25-b 0.25,0.50 \
+  --bm25-topk 40,60 \
+  --alias-by-dataset Graph=alias.json
