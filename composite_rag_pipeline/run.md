@@ -35,3 +35,5 @@ python eval/eval_single_run.py \
   --run-dir runs/Emma-Medium-20250820-223705/KG/run-01 \   
   --persona Emma \
   --length Medium
+
+python run_bundle_fixed.py --personas Emma --lengths Medium --patterns KG Hybrid Graph  --runs 1
