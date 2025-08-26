@@ -28,15 +28,6 @@
   ],
   "items": [
     {
-      "id": "CQ-E1",
-      "question": "What kind of event was [Event]?",
-      "beat": {
-        "index": 0,
-        "title": "Introduction"
-      },
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX oa: <http://www.w3.org/ns/oa#>\nPREFIX dct: <http://purl.org/dc/terms/>\nSELECT ?eventName ?text ?url\nWHERE {\n    BIND ({event} AS ?event)\n    ?annotation a oa:Annotation ;\n           dct:subject ex:Background ;\n           oa:hasTarget ?event ;\n           oa:hasBody ?background .\n    ?background schema:citation ?url .\n    ?background schema:description ?text .\n    ?event schema:name ?eventName .\n}"
-    },
-    {
       "id": "CQ-L4",
       "question": "What were the locations that hosted [Event]?",
       "beat": {
@@ -46,58 +37,76 @@
       "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nSELECT DISTINCT ?eventName ?venueName ?city\nWHERE {\n    {event} a schema:MusicEvent;\n        schema:name ?eventName ;\n        schema:location ?venue .\n  ?venue schema:name ?venueName .\n  ?venue schema:addressLocality ?city .\n  FILTER(?venue != ex:Global)\n}\nORDER BY ?city"
     },
     {
-      "id": "CQ-L9",
-      "question": "Who founded [Event]?",
+      "id": "CQ-E2",
+      "question": "Why was [Event] organized?",
+      "beat": {
+        "index": 0,
+        "title": "Introduction"
+      },
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX oa: <http://www.w3.org/ns/oa#>\nPREFIX dct: <http://purl.org/dc/terms/>\nSELECT ?eventName ?text ?url\nWHERE {\n    BIND ({event} AS ?event)\n    ?annotation a oa:Annotation ;\n           dct:subject ex:Background ;\n           oa:hasTarget ?event ;\n           oa:hasBody ?background .\n    ?background schema:citation ?url .\n    ?background schema:description ?text .\n    ?event schema:name ?eventName .\n}"
+    },
+    {
+      "id": "CQ-E7",
+      "question": "What role did television and media coverage play in [Event]?",
       "beat": {
         "index": 1,
         "title": "Context Setup"
       },
-      "sparql": "PREFIX schema: <http://schema.org/>\nPREFIX ex: <http://wembrewind.live/ex#>\nSELECT ?eventName ?founderName\nWHERE {\n    BIND(  {event} AS ?event)\n    ?event schema:name ?eventName .\n    ?event schema:organizer ?founder .\n    ?founder schema:name ?founderName .\n}"
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX oa: <http://www.w3.org/ns/oa#>\nPREFIX dct: <http://purl.org/dc/terms/>\nSELECT ?eventName ?text ?url\nWHERE {\n    BIND ({event} AS ?event)\n    ?annotation a oa:Annotation ;\n           dct:subject ex:Broadcasts ;\n           oa:hasTarget ?event ;\n           oa:hasBody ?broadcast .\n    ?broadcast schema:citation ?url .\n    ?broadcast schema:description ?text .\n    ?event schema:name ?eventName .\n}"
     },
     {
-      "id": "CQ-E3",
-      "question": "Which [MusicGroup] performed at [Event] held at [Venue]?",
+      "id": "CQ-E4",
+      "question": "Which [MusicGroup] performed during [Event]?",
       "beat": {
         "index": 1,
         "title": "Context Setup"
       },
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX oa: <http://www.w3.org/ns/oa#>\nPREFIX dct: <http://purl.org/dc/terms/>\nSELECT ?sourceUrl ?exactSelector ?refinedBy\nWHERE {\n    BIND ({event} AS ?event)\n    BIND ({venue} AS ?venue)\n    ?annotation a oa:Annotation ;\n           dct:subject ex:Performances ;\n           schema:spatial ?venue ;\n           oa:hasTarget ?event ;\n           oa:hasBody ?background .\n    ?background oa:hasSource ?sourceUrl ;\n                oa:hasSelector ?secSel .\n    OPTIONAL {\n        ?secSel oa:refinedBy ?subSel .\n        ?secSel oa:exact ?exactSelector .\n        OPTIONAL { ?subSel oa:exact ?refinedBy }\n        OPTIONAL { ?subSel oa:start ?start ; oa:end ?end }\n      }\n    ?event schema:name ?eventName .\n}"
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX oa: <http://www.w3.org/ns/oa#>\nPREFIX dct: <http://purl.org/dc/terms/>\nSELECT ?eventName ?url\nWHERE {\n    BIND ({event} AS ?event)\n    ?annotation a oa:Annotation ;\n           dct:subject ex:Performances ;\n           oa:hasTarget ?event ;\n           oa:hasBody ?background .\n    ?background schema:citation ?url .\n    ?event schema:name ?eventName .\n}"
     },
     {
-      "id": "CQ-E22",
-      "question": "Which organization failed to archive the broadcast of [Event]?",
+      "id": "CQ-E21",
+      "question": "Which organization archived the broadcast of [Event]?",
       "beat": {
         "index": 2,
         "title": "Audience Interaction"
       },
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    BIND ({event} as ?mainEvent)\n    ?mainEvent schema:name ?eventName .\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n    FILTER(?preserved = false)\n}\nORDER BY DESC(?preserved)"
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?eventName (GROUP_CONCAT(DISTINCT ?broadcastingCompanyName; separator=\", \") AS ?broadcastingCompanies)\nWHERE {\n    BIND (  {event} as ?event )\n    ?event ex:hadBroadcast ?broadcast .\n    ?event schema:name ?eventName .\n    OPTIONAL { ?broadcast schema:provider ?broadcastingCompany . }\n    OPTIONAL { ?broadcastingCompany schema:name ?broadcastingCompanyName }\n    OPTIONAL { ?broadcastingCompany rdfs:label ?broadcastingCompanyName }\n}\nGROUP BY ?eventName"
     },
     {
-      "id": "CQ-E20",
-      "question": "How much money was raised by [Event]?",
+      "id": "CQ-E24",
+      "question": "Why is [MusicGroup]’s performance at [Event] considered iconic?",
       "beat": {
         "index": 2,
         "title": "Audience Interaction"
       },
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX oa: <http://www.w3.org/ns/oa#>\nPREFIX dct: <http://purl.org/dc/terms/>\nSELECT ?eventName ?text ?url\nWHERE {\n    BIND ({event} AS ?event)\n    ?annotation a oa:Annotation ;\n           dct:subject ex:Fundraising ;\n           oa:hasTarget ?event ;\n           oa:hasBody ?fundraising .\n    ?fundraising schema:citation ?url .\n    ?fundraising schema:description ?text .\n    ?event schema:name ?eventName .\n}"
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?artistName ?reason ?url\nWHERE {\n    BIND ({musicgroup} as ?artist)\n    BIND ({event} as ?event)\n    ?performance a mm:LivePerformance ;\n                 schema:isPartOf   ?event ;\n                 schema:performer   ?artist .\n    ?artist schema:name ?artistName .\n    ?review schema:itemReviewed ?performance .\n    ?review schema:reviewBody ?reason .\n    ?review schema:url ?url .\n}"
     },
     {
-      "id": "CQ-L22",
-      "question": "How were performance scheduled across the venues during [Event]?",
+      "id": "CQ-E9",
+      "question": "Which performance at [Event] is considered iconic?",
       "beat": {
         "index": 3,
         "title": "Performance Detail"
       },
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX skos: <http://www.w3.org/2004/02/skos/core#>\nPREFIX oa: <http://www.w3.org/ns/oa#>\nPREFIX dct: <http://purl.org/dc/terms/>\nSELECT ?eventName ?text ?url\nWHERE {\n    BIND ({event} AS ?event)\n    ?annotation a oa:Annotation ;\n           dct:subject ex:Performances ;\n           oa:hasTarget ?event ;\n           oa:hasBody ?performances .\n    ?performances schema:citation ?url .\n    ?performances schema:description ?text .\n    ?event schema:name ?eventName .\n}"
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?eventName ?iconicPerformanceDescription\nWHERE {\n    ?performance a mm:LivePerformance ;\n                 schema:isPartOf ?event ;\n    \t\t\t ex:isIconic ?isIconic .\n    ?performance schema:description ?iconicPerformanceDescription .\n    ?event schema:name ?eventName .\n    FILTER(?event =   {event})\n    FILTER(?isIconic = true)\n}"
     },
     {
-      "id": "CQ-L11",
-      "question": "Which [MusicGroup] song was the third in their [Event] setlist",
+      "id": "CQ-E12",
+      "question": "When was [MusicGroup] formed?",
       "beat": {
         "index": 3,
         "title": "Performance Detail"
       },
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX schema: <http://schema.org/>\nSELECT ?eventName ?artistName ?song ?position\nWHERE {\n    BIND ({event} AS ?event)\n    BIND ({musicgroup} AS ?artist)\n    BIND (3 AS ?position)\n  ?performance a mm:LivePerformance ;\n               schema:performer   ?artist ;\n               schema:isPartOf   ?event ;\n               ex:setList ?setlist .\n  ?setlist schema:itemListElement ?listItem .\n  ?listItem schema:item ?work .\n  ?listItem schema:position ?position .\n  ?work schema:name ?song .\n  ?artist schema:name ?artistName .\n  ?event schema:name ?eventName .\n}\nORDER BY ?position"
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?artistName ?foundingDate ?foundingLocation\nWHERE {\n    BIND ({musicgroup} as ?artist)\n    ?artist a mm:MusicArtist .\n    ?artist schema:foundingDate ?foundingDate .\n    ?artist schema:foundingLocation ?foundingLocation .\n    ?artist schema:name ?artistName .\n}"
+    },
+    {
+      "id": "CQ-L14",
+      "question": "Who were the founding members of [MusicGroup]?",
+      "beat": {
+        "index": 4,
+        "title": "Cultural Impact"
+      },
+      "sparql": "PREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX ex: <http://wembrewind.live/ex#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?artistName (GROUP_CONCAT(DISTINCT ?founderName; separator=\", \") AS ?foundingMembers)\nWHERE {\n    BIND ({musicgroup} AS ?artist)\n    ?artist a mm:MusicArtist ;\n            schema:name ?artistName ;\n            schema:foundingDate ?foundingYear .\n    ?role a schema:Role, mm:MusicEnsembleMembership ;\n          mm:involvesMusicEnsemble ?artist ;\n          mm:involvesMemberOfMusicEnsemble ?member ;\n          ex:isOriginalMember true .\n    ?member schema:name ?founderName .\n}\nGROUP BY ?artistName"
     },
     {
       "id": "CQ-L20",
@@ -109,13 +118,13 @@
       "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?eventName ?audienceType ?viewerCount ?countryCount\nWHERE {\n    BIND(  {event} as ?event)\n    ?event ex:hadBroadcast ?broadcast .\n    ?event schema:name ?eventName .\n    ?broadcast schema:audience ?audience .\n    ?audience schema:audienceType ?audienceType .\n    ?audience ex:countryCount ?countryCount .\n    ?audience ex:viewerCount ?viewerCount .\n}"
     },
     {
-      "id": "CQ-L15",
-      "question": "What genre influenced [MusicGroup]’s music?",
+      "id": "CQ-E22",
+      "question": "Which organization failed to archive the broadcast of [Event]?",
       "beat": {
-        "index": 4,
-        "title": "Cultural Impact"
+        "index": 5,
+        "title": "Legacy & Reflection"
       },
-      "sparql": "PREFIX schema: <http://schema.org/>\nPREFIX ex: <http://wembrewind.live/ex#>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?artistName (GROUP_CONCAT(DISTINCT ?genreName; separator=\", \") AS ?earlyMusicInfluenceGenre)\nWHERE {\n    BIND(  {musicgroup} as ?artist)\n  ?artist schema:name ?artistName .\n  ?artist mm:hasGenre ?genre .\n  ?genre schema:name ?genreName .\n}\nGROUP BY ?artistName"
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    BIND ({event} as ?mainEvent)\n    ?mainEvent schema:name ?eventName .\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n    FILTER(?preserved = false)\n}\nORDER BY DESC(?preserved)"
     },
     {
       "id": "CQ-E23",
@@ -125,15 +134,6 @@
         "title": "Legacy & Reflection"
       },
       "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nSELECT ?eventName ?subBroadcastDescription ?broadcastCompanyName ?preserved\nWHERE {\n    BIND ({event} as ?mainEvent)\n    ?mainEvent ex:hadBroadcast ?mainBroadcast .\n    ?mainEvent schema:name ?eventName .\n    ?mainBroadcast schema:subEvent ?subBroadcast .\n    ?subBroadcast schema:description ?subBroadcastDescription .\n    ?subBroadcast schema:provider ?broadcastCompany .\n    ?subBroadcast ex:wasBroadcastPreserved ?preserved .\n    OPTIONAL { ?broadcastCompany schema:name ?broadcastCompanyName }\n    OPTIONAL { ?broadcastCompany rdfs:label ?broadcastCompanyName }\n}\nORDER BY DESC(?preserved)"
-    },
-    {
-      "id": "CQ-E24",
-      "question": "Why is [MusicGroup]’s performance at [Event] considered iconic?",
-      "beat": {
-        "index": 5,
-        "title": "Legacy & Reflection"
-      },
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT ?artistName ?reason ?url\nWHERE {\n    BIND ({musicgroup} as ?artist)\n    BIND ({event} as ?event)\n    ?performance a mm:LivePerformance ;\n                 schema:isPartOf   ?event ;\n                 schema:performer   ?artist .\n    ?artist schema:name ?artistName .\n    ?review schema:itemReviewed ?performance .\n    ?review schema:reviewBody ?reason .\n    ?review schema:url ?url .\n}"
     }
   ],
   "persona": "Emma",
