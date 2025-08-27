@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 # support_ctx_reset.py — deterministic, model-free support checker
-# Adds: (A) alias/date/number normalization, (B) optional BM25 candidate filter
-# Fixes: year regex, persist L in rows, preserve chosen clean context during canonicalization,
-#        early mutual-exclusion check for --clean-context vs --light-clean.
+# Now ALSO computes "coverage" (evidence -> story) when --emit-coverage is passed.
+# Adds: alias/date/number normalization, optional BM25 filtering, light/heavy clean
 
 from __future__ import annotations
-import argparse, json, re
+import argparse, json, re, time
 from pathlib import Path
 from typing import List, Dict, Any, Tuple
 
@@ -18,7 +17,7 @@ from datetime import datetime
 SENT_SPLIT   = re.compile(r'(?<=[.!?])\s+')
 TOKEN_RX     = re.compile(r"[A-Za-z0-9']+")
 PROPER_RX    = re.compile(r"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})\b")
-YEAR_RX      = re.compile(r"\b(?:19|20)\d{2}\b")       # non-capturing, returns full year
+YEAR_ONLY_RX = re.compile(r"\b(19|20)\d{2}\b")
 NUM_RX       = re.compile(r"\b\d[\d,\.]*\b")
 URL_RX       = re.compile(r'https?://\S+|<[^>]+>')
 TYPED_LIT_RX = re.compile(r'"\s*([^"]*?)\s*\^\^.*')
@@ -41,7 +40,7 @@ SCALE_WORDS = {"thousand":1_000, "million":1_000_000, "billion":1_000_000_000,
 
 # Lightweight default aliases; extend with --alias-file
 DEFAULT_ALIASES = {
-    "john f. kennedy stadium": ["jfk stadium", "john kennedy stadium"],
+    "john f. kennedy stadium": ["jfk stadium", "john kennedy stadium", "live aid stadium philadelphia", "jfk"],
     "british broadcasting corporation": ["bbc"],
     "mtv": ["music television"],
     "wembley stadium": ["wembley"],
@@ -68,21 +67,18 @@ def extract_proper(s: str) -> List[str]:
     return [m.group(0) for m in PROPER_RX.finditer(s or "")]
 
 def extract_years(s: str) -> List[str]:
-    return [m.group(0) for m in YEAR_RX.finditer(s or "")]
+    return YEAR_ONLY_RX.findall(s or "")
 
 def extract_numbers(s: str) -> List[str]:
     return NUM_RX.findall(s or "")
 
-# ----------------------- Canonicalization (A) -----------------------
+# ----------------------- Canonicalization -----------------------
 
 def _normalize_dates(text: str) -> str:
-    """Add ISO forms for common date phrases (keep originals)."""
     t = text
 
-    # "13 July 1985" or "13 Jul 1985"
-    pat1 = re.compile(r"\b(\d{1,2})\s+([A-Za-z]{3,9})\s+(\d{4})\b")
-    # "July 13, 1985"
-    pat2 = re.compile(r"\b([A-Za-z]{3,9})\s+(\d{1,2}),\s*(\d{4})\b")
+    pat1 = re.compile(r"\b(\d{1,2})\s+([A-Za-z]{3,9})\s+(\d{4})\b")   # 13 July 1985
+    pat2 = re.compile(r"\b([A-Za-z]{3,9})\s+(\d{1,2}),\s*(\d{4})\b")  # July 13, 1985
 
     def to_iso(d: int, mon: str, y: int) -> str:
         mm = MONTHS.get(mon.lower())
@@ -90,21 +86,17 @@ def _normalize_dates(text: str) -> str:
         return f"{y:04d}-{mm}-{int(d):02d}"
 
     out = t
-
     for m in pat1.finditer(t):
         d, mon, y = int(m.group(1)), m.group(2), int(m.group(3))
         iso = to_iso(d, mon, y)
         if iso: out = out.replace(m.group(0), f"{m.group(0)} {iso}")
-
     for m in pat2.finditer(t):
         mon, d, y = m.group(1), int(m.group(2)), int(m.group(3))
         iso = to_iso(d, mon, y)
         if iso: out = out.replace(m.group(0), f"{m.group(0)} {iso}")
-
     return out
 
 def _words_to_number_phrase(w: List[str]) -> int:
-    # support simple patterns: "two billion", "twenty five thousand"
     if not w: return 0
     total = 0
     current = 0
@@ -125,13 +117,12 @@ def _words_to_number_phrase(w: List[str]) -> int:
     return total + current
 
 def _normalize_spelled_numbers(text: str) -> str:
-    """Convert common spelled counts with scales to digits, keep both forms."""
     toks = re.findall(r"[A-Za-z]+|\d+|[^\w\s]", text)
     out = []
     i = 0
     while i < len(toks):
         best = None
-        for L in range(2, 6):  # up to 5 tokens
+        for L in range(2, 6):
             span = toks[i:i+L]
             if not span: break
             if not all(re.fullmatch(r"[A-Za-z]+", x or "") for x in span):
@@ -159,52 +150,12 @@ def _apply_aliases(text: str, alias_map: Dict[str, List[str]]) -> str:
             t = pattern.sub(f"{canon_l} {v_l}", t)
     return t
 
-# --- NEW: identifier normalization for KG-style names ---
-
-_CAMEL_RX   = re.compile(r'(?<!^)(?=[A-Z])')   # split CamelCase
-_TAIL_NUM_RX = re.compile(r'\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})\s+([0-9])\b')
-
-def _split_camel_and_digits(text: str) -> str:
-    """
-    Insert spaces into CamelCase and between letters+digits:
-      'RogerTaylor2' -> 'Roger Taylor 2'
-    """
-    toks = []
-    for tok in re.findall(r"[A-Za-z0-9]+|[^\w\s]", text):
-        if tok.isalpha() and tok.lower() != tok and tok.upper() != tok:
-            tok = " ".join(_CAMEL_RX.split(tok))  # RogerTaylor -> Roger Taylor
-        # letters followed by digits: 'Taylor2' -> 'Taylor 2'
-        tok = re.sub(r'([A-Za-z])(\d+)\b', r'\1 \2', tok)
-        toks.append(tok)
-    return re.sub(r"\s+", " ", " ".join(toks)).strip()
-
-def _drop_disambig_tails(text: str) -> str:
-    """
-    Drop single-digit disambiguators that are typical of KG URIs:
-      'Roger Taylor 2' -> 'Roger Taylor'
-    Avoid touching years (four digits) or real counts.
-    """
-    return _TAIL_NUM_RX.sub(r'\1', text)
-
-def normalize_identifiers(text: str) -> str:
-    # Keep both forms to maximize overlap: original + normalized
-    split = _split_camel_and_digits(text)
-    dropped = _drop_disambig_tails(split)
-    if dropped != split:
-        return f"{text} {split} {dropped}"
-    if split != text:
-        return f"{text} {split}"
-    return text
-
-
 def canonicalize_text(text: str, alias_map: Dict[str, List[str]]) -> str:
     t = strip_noise(text)
     t = _apply_aliases(t, alias_map)
     t = _normalize_dates(t)
     t = _normalize_spelled_numbers(t)
-    t = normalize_identifiers(t)  # <-- add this line
     return t
-
 
 # ----------------------- Context cleaning -----------------------
 
@@ -234,15 +185,15 @@ def normalize_context(ctxs: List[str], max_len: int = 180, near_dup: float = 0.8
         out.append(cc)
     return out
 
-# --- light clean helpers ---
-PREFIX_RX2    = re.compile(r'^\s*:?\s*(KG|WEB)\s*:\s*', re.I)
+# --- light clean helpers (recommended) ---
+PREFIX_RX = re.compile(r'^\s*:?\s*(KG|WEB)\s*:\s*', re.I)
 URL_OR_IRI_RX = re.compile(r'https?://\S+|<[^>]+>')
 
 def light_clean_line(s: str) -> str:
     if not s: return ""
     s = str(s).replace("“", '"').replace("”", '"').replace("’", "'")
     s = URL_OR_IRI_RX.sub("", s)
-    s = PREFIX_RX2.sub("", s)
+    s = PREFIX_RX.sub("", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
 
@@ -252,9 +203,8 @@ def light_clean_context(ctxs: List[str]) -> List[str]:
         cc = light_clean_line(c)
         if not cc: continue
         key = cc.lower()
-        if key in seen: continue  # exact dup only
-        seen.add(key)
-        out.append(cc)
+        if key in seen: continue
+        seen.add(key); out.append(cc)
     return out
 
 # ----------------------- Similarities (TF-IDF / char-3) -----------------------
@@ -288,7 +238,7 @@ def char3_jaccard(a: str, b: str) -> float:
     if not A or not B: return 0.0
     return len(A & B) / max(1, len(A | B))
 
-# ----------------------- BM25 (B) — optional candidate filter -----------------------
+# ----------------------- BM25 (optional candidate filter) -----------------------
 
 def _bm25_idf(N: int, df: int) -> float:
     return max(0.0, np.log((N - df + 0.5) / (df + 0.5) + 1e-9))
@@ -300,13 +250,11 @@ def bm25_rank(query: str, docs: List[str], k1: float = 1.2, b: float = 0.50) -> 
     N = len(docs)
     lens = np.array([max(1, len(toks)) for toks in D_toks], dtype=float)
     avgL = float(np.mean(lens)) if len(lens) else 1.0
-
     from collections import Counter
     dfs: Dict[str,int] = Counter()
     for toks in D_toks:
         for t in set(toks):
             dfs[t] += 1
-
     scores = np.zeros(N, dtype=float)
     for term in set(q_toks):
         idf = _bm25_idf(N, dfs.get(term, 0))
@@ -315,122 +263,76 @@ def bm25_rank(query: str, docs: List[str], k1: float = 1.2, b: float = 0.50) -> 
         denom = tfs + k1 * (1 - b + b * (lens / avgL))
         contrib = idf * (tfs * (k1 + 1)) / np.where(denom == 0, 1.0, denom)
         scores += contrib
+    return sorted(enumerate(scores), key=lambda x: x[1], reverse=True)
 
-    ranked = sorted(enumerate(scores), key=lambda x: x[1], reverse=True)
-    return ranked
+# ----------------------- Matching primitives -----------------------
 
-# ----------------------- Decision rule -----------------------
+def compute_feats(a: str, b: str) -> Dict[str, float]:
+    tf = tfidf_cosine(a, b)
+    cj = char3_jaccard(a, b)
+    a_names, b_names = set(extract_proper(a)), set(extract_proper(b))
+    a_nums , b_nums  = set(extract_numbers(a)), set(extract_numbers(b))
+    a_years, b_years = set(extract_years(a)), set(extract_years(b))
+    return {
+        "tfidf": tf,
+        "char3": cj,
+        "names": float(len(a_names & b_names) > 0),
+        "nums":  float(len(a_nums  & b_nums ) > 0),
+        "years": float(len(a_years & b_years) > 0),
+    }
 
-def det_supported(sentence: str, contexts: List[str],
-                  tf_th: float, cj_th: float) -> Tuple[bool, str, Dict[str,float]]:
-    """Return (supported?, best_ctx, features) deterministically."""
-    s = sentence
-    best_ctx = ""
-    best_sig = -1.0
-    best_feats = {"tfidf": 0.0, "char3": 0.0, "names": 0.0, "nums": 0.0, "years": 0.0}
-
-    s_names = set(extract_proper(s))
-    s_nums  = set(extract_numbers(s))
-    s_years = set(extract_years(s))
-
-    for c in contexts:
-        tf = tfidf_cosine(s, c)
-        cj = char3_jaccard(s, c)
-        c_names = set(extract_proper(c))
-        c_nums  = set(extract_numbers(c))
-        c_years = set(extract_years(c))
-
-        names_ok = float(len(s_names & c_names) > 0)
-        nums_ok  = float(len(s_nums  & c_nums ) > 0)
-        years_ok = float(len(s_years & c_years) > 0)
-
-        sig = max(tf, cj) + 0.06*names_ok + 0.04*max(nums_ok, years_ok)
-
+def best_match(query: str, candidates: List[str]) -> Tuple[int, str, Dict[str,float]]:
+    best_i, best_c, best_sig, best_feats = -1, "", -1.0, {"tfidf":0,"char3":0,"names":0,"nums":0,"years":0}
+    for i, c in enumerate(candidates):
+        feats = compute_feats(query, c)
+        sig = max(feats["tfidf"], feats["char3"]) + 0.06*feats["names"] + 0.04*max(feats["nums"], feats["years"])
         if sig > best_sig:
-            best_sig = sig
-            best_ctx = c
-            best_feats = {"tfidf": tf, "char3": cj, "names": names_ok, "nums": nums_ok, "years": years_ok}
+            best_sig = sig; best_i = i; best_c = c; best_feats = feats
+    return best_i, best_c, best_feats
 
-    anchor_ok = (best_feats["names"] >= 1.0) and (best_feats["nums"] >= 1.0 or best_feats["years"] >= 1.0)
-    lexical_ok = (best_feats["tfidf"] >= tf_th) or (best_feats["char3"] >= cj_th)
-    return bool(anchor_ok or lexical_ok), best_ctx, best_feats
-
-
-
-CAMEL_RX = re.compile(r'(?<!^)(?=[A-Z])')  # split Before Caps
-DASHLIKE_RX = re.compile(r"[–—−]+")        # normalize dash variants
-
-def _split_camel(s: str) -> str:
-    # Only split longish tokens to avoid “UK” → “U K”
-    parts = []
-    for tok in TOKEN_RX.findall(s):
-        if len(tok) >= 6 and tok.lower() == tok:  # already lowercase word
-            parts.append(tok)
-        elif len(tok) >= 6 and re.search(r"[A-Z][a-z]", tok):
-            parts.append(" ".join(CAMEL_RX.split(tok)))
-        else:
-            parts.append(tok)
-    # Re-stitch into text-ish string
-    out = s
-    for t in set(TOKEN_RX.findall(s)):
-        if len(t) >= 6 and re.search(r"[A-Z][a-z]", t):
-            out = re.sub(rf"\b{re.escape(t)}\b", " ".join(CAMEL_RX.split(t)), out)
-    return out
-
-def _smooth_punct_names(s: str) -> str:
-    # unify dash variants
-    s = DASHLIKE_RX.sub("-", s)
-    # Run-D.M.C. family → a single canonical surface "run d m c"
-    s = re.sub(r"(?i)\brun[\s\.-]*d[\s\.-]*m[\s\.-]*c\b", "run d m c", s)
-    # collapse repeated punctuation gaps
-    s = re.sub(r"[.\-_/]{1,}", " ", s)
-    s = re.sub(r"\s+", " ", s).strip()
-    return s
-
-def _light_verbalize_kg_edges(s: str) -> str:
-    # very conservative: only a couple of predicates
-    s = s.replace("→ location →", " at ")
-    s = s.replace("-> location ->", " at ")
-    s = s.replace("→ member →", " member ")
-    return s
-
+def decision_from_feats(feats: Dict[str,float], tf_th: float, cj_th: float) -> Tuple[bool, float]:
+    anchor_ok  = (feats["names"] >= 1.0) and (feats["nums"] >= 1.0 or feats["years"] >= 1.0)
+    lexical_ok = (feats["tfidf"] >= tf_th) or (feats["char3"] >= cj_th)
+    L = max(feats["tfidf"], feats["char3"])
+    return bool(anchor_ok or lexical_ok), float(L)
 
 # ----------------------- Main eval -----------------------
 
 def main():
-    ap = argparse.ArgumentParser(description="Deterministic support checker with optional normalization and BM25 filtering.")
+    ap = argparse.ArgumentParser(description="Deterministic support + (optional) coverage checker with normalization and BM25.")
     ap.add_argument("--answers", required=True, help="answers_*.jsonl")
     ap.add_argument("--out-csv", required=True)
     ap.add_argument("--out-summary", required=True)
 
-    # core thresholds
-    ap.add_argument("--clean-context", action="store_true", help="clean/dedupe context lines first (heavy)")
-    ap.add_argument("--light-clean", action="store_true", help="light clean (recommended): strip KG/WEB prefix, URLs/IRIs, collapse whitespace")
-    ap.add_argument("--tf-th", type=float, default=0.35, help="TF-IDF cosine threshold")
-    ap.add_argument("--cj-th", type=float, default=0.28, help="char-3 Jaccard threshold")
+    # support thresholds
+    ap.add_argument("--tf-th", type=float, default=0.35, help="Support TF-IDF cosine threshold")
+    ap.add_argument("--cj-th", type=float, default=0.28, help="Support char-3 Jaccard threshold")
 
-    # normalization
+    # coverage thresholds (defaults to support if unspecified)
+    ap.add_argument("--emit-coverage", action="store_true", help="Also compute coverage (evidence→story)")
+    ap.add_argument("--cov-tf-th", type=float, default=None, help="Coverage TF-IDF cosine threshold")
+    ap.add_argument("--cov-cj-th", type=float, default=None, help="Coverage char-3 Jaccard threshold")
+    ap.add_argument("--cov-out-csv", default=None, help="Path for coverage_evidence.csv")
+    ap.add_argument("--cov-out-summary", default=None, help="Path for coverage_summary.csv")
+
+    # cleaning
+    ap.add_argument("--clean-context", action="store_true", help="heavy clean/dedupe (older)")
+    ap.add_argument("--light-clean", action="store_true", help="light clean (recommended)")
     ap.add_argument("--no-canon", action="store_true", help="disable alias/date/number canonicalization")
-    ap.add_argument("--alias-file", default=None, help="JSON mapping for aliases. Format: {canon: [variants,...], ...} or [[canon,variant],...]")
+    ap.add_argument("--alias-file", default=None, help="JSON {canon:[variants,...]} or [[canon,variant],...]")
 
-    # BM25 candidate filter
-    ap.add_argument("--bm25-mode", choices=["off","filter"], default="off")
-    ap.add_argument("--bm25-k1", type=float, default=1.2)
-    ap.add_argument("--bm25-b", type=float, default=0.50, help="Try 0.25 for KG; 0.50 for Hybrid")
-    ap.add_argument("--bm25-topk", type=int, default=20)
-    ap.add_argument("--bm25-log-margin", type=float, default=0.15, help="Only for logging/audits")
-
-    # near-miss reporting
-    ap.add_argument("--near-low", type=float, default=0.28, help="Lower bound for near-miss L window (inclusive).")
-    ap.add_argument("--near-high", type=float, default=0.35, help="Upper bound for near-miss L window (exclusive).")
-    ap.add_argument("--near-topk", type=int, default=200, help="Max rows to write to near_misses.csv (sorted by L desc).")
-    ap.add_argument("--emit-near", action="store_true", help="Write near_misses.csv next to out-csv.")
+    # near-miss logging
+    ap.add_argument("--near-low", type=float, default=0.28, help="Near-miss L window low")
+    ap.add_argument("--near-high", type=float, default=0.35, help="Near-miss L window high")
+    ap.add_argument("--near-topk", type=int, default=200)
+    ap.add_argument("--emit-near", action="store_true", help="Write near_misses.csv (support)")
 
     args = ap.parse_args()
+    t0 = time.time()
 
-    # Early mutual-exclusion check
-    if args.clean_context and args.light_clean:
-        raise SystemExit("Choose only one: --clean-context (heavy) OR --light-clean (recommended).")
+    # coverage thresholds defaulting
+    cov_tf = args.cov_tf_th if args.cov_tf_th is not None else args.tf_th
+    cov_cj = args.cov_cj_th if args.cov_cj_th is not None else args.cj_th
 
     # aliases
     alias_map: Dict[str, List[str]] = DEFAULT_ALIASES.copy()
@@ -459,114 +361,111 @@ def main():
             ln = ln.strip()
             if not ln: continue
             try:
-                recs.append(json.loads(ln))
+                obj = json.loads(ln)
+                if isinstance(obj, dict):
+                    recs.append(obj)
+                else:
+                    # skip non-dict JSON (e.g., a stray string)
+                    continue
             except Exception:
-                pass
+                # ignore bad lines
+                continue
 
-    rows: List[Dict[str, Any]] = []
+    # output paths
+    out_csv = Path(args.out_csv); out_csv.parent.mkdir(parents=True, exist_ok=True)
+    out_summary = Path(args.out_summary)
 
-    #print(f"recs : {recs}")
+    # coverage outputs (defaults next to out_csv/summary)
+    cov_out_csv = Path(args.cov_out_csv) if args.cov_out_csv else out_csv.with_name("coverage_evidence.csv")
+    cov_out_summary = Path(args.cov_out_summary) if args.cov_out_summary else out_summary.with_name("coverage_summary.csv")
+
+    # guard: choose exactly one cleaner
+    if args.clean_context and args.light_clean:
+        raise SystemExit("Choose only one: --clean-context (heavy) OR --light-clean (recommended).")
+
+    support_rows: List[Dict[str, Any]] = []
+    coverage_rows: List[Dict[str, Any]] = []
+
     for rec in recs:
         bidx = rec.get("beat_index")
         bttl = rec.get("beat_title", f"Beat {bidx}")
         text_raw = rec.get("text") or ""
 
-        # --- prepare context once ---
+        # prepare contexts
         ctx_raw = [strip_noise(x) for x in (rec.get("context_lines") or []) if strip_noise(x)]
         if args.light_clean:
-            base_ctx = light_clean_context(ctx_raw)
+            ctx_pre = light_clean_context(ctx_raw)
         elif args.clean_context:
-            base_ctx = normalize_context(ctx_raw)
+            ctx_pre = normalize_context(ctx_raw)
         else:
-            base_ctx = ctx_raw
+            ctx_pre = ctx_raw
 
-        # --- canonicalize text + chosen context consistently ---
+        # canonicalize
         if not args.no_canon:
-            ctx  = [canonicalize_text(c, alias_map) for c in base_ctx]
+            ctx_clean = [canonicalize_text(c, alias_map) for c in ctx_pre]
             text = canonicalize_text(text_raw, alias_map)
         else:
-            ctx  = base_ctx
+            ctx_clean = [strip_noise(c) for c in ctx_pre]
             text = strip_noise(text_raw)
 
         sents = split_sents(text)
 
+        # -------- SUPPORT (sentence -> context) --------
         for si, s in enumerate(sents):
-            candidate_ctx = ctx
+            # BM25 filter contexts (optional)
+            candidate_ctx = ctx_clean
 
-            bm25_best = bm25_second = bm25_margin = float("nan")
-            if args.bm25_mode == "filter" and candidate_ctx:
-                ranked = bm25_rank(s, candidate_ctx, k1=args.bm25_k1, b=args.bm25_b)
-                if ranked:
-                    bm25_best = ranked[0][1]
-                    if len(ranked) >= 2:
-                        bm25_second = ranked[1][1]
-                        if bm25_best > 0:
-                            bm25_margin = (bm25_best - bm25_second) / max(1e-9, bm25_best)
-                keep = [idx for idx,_ in ranked[:max(1, min(args.bm25_topk, len(ranked)))]]
-                candidate_ctx = [candidate_ctx[i] for i in keep]
-
-            supported, best_ctx, feats = det_supported(s, candidate_ctx, tf_th=args.tf_th, cj_th=args.cj_th)
-            L = max(feats["tfidf"], feats["char3"])  # lexical support score
-
-            rows.append({
+            best_i, best_ctx, feats = best_match(s, candidate_ctx)
+            supported, L = decision_from_feats(feats, args.tf_th, args.cj_th)
+            support_rows.append({
                 "beat_index": bidx, "beat_title": bttl, "sentence_idx": si,
                 "sentence": s, "best_evidence": best_ctx,
-                "tfidf": feats["tfidf"], "char3": feats["char3"], "L": L,   # keep L in rows
+                "tfidf": feats["tfidf"], "char3": feats["char3"],
                 "name_overlap": feats["names"], "num_overlap": feats["nums"], "year_overlap": feats["years"],
-                "bm25_best": bm25_best, "bm25_second": bm25_second, "bm25_margin": bm25_margin,
-                "bm25_mode": args.bm25_mode, "bm25_b": args.bm25_b, "bm25_k1": args.bm25_k1, "bm25_topk": args.bm25_topk,
+                "L": L,
                 "canon_enabled": (not args.no_canon),
-                "clean_context": bool(args.clean_context), "light_clean": bool(args.light_clean),
                 "supported": bool(supported),
             })
 
-    df = pd.DataFrame(rows).sort_values(["beat_index","sentence_idx"]).reset_index(drop=True)
-    out_csv = Path(args.out_csv); out_csv.parent.mkdir(parents=True, exist_ok=True)
-    df.to_csv(out_csv, index=False, encoding="utf-8")
+        # -------- COVERAGE (context -> sentence) --------
+        if args.emit_coverage:
+            for ci, c in enumerate(ctx_clean):
+                candidate_sents = sents
 
-    if df.empty:
-        summ = pd.DataFrame(columns=["beat_index","beat_title","sentences","supported_sentences","support_pct"])
+                best_i, best_sent, feats = best_match(c, candidate_sents)
+                covered, L = decision_from_feats(feats, cov_tf, cov_cj)
+                coverage_rows.append({
+                    "beat_index": bidx, "beat_title": bttl, "evidence_idx": ci,
+                    "evidence": c, "best_sentence": best_sent,
+                    "tfidf": feats["tfidf"], "char3": feats["char3"],
+                    "name_overlap": feats["names"], "num_overlap": feats["nums"], "year_overlap": feats["years"],
+                    "L": L, "covered": bool(covered),
+                    "canon_enabled": (not args.no_canon),
+                })
+
+    # ---------- Write SUPPORT outputs ----------
+    df_sup = pd.DataFrame(support_rows).sort_values(["beat_index","sentence_idx"]).reset_index(drop=True)
+    df_sup.to_csv(out_csv, index=False, encoding="utf-8")
+
+    if df_sup.empty:
+        summ_sup = pd.DataFrame(columns=["beat_index","beat_title","sentences","supported_sentences","support_pct"])
         tot = sup = 0
     else:
-        summ = (
-            df.groupby(["beat_index","beat_title"])
-              .agg(sentences=("sentence_idx","nunique"),
-                   supported_sentences=("supported","sum"),
-                   support_pct=("supported", lambda x: 100.0 * x.mean()))
-              .reset_index().sort_values("beat_index")
+        summ_sup = (
+            df_sup.groupby(["beat_index","beat_title"])
+                  .agg(sentences=("sentence_idx","nunique"),
+                       supported_sentences=("supported","sum"),
+                       support_pct=("supported", lambda x: 100.0 * x.mean()))
+                  .reset_index()
+                  .sort_values("beat_index")
         )
-        tot = int(df.shape[0]); sup = int(df["supported"].sum())
+        tot = int(df_sup.shape[0]); sup = int(df_sup["supported"].sum())
 
-        # per-beat stats for unsupported L (optional but useful)
-        unsup = df[~df["supported"]].copy()
-        if not unsup.empty and "L" in unsup.columns:
-            agg_unsup = (unsup.groupby(["beat_index", "beat_title"])
-                         .agg(unsup_sentences=("sentence_idx", "nunique"),
-                              L_mean_unsup=("L", "mean"),
-                              L_median_unsup=("L", "median"))
-                         .reset_index())
-            summ = summ.merge(agg_unsup, on=["beat_index", "beat_title"], how="left")
-        else:
-            summ["unsup_sentences"] = 0
-            summ["L_mean_unsup"] = float("nan")
-            summ["L_median_unsup"] = float("nan")
+    summ_sup.to_csv(out_summary, index=False, encoding="utf-8")
 
-    out_summary = Path(args.out_summary)
-    summ.to_csv(out_summary, index=False, encoding="utf-8")
-
-    meta = {
-        "ts": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
-        "answers_path": str(ans_path),
-        "tf_th": args.tf_th, "cj_th": args.cj_th,
-        "canon_enabled": (not args.no_canon),
-        "clean_context": bool(args.clean_context), "light_clean": bool(args.light_clean),
-        "bm25_mode": args.bm25_mode, "bm25_k1": args.bm25_k1, "bm25_b": args.bm25_b, "bm25_topk": args.bm25_topk,
-        "sentences_total": tot, "sentences_supported": sup,
-    }
-    out_summary.with_suffix(".meta.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
-
-    if getattr(args, "emit_near", False) and not df.empty:
-        near = df[(~df["supported"]) & (df["L"] >= args.near_low) & (df["L"] < args.near_high)].copy()
+    # near-misses (support)
+    if getattr(args, "emit_near", False) and not df_sup.empty:
+        near = df_sup[(~df_sup["supported"]) & (df_sup["L"] >= args.near_low) & (df_sup["L"] < args.near_high)].copy()
         near = near.sort_values(["L", "beat_index", "sentence_idx"], ascending=[False, True, True]).head(args.near_topk)
         near_cols = ["beat_index", "beat_title", "sentence_idx", "L", "tfidf", "char3",
                      "name_overlap", "num_overlap", "year_overlap", "sentence", "best_evidence"]
@@ -574,10 +473,56 @@ def main():
         near.to_csv(near_path, index=False, encoding="utf-8", columns=[c for c in near_cols if c in near.columns])
         print(f"[DET] wrote {near_path} (near-miss window [{args.near_low:.2f}, {args.near_high:.2f}))")
 
+    # ---------- Write COVERAGE outputs (optional) ----------
+    if args.emit_coverage:
+        df_cov = pd.DataFrame(coverage_rows).sort_values(["beat_index","evidence_idx"]).reset_index(drop=True)
+        df_cov.to_csv(cov_out_csv, index=False, encoding="utf-8")
+
+        if df_cov.empty:
+            summ_cov = pd.DataFrame(columns=["beat_index","beat_title","evidence_lines","covered_evidence","coverage_pct"])
+            ev_tot = ev_cov = 0
+        else:
+            summ_cov = (
+                df_cov.groupby(["beat_index","beat_title"])
+                      .agg(evidence_lines=("evidence_idx","nunique"),
+                           covered_evidence=("covered","sum"),
+                           coverage_pct=("covered", lambda x: 100.0 * x.mean()))
+                      .reset_index()
+                      .sort_values("beat_index")
+            )
+            ev_tot = int(df_cov.shape[0]); ev_cov = int(df_cov["covered"].sum())
+        summ_cov.to_csv(cov_out_summary, index=False, encoding="utf-8")
+    else:
+        df_cov = None
+        ev_tot = ev_cov = 0
+
+    # ---------- meta + console ----------
+    meta = {
+        "ts": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
+        "answers_path": str(ans_path),
+        "tf_th": args.tf_th, "cj_th": args.cj_th,
+        "cov_tf_th": cov_tf, "cov_cj_th": cov_cj,
+        "canon_enabled": (not args.no_canon),
+        "clean_context": bool(args.clean_context), "light_clean": bool(args.light_clean),
+        "sentences_total": int(df_sup.shape[0]) if not df_sup.empty else 0,
+        "sentences_supported": int(df_sup["supported"].sum()) if not df_sup.empty else 0,
+        "evidence_total": ev_tot, "evidence_covered": ev_cov,
+        "duration_sec": round(time.time() - t0, 3),
+    }
+    out_summary.with_suffix(".meta.json").write_text(json.dumps(meta, indent=2), encoding="utf-8")
+
     print(f"[DET] wrote {out_csv}")
     print(f"[DET] wrote {out_summary}")
-    pct = (100.0*sup/max(1,tot))
-    print(f"[DET] support: {sup}/{tot} ({pct:.1f}%)  (canon={'on' if not args.no_canon else 'off'}, bm25={args.bm25_mode})")
+    if args.emit_coverage:
+        print(f"[DET] wrote {cov_out_csv}")
+        print(f"[DET] wrote {cov_out_summary}")
+    pct_sup = (100.0*sup/max(1,tot))
+    if args.emit_coverage:
+        pct_cov = (100.0*ev_cov/max(1,ev_tot))
+        print(f"[DET] support: {sup}/{tot} ({pct_sup:.1f}%)  coverage: {ev_cov}/{ev_tot} ({pct_cov:.1f}%)  "
+              f"(canon={'on' if not args.no_canon else 'off'})")
+    else:
+        print(f"[DET] support: {sup}/{tot} ({pct_sup:.1f}%)  (canon={'on' if not args.no_canon else 'off'})")
 
 if __name__ == "__main__":
     main()
