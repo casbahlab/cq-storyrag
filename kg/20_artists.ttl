@@ -1,8 +1,8 @@
-@prefix schema: <http://schema.org/> .
-@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
 @prefix ex: <http://wembrewind.live/ex#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ex:AdamAnt a schema:Person,
@@ -23,26 +23,6 @@ ex:AdamAnt a schema:Person,
         ex:NewWave,
         ex:PopRock,
         ex:PostPunk .
-
-ex:BandAid a schema:MusicGroup,
-        schema:PropertyValue,
-        mm:MusicArtist ;
-    schema:foundingDate "1984" ;
-    schema:foundingLocation "London (Greater London)" ;
-    schema:name "Band Aid" ;
-    schema:propertyID "mbid" ;
-    schema:value "0ecaa896-58fa-4dca-b53d-8da7bc5f59c5" ;
-    owl:sameAs <https://musicbrainz.org/artist/0ecaa896-58fa-4dca-b53d-8da7bc5f59c5> .
-
-ex:BernardWalton a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1917" ;
-    schema:gender "Male" ;
-    schema:name "Bernard Walton" ;
-    schema:propertyID "mbid" ;
-    schema:value "328fa3f5-489e-4984-a909-440d5809ed9c" ;
-    owl:sameAs <https://musicbrainz.org/artist/328fa3f5-489e-4984-a909-440d5809ed9c> .
 
 ex:BillyOcean a schema:Person,
         schema:PropertyValue,
@@ -79,19 +59,6 @@ ex:BobDylan a schema:Person,
         ex:PopRock,
         ex:RootsRock,
         ex:TraditionalPop .
-
-ex:BranfordMarsalis a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1960-08-26"^^xsd:date ;
-    schema:birthPlace "Breaux Bridge" ;
-    schema:gender "Male" ;
-    schema:name "Branford Marsalis" ;
-    schema:propertyID "mbid" ;
-    schema:value "fd9cdeb8-5436-46a7-8e17-4ee900219246" ;
-    owl:sameAs <https://musicbrainz.org/artist/fd9cdeb8-5436-46a7-8e17-4ee900219246> ;
-    mm:hasGenre ex:HardBop,
-        ex:Jazz .
 
 ex:BryanAdams a schema:Person,
         schema:PropertyValue,
@@ -145,51 +112,6 @@ ex:DavidBowie a schema:Person,
         ex:NewWave,
         ex:PopRock,
         ex:RockMusic .
-
-ex:DavidGilmour a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1946-03-06"^^xsd:date ;
-    schema:birthPlace "Cambridge" ;
-    schema:gender "Male" ;
-    schema:name "David Gilmour" ;
-    schema:propertyID "mbid" ;
-    schema:value "1dce970e-34bc-48b2-ab51-48d87544a4c2" ;
-    owl:sameAs <https://musicbrainz.org/artist/1dce970e-34bc-48b2-ab51-48d87544a4c2> ;
-    mm:hasGenre ex:AmbientDub,
-        ex:ArtRock,
-        ex:BluesRock,
-        ex:ClassicRock,
-        ex:HardRock,
-        ex:ProgressiveRock,
-        ex:PsychedelicRock,
-        ex:SoftRock .
-
-ex:DavidRuffin a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1941-01-18"^^xsd:date ;
-    schema:birthPlace "Whynot" ;
-    schema:gender "Male" ;
-    schema:name "David Ruffin" ;
-    schema:propertyID "mbid" ;
-    schema:value "3d2ac089-fdc8-4381-a4b5-fcdc7fc36590" ;
-    owl:sameAs <https://musicbrainz.org/artist/3d2ac089-fdc8-4381-a4b5-fcdc7fc36590> ;
-    mm:hasGenre ex:Disco,
-        ex:Soul .
-
-ex:EddieKendricks a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1939-12-17"^^xsd:date ;
-    schema:birthPlace "Union Springs" ;
-    schema:gender "Male" ;
-    schema:name "Eddie Kendricks" ;
-    schema:propertyID "mbid" ;
-    schema:value "cf3ea6e9-c856-4737-a988-6b64cc9f2bf2" ;
-    owl:sameAs <https://musicbrainz.org/artist/cf3ea6e9-c856-4737-a988-6b64cc9f2bf2> ;
-    mm:hasGenre ex:Motown,
-        ex:Soul .
 
 ex:EltonJohn a schema:Person,
         schema:PropertyValue,
@@ -251,20 +173,6 @@ ex:HowardJones a schema:Person,
     owl:sameAs <https://musicbrainz.org/artist/23b2cc78-7595-4630-bebb-a349a4f25262> ;
     mm:hasGenre ex:NewWave .
 
-ex:JimmyPage a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1944-01-09"^^xsd:date ;
-    schema:birthPlace "Heston" ;
-    schema:gender "Male" ;
-    schema:name "Jimmy Page" ;
-    schema:propertyID "mbid" ;
-    schema:value "519774a4-3b18-4042-b8c0-927845a616c9" ;
-    owl:sameAs <https://musicbrainz.org/artist/519774a4-3b18-4042-b8c0-927845a616c9> ;
-    mm:hasGenre ex:AcousticRock,
-        ex:BluesRock,
-        ex:HardRock .
-
 ex:JoanBaez a schema:Person,
         schema:PropertyValue,
         mm:Musician ;
@@ -277,29 +185,6 @@ ex:JoanBaez a schema:Person,
     owl:sameAs <https://musicbrainz.org/artist/92d37892-6186-4459-9cc1-f0dde57652d0> ;
     mm:hasGenre ex:Americana,
         ex:RootsRock .
-
-ex:JohnPaulJones a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1946-01-03"^^xsd:date ;
-    schema:birthPlace "Sidcup" ;
-    schema:gender "Male" ;
-    schema:name "John Paul Jones" ;
-    schema:propertyID "mbid" ;
-    schema:value "4490113a-3880-4f5b-a39b-105bfceaed04" ;
-    owl:sameAs <https://musicbrainz.org/artist/4490113a-3880-4f5b-a39b-105bfceaed04> .
-
-ex:KeithRichards a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1943-12-18"^^xsd:date ;
-    schema:birthPlace "Dartford" ;
-    schema:gender "Male" ;
-    schema:name "Keith Richards" ;
-    schema:propertyID "mbid" ;
-    schema:value "f0ed72a3-ae8f-4cf7-b51d-2696a2330230" ;
-    owl:sameAs <https://musicbrainz.org/artist/f0ed72a3-ae8f-4cf7-b51d-2696a2330230> ;
-    mm:hasGenre ex:BluesRock .
 
 ex:KennyLoggins a schema:Person,
         schema:PropertyValue,
@@ -4259,20 +4144,6 @@ ex:NikKershaw a schema:Person,
     mm:hasGenre ex:NewWave,
         ex:PopRock .
 
-ex:PatMetheny a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1954-08-12"^^xsd:date ;
-    schema:birthPlace "Lee's Summit" ;
-    schema:gender "Male" ;
-    schema:name "Pat Metheny" ;
-    schema:propertyID "mbid" ;
-    schema:value "7daac7f9-8fcc-485f-a14f-f8091d98cf25" ;
-    owl:sameAs <https://musicbrainz.org/artist/7daac7f9-8fcc-485f-a14f-f8091d98cf25> ;
-    mm:hasGenre ex:ContemporaryJazz,
-        ex:Jazz,
-        ex:JazzFusion .
-
 ex:PattiLabelle a schema:Person,
         schema:PropertyValue,
         mm:Musician ;
@@ -4284,16 +4155,6 @@ ex:PattiLabelle a schema:Person,
     schema:value "f319ec6a-9290-449b-baef-4244809c487a" ;
     owl:sameAs <https://musicbrainz.org/artist/f319ec6a-9290-449b-baef-4244809c487a> ;
     mm:hasGenre ex:Soul .
-
-ex:PaulMartinez a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1974-10-06"^^xsd:date ;
-    schema:birthPlace "Leicester" ;
-    schema:name "Paul Martinez" ;
-    schema:propertyID "mbid" ;
-    schema:value "d5dc871f-8386-40f2-8a74-f58d595ff76d" ;
-    owl:sameAs <https://musicbrainz.org/artist/d5dc871f-8386-40f2-8a74-f58d595ff76d> .
 
 ex:PaulMccartney a schema:Person,
         schema:PropertyValue,
@@ -4362,35 +4223,6 @@ ex:RickSpringfield a schema:Person,
         ex:SoftRock,
         ex:SynthPop .
 
-ex:RobertPlant a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1948-08-20"^^xsd:date ;
-    schema:birthPlace "West Bromwich" ;
-    schema:gender "Male" ;
-    schema:name "Robert Plant" ;
-    schema:propertyID "mbid" ;
-    schema:value "bd53f9a7-8be9-46b0-bf7d-1deea3cb57bc" ;
-    owl:sameAs <https://musicbrainz.org/artist/bd53f9a7-8be9-46b0-bf7d-1deea3cb57bc> ;
-    mm:hasGenre ex:AcousticRock,
-        ex:Americana,
-        ex:BluesRock,
-        ex:CrossoverProg,
-        ex:FolkRock,
-        ex:HardRock .
-
-ex:RonnieWood a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1947-06-01"^^xsd:date ;
-    schema:birthPlace "Hillingdon" ;
-    schema:gender "Male" ;
-    schema:name "Ronnie Wood" ;
-    schema:propertyID "mbid" ;
-    schema:value "92ed8183-8f22-42b2-af4e-d44137610fa0" ;
-    owl:sameAs <https://musicbrainz.org/artist/92ed8183-8f22-42b2-af4e-d44137610fa0> ;
-    mm:hasGenre ex:Blues .
-
 ex:Sting a schema:Person,
         schema:PropertyValue,
         mm:Musician ;
@@ -4409,31 +4241,6 @@ ex:Sting a schema:Person,
         ex:SoftRock,
         ex:SophistiPop .
 
-ex:TheBandOfTheColdstreamGuards a schema:MusicGroup,
-        schema:PropertyValue,
-        mm:MusicArtist ;
-    schema:foundingDate "1785-05-16"^^xsd:date ;
-    schema:name "The Band of the Coldstream Guards" ;
-    schema:propertyID "mbid" ;
-    schema:value "c7cdb399-a9f6-45b7-9602-b9515723813d" ;
-    owl:sameAs <https://musicbrainz.org/artist/c7cdb399-a9f6-45b7-9602-b9515723813d> .
-
-ex:ThomasDolby a schema:Person,
-        schema:PropertyValue,
-        mm:Musician ;
-    schema:birthDate "1958-10-14"^^xsd:date ;
-    schema:birthPlace "London (Greater London)" ;
-    schema:gender "Male" ;
-    schema:name "Thomas Dolby" ;
-    schema:propertyID "mbid" ;
-    schema:value "5a8cc407-7efb-4e94-9637-d5896395e754" ;
-    owl:sameAs <https://musicbrainz.org/artist/5a8cc407-7efb-4e94-9637-d5896395e754> ;
-    mm:hasGenre ex:ArtPop,
-        ex:NewWave,
-        ex:PopRock,
-        ex:SophistiPop,
-        ex:SynthPop .
-
 ex:TinaTurner a schema:Person,
         schema:PropertyValue,
         mm:Musician ;
@@ -4447,15 +4254,6 @@ ex:TinaTurner a schema:Person,
     mm:hasGenre ex:PopRock,
         ex:PopSoul,
         ex:Soul .
-
-ex:UsaForAfrica a schema:MusicGroup,
-        schema:PropertyValue,
-        mm:MusicArtist ;
-    schema:foundingDate "1985-01-10"^^xsd:date ;
-    schema:name "USA for Africa" ;
-    schema:propertyID "mbid" ;
-    schema:value "45e3c90f-2de6-4452-99b3-8dbf7a3cf6df" ;
-    owl:sameAs <https://musicbrainz.org/artist/45e3c90f-2de6-4452-99b3-8dbf7a3cf6df> .
 
 ex:AcousticGuitar a ex:MusicInstrument ;
     rdfs:label "Acoustic Guitar" ;
