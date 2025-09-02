@@ -114,6 +114,9 @@ Rules:
 - If a detail is missing, acknowledge the gap briefly rather than inventing it.
 """
 
+#- Return SSML only inside <speak>; keep wording unchanged; mark intonation by wrapping each clause in <prosody> with pitch=\"+2st\" (rise), \"-2st\" (fall), \"0st\" (neutral), \"+4st\" (question), \"-4st\" (final); insert pauses with <break time=\"200ms\"/>.
+
+
 
 
 

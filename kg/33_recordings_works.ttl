@@ -1800,747 +1800,638 @@ ex:Recording_YuRockMissionForAMillionYears_573da091 a mm:Recording ;
     schema1:recordingOf ex:Work_ZaMilionGodinaForAMillionYears_ef428638_2 ;
     owl:sameAs <https://musicbrainz.org/recording/573da091-f802-4eb4-8c19-c554c3192cf9> .
 
-ex:Work_A1985Rewind_7dd17803 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_A1985Rewind_7dd17803 a mm:MusicEntity ;
     rdfs:label "1985 Rewind" ;
     schema1:name "1985 Rewind" ;
     mm:hasRecording ex:Recording_A1985Rewind_38d05d49 .
 
-ex:Work_AViewToAKill_f9b82c4a_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AViewToAKill_f9b82c4a_2 a mm:MusicEntity ;
     rdfs:label "A View to a Kill" ;
     schema1:name "A View to a Kill" ;
     owl:sameAs <https://musicbrainz.org/work/f9b82c4a-0d0e-3b62-829b-25643605d15d> ;
     mm:hasRecording ex:Recording_AViewToAKill_a694f876 .
 
-ex:Work_AWorldOfDifference_185e60a3_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AWorldOfDifference_185e60a3_2 a mm:MusicEntity ;
     rdfs:label "A World of Difference" ;
     schema1:name "A World of Difference" ;
     owl:sameAs <https://musicbrainz.org/work/185e60a3-73c8-495f-a5ae-ffaf5cd99a26> ;
     mm:hasRecording ex:Recording_AWorldOfDifference_adbcfa3e .
 
-ex:Work_AinTTooProudToBeg_d97a13df_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AinTTooProudToBeg_d97a13df_2 a mm:MusicEntity ;
     rdfs:label "Ain’t Too Proud to Beg" ;
     schema1:name "Ain’t Too Proud to Beg" ;
     owl:sameAs <https://musicbrainz.org/work/d97a13df-e992-399e-9b1e-8eb4c83af1b7> ;
     mm:hasRecording ex:Recording_AinTTooProudToBeg_98a1fc06 .
 
-ex:Work_AllOfUs_b2bc057a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AllOfUs_b2bc057a a mm:MusicEntity ;
     rdfs:label "All of Us" ;
     schema1:name "All of Us" ;
     mm:hasRecording ex:Recording_AllOfUs_eaa279da .
 
-ex:Work_AllYouNeedIsLove_0dfca25e_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AllYouNeedIsLove_0dfca25e_2 a mm:MusicEntity ;
     rdfs:label "All You Need Is Love" ;
     schema1:name "All You Need Is Love" ;
     owl:sameAs <https://musicbrainz.org/work/0dfca25e-e069-3d5b-8b0a-97571eeb0892> ;
     mm:hasRecording ex:Recording_AllYouNeedIsLove_f6f9aebe .
 
-ex:Work_AllYouZombies_ca255d52_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AllYouZombies_ca255d52_2 a mm:MusicEntity ;
     rdfs:label "All You Zombies" ;
     schema1:name "All You Zombies" ;
     owl:sameAs <https://musicbrainz.org/work/ca255d52-ba9a-46f1-be18-f5e0aa043534> ;
     mm:hasRecording ex:Recording_AllYouZombies_bfd09d22 .
 
-ex:Work_AmazingGrace_a5393197 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AmazingGrace_a5393197 a mm:MusicEntity ;
     rdfs:label "Amazing Grace" ;
     schema1:name "Amazing Grace" ;
     owl:sameAs <https://musicbrainz.org/work/a5393197-4f8e-31f3-a535-2de2ff275133> ;
     mm:hasRecording ex:Recording_AmazingGrace_7eaf7963 .
 
-ex:Work_AmericanGirl_667f5519_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AmericanGirl_667f5519_2 a mm:MusicEntity ;
     rdfs:label "American Girl" ;
     schema1:name "American Girl" ;
     owl:sameAs <https://musicbrainz.org/work/667f5519-d5d5-3b0a-8c78-5d8d36b98dfe> ;
     mm:hasRecording ex:Recording_AmericanGirl_7ef5bce9 .
 
-ex:Work_AndWeDanced_55e8031f a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AndWeDanced_55e8031f a mm:MusicEntity ;
     rdfs:label "And We Danced" ;
     schema1:name "And We Danced" ;
     owl:sameAs <https://musicbrainz.org/work/55e8031f-56bc-4a74-b30f-8d9a806880f6> ;
     mm:hasRecording ex:Recording_AndWeDanced_095b10f0 .
 
-ex:Work_Annoncement_fc6c9eb3 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Annoncement_fc6c9eb3 a mm:MusicEntity ;
     rdfs:label "[annoncement]" ;
     schema1:name "[annoncement]" ;
     mm:hasRecording ex:Recording_Annoncement_4a0a49dd .
 
-ex:Work_BackOnTheChainGang_31d4aa2c a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BackOnTheChainGang_31d4aa2c a mm:MusicEntity ;
     rdfs:label "Back on the Chain Gang" ;
     schema1:name "Back on the Chain Gang" ;
     owl:sameAs <https://musicbrainz.org/work/31d4aa2c-688d-3549-a7a8-6120192f1384> ;
     mm:hasRecording ex:Recording_BackOnTheChainGang_e955dd67 .
 
-ex:Work_Bad_62d0a051 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Bad_62d0a051 a mm:MusicEntity ;
     rdfs:label "Bad" ;
     schema1:name "Bad" ;
     owl:sameAs <https://musicbrainz.org/work/62d0a051-20ff-3fce-961c-c9157e38a07d> ;
     mm:hasRecording ex:Recording_Bad_79932b83 .
 
-ex:Work_BalladOfHollisBrown_5ed18d5c a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BalladOfHollisBrown_5ed18d5c a mm:MusicEntity ;
     rdfs:label "Ballad of Hollis Brown" ;
     schema1:name "Ballad of Hollis Brown" ;
     owl:sameAs <https://musicbrainz.org/work/5ed18d5c-9848-393a-a919-1cc02ef4bfe8> ;
     mm:hasRecording ex:Recording_TheBalladOfHollisBrown_ae1feb90 .
 
-ex:Work_BandAidNewReport_1212b729 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BandAidNewReport_1212b729 a mm:MusicEntity ;
     rdfs:label "Band Aid New Report" ;
     schema1:name "Band Aid New Report" ;
     mm:hasRecording ex:Recording_BandAidNewReport_513cb62a .
 
-ex:Work_BandPresentation_3906ac72 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BandPresentation_3906ac72 a mm:MusicEntity ;
     rdfs:label "[band presentation]" ;
     schema1:name "[band presentation]" ;
     mm:hasRecording ex:Recording_BandPresentation_dd6bf224 .
 
-ex:Work_BbcIntermissionAbcIntermission_08fa10cb a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BbcIntermissionAbcIntermission_08fa10cb a mm:MusicEntity ;
     rdfs:label "[BBC intermission] / [ABC intermission]" ;
     schema1:name "[BBC intermission] / [ABC intermission]" ;
     mm:hasRecording ex:Recording_BbcIntermissionAbcIntermission_19c74232 .
 
-ex:Work_BennieAndTheJets_6ef8fb46_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BennieAndTheJets_6ef8fb46_2 a mm:MusicEntity ;
     rdfs:label "Bennie and the Jets" ;
     schema1:name "Bennie and the Jets" ;
     owl:sameAs <https://musicbrainz.org/work/6ef8fb46-a4dc-312f-9a18-e21682fd7550> ;
     mm:hasRecording ex:Recording_BennieAndTheJets_6e546f44 .
 
-ex:Work_Bernadette_78a776b8_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Bernadette_78a776b8_2 a mm:MusicEntity ;
     rdfs:label "Bernadette" ;
     schema1:name "Bernadette" ;
     owl:sameAs <https://musicbrainz.org/work/78a776b8-34fa-4f93-8868-508a6487eab7> ;
     mm:hasRecording ex:Recording_Bernadette_af9d9185 .
 
-ex:Work_BlowinInTheWind_f5a12d42 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BlowinInTheWind_f5a12d42 a mm:MusicEntity ;
     rdfs:label "Blowin’ in the Wind" ;
     schema1:name "Blowin’ in the Wind" ;
     owl:sameAs <https://musicbrainz.org/work/f5a12d42-00a1-3bc2-8ed1-df2506ea3db2> ;
     mm:hasRecording ex:Recording_BlowinInTheWind_63170ff1 .
 
-ex:Work_BohemianRhapsody_41c94a08 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BohemianRhapsody_41c94a08 a mm:MusicEntity ;
     rdfs:label "Bohemian Rhapsody" ;
     schema1:name "Bohemian Rhapsody" ;
     owl:sameAs <https://musicbrainz.org/work/41c94a08-a551-3c86-bb17-d9a52e3a618b> ;
     mm:hasRecording ex:Recording_BohemianRhapsody_6b547796 .
 
-ex:Work_BonoOnChristmas_1d40a6f3 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BonoOnChristmas_1d40a6f3 a mm:MusicEntity ;
     rdfs:label "Bono on Christmas" ;
     schema1:name "Bono on Christmas" ;
     mm:hasRecording ex:Recording_BonoOnChristmas_7b56ed1b .
 
-ex:Work_BoysAndGirls_4af8cc8e_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BoysAndGirls_4af8cc8e_2 a mm:MusicEntity ;
     rdfs:label "Boys and Girls" ;
     schema1:name "Boys and Girls" ;
     owl:sameAs <https://musicbrainz.org/work/4af8cc8e-f7ef-4249-a944-b49b374a309e> ;
     mm:hasRecording ex:Recording_BoysAndGirls_7cb4fb3d .
 
-ex:Work_Brotherhood_92d118d8_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Brotherhood_92d118d8_2 a mm:MusicEntity ;
     rdfs:label "Brotherhood" ;
     schema1:name "Brotherhood" ;
     owl:sameAs <https://musicbrainz.org/work/92d118d8-8f79-4e8d-8458-c7d68b47403c> ;
     mm:hasRecording ex:Recording_Brotherhood_d1e40685 .
 
-ex:Work_ByThePool_7eeea52e a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ByThePool_7eeea52e a mm:MusicEntity ;
     rdfs:label "By the Pool" ;
     schema1:name "By the Pool" ;
     mm:hasRecording ex:Recording_ByThePool_2140460b .
 
-ex:Work_CaliforniaGirls_9c56c803 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_CaliforniaGirls_9c56c803 a mm:MusicEntity ;
     rdfs:label "California Girls" ;
     schema1:name "California Girls" ;
     owl:sameAs <https://musicbrainz.org/work/9c56c803-4e62-3c9a-a734-28bb845ebb06> ;
     mm:hasRecording ex:Recording_BeachBoysCaliforniaGirls_4fbf7149 .
 
-ex:Work_CanIGetAWitness_238819bb_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_CanIGetAWitness_238819bb_2 a mm:MusicEntity ;
     rdfs:label "Can I Get a Witness" ;
     schema1:name "Can I Get a Witness" ;
     owl:sameAs <https://musicbrainz.org/work/238819bb-3897-3a6f-9385-bbddd5ea3c6f> ;
     mm:hasRecording ex:Recording_CanIGetAWitness_d38daca0 .
 
-ex:Work_CanTFightThisFeeling_4b497a42_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_CanTFightThisFeeling_4b497a42_2 a mm:MusicEntity ;
     rdfs:label "Can’t Fight This Feeling" ;
     schema1:name "Can’t Fight This Feeling" ;
     owl:sameAs <https://musicbrainz.org/work/4b497a42-49d5-3abb-9565-1da22b7686cb> ;
     mm:hasRecording ex:Recording_CanTFightThisFeeling_6b4e30bc .
 
-ex:Work_CaribbeanQueen_d4d2cc6d a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_CaribbeanQueen_d4d2cc6d a mm:MusicEntity ;
     rdfs:label "Caribbean Queen" ;
     schema1:name "Caribbean Queen" ;
     owl:sameAs <https://musicbrainz.org/work/d4d2cc6d-511f-4393-a012-03be7c4bdbee> ;
     mm:hasRecording ex:Recording_CaribbeanQueen_1dacb861 .
 
-ex:Work_Caroline_c758c89e_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Caroline_c758c89e_2 a mm:MusicEntity ;
     rdfs:label "Caroline" ;
     schema1:name "Caroline" ;
     owl:sameAs <https://musicbrainz.org/work/c758c89e-a246-38b9-8b4f-3ef4febe96d6> ;
     mm:hasRecording ex:Recording_Caroline_a514cf78 .
 
-ex:Work_Cherish_7331e730 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Cherish_7331e730 a mm:MusicEntity ;
     rdfs:label "Cherish" ;
     schema1:name "Cherish" ;
     owl:sameAs <https://musicbrainz.org/work/7331e730-a7d6-4e03-812e-ad2cca7aaf36> ;
     mm:hasRecording ex:Recording_Cherish_1b54ade8 .
 
-ex:Work_ChildrenOfTheGrave_08b8087b a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ChildrenOfTheGrave_08b8087b a mm:MusicEntity ;
     rdfs:label "Children of the Grave" ;
     schema1:name "Children of the Grave" ;
     owl:sameAs <https://musicbrainz.org/work/08b8087b-a576-3fe7-a37f-bc35ceaea292> ;
     mm:hasRecording ex:Recording_ChildrenOfTheGrave_26fa12f1 .
 
-ex:Work_ComeBackAndStay_ad4e5fd6_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ComeBackAndStay_ad4e5fd6_2 a mm:MusicEntity ;
     rdfs:label "Come Back and Stay" ;
     schema1:name "Come Back and Stay" ;
     owl:sameAs <https://musicbrainz.org/work/ad4e5fd6-f5e7-306a-99e8-d54209c9c8ac> ;
     mm:hasRecording ex:Recording_ComeBackAndStay_4f38bb16 .
 
-ex:Work_CrazyLittleThingCalledLove_dad1c2a9 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_CrazyLittleThingCalledLove_dad1c2a9 a mm:MusicEntity ;
     rdfs:label "Crazy Little Thing Called Love" ;
     schema1:name "Crazy Little Thing Called Love" ;
     owl:sameAs <https://musicbrainz.org/work/dad1c2a9-3d32-319f-bfc8-4783b8731be0> ;
     mm:hasRecording ex:Recording_CrazyLittleThingCalledLove_20b2a2c3 .
 
-ex:Work_CutsLikeAKnife_aa289c4d a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_CutsLikeAKnife_aa289c4d a mm:MusicEntity ;
     rdfs:label "Cuts Like a Knife" ;
     schema1:name "Cuts Like a Knife" ;
     owl:sameAs <https://musicbrainz.org/work/aa289c4d-66c8-4d80-b770-f133576e27c0> ;
     mm:hasRecording ex:Recording_CutsLikeAKnife_44359dd2 .
 
-ex:Work_DancingInTheStreetsIntroductionFromJfk_4755e007 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DancingInTheStreetsIntroductionFromJfk_4755e007 a mm:MusicEntity ;
     rdfs:label "[Dancing In the Streets introduction from JFK]" ;
     schema1:name "[Dancing In the Streets introduction from JFK]" ;
     mm:hasRecording ex:Recording_DancingInTheStreetsIntroductionFromJfk_cc322142 .
 
-ex:Work_DancingInTheStreets_73de6a85 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DancingInTheStreets_73de6a85 a mm:MusicEntity ;
     rdfs:label "Dancing In the Streets" ;
     schema1:name "Dancing In the Streets" ;
     mm:hasRecording ex:Recording_DancingInTheStreets_8a9a317a .
 
-ex:Work_DancingInTheStreets_ea784cd7 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DancingInTheStreets_ea784cd7 a mm:MusicEntity ;
     rdfs:label "Dancing in the Streets" ;
     schema1:name "Dancing in the Streets" ;
     owl:sameAs <https://musicbrainz.org/work/ea784cd7-ba2d-41eb-9c9f-7900205d07a6> ;
     mm:hasRecording ex:Recording_DancingInTheStreets_8a9a317a .
 
-ex:Work_DancingWithTearsInMyEyes_a88ba41e_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DancingWithTearsInMyEyes_a88ba41e_2 a mm:MusicEntity ;
     rdfs:label "Dancing With Tears in My Eyes" ;
     schema1:name "Dancing With Tears in My Eyes" ;
     owl:sameAs <https://musicbrainz.org/work/a88ba41e-e306-3ce8-8e9e-cbe173fcaa8c> ;
     mm:hasRecording ex:Recording_DancingWithTearsInMyEyes_d32e9ce2 .
 
-ex:Work_DaylightAgain_aa4b2c0d_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DaylightAgain_aa4b2c0d_2 a mm:MusicEntity ;
     rdfs:label "Daylight Again" ;
     schema1:name "Daylight Again" ;
     owl:sameAs <https://musicbrainz.org/work/aa4b2c0d-7d90-3554-a2b7-711711ceb02a> ;
     mm:hasRecording ex:Recording_DayligthAgain_3c59521b .
 
-ex:Work_DoTheyKnowItSChristmas_d64306b1_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DoTheyKnowItSChristmas_d64306b1_2 a mm:MusicEntity ;
     rdfs:label "Do They Know It’s Christmas?" ;
     schema1:name "Do They Know It’s Christmas?" ;
     owl:sameAs <https://musicbrainz.org/work/d64306b1-d7f0-3954-8c8c-2a0e0ce7689f> ;
     mm:hasRecording ex:Recording_DoTheyKnowItSChristmas_57b2fa68 .
 
-ex:Work_DonQuixote_7e7b9a3f a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DonQuixote_7e7b9a3f a mm:MusicEntity ;
     rdfs:label "Don Quixote" ;
     schema1:name "Don Quixote" ;
     owl:sameAs <https://musicbrainz.org/work/7e7b9a3f-2243-4312-a783-ac7012f278d1> ;
     mm:hasRecording ex:Recording_DonQuixote_029c9aed .
 
-ex:Work_DonTAnswerTheDoor_3e70085c a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DonTAnswerTheDoor_3e70085c a mm:MusicEntity ;
     rdfs:label "Don’t Answer the Door" ;
     schema1:name "Don’t Answer the Door" ;
     owl:sameAs <https://musicbrainz.org/work/3e70085c-8bd0-4504-b0f8-92328ecea6eb> ;
     mm:hasRecording ex:Recording_DonTAnswerTheDoor_337917c4 .
 
-ex:Work_DonTChange_f0e75ada_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DonTChange_f0e75ada_2 a mm:MusicEntity ;
     rdfs:label "Don’t Change" ;
     schema1:name "Don’t Change" ;
     owl:sameAs <https://musicbrainz.org/work/f0e75ada-5407-3aef-b410-7862331c34ae> ;
     mm:hasRecording ex:Recording_DonTChange_0faebebd .
 
-ex:Work_DonTGoBreakingMyHeart_f8d529ad_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DonTGoBreakingMyHeart_f8d529ad_2 a mm:MusicEntity ;
     rdfs:label "Don’t Go Breaking My Heart" ;
     schema1:name "Don’t Go Breaking My Heart" ;
     owl:sameAs <https://musicbrainz.org/work/f8d529ad-c849-3c01-a767-b5ce75993a40> ;
     mm:hasRecording ex:Recording_DonTGoBreakingMyHeart_05923cfc .
 
-ex:Work_DonTLetTheSunGoDownOnMe_75ed39fe a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DonTLetTheSunGoDownOnMe_75ed39fe a mm:MusicEntity ;
     rdfs:label "Don’t Let the Sun Go Down on Me" ;
     schema1:name "Don’t Let the Sun Go Down on Me" ;
     owl:sameAs <https://musicbrainz.org/work/75ed39fe-0c83-338c-8c09-85c0e89e2e9d> ;
     mm:hasRecording ex:Recording_DonTLetTheSunGoDownOnMe_118dd83a .
 
-ex:Work_DonTWasteMyTime_8ac35dd3 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DonTWasteMyTime_8ac35dd3 a mm:MusicEntity ;
     rdfs:label "Don’t Waste My Time" ;
     schema1:name "Don’t Waste My Time" ;
     owl:sameAs <https://musicbrainz.org/work/8ac35dd3-9843-491d-9e3e-074048522f5a> ;
     mm:hasRecording ex:Recording_DonTWasteMyTime_627b88ac .
 
-ex:Work_DonTYouForgetAboutMe_4694f742 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DonTYouForgetAboutMe_4694f742 a mm:MusicEntity ;
     rdfs:label "Don’t You (Forget About Me)" ;
     schema1:name "Don’t You (Forget About Me)" ;
     owl:sameAs <https://musicbrainz.org/work/4694f742-b309-3ae6-855c-e1c0b791ece1> ;
     mm:hasRecording ex:Recording_DonTYouForgetAboutMe_bdf2301c .
 
-ex:Work_DragMeDown_3024d565_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DragMeDown_3024d565_2 a mm:MusicEntity ;
     rdfs:label "Drag Me Down" ;
     schema1:name "Drag Me Down" ;
     owl:sameAs <https://musicbrainz.org/work/3024d565-7566-46cf-b9aa-f8133969fa68> ;
     mm:hasRecording ex:Recording_DragMeDown_6e154953 .
 
-ex:Work_Drive_4cbcd04d_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Drive_4cbcd04d_2 a mm:MusicEntity ;
     rdfs:label "Drive" ;
     schema1:name "Drive" ;
     owl:sameAs <https://musicbrainz.org/work/4cbcd04d-3b93-30b1-bd33-3ace8d4a1826> ;
     mm:hasRecording ex:Recording_Drive_d9f86097 .
 
-ex:Work_DrivenToTears_d7c50a9a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_DrivenToTears_d7c50a9a a mm:MusicEntity ;
     rdfs:label "Driven to Tears" ;
     schema1:name "Driven to Tears" ;
     owl:sameAs <https://musicbrainz.org/work/d7c50a9a-6938-36cf-99af-549de7585eaf> ;
     mm:hasRecording ex:Recording_DrivenToTears_b08c7df3 .
 
-ex:Work_EndlessNights_f40f69e9_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_EndlessNights_f40f69e9_2 a mm:MusicEntity ;
     rdfs:label "Endless Nights" ;
     schema1:name "Endless Nights" ;
     owl:sameAs <https://musicbrainz.org/work/f40f69e9-ffea-45a0-b274-6664cdb21a07> ;
     mm:hasRecording ex:Recording_EndlessNights_8e1282b4 .
 
-ex:Work_EpiReportFromLondon_4da15267 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_EpiReportFromLondon_4da15267 a mm:MusicEntity ;
     rdfs:label "[EPI report from London]" ;
     schema1:name "[EPI report from London]" ;
     mm:hasRecording ex:Recording_EpiReportFromLondon_83334b2c .
 
-ex:Work_EsGehtVoran_538e2615 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_EsGehtVoran_538e2615 a mm:MusicEntity ;
     rdfs:label "Es geht voran" ;
     schema1:name "Es geht voran" ;
     mm:hasRecording ex:Recording_EsGehtVoran_8cf70891 .
 
-ex:Work_EveryBreathYouTake_f88369e2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_EveryBreathYouTake_f88369e2 a mm:MusicEntity ;
     rdfs:label "Every Breath You Take" ;
     schema1:name "Every Breath You Take" ;
     owl:sameAs <https://musicbrainz.org/work/f88369e2-da98-30a7-94bb-1509ff26c456> ;
     mm:hasRecording ex:Recording_EveryBreathYouTake_fe77b125 .
 
-ex:Work_EverytimeYouGoAway_677d42d6_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_EverytimeYouGoAway_677d42d6_2 a mm:MusicEntity ;
     rdfs:label "Everytime You Go Away" ;
     schema1:name "Everytime You Go Away" ;
     owl:sameAs <https://musicbrainz.org/work/677d42d6-f913-32c1-867f-e2f100617e68> ;
     mm:hasRecording ex:Recording_EverytimeYouGoAway_86704278 .
 
-ex:Work_FindTheCostOfFreedom_1d8593a1 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_FindTheCostOfFreedom_1d8593a1 a mm:MusicEntity ;
     rdfs:label "Find the Cost of Freedom" ;
     schema1:name "Find the Cost of Freedom" ;
     owl:sameAs <https://musicbrainz.org/work/1d8593a1-1f57-317c-ac41-4643d51dea1a> ;
     mm:hasRecording ex:Recording_DayligthAgain_3c59521b .
 
-ex:Work_Footloose_fee797bd a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Footloose_fee797bd a mm:MusicEntity ;
     rdfs:label "Footloose" ;
     schema1:name "Footloose" ;
     owl:sameAs <https://musicbrainz.org/work/fee797bd-eecf-36cf-812d-88e0f99daa7a> ;
     mm:hasRecording ex:Recording_Footloose_570d9d64 .
 
-ex:Work_ForeverYoung_f978ba1e a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ForeverYoung_f978ba1e a mm:MusicEntity ;
     rdfs:label "Forever Young" ;
     schema1:name "Forever Young" ;
     owl:sameAs <https://musicbrainz.org/work/f978ba1e-9678-3761-a957-fa4084c0d09f> ;
     mm:hasRecording ex:Recording_ForeverYoung_9268848f .
 
-ex:Work_GetItOn_29ff18d1_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_GetItOn_29ff18d1_2 a mm:MusicEntity ;
     rdfs:label "Get It On" ;
     schema1:name "Get It On" ;
     owl:sameAs <https://musicbrainz.org/work/29ff18d1-f057-3c91-b2cd-814424903d0f> ;
     mm:hasRecording ex:Recording_GetItOn_6d6c207b .
 
-ex:Work_GetReady_3df4f8a5 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_GetReady_3df4f8a5 a mm:MusicEntity ;
     rdfs:label "Get Ready" ;
     schema1:name "Get Ready" ;
     owl:sameAs <https://musicbrainz.org/work/3df4f8a5-9d24-353b-a658-dae5711843c9> ;
     mm:hasRecording ex:Recording_GetReady_bac9a200 .
 
-ex:Work_Ghostdancing_84c1a403_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Ghostdancing_84c1a403_2 a mm:MusicEntity ;
     rdfs:label "Ghostdancing" ;
     schema1:name "Ghostdancing" ;
     owl:sameAs <https://musicbrainz.org/work/84c1a403-1f7c-4d3d-82b9-a985cd45ae65> ;
     mm:hasRecording ex:Recording_GhostDancing_5773e1ad .
 
-ex:Work_GoodVibrations_ede10e9a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_GoodVibrations_ede10e9a a mm:MusicEntity ;
     rdfs:label "Good Vibrations" ;
     schema1:name "Good Vibrations" ;
     owl:sameAs <https://musicbrainz.org/work/ede10e9a-0625-3f56-97e7-b2676451d2e1> ;
     mm:hasRecording ex:Recording_GoodVibrations_7acd0668 .
 
-ex:Work_GottaFight_535ab584 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_GottaFight_535ab584 a mm:MusicEntity ;
     rdfs:label "Gotta Fight" ;
     schema1:name "Gotta Fight" ;
     owl:sameAs <https://musicbrainz.org/work/535ab584-e38d-446c-ae59-0202d40b3f6d> ;
     mm:hasRecording ex:Recording_GottaFight_cf5149c8 .
 
-ex:Work_HammerToFall_1e807fa4_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_HammerToFall_1e807fa4_2 a mm:MusicEntity ;
     rdfs:label "Hammer to Fall" ;
     schema1:name "Hammer to Fall" ;
     owl:sameAs <https://musicbrainz.org/work/1e807fa4-b844-3222-b7cd-c6cfa773a445> ;
     mm:hasRecording ex:Recording_HammerToFall_159f3644 .
 
-ex:Work_HeartbeatCity_75dc9fbb_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_HeartbeatCity_75dc9fbb_2 a mm:MusicEntity ;
     rdfs:label "Heartbeat City" ;
     schema1:name "Heartbeat City" ;
     owl:sameAs <https://musicbrainz.org/work/75dc9fbb-e094-42da-bf15-253f7dce0b44> ;
     mm:hasRecording ex:Recording_HeartbeatCity_b310b1b8 .
 
-ex:Work_HelloFromTheSovietUnion_00a64a05 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_HelloFromTheSovietUnion_00a64a05 a mm:MusicEntity ;
     rdfs:label "Hello From the Soviet Union" ;
     schema1:name "Hello From the Soviet Union" ;
     mm:hasRecording ex:Recording_HelloFromTheSovietUnion_26fcd54e .
 
-ex:Work_HelpMeRhonda_21404af0 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_HelpMeRhonda_21404af0 a mm:MusicEntity ;
     rdfs:label "Help Me, Rhonda" ;
     schema1:name "Help Me, Rhonda" ;
     owl:sameAs <https://musicbrainz.org/work/21404af0-d61b-3cc9-8a01-06fbba983a08> ;
     mm:hasRecording ex:Recording_HelpMeRhonda_09c194b8 .
 
-ex:Work_Helpless_295f4446_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Helpless_295f4446_2 a mm:MusicEntity ;
     rdfs:label "Helpless" ;
     schema1:name "Helpless" ;
     owl:sameAs <https://musicbrainz.org/work/295f4446-1cf8-3e2b-8c28-dcf2765bc78a> ;
     mm:hasRecording ex:Recording_Helpless_ecc0334e .
 
-ex:Work_Heroes_e2b01286 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Heroes_e2b01286 a mm:MusicEntity ;
     rdfs:label "“Heroes”" ;
     schema1:name "“Heroes”" ;
     owl:sameAs <https://musicbrainz.org/work/e2b01286-a914-3eb9-a0ab-89e0659b878c> ;
     mm:hasRecording ex:Recording_Heroes_9ad9811b .
 
-ex:Work_HideAndSeek_1a1cf738 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_HideAndSeek_1a1cf738 a mm:MusicEntity ;
     rdfs:label "Hide and Seek" ;
     schema1:name "Hide and Seek" ;
     owl:sameAs <https://musicbrainz.org/work/1a1cf738-71a2-31ca-af7c-1a0e3d588963> ;
     mm:hasRecording ex:Recording_HideAndSeek_220dceb7 .
 
-ex:Work_HoldMeNow_d77e1b17 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_HoldMeNow_d77e1b17 a mm:MusicEntity ;
     rdfs:label "Hold Me Now" ;
     schema1:name "Hold Me Now" ;
     owl:sameAs <https://musicbrainz.org/work/d77e1b17-cc75-35c3-8dd9-ef9f28d696c3> ;
     mm:hasRecording ex:Recording_HoldMeNow_0489bbef .
 
-ex:Work_Holiday_1c03c879 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Holiday_1c03c879 a mm:MusicEntity ;
     rdfs:label "Holiday" ;
     schema1:name "Holiday" ;
     owl:sameAs <https://musicbrainz.org/work/1c03c879-e386-38e1-b823-386d3ef9e27f> ;
     mm:hasRecording ex:Recording_Holiday_9ddf03bc .
 
-ex:Work_HollandLinkUp_48fb3192 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_HollandLinkUp_48fb3192 a mm:MusicEntity ;
     rdfs:label "[Holland link up]" ;
     schema1:name "[Holland link up]" ;
     mm:hasRecording ex:Recording_HollandLinkUp_23f27730 .
 
-ex:Work_HumanTouch_f9c6ee89 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_HumanTouch_f9c6ee89 a mm:MusicEntity ;
     rdfs:label "Human Touch" ;
     schema1:name "Human Touch" ;
     owl:sameAs <https://musicbrainz.org/work/f9c6ee89-e6a5-4331-ae43-d0350f795af3> ;
     mm:hasRecording ex:Recording_HumanTouch_c6c0bf1a .
 
-ex:Work_ICanTHelpMyselfSugarPieHoneyBunch_209a62bf a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ICanTHelpMyselfSugarPieHoneyBunch_209a62bf a mm:MusicEntity ;
     rdfs:label "I Can’t Help Myself (Sugar Pie, Honey Bunch)" ;
     schema1:name "I Can’t Help Myself (Sugar Pie, Honey Bunch)" ;
     owl:sameAs <https://musicbrainz.org/work/209a62bf-4d46-3465-94ea-bdb411f4fccb> ;
     mm:hasRecording ex:Recording_ICanTHelpMyselfSugarPieHoneyBunch_aac9c2e3 .
 
-ex:Work_IDonTLikeMondays_d998a80c a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_IDonTLikeMondays_d998a80c a mm:MusicEntity ;
     rdfs:label "I Don’t Like Mondays" ;
     schema1:name "I Don’t Like Mondays" ;
     owl:sameAs <https://musicbrainz.org/work/d998a80c-3c05-345e-b71a-8f1feea0c91e> ;
     mm:hasRecording ex:Recording_IDonTLikeMondays_679ee6ca .
 
-ex:Work_IMStillStanding_4ae45d33 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_IMStillStanding_4ae45d33 a mm:MusicEntity ;
     rdfs:label "I’m Still Standing" ;
     schema1:name "I’m Still Standing" ;
     owl:sameAs <https://musicbrainz.org/work/4ae45d33-66c8-4f93-90d8-e73b84678532> ;
     mm:hasRecording ex:Recording_IMStillStanding_f390bbb2 .
 
-ex:Work_Imagine_517ff96c_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Imagine_517ff96c_2 a mm:MusicEntity ;
     rdfs:label "Imagine" ;
     schema1:name "Imagine" ;
     owl:sameAs <https://musicbrainz.org/work/517ff96c-5970-3eac-9ae5-bcafc15f5bc7> ;
     mm:hasRecording ex:Recording_Imagine_314e559d .
 
-ex:Work_Internationalists_25434796 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Internationalists_25434796 a mm:MusicEntity ;
     rdfs:label "Internationalists" ;
     schema1:name "Internationalists" ;
     owl:sameAs <https://musicbrainz.org/work/25434796-911f-4882-b526-b7125832a7fc> ;
     mm:hasRecording ex:Recording_Internationalists_08ca2301 .
 
-ex:Work_IntoTheGroove_35b448bb_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_IntoTheGroove_35b448bb_2 a mm:MusicEntity ;
     rdfs:label "Into the Groove" ;
     schema1:name "Into the Groove" ;
     owl:sameAs <https://musicbrainz.org/work/35b448bb-9543-35de-a36e-87c27db8e98c> ;
     mm:hasRecording ex:Recording_IntoTheGroove_301a7f9c .
 
-ex:Work_IntroducingJackNicholsonAtJfk_dab05e22 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_IntroducingJackNicholsonAtJfk_dab05e22 a mm:MusicEntity ;
     rdfs:label "[introducing Jack Nicholson at JFK]" ;
     schema1:name "[introducing Jack Nicholson at JFK]" ;
     mm:hasRecording ex:Recording_IntroducingJackNicholsonAtJfk_130c0c25 .
 
-ex:Work_IntroducingJoanBaez_a66495c8 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_IntroducingJoanBaez_a66495c8 a mm:MusicEntity ;
     rdfs:label "[introducing Joan Baez]" ;
     schema1:name "[introducing Joan Baez]" ;
     mm:hasRecording ex:Recording_IntroducingJoanBaez_0d0d4160 .
 
-ex:Work_IntroductionFromJfk_c598daee a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_IntroductionFromJfk_c598daee a mm:MusicEntity ;
     rdfs:label "[introduction from JFK]" ;
     schema1:name "[introduction from JFK]" ;
     mm:hasRecording ex:Recording_IntroductionFromJfk_2397d2a8 .
 
-ex:Work_IronMan_4a43511c_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_IronMan_4a43511c_2 a mm:MusicEntity ;
     rdfs:label "Iron Man" ;
     schema1:name "Iron Man" ;
     owl:sameAs <https://musicbrainz.org/work/4a43511c-af64-32c4-9b83-21ab0d02cf31> ;
     mm:hasRecording ex:Recording_IronMan_10c9d7e1 .
 
-ex:Work_IsItACrime_14db4b5e_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_IsItACrime_14db4b5e_2 a mm:MusicEntity ;
     rdfs:label "Is It a Crime" ;
     schema1:name "Is It a Crime" ;
     owl:sameAs <https://musicbrainz.org/work/14db4b5e-aaeb-31ce-87f0-9382e459aeb8> ;
     mm:hasRecording ex:Recording_IsItACrime_3cb8e20f .
 
-ex:Work_IsThisTheWorldWeCreated_3a6c7da6 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_IsThisTheWorldWeCreated_3a6c7da6 a mm:MusicEntity ;
     rdfs:label "Is This the World We Created" ;
     schema1:name "Is This the World We Created" ;
     owl:sameAs <https://musicbrainz.org/work/3a6c7da6-b932-4367-8d8a-a1d65b442ff4> ;
     mm:hasRecording ex:Recording_IsThisTheWorldWeCreated_9ad485f5 .
 
-ex:Work_ItSOnlyRockNRoll_e8f15c53_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ItSOnlyRockNRoll_e8f15c53_2 a mm:MusicEntity ;
     rdfs:label "It’s Only Rock ’n Roll" ;
     schema1:name "It’s Only Rock ’n Roll" ;
     owl:sameAs <https://musicbrainz.org/work/e8f15c53-837a-4a9b-b338-b2fb12d8ab7f> ;
     mm:hasRecording ex:Recording_ItSOnlyRockAndRoll_84d84f97 .
 
-ex:Work_ItSTheSameOldSong_1c0a52ff a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ItSTheSameOldSong_1c0a52ff a mm:MusicEntity ;
     rdfs:label "It’s the Same Old Song" ;
     schema1:name "It’s the Same Old Song" ;
     owl:sameAs <https://musicbrainz.org/work/1c0a52ff-adbb-3e2b-a67f-9bacbe2a55f9> ;
     mm:hasRecording ex:Recording_ItSTheSameOldSong_f19f6599 .
 
-ex:Work_JamMasterJay_c0b69956_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_JamMasterJay_c0b69956_2 a mm:MusicEntity ;
     rdfs:label "Jam Master Jay" ;
     schema1:name "Jam Master Jay" ;
     owl:sameAs <https://musicbrainz.org/work/c0b69956-098f-32ef-807f-9b3b35a0f482> ;
     mm:hasRecording ex:Recording_JamMasterJay_745685a1 .
 
-ex:Work_JealousGuy_056b839a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_JealousGuy_056b839a a mm:MusicEntity ;
     rdfs:label "Jealous Guy" ;
     schema1:name "Jealous Guy" ;
     owl:sameAs <https://musicbrainz.org/work/056b839a-70ae-3a65-a805-c70e2dd4b3de> ;
     mm:hasRecording ex:Recording_JealousGuy_5ef0d284 .
 
-ex:Work_JustAnotherNight_1adedf0f_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_JustAnotherNight_1adedf0f_2 a mm:MusicEntity ;
     rdfs:label "Just Another Night" ;
     schema1:name "Just Another Night" ;
     owl:sameAs <https://musicbrainz.org/work/1adedf0f-490e-4738-98cd-941ce76f0278> ;
     mm:hasRecording ex:Recording_JustAnotherNight_d6663e8f .
 
-ex:Work_JustWhatINeeded_f5128e1e_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_JustWhatINeeded_f5128e1e_2 a mm:MusicEntity ;
     rdfs:label "Just What I Needed" ;
     schema1:name "Just What I Needed" ;
     owl:sameAs <https://musicbrainz.org/work/f5128e1e-d157-3f10-95e6-e89dfbd1a871> ;
     mm:hasRecording ex:Recording_JustWhatINeeded_0ce2996b .
 
-ex:Work_KidsWannaRock_1f056781 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_KidsWannaRock_1f056781 a mm:MusicEntity ;
     rdfs:label "Kids Wanna Rock" ;
     schema1:name "Kids Wanna Rock" ;
     owl:sameAs <https://musicbrainz.org/work/1f056781-a56e-3444-907d-17affa885661> ;
     mm:hasRecording ex:Recording_KidsWannaRock_c1ffea2d .
 
-ex:Work_Layla_beb76331 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Layla_beb76331 a mm:MusicEntity ;
     rdfs:label "Layla" ;
     schema1:name "Layla" ;
     owl:sameAs <https://musicbrainz.org/work/beb76331-bb4b-30b3-b4f4-ca80742ebd47> ;
     mm:hasRecording ex:Recording_Layla_e63a72d2 .
 
-ex:Work_LetItBe_ef5b9074 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_LetItBe_ef5b9074 a mm:MusicEntity ;
     rdfs:label "Let It Be" ;
     schema1:name "Let It Be" ;
     owl:sameAs <https://musicbrainz.org/work/ef5b9074-84d2-3e46-81ba-cdbe57898033> ;
     mm:hasRecording ex:Recording_LetItBe_a581c536 .
 
-ex:Work_LinkUp_40cf0dfd a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_LinkUp_40cf0dfd a mm:MusicEntity ;
     rdfs:label "[link up]",
         "link up" ;
     schema1:name "[link up]",
         "link up" ;
     mm:hasRecording ex:Recording_LinkUp_edab5679 .
 
-ex:Work_LonelyAtTheTop_62617910 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_LonelyAtTheTop_62617910 a mm:MusicEntity ;
     rdfs:label "Lonely at the Top" ;
     schema1:name "Lonely at the Top" ;
     owl:sameAs <https://musicbrainz.org/work/62617910-7409-3a46-aa65-f066f5214be3> ;
     mm:hasRecording ex:Recording_LonelyAtTheTop_156cc230 .
 
-ex:Work_LongLongWayToGo_2bff2bbb_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_LongLongWayToGo_2bff2bbb_2 a mm:MusicEntity ;
     rdfs:label "Long Long Way to Go" ;
     schema1:name "Long Long Way to Go" ;
     owl:sameAs <https://musicbrainz.org/work/2bff2bbb-ebcd-45e1-8645-eac6e71ae078> ;
     mm:hasRecording ex:Recording_LongLongWayToGo_4ff594bf .
 
-ex:Work_LoveMakesTheWorldGoRound_b79da28d_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_LoveMakesTheWorldGoRound_b79da28d_2 a mm:MusicEntity ;
     rdfs:label "Love Makes the World Go Round" ;
     schema1:name "Love Makes the World Go Round" ;
     owl:sameAs <https://musicbrainz.org/work/b79da28d-dd93-409c-ba2b-18f0325dbfec> ;
     mm:hasRecording ex:Recording_LoveMakesTheWorldGoRound_5479ad4a .
 
-ex:Work_LoveReignOErMe_e2318c2e a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_LoveReignOErMe_e2318c2e a mm:MusicEntity ;
     rdfs:label "Love, Reign O’er Me" ;
     schema1:name "Love, Reign O’er Me" ;
     owl:sameAs <https://musicbrainz.org/work/e2318c2e-8202-34a9-a489-cd96c05f0c42> ;
     mm:hasRecording ex:Recording_LoveReignOErMe_5fa0efda .
 
-ex:Work_LoveSomebody_85410af7_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_LoveSomebody_85410af7_2 a mm:MusicEntity ;
     rdfs:label "Love Somebody" ;
     schema1:name "Love Somebody" ;
     owl:sameAs <https://musicbrainz.org/work/85410af7-aa76-45ec-8758-573fa15f0e67> ;
     mm:hasRecording ex:Recording_LoveSomebody_b884a1ca .
 
-ex:Work_Loverboy_ccf61ac6_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Loverboy_ccf61ac6_2 a mm:MusicEntity ;
     rdfs:label "Loverboy" ;
     schema1:name "Loverboy" ;
     owl:sameAs <https://musicbrainz.org/work/ccf61ac6-a837-4ee3-bc60-0f5599c46582> ;
     mm:hasRecording ex:Recording_Loverboy_558af7ff .
 
-ex:Work_MadisonBlues_80408b40_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MadisonBlues_80408b40_2 a mm:MusicEntity ;
     rdfs:label "Madison Blues" ;
     schema1:name "Madison Blues" ;
     owl:sameAs <https://musicbrainz.org/work/80408b40-2bd0-4789-ad20-93f52d8e7b47> ;
     mm:hasRecording ex:Recording_MadisonBlues_2135bbf8 .
 
-ex:Work_Maneater_59e765fb a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Maneater_59e765fb a mm:MusicEntity ;
     rdfs:label "Maneater" ;
     schema1:name "Maneater" ;
     owl:sameAs <https://musicbrainz.org/work/59e765fb-15a5-33bd-bea3-1171dd38bfbc> ;
     mm:hasRecording ex:Recording_Maneater_b6a526a8 .
 
-ex:Work_MessageInABottle_d4bbeea9 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MessageInABottle_d4bbeea9 a mm:MusicEntity ;
     rdfs:label "Message in a Bottle" ;
     schema1:name "Message in a Bottle" ;
     owl:sameAs <https://musicbrainz.org/work/d4bbeea9-98ed-376d-9d4e-0a33e179a5f2> ;
     mm:hasRecording ex:Recording_MessageInABottle_3e4b4e90 .
 
-ex:Work_MessageOfLove_43dd26dc_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MessageOfLove_43dd26dc_2 a mm:MusicEntity ;
     rdfs:label "Message of Love" ;
     schema1:name "Message of Love" ;
     owl:sameAs <https://musicbrainz.org/work/43dd26dc-19ef-4c26-a95a-a55a406b075d> ;
     mm:hasRecording ex:Recording_MessageOfLove_733e6470 .
 
-ex:Work_MickJaggerAndTinaTurnerRehearsals_95b7c1db a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MickJaggerAndTinaTurnerRehearsals_95b7c1db a mm:MusicEntity ;
     rdfs:label "Mick Jagger and Tina Turner Rehearsals" ;
     schema1:name "Mick Jagger and Tina Turner Rehearsals" ;
     mm:hasRecording ex:Recording_MickJaggerAndTinaTurnerRehearsals_5a4e9694 .
 
-ex:Work_MiddleOfTheRoad_ba390ae8 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MiddleOfTheRoad_ba390ae8 a mm:MusicEntity ;
     rdfs:label "Middle of the Road" ;
     schema1:name "Middle of the Road" ;
     owl:sameAs <https://musicbrainz.org/work/ba390ae8-1cc9-374d-86e2-0871a9184882> ;
@@ -2548,803 +2439,688 @@ ex:Work_MiddleOfTheRoad_ba390ae8 a schema1:MusicComposition,
 
 
 ex:Work_DoTheyKnowItsChristmas_d64306b1
-    a schema1:MusicComposition,
+    a schema1:CreativeWork,
       mm:MusicEntity ;
     rdfs:label "Do They Know It's Christmas?" ;
     schema1:name "Do They Know It's Christmas?" ;
     owl:sameAs <https://musicbrainz.org/work/d64306b1-d7f0-3954-8c8c-2a0e0ce7689f> ;
     mm:hasRecording ex:Recording_DoTheyKnowItsChristmas_d64306b1 .
 
-ex:Work_MissYou_be9728e0_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MissYou_be9728e0_2 a mm:MusicEntity ;
     rdfs:label "Miss You" ;
     schema1:name "Miss You" ;
     owl:sameAs <https://musicbrainz.org/work/be9728e0-fc9a-3fd4-a726-6be0a3ff7f04> ;
     mm:hasRecording ex:Recording_MissYou_4ed24c6c .
 
-ex:Work_ModernLove_508a3dac_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ModernLove_508a3dac_2 a mm:MusicEntity ;
     rdfs:label "Modern Love" ;
     schema1:name "Modern Love" ;
     owl:sameAs <https://musicbrainz.org/work/508a3dac-06c1-39ab-9e1b-28ae96f845cc> ;
     mm:hasRecording ex:Recording_ModernLove_a1ae373f .
 
-ex:Work_MoneyForNothing_d6f71ddf a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MoneyForNothing_d6f71ddf a mm:MusicEntity ;
     rdfs:label "Money for Nothing" ;
     schema1:name "Money for Nothing" ;
     owl:sameAs <https://musicbrainz.org/work/d6f71ddf-12f8-36a2-9cbe-53c48444eaa1> ;
     mm:hasRecording ex:Recording_MoneyForNothing_e3536a52 .
 
-ex:Work_MtvIntermissionBbcIntermission_a7bc6710 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MtvIntermissionBbcIntermission_a7bc6710 a mm:MusicEntity ;
     rdfs:label "[MTV intermission] / [BBC intermission]" ;
     schema1:name "[MTV intermission] / [BBC intermission]" ;
     mm:hasRecording ex:Recording_MtvIntermissionBbcIntermission_9ce09d10 .
 
-ex:Work_MtvIntermission_3def2979 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MtvIntermission_3def2979 a mm:MusicEntity ;
     rdfs:label "[MTV intermission]" ;
     schema1:name "[MTV intermission]" ;
     mm:hasRecording ex:Recording_MtvIntermission_e2f35e5e .
 
-ex:Work_Murderess_bc3b1534 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Murderess_bc3b1534 a mm:MusicEntity ;
     rdfs:label "Murderess" ;
     schema1:name "Murderess" ;
     owl:sameAs <https://musicbrainz.org/work/bc3b1534-0ade-3aec-94c0-514e89c60f45> ;
     mm:hasRecording ex:Recording_Murderess_889583de .
 
-ex:Work_MyGeneration_a55b5d5b a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MyGeneration_a55b5d5b a mm:MusicEntity ;
     rdfs:label "My Generation" ;
     schema1:name "My Generation" ;
     owl:sameAs <https://musicbrainz.org/work/a55b5d5b-cc47-304c-98c1-460fe91e1cd7> ;
     mm:hasRecording ex:Recording_MyGeneration_f800e8ee .
 
-ex:Work_MyGirl_e8f22db4 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_MyGirl_e8f22db4 a mm:MusicEntity ;
     rdfs:label "My Girl" ;
     schema1:name "My Girl" ;
     owl:sameAs <https://musicbrainz.org/work/e8f22db4-6ee7-3c9c-a3ac-84d0f9215a1b> ;
     mm:hasRecording ex:Recording_MyGirl_2144d2ac .
 
-ex:Work_NacktImWind_60e5f96f a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_NacktImWind_60e5f96f a mm:MusicEntity ;
     rdfs:label "Nackt im Wind" ;
     schema1:name "Nackt im Wind" ;
     owl:sameAs <https://musicbrainz.org/work/60e5f96f-2b20-4615-9052-a2769ed22c44> ;
     mm:hasRecording ex:Recording_NacktImWind_234936eb .
 
-ex:Work_NewAttitude_f2d275ad_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_NewAttitude_f2d275ad_2 a mm:MusicEntity ;
     rdfs:label "New Attitude" ;
     schema1:name "New Attitude" ;
     owl:sameAs <https://musicbrainz.org/work/f2d275ad-32c0-4cc5-a8d2-d1d32454606e> ;
     mm:hasRecording ex:Recording_NewAttitude_839ef1c3 .
 
-ex:Work_NothingIsPerfect_e3684af2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_NothingIsPerfect_e3684af2 a mm:MusicEntity ;
     rdfs:label "Nothing Is Perfect" ;
     schema1:name "Nothing Is Perfect" ;
     owl:sameAs <https://musicbrainz.org/work/e3684af2-e6ed-443b-92eb-8e8a6d5d5cc9> ;
     mm:hasRecording ex:Recording_NothingIsPerfect_4ee7077f .
 
-ex:Work_OneSmallDay_d09d4f20 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_OneSmallDay_d09d4f20 a mm:MusicEntity ;
     rdfs:label "One Small Day" ;
     schema1:name "One Small Day" ;
     owl:sameAs <https://musicbrainz.org/work/d09d4f20-4b63-3c3b-98f0-70ca20909821> ;
     mm:hasRecording ex:Recording_OneSmallDay_6e7eade1 .
 
-ex:Work_OnlyLoveCanBreakYourHeart_8558d07e a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_OnlyLoveCanBreakYourHeart_8558d07e a mm:MusicEntity ;
     rdfs:label "Only Love Can Break Your Heart" ;
     schema1:name "Only Love Can Break Your Heart" ;
     owl:sameAs <https://musicbrainz.org/work/8558d07e-c3c5-3bfd-88ef-cbe29003eab1> ;
     mm:hasRecording ex:Recording_OnlyLoveCanBreakYourHeart_be3169b8 .
 
-ex:Work_OnlyWhenYouLeave_ab26cb3a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_OnlyWhenYouLeave_ab26cb3a a mm:MusicEntity ;
     rdfs:label "Only When You Leave" ;
     schema1:name "Only When You Leave" ;
     owl:sameAs <https://musicbrainz.org/work/ab26cb3a-02a5-4a70-8a2a-f880b5fb341e> ;
     mm:hasRecording ex:Recording_OnlyWhenYouLeave_518df094 .
 
-ex:Work_OpenInvitation_13ca1e44 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_OpenInvitation_13ca1e44 a mm:MusicEntity ;
     rdfs:label "Open Invitation" ;
     schema1:name "Open Invitation" ;
     owl:sameAs <https://musicbrainz.org/work/13ca1e44-96e0-45b6-aba0-38637ed168eb> ;
     mm:hasRecording ex:Recording_OpenInvitation_3c2f1252 .
 
-ex:Work_OutOfTouch_937a13f3 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_OutOfTouch_937a13f3 a mm:MusicEntity ;
     rdfs:label "Out of Touch" ;
     schema1:name "Out of Touch" ;
     owl:sameAs <https://musicbrainz.org/work/937a13f3-dd66-3bec-8b77-f6898b3b6b62> ;
     mm:hasRecording ex:Recording_OutOfTouch_cccaefcf .
 
-ex:Work_OverTheRainbow_f8217125_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_OverTheRainbow_f8217125_2 a mm:MusicEntity ;
     rdfs:label "Over the Rainbow" ;
     schema1:name "Over the Rainbow" ;
     owl:sameAs <https://musicbrainz.org/work/f8217125-b460-3902-8903-82979e3785ee> ;
     mm:hasRecording ex:Recording_OverTheRainbow_9d50a5e3 .
 
-ex:Work_Overkill_23300222_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Overkill_23300222_2 a mm:MusicEntity ;
     rdfs:label "Overkill" ;
     schema1:name "Overkill" ;
     owl:sameAs <https://musicbrainz.org/work/23300222-37cd-3249-a1df-499c684384ef> ;
     mm:hasRecording ex:Recording_Overkill_db1cc1d2 .
 
-ex:Work_OzForAfricaLinkOut_df2c5856 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_OzForAfricaLinkOut_df2c5856 a mm:MusicEntity ;
     rdfs:label "[Oz For Africa link out]" ;
     schema1:name "[Oz For Africa link out]" ;
     mm:hasRecording ex:Recording_OzForAfricaLinkOut_6b2fd5cb .
 
-ex:Work_OzForAfricaLinkUp_ffe593a3 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_OzForAfricaLinkUp_ffe593a3 a mm:MusicEntity ;
     rdfs:label "[Oz For Africa link up]" ;
     schema1:name "[Oz For Africa link up]" ;
     mm:hasRecording ex:Recording_OzForAfricaLinkUp_be84d0a4 .
 
-ex:Work_Paranoid_7949591a_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Paranoid_7949591a_2 a mm:MusicEntity ;
     rdfs:label "Paranoid" ;
     schema1:name "Paranoid" ;
     owl:sameAs <https://musicbrainz.org/work/7949591a-49c1-31c3-85a8-33d7e6065698> ;
     mm:hasRecording ex:Recording_Paranoid_fd08b596 .
 
-ex:Work_PinballWizard_6ef8cd26 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_PinballWizard_6ef8cd26 a mm:MusicEntity ;
     rdfs:label "Pinball Wizard" ;
     schema1:name "Pinball Wizard" ;
     owl:sameAs <https://musicbrainz.org/work/6ef8cd26-d0a7-36a1-84f5-5d872364d7c6> ;
     mm:hasRecording ex:Recording_PinballWizard_49f4bb45 .
 
-ex:Work_Powderfinger_e4de49b8 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Powderfinger_e4de49b8 a mm:MusicEntity ;
     rdfs:label "Powderfinger" ;
     schema1:name "Powderfinger" ;
     owl:sameAs <https://musicbrainz.org/work/e4de49b8-a38d-3ecd-9b1b-2197811558bc> ;
     mm:hasRecording ex:Recording_Powderfinger_377962db .
 
-ex:Work_PrimeraInvasion_1a3c7702_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_PrimeraInvasion_1a3c7702_2 a mm:MusicEntity ;
     rdfs:label "Primera invasion" ;
     schema1:name "Primera invasion" ;
     owl:sameAs <https://musicbrainz.org/work/1a3c7702-4f78-4c23-81bb-d4f9a66f340c> ;
     mm:hasRecording ex:Recording_PrimeraInvasion_3f8669be .
 
-ex:Work_PromisedYouAMiracle_5d09ac47 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_PromisedYouAMiracle_5d09ac47 a mm:MusicEntity ;
     rdfs:label "Promised You a Miracle" ;
     schema1:name "Promised You a Miracle" ;
     owl:sameAs <https://musicbrainz.org/work/5d09ac47-9eb4-386b-aba5-5288244fc426> ;
     mm:hasRecording ex:Recording_PromisedYouAMiracle_eb1d4910 .
 
-ex:Work_RadioGaGa_2c76fe20_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_RadioGaGa_2c76fe20_2 a mm:MusicEntity ;
     rdfs:label "Radio Ga Ga" ;
     schema1:name "Radio Ga Ga" ;
     owl:sameAs <https://musicbrainz.org/work/2c76fe20-59d5-3dd9-93ee-be2107ac977c> ;
     mm:hasRecording ex:Recording_RadioGaga_40401938 .
 
-ex:Work_RatTrap_a09a4c84_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_RatTrap_a09a4c84_2 a mm:MusicEntity ;
     rdfs:label "Rat Trap" ;
     schema1:name "Rat Trap" ;
     owl:sameAs <https://musicbrainz.org/work/a09a4c84-2c09-44bb-b018-a537483ef997> ;
     mm:hasRecording ex:Recording_RatTrap_3e80d77e .
 
-ex:Work_ReachOutAndTouchSomebodySHand_d76165e1_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ReachOutAndTouchSomebodySHand_d76165e1_2 a mm:MusicEntity ;
     rdfs:label "Reach Out and Touch (Somebody’s Hand)" ;
     schema1:name "Reach Out and Touch (Somebody’s Hand)" ;
     owl:sameAs <https://musicbrainz.org/work/d76165e1-3ed3-3d3f-973f-48b7baf30686> ;
     mm:hasRecording ex:Recording_ReachAndTouchSomebodySHand_65653667 .
 
-ex:Work_ReachOutILlBeThere_f82341b9_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ReachOutILlBeThere_f82341b9_2 a mm:MusicEntity ;
     rdfs:label "Reach Out, I’ll Be There" ;
     schema1:name "Reach Out, I’ll Be There" ;
     owl:sameAs <https://musicbrainz.org/work/f82341b9-0001-3fb2-8b31-a1df64a068f0> ;
     mm:hasRecording ex:Recording_ReachOutILlBeThere_cf659519 .
 
-ex:Work_ReapTheWildWind_ab62d196_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ReapTheWildWind_ab62d196_2 a mm:MusicEntity ;
     rdfs:label "Reap the Wild Wind" ;
     schema1:name "Reap the Wild Wind" ;
     owl:sameAs <https://musicbrainz.org/work/ab62d196-9f7d-3e59-b083-03e35b78c928> ;
     mm:hasRecording ex:Recording_ReapTheWildWind_51237118 .
 
-ex:Work_RebelRebel_dc6d909d_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_RebelRebel_dc6d909d_2 a mm:MusicEntity ;
     rdfs:label "Rebel Rebel" ;
     schema1:name "Rebel Rebel" ;
     owl:sameAs <https://musicbrainz.org/work/dc6d909d-a39f-3932-a194-19703564743e> ;
     mm:hasRecording ex:Recording_RebelRebel_a3fd1fde .
 
-ex:Work_Rebels_050e575f a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Rebels_050e575f a mm:MusicEntity ;
     rdfs:label "Rebels" ;
     schema1:name "Rebels" ;
     owl:sameAs <https://musicbrainz.org/work/050e575f-993c-48a3-a207-568b54cf5d84> ;
     mm:hasRecording ex:Recording_Rebels_7b896cb6 .
 
-ex:Work_Refugee_df6f6edd_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Refugee_df6f6edd_2 a mm:MusicEntity ;
     rdfs:label "Refugee" ;
     schema1:name "Refugee" ;
     owl:sameAs <https://musicbrainz.org/work/df6f6edd-57b4-4e9b-9399-43e2c60d707c> ;
     mm:hasRecording ex:Recording_Refugee_f67560d9 .
 
-ex:Work_Revolution_fc6e50dd_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Revolution_fc6e50dd_2 a mm:MusicEntity ;
     rdfs:label "Revolution" ;
     schema1:name "Revolution" ;
     owl:sameAs <https://musicbrainz.org/work/fc6e50dd-839f-352a-90a5-25bdb6da7b51> ;
     mm:hasRecording ex:Recording_Revolution_691fb7d6 .
 
-ex:Work_RightNow_3778dd5b a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_RightNow_3778dd5b a mm:MusicEntity ;
     rdfs:label "Right Now" ;
     schema1:name "Right Now" ;
     owl:sameAs <https://musicbrainz.org/work/3778dd5b-9162-419c-bcff-afa5e4f3ee4a> ;
     mm:hasRecording ex:Recording_RightNow_658166c0 .
 
-ex:Work_RockAndRoll_d47cdd1d a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_RockAndRoll_d47cdd1d a mm:MusicEntity ;
     rdfs:label "Rock and Roll" ;
     schema1:name "Rock and Roll" ;
     owl:sameAs <https://musicbrainz.org/work/d47cdd1d-a33d-32ae-bb2c-00a846d61930> ;
     mm:hasRecording ex:Recording_RockAndRoll_c38a9c1e .
 
-ex:Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306 a mm:MusicEntity ;
     rdfs:label "Rocket Man (I Think It’s Going to Be a Long, Long Time)" ;
     schema1:name "Rocket Man (I Think It’s Going to Be a Long, Long Time)" ;
     owl:sameAs <https://musicbrainz.org/work/af9bc306-eb56-3eb1-9d37-eb46ceca1e50> ;
     mm:hasRecording ex:Recording_RocketMan_ea6fbaf0 .
 
-ex:Work_RockinAllOverTheWorld_5b31460f_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_RockinAllOverTheWorld_5b31460f_2 a mm:MusicEntity ;
     rdfs:label "Rockin’ All Over the World" ;
     schema1:name "Rockin’ All Over the World" ;
     owl:sameAs <https://musicbrainz.org/work/5b31460f-26a9-3e90-b0a9-6adcf8d1fba9> ;
     mm:hasRecording ex:Recording_RockinAllOverTheWorld_ff3aa159 .
 
-ex:Work_RollWithTheChanges_831ed988_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_RollWithTheChanges_831ed988_2 a mm:MusicEntity ;
     rdfs:label "Roll With the Changes" ;
     schema1:name "Roll With the Changes" ;
     owl:sameAs <https://musicbrainz.org/work/831ed988-e28a-4908-80b0-c535d7a6aabd> ;
     mm:hasRecording ex:Recording_RollWithTheChanges_a86ab6c4 .
 
-ex:Work_Roxanne_0ddba90a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Roxanne_0ddba90a a mm:MusicEntity ;
     rdfs:label "Roxanne" ;
     schema1:name "Roxanne" ;
     owl:sameAs <https://musicbrainz.org/work/0ddba90a-83cd-3edc-9335-14460903952e> ;
     mm:hasRecording ex:Recording_Roxanne_cbabd27e .
 
-ex:Work_SaveAPrayer_604f7422 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SaveAPrayer_604f7422 a mm:MusicEntity ;
     rdfs:label "Save a Prayer" ;
     schema1:name "Save a Prayer" ;
     owl:sameAs <https://musicbrainz.org/work/604f7422-3c8b-3cc6-9caa-6d749687416c> ;
     mm:hasRecording ex:Recording_SaveAPrayer_4c2713e9 .
 
-ex:Work_Sensation_a1d723b4 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Sensation_a1d723b4 a mm:MusicEntity ;
     rdfs:label "Sensation" ;
     schema1:name "Sensation" ;
     owl:sameAs <https://musicbrainz.org/work/a1d723b4-ee80-47b6-a0a1-309c191d44fe> ;
     mm:hasRecording ex:Recording_Sensation_db2cf95b .
 
-ex:Work_ShakeMeWakeMeWhenItSOver_29237a79 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ShakeMeWakeMeWhenItSOver_29237a79 a mm:MusicEntity ;
     rdfs:label "Shake Me, Wake Me (When It’s Over)" ;
     schema1:name "Shake Me, Wake Me (When It’s Over)" ;
     owl:sameAs <https://musicbrainz.org/work/29237a79-eb16-3e94-8b0a-0fe7433d5a5d> ;
     mm:hasRecording ex:Recording_ShakeMeWakeMeWhenItSOver_2ea33e6c .
 
-ex:Work_Shame_07271d11 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Shame_07271d11 a mm:MusicEntity ;
     rdfs:label "Shame" ;
     schema1:name "Shame" ;
     owl:sameAs <https://musicbrainz.org/work/07271d11-f795-41c4-9b9a-702b815f5be4> ;
     mm:hasRecording ex:Recording_Shame_55d6af65 .
 
-ex:Work_SheSWaiting_2f2e1ed1 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SheSWaiting_2f2e1ed1 a mm:MusicEntity ;
     rdfs:label "She's Waiting" ;
     schema1:name "She's Waiting" ;
     owl:sameAs <https://musicbrainz.org/work/2f2e1ed1-897f-409a-9d34-56722cb9b005> ;
     mm:hasRecording ex:Recording_SheSWaiting_7a849b5b .
 
-ex:Work_SimpleMindsFeedLostBbcIntermission_7ee35072 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SimpleMindsFeedLostBbcIntermission_7ee35072 a mm:MusicEntity ;
     rdfs:label "[Simple Minds feed lost] / [BBC intermission]" ;
     schema1:name "[Simple Minds feed lost] / [BBC intermission]" ;
     mm:hasRecording ex:Recording_SimpleMindsFeedLostBbcIntermission_7201a832 .
 
-ex:Work_SlaveToLove_01cf29f1 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SlaveToLove_01cf29f1 a mm:MusicEntity ;
     rdfs:label "Slave to Love" ;
     schema1:name "Slave to Love" ;
     owl:sameAs <https://musicbrainz.org/work/01cf29f1-d4a5-4c31-a1d7-3b627bda155c> ;
     mm:hasRecording ex:Recording_SlaveToLove_b31e1ae1 .
 
-ex:Work_SolidRock_0a069dc3_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SolidRock_0a069dc3_2 a mm:MusicEntity ;
     rdfs:label "Solid Rock" ;
     schema1:name "Solid Rock" ;
     owl:sameAs <https://musicbrainz.org/work/0a069dc3-06cd-4f17-9c8b-f8819562f045> ;
     mm:hasRecording ex:Recording_SolidRock_8c3a6e00 .
 
-ex:Work_Solid_552d2380 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Solid_552d2380 a mm:MusicEntity ;
     rdfs:label "Solid" ;
     schema1:name "Solid" ;
     owl:sameAs <https://musicbrainz.org/work/552d2380-1e8c-46fd-b06f-17e2612f2c28> ;
     mm:hasRecording ex:Recording_Solid_936fd477 .
 
-ex:Work_SouthernCross_45c1e559_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SouthernCross_45c1e559_2 a mm:MusicEntity ;
     rdfs:label "Southern Cross" ;
     schema1:name "Southern Cross" ;
     owl:sameAs <https://musicbrainz.org/work/45c1e559-25e0-3840-9522-92587db8fd1f> ;
     mm:hasRecording ex:Recording_SouthernCross_a9c4179d .
 
-ex:Work_SpeakNoEvil_67b72fdb a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SpeakNoEvil_67b72fdb a mm:MusicEntity ;
     rdfs:label "Speak No Evil" ;
     schema1:name "Speak No Evil" ;
     owl:sameAs <https://musicbrainz.org/work/67b72fdb-adde-4ad3-99c9-87aa2c9341bf> ;
     mm:hasRecording ex:Recording_DonTSpeakNoEvil_0c0af31b .
 
-ex:Work_StageIntermission_0faf10ed a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_StageIntermission_0faf10ed a mm:MusicEntity ;
     rdfs:label "[stage intermission]" ;
     schema1:name "[stage intermission]" ;
     mm:hasRecording ex:Recording_StageIntermission_c148e598 .
 
-ex:Work_StairwayToHeaven_968ee3c5_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_StairwayToHeaven_968ee3c5_2 a mm:MusicEntity ;
     rdfs:label "Stairway to Heaven" ;
     schema1:name "Stairway to Heaven" ;
     owl:sameAs <https://musicbrainz.org/work/968ee3c5-21fa-35de-88f9-bd1c300ac3ee> ;
     mm:hasRecording ex:Recording_StairwayToHeaven_35ec4330 .
 
-ex:Work_StandUpAndSing_aaa11463_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_StandUpAndSing_aaa11463_2 a mm:MusicEntity ;
     rdfs:label "Stand Up and Sing" ;
     schema1:name "Stand Up and Sing" ;
     owl:sameAs <https://musicbrainz.org/work/aaa11463-84cf-4dff-90d9-d2d34a5250fe> ;
     mm:hasRecording ex:Recording_StandUpAndSing_108255cb .
 
-ex:Work_StateOfShock_8e0f121d_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_StateOfShock_8e0f121d_2 a mm:MusicEntity ;
     rdfs:label "State of Shock" ;
     schema1:name "State of Shock" ;
     owl:sameAs <https://musicbrainz.org/work/8e0f121d-ec82-3f9e-bf55-bde4ed0ebb63> ;
     mm:hasRecording ex:Recording_StateOfShock_a9becd00 .
 
-ex:Work_StateOfTheHeart_5f9be140_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_StateOfTheHeart_5f9be140_2 a mm:MusicEntity ;
     rdfs:label "State of the Heart" ;
     schema1:name "State of the Heart" ;
     owl:sameAs <https://musicbrainz.org/work/5f9be140-2a9a-4224-b0ac-71521c939b29> ;
     mm:hasRecording ex:Recording_StateOfTheHeart_65dfffa0 .
 
-ex:Work_StirItUp_fa22c5e3 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_StirItUp_fa22c5e3 a mm:MusicEntity ;
     rdfs:label "Stir It Up" ;
     schema1:name "Stir It Up" ;
     owl:sameAs <https://musicbrainz.org/work/fa22c5e3-e032-4ed7-b5f7-5d0f8802a96a> ;
     mm:hasRecording ex:Recording_StirItUp_e32aea71 .
 
-ex:Work_StopYourSobbing_9533d2bf a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_StopYourSobbing_9533d2bf a mm:MusicEntity ;
     rdfs:label "Stop Your Sobbing" ;
     schema1:name "Stop Your Sobbing" ;
     owl:sameAs <https://musicbrainz.org/work/9533d2bf-5bb0-3ed9-90a3-3a56050677e0> ;
     mm:hasRecording ex:Recording_StopYourSobbing_9282c957 .
 
-ex:Work_SugarMountain_36ab6f4c_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SugarMountain_36ab6f4c_2 a mm:MusicEntity ;
     rdfs:label "Sugar Mountain" ;
     schema1:name "Sugar Mountain" ;
     owl:sameAs <https://musicbrainz.org/work/36ab6f4c-c015-338d-bdbb-690e9264be41> ;
     mm:hasRecording ex:Recording_SugarMountain_c23f61cd .
 
-ex:Work_SuiteJudyBlueEyes_bea79f68 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SuiteJudyBlueEyes_bea79f68 a mm:MusicEntity ;
     rdfs:label "Suite: Judy Blue Eyes" ;
     schema1:name "Suite: Judy Blue Eyes" ;
     owl:sameAs <https://musicbrainz.org/work/bea79f68-cc70-30f7-81f2-f9ee4091ea78> ;
     mm:hasRecording ex:Recording_SuiteJudyBlueEyes_ad8433ec .
 
-ex:Work_SultansOfSwing_8626823c a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SultansOfSwing_8626823c a mm:MusicEntity ;
     rdfs:label "Sultans of Swing" ;
     schema1:name "Sultans of Swing" ;
     owl:sameAs <https://musicbrainz.org/work/8626823c-47f9-3053-a9c5-4b7e9343b5df> ;
     mm:hasRecording ex:Recording_SultansOfSwing_9a5b1ff6 .
 
-ex:Work_SummerOf69_9604422e_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SummerOf69_9604422e_2 a mm:MusicEntity ;
     rdfs:label "Summer of ’69" ;
     schema1:name "Summer of ’69" ;
     owl:sameAs <https://musicbrainz.org/work/9604422e-df7a-3528-9c25-c3afa67678ae> ;
     mm:hasRecording ex:Recording_SummerOf69_315af4d0 .
 
-ex:Work_SundayBloodySunday_dc2c1143_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SundayBloodySunday_dc2c1143_2 a mm:MusicEntity ;
     rdfs:label "Sunday Bloody Sunday" ;
     schema1:name "Sunday Bloody Sunday" ;
     owl:sameAs <https://musicbrainz.org/work/dc2c1143-4ef4-3406-873f-e3158942e363> ;
     mm:hasRecording ex:Recording_SundayBloodySunday_b0ce8594 .
 
-ex:Work_SurfinUSA_537d49de_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_SurfinUSA_537d49de_2 a mm:MusicEntity ;
     rdfs:label "Surfin’ U.S.A." ;
     schema1:name "Surfin’ U.S.A." ;
     owl:sameAs <https://musicbrainz.org/work/537d49de-45fd-3b74-93f3-17a852283b63> ;
     mm:hasRecording ex:Recording_SurfinUsa_df04837c .
 
-ex:Work_TakeItTime_070b1032_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TakeItTime_070b1032_2 a mm:MusicEntity ;
     rdfs:label "Take It Time" ;
     schema1:name "Take It Time" ;
     owl:sameAs <https://musicbrainz.org/work/070b1032-6e94-4a4f-aced-672d4fad85bf> ;
     mm:hasRecording ex:Recording_TakeItTime_b814544d .
 
-ex:Work_TeachYourChildren_ea98da58 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TeachYourChildren_ea98da58 a mm:MusicEntity ;
     rdfs:label "Teach Your Children" ;
     schema1:name "Teach Your Children" ;
     owl:sameAs <https://musicbrainz.org/work/ea98da58-df7c-3bbf-8b73-9240ec3272c7> ;
     mm:hasRecording ex:Recording_TeachYourChildren_e91e1321 .
 
-ex:Work_TearsAreNotEnough_b78023a3 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TearsAreNotEnough_b78023a3 a mm:MusicEntity ;
     rdfs:label "Tears Are Not Enough" ;
     schema1:name "Tears Are Not Enough" ;
     owl:sameAs <https://musicbrainz.org/work/b78023a3-6d0f-4cdf-80f6-5931f273a7c8> ;
     mm:hasRecording ex:Recording_TearsAreNotEnough_d4e824e9 .
 
-ex:Work_ThatSTheWayLoveIs_431780d2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ThatSTheWayLoveIs_431780d2 a mm:MusicEntity ;
     rdfs:label "That’s the Way Love Is" ;
     schema1:name "That’s the Way Love Is" ;
     owl:sameAs <https://musicbrainz.org/work/431780d2-42bf-3856-b309-a57a1fdd5dbc> ;
     mm:hasRecording ex:Recording_ThatSTheWayLoveIs_4f7d61d0 .
 
-ex:Work_TheBigBossGroove_bddd59cc_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TheBigBossGroove_bddd59cc_2 a mm:MusicEntity ;
     rdfs:label "The Big Boss Groove" ;
     schema1:name "The Big Boss Groove" ;
     owl:sameAs <https://musicbrainz.org/work/bddd59cc-6697-3b33-9eb7-5767ba3c7b95> ;
     mm:hasRecording ex:Recording_BigBossGroove_a1d2bfd4 .
 
-ex:Work_TheGreenManalishiWithTheTwoProngCrown_784d31f1 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TheGreenManalishiWithTheTwoProngCrown_784d31f1 a mm:MusicEntity ;
     rdfs:label "The Green Manalishi (With the Two Prong Crown)" ;
     schema1:name "The Green Manalishi (With the Two Prong Crown)" ;
     owl:sameAs <https://musicbrainz.org/work/784d31f1-ac0b-377a-9cae-814e5daa66d2> ;
     mm:hasRecording ex:Recording_TheGreenManalishi_7049eb5c .
 
-ex:Work_TheNeedleAndTheDamageDone_6d0d3f75_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TheNeedleAndTheDamageDone_6d0d3f75_2 a mm:MusicEntity ;
     rdfs:label "The Needle and the Damage Done" ;
     schema1:name "The Needle and the Damage Done" ;
     owl:sameAs <https://musicbrainz.org/work/6d0d3f75-42fd-3304-8415-cddb0aa2df9d> ;
     mm:hasRecording ex:Recording_TheNeedleAndTheDamageDone_882ef9db .
 
-ex:Work_TheNightOwls_7f799325 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TheNightOwls_7f799325 a mm:MusicEntity ;
     rdfs:label "The Night Owls" ;
     schema1:name "The Night Owls" ;
     owl:sameAs <https://musicbrainz.org/work/7f799325-befa-477a-a887-cad9d7c55e8d> ;
     mm:hasRecording ex:Recording_NightOwl_50c2fff9 .
 
-ex:Work_TheReflex_50ec521b a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TheReflex_50ec521b a mm:MusicEntity ;
     rdfs:label "The Reflex" ;
     schema1:name "The Reflex" ;
     owl:sameAs <https://musicbrainz.org/work/50ec521b-3ca4-3bee-9459-028b837b56f6> ;
     mm:hasRecording ex:Recording_TheReflex_73ff1d7a .
 
-ex:Work_TheRiddle_b5c6086c a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TheRiddle_b5c6086c a mm:MusicEntity ;
     rdfs:label "The Riddle" ;
     schema1:name "The Riddle" ;
     owl:sameAs <https://musicbrainz.org/work/b5c6086c-6e9c-3557-9c3e-f7e98ed828f1> ;
     mm:hasRecording ex:Recording_TheRiddle_59101c84 .
 
-ex:Work_TheSkyIsCrying_ea9996dc a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TheSkyIsCrying_ea9996dc a mm:MusicEntity ;
     rdfs:label "The Sky Is Crying" ;
     schema1:name "The Sky Is Crying" ;
     owl:sameAs <https://musicbrainz.org/work/ea9996dc-701d-35b7-ae60-43108287123a> ;
     mm:hasRecording ex:Recording_TheSkyIsCrying_30b104f5 .
 
-ex:Work_TheWaiting_dd9f2a88_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TheWaiting_dd9f2a88_2 a mm:MusicEntity ;
     rdfs:label "The Waiting" ;
     schema1:name "The Waiting" ;
     owl:sameAs <https://musicbrainz.org/work/dd9f2a88-13ae-3add-83bf-f71786112c50> ;
     mm:hasRecording ex:Recording_TheWaiting_eb9d24b9 .
 
-ex:Work_TheWayYouDoTheThingsYouDo_44ddc0a7_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TheWayYouDoTheThingsYouDo_44ddc0a7_2 a mm:MusicEntity ;
     rdfs:label "The Way You Do the Things You Do" ;
     schema1:name "The Way You Do the Things You Do" ;
     owl:sameAs <https://musicbrainz.org/work/44ddc0a7-a490-30b8-8282-10fb605aca9a> ;
     mm:hasRecording ex:Recording_TheWayYouDoTheThingsYouDo_2d19e310 .
 
-ex:Work_TimeTheAvenger_34b57a63_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_TimeTheAvenger_34b57a63_2 a mm:MusicEntity ;
     rdfs:label "Time the Avenger" ;
     schema1:name "Time the Avenger" ;
     owl:sameAs <https://musicbrainz.org/work/34b57a63-dc74-3331-9f0d-0304f71ecf72> ;
     mm:hasRecording ex:Recording_TimeTheAvenger_c74a5c06 .
 
-ex:Work_True_022cacb2_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_True_022cacb2_2 a mm:MusicEntity ;
     rdfs:label "True" ;
     schema1:name "True" ;
     owl:sameAs <https://musicbrainz.org/work/022cacb2-b852-3a40-9d77-8b5d80ed8df5> ;
     mm:hasRecording ex:Recording_True_ca2c82a1 .
 
-ex:Work_Tvc15_126ed430 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Tvc15_126ed430 a mm:MusicEntity ;
     rdfs:label "TVC 15" ;
     schema1:name "TVC 15" ;
     owl:sameAs <https://musicbrainz.org/work/126ed430-2ed0-380c-b75f-953529dbffa7> ;
     mm:hasRecording ex:Recording_Tvc15_4ccc6c6b .
 
-ex:Work_U2IntroductionFromJfk_962ac7f2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_U2IntroductionFromJfk_962ac7f2 a mm:MusicEntity ;
     rdfs:label "[U2 introduction from JFK]" ;
     schema1:name "[U2 introduction from JFK]" ;
     mm:hasRecording ex:Recording_U2IntroductionFromJfk_34b8b69a .
 
-ex:Work_UkFinale_a1f70583 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_UkFinale_a1f70583 a mm:MusicEntity ;
     rdfs:label "[UK finale]" ;
     schema1:name "[UK finale]" ;
     mm:hasRecording ex:Recording_UkFinale_e52b59cf .
 
-ex:Work_UnionOfTheSnake_5287e415 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_UnionOfTheSnake_5287e415 a mm:MusicEntity ;
     rdfs:label "Union of the Snake" ;
     schema1:name "Union of the Snake" ;
     owl:sameAs <https://musicbrainz.org/work/5287e415-544c-4b07-b0d7-8555ddeb343a> ;
     mm:hasRecording ex:Recording_UnionOfTheSnake_d1a8cfd3 .
 
-ex:Work_UnknownNewsReport_07d146ad a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_UnknownNewsReport_07d146ad a mm:MusicEntity ;
     rdfs:label "Unknown news report" ;
     schema1:name "Unknown news report" ;
     mm:hasRecording ex:Recording_UnknownNewsReport_658df5b3 .
 
-ex:Work_Unknown_4bac182d a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Unknown_4bac182d a mm:MusicEntity ;
     rdfs:label "[unknown]",
         "unknown" ;
     schema1:name "[unknown]",
         "unknown" ;
     mm:hasRecording ex:Recording_Unknown_5b8d7f98 .
 
-ex:Work_UsFinale_75122809 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_UsFinale_75122809 a mm:MusicEntity ;
     rdfs:label "[US finale]" ;
     schema1:name "[US finale]" ;
     mm:hasRecording ex:Recording_UsFinale_f5a06f66 .
 
-ex:Work_Vienna_33826c32 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Vienna_33826c32 a mm:MusicEntity ;
     rdfs:label "Vienna" ;
     schema1:name "Vienna" ;
     owl:sameAs <https://musicbrainz.org/work/33826c32-7790-3d04-9bc4-db63021e357e> ;
     mm:hasRecording ex:Recording_Vienna_1d8f82e2 .
 
-ex:Work_Virgin_be856f58 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Virgin_be856f58 a mm:MusicEntity ;
     rdfs:label "Virgin" ;
     schema1:name "Virgin" ;
     owl:sameAs <https://musicbrainz.org/work/be856f58-cce6-4930-884c-58a3186f257a> ;
     mm:hasRecording ex:Recording_Virgin_4625d665 .
 
-ex:Work_ViveLeRock_b8fa9822 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ViveLeRock_b8fa9822 a mm:MusicEntity ;
     rdfs:label "Vive Le Rock" ;
     schema1:name "Vive Le Rock" ;
     owl:sameAs <https://musicbrainz.org/work/b8fa9822-6963-3dbe-b08c-39c24354a55f> ;
     mm:hasRecording ex:Recording_ViveLeRock_e09de3f8 .
 
-ex:Work_WallsComeTumblingDown_2f64618a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WallsComeTumblingDown_2f64618a a mm:MusicEntity ;
     rdfs:label "Walls Come Tumbling Down" ;
     schema1:name "Walls Come Tumbling Down" ;
     owl:sameAs <https://musicbrainz.org/work/2f64618a-8a74-3209-b9d9-366723305585> ;
     mm:hasRecording ex:Recording_WallsComeTumblingDown_203a982d .
 
-ex:Work_Warum_af26c25f_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Warum_af26c25f_2 a mm:MusicEntity ;
     rdfs:label "Warum?" ;
     schema1:name "Warum?" ;
     owl:sameAs <https://musicbrainz.org/work/af26c25f-bbb0-44ae-83cd-73004113d60b> ;
     mm:hasRecording ex:Recording_Warum_717380bd .
 
-ex:Work_WeAreTheChampions_0b3da969_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WeAreTheChampions_0b3da969_2 a mm:MusicEntity ;
     rdfs:label "We Are the Champions" ;
     schema1:name "We Are the Champions" ;
     owl:sameAs <https://musicbrainz.org/work/0b3da969-5466-3cef-8cbb-bfc882ba9fcf> ;
     mm:hasRecording ex:Recording_WeAreTheChampions_ab0796fb .
 
-ex:Work_WeAreTheWorld_0b9a2e1d_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WeAreTheWorld_0b9a2e1d_2 a mm:MusicEntity ;
     rdfs:label "We Are the World" ;
     schema1:name "We Are the World" ;
     owl:sameAs <https://musicbrainz.org/work/0b9a2e1d-361e-3f84-89c4-e996eb7ee2eb> ;
     mm:hasRecording ex:Recording_WeAreTheWorld_35a488c3 .
 
-ex:Work_WeWillRockYou_3623f3af_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WeWillRockYou_3623f3af_2 a mm:MusicEntity ;
     rdfs:label "We Will Rock You" ;
     schema1:name "We Will Rock You" ;
     owl:sameAs <https://musicbrainz.org/work/3623f3af-2b21-37ff-8b5a-825b815c6f4f> ;
     mm:hasRecording ex:Recording_WeWillRockYou_2f58f9a6 .
 
-ex:Work_WelcomingAmerica_2afd59a6 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WelcomingAmerica_2afd59a6 a mm:MusicEntity ;
     rdfs:label "[welcoming America]",
         "welcoming America" ;
     schema1:name "[welcoming America]",
         "welcoming America" ;
     mm:hasRecording ex:Recording_WelcomingAmerica_b815d586 .
 
-ex:Work_WembleyLinkUpToJfk_438d9ac9 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WembleyLinkUpToJfk_438d9ac9 a mm:MusicEntity ;
     rdfs:label "[Wembley link up to JFK]" ;
     schema1:name "[Wembley link up to JFK]" ;
     mm:hasRecording ex:Recording_WembleyLinkUpToJfk_c7ae20df .
 
-ex:Work_WhatYouNeed_5e27c4a3_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WhatYouNeed_5e27c4a3_2 a mm:MusicEntity ;
     rdfs:label "What You Need" ;
     schema1:name "What You Need" ;
     owl:sameAs <https://musicbrainz.org/work/5e27c4a3-8334-387f-a24d-8c6dffc51160> ;
     mm:hasRecording ex:Recording_WhatYouNeed_7f30e02a .
 
-ex:Work_WhenTheShipComesIn_e393936f a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WhenTheShipComesIn_e393936f a mm:MusicEntity ;
     rdfs:label "When the Ship Comes In" ;
     schema1:name "When the Ship Comes In" ;
     owl:sameAs <https://musicbrainz.org/work/e393936f-b863-466a-9c84-50a51d995268> ;
     mm:hasRecording ex:Recording_WhenTheShipsComesIn_3bfc4b19 .
 
-ex:Work_WhiteRoom_7549fd84_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WhiteRoom_7549fd84_2 a mm:MusicEntity ;
     rdfs:label "White Room" ;
     schema1:name "White Room" ;
     owl:sameAs <https://musicbrainz.org/work/7549fd84-8c54-3c83-9f2e-6fc278d92de7> ;
     mm:hasRecording ex:Recording_WhiteRoom_6919d285 .
 
-ex:Work_WhoDoYouLove_4f19a475_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WhoDoYouLove_4f19a475_2 a mm:MusicEntity ;
     rdfs:label "Who Do You Love?" ;
     schema1:name "Who Do You Love?" ;
     owl:sameAs <https://musicbrainz.org/work/4f19a475-4607-31cc-aba9-390f5a007352> ;
     mm:hasRecording ex:Recording_WhoDoYouLove_2918fca0 .
 
-ex:Work_WholeLottaLove_36df44f5_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WholeLottaLove_36df44f5_2 a mm:MusicEntity ;
     rdfs:label "Whole Lotta Love" ;
     schema1:name "Whole Lotta Love" ;
     owl:sameAs <https://musicbrainz.org/work/36df44f5-7cad-37ee-9aae-89a5c58dfb07> ;
     mm:hasRecording ex:Recording_WholeLottaLove_c24368f1 .
 
-ex:Work_WhyCanTIGetItOver_e08b06d9 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WhyCanTIGetItOver_e08b06d9 a mm:MusicEntity ;
     rdfs:label "Why Can’t I Get It Over" ;
     schema1:name "Why Can’t I Get It Over" ;
     mm:hasRecording ex:Recording_WhyCanTIGetItOver_dc308b4b .
 
-ex:Work_WhyCanTWeLiveTogether_8bae3d24_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WhyCanTWeLiveTogether_8bae3d24_2 a mm:MusicEntity ;
     rdfs:label "Why Can’t We Live Together" ;
     schema1:name "Why Can’t We Live Together" ;
     owl:sameAs <https://musicbrainz.org/work/8bae3d24-d21a-3d2a-b527-be7bd1d0959a> ;
     mm:hasRecording ex:Recording_WhyCanTWeLiveTogether_0bf0a51e .
 
-ex:Work_WhyISingTheBlues_72989758_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WhyISingTheBlues_72989758_2 a mm:MusicEntity ;
     rdfs:label "Why I Sing the Blues" ;
     schema1:name "Why I Sing the Blues" ;
     owl:sameAs <https://musicbrainz.org/work/72989758-9da5-4cfe-a83c-1e353982cceb> ;
     mm:hasRecording ex:Recording_WhyISingTheBlues_4b1f43fc .
 
-ex:Work_WideBoy_d3b9738a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WideBoy_d3b9738a a mm:MusicEntity ;
     rdfs:label "Wide Boy" ;
     schema1:name "Wide Boy" ;
     owl:sameAs <https://musicbrainz.org/work/d3b9738a-4398-4b90-88ca-a88c7f53c00e> ;
     mm:hasRecording ex:Recording_WideBoy_2e405de3 .
 
-ex:Work_WonTGetFooledAgain_f00616af_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WonTGetFooledAgain_f00616af_2 a mm:MusicEntity ;
     rdfs:label "Won’t Get Fooled Again" ;
     schema1:name "Won’t Get Fooled Again" ;
     owl:sameAs <https://musicbrainz.org/work/f00616af-fff7-3fe8-ab97-5dda1d34eded> ;
     mm:hasRecording ex:Recording_WonTGetFooledAgain_e7c6be90 .
 
-ex:Work_Work_62b21d30_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Work_62b21d30_2 a mm:MusicEntity ;
     rdfs:label "Головокружение" ;
     schema1:name "Головокружение" ;
     owl:sameAs <https://musicbrainz.org/work/62b21d30-053d-4b5e-aa2d-feeb9586f9ba> ;
     mm:hasRecording ex:Recording_Unknown_d0d61d3a .
 
-ex:Work_Work_b3b21249_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Work_b3b21249_2 a mm:MusicEntity ;
     rdfs:label "Нам Нужен Мир" ;
     schema1:name "Нам Нужен Мир" ;
     owl:sameAs <https://musicbrainz.org/work/b3b21249-d073-4771-a591-9cc2c3fdd877> ;
     mm:hasRecording ex:Recording_Unknown_32ae9adc .
 
-ex:Work_WouldnTItBeGood_6a8be284_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WouldnTItBeGood_6a8be284_2 a mm:MusicEntity ;
     rdfs:label "Wouldn’t It Be Good" ;
     schema1:name "Wouldn’t It Be Good" ;
     owl:sameAs <https://musicbrainz.org/work/6a8be284-af8e-34e0-93ce-e0185fd4d3b7> ;
     mm:hasRecording ex:Recording_WouldnTItBeGood_f01b6a95 .
 
-ex:Work_WouldnTItBeNice_8d9c97e9_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_WouldnTItBeNice_8d9c97e9_2 a mm:MusicEntity ;
     rdfs:label "Wouldn’t It Be Nice" ;
     schema1:name "Wouldn’t It Be Nice" ;
     owl:sameAs <https://musicbrainz.org/work/8d9c97e9-dde0-3f8d-bfd4-4af58ad2c910> ;
     mm:hasRecording ex:Recording_WouldnTItBeNice_de5d8181 .
 
-ex:Work_YouMightThink_9bd7d77e a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_YouMightThink_9bd7d77e a mm:MusicEntity ;
     rdfs:label "You Might Think" ;
     schema1:name "You Might Think" ;
     owl:sameAs <https://musicbrainz.org/work/9bd7d77e-84c5-4a14-8018-9469ae6eea40> ;
     mm:hasRecording ex:Recording_YouMightThink_62b257d5 .
 
-ex:Work_YouReTheBestThing_318c96a9_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_YouReTheBestThing_318c96a9_2 a mm:MusicEntity ;
     rdfs:label "You’re the Best Thing" ;
     schema1:name "You’re the Best Thing" ;
     owl:sameAs <https://musicbrainz.org/work/318c96a9-2ba8-43f6-a699-9830d3cb7066> ;
     mm:hasRecording ex:Recording_YouReTheBestThing_85650129 .
 
-ex:Work_YouVeGotAnotherThingComin_24f7f4ea a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_YouVeGotAnotherThingComin_24f7f4ea a mm:MusicEntity ;
     rdfs:label "You’ve Got Another Thing Comin’" ;
     schema1:name "You’ve Got Another Thing Comin’" ;
     owl:sameAs <https://musicbrainz.org/work/24f7f4ea-2d8e-38b0-bee1-396655766701> ;
     mm:hasRecording ex:Recording_YouVeGotAnotherThingComin_b48f9409 .
 
-ex:Work_YourLoveIsKing_89d27ad0 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_YourLoveIsKing_89d27ad0 a mm:MusicEntity ;
     rdfs:label "Your Love Is King" ;
     schema1:name "Your Love Is King" ;
     owl:sameAs <https://musicbrainz.org/work/89d27ad0-c29a-322d-ac29-69c58551217c> ;
     mm:hasRecording ex:Recording_YourLoveIsKing_a214b8ab .
 
-ex:Work_ZaMilionGodinaForAMillionYears_ef428638_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ZaMilionGodinaForAMillionYears_ef428638_2 a mm:MusicEntity ;
     rdfs:label "Za milion godina (For a Million Years)" ;
     schema1:name "Za milion godina (For a Million Years)" ;
     owl:sameAs <https://musicbrainz.org/work/ef428638-a607-4210-b156-73059fb2fb68> ;
@@ -3486,46 +3262,40 @@ ex:Recording_WembleyLinkUpToJfk_c7ae20df a mm:Recording ;
         ex:Work_WembleyLinkUpToJfk_438d9ac9 ;
     owl:sameAs <https://musicbrainz.org/recording/c7ae20df-bde9-4951-a130-1e4635332580> .
 
-ex:Work_A4TheTearsInYourEyes_3b18d69a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_A4TheTearsInYourEyes_3b18d69a a mm:MusicEntity ;
     rdfs:label "4 the Tears in Your Eyes" ;
     schema1:name "4 the Tears in Your Eyes" ;
     owl:sameAs <https://musicbrainz.org/work/3b18d69a-d822-4ada-82d2-3ec79c460243> ;
     mm:hasRecording ex:Recording_A4TheTearsInYourEyes_454a89c8,
         ex:Recording_ThatSForTheTearsInYourEyes_454a89c8 .
 
-ex:Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2 a mm:MusicEntity ;
     rdfs:label "Against All Odds (Take a Look at Me Now)" ;
     schema1:name "Against All Odds (Take a Look at Me Now)" ;
     owl:sameAs <https://musicbrainz.org/work/277700f9-0394-3ed2-bc2d-6febcf72bda7> ;
     mm:hasRecording ex:Recording_AgainstAllOdds_158681cb,
         ex:Recording_AgainstAllOdds_50b4150f .
 
-ex:Work_Announcement_fae8149f a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Announcement_fae8149f a mm:MusicEntity ;
     rdfs:label "announcement" ;
     schema1:name "announcement" ;
     mm:hasRecording ex:Recording_Annoncement_4a0a49dd,
         ex:Recording_Announcement_4a0a49dd .
 
-ex:Work_BobGeldofSnippet_ea137d30 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BobGeldofSnippet_ea137d30 a mm:MusicEntity ;
     rdfs:label "Bob Geldof Snippet" ;
     schema1:name "Bob Geldof Snippet" ;
     mm:hasRecording ex:Recording_BobGeldofSnippet_3cfd8fdd,
         ex:Recording_BobGeldofSnippet_e3840161 .
 
-ex:Work_InTheAirTonight_b9a05cea a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_InTheAirTonight_b9a05cea a mm:MusicEntity ;
     rdfs:label "In the Air Tonight" ;
     schema1:name "In the Air Tonight" ;
     owl:sameAs <https://musicbrainz.org/work/b9a05cea-1b4d-3139-980e-a48e14537800> ;
     mm:hasRecording ex:Recording_InTheAirTonight_3bd855ce,
         ex:Recording_InTheAirTonight_8b47f77a .
 
-ex:Work_LiveAidMessage1_79eb07d3 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_LiveAidMessage1_79eb07d3 a mm:MusicEntity ;
     rdfs:label "Live Aid message 1",
         "[Live Aid message 1]" ;
     schema1:name "Live Aid message 1",
@@ -3533,32 +3303,28 @@ ex:Work_LiveAidMessage1_79eb07d3 a schema1:MusicComposition,
     mm:hasRecording ex:Recording_LiveAidMessage1_2d69e5ba,
         ex:Recording_LiveAidMessage1_fd3c6e4f .
 
-ex:Work_LivingAfterMidnight_c2f04756 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_LivingAfterMidnight_c2f04756 a mm:MusicEntity ;
     rdfs:label "Living After Midnight" ;
     schema1:name "Living After Midnight" ;
     owl:sameAs <https://musicbrainz.org/work/c2f04756-6a60-3281-9992-c24bdff423db> ;
     mm:hasRecording ex:Recording_LivinAfterMidnight_4e135c56,
         ex:Recording_LivingAfterMidnight_4e135c56 .
 
-ex:Work_AbcIntermissionBbcIntermission_27609092 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AbcIntermissionBbcIntermission_27609092 a mm:MusicEntity ;
     rdfs:label "[ABC intermission] / [BBC intermission]" ;
     schema1:name "[ABC intermission] / [BBC intermission]" ;
     mm:hasRecording ex:Recording_AbcIntermissionBbcIntermission_09b943a8,
         ex:Recording_AbcIntermissionBbcIntermission_6130bf23,
         ex:Recording_AbcIntermissionBbcIntermission_95c8f136 .
 
-ex:Work_FamineVideo_fd7259de a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_FamineVideo_fd7259de a mm:MusicEntity ;
     rdfs:label "[famine video]" ;
     schema1:name "[famine video]" ;
     mm:hasRecording ex:Recording_FamineVideo_849ef639,
         ex:Recording_FamineVideo_936ca70a,
         ex:Recording_FamineVideo_ffa6934b .
 
-ex:Work_AbcIntermission_74f8674f a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_AbcIntermission_74f8674f a mm:MusicEntity ;
     rdfs:label "[ABC intermission]" ;
     schema1:name "[ABC intermission]" ;
     mm:hasRecording ex:Recording_AbcIntermission_00f9da60,
@@ -3567,8 +3333,7 @@ ex:Work_AbcIntermission_74f8674f a schema1:MusicComposition,
         ex:Recording_AbcIntermission_83775933,
         ex:Recording_AbcIntermission_85f07145 .
 
-ex:Work_Intermission_8934301a a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_Intermission_8934301a a mm:MusicEntity ;
     rdfs:label "[Intermission]",
         "[intermission]" ;
     schema1:name "[Intermission]",
@@ -3580,8 +3345,7 @@ ex:Work_Intermission_8934301a a schema1:MusicComposition,
         ex:Recording_Intermission_a9023e6b,
         ex:Recording_Intermission_a9dfaa12 .
 
-ex:Work_ArtistAndMother_5d0174a8 a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_ArtistAndMother_5d0174a8 a mm:MusicEntity ;
     rdfs:label "Artist and Mother" ;
     schema1:name "Artist and Mother" ;
     owl:sameAs <https://musicbrainz.org/work/5d0174a8-ba5e-458e-9b24-1d5f45357a79> ;
@@ -3599,8 +3363,7 @@ ex:Work_ArtistAndMother_5d0174a8 a schema1:MusicComposition,
         ex:Recording_UsFinale_f5a06f66,
         ex:Recording_WembleyLinkUpToJfk_c7ae20df .
 
-ex:Work_BbcIntermission_fee0475e a schema1:MusicComposition,
-        mm:MusicEntity ;
+ex:Work_BbcIntermission_fee0475e a mm:MusicEntity ;
     rdfs:label "[BBC intermission]" ;
     schema1:name "[BBC intermission]" ;
     mm:hasRecording ex:Recording_BbcIntermission_0227b235,

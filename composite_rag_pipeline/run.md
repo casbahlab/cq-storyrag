@@ -37,3 +37,6 @@ python eval/eval_single_run.py \
   --length Medium
 
 python run_bundle_fixed.py --personas Emma --lengths Medium --patterns KG Hybrid Graph  --runs 1
+
+
+python run_bundle_fixed.py --personas Luca --lengths Long --patterns KG Hybrid Graph  --runs 1

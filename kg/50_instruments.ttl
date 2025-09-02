@@ -4,59 +4,86 @@
 
 ex:AcousticGuitar a ex:MusicInstrument ;
     rdfs:label "Acoustic Guitar" ;
-    schema:name "Acoustic Guitar" .
+    schema:name "Acoustic Guitar" ;
+    schema:sameAs <https://musicbrainz.org/instrument/00beaf8e-a781-431c-8130-7c2871696b7d>,
+        <https://www.wikidata.org/wiki/Q31561> .
 
 ex:BassGuitar a ex:MusicInstrument ;
-    rdfs:label "Bassguitar" ;
-    schema:name "Bassguitar" .
+    rdfs:label "Bass Guitar" ;
+    schema:name "Bass Guitar" ;
+    schema:sameAs <https://musicbrainz.org/instrument/17f9f065-2312-4a24-8309-6f6dd63e2e33>,
+        <https://www.wikidata.org/wiki/Q46185> .
 
 ex:DrumsDrumSet a ex:MusicInstrument ;
     rdfs:label "Drums (Drum Set)" ;
-    schema:name "Drums (Drum Set)" .
+    schema:name "Drums (Drum Set)" ;
+    schema:sameAs <https://musicbrainz.org/instrument/12092505-6ee1-46af-a15a-b5b468b6b155>,
+        <https://www.wikidata.org/wiki/Q128309> .
 
 ex:ElectricBassGuitar a ex:MusicInstrument ;
     rdfs:label "Electric Bass Guitar" ;
-    schema:name "Electric Bass Guitar" .
+    schema:name "Electric Bass Guitar" ;
+    schema:sameAs <https://musicbrainz.org/instrument/0b9d87fa-93fa-4956-8b6a-a419566cc915>,
+        <https://www.wikidata.org/wiki/Q64166304> .
 
 ex:ElectricGuitar a ex:MusicInstrument ;
     rdfs:label "Electric Guitar" ;
-    schema:name "Electric Guitar" .
+    schema:name "Electric Guitar" ;
+    schema:sameAs <https://musicbrainz.org/instrument/7ee8ebf5-3aed-4fc8-8004-49f4a8c45a87>,
+        <https://www.wikidata.org/wiki/Q78987> .
 
 ex:Guitar a ex:MusicInstrument ;
     rdfs:label "Guitar" ;
-    schema:name "Guitar" .
+    schema:name "Guitar" ;
+    schema:sameAs <https://musicbrainz.org/instrument/63021302-86cd-4aee-80df-2270d54f4978>,
+        <https://www.wikidata.org/wiki/Q6607> .
 
 ex:GuitarFamily a ex:MusicInstrument ;
     rdfs:label "Guitar Family" ;
-    schema:name "Guitar Family" .
+    schema:name "Guitar Family" ;
+    schema:sameAs <https://musicbrainz.org/instrument/f68936f2-194c-4bcd-94a9-81e1dd947b8d> .
 
 ex:Harmonica a ex:MusicInstrument ;
     rdfs:label "Harmonica" ;
-    schema:name "Harmonica" .
+    schema:name "Harmonica" ;
+    schema:sameAs <https://musicbrainz.org/instrument/63e37f1a-30b6-4746-8a49-dfb55be3cdd1>,
+        <https://www.wikidata.org/wiki/Q51290> .
 
 ex:Keyboard a ex:MusicInstrument ;
     rdfs:label "Keyboard" ;
-    schema:name "Keyboard" .
+    schema:name "Keyboard" ;
+    schema:sameAs <https://musicbrainz.org/instrument/95b0c3d2-9606-4ef5-a019-9b7437f3adda>,
+        <https://www.wikidata.org/wiki/Q1343007> .
 
 ex:Percussion a ex:MusicInstrument ;
     rdfs:label "Percussion" ;
-    schema:name "Percussion" .
+    schema:name "Percussion" ;
+    schema:sameAs <https://musicbrainz.org/instrument/8e9abdf1-0afc-4544-b201-c6fa768d01f4>,
+        <https://www.wikidata.org/wiki/Q133163> .
 
 ex:Piano a ex:MusicInstrument ;
     rdfs:label "Piano" ;
-    schema:name "Piano" .
+    schema:name "Piano" ;
+    schema:sameAs <https://musicbrainz.org/instrument/b3eac5f9-7859-4416-ac39-7154e2e8d348>,
+        <https://www.wikidata.org/wiki/Q5994> .
 
 ex:Saxophone a ex:MusicInstrument ;
     rdfs:label "Saxophone" ;
-    schema:name "Saxophone" .
+    schema:name "Saxophone" ;
+    schema:sameAs <https://musicbrainz.org/instrument/a9ed16cd-b8cb-4256-9c41-93f5f0458c49>,
+        <https://www.wikidata.org/wiki/Q9798> .
 
 ex:Synthesizer a ex:MusicInstrument ;
     rdfs:label "Synthesizer" ;
-    schema:name "Synthesizer" .
+    schema:name "Synthesizer" ;
+    schema:sameAs <https://musicbrainz.org/instrument/4a29230c-5ab5-4eff-ac59-4a253f3561a0>,
+        <https://www.wikidata.org/wiki/Q163829> .
 
 ex:Trumpet a ex:MusicInstrument ;
     rdfs:label "Trumpet" ;
-    schema:name "Trumpet" .
+    schema:name "Trumpet" ;
+    schema:sameAs <https://musicbrainz.org/instrument/1c8f9780-2f16-4891-b66d-bb7aa0820dbd>,
+        <https://www.wikidata.org/wiki/Q8338> .
 
 ex:Voice a ex:MusicInstrument ;
     rdfs:label "Voice" ;

@@ -62,6 +62,10 @@ python3 support_ctx_pipeline.py fix \
 
 
 
+
+
+
+
 /Users/sowjanyab/code/dissertation/comp70225-wembrewind/composite_rag_pipeline/eval/data/Emma-Medium-20250826-093041/run-01/Hybrid
 
 
@@ -139,3 +143,66 @@ python3 sweep_eval.py \
   --bm25-b 0.25,0.50 \
   --bm25-topk 40,60 \
   --alias-by-dataset Graph=alias.json
+
+
+
+python3 narrative_eval.py \
+  -i data/Emma-Medium-20250825-223330/run-01/KG/story_KG.md \
+  -o out_dir \
+  --beats auto \
+  --neardupe-th 0.85 \
+  --domain-stopwords live aid concert performance wembley philadelphia \
+  --with-coherence
+
+
+
+
+
+# All three on
+python support_ctx_reset_refactored.py \
+  --answers data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl --out-csv out/support.csv --out-summary out/summary.csv \
+  --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-k 8 --topic-th 0.30
+
+# Only topic modelling (no lexical signals)
+python support_ctx_reset_refactored.py \
+  --answers data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl --out-csv out/support.csv --out-summary out/summary.csv \
+  --use-tfidf 0 --use-char3 0 --use-topic 1
+
+# Lexical only (your current default)
+python support_ctx_reset_refactored.py \
+  --answers data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl --out-csv out/support.csv --out-summary out/summary.csv \
+  --use-tfidf 1 --use-char3 1 --use-topic 0
+
+# Cosine only 
+python support_ctx_reset_refactored.py \
+  --answers data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl --out-csv out/support.csv --out-summary out/summary.csv \
+  --use-tfidf 1 --use-char3 0 --use-topic 0
+
+
+# Topic modeling only 
+python support_ctx_reset_refactored.py \
+  --answers data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl --out-csv out/support.csv --out-summary out/summary.csv \
+  --use-tfidf 0 --use-char3 0 --use-topic 1
+
+
+
+python support_ctx_reset_refactored.py \
+  --answers data/Emma-Medium-20250825-223330/run-01/KG/answers_KG.jsonl \
+  --out-csv out/support.csv --out-summary out/summary.csv \
+  --use-tfidf 1 --use-char3 1 --use-topic 1 \
+  --fusion rrf --rrf-k 60 \
+  --tf-th 0.33 --cj-th 0.27 --topic-th 0.30 \
+  --topic-k 8
+
+
+
+
+ python narrative_eval.py \
+  -i data/Emma-Medium-20250901-215830/run-01/KG/story_KG.md \
+  -o narr_eval_out \
+  --beats auto \
+  --with-coherence \
+  --annotate \
+  --nqi-lite \
+  --neardupe-th 0.85 \
+  --domain-stopwords live aid concert wembley philadelphia

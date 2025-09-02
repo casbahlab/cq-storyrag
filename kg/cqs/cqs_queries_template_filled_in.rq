@@ -44,7 +44,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=", ") AS ?allPerformingArtists)
 WHERE {
-    ?performance a schema:Event, mm:LivePerformance ;
+    ?performance a mm:LivePerformance ;
            schema:isPartOf ?event ;
            schema:location ?venue ;
            schema:performer ?artist .
@@ -62,7 +62,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=", ") AS ?allPerformingArtists)
 WHERE {
-    ?performance a schema:Event, mm:LivePerformance ;
+    ?performance a mm:LivePerformance ;
            schema:isPartOf ?event ;
            schema:performer ?artist .
     ?event schema:name ?eventName .
@@ -132,7 +132,6 @@ WHERE {
     FILTER(?isIconic = true)
 }
 
-
 #CQ-ID:CQ-E10 Which [Song] did [Artist] perform at [Event]?
 PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
@@ -142,7 +141,7 @@ WHERE {
     ?performance a mm:LivePerformance ;
                  schema:isPartOf ?event ;
     			 ex:isIconic ?isIconic .
-    ?performance mm:performedWork ?work .
+    ?performance ex:songPerformed ?work .
     ?performance schema:performer ?artist .
     ?work schema:name ?workName .
     FILTER(?event =   ex:LiveAid1985)
@@ -218,7 +217,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=", ") AS ?allPerformingArtists)
 WHERE {
-    ?performance a schema:Event, mm:LivePerformance ;
+    ?performance a mm:LivePerformance ;
            schema:isPartOf ?event ;
            schema:performer ?artist .
     ?event schema:name ?eventName .
@@ -563,7 +562,7 @@ WHERE {
     ?artist a mm:MusicArtist ;
             schema:name ?artistName ;
             schema:foundingDate ?foundingYear .
-    ?role a schema:Role, mm:MusicEnsembleMembership ;
+    ?role a mm:MusicEnsembleMembership ;
           mm:involvesMusicEnsemble ?artist ;
           mm:involvesMemberOfMusicEnsemble ?member ;
           ex:isOriginalMember true .
@@ -656,8 +655,7 @@ PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT DISTINCT ?instrumentName
 WHERE {
-  ?membership a schema:Role,
-        mm:MusicEnsembleMembership ;
+  ?membership a mm:MusicEnsembleMembership ;
         schema:instrument ?instrument .
   OPTIONAL { ?instrument schema:name ?instrumentName }
 }
@@ -671,8 +669,7 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT DISTINCT ?instrumentName
 WHERE {
     BIND (ex:BrianMay as ?guitarist)
-  ?membership a schema:Role,
-        mm:MusicEnsembleMembership ;
+  ?membership a mm:MusicEnsembleMembership ;
         mm:involvesMemberOfMusicEnsemble ?guitarist ;
         schema:instrument ?instrument .
   OPTIONAL { ?instrument schema:name ?instrumentName }
