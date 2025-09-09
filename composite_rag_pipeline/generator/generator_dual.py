@@ -313,8 +313,6 @@ def _normalize_refs_numeric(
     rows: List[Dict[str, Any]],
     url_infos: List[Dict[str, Any]],
     use_url_content: bool,
-    max_url_snippets: int,
-    snippet_chars: int,
 ) -> Tuple[List[Dict[str, Any]], List[str]]:
     """Flat numeric reference list 1..N (legacy style)."""
     references: List[Dict[str, Any]] = []
@@ -330,7 +328,7 @@ def _normalize_refs_numeric(
         if not u or u in seen:
             continue
         seen.add(u); web.append(info)
-    web = web[:max_url_snippets]
+    web = web
 
     for info in web:
         title = (info.get("title") or "").strip()
@@ -344,9 +342,9 @@ def _normalize_refs_numeric(
             "content_text": (info.get("content_text") or ""),
         })
         if use_url_content:
-            snip = (info.get("content_text") or "")[:snippet_chars].strip()
+            snip = (info.get("content_text") or "").strip()
             if snip: line += f" — “{snip}”"
-        ref_lines.append(line[:320])
+        ref_lines.append(line)
 
     return references, ref_lines
 
@@ -354,8 +352,6 @@ def _normalize_refs_by_cq(
     rows_by_cq: Dict[str, List[Dict[str, Any]]],
     web_by_cq: Dict[str, List[Dict[str, Any]]],
     use_url_content: bool,
-    max_url_snippets: int,
-    snippet_chars: int,
 ) -> Tuple[Dict[str, List[Dict[str, Any]]], List[str], List[str]]:
     """
     Returns:
@@ -375,7 +371,7 @@ def _normalize_refs_by_cq(
         # KG rows
         for r in rows_by_cq.get(cq, []):
             bundle.append({"type":"kg","row":r})
-            ref_lines.append(f"{cq}: KG: " + _row_to_ref_string(r)[:220])
+            ref_lines.append(f"{cq}: KG: " + _row_to_ref_string(r))
 
         # Web (dedupe by URL, clamp)
         seen = set(); web = []
@@ -384,7 +380,7 @@ def _normalize_refs_by_cq(
             if not u or u in seen:
                 continue
             seen.add(u); web.append(info)
-        web = web[:max_url_snippets]
+        web = web
 
         for info in web:
             title = (info.get("title") or "").strip()
@@ -398,9 +394,10 @@ def _normalize_refs_by_cq(
                 "content_text": (info.get("content_text") or ""),
             }
             if use_url_content:
-                snip = (info.get("content_text") or "")[:snippet_chars].strip()
+                snip = (info.get("content_text") or "").strip()
                 if snip: line += f" — “{snip}”"
-            ref_lines.append(line[:320])
+            #ref_lines.append(line[:320])
+            ref_lines.append(line)
             bundle.append(ev)
 
         ref_by_cq[cq] = bundle
@@ -626,34 +623,28 @@ def _max_context_items(beat_words: Tuple[int, int]) -> int:
     return 22      # Long
 
 # --- drop-in API ---
-def build_prompt(
-    persona_description: str,
-    beat_idx: int,
-    beat_title: str,
-    factlets: List[str],
-    refs: Union[List[str], List[Dict[str,str]]],
-    include_citations: bool,                     # kept for signature; ignored
-    beat_words: Tuple[int,int] = (180, 260),
-    citation_style: str = "cqid",                # kept for signature; ignored
-    citation_mode: str = "cq",                   # kept for signature; ignored
-) -> str:
+def build_prompt(persona_description: str, beat_idx: int, beat_title: str, refs: Union[List[str], List[Dict[str, str]]],
+                 mode: str) -> str:
     """
     Unified prompt with a single, unnumbered CONTEXT block.
     - No numbering, no CQ, no references section.
     - Context lines are cleaned & deduped.
     """
     # 1) Merge & clean inputs → CONTEXT lines
+    print(f"refs : {refs}")
     ref_lines = [_ref_to_text(r) for r in (refs or [])]
-    raw_items = (factlets or []) + ref_lines
+
+    raw_items =  ref_lines
     clean_items = _dedup_near([x for x in raw_items if x and x.strip()], jaccard=0.80)
 
     # 2) Respect length budget (feed a bit more; model will compress)
-    max_items = _max_context_items(beat_words)
-    context_lines = clean_items[:max_items]
+    # max_items = _max_context_items(beat_words)
+    #context_lines = clean_items[:max_items]
+    context_lines = clean_items
 
     # 3) Instruction header (CONTEXT only; no citation instructions)
-    lo, hi = beat_words
-    instruction = [
+
+    instruction_KG = [
         "You are writing a factual, engaging story section. Do NOT roleplay as the audience.",
         f"Section context — Beat {beat_idx + 1}: {beat_title}",
         "",
@@ -663,18 +654,69 @@ def build_prompt(
         "- Dos: lead with outcomes; use named entities, dates, and numbers; keep sentences tight",
         "- Don’ts: no first person, no speculation, no meta lead-ins; start directly.",
         "",
-        "Use ONLY the CONTEXT below.",
-        f"Targets: cover at least 70% of these items; Length: {lo}–{hi} words.",
+        "Use ONLY the CONTEXT below. Do not add any fact not present in CONTEXT.",
+        "Every subject–predicate–object relation in CONTEXT must appear explicitly as a sentence or clause.",
         "",
         "Rules:",
         "- One paragraph; third person; no bullets or headings.",
-        "- Use display names; do not print raw IDs/URIs.",
-        "- Preserve relation direction (subject → predicate → object) in your language.",
-        "- Prefer connective tissue (because, so, therefore, as a result) to link ideas.",
-        "- If multiple songs or members appear, narrate them in a clear, logical order.",
+        "- Begin with the event name to anchor the narrative.",
+        "- Always use subject and object names exactly as in CONTEXT.",
+        "- Repeat the exact predicate wording from CONTEXT, especially for negations.",
+        "- Do not replace CONTEXT terms with synonyms.",
+        "- Write one distinct clause per CONTEXT relation.",
+        "- Prefer connective tissue (because, so, therefore, as a result) only to link CONTEXT facts.",
         "- If a detail is missing, acknowledge the gap briefly rather than inventing it.",
-        #"Return SSML only inside <speak>; keep wording unchanged; mark intonation by wrapping each clause in <prosody> with pitch=\"+2st\" (rise), \"-2st\" (fall), \"0st\" (neutral), \"+4st\" (question), \"-4st\" (final); insert pauses with <break time=\"200ms\"/>.",
     ]
+
+    instruction_hybrid_web = [
+        "You are writing a factual, engaging story section. Do NOT roleplay as the audience.",
+        f"Section context — Beat {beat_idx + 1}: {beat_title}",
+        "",
+        "Audience (write for them; do NOT roleplay):",
+        f"- Description: {persona_description}",
+        "- Tone/style: clear, precise, evidence-driven",
+        "- Dos: lead with outcomes; use named entities, dates, and numbers; keep sentences tight",
+        "- Don’ts: no first person, no speculation, no meta lead-ins; start directly.",
+        "",
+        # CORE: keep KG facts canonical; use WEB only as attributed support
+        "Use ONLY the CONTEXT below. Do not add any fact not present in CONTEXT.",
+        "Realize every KG triple as an explicit clause using the exact predicate string from CONTEXT.",
+        "Treat WEB items as attributed perspectives only; do NOT generalize them into universal claims.",
+        "",
+        "Rules:",
+        "- One paragraph; third person; no bullets or headings.",
+        "- Begin with the event name if provided; otherwise begin with the most connected KG subject.",
+        "- One relation per clause; maximum two clauses per sentence.",
+        "- Use display names exactly as in CONTEXT; do not use pronouns for named entities.",
+        "- Repeat KG predicate wording verbatim (no synonyms), especially for negations.",
+        "- If a relation contains a year or number, include that exact value in the same clause.",
+        "- When a KG object lists multiple items, enumerate all items exactly as written (commas, 'and' before the last).",
+        "- Preserve direction (subject → predicate → object) in phrasing.",
+        "- Link clauses only with: because, so, therefore, as a result.",
+        "- Avoid abstract glue (iconic, legendary, ‘millions watched’) unless present in CONTEXT.",
+        "- If a required detail is missing, write: 'the specific {detail} is not stated in the context'.",
+        "",
+        # WEB ATTRIBUTION GRAMMAR (prevents support loss from paraphrase)
+        "For each WEB line: render it as 'SourceName → verb_of_attribution → content'.",
+        "Allowed verbs_of_attribution: 'reports', 'states', 'notes', 'describes', 'highlights', 'frames', 'calls', 'characterizes'.",
+        "Use the outlet display name only (e.g., BBC, CNN, Rolling Stone, Wikipedia, uDiscoverMusic); do not print URLs or IDs.",
+        "If quoting, keep to ≤ 8 words and put them in double quotes; otherwise paraphrase minimally while preserving meaning.",
+        "Do not upscope WEB claims (no 'everyone agrees' unless that wording is present in CONTEXT).",
+        "If multiple WEB sources discuss the same subject, list them in a clear order using the allowed verbs and keep each in its own clause.",
+        "",
+        # MICRO-PLANNER (internal)
+        "Internally enumerate all KG triples first (lists → negations → dated/numbered → remaining), then append WEB attributions tied to the same subjects. "
+        "Realize each as '<subject> <predicate> <object>' for KG, and 'SourceName <verb> <content>' for WEB. Join into one paragraph using only the allowed linkers.",
+        # SELF-CHECK (internal)
+        "Before finalizing, internally check that: every KG predicate appears verbatim; every KG triple is realized; all years/numbers in KG objects are echoed; "
+        "every WEB item is attributed by SourceName with an allowed verb; and no extra facts were added."
+    ]
+
+    if mode == "KG":
+        instruction = instruction_KG
+    else:
+        instruction = instruction_hybrid_web
+
     header_text = "\n".join(instruction)
 
     # 4) Compose CONTEXT block (unnumbered, one item per line)
@@ -724,14 +766,15 @@ class Args:
     story_clean_out: Optional[str] = None  # NEW — write a clean story (no sections, no citations)
 
 def _trim_to_budget(lines: List[str], budget: int) -> List[str]:
-    out = []; sofar = 0
-    for ln in lines:
-        ln = ln.strip()
-        if not ln: continue
-        n = len(ln) + 1
-        if sofar + n > budget: break
-        out.append(ln); sofar += n
-    return out
+    # out = []; sofar = 0
+    # for ln in lines:
+    #     ln = ln.strip()
+    #     if not ln: continue
+    #     n = len(ln) + 1
+    #     if sofar + n > budget: break
+    #     out.append(ln); sofar += n
+    # return out
+    return lines
 
 def _clean_story_text_remove_sections_and_citations(text_md: str) -> str:
     """
@@ -855,25 +898,18 @@ def generate(
     mode: str,
     plan: Dict[str, Any],
     plan_with_evidence: Dict[str, Any],
-    meta_path: str,
-    params: Dict[str, Any],
+        params: Dict[str, Any],
     llm_provider: str,
     llm_model: str,
     ollama_num_ctx: Optional[int] = None,
     use_url_content: bool = False,
-    max_url_snippets: int = 2,
-    snippet_chars: int = 400,
-    include_citations: bool = False,
-    max_rows: int = 4,
     max_facts_per_beat: int = 8,
-    beat_sentences: int = 3,
     context_budget_chars: int = 1200,
     enforce_citation_each_sentence: bool = False,
     citation_style: str = "cqid",
     claims_out: Optional[str] = None,
     story_clean_out: Optional[str] = None,
     run_id: Optional[str] = None,
-    citation_mode: str = None,
 ) -> Tuple[str, List[Dict[str, Any]]]:
 
     persona = plan.get("persona") or "Narrator"
@@ -896,6 +932,8 @@ def generate(
         beat_title = b.get("title") or "Untitled"
         beat_items = by_beat.get(beat_idx, [])
 
+
+
         # pool rows + url infos and keep cq_id provenance
         rows_pool: List[Dict[str, Any]] = []
         web_infos_pool: List[Dict[str, Any]] = []
@@ -909,6 +947,7 @@ def generate(
                 r2 = dict(r); r2["__cq_id"] = cqid
                 rows_pool.append(r2)
                 rows_by_cq.setdefault(cqid, []).append(r2)
+                print(f"rows_by_cq : {rows_by_cq}")
                 for info in r.get("__url_info", []) or []:
                     info2 = dict(info); info2["__cq_id"] = cqid
                     web_infos_pool.append(info2)
@@ -921,12 +960,12 @@ def generate(
 
         # factlets
         rows_selected = sorted(rows_pool, key=_score_row_for_fact_density, reverse=True)
-        factlets = _pack_factlets(rows_selected, max_facts_per_beat)
+        # factlets = _pack_factlets(rows_selected, max_facts_per_beat)
 
         # references
         if citation_style == "cqid":
             ref_by_cq, ref_lines_all, ordered_cqids = _normalize_refs_by_cq(
-                rows_by_cq, web_by_cq, use_url_content, max_url_snippets, snippet_chars
+                rows_by_cq, web_by_cq, use_url_content
             )
             ref_lines = _trim_to_budget(ref_lines_all, context_budget_chars)
             # keep only CQIDs that survived trimming
@@ -934,7 +973,7 @@ def generate(
             ref_by_cq_kept = {cid: ref_by_cq[cid] for cid in kept_cqs if cid in ref_by_cq}
         else:
             references, ref_lines_all = _normalize_refs_numeric(
-                rows_selected, web_infos_pool, use_url_content, max_url_snippets, snippet_chars
+                rows_selected, web_infos_pool, use_url_content
             )
             ref_lines = _trim_to_budget(ref_lines_all, context_budget_chars)
             if len(ref_lines) < len(references):
@@ -949,12 +988,8 @@ def generate(
             persona_description=persona_desc,
             beat_idx=beat_idx,
             beat_title=beat_title,
-            factlets=factlets,
-            refs=ref_lines,  # can be `ref_lines` OR `refs` dicts
-            include_citations=True,
-            beat_words=(180, 260),  # target length window
-            citation_style="cqid",  # "cqid" | "numeric"
-            citation_mode= citation_mode,  # for logging
+            refs=ref_lines,
+            mode=mode,
         )
 
         print(f"prompt : {prompt}")
@@ -965,7 +1000,6 @@ def generate(
             "beat_title": beat_title,
             "citation_style": "cqid",
             "length_words": pack["length_words"],
-            "min_factlets": max(3, int(round(0.7 * len(factlets)))),
             "coverage_target": 0.7,
 
         }
@@ -1016,7 +1050,6 @@ def generate(
         if citation_style == "cqid":
             answers_stream.append({
                 "beat_index": beat_idx, "beat_title": beat_title,
-                "facts_used": len(factlets),
                 "references_by_cq": ref_by_cq_kept,
                 "context_lines" : context_lines,
                 "text": text,
@@ -1024,7 +1057,6 @@ def generate(
         else:
             answers_stream.append({
                 "beat_index": beat_idx, "beat_title": beat_title,
-                "facts_used": len(factlets),
                 "references": references,
                 "context_lines": context_lines,
                 "text": text,
@@ -1124,18 +1156,12 @@ def main():
         mode=mode,
         plan=plan,
         plan_with_evidence=plan_ev,
-        meta_path=meta_path or "",
         params=params,
         llm_provider=args.llm_provider,
         llm_model=args.llm_model,
         ollama_num_ctx=args.ollama_num_ctx,
         use_url_content=args.use_url_content,
-        max_url_snippets=args.max_url_snippets,
-        snippet_chars=args.snippet_chars,
-        include_citations=args.include_citations,
-        max_rows=args.max_rows,
         max_facts_per_beat=args.max_facts_per_beat,
-        beat_sentences=args.beat_sentences,
         context_budget_chars=args.context_budget_chars,
         enforce_citation_each_sentence=args.enforce_citation_each_sentence,
         citation_style=args.citation_style,

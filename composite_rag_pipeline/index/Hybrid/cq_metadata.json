@@ -387,7 +387,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT (GROUP_CONCAT(DISTINCT ?workName; separator=\", \") AS ?allWorkName)\nWHERE {\n    ?performance a mm:LivePerformance ;\n                 schema:isPartOf ?event ;\n    \t\t\t ex:isIconic ?isIconic .\n    ?performance mm:performedWork ?work .\n    ?performance schema:performer ?artist .\n    ?work schema:name ?workName .\n    FILTER(?event =   {event})\n    FILTER(?artist = {musicgroup})\n}",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT (GROUP_CONCAT(DISTINCT ?workName; separator=\", \") AS ?allWorkName)\nWHERE {\n    ?performance a mm:LivePerformance ;\n                 schema:isPartOf ?event ;\n    \t\t\t ex:isIconic ?isIconic .\n    ?performance ex:songPerformed ?work .\n    ?performance schema:performer ?artist .\n    ?work schema:name ?workName .\n    FILTER(?event =   {event})\n    FILTER(?artist = {musicgroup})\n}",
       "source": "csv/json"
     },
     {
@@ -407,7 +407,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT (GROUP_CONCAT(DISTINCT ?workName; separator=\", \") AS ?allWorkName)\nWHERE {\n    ?performance a mm:LivePerformance ;\n                 schema:isPartOf ?event ;\n    \t\t\t ex:isIconic ?isIconic .\n    ?performance mm:performedWork ?work .\n    ?performance schema:performer ?artist .\n    ?work schema:name ?workName .\n    FILTER(?event =   {event})\n    FILTER(?artist = {musicgroup})\n}",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT (GROUP_CONCAT(DISTINCT ?workName; separator=\", \") AS ?allWorkName)\nWHERE {\n    ?performance a mm:LivePerformance ;\n                 schema:isPartOf ?event ;\n    \t\t\t ex:isIconic ?isIconic .\n    ?performance ex:songPerformed ?work .\n    ?performance schema:performer ?artist .\n    ?work schema:name ?workName .\n    FILTER(?event =   {event})\n    FILTER(?artist = {musicgroup})\n}",
       "source": "csv/json"
     },
     {
@@ -427,7 +427,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT (GROUP_CONCAT(DISTINCT ?workName; separator=\", \") AS ?allWorkName)\nWHERE {\n    ?performance a mm:LivePerformance ;\n                 schema:isPartOf ?event ;\n    \t\t\t ex:isIconic ?isIconic .\n    ?performance mm:performedWork ?work .\n    ?performance schema:performer ?artist .\n    ?work schema:name ?workName .\n    FILTER(?event =   {event})\n    FILTER(?artist = {musicgroup})\n}",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT (GROUP_CONCAT(DISTINCT ?workName; separator=\", \") AS ?allWorkName)\nWHERE {\n    ?performance a mm:LivePerformance ;\n                 schema:isPartOf ?event ;\n    \t\t\t ex:isIconic ?isIconic .\n    ?performance ex:songPerformed ?work .\n    ?performance schema:performer ?artist .\n    ?work schema:name ?workName .\n    FILTER(?event =   {event})\n    FILTER(?artist = {musicgroup})\n}",
       "source": "csv/json"
     },
     {
@@ -687,7 +687,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=\", \") AS ?allPerformingArtists)\nWHERE {\n    ?performance a schema:Event, mm:LivePerformance ;\n           schema:isPartOf ?event ;\n           schema:performer ?artist .\n    ?event schema:name ?eventName .\n    ?artist a schema:Person .\n    ?artist schema:name ?artistName .\n    FILTER(?event =   {event})\n}\nGROUP BY ?eventName",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=\", \") AS ?allPerformingArtists)\nWHERE {\n    ?performance a mm:LivePerformance ;\n           schema:isPartOf ?event ;\n           schema:performer ?artist .\n    ?event schema:name ?eventName .\n    ?artist a schema:Person .\n    ?artist schema:name ?artistName .\n    FILTER(?event =   {event})\n}\nGROUP BY ?eventName",
       "source": "csv/json"
     },
     {
@@ -707,7 +707,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=\", \") AS ?allPerformingArtists)\nWHERE {\n    ?performance a schema:Event, mm:LivePerformance ;\n           schema:isPartOf ?event ;\n           schema:performer ?artist .\n    ?event schema:name ?eventName .\n    ?artist a schema:Person .\n    ?artist schema:name ?artistName .\n    FILTER(?event =   {event})\n}\nGROUP BY ?eventName",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=\", \") AS ?allPerformingArtists)\nWHERE {\n    ?performance a mm:LivePerformance ;\n           schema:isPartOf ?event ;\n           schema:performer ?artist .\n    ?event schema:name ?eventName .\n    ?artist a schema:Person .\n    ?artist schema:name ?artistName .\n    FILTER(?event =   {event})\n}\nGROUP BY ?eventName",
       "source": "csv/json"
     },
     {
@@ -727,7 +727,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=\", \") AS ?allPerformingArtists)\nWHERE {\n    ?performance a schema:Event, mm:LivePerformance ;\n           schema:isPartOf ?event ;\n           schema:performer ?artist .\n    ?event schema:name ?eventName .\n    ?artist a schema:Person .\n    ?artist schema:name ?artistName .\n    FILTER(?event =   {event})\n}\nGROUP BY ?eventName",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?artistName; separator=\", \") AS ?allPerformingArtists)\nWHERE {\n    ?performance a mm:LivePerformance ;\n           schema:isPartOf ?event ;\n           schema:performer ?artist .\n    ?event schema:name ?eventName .\n    ?artist a schema:Person .\n    ?artist schema:name ?artistName .\n    FILTER(?event =   {event})\n}\nGROUP BY ?eventName",
       "source": "csv/json"
     },
     {
@@ -1667,7 +1667,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX ex: <http://wembrewind.live/ex#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?artistName (GROUP_CONCAT(DISTINCT ?founderName; separator=\", \") AS ?foundingMembers)\nWHERE {\n    BIND ({musicgroup} AS ?artist)\n    ?artist a mm:MusicArtist ;\n            schema:name ?artistName ;\n            schema:foundingDate ?foundingYear .\n    ?role a schema:Role, mm:MusicEnsembleMembership ;\n          mm:involvesMusicEnsemble ?artist ;\n          mm:involvesMemberOfMusicEnsemble ?member ;\n          ex:isOriginalMember true .\n    ?member schema:name ?founderName .\n}\nGROUP BY ?artistName",
+      "sparql": "PREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX ex: <http://wembrewind.live/ex#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?artistName (GROUP_CONCAT(DISTINCT ?founderName; separator=\", \") AS ?foundingMembers)\nWHERE {\n    BIND ({musicgroup} AS ?artist)\n    ?artist a mm:MusicArtist ;\n            schema:name ?artistName ;\n            schema:foundingDate ?foundingYear .\n    ?role a mm:MusicEnsembleMembership  ;\n          mm:involvesMusicEnsemble ?artist ;\n          mm:involvesMemberOfMusicEnsemble ?member ;\n          ex:isOriginalMember true .\n    ?member schema:name ?founderName .\n}\nGROUP BY ?artistName",
       "source": "csv/json"
     },
     {
@@ -1687,7 +1687,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX ex: <http://wembrewind.live/ex#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?artistName (GROUP_CONCAT(DISTINCT ?founderName; separator=\", \") AS ?foundingMembers)\nWHERE {\n    BIND ({musicgroup} AS ?artist)\n    ?artist a mm:MusicArtist ;\n            schema:name ?artistName ;\n            schema:foundingDate ?foundingYear .\n    ?role a schema:Role, mm:MusicEnsembleMembership ;\n          mm:involvesMusicEnsemble ?artist ;\n          mm:involvesMemberOfMusicEnsemble ?member ;\n          ex:isOriginalMember true .\n    ?member schema:name ?founderName .\n}\nGROUP BY ?artistName",
+      "sparql": "PREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX ex: <http://wembrewind.live/ex#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?artistName (GROUP_CONCAT(DISTINCT ?founderName; separator=\", \") AS ?foundingMembers)\nWHERE {\n    BIND ({musicgroup} AS ?artist)\n    ?artist a mm:MusicArtist ;\n            schema:name ?artistName ;\n            schema:foundingDate ?foundingYear .\n    ?role a mm:MusicEnsembleMembership  ;\n          mm:involvesMusicEnsemble ?artist ;\n          mm:involvesMemberOfMusicEnsemble ?member ;\n          ex:isOriginalMember true .\n    ?member schema:name ?founderName .\n}\nGROUP BY ?artistName",
       "source": "csv/json"
     },
     {
@@ -1707,7 +1707,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX ex: <http://wembrewind.live/ex#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?artistName (GROUP_CONCAT(DISTINCT ?founderName; separator=\", \") AS ?foundingMembers)\nWHERE {\n    BIND ({musicgroup} AS ?artist)\n    ?artist a mm:MusicArtist ;\n            schema:name ?artistName ;\n            schema:foundingDate ?foundingYear .\n    ?role a schema:Role, mm:MusicEnsembleMembership ;\n          mm:involvesMusicEnsemble ?artist ;\n          mm:involvesMemberOfMusicEnsemble ?member ;\n          ex:isOriginalMember true .\n    ?member schema:name ?founderName .\n}\nGROUP BY ?artistName",
+      "sparql": "PREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nPREFIX ex: <http://wembrewind.live/ex#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nSELECT ?artistName (GROUP_CONCAT(DISTINCT ?founderName; separator=\", \") AS ?foundingMembers)\nWHERE {\n    BIND ({musicgroup} AS ?artist)\n    ?artist a mm:MusicArtist ;\n            schema:name ?artistName ;\n            schema:foundingDate ?foundingYear .\n    ?role a mm:MusicEnsembleMembership  ;\n          mm:involvesMusicEnsemble ?artist ;\n          mm:involvesMemberOfMusicEnsemble ?member ;\n          ex:isOriginalMember true .\n    ?member schema:name ?founderName .\n}\nGROUP BY ?artistName",
       "source": "csv/json"
     },
     {
@@ -1966,7 +1966,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?instrumentName\nWHERE {\n  ?membership a schema:Role,\n        mm:MusicEnsembleMembership ;\n        schema:instrument ?instrument .\n  OPTIONAL { ?instrument schema:name ?instrumentName }\n}\nORDER BY ?instrumentName",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?instrumentName\nWHERE {\n  ?membership a mm:MusicEnsembleMembership  ;\n        schema:instrument ?instrument .\n  OPTIONAL { ?instrument schema:name ?instrumentName }\n}\nORDER BY ?instrumentName",
       "source": "csv/json"
     },
     {
@@ -1985,7 +1985,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?instrumentName\nWHERE {\n  ?membership a schema:Role,\n        mm:MusicEnsembleMembership ;\n        schema:instrument ?instrument .\n  OPTIONAL { ?instrument schema:name ?instrumentName }\n}\nORDER BY ?instrumentName",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?instrumentName\nWHERE {\n  ?membership a mm:MusicEnsembleMembership  ;\n        schema:instrument ?instrument .\n  OPTIONAL { ?instrument schema:name ?instrumentName }\n}\nORDER BY ?instrumentName",
       "source": "csv/json"
     },
     {
@@ -2003,7 +2003,7 @@
         "KG",
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?instrumentName\nWHERE {\n    BIND ({bandmember} as ?guitarist)\n  ?membership a schema:Role,\n        mm:MusicEnsembleMembership ;\n        mm:involvesMemberOfMusicEnsemble ?guitarist ;\n        schema:instrument ?instrument .\n  OPTIONAL { ?instrument schema:name ?instrumentName }\n}\nORDER BY ?instrumentName",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?instrumentName\nWHERE {\n    BIND ({bandmember} as ?guitarist)\n  ?membership a mm:MusicEnsembleMembership  ;\n        mm:involvesMemberOfMusicEnsemble ?guitarist ;\n        schema:instrument ?instrument .\n  OPTIONAL { ?instrument schema:name ?instrumentName }\n}\nORDER BY ?instrumentName",
       "source": "csv/json"
     },
     {
@@ -2053,7 +2053,7 @@
       "mode": [
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?artist ?songfactsUrl\nWHERE {\n  BIND ({musicgroup} AS ?artist)\n  ?performance a mm:LivePerformance ;\n          schema:performer ?artist ;\n          mm:performedWork ?works .\n  ?works schema:sameAs ?songfactsUrl .\n  FILTER( STRSTARTS(LCASE(STR(?songfactsUrl)), \"https://www.songfacts.com/facts\") )\n}",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?artist ?songfactsUrl\nWHERE {\n  BIND ({musicgroup} AS ?artist)\n  ?performance a mm:LivePerformance ;\n          schema:performer ?artist ;\n          ex:songPerformed ?works .\n  ?works schema:sameAs ?songfactsUrl .\n  FILTER( STRSTARTS(LCASE(STR(?songfactsUrl)), \"https://www.songfacts.com/facts\") )\n}",
       "source": "csv/json"
     },
     {
@@ -2069,7 +2069,7 @@
       "mode": [
         "Hybrid"
       ],
-      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?artist ?songfactsUrl\nWHERE {\n  BIND ({musicgroup} AS ?artist)\n  ?performance a mm:LivePerformance ;\n          schema:performer ?artist ;\n          mm:performedWork ?works .\n  ?works schema:sameAs ?songfactsUrl .\n  FILTER( STRSTARTS(LCASE(STR(?songfactsUrl)), \"https://genius.com\") )\n}",
+      "sparql": "PREFIX ex: <http://wembrewind.live/ex#>\nPREFIX schema: <http://schema.org/>\nPREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>\nSELECT DISTINCT ?artist ?songfactsUrl\nWHERE {\n  BIND ({musicgroup} AS ?artist)\n  ?performance a mm:LivePerformance ;\n          schema:performer ?artist ;\n          ex:songPerformed ?works .\n  ?works schema:sameAs ?songfactsUrl .\n  FILTER( STRSTARTS(LCASE(STR(?songfactsUrl)), \"https://genius.com\") )\n}",
       "source": "csv/json"
     }
   ]

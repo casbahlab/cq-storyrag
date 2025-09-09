@@ -1,0 +1,16 @@
+{
+  "display_canon": {
+    "Live Aid 1985": ["LiveAid 1985", "Live Aid '85", "Live Aid 85"],
+    "ABC": ["American Broadcasting Company", "ABC"],
+    "BBC": ["British Broadcasting Corporation", "BBC"],
+    "MTV": ["Music Television", "MTV"],
+    "Wembley Stadium": ["Wembley"],
+    "John F. Kennedy Stadium": ["JFK Stadium", "John F Kennedy Stadium"],
+    "Philadelphia": ["Philly", "Philadelphia"],
+    "London": ["London"]
+  },
+  "predicate_canon": {
+    "did not preserve": ["failed to preserve", "was not preserved by", "didn't preserve", "no preservation of"],
+    "broadcasting companies": ["broadcast companies", "broadcasters", "broadcast partners"]
+  }
+}

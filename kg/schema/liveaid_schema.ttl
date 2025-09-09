@@ -16,6 +16,11 @@ ex:MusicInstrument a rdfs:Class ;
     rdfs:comment "A physical or digital instrument used to perform music." ;
     rdfs:subClassOf schema:Thing .
 
+ex:playsInstrument a owl:ObjectProperty ;
+  rdfs:label "plays instrument"@en ;
+  rdfs:comment "Links a musician to a musical instrument they play."@en ;
+  rdfs:domain mm:Musician ;
+  rdfs:range  ex:MusicalInstrument .
 
 # If you use it (hasChallenge range hints at it)
 ex:EventChallenge a owl:Class ;

@@ -47,8 +47,36 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 import wikitextparser as wtp
+import traceback
 
 from rdflib import Graph, term
+
+
+USE_URL_INDEX_CACHE = True        # <- flip to True to enable
+CACHE_ONLY = False                 # <- optional: True = no network fallback
+CACHE_PREFER = "summary"           # or "text"
+URL_INDEX_DB = "web_index/output/url_index.db"  # <- set this
+
+try:
+    # Put url_index_retriever.py next to this file (or on PYTHONPATH)
+    from retriever.url_index_retriever import UrlIndexRetriever
+except Exception:
+    UrlIndexRetriever = None
+
+_URL_INDEX_INSTANCE = None
+
+def _get_url_index_instance():
+    global _URL_INDEX_INSTANCE
+    if _URL_INDEX_INSTANCE is None and USE_URL_INDEX_CACHE and UrlIndexRetriever and URL_INDEX_DB:
+        try:
+            print(f"[INFO] Initializing URL index from {URL_INDEX_DB}")
+            _URL_INDEX_INSTANCE = UrlIndexRetriever(URL_INDEX_DB)
+            print(f"[INFO] Initializing URL index from {URL_INDEX_DB}")
+        except Exception as e:
+            print(f"[cache] init failed: {e}")
+            traceback.print_exc()
+            _URL_INDEX_INSTANCE = None
+    return _URL_INDEX_INSTANCE
 
 try:
     # if it's inside your package
@@ -283,7 +311,7 @@ def safe_parse(body):
         body = str(body)
     return wtp.parse(body)
 
-def _fetch_url_meta(
+def _orig_fetch_url_meta(
     u: str,
     timeout_s: float,
     *,
@@ -677,31 +705,32 @@ def _attach_url_info_to_rows(
                 # If this is a Wikipedia link with a fragment, try to extract that section only.
                 if with_content:
                     if "wikipedia.org" in base_u:
-
-                        if subfragment :
-                            info = {
-                                "url": u,
-                                "domain": _url_domain(u),
-                                "fetched_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
-                            }
-                            section_html = "\n\n".join(content_under_h3(base_u, fragment,
-                                             subfragment, content="table",
-                                             parse_tables=True))
-                            if section_html:
-                                info["content_text"] = section_html
-                            else:
-                                info["__section_extracted"] = False
-                        else :
-                            info = {
-                                "url": u,
-                                "domain": _url_domain(u),
-                                "fetched_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
-                            }
-                            section_html = "\n\n".join(content_under_h2(base_u, fragment, content="p"))
-                            if section_html:
-                                info["content_text"] = section_html
-                            else:
-                                info["__section_extracted"] = False
+                        cached = _lookup_url_in_index(u, with_content=with_content)
+                        if cached is None:
+                            if subfragment :
+                                info = {
+                                    "url": u,
+                                    "domain": _url_domain(u),
+                                    "fetched_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+                                }
+                                section_html = "\n\n".join(content_under_h3(base_u, fragment,
+                                                 subfragment, content="table",
+                                                 parse_tables=True))
+                                if section_html:
+                                    info["content_text"] = section_html
+                                else:
+                                    info["__section_extracted"] = False
+                            else :
+                                info = {
+                                    "url": u,
+                                    "domain": _url_domain(u),
+                                    "fetched_at": datetime.utcnow().isoformat(timespec="seconds") + "Z",
+                                }
+                                section_html = "\n\n".join(content_under_h2(base_u, fragment, content="p"))
+                                if section_html:
+                                    info["content_text"] = section_html
+                                else:
+                                    info["__section_extracted"] = False
 
                     else:
                         info = _fetch_url_meta(
@@ -1055,6 +1084,7 @@ def run(
                 already = {info.get("url") for info in url_info_sample if isinstance(info, dict)}
                 new_infos = []
                 for u in scan_urls:
+                    print(f"Scanning URL candidate: {u}")
                     if u in already:
                         continue
                     meta = _fetch_url_meta(
@@ -1244,6 +1274,99 @@ def main():
     )
     if args.enrich_urls and requests is None:
         print("ℹ️ URL enrichment requested but 'requests' is not installed; only extracted candidates were recorded.")
+
+
+from typing import Optional, Dict, Any
+
+def _lookup_url_in_index(
+    u: str,
+    *,
+    with_content: bool,
+    prefer: str = None,
+) -> Optional[Dict[str, Any]]:
+    """
+    Try to fetch URL content from the local index.
+    Returns a normalized 'cached' response dict on hit, or None on miss/error.
+    """
+    if not USE_URL_INDEX_CACHE:
+        return None
+
+    print(f"Checking cache for {u} ...")
+    idx = _get_url_index_instance()
+    print(f"Checking idx {idx} ...")
+
+    if idx is None:
+        return None
+
+    print(f"Looking up {u} in index ...")
+    try:
+        doc = idx.get_by_url(u, prefer=(prefer or CACHE_PREFER))
+        print(f"Cache hit for {u}: {doc}")
+    except Exception as e:
+        print(f"Index lookup failed for {u}: {e}")
+        doc = None
+
+    if doc and (doc.page_content or "").strip():
+        txt = (doc.page_content or "").strip()
+        return {
+            "url": u,
+            "domain": _url_domain(u),
+            "status": "cached",
+            "content_type": "",
+            "title": (doc.metadata or {}).get("title", ""),
+            "fetched_at": (doc.metadata or {}).get("fetched_at", ""),
+            "summarized_at": (doc.metadata or {}).get("summarized_at", ""),
+            "content_text": txt if with_content else "",
+            "content_len": len(txt),
+            "truncated": False,
+            "from_cache": True,
+        }
+
+    return None
+
+
+def _fetch_url_meta(
+    u: str,
+    *,
+    timeout_s: float,
+    with_content: bool,
+    max_bytes: int,
+    max_chars: int,
+):
+    """
+    Cache-first shim: if USE_URL_INDEX_CACHE is True and URL is in the local index,
+    return it; otherwise (or on cache miss) fall back to the original network fetch.
+    """
+    if USE_URL_INDEX_CACHE:
+        cached = _lookup_url_in_index(u, with_content=with_content)
+        if cached is not None:
+            return cached
+
+        if CACHE_ONLY:
+            return {
+                "url": u,
+                "domain": _url_domain(u),
+                "status": "cache_miss",
+                "content_type": "",
+                "title": "",
+                "fetched_at": "",
+                "summarized_at": "",
+                "content_text": "",  # empty either way on miss
+                "content_len": 0,
+                "truncated": False,
+                "from_cache": False,
+            }
+
+    # fallback to original behavior
+    return _orig_fetch_url_meta(
+        u,
+        timeout_s=timeout_s,
+        with_content=with_content,
+        max_bytes=max_bytes,
+        max_chars=max_chars,
+    )
+
+
 
 if __name__ == "__main__":
     main()

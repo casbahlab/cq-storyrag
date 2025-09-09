@@ -87,5 +87,6 @@ ex:Trumpet a ex:MusicInstrument ;
 
 ex:Voice a ex:MusicInstrument ;
     rdfs:label "Voice" ;
-    schema:name "Voice" .
+    schema:name "Voice" ;
+    schema:sameAs <https://www.wikidata.org/entity/Q17172850> .
 

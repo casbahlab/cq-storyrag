@@ -8,11 +8,3 @@ ex:GlobalAudience a schema:Audience ;
     ex:countryCount 150 ;
     ex:viewerCount 1900000000 .
 
-ex:LiveAidAudience a schema:Audience .
-
-ex:LiveAidAudience1985 a schema:Audience ;
-    schema:audienceType "Live concert audience" ;
-    schema:description "Over 72,000 people attended at Wembley Stadium" ;
-    schema:location ex:WembleyStadium ;
-    ex:participatedIn ex:ChorusSingalong .
-

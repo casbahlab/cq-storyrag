@@ -1,0 +1,3458 @@
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix schema: <http://wembrewind.live/ex#> .
+@prefix schema1: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:Membership_AshfordSimpson_NickolasAshford_X_02a8b5cc a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:NickolasAshford ;
+    mm:involvesMusicEnsemble schema:AshfordSimpson .
+
+schema:Membership_AshfordSimpson_ValerieSimpson_X_92ba533c a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ValerieSimpson ;
+    mm:involvesMusicEnsemble schema:AshfordSimpson .
+
+schema:Membership_BlackSabbath_BevBevan_1983_abc28f26 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1984"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1983"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BevBevan ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_BevBevan_1987_e9ec4202 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1987"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BevBevan ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_BillWard_196809_0fab9ea9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969-08"^^xsd:gYearMonth ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "background vocals" ;
+    schema1:startDate "1968-09"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BillWard ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_BillWard_196809_e280d295 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969-08"^^xsd:gYearMonth ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1968-09"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BillWard ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_BillWard_196908_8fc1ef72 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1980"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Voice ;
+    schema1:roleName "background vocals, drums (drum set)" ;
+    schema1:startDate "1969-08"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BillWard ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_BillWard_1982_0cea4a2a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion,
+        schema:Voice ;
+    schema1:roleName "background vocals, drums (drum set), percussion" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BillWard ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_BillWard_1997_300143fa a mm:MusicEnsembleMembership ;
+    schema1:endDate "2012"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion,
+        schema:Voice ;
+    schema1:roleName "background vocals, drums (drum set), percussion" ;
+    schema1:startDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BillWard ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_BobDaisley_1986_c09ebbbe a mm:MusicEnsembleMembership ;
+    schema1:endDate "1986"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1986"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BobDaisley ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_BobRondinelli_1993_6d284373 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1996"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1993"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BobRondinelli ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_CozyPowell_1989_58cdff88 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CozyPowell ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_CozyPowell_1993_241d02d0 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1995"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1993"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CozyPowell ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_DaveWalker_1977_9ddbabc6 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1978"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DaveWalker ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_DavidDonato_1984_8e86e640 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1984"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidDonato ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_DavidSpitz_1985_6375e135 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidSpitz ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_EricSinger_1985_29a6c431 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:EricSinger ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_EricSinger_1985_4110e2d1 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987-01"^^xsd:gYearMonth ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:EricSinger ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_GeezerButler_196809_0abd23ec a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969-08"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1968-09"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:GeezerButler ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_GeezerButler_196908_7e7bdf30 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1979"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1969-08"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:GeezerButler ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_GeezerButler_1990_359f99cf a mm:MusicEnsembleMembership ;
+    schema1:endDate "1994"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Synthesizer ;
+    schema1:roleName "bass guitar, synthesizer" ;
+    schema1:startDate "1990"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:GeezerButler ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_GeezerButler_1997_442fac8b a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar,
+        schema:Synthesizer ;
+    schema1:roleName "bass guitar, synthesizer" ;
+    schema1:startDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:GeezerButler ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_GeoffNicholls_1979_b8a3ac49 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2004"^^xsd:gYear ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "1979"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GeoffNicholls ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_GlennHughes_198509_f65be8e8 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1986-03-23"^^xsd:date ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1985-09"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GlennHughes ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_IanGillan_198211_64f981c7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1984-02"^^xsd:gYearMonth ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1982-11"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:IanGillan ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_JoBurt_1987_c38e21e8 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1987"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JoBurt ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_MikeBordin_199705_61f3ac69 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1997-07"^^xsd:gYearMonth ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1997-05"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MikeBordin ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_NeilMurray_1989_c1b1046b a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:NeilMurray ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_NeilMurray_1994_c9e4b9f8 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1995"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1994"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:NeilMurray ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_OzzyOsbourne_196809_bf06b73f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969-08"^^xsd:gYearMonth ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1968-09"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:OzzyOsbourne ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_OzzyOsbourne_196809_e21613bf a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969-08"^^xsd:gYearMonth ;
+    schema1:instrument schema:Harmonica ;
+    schema1:roleName "harmonica" ;
+    schema1:startDate "1968-09"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:OzzyOsbourne ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_OzzyOsbourne_196908_08bd2396 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1977"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1969-08"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:OzzyOsbourne ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_OzzyOsbourne_196908_dde330c9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1977"^^xsd:gYear ;
+    schema1:instrument schema:Harmonica ;
+    schema1:roleName "harmonica" ;
+    schema1:startDate "1969-08"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:OzzyOsbourne ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_OzzyOsbourne_1997_a2625a1c a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:OzzyOsbourne ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_RayGillen_198603_f49636bb a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1986-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RayGillen ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_RonKeel_198403_31724bf7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1984-04"^^xsd:gYearMonth ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1984-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RonKeel ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_RonnieJamesDio_197905_2583f3ec a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982-10"^^xsd:gYearMonth ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1979-05"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RonnieJamesDio ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_RonnieJamesDio_1991_28827449 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1992-11-13"^^xsd:date ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1991"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RonnieJamesDio ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_TerryChimes_198711_74811cda a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988-05"^^xsd:gYearMonth ;
+    schema1:roleName "membranophone" ;
+    schema1:startDate "1987-11"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TerryChimes ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_TonyIommi_196809_3f83686a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969-08"^^xsd:gYearMonth ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1968-09"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyIommi ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_TonyIommi_196908_8026e359 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2006-03"^^xsd:gYearMonth ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1969-08"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyIommi ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_TonyIommi_2011_2a593e62 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2017"^^xsd:gYear ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "2011"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyIommi ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_TonyMartin_1987_8e2ad57d a mm:MusicEnsembleMembership ;
+    schema1:endDate "1990"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1987"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyMartin ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_TonyMartin_1993_815a7c4c a mm:MusicEnsembleMembership ;
+    schema1:endDate "1996"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1993"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyMartin ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_VinnyAppice_1980_b30a007a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:VinnyAppice ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_VinnyAppice_1991_cf27b72d a mm:MusicEnsembleMembership ;
+    schema1:endDate "1993"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1991"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:VinnyAppice ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_VinnyAppice_1998_62f69225 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1998"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1998"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:VinnyAppice ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_BlackSabbath_VinnyAppice_2007_a73ca7da a mm:MusicEnsembleMembership ;
+    schema1:endDate "2007"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "2007"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:VinnyAppice ;
+    mm:involvesMusicEnsemble schema:BlackSabbath .
+
+schema:Membership_CrosbyStillsNashYoung_DavidCrosby_X_eedfd101 a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidCrosby ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNashYoung .
+
+schema:Membership_CrosbyStillsNashYoung_GrahamNash_X_c7c251a6 a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GrahamNash ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNashYoung .
+
+schema:Membership_CrosbyStillsNashYoung_NeilYoung_X_194d85df a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:NeilYoung ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNashYoung .
+
+schema:Membership_CrosbyStillsNashYoung_StephenStills_X_09cdc5b4 a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:StephenStills ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNashYoung .
+
+schema:Membership_CrosbyStillsNash_DavidCrosby_X_46cf82a1 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidCrosby ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNash .
+
+schema:Membership_CrosbyStillsNash_DavidCrosby_X_6552e36e a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidCrosby ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNash .
+
+schema:Membership_CrosbyStillsNash_GrahamNash_X_0cffbf2b a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GrahamNash ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNash .
+
+schema:Membership_CrosbyStillsNash_GrahamNash_X_436f169d a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GrahamNash ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNash .
+
+schema:Membership_CrosbyStillsNash_StephenStills_X_3650554b a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:StephenStills ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNash .
+
+schema:Membership_CrosbyStillsNash_StephenStills_X_86a2b210 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:StephenStills ;
+    mm:involvesMusicEnsemble schema:CrosbyStillsNash .
+
+schema:Membership_DarylHallJohnOates_2_CharlieDechant_X_e8cc52ec a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CharlieDechant ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates_2 .
+
+schema:Membership_DarylHallJohnOates_2_DarylHall_X_8a3b2031 a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DarylHall ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates_2 .
+
+schema:Membership_DarylHallJohnOates_2_GESmith_1979_3a9e70df a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:startDate "1979"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GESmith ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates_2 .
+
+schema:Membership_DarylHallJohnOates_2_JeffreyCatania_X_17a57af9 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JeffreyCatania ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates_2 .
+
+schema:Membership_DarylHallJohnOates_2_JohnOates_X_2d4f250e a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnOates ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates_2 .
+
+schema:Membership_DarylHallJohnOates_2_MichaelBraun_1988_b83f1d55 a mm:MusicEnsembleMembership ;
+    schema1:startDate "1988"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelBraun ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates_2 .
+
+schema:Membership_DarylHallJohnOates_2_TBoneWolk_1981_7675f574 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2010"^^xsd:gYear ;
+    schema1:startDate "1981"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TBoneWolk ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates_2 .
+
+schema:Membership_DarylHallJohnOates_CharlieDechant_X_e4abc5f5 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CharlieDechant ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates .
+
+schema:Membership_DarylHallJohnOates_DarylHall_X_c0fe80e8 a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DarylHall ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates .
+
+schema:Membership_DarylHallJohnOates_GESmith_1979_01812e73 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:startDate "1979"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GESmith ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates .
+
+schema:Membership_DarylHallJohnOates_JeffreyCatania_X_3b1c836f a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JeffreyCatania ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates .
+
+schema:Membership_DarylHallJohnOates_JohnOates_X_f2ade850 a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnOates ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates .
+
+schema:Membership_DarylHallJohnOates_MichaelBraun_1988_6a30eea8 a mm:MusicEnsembleMembership ;
+    schema1:startDate "1988"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelBraun ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates .
+
+schema:Membership_DarylHallJohnOates_TBoneWolk_1981_07abc29c a mm:MusicEnsembleMembership ;
+    schema1:endDate "2010"^^xsd:gYear ;
+    schema1:startDate "1981"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TBoneWolk ;
+    mm:involvesMusicEnsemble schema:DarylHallJohnOates .
+
+schema:Membership_DireStraits_AlanClark_1980_3937b249 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1995"^^xsd:gYear ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlanClark ;
+    mm:involvesMusicEnsemble schema:DireStraits .
+
+schema:Membership_DireStraits_ChrisWhite_1985_aabbc3ee a mm:MusicEnsembleMembership ;
+    schema1:endDate "1992"^^xsd:gYear ;
+    schema1:instrument schema:Saxophone ;
+    schema1:roleName "additional, saxophone" ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ChrisWhite ;
+    mm:involvesMusicEnsemble schema:DireStraits .
+
+schema:Membership_DireStraits_DavidKnopfler_1977_783fa43a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1980"^^xsd:gYear ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidKnopfler ;
+    mm:involvesMusicEnsemble schema:DireStraits .
+
+schema:Membership_DireStraits_GuyFletcher_1984_0c6d56fe a mm:MusicEnsembleMembership ;
+    schema1:endDate "1995"^^xsd:gYear ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "1984"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GuyFletcher ;
+    mm:involvesMusicEnsemble schema:DireStraits .
+
+schema:Membership_DireStraits_HalLindes_1980_a9cfd195 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:HalLindes ;
+    mm:involvesMusicEnsemble schema:DireStraits .
+
+schema:Membership_DireStraits_JohnIllsley_1977_12750593 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1995"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnIllsley ;
+    mm:involvesMusicEnsemble schema:DireStraits .
+
+schema:Membership_DireStraits_MarkKnopfler_1977_70e68523 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1995"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "guitar, lead vocals" ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:MarkKnopfler ;
+    mm:involvesMusicEnsemble schema:DireStraits .
+
+schema:Membership_DireStraits_PickWithers_1977_4cc438c4 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982"^^xsd:gYear ;
+    schema1:roleName "membranophone" ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:PickWithers ;
+    mm:involvesMusicEnsemble schema:DireStraits .
+
+schema:Membership_DireStraits_TerryWilliams_1982_d4f3923a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988"^^xsd:gYear ;
+    schema1:roleName "membranophone" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TerryWilliams ;
+    mm:involvesMusicEnsemble schema:DireStraits .
+
+schema:Membership_DuranDuran_AndyTaylor_1980_6f5082b9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyTaylor ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_AndyTaylor_2001_b2551eae a mm:MusicEnsembleMembership ;
+    schema1:endDate "2006-10"^^xsd:gYearMonth ;
+    schema1:startDate "2001"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyTaylor ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_AndyWickett_1979_f5ffac30 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1980"^^xsd:gYear ;
+    schema1:startDate "1979"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyWickett ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_JohnTaylor_2001_785e25b5 a mm:MusicEnsembleMembership ;
+    schema1:startDate "2001"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnTaylor ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_JohnTaylor_X_0dd827f2 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnTaylor ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_NickRhodes_X_18c863fd a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:NickRhodes ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_RogerTaylor_2001_7e093c39 a mm:MusicEnsembleMembership ;
+    schema1:startDate "2001"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RogerTaylor ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_RogerTaylor_X_938dcb0a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RogerTaylor ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_SimonLeBon_X_26aac22f a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SimonLeBon ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_StephenDuffy_X_17b1f5b7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1979"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:StephenDuffy ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_SterlingCampbell_1989_9f72d638 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991"^^xsd:gYear ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SterlingCampbell ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_DuranDuran_WarrenCuccurullo_1989_b18abbc9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2001"^^xsd:gYear ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:WarrenCuccurullo ;
+    mm:involvesMusicEnsemble schema:DuranDuran .
+
+schema:Membership_FourTops_AbdulDukeFakir_1953_e50d6fa1 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2024-07-22"^^xsd:date ;
+    schema1:startDate "1953"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:AbdulDukeFakir ;
+    mm:involvesMusicEnsemble schema:FourTops .
+
+schema:Membership_FourTops_LawrencePayton_X_1895d1b7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1997-06-20"^^xsd:date ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LawrencePayton ;
+    mm:involvesMusicEnsemble schema:FourTops .
+
+schema:Membership_FourTops_LeviStubbs_X_74ee5424 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LeviStubbs ;
+    mm:involvesMusicEnsemble schema:FourTops .
+
+schema:Membership_FourTops_RenaldoBenson_X_15298300 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2005-07-01"^^xsd:date ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RenaldoBenson ;
+    mm:involvesMusicEnsemble schema:FourTops .
+
+schema:Membership_FourTops_RonnieMcneir_2000_de9dc414 a mm:MusicEnsembleMembership ;
+    schema1:startDate "2000"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RonnieMcneir ;
+    mm:involvesMusicEnsemble schema:FourTops .
+
+schema:Membership_FourTops_TheoPeoples_1998_5f490d9b a mm:MusicEnsembleMembership ;
+    schema1:startDate "1998"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TheoPeoples ;
+    mm:involvesMusicEnsemble schema:FourTops .
+
+schema:Membership_GeorgeThorogoodTheDestroyers_BillBlough_1977_9d4416ea a mm:MusicEnsembleMembership ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BillBlough ;
+    mm:involvesMusicEnsemble schema:GeorgeThorogoodTheDestroyers .
+
+schema:Membership_GeorgeThorogoodTheDestroyers_BuddyLeach_2003_7f4badd2 a mm:MusicEnsembleMembership ;
+    schema1:startDate "2003"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BuddyLeach ;
+    mm:involvesMusicEnsemble schema:GeorgeThorogoodTheDestroyers .
+
+schema:Membership_GeorgeThorogoodTheDestroyers_GeorgeThorogood_1974_df235f78 a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema1:startDate "1974"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:GeorgeThorogood ;
+    mm:involvesMusicEnsemble schema:GeorgeThorogoodTheDestroyers .
+
+schema:Membership_GeorgeThorogoodTheDestroyers_HankCarter_1980_24319442 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2003"^^xsd:gYear ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:HankCarter ;
+    mm:involvesMusicEnsemble schema:GeorgeThorogoodTheDestroyers .
+
+schema:Membership_GeorgeThorogoodTheDestroyers_JeffSimon_1974_b012a7ea a mm:MusicEnsembleMembership ;
+    schema1:startDate "1974"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JeffSimon ;
+    mm:involvesMusicEnsemble schema:GeorgeThorogoodTheDestroyers .
+
+schema:Membership_GeorgeThorogoodTheDestroyers_JimSuhler_1999_7dabcc0b a mm:MusicEnsembleMembership ;
+    schema1:startDate "1999"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JimSuhler ;
+    mm:involvesMusicEnsemble schema:GeorgeThorogoodTheDestroyers .
+
+schema:Membership_GeorgeThorogoodTheDestroyers_RonSmith_1973_38b4bbe6 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1980"^^xsd:gYear ;
+    schema1:startDate "1973"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RonSmith ;
+    mm:involvesMusicEnsemble schema:GeorgeThorogoodTheDestroyers .
+
+schema:Membership_GeorgeThorogoodTheDestroyers_SteveChrismar_1985_d3c35c0a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1993"^^xsd:gYear ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SteveChrismar ;
+    mm:involvesMusicEnsemble schema:GeorgeThorogoodTheDestroyers .
+
+schema:Membership_GungHo_TheBoomtownRats_X_95a4b9b2 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TheBoomtownRats ;
+    mm:involvesMusicEnsemble schema:GungHo .
+
+schema:Membership_JudasPriest_AlAtkins_1969_c185a37b a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:AlAtkins ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_AlanMoore_1971_7e44d781 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1971"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlanMoore ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_AlanMoore_1975_ab538a02 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1977"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1975"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlanMoore ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_BrunoStapenhill_1969_ae1f1f64 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1970"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BrunoStapenhill ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_ChrisCampbell_1971_064331b4 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1971"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ChrisCampbell ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_DaveHolland_197908_30f67e24 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1979-08"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DaveHolland ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_ErnieChataway_1969_43b63300 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1970"^^xsd:gYear ;
+    schema1:instrument schema:GuitarFamily ;
+    schema1:roleName "guitar family" ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:ErnieChataway ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_GlennTipton_1974_93d716a4 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:GuitarFamily,
+        schema:Keyboard,
+        schema:Synthesizer ;
+    schema1:roleName "guitar family, keyboard, synthesizer" ;
+    schema1:startDate "1974"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GlennTipton ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_IanHill_1970_27ae0d7f a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1970"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:IanHill ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_JohnEllis_1971_24f82610 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1971"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1971"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnEllis ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_JohnHinch_1973_3cac6320 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1975"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1973"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnHinch ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_JohnPartridge_1969_4288dfe2 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1970"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnPartridge ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_KennethDowning_1970_77ccd572 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2011-04-20"^^xsd:date ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1970"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:KennethDowning ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_LesBinks_1977_e67c3ba2 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1979"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LesBinks ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_RichieFaulkner_20110420_76ce5a17 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:ElectricGuitar ;
+    schema1:roleName "electric guitar" ;
+    schema1:startDate "2011-04-20"^^xsd:date ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RichieFaulkner ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_RobHalford_1973_8e425b77 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1992"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1973"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RobHalford ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_RobHalford_20030711_ff2e5045 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "2003-07-11"^^xsd:date ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RobHalford ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_ScottTravis_1989_be78a0ac a mm:MusicEnsembleMembership ;
+    schema1:endDate "1992"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ScottTravis ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_ScottTravis_1995_038ab8ea a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1995"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ScottTravis ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_SimonPhillips_1977_be6e1222 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1977"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SimonPhillips ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_JudasPriest_TimRipperOwens_1996_690e1ec0 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2003-07-11"^^xsd:date ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1996"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TimRipperOwens ;
+    mm:involvesMusicEnsemble schema:JudasPriest .
+
+schema:Membership_Pretenders_AdamSeymour_1993_66af30f9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2008"^^xsd:gYear ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1993"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AdamSeymour ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_AndyHobson_1993_09ba16c9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2005"^^xsd:gYear ;
+    schema1:instrument schema:ElectricBassGuitar ;
+    schema1:roleName "electric bass guitar" ;
+    schema1:startDate "1993"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyHobson ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_BlairCunningham_1985_e1fb46b4 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BlairCunningham ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_CarwynEllis_X_93e7f898 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CarwynEllis ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_ChrissieHynde_197803_525fb234 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "guitar, lead vocals" ;
+    schema1:startDate "1978-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:ChrissieHynde ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_JamesHoneymanScott_197803_c214ac74 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982-06-16"^^xsd:date ;
+    schema1:instrument schema:Guitar,
+        schema:Keyboard,
+        schema:Voice ;
+    schema1:roleName "background vocals, guitar, keyboard" ;
+    schema1:startDate "1978-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:JamesHoneymanScott ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_JamesWalbourne_2008_341e392e a mm:MusicEnsembleMembership ;
+    schema1:startDate "2008"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JamesWalbourne ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_JohnnyMarr_1987_4ef3d3d1 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1987"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnnyMarr ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_MalcolmFoster_1982_ffca370a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:ElectricBassGuitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, electric bass guitar" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MalcolmFoster ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_MartinChambers_197803_a0a8fb3c a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "background vocals" ;
+    schema1:startDate "1978-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:MartinChambers ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_MartinChambers_197803_c9364758 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:Percussion ;
+    schema1:roleName "percussion" ;
+    schema1:startDate "1978-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:MartinChambers ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_MartinChambers_197803_f6434af1 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1978-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:MartinChambers ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_NickWilkinson_X_9d935162 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:NickWilkinson ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_PeteFarndon_1978_9ac684c9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982-04-14"^^xsd:date ;
+    schema1:instrument schema:ElectricBassGuitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, electric bass guitar" ;
+    schema1:startDate "1978"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:PeteFarndon ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_RobbieMcintosh_1982_cdb8bb67 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, guitar" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RobbieMcintosh ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Pretenders_TMStevens_1985_299e2c52 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:instrument schema:ElectricBassGuitar ;
+    schema1:roleName "electric bass guitar" ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TMStevens ;
+    mm:involvesMusicEnsemble schema:Pretenders .
+
+schema:Membership_Queen_BarryMitchell_197008_09e7e6df a mm:MusicEnsembleMembership ;
+    schema1:endDate "1971-01"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1970-08"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BarryMitchell ;
+    mm:involvesMusicEnsemble schema:Queen .
+
+schema:Membership_Queen_BrianMay_1970_f8240260 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, guitar" ;
+    schema1:startDate "1970"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BrianMay ;
+    mm:involvesMusicEnsemble schema:Queen .
+
+schema:Membership_Queen_DougBogie_197101_ffad0c4b a mm:MusicEnsembleMembership ;
+    schema1:endDate "1971-02"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1971-01"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DougBogie ;
+    mm:involvesMusicEnsemble schema:Queen .
+
+schema:Membership_Queen_FreddieMercury_1970_e2a924ff a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991-11-24"^^xsd:date ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1970"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:FreddieMercury ;
+    mm:involvesMusicEnsemble schema:Queen .
+
+schema:Membership_Queen_JohnDeacon_197102_31be1052 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1997"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1971-02"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnDeacon ;
+    mm:involvesMusicEnsemble schema:Queen .
+
+schema:Membership_Queen_MikeGrose_197006_e60df6f9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1970-08"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1970-06"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MikeGrose ;
+    mm:involvesMusicEnsemble schema:Queen .
+
+schema:Membership_Queen_RogerTaylor2_1970_eede152c a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Voice ;
+    schema1:roleName "background vocals, drums (drum set)" ;
+    schema1:startDate "1970"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:RogerTaylor2 ;
+    mm:involvesMusicEnsemble schema:Queen .
+
+schema:Membership_ReoSpeedwagon_AlanGratzer_1967_55fde0d9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988-09"^^xsd:gYearMonth ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion,
+        schema:Voice ;
+    schema1:roleName "background vocals, drums (drum set), percussion" ;
+    schema1:startDate "1967"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:AlanGratzer ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_BillFiorio_1969_2300c81c a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969"^^xsd:gYear ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BillFiorio ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_BobCrownover_1968_b6b9045c a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969"^^xsd:gYear ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1968"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BobCrownover ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_BruceHall_1977_3cb82cfe a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, bass guitar" ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BruceHall ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_BryanHitt_1989_b9ac611f a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BryanHitt ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_CarlaDay_1989_c44af13a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "background vocals" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CarlaDay ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_DaveAmato_1989_bc199941 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, guitar" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DaveAmato ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_GaryRichrath_1970_68e0e864 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, guitar" ;
+    schema1:startDate "1970"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GaryRichrath ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_GrahamLear_1988_d3fc3049 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion ;
+    schema1:roleName "drums (drum set), percussion" ;
+    schema1:startDate "1988"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GrahamLear ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_GreggPhilbin_1968_f25aa3f0 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1977"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, bass guitar" ;
+    schema1:startDate "1968"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GreggPhilbin ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_JesseHarms_1989_468fc403 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991"^^xsd:gYear ;
+    schema1:instrument schema:Keyboard,
+        schema:Voice ;
+    schema1:roleName "background vocals, keyboard" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JesseHarms ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_JoeMatt_1967_5465e75f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1968"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "guitar, lead vocals" ;
+    schema1:startDate "1967"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:JoeMatt ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_JoeMccabe_1968_a24d40a0 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1968"^^xsd:gYear ;
+    schema1:instrument schema:Saxophone ;
+    schema1:roleName "saxophone" ;
+    schema1:startDate "1968"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JoeMccabe ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_KevinCronin_1972_61cd2d7e a mm:MusicEnsembleMembership ;
+    schema1:endDate "1973"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Keyboard,
+        schema:Piano,
+        schema:Voice ;
+    schema1:roleName "guitar, keyboard, lead vocals, piano" ;
+    schema1:startDate "1972"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:KevinCronin ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_KevinCronin_1976_1ebd258f a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Keyboard,
+        schema:Piano,
+        schema:Voice ;
+    schema1:roleName "guitar, keyboard, lead vocals, piano" ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:KevinCronin ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_MartyShepard_1968_631052ef a mm:MusicEnsembleMembership ;
+    schema1:endDate "1968"^^xsd:gYear ;
+    schema1:instrument schema:Trumpet ;
+    schema1:roleName "trumpet" ;
+    schema1:startDate "1968"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MartyShepard ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_MelanieJackson_1989_01c19459 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "background vocals" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MelanieJackson ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_MikeBlair_1967_b039c668 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1968"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Voice ;
+    schema1:roleName "bass guitar, lead vocals" ;
+    schema1:startDate "1967"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:MikeBlair ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_MikeMurphy_1973_b24ed05d a mm:MusicEnsembleMembership ;
+    schema1:endDate "1976"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Keyboard,
+        schema:Voice ;
+    schema1:roleName "guitar, keyboard, lead vocals" ;
+    schema1:startDate "1973"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MikeMurphy ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_MilesJoseph_1989_f1ed21b9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989"^^xsd:gYear ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MilesJoseph ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_NealDoughty_1967_a76c7df5 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard,
+        schema:Piano,
+        schema:Synthesizer ;
+    schema1:roleName "keyboard, organ, piano, synthesizer" ;
+    schema1:startDate "1967"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:NealDoughty ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_SteveScorfina_1969_d329829c a mm:MusicEnsembleMembership ;
+    schema1:endDate "1970"^^xsd:gYear ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SteveScorfina ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_ReoSpeedwagon_TerryLuttrell_1968_7d2c69a1 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1968"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TerryLuttrell ;
+    mm:involvesMusicEnsemble schema:ReoSpeedwagon .
+
+schema:Membership_RunDMC_BobbyTench_X_779d8940 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "additional, guitar" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BobbyTench ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_BobbyWalker_X_602dc315 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "additional, drums (drum set)" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BobbyWalker ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_DanielShulman_X_b3289f18 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "additional, bass guitar" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DanielShulman ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_DjCharlieChanSoprano_2020_a52ce963 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2021"^^xsd:gYear ;
+    schema1:roleName "additional, turntable" ;
+    schema1:startDate "2020"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DjCharlieChanSoprano ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_DjJamMasterJSon_20120902_3b089711 a mm:MusicEnsembleMembership ;
+    schema1:roleName "turntable" ;
+    schema1:startDate "2012-09-02"^^xsd:date ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DjJamMasterJSon ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_DjRuckus_X_299b5412 a mm:MusicEnsembleMembership ;
+    schema1:roleName "additional, turntable" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DjRuckus ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_Dmc_X_a85eda7b a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:Dmc ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_EddieMartinez_X_71ae8690 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "additional, guitar" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:EddieMartinez ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_JamMasterJay_X_b0f32041 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JamMasterJay ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_LarrySmith_X_f6bb8c12 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "additional, bass guitar" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LarrySmith ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_Run_X_672bd07d a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:Run ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_SamJacobs_X_1a7c9b61 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Percussion ;
+    schema1:roleName "additional, percussion" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SamJacobs ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_RunDMC_StanleyBrown_X_6f4bfdf5 a mm:MusicEnsembleMembership ;
+    schema1:roleName "additional, keytar" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:StanleyBrown ;
+    mm:involvesMusicEnsemble schema:RunDMC .
+
+schema:Membership_Sade_AndrewHale_1983_af2d74da a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "1983"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndrewHale ;
+    mm:involvesMusicEnsemble schema:Sade .
+
+schema:Membership_Sade_PaulCooke_1982_bdfb478a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1984"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:PaulCooke ;
+    mm:involvesMusicEnsemble schema:Sade .
+
+schema:Membership_Sade_PaulSDenman_1982_373f3840 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:PaulSDenman ;
+    mm:involvesMusicEnsemble schema:Sade .
+
+schema:Membership_Sade_SadeAdu_1982_bd472797 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "eponymous, lead vocals" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:SadeAdu ;
+    mm:involvesMusicEnsemble schema:Sade .
+
+schema:Membership_Sade_StuartMatthewman_1982_0ecb244f a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Saxophone ;
+    schema1:roleName "guitar, saxophone" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:StuartMatthewman ;
+    mm:involvesMusicEnsemble schema:Sade .
+
+schema:Membership_Santana_AlanPasqua_1979_85034c76 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1980"^^xsd:gYear ;
+    schema1:startDate "1979"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlanPasqua ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_AlexLigertwood_1979_9a2c5529 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1983"^^xsd:gYear ;
+    schema1:startDate "1979"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlexLigertwood ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_AlexLigertwood_1984_72f9e9ce a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:startDate "1984"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlexLigertwood ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_AlexLigertwood_1987_5f39e072 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:startDate "1987"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlexLigertwood ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_AlexLigertwood_1989_598a2245 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991"^^xsd:gYear ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlexLigertwood ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_AlexLigertwood_1992_19f5a4fb a mm:MusicEnsembleMembership ;
+    schema1:endDate "1994"^^xsd:gYear ;
+    schema1:startDate "1992"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlexLigertwood ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_AlphonsoJohnson_1985_e3c862e1 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989"^^xsd:gYear ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlphonsoJohnson ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_AlphonsoJohnson_1992_c3134cdd a mm:MusicEnsembleMembership ;
+    schema1:endDate "1992"^^xsd:gYear ;
+    schema1:startDate "1992"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlphonsoJohnson ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_AndyVargas_2012_09375d48 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2013"^^xsd:gYear ;
+    schema1:startDate "2012"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyVargas ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_ArmandoPeraza_1976_6006cb32 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1976"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ArmandoPeraza ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_ArmandoPeraza_1977_0592c225 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1990"^^xsd:gYear ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ArmandoPeraza ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_BennyRietveld_1990_3d8b6b42 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1992"^^xsd:gYear ;
+    schema1:startDate "1990"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BennyRietveld ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_BennyRietveld_1997_395aed74 a mm:MusicEnsembleMembership ;
+    schema1:startDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BennyRietveld ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_BillOrtiz_2000_512b4523 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2013"^^xsd:gYear ;
+    schema1:startDate "2000"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BillOrtiz ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_BillyJohnson_1991_bf78330a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991"^^xsd:gYear ;
+    schema1:startDate "1991"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BillyJohnson ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_BillyJohnson_1994_c74024f3 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1994"^^xsd:gYear ;
+    schema1:startDate "1994"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BillyJohnson ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_BillyJohnson_2000_a53a3e78 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2001"^^xsd:gYear ;
+    schema1:startDate "2000"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BillyJohnson ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_BobLivingston_1967_64b09138 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969"^^xsd:gYear ;
+    schema1:startDate "1967"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BobLivingston ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_BuddyMiles_1986_09124455 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1986"^^xsd:gYear ;
+    schema1:startDate "1986"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BuddyMiles ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_BuddyMiles_1987_c2698723 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:startDate "1987"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BuddyMiles ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_ByronMiller_1976_4a031202 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1976"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ByronMiller ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_CarlosSantana_1966_1acc9480 a mm:MusicEnsembleMembership ;
+    schema1:roleName "eponymous" ;
+    schema1:startDate "1966"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:CarlosSantana ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_ChesterThompson2_1984_6529525a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1984"^^xsd:gYear ;
+    schema1:startDate "1984"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ChesterThompson2 ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_ChesterThompson_1983_57e47ac0 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2009"^^xsd:gYear ;
+    schema1:startDate "1983"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ChesterThompson ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_ChrisRhyne_1978_63c84971 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1979"^^xsd:gYear ;
+    schema1:startDate "1978"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ChrisRhyne ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_ChrisSolberg_1978_abcc2b4c a mm:MusicEnsembleMembership ;
+    schema1:endDate "1980"^^xsd:gYear ;
+    schema1:startDate "1978"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ChrisSolberg ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_CokeEscovedo_1971_a54d0b9f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:startDate "1971"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CokeEscovedo ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_CurtisSalgado_1995_e4cd589f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1995"^^xsd:gYear ;
+    schema1:startDate "1995"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CurtisSalgado ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_DavidBrown2_X_e589a761 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidBrown2 ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_DavidBrown_1967_244e3748 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1971"^^xsd:gYear ;
+    schema1:startDate "1967"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidBrown ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_DavidBrown_1974_980f164f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1976"^^xsd:gYear ;
+    schema1:startDate "1974"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidBrown ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_DavidKMathews_2011_457b8072 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2013"^^xsd:gYear ;
+    schema1:startDate "2011"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidKMathews ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_DavidMargen_1977_aaf986de a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982"^^xsd:gYear ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidMargen ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_DavidSancious_1984_3f8981ca a mm:MusicEnsembleMembership ;
+    schema1:endDate "1984"^^xsd:gYear ;
+    schema1:startDate "1984"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidSancious ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_DennisChambers_2004_36ef979a a mm:MusicEnsembleMembership ;
+    schema1:endDate "2013"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "2004"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DennisChambers ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_DougRauch_1972_4403946d a mm:MusicEnsembleMembership ;
+    schema1:endDate "1973"^^xsd:gYear ;
+    schema1:startDate "1972"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DougRauch ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_FranciscoAguabella_1969_053372a7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1971"^^xsd:gYear ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:FranciscoAguabella ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_FreddieRavel_2009_784eba9b a mm:MusicEnsembleMembership ;
+    schema1:endDate "2010"^^xsd:gYear ;
+    schema1:startDate "2009"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:FreddieRavel ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GaylordBirch_1976_279f7678 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1976"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GaylordBirch ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GaylordBirch_1991_5afbc603 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991"^^xsd:gYear ;
+    schema1:startDate "1991"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GaylordBirch ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GrahamLear_1976_906e9aef a mm:MusicEnsembleMembership ;
+    schema1:endDate "1984"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GrahamLear ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GrahamLear_1985_9e2d803b a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GrahamLear ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GregErrico_X_55009a3f a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GregErrico ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GregWalker_1975_302ac040 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1976"^^xsd:gYear ;
+    schema1:startDate "1975"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GregWalker ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GregWalker_1976_1ead6aeb a mm:MusicEnsembleMembership ;
+    schema1:endDate "1979"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GregWalker ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GregWalker_1983_7b20d929 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:startDate "1983"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GregWalker ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GreggRolie_1966_e7d036ed a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:startDate "1966"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:GreggRolie ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GreggRolie_2013_88e2b233 a mm:MusicEnsembleMembership ;
+    schema1:startDate "2013"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GreggRolie ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_GusRodriguez_1966_f90cc73c a mm:MusicEnsembleMembership ;
+    schema1:endDate "1967"^^xsd:gYear ;
+    schema1:startDate "1966"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:GusRodriguez ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_HoracioElNegroHernNdez_1997_51cde8d7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1997"^^xsd:gYear ;
+    schema1:startDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:HoracioElNegroHernNdez ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_JamesMingoLewis_1972_1b1b996d a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:startDate "1972"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JamesMingoLewis ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_JeffCressman_2000_6dcead44 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2013"^^xsd:gYear ;
+    schema1:startDate "2000"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JeffCressman ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_JoelBadie_1976_b99cfe24 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1976"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JoelBadie ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_JorgeSantana_1993_08967e98 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1996"^^xsd:gYear ;
+    schema1:startDate "1993"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JorgeSantana ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_JosChepitoReas_1969_fa352ef6 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1977"^^xsd:gYear ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JosChepitoReas ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_JosChepitoReas_1988_78ea99af a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989"^^xsd:gYear ;
+    schema1:startDate "1988"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JosChepitoReas ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_JulesBroussard_1974_ab119a41 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1975"^^xsd:gYear ;
+    schema1:startDate "1974"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JulesBroussard ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_KarlPerazzo_1991_c5fa5872 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2013"^^xsd:gYear ;
+    schema1:startDate "1991"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:KarlPerazzo ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_KeithJones_1983_aa19370a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1984"^^xsd:gYear ;
+    schema1:startDate "1983"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:KeithJones ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_KeithJones_1989_4facafc9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989"^^xsd:gYear ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:KeithJones ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_LawrenceRogers_1994_4805fb63 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1998"^^xsd:gYear ;
+    schema1:startDate "1994"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LawrenceRogers ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_LeonNduguChancler_1974_b0b135bf a mm:MusicEnsembleMembership ;
+    schema1:endDate "1976"^^xsd:gYear ;
+    schema1:startDate "1974"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LeonNduguChancler ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_LeonNduguChancler_1988_ce72cdbd a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988"^^xsd:gYear ;
+    schema1:startDate "1988"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LeonNduguChancler ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_LeonPatillo_1974_36f32564 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1975"^^xsd:gYear ;
+    schema1:startDate "1974"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LeonPatillo ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_LeonThomas_1973_1f320633 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1973"^^xsd:gYear ;
+    schema1:startDate "1973"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LeonThomas ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_LutherRabb_1976_b32b8106 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1976"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LutherRabb ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_MarcusMalone_1967_901f124a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1969"^^xsd:gYear ;
+    schema1:startDate "1967"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MarcusMalone ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_MichaelCarabello_1966_85ca2107 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1967"^^xsd:gYear ;
+    schema1:startDate "1966"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelCarabello ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_MichaelCarabello_1969_16cfce44 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1971"^^xsd:gYear ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelCarabello ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_MichaelCarabello_2013_9ef00f5d a mm:MusicEnsembleMembership ;
+    schema1:startDate "2013"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelCarabello ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_MichaelShrieve_1969_7fc3dbf6 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1974"^^xsd:gYear ;
+    schema1:startDate "1969"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelShrieve ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_MichaelShrieve_1988_2286af3e a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988"^^xsd:gYear ;
+    schema1:startDate "1988"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelShrieve ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_MichaelShrieve_2013_6c6bfe39 a mm:MusicEnsembleMembership ;
+    schema1:startDate "2013"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelShrieve ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_MyronDove_1992_6a9c26ab a mm:MusicEnsembleMembership ;
+    schema1:endDate "1996"^^xsd:gYear ;
+    schema1:startDate "1992"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MyronDove ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_MyronDove_2003_6d5405b9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2005"^^xsd:gYear ;
+    schema1:startDate "2003"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MyronDove ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_NealSchon_1971_cb469a30 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:startDate "1971"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:NealSchon ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_NealSchon_2013_b5b55f5c a mm:MusicEnsembleMembership ;
+    schema1:startDate "2013"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:NealSchon ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_OranColtrane_1992_9f4b7734 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1992"^^xsd:gYear ;
+    schema1:startDate "1992"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:OranColtrane ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_OrestesVilat_1980_3f60c0c7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:OrestesVilat ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_PabloTellez_1976_fcddb9a4 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1977"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:PabloTellez ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_PeteEscovedo_1971_5ff9c121 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1971"^^xsd:gYear ;
+    schema1:startDate "1971"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:PeteEscovedo ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_PeteEscovedo_1977_54a9a1b1 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1979"^^xsd:gYear ;
+    schema1:startDate "1977"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:PeteEscovedo ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RaulRekow_1976_4de082f3 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2013"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RaulRekow ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RichardBaker_1980_fc52487b a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982"^^xsd:gYear ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RichardBaker ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RichardKermode_1972_5c73c75e a mm:MusicEnsembleMembership ;
+    schema1:endDate "1973"^^xsd:gYear ;
+    schema1:startDate "1972"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RichardKermode ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RickyWellman_1997_a1c783c5 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1997"^^xsd:gYear ;
+    schema1:startDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RickyWellman ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RicoReyes_1971_e00457ea a mm:MusicEnsembleMembership ;
+    schema1:endDate "1971"^^xsd:gYear ;
+    schema1:startDate "1971"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RicoReyes ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RicoReyes_1972_b3f19cf8 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:startDate "1972"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RicoReyes ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RodHarper_1966_25337c84 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1967"^^xsd:gYear ;
+    schema1:startDate "1966"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:RodHarper ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RodneyHolmes_1993_37594e09 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1994"^^xsd:gYear ;
+    schema1:startDate "1993"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RodneyHolmes ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RodneyHolmes_1997_ad928335 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2000"^^xsd:gYear ;
+    schema1:startDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RodneyHolmes ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_RussellTubbs_1978_356ed8f2 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1978"^^xsd:gYear ;
+    schema1:startDate "1978"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RussellTubbs ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_SterlingCrew_1985_93231bc9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SterlingCrew ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_ThomasEscovedo_X_d202a290 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ThomasEscovedo ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_TomCoster_1972_913d9a3e a mm:MusicEnsembleMembership ;
+    schema1:endDate "1978"^^xsd:gYear ;
+    schema1:startDate "1972"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TomCoster ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_TomCoster_1983_ffea37be a mm:MusicEnsembleMembership ;
+    schema1:endDate "1984"^^xsd:gYear ;
+    schema1:startDate "1983"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TomCoster ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_TomFrazier_1966_52732424 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1967"^^xsd:gYear ;
+    schema1:startDate "1966"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:TomFrazier ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_TomRutley_1971_b160b374 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972"^^xsd:gYear ;
+    schema1:startDate "1971"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TomRutley ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_TommieBradford_1994_eef4cc1c a mm:MusicEnsembleMembership ;
+    schema1:endDate "1994"^^xsd:gYear ;
+    schema1:startDate "1994"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TommieBradford ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_TommyAnthony_2005_ecd4572f a mm:MusicEnsembleMembership ;
+    schema1:endDate "2013"^^xsd:gYear ;
+    schema1:startDate "2005"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TommyAnthony ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_TonyLindsay_1991_a688e1c0 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991"^^xsd:gYear ;
+    schema1:startDate "1991"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyLindsay ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_TonyLindsay_1995_318c68b7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2003"^^xsd:gYear ;
+    schema1:startDate "1995"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyLindsay ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_TonyLindsay_2012_1e9e1c07 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2013"^^xsd:gYear ;
+    schema1:startDate "2012"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyLindsay ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_VictorPantoja_1971_efb4be37 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1971"^^xsd:gYear ;
+    schema1:startDate "1971"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:VictorPantoja ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_VorrieceCooper_1993_4f91755a a mm:MusicEnsembleMembership ;
+    schema1:endDate "1993"^^xsd:gYear ;
+    schema1:startDate "1993"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:VorrieceCooper ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_WalfredoDeLosReyesJr_1989_c2220fbf a mm:MusicEnsembleMembership ;
+    schema1:endDate "1991"^^xsd:gYear ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:WalfredoDeLosReyesJr ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_Santana_WalfredoDeLosReyesJr_1992_63c59cdc a mm:MusicEnsembleMembership ;
+    schema1:endDate "1993"^^xsd:gYear ;
+    schema1:startDate "1992"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:WalfredoDeLosReyesJr ;
+    mm:involvesMusicEnsemble schema:Santana .
+
+schema:Membership_SimpleMinds_AndyGillespie_2002_db57b2db a mm:MusicEnsembleMembership ;
+    schema1:endDate "2017"^^xsd:gYear ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "2002"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyGillespie ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_BereniceScott_2020_31652db8 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "2020"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BereniceScott ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_BrianMcgee_197711_9d0b2248 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1981"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1977-11"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BrianMcgee ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_CatherineAnneDavies_2014_33ac4da7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2018"^^xsd:gYear ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "2014"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CatherineAnneDavies ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_CatherineAnneDavies_2014_ad861b9b a mm:MusicEnsembleMembership ;
+    schema1:endDate "2018"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "background vocals" ;
+    schema1:startDate "2014"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CatherineAnneDavies ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_CharlieBurchill_197711_a904861b a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Keyboard ;
+    schema1:roleName "guitar, keyboard" ;
+    schema1:startDate "1977-11"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:CharlieBurchill ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_CherisseOsei_2017_19e45419 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "2017"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CherisseOsei ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_DerekForbes_197805_3aa9d2ea a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985-03"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1978-05"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DerekForbes ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_DerekForbes_199607_eb25f648 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1998-07"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1996-07"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DerekForbes ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_DuncanBarnwell_197801_0b431138 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1978-11"^^xsd:gYearMonth ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "1978-01"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DuncanBarnwell ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_EddieDuffy_1998_f5ca9d10 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2010-09"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass" ;
+    schema1:startDate "1998"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:EddieDuffy ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_GedGrimes_201010_0f671daa a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "2010-10"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GedGrimes ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_GordonGoudie_2017_139be721 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "2017"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GordonGoudie ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_GordonGoudie_2017_56117429 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "background vocals" ;
+    schema1:startDate "2017"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GordonGoudie ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_GordonGoudie_2017_6941d75b a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema1:startDate "2017"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GordonGoudie ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_JimKerr_197711_c036b10a a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1977-11"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:JimKerr ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_JimMcdermott_1997_c55f0375 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1997"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JimMcdermott ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_JohnGiblin_1985_35b544d0 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnGiblin ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_KennyHyslop_198110_7b213f5c a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982-02"^^xsd:gYearMonth ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1981-10"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:KennyHyslop ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MalcolmFoster_1989_22a377f3 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1995"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1989"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MalcolmFoster ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MarkKerr_1999_d752495f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1999"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1999"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MarkKerr ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MarkKerr_2001_2842890c a mm:MusicEnsembleMembership ;
+    schema1:endDate "2001"^^xsd:gYear ;
+    schema1:instrument schema:AcousticGuitar ;
+    schema1:roleName "acoustic guitar" ;
+    schema1:startDate "2001"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MarkKerr ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MarkSchulman_1994_c9cd50ad a mm:MusicEnsembleMembership ;
+    schema1:endDate "1995"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1994"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MarkSchulman ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MarkTaylor_1991_a96d6f2f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1998"^^xsd:gYear ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "1991"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MarkTaylor ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MelGaynor_198211_77763345 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1992"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1982-11"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MelGaynor ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MelGaynor_199706_74a32c61 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1998-07"^^xsd:gYearMonth ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1997-06"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MelGaynor ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MelGaynor_2002_5c42beaa a mm:MusicEnsembleMembership ;
+    schema1:endDate "2018"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "2002"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MelGaynor ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MichaelMacneil_197803_9ee9b777 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1989-11-28"^^xsd:date ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "1978-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelMacneil ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_MikeOgletree_198202_7eeccef0 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982-11"^^xsd:gYearMonth ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1982-02"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MikeOgletree ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_RobinClarke_1985_2a771b76 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1986"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "additional, lead vocals" ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RobinClarke ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_SarahBrown_2017_cc375442 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "2017"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SarahBrown ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_SarahBrown_2017_dbcb112d a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "background vocals" ;
+    schema1:startDate "2017"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SarahBrown ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SimpleMinds_TonyDonald_197711_34986f6e a mm:MusicEnsembleMembership ;
+    schema1:endDate "1978-04"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1977-11"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyDonald ;
+    mm:involvesMusicEnsemble schema:SimpleMinds .
+
+schema:Membership_SpandauBallet_GaryKemp_X_b02ce355 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GaryKemp ;
+    mm:involvesMusicEnsemble schema:SpandauBallet .
+
+schema:Membership_SpandauBallet_JohnKeeble_X_b7996b7e a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnKeeble ;
+    mm:involvesMusicEnsemble schema:SpandauBallet .
+
+schema:Membership_SpandauBallet_MartinKemp_X_43e5e8a8 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MartinKemp ;
+    mm:involvesMusicEnsemble schema:SpandauBallet .
+
+schema:Membership_SpandauBallet_SteveNorman_X_f954c144 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SteveNorman ;
+    mm:involvesMusicEnsemble schema:SpandauBallet .
+
+schema:Membership_SpandauBallet_TonyHadley_X_f789eb25 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyHadley ;
+    mm:involvesMusicEnsemble schema:SpandauBallet .
+
+schema:Membership_StatusQuo_AlanLancaster_1962_42add608 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1962"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:AlanLancaster ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_AlanLancaster_1962_8fe9136f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1962"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:AlanLancaster ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_AndyBown_1982_88d6d221 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:ElectricGuitar ;
+    schema1:roleName "electric guitar" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyBown ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_AndyBown_1982_93198355 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyBown ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_AndyBown_1982_e5782494 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Harmonica ;
+    schema1:roleName "harmonica" ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyBown ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_FrancisRossi_1962_1e63f2ff a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:ElectricGuitar ;
+    schema1:roleName "electric guitar" ;
+    schema1:startDate "1962"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:FrancisRossi ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_FrancisRossi_1962_4f6c0922 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1962"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:FrancisRossi ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_JeffRich_1986_f91b20bb a mm:MusicEnsembleMembership ;
+    schema1:endDate "2000"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1986"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JeffRich ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_JohnCoghlan_1963_03484e8d a mm:MusicEnsembleMembership ;
+    schema1:endDate "1981"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1963"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnCoghlan ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_JohnEdwards_1986_d7716942 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1986"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnEdwards ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_MatthewLetley_2000_88de9c29 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2012"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "2000"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MatthewLetley ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_PeterKircher_1982_955f3232 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:PeterKircher ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_RichieMalone_2016_162705b0 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:ElectricGuitar ;
+    schema1:roleName "electric guitar" ;
+    schema1:startDate "2016"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RichieMalone ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_RickParfitt_1967_ce0a7cd8 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2016"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1967"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RickParfitt ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_RickParfitt_1967_e0d209ae a mm:MusicEnsembleMembership ;
+    schema1:endDate "2016"^^xsd:gYear ;
+    schema1:instrument schema:ElectricGuitar ;
+    schema1:roleName "electric guitar" ;
+    schema1:startDate "1967"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RickParfitt ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_StatusQuo_RoyLynes_1963_893736e2 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1970"^^xsd:gYear ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "1963"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RoyLynes ;
+    mm:involvesMusicEnsemble schema:StatusQuo .
+
+schema:Membership_TheBeachBoys_AlJardine_1961_fefd58c7 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1962-01"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar,
+        schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "bass guitar, guitar, lead vocals" ;
+    schema1:startDate "1961"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:AlJardine ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_AlJardine_1963_20d7edad a mm:MusicEnsembleMembership ;
+    schema1:endDate "1998"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "bass guitar, guitar, lead vocals" ;
+    schema1:startDate "1963"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlJardine ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_BlondieChaplin_197203_69bde8a0 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1973"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "bass guitar, guitar, lead vocals" ;
+    schema1:startDate "1972-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BlondieChaplin ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_BrianWilson_1961_beed12dc a mm:MusicEnsembleMembership ;
+    schema1:endDate "1996"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Keyboard,
+        schema:Percussion,
+        schema:Voice ;
+    schema1:roleName "bass guitar, keyboard, lead vocals, percussion" ;
+    schema1:startDate "1961"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BrianWilson ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_BruceJohnston_196503_b67217e9 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1972-04"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar,
+        schema:Keyboard,
+        schema:Voice ;
+    schema1:roleName "bass guitar, keyboard, lead vocals" ;
+    schema1:startDate "1965-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BruceJohnston ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_BruceJohnston_1978_d31d44c5 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar,
+        schema:Keyboard,
+        schema:Voice ;
+    schema1:roleName "bass guitar, keyboard, lead vocals" ;
+    schema1:startDate "1978"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BruceJohnston ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_CarlWilson_1961_b948445f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1980"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Guitar,
+        schema:Percussion,
+        schema:Voice ;
+    schema1:roleName "bass guitar, guitar, lead vocals, percussion" ;
+    schema1:startDate "1961"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:CarlWilson ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_CarlWilson_198205_00a36d61 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1997"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "guitar, lead vocals" ;
+    schema1:startDate "1982-05"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:CarlWilson ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_DavidMarks_196202_3f9e5f6b a mm:MusicEnsembleMembership ;
+    schema1:endDate "1963-10"^^xsd:gYearMonth ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "guitar, lead vocals" ;
+    schema1:startDate "1962-02"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidMarks ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_DavidMarks_1997_991b8606 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1999"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "guitar, lead vocals" ;
+    schema1:startDate "1997"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidMarks ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_DennisWilson_1961_4fd0ea9f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1983"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Keyboard,
+        schema:Voice ;
+    schema1:roleName "drums (drum set), keyboard, lead vocals" ;
+    schema1:startDate "1961"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:DennisWilson ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_GlenCampbell_196412_2c2bf6c1 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1965-03"^^xsd:gYearMonth ;
+    schema1:instrument schema:BassGuitar,
+        schema:Guitar,
+        schema:Keyboard,
+        schema:Voice ;
+    schema1:roleName "bass guitar, guitar, keyboard, lead vocals" ;
+    schema1:startDate "1964-12"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GlenCampbell ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_MikeLove_1961_9cbe23c6 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Saxophone,
+        schema:Voice ;
+    schema1:roleName "lead vocals, saxophone" ;
+    schema1:startDate "1961"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:MikeLove ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBeachBoys_RickyFataar_197203_05fefe30 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1974"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Keyboard,
+        schema:Voice ;
+    schema1:roleName "drums (drum set), keyboard, lead vocals" ;
+    schema1:startDate "1972-03"^^xsd:gYearMonth ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RickyFataar ;
+    mm:involvesMusicEnsemble schema:TheBeachBoys .
+
+schema:Membership_TheBoomtownRats_BobGeldof_X_9b277bed a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BobGeldof ;
+    mm:involvesMusicEnsemble schema:TheBoomtownRats .
+
+schema:Membership_TheBoomtownRats_GarryRoberts_X_a909a561 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:GarryRoberts ;
+    mm:involvesMusicEnsemble schema:TheBoomtownRats .
+
+schema:Membership_TheBoomtownRats_GerryCott_X_b297879c a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar ;
+    schema1:roleName "guitar" ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:GerryCott ;
+    mm:involvesMusicEnsemble schema:TheBoomtownRats .
+
+schema:Membership_TheBoomtownRats_GungHo_X_5165603d a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GungHo ;
+    mm:involvesMusicEnsemble schema:TheBoomtownRats .
+
+schema:Membership_TheBoomtownRats_JohnnieFingers_X_eaa667fd a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnnieFingers ;
+    mm:involvesMusicEnsemble schema:TheBoomtownRats .
+
+schema:Membership_TheBoomtownRats_JohnnieFingers_X_eb5833a6 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnnieFingers ;
+    mm:involvesMusicEnsemble schema:TheBoomtownRats .
+
+schema:Membership_TheBoomtownRats_PeteBriquette_X_03d002c2 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass" ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:PeteBriquette ;
+    mm:involvesMusicEnsemble schema:TheBoomtownRats .
+
+schema:Membership_TheBoomtownRats_SimonCrowe_X_bc5d281a a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:SimonCrowe ;
+    mm:involvesMusicEnsemble schema:TheBoomtownRats .
+
+schema:Membership_TheCars_BenjaminOrr_1976_c043c6bd a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, bass guitar, lead vocals" ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BenjaminOrr ;
+    mm:involvesMusicEnsemble schema:TheCars .
+
+schema:Membership_TheCars_DavidRobinson_1976_d05ccf1f a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet,
+        schema:Percussion,
+        schema:Voice ;
+    schema1:roleName "background vocals, drums (drum set), percussion" ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidRobinson ;
+    mm:involvesMusicEnsemble schema:TheCars .
+
+schema:Membership_TheCars_ElliotEaston_1976_650e98db a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, guitar" ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ElliotEaston ;
+    mm:involvesMusicEnsemble schema:TheCars .
+
+schema:Membership_TheCars_GregHawkes_1976_8094addd a mm:MusicEnsembleMembership ;
+    schema1:endDate "1988"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Keyboard,
+        schema:Percussion,
+        schema:Saxophone,
+        schema:Synthesizer,
+        schema:Voice ;
+    schema1:roleName "background vocals, bass guitar, keyboard, percussion, saxophone, synthesizer" ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:GregHawkes ;
+    mm:involvesMusicEnsemble schema:TheCars .
+
+schema:Membership_TheCars_RicOcasek_1976_48af2b19 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2019"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "background vocals, guitar, lead vocals" ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RicOcasek ;
+    mm:involvesMusicEnsemble schema:TheCars .
+
+schema:Membership_TheHooters_AndyKing_1984_0c29f6a3 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1987"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema1:startDate "1984"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyKing ;
+    mm:involvesMusicEnsemble schema:TheHooters .
+
+schema:Membership_TheHooters_DavidUosikkinen_1980_2fc534db a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Percussion ;
+    schema1:roleName "percussion" ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidUosikkinen ;
+    mm:involvesMusicEnsemble schema:TheHooters .
+
+schema:Membership_TheHooters_DavidUosikkinen_1980_5f4737ba a mm:MusicEnsembleMembership ;
+    schema1:roleName "membranophone" ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:DavidUosikkinen ;
+    mm:involvesMusicEnsemble schema:TheHooters .
+
+schema:Membership_TheHooters_EricBazilian_1980_b997dd23 a mm:MusicEnsembleMembership ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:EricBazilian ;
+    mm:involvesMusicEnsemble schema:TheHooters .
+
+schema:Membership_TheHooters_FranSmithJr_1987_dd7c5b95 a mm:MusicEnsembleMembership ;
+    schema1:startDate "1987"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:FranSmithJr ;
+    mm:involvesMusicEnsemble schema:TheHooters .
+
+schema:Membership_TheHooters_JohnLilley_1983_1f8d53f1 a mm:MusicEnsembleMembership ;
+    schema1:startDate "1983"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnLilley ;
+    mm:involvesMusicEnsemble schema:TheHooters .
+
+schema:Membership_TheHooters_RobHyman_1980_a610c508 a mm:MusicEnsembleMembership ;
+    schema1:startDate "1980"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:RobHyman ;
+    mm:involvesMusicEnsemble schema:TheHooters .
+
+schema:Membership_ThePowerStation_AndyTaylor_X_45b407fc a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AndyTaylor ;
+    mm:involvesMusicEnsemble schema:ThePowerStation .
+
+schema:Membership_ThePowerStation_BernardEdwards_X_8adb8572 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:BernardEdwards ;
+    mm:involvesMusicEnsemble schema:ThePowerStation .
+
+schema:Membership_ThePowerStation_JohnTaylor_X_6f5a9cab a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnTaylor ;
+    mm:involvesMusicEnsemble schema:ThePowerStation .
+
+schema:Membership_ThePowerStation_MichaelDesBarres_1985_0b6ebb4c a mm:MusicEnsembleMembership ;
+    schema1:startDate "1985"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MichaelDesBarres ;
+    mm:involvesMusicEnsemble schema:ThePowerStation .
+
+schema:Membership_ThePowerStation_RobertPalmer_X_c246e442 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RobertPalmer ;
+    mm:involvesMusicEnsemble schema:ThePowerStation .
+
+schema:Membership_ThePowerStation_TonyThompson_X_67eb3530 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyThompson ;
+    mm:involvesMusicEnsemble schema:ThePowerStation .
+
+schema:Membership_TheStyleCouncil_DeeCLee_X_80952a58 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:DeeCLee ;
+    mm:involvesMusicEnsemble schema:TheStyleCouncil .
+
+schema:Membership_TheStyleCouncil_MickTalbot_X_46e18b77 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MickTalbot ;
+    mm:involvesMusicEnsemble schema:TheStyleCouncil .
+
+schema:Membership_TheStyleCouncil_PaulWeller_X_80ed9889 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:PaulWeller ;
+    mm:involvesMusicEnsemble schema:TheStyleCouncil .
+
+schema:Membership_TheStyleCouncil_SteveWhite_X_5ec85aa5 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SteveWhite ;
+    mm:involvesMusicEnsemble schema:TheStyleCouncil .
+
+schema:Membership_TheWho_ChrisStainton_2012_df6074c5 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "additional, keyboard" ;
+    schema1:startDate "2012"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ChrisStainton ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_DougSandom_1964_c14dd47e a mm:MusicEnsembleMembership ;
+    schema1:endDate "1964"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1964"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:DougSandom ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_FrankSimes_2012_78d75425 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "additional, keyboard" ;
+    schema1:startDate "2012"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:FrankSimes ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_JohnEntwistle_1964_f8905bab a mm:MusicEnsembleMembership ;
+    schema1:endDate "2002"^^xsd:gYear ;
+    schema1:instrument schema:BassGuitar,
+        schema:Keyboard,
+        schema:Synthesizer,
+        schema:Trumpet,
+        schema:Voice ;
+    schema1:roleName "bass guitar, French horn, keyboard, lead vocals, synthesizer, trumpet" ;
+    schema1:startDate "1964"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnEntwistle ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_JohnRabbitBundrick_1979_ed6369c3 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2011"^^xsd:gYear ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "keyboard" ;
+    schema1:startDate "1979"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnRabbitBundrick ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_KeithMoon_1964_37452830 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1978"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1964"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:KeithMoon ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_KenneyJones_1978_9cdbba5d a mm:MusicEnsembleMembership ;
+    schema1:endDate "1985"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1978"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:KenneyJones ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_LorenGold_2012_fc88b913 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "additional, keyboard" ;
+    schema1:startDate "2012"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LorenGold ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_PeteTownshend_196402_1bbf8a54 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Keyboard,
+        schema:Synthesizer,
+        schema:Voice ;
+    schema1:roleName "guitar, keyboard, lead vocals, synthesizer" ;
+    schema1:startDate "1964-02"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:PeteTownshend ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_PinoPalladino_2002_d2a2134f a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "additional, bass guitar" ;
+    schema1:startDate "2002"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:PinoPalladino ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_RogerDaltrey_196402_3bf253e4 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Harmonica,
+        schema:Percussion,
+        schema:Voice ;
+    schema1:roleName "guitar, harmonica, lead vocals, percussion" ;
+    schema1:startDate "1964-02"^^xsd:gYearMonth ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:RogerDaltrey ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_SimonTownshend_1996_a0181415 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1997"^^xsd:gYear ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "additional, background vocals, guitar, mandolin" ;
+    schema1:startDate "1996"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SimonTownshend ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_SimonTownshend_2002_0b5f3211 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Voice ;
+    schema1:roleName "additional, background vocals, guitar, mandolin" ;
+    schema1:startDate "2002"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SimonTownshend ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_ZakStarkey_1996_29960d35 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2025-04-15"^^xsd:date ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "additional, drums (drum set)" ;
+    schema1:startDate "1996"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ZakStarkey ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_TheWho_ZakStarkey_20250419_b0d1040c a mm:MusicEnsembleMembership ;
+    schema1:endDate "2025-05-18"^^xsd:date ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "additional, drums (drum set)" ;
+    schema1:startDate "2025-04-19"^^xsd:date ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ZakStarkey ;
+    mm:involvesMusicEnsemble schema:TheWho .
+
+schema:Membership_ThompsonTwins_AlannahCurrie_X_d4e88ce4 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AlannahCurrie ;
+    mm:involvesMusicEnsemble schema:ThompsonTwins .
+
+schema:Membership_ThompsonTwins_ChrisBell_X_36e1a70e a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ChrisBell ;
+    mm:involvesMusicEnsemble schema:ThompsonTwins .
+
+schema:Membership_ThompsonTwins_JaneShorter_X_86ca6ad9 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JaneShorter ;
+    mm:involvesMusicEnsemble schema:ThompsonTwins .
+
+schema:Membership_ThompsonTwins_JoeLeeway_X_d2b18151 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JoeLeeway ;
+    mm:involvesMusicEnsemble schema:ThompsonTwins .
+
+schema:Membership_ThompsonTwins_JohnRoog_X_66c710bb a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnRoog ;
+    mm:involvesMusicEnsemble schema:ThompsonTwins .
+
+schema:Membership_ThompsonTwins_MatthewSeligman_X_4b080fe8 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MatthewSeligman ;
+    mm:involvesMusicEnsemble schema:ThompsonTwins .
+
+schema:Membership_ThompsonTwins_PeteDodd_X_e0f343a3 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:PeteDodd ;
+    mm:involvesMusicEnsemble schema:ThompsonTwins .
+
+schema:Membership_ThompsonTwins_TomBailey_X_5b2e4d2f a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TomBailey ;
+    mm:involvesMusicEnsemble schema:ThompsonTwins .
+
+schema:Membership_TomPettyAndTheHeartbreakers_BenmontTench_1976_efdbed9b a mm:MusicEnsembleMembership ;
+    schema1:endDate "2017-10-02"^^xsd:date ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BenmontTench ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_TomPettyAndTheHeartbreakers_HowieEpstein_1982_4022d038 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2002"^^xsd:gYear ;
+    schema1:startDate "1982"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:HowieEpstein ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_TomPettyAndTheHeartbreakers_MikeCampbell_1976_a28c1763 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2017-10-02"^^xsd:date ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:MikeCampbell ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_TomPettyAndTheHeartbreakers_PhilJones_X_6e813df1 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:PhilJones ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_TomPettyAndTheHeartbreakers_RonBlair_1976_90f45cff a mm:MusicEnsembleMembership ;
+    schema1:endDate "1982"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:RonBlair ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_TomPettyAndTheHeartbreakers_RonBlair_2002_e33b984d a mm:MusicEnsembleMembership ;
+    schema1:endDate "2017-10-02"^^xsd:date ;
+    schema1:startDate "2002"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RonBlair ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_TomPettyAndTheHeartbreakers_ScottThurston_1991_69c9fe18 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2017-10-02"^^xsd:date ;
+    schema1:startDate "1991"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ScottThurston ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_TomPettyAndTheHeartbreakers_StanLynch_1976_7b2cd987 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1994"^^xsd:gYear ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:StanLynch ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_TomPettyAndTheHeartbreakers_SteveFerrone_1994_66564db5 a mm:MusicEnsembleMembership ;
+    schema1:endDate "2017-10-02"^^xsd:date ;
+    schema1:startDate "1994"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:SteveFerrone ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_TomPettyAndTheHeartbreakers_TomPetty_1976_e77f46db a mm:MusicEnsembleMembership ;
+    schema1:endDate "2017-10-02"^^xsd:date ;
+    schema1:roleName "eponymous" ;
+    schema1:startDate "1976"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:TomPetty ;
+    mm:involvesMusicEnsemble schema:TomPettyAndTheHeartbreakers .
+
+schema:Membership_U2_AdamClayton_X_a22b6181 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:BassGuitar ;
+    schema1:roleName "bass guitar" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:AdamClayton ;
+    mm:involvesMusicEnsemble schema:U2 .
+
+schema:Membership_U2_Bono_X_e987036c a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Harmonica,
+        schema:Voice ;
+    schema1:roleName "guitar, harmonica, lead vocals" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:Bono ;
+    mm:involvesMusicEnsemble schema:U2 .
+
+schema:Membership_U2_LarryMullenJr_X_cea736e3 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Percussion,
+        schema:Voice ;
+    schema1:roleName "background vocals, membranophone, percussion" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:LarryMullenJr ;
+    mm:involvesMusicEnsemble schema:U2 .
+
+schema:Membership_U2_TerryLawless_X_c7c461df a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Keyboard ;
+    schema1:roleName "additional, keyboard" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TerryLawless ;
+    mm:involvesMusicEnsemble schema:U2 .
+
+schema:Membership_U2_TheEdge_X_65bcafa4 a mm:MusicEnsembleMembership ;
+    schema1:instrument schema:Guitar,
+        schema:Keyboard,
+        schema:Piano,
+        schema:Voice ;
+    schema1:roleName "background vocals, guitar, keyboard, piano" ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TheEdge ;
+    mm:involvesMusicEnsemble schema:U2 .
+
+schema:Membership_Ultravox_BillyCurrie_X_1e1ef8e7 a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:BillyCurrie ;
+    mm:involvesMusicEnsemble schema:Ultravox .
+
+schema:Membership_Ultravox_ChrisCross_X_d450907f a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:ChrisCross ;
+    mm:involvesMusicEnsemble schema:Ultravox .
+
+schema:Membership_Ultravox_JohnFoxx_1974_586eb2fe a mm:MusicEnsembleMembership ;
+    schema1:endDate "1978"^^xsd:gYear ;
+    schema1:startDate "1974"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:JohnFoxx ;
+    mm:involvesMusicEnsemble schema:Ultravox .
+
+schema:Membership_Ultravox_MidgeUre_1979_ba45e103 a mm:MusicEnsembleMembership ;
+    schema1:startDate "1979"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:MidgeUre ;
+    mm:involvesMusicEnsemble schema:Ultravox .
+
+schema:Membership_Ultravox_RobinSimon_X_3d1b24ca a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:RobinSimon ;
+    mm:involvesMusicEnsemble schema:Ultravox .
+
+schema:Membership_Ultravox_StevieShears_X_3c4a7dbf a mm:MusicEnsembleMembership ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:StevieShears ;
+    mm:involvesMusicEnsemble schema:Ultravox .
+
+schema:Membership_Ultravox_TonyFennell_1992_44ace875 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1994"^^xsd:gYear ;
+    schema1:instrument schema:Voice ;
+    schema1:roleName "lead vocals" ;
+    schema1:startDate "1992"^^xsd:gYear ;
+    schema:isOriginalMember false ;
+    mm:involvesMemberOfMusicEnsemble schema:TonyFennell ;
+    mm:involvesMusicEnsemble schema:Ultravox .
+
+schema:Membership_Ultravox_WarrenCann_1974_21552a58 a mm:MusicEnsembleMembership ;
+    schema1:endDate "1986"^^xsd:gYear ;
+    schema1:instrument schema:DrumsDrumSet ;
+    schema1:roleName "drums (drum set)" ;
+    schema1:startDate "1974"^^xsd:gYear ;
+    schema:isOriginalMember true ;
+    mm:involvesMemberOfMusicEnsemble schema:WarrenCann ;
+    mm:involvesMusicEnsemble schema:Ultravox .
+

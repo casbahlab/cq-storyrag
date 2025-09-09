@@ -565,31 +565,24 @@ def run_pipeline(
         answers_kg_path = generator_dir / "answers_KG.jsonl"
         claims_kg_path = generator_dir / "claims_KG.jsonl" if gc.get("make_claims", True) else None
 
-        print(f"out_kg :{out_kg}")
+        # print(f"out_kg :{out_kg}")
         story_md_kg, answers_kg = generator_generate(
             mode="KG",
             plan=plan_kg,
             plan_with_evidence=out_kg,
-            meta_path=str(kg_meta),
             params=DEFAULT_GENERATOR_PARAMS,  # (can be overridden by your generator)
             llm_provider=gc.get("llm_provider", "ollama"),
             llm_model=gc.get("llm_model", "llama3.1-128k"),
             ollama_num_ctx=gc.get("ollama_num_ctx"),
             use_url_content=False,
-            max_url_snippets=int(gc.get("max_url_snippets", 3)),
-            snippet_chars=int(gc.get("snippet_chars", 40000)),
-            include_citations=bool(gc.get("include_citations", True)),
-            max_rows=int(gc.get("max_rows", 6)),
             max_facts_per_beat=int(gc.get("max_facts_per_beat", 12)),
-            beat_sentences=int(gc.get("beat_sentences", 4)),
             context_budget_chars=int(gc.get("context_budget_chars", 50000)),
             #enforce_citation_each_sentence=bool(gc.get("enforce_citation_each_sentence", True)),
             enforce_citation_each_sentence=bool(False),
             citation_style=gc.get("citation_style", "cqid"),
             claims_out=str(claims_kg_path) if claims_kg_path else None,
             story_clean_out=str(story_kg_clean),
-            run_id=slug(persona) + "-" + slug(length) + "-" + str(seed) + "-kg",  # <-- for eval
-            citation_mode=citation_mode
+            run_id=slug(persona) + "-" + slug(length) + "-" + str(seed) + "-kg",
         )
         story_kg.write_text(story_md_kg, encoding="utf-8")
         write_jsonl(answers_kg_path, answers_kg)
@@ -648,18 +641,12 @@ def run_pipeline(
             mode="Hybrid",
             plan=plan_hy,
             plan_with_evidence=out_hy,
-            meta_path=str(hy_meta),
             params=DEFAULT_GENERATOR_PARAMS,
             llm_provider=gc.get("llm_provider", "ollama"),
             llm_model=gc.get("llm_model", "llama3.1-128k"),
             ollama_num_ctx=gc.get("ollama_num_ctx"),
             use_url_content=bool(gc.get("use_url_content_hybrid", True)),
-            max_url_snippets=int(gc.get("max_url_snippets", 3)),
-            snippet_chars=int(gc.get("snippet_chars", 400)),
-            include_citations=bool(gc.get("include_citations", True)),
-            max_rows=int(gc.get("max_rows", 6)),
             max_facts_per_beat=int(gc.get("max_facts_per_beat", 12)),
-            beat_sentences=int(gc.get("beat_sentences", 4)),
             context_budget_chars=int(gc.get("context_budget_chars", 1600)),
             #enforce_citation_each_sentence=bool(gc.get("enforce_citation_each_sentence", True)),
             enforce_citation_each_sentence=bool(False),
@@ -667,7 +654,6 @@ def run_pipeline(
             claims_out=str(claims_hy_path) if claims_hy_path else None,
             story_clean_out=str(story_hy_clean),
             run_id = slug(persona) + "-" + slug(length) + "-" + str(seed) + "-" + "Hybrid",  # <-- for eval
-            citation_mode=citation_mode
         )
         story_hy.write_text(story_md_hy, encoding="utf-8")
         write_jsonl(answers_hy_path, answers_hy)

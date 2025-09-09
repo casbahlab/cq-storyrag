@@ -206,3 +206,102 @@ python support_ctx_reset_refactored.py \
   --nqi-lite \
   --neardupe-th 0.85 \
   --domain-stopwords live aid concert wembley philadelphia
+
+
+python run_combined_eval.py \
+  --run-dir data/Emma-Medium-20250902-223253/run-01 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage"
+
+
+
+
+python aggregate_eval_runs.py \
+  --exp-dirs data/Emma-Medium-20250904-154423 \
+  --rag-type Hybrid \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage"
+
+
+
+
+
+python aggregate_eval_runs.py \
+  --exp-dirs data/Emma-Medium-20250908-235849 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage"
+
+
+python aggregate_core4_from_meta.py \
+  --exp-dirs data/Emma-Medium-20250908-235849 \
+  --rag-type KG \
+  --out-csv data/Emma-Medium-20250908-235849/aggregated/core4_KG.csv
+
+
+
+Emma-Medium-20250909-130026
+
+python aggregate_eval_runs.py \
+  --exp-dirs data/Emma-Medium-20250909-130026 \
+  --rag-type Hybrid \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage"
+
+
+
+python aggregate_core4_from_meta.py \
+  --exp-dirs data/Emma-Medium-20250909-130026 \
+  --rag-type Hybrid \
+  --out-csv data/Emma-Medium-20250909-130026/aggregated/core4_Hybrid.csv
+
+Emma-Medium-20250909-131038
+
+python aggregate_eval_runs.py \
+  --exp-dirs data/Emma-Medium-20250909-131038 \
+  --rag-type Graph \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage"
+
+
+python aggregate_core4_from_meta.py \
+  --exp-dirs data/Emma-Medium-20250909-131038 \
+  --rag-type Graph \
+  --out-csv data/Emma-Medium-20250909-131038/aggregated/core4_Graph.csv
+
+
+
+Emma-Long-20250909-135054
+
+python aggregate_eval_runs.py \
+  --exp-dirs data/Emma-Long-20250909-135054 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage"
+
+
+python aggregate_core4_from_meta.py \
+  --exp-dirs data/Emma-Long-20250909-135054 \
+  --rag-type KG \
+  --out-csv data/Emma-Long-20250909-135054/aggregated/core4_KG.csv
+
+
+
+Luca-Long-20250909-133910
+
+
+python aggregate_eval_runs.py \
+  --exp-dirs data/Luca-Long-20250909-133910 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage"
+
+python aggregate_core4_from_meta.py \
+  --exp-dirs data/Luca-Long-20250909-133910 \
+  --rag-type KG \
+  --out-csv data/Luca-Long-20250909-133910/aggregated/core4_KG.csv
+
+
+ python narrative_eval.py \
+  -i data/Luca-Long-20250909-133910/run-01/KG/story_KG.md \
+  -o narr_eval_out \
+  --beats auto \
+  --with-coherence \
+  --annotate \
+  --nqi-lite \
+  --neardupe-th 0.85 \
+  --domain-stopwords live aid concert wembley philadelphia

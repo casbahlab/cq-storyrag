@@ -3,18 +3,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-ex:BalletWithFreddieMercury a schema:Event ;
-    schema:description "A spontaneous ballet during 'Hammer to Fall' performance involving Freddie Mercury and a BBC cameraman." ;
-    ex:hasAttribute ex:SpontaneousAttribute ;
-    ex:hasStatus ex:VisualHighlight .
-
-ex:Charisma a schema:DefinedTerm ;
-    schema:description "The quality of being compelling and charming." ;
-    schema:name "Charisma" .
-
-ex:ChorusSingalong a schema:Event ;
-    schema:description "Audience sang along with the chorus during Queen's performance at Live Aid 1985." .
-
 ex:CoordinationEvent a schema:Event ;
     schema:about ex:LiveAid1985 ;
     schema:subjectOf ex:ArtistSchedules ;

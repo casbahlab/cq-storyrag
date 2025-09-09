@@ -111,3 +111,6 @@ musicbrainzngs
 urllib3~=2.5.0
 wikitextparser
 lxml
+
+trafilatura
+sentence_transformers

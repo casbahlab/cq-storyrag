@@ -1,0 +1,292 @@
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix schema: <http://schema.org/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://wembrewind.live/ex#AdamAnt> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1954-11-03"^^xsd:date ;
+    schema:birthPlace "Marylebone" ;
+    schema:gender "Male" ;
+    schema:genre <http://wembrewind.live/ex#AlternativeRock>,
+        <http://wembrewind.live/ex#NewWave>,
+        <http://wembrewind.live/ex#PostPunk> ;
+    schema:name "Adam Ant" ;
+    owl:sameAs <https://musicbrainz.org/artist/e188a520-9cb7-4f73-a3d7-2f70c6538e92> ;
+    mm:hasGenre <http://wembrewind.live/ex#AlternativeRock>,
+        <http://wembrewind.live/ex#NewRomantic>,
+        <http://wembrewind.live/ex#NewWave>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#PostPunk> .
+
+<http://wembrewind.live/ex#BillyOcean> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1950-01-21"^^xsd:date ;
+    schema:birthPlace "Siparia" ;
+    schema:gender "Male" ;
+    schema:name "Billy Ocean" ;
+    owl:sameAs <https://musicbrainz.org/artist/0e422e91-a42a-4b4d-8413-9baff67350f2> ;
+    mm:hasGenre <http://wembrewind.live/ex#ContemporaryRB>,
+        <http://wembrewind.live/ex#DancePop>,
+        <http://wembrewind.live/ex#Disco>,
+        <http://wembrewind.live/ex#PopSoul>,
+        <http://wembrewind.live/ex#Soul> .
+
+<http://wembrewind.live/ex#BobDylan> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1941-05-24"^^xsd:date ;
+    schema:birthPlace "Duluth" ;
+    schema:gender "Male" ;
+    schema:name "Bob Dylan" ;
+    owl:sameAs <https://musicbrainz.org/artist/72c536dc-7137-4477-a521-567eeb840fa8> ;
+    mm:hasGenre <http://wembrewind.live/ex#Blues>,
+        <http://wembrewind.live/ex#BluesRock>,
+        <http://wembrewind.live/ex#ClassicRock>,
+        <http://wembrewind.live/ex#CountryRock>,
+        <http://wembrewind.live/ex#FolkRock>,
+        <http://wembrewind.live/ex#Jazz>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#RootsRock>,
+        <http://wembrewind.live/ex#TraditionalPop> .
+
+<http://wembrewind.live/ex#BryanAdams> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1959-11-05"^^xsd:date ;
+    schema:birthPlace "Kingston" ;
+    schema:gender "Male" ;
+    schema:name "Bryan Adams" ;
+    owl:sameAs <https://musicbrainz.org/artist/4dbf5678-7a31-406a-abbe-232f8ac2cd63> ;
+    mm:hasGenre <http://wembrewind.live/ex#ClassicRock>,
+        <http://wembrewind.live/ex#HardRock>,
+        <http://wembrewind.live/ex#HeartlandRock>,
+        <http://wembrewind.live/ex#NewWave>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#PowerPop>,
+        <http://wembrewind.live/ex#SoftRock> .
+
+<http://wembrewind.live/ex#BryanFerry> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1945-09-26"^^xsd:date ;
+    schema:birthPlace "Washington" ;
+    schema:gender "Male" ;
+    schema:name "Bryan Ferry" ;
+    owl:sameAs <https://musicbrainz.org/artist/4ef7a9e2-2cf5-483a-8616-ef7791a98026> ;
+    mm:hasGenre <http://wembrewind.live/ex#ArtPop>,
+        <http://wembrewind.live/ex#ArtRock>,
+        <http://wembrewind.live/ex#GlamRock>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#SophistiPop> .
+
+<http://wembrewind.live/ex#DavidBowie> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1947-01-08"^^xsd:date ;
+    schema:birthPlace "Brixton" ;
+    schema:gender "Male" ;
+    schema:name "David Bowie" ;
+    owl:sameAs <https://musicbrainz.org/artist/5441c29d-3602-4898-b1a1-b77fa23b8e50> ;
+    mm:hasGenre <http://wembrewind.live/ex#AlternativeRock>,
+        <http://wembrewind.live/ex#ArtPop>,
+        <http://wembrewind.live/ex#ArtRock>,
+        <http://wembrewind.live/ex#ClassicRock>,
+        <http://wembrewind.live/ex#GlamRock>,
+        <http://wembrewind.live/ex#NewWave>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#RockMusic> .
+
+<http://wembrewind.live/ex#EltonJohn> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1947-03-25"^^xsd:date ;
+    schema:birthPlace "Pinner" ;
+    schema:gender "Male" ;
+    schema:name "Elton John" ;
+    owl:sameAs <https://musicbrainz.org/artist/b83bc61f-8451-4a5d-8b8e-7e9ed295e822> ;
+    mm:hasGenre <http://wembrewind.live/ex#ClassicRock>,
+        <http://wembrewind.live/ex#PianoRock>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#RockAndRoll>,
+        <http://wembrewind.live/ex#SoftRock> .
+
+<http://wembrewind.live/ex#ElvisCostello> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1954-08-25"^^xsd:date ;
+    schema:birthPlace "Paddington" ;
+    schema:gender "Male" ;
+    schema:name "Elvis Costello" ;
+    owl:sameAs <https://musicbrainz.org/artist/8a338e06-d182-46f2-bd16-30a09bc840ba> ;
+    mm:hasGenre <http://wembrewind.live/ex#ArtRock>,
+        <http://wembrewind.live/ex#NewWave>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#PowerPop>,
+        <http://wembrewind.live/ex#PubRock> .
+
+<http://wembrewind.live/ex#EricClapton> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1945-03-30"^^xsd:date ;
+    schema:birthPlace "Ripley" ;
+    schema:gender "Male" ;
+    schema:name "Eric Clapton" ;
+    owl:sameAs <https://musicbrainz.org/artist/618b6900-0618-4f1e-b835-bccb17f84294> ;
+    mm:hasGenre <http://wembrewind.live/ex#Blues>,
+        <http://wembrewind.live/ex#BluesRock>,
+        <http://wembrewind.live/ex#ElectricBlues>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#SoftRock> .
+
+<http://wembrewind.live/ex#HowardJones> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1955-02-23"^^xsd:date ;
+    schema:birthPlace "Southampton" ;
+    schema:gender "Male" ;
+    schema:name "Howard Jones" ;
+    owl:sameAs <https://musicbrainz.org/artist/23b2cc78-7595-4630-bebb-a349a4f25262> ;
+    mm:hasGenre <http://wembrewind.live/ex#NewWave> .
+
+<http://wembrewind.live/ex#JoanBaez> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1941-01-09"^^xsd:date ;
+    schema:birthPlace "Staten Island" ;
+    schema:gender "Female" ;
+    schema:name "Joan Baez" ;
+    owl:sameAs <https://musicbrainz.org/artist/92d37892-6186-4459-9cc1-f0dde57652d0> ;
+    mm:hasGenre <http://wembrewind.live/ex#Americana>,
+        <http://wembrewind.live/ex#RootsRock> .
+
+<http://wembrewind.live/ex#KennyLoggins> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1948-01-07"^^xsd:date ;
+    schema:birthPlace "Everett" ;
+    schema:gender "Male" ;
+    schema:name "Kenny Loggins" ;
+    owl:sameAs <https://musicbrainz.org/artist/15042d2b-2d4c-4451-a96a-6f547642de13> ;
+    mm:hasGenre <http://wembrewind.live/ex#SoftRock>,
+        <http://wembrewind.live/ex#YachtRock> .
+
+<http://wembrewind.live/ex#Madonna> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1958-08-16"^^xsd:date ;
+    schema:birthPlace "Bay City" ;
+    schema:gender "Female" ;
+    schema:name "Madonna" ;
+    owl:sameAs <https://musicbrainz.org/artist/79239441-bfd5-4981-a70c-55c3f15c1287> ;
+    mm:hasGenre <http://wembrewind.live/ex#ArtPop>,
+        <http://wembrewind.live/ex#ContemporaryRB>,
+        <http://wembrewind.live/ex#CountryPop>,
+        <http://wembrewind.live/ex#DancePop>,
+        <http://wembrewind.live/ex#EasyListening>,
+        <http://wembrewind.live/ex#Electronica>,
+        <http://wembrewind.live/ex#Electropop>,
+        <http://wembrewind.live/ex#Jazz>,
+        <http://wembrewind.live/ex#NewWave>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#SynthPop>,
+        <http://wembrewind.live/ex#TripHop> .
+
+<http://wembrewind.live/ex#MickJagger> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1943-07-26"^^xsd:date ;
+    schema:birthPlace "Dartford" ;
+    schema:gender "Male" ;
+    schema:name "Mick Jagger" ;
+    owl:sameAs <https://musicbrainz.org/artist/b5ffc3aa-b868-4b88-905f-d73d51dbe51c> ;
+    mm:hasGenre <http://wembrewind.live/ex#Blues> .
+
+<http://wembrewind.live/ex#NikKershaw> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1958-03-01"^^xsd:date ;
+    schema:birthPlace "Bristol" ;
+    schema:gender "Male" ;
+    schema:name "Nik Kershaw" ;
+    owl:sameAs <https://musicbrainz.org/artist/6286e04b-7bc1-4f22-bca5-fdd34d1b0d93> ;
+    mm:hasGenre <http://wembrewind.live/ex#NewWave>,
+        <http://wembrewind.live/ex#PopRock> .
+
+<http://wembrewind.live/ex#PattiLabelle> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1944-05-24"^^xsd:date ;
+    schema:birthPlace "Harrisburg" ;
+    schema:gender "Female" ;
+    schema:name "Patti LaBelle" ;
+    owl:sameAs <https://musicbrainz.org/artist/f319ec6a-9290-449b-baef-4244809c487a> ;
+    mm:hasGenre <http://wembrewind.live/ex#Soul> .
+
+<http://wembrewind.live/ex#PaulMccartney> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1942-06-18"^^xsd:date ;
+    schema:birthPlace "Walton" ;
+    schema:gender "Male" ;
+    schema:name "Paul McCartney" ;
+    owl:sameAs <https://musicbrainz.org/artist/ba550d0e-adac-4864-b88b-407cab5e76af> ;
+    mm:hasGenre <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#PopSoul>,
+        <http://wembrewind.live/ex#RockAndRoll>,
+        <http://wembrewind.live/ex#SoftRock> .
+
+<http://wembrewind.live/ex#PaulYoung> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1956-01-17"^^xsd:date ;
+    schema:birthPlace "Luton" ;
+    schema:gender "Male" ;
+    schema:name "Paul Young" ;
+    owl:sameAs <https://musicbrainz.org/artist/967002b0-58ef-4b22-a58c-fbc631ff695c> ;
+    mm:hasGenre <http://wembrewind.live/ex#BlueEyedSoul>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#SoftRock>,
+        <http://wembrewind.live/ex#Soul> .
+
+<http://wembrewind.live/ex#PhilCollins> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1951-01-30"^^xsd:date ;
+    schema:birthPlace "Hounslow" ;
+    schema:gender "Male" ;
+    schema:name "Phil Collins" ;
+    owl:sameAs <https://musicbrainz.org/artist/401c3991-b76b-499d-8082-9f2df958ef78> ;
+    mm:hasGenre <http://wembrewind.live/ex#ArtPop>,
+        <http://wembrewind.live/ex#EasyListening>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#PopSoul>,
+        <http://wembrewind.live/ex#ProgressivePop>,
+        <http://wembrewind.live/ex#ProgressiveRock>,
+        <http://wembrewind.live/ex#SoftRock>,
+        <http://wembrewind.live/ex#SophistiPop>,
+        <http://wembrewind.live/ex#SynthPop> .
+
+<http://wembrewind.live/ex#RickSpringfield> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1949-08-23"^^xsd:date ;
+    schema:birthPlace "South Wentworthville" ;
+    schema:gender "Male" ;
+    schema:name "Rick Springfield" ;
+    owl:sameAs <https://musicbrainz.org/artist/88543892-2eef-4a6a-a84c-5b8502b80421> ;
+    mm:hasGenre <http://wembrewind.live/ex#HardRock>,
+        <http://wembrewind.live/ex#NewWave>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#PowerPop>,
+        <http://wembrewind.live/ex#SoftRock>,
+        <http://wembrewind.live/ex#SynthPop> .
+
+<http://wembrewind.live/ex#Sting> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1951-10-02"^^xsd:date ;
+    schema:birthPlace "Wallsend" ;
+    schema:gender "Male" ;
+    schema:name "Sting" ;
+    owl:sameAs <https://musicbrainz.org/artist/7944ed53-2a58-4035-9b93-140a71e41c34> ;
+    mm:hasGenre <http://wembrewind.live/ex#DanceRock>,
+        <http://wembrewind.live/ex#Jazz>,
+        <http://wembrewind.live/ex#JazzPop>,
+        <http://wembrewind.live/ex#NewWave>,
+        <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#SoftRock>,
+        <http://wembrewind.live/ex#SophistiPop> .
+
+<http://wembrewind.live/ex#TinaTurner> a schema:Person,
+        mm:Musician ;
+    schema:birthDate "1939-11-26"^^xsd:date ;
+    schema:birthPlace "Nutbush" ;
+    schema:gender "Female" ;
+    schema:name "Tina Turner" ;
+    owl:sameAs <https://musicbrainz.org/artist/9072df14-b61e-42e2-b4f4-6bbb7fdb5586> ;
+    mm:hasGenre <http://wembrewind.live/ex#PopRock>,
+        <http://wembrewind.live/ex#PopSoul>,
+        <http://wembrewind.live/ex#Soul> .
+

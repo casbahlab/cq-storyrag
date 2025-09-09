@@ -4,11 +4,6 @@
 @prefix schema: <http://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ex:150Countries a schema:Place ;
-    rdfs:label "150 Countries" .
-
-ex:Ethiopia a schema:Country .
-
 ex:GlobalCoverage a schema:Place ;
     schema:name "Global" .
 
@@ -31,8 +26,6 @@ ex:WembleyStadium a schema:MusicVenue,
     schema:location ex:LondonUK ;
     schema:name "Wembley Stadium" .
 
-mm:LondonStage a schema:Place .
-
 ex:JFKStadium a schema:MusicVenue,
         schema:Place,
         schema:StadiumOrArena ;
@@ -54,6 +47,4 @@ ex:UnitedKingdom a schema:Country ;
 
 ex:UnitedStatesOfAmerica a schema:Country ;
     schema:name "United States of America" .
-
-schema:StadiumOrArena a schema:Place .
 

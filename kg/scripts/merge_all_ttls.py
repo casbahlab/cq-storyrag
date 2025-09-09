@@ -16,11 +16,15 @@ KG_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 MASTER_OUT = os.path.join(KG_DIR, "liveaid_instances_master.ttl")
 
 MODULES_IN_ORDER = [
-    #"10_core_entities.ttl",
+            #"10_core_entities.ttl",
             "10_event_sections_wiki_evidence.ttl",
             "11_genre.ttl", "12_event_broadcast_entities.ttl" , "13_city_country_venue.ttl" ,
-            "14_organizations.ttl", "15_creativeevents.ttl" , "16_audience.ttl" , "17_miscellaneaous.ttl" ,
+            "14_organizations.ttl", "15_creativeevents.ttl" , "16_audience.ttl" ,
+            #"17_miscellaneaous.ttl" ,
             "20_artists.ttl",
+            "21_single_musicians.ttl",
+            "22_bands_membership.ttl",
+            "23_membership_relinks.ttl",
             "20_artists_songfacts.ttl",
             "27_external_links_only.ttl",
             "27_removed_nonlink_content.ttl",
@@ -33,11 +37,14 @@ MODULES_IN_ORDER = [
             "33_recordings_works.ttl",
             "40_setlists_songs.ttl",
             "50_instruments.ttl",
-            "60_reviews.ttl","70_conditions.ttl",
-            "80_provenance.ttl","81_links_sameAs.ttl","82_external_ids_artists.ttl",
-            "83_external_ids_songs.ttl","84_external_links_performances.ttl",
+            "60_reviews.ttl",
+            #"70_conditions.ttl",
+            #"80_provenance.ttl",
+            # "81_links_sameAs.ttl","82_external_ids_artists.ttl",
+            # "83_external_ids_songs.ttl",
+            # "84_external_links_performances.ttl",
             "90_iconic_performances.ttl"
-]
+        ]
 
 def main():
     g = Graph()

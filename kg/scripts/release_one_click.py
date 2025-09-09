@@ -30,6 +30,7 @@ ALLOWED_NAMESPACES = [
     "http://www.w3.org/2000/01/rdf-schema#",
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "http://www.w3.org/2002/07/owl#",
+    "https://w3id.org/polifonia/ontology/core/",
     "http://www.w3.org/2001/XMLSchema#",
 ]
 
@@ -62,11 +63,13 @@ def load_ontology_terms(path: Path):
 def strict_vocab_validate(master_path: Path):
     schema_ttl = SCHEMA / "schemaorg.ttl"
     mm_owl     = SCHEMA / "musicmeta.owl"
+    core_owl = SCHEMA / "core.owl"
     dc_terms_ttl = SCHEMA / "dublin_core_terms.ttl"
     oa_ttl = SCHEMA / "oa.ttl"
     skos_ttl = SCHEMA / "skos.ttl"
     custom_ttl = SCHEMA / "liveaid_schema.ttl"
-    missing = [p for p in (schema_ttl, mm_owl, custom_ttl,dc_terms_ttl,oa_ttl,skos_ttl) if not p.exists()]
+    print(f"core_owl : {core_owl}")
+    missing = [p for p in (schema_ttl, mm_owl, core_owl, custom_ttl,dc_terms_ttl,oa_ttl,skos_ttl) if not p.exists()]
     if missing:
         raise SystemExit("[ABORT] Missing local ontology files for strict validation:\n - " + "\n - ".join(map(str, missing)))
 
@@ -136,8 +139,12 @@ def main():
             #"10_core_entities.ttl",
             "10_event_sections_wiki_evidence.ttl",
             "11_genre.ttl", "12_event_broadcast_entities.ttl" , "13_city_country_venue.ttl" ,
-            "14_organizations.ttl", "15_creativeevents.ttl" , "16_audience.ttl" , "17_miscellaneaous.ttl" ,
+            "14_organizations.ttl", "15_creativeevents.ttl" , "16_audience.ttl" ,
+            #"17_miscellaneaous.ttl" ,
             "20_artists.ttl",
+            "21_single_musicians.ttl",
+            "22_bands_membership.ttl",
+            "23_membership_relinks.ttl",
             "20_artists_songfacts.ttl",
             "27_external_links_only.ttl",
             "27_removed_nonlink_content.ttl",
@@ -150,9 +157,12 @@ def main():
             "33_recordings_works.ttl",
             "40_setlists_songs.ttl",
             "50_instruments.ttl",
-            "60_reviews.ttl","70_conditions.ttl",
-            "80_provenance.ttl","81_links_sameAs.ttl","82_external_ids_artists.ttl",
-            "83_external_ids_songs.ttl","84_external_links_performances.ttl",
+            "60_reviews.ttl",
+            #"70_conditions.ttl",
+            #"80_provenance.ttl",
+            # "81_links_sameAs.ttl","82_external_ids_artists.ttl",
+            # "83_external_ids_songs.ttl",
+            # "84_external_links_performances.ttl",
             "90_iconic_performances.ttl"
         ]
         g = Graph()
@@ -195,6 +205,20 @@ def main():
         kg_file = ROOT / "liveaid_instances_master.ttl"
         cq_file = ROOT / "cqs" / "cqs_queries_template_filled_in.rq"
         out_file = ROOT / "coverage_summary.csv"
+
+        run([
+            sys.executable, str(coverage_runner),
+            "--kg", str(kg_file),
+            "--input", str(cq_file),
+            "--out", str(out_file)
+        ])
+    else:
+        print("[warn] CQ runner not found, skipping:", coverage_runner)
+
+    if coverage_runner.exists():
+        kg_file = ROOT / "liveaid_instances_master.ttl"
+        cq_file = ROOT / "cqs" / "cqs_queries_template_filled_in_hybrid.rq"
+        out_file = ROOT / "coverage_summary_hybrid.csv"
 
         run([
             sys.executable, str(coverage_runner),

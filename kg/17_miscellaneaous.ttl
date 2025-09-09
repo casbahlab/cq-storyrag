@@ -1,7 +1,0 @@
-@prefix ex: <http://wembrewind.live/ex#> .
-@prefix schema: <http://schema.org/> .
-
-ex:LaryngitisDuringLiveAid1985 a ex:MedicalEvent ;
-    schema:isPartOf ex:LiveAid1985_Wembley ;
-    schema:name "Freddie Mercury battling laryngitis during Live Aid 1985" .
-
