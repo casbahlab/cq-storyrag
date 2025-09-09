@@ -17,6 +17,9 @@ Usage:
 import os, re, math, csv, argparse, statistics
 from collections import Counter, defaultdict
 from typing import List, Tuple, Dict, Any
+from sentence_transformers import SentenceTransformer, util
+import numpy as np
+
 
 ############################################
 # Regexes, lists, constants
@@ -84,6 +87,25 @@ def simple_lemma(token: str) -> str:
     elif len(t) > 2 and t.endswith("s"):
         t = t[:-1]
     return t
+
+def compute_adjacent_similarity(sentences, model=None):
+    if model is None:
+        model = SentenceTransformer("all-MiniLM-L6-v2")
+    embeddings = model.encode(sentences)
+    sims = []
+    for i in range(len(embeddings) - 1):
+        sim = util.cos_sim(embeddings[i], embeddings[i + 1]).item()
+        sims.append(sim)
+    if not sims:
+        return {
+            "adj_sim_mean": None,
+            "adj_sim_std": None
+        }
+    return {
+        "adj_sim_mean": float(np.mean(sims)),
+        "adj_sim_std": float(np.std(sims))
+    }
+
 
 def content_words(tokens: List[str], extra_stop:set) -> List[str]:
     out = []
@@ -452,6 +474,7 @@ def compute_metrics_for_text(text: str, extra_stop:set, near_th: float) -> Dict[
     alias_switches = entity_alias_switches_per_1k(sentences, tokens)
     temp_vios = temporal_order_violations(sentences)
     num_conf = number_conflicts(sentences)
+    cohesion = compute_adjacent_similarity(sentences)
     # conciseness
     conc = conciseness_proxies(tokens, sentences, extra_stop)
     return {
@@ -478,7 +501,9 @@ def compute_metrics_for_text(text: str, extra_stop:set, near_th: float) -> Dict[
         "number_conflicts": num_conf,
         "non_stopword_density": conc["non_stopword_density"],
         "filler_rate": conc["filler_rate"],
-        "avg_clauses_per_sent": conc["avg_clauses_per_sent"]
+        "avg_clauses_per_sent": conc["avg_clauses_per_sent"],
+        "adj_sim_mean": cohesion["adj_sim_mean"],
+        "adj_sim_std": cohesion["adj_sim_std"],
     }
 
 def compute_structure_metrics(beats: List[Dict[str,str]]) -> Dict[str, Any]:
