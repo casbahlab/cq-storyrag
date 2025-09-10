@@ -1,12 +1,11 @@
 @prefix core: <https://w3id.org/polifonia/ontology/core/> .
 @prefix dct: <http://purl.org/dc/terms/> .
-@prefix schema: <http://schema.org/> .
 @prefix ex: <http://wembrewind.live/ex#> .
 @prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
+@prefix schema: <http://schema.org/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -23211,8 +23210,7 @@ ex:LiveAid1985 a schema:MusicEvent ;
         ex:Queen ;
     schema:sameAs <https://www.wikidata.org/entity/Q18058> ;
     schema:startDate "1985-07-13"^^xsd:date ;
-    schema:subEvent ex:ConcertPhiladelphia1985,
-        ex:LiveAid1985_Philadelphia,
+    schema:subEvent ex:LiveAid1985_Philadelphia,
         ex:LiveAid1985_Wembley ;
     ex:hadBroadcast ex:LiveAid1985Broadcast ;
     ex:hasChallenge "Bands performed without sound checks, leading to problems like U2 nearly pulling out and Paul McCartney starting with no sound in the stadium."@en,

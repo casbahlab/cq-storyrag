@@ -296,12 +296,8 @@ python aggregate_core4_from_meta.py \
   --out-csv data/Luca-Long-20250909-133910/aggregated/core4_KG.csv
 
 
- python narrative_eval.py \
-  -i data/Luca-Long-20250909-133910/run-01/KG/story_KG.md \
-  -o narr_eval_out \
-  --beats auto \
-  --with-coherence \
-  --annotate \
-  --nqi-lite \
-  --neardupe-th 0.85 \
-  --domain-stopwords live aid concert wembley philadelphia
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Long-20250909-133910 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Long-20250909-133910/aggregated/core4_KG.csv

@@ -45,10 +45,7 @@
 from __future__ import annotations
 
 import argparse
-import json
-import os
 import re
-import textwrap
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
@@ -467,7 +464,6 @@ def build_instruction(persona_name: str, beat_idx: int, beat_title: str, n_factl
 
 
 from typing import List, Dict, Tuple, Union
-import textwrap
 
 RefItem = Dict[str, str]  # expects keys like: id (optional), title, url, domain, type, snippet (optional)
 
@@ -522,7 +518,6 @@ def format_references(
 
     return "REFERENCES:\n" + "\n".join(rendered_lines), id_map
 
-import textwrap
 
 def number_references(refs):
     """
@@ -545,16 +540,6 @@ def number_references(refs):
         lines.append(f"[{i}] ({r.get('domain','')}) {r.get('title','Untitled')} — {r.get('url','')}")
     return id_map, lines, items
 
-
-import textwrap
-from typing import List, Dict, Tuple, Union
-
-import textwrap
-from typing import List, Dict, Tuple, Union
-
-import re
-import textwrap
-from typing import List, Dict, Tuple, Union
 
 import re
 import textwrap
