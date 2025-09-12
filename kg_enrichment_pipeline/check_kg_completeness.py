@@ -6,23 +6,19 @@ import os
 KG_FILE = "output/final_grouped_triples.ttl"
 ONT_FILES = ["data/musicmeta.owl", "data/schemaorg.ttl"]
 
-# Step 1: Load KG
 kg = Graph()
 kg.parse(KG_FILE, format="turtle")
 print(f"KG Triples: {len(kg)}")
 
-# Step 2: Load Ontologies
 ont_graph = Graph()
 for ont in ONT_FILES:
     fmt = "xml" if ont.endswith(".owl") else "turtle"
     ont_graph.parse(ont, format=fmt)
 print(f"Ontology Triples: {len(ont_graph)}")
 
-# Step 3: Collect subjects (KG + Ontologies)
 kg_subjects = {str(s) for s in kg.subjects()}
 ont_entities = {str(s) for s in ont_graph.subjects()}
 
-# Step 4: Check completeness
 undefined_objects = []
 for o in kg.objects():
     o_str = str(o)

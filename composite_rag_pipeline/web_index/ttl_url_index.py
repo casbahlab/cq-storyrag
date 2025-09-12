@@ -224,7 +224,6 @@ async def crawl_urls(urls: List[str], db_path: Path, max_urls: Optional[int]=Non
     return n
 
 # ---------------------------------------------------------------------------
-# Summarization (Gemini-only)
 # ---------------------------------------------------------------------------
 def summarize_with_gemini(text: str, api_key: str, target_words: int=120) -> str:
     try:

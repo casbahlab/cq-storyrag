@@ -73,7 +73,6 @@ def main():
         for r in roles:
             role_instrs.extend(list(g.objects(r, SCHEMA.instrument)))
 
-        # union of all instruments we will attach to artists
         all_instrs = set(mem_instrs + role_instrs)
 
         # attach to each artist

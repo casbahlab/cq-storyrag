@@ -314,7 +314,6 @@ def main():
             works = resolve_recording_works(mb, rec_id, it["recording_title"], artist_name)
             # Filter out obvious non-song placeholders
             works = [(wid, wtitle) for (wid, wtitle) in works if not looks_like_non_song(wtitle)]
-            # Fallback: if nothing remains, leave empty -> we will still keep the recording
             rec_to_works[rec_id] = works
             time.sleep(0.1)
 

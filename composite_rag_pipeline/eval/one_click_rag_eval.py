@@ -101,7 +101,6 @@ def main():
     for d in args.exp_dirs:
         exp_args += ["--exp-dirs", d]
 
-    # Step 1 command
     cmd1 = [args.python, str(eval_script)] + exp_args + ["--rag-type", args.rag_type]
     if args.support_extra.strip():
         # Pass as a single string value to --support-extra
@@ -116,7 +115,6 @@ def main():
         else:
             out_csv = "aggregated_core4.csv"
 
-    # Step 2 command
     cmd2 = [args.python, str(core4_script)] + exp_args + ["--rag-type", args.rag_type, "--out-csv", out_csv]
 
     print("=== Step 1/2: aggregate_eval_runs ===")

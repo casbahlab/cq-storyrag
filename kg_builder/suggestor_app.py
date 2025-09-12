@@ -1,7 +1,6 @@
 # # suggestor_app.py
 # import streamlit as st
 # import json
-# import openai  # or google.generativeai
 #
 # # Load your ontology JSON (same as your modeling app)
 # with open("ontology.json") as f:
@@ -43,9 +42,6 @@
 # }}
 # """
 #
-#         # 🧠 Call OpenAI or Gemini here
-#         openai.api_key = st.secrets["OPENAI_API_KEY"]
-#         response = openai.ChatCompletion.create(
 #             model="gpt-4",
 #             messages=[{"role": "user", "content": prompt}],
 #             temperature=0.4
@@ -66,7 +62,6 @@
 import os
 import google.generativeai as genai
 
-# Initialize Gemini
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 model = genai.GenerativeModel("models/gemini-1.5-flash")
 

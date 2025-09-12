@@ -43,7 +43,6 @@ def main():
 
     args = parser.parse_args()
 
-    # Step 1: Query the KG
     print(f"Querying KG for: {args.query}")
     triples = retrieve_triples(args.query)
     if not triples:
@@ -55,11 +54,9 @@ def main():
     triples += enriched_triples
     #print(f"triples after enrichment for: {triples}")
 
-    # Step 2: Generate Narrative with Persona Context
     print(f"\nGenerating narrative for persona: {args.persona}")
     story = generate_story_with_ollama(triples, persona=args.persona, model=args.model)
 
-    # Step 3: Output Result
     print("\nGenerated Narrative:\n")
     print(story)
 

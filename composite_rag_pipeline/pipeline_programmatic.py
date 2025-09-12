@@ -35,7 +35,6 @@ DEFAULT_RETRIEVER_CFG: Dict[str, Any] = {
         "content_max_chars": 50000,
         "url_timeout_s": 5.0,
 
-        # Chunking for large pages → small, LLM-friendly pieces
         "chunk_chars": 30000,
         "chunk_overlap": 50,
         "max_chunks_per_url": 15,

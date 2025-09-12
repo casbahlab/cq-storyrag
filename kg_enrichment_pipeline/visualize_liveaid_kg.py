@@ -4,12 +4,10 @@ from pyvis.network import Network
 INPUT_FILE = "output/liveaid_schema.ttl"
 OUTPUT_HTML = "output/liveaid_schema_graph.html"
 
-# Step 1: Load the TTL file
 g = Graph()
 g.parse(INPUT_FILE, format="turtle")
 print(f"✅ Loaded {len(g)} triples from {INPUT_FILE}")
 
-# Step 2: Extract nodes and edges
 nodes = set()
 edges = []
 
@@ -26,7 +24,6 @@ for subj, pred, obj in g:
 
 print(f"Total nodes: {len(nodes)}, edges: {len(edges)}")
 
-# Step 3: Build interactive graph with PyVis
 net = Network(notebook=False, height="900px", width="100%", directed=True)
 net.toggle_physics(True)  # Make nodes move dynamically
 
@@ -40,7 +37,6 @@ for subj, obj, pred in edges:
     pred_label = pred.split("#")[-1] if "#" in pred else pred.split("/")[-1]
     net.add_edge(subj, obj, label=pred_label)
 
-# Step 4: Export to HTML
 net.write_html(OUTPUT_HTML)
 print(f"✅ Interactive graph saved to {OUTPUT_HTML}")
 

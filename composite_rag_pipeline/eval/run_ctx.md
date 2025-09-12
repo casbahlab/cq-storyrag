@@ -301,3 +301,161 @@ python one_click_rag_eval.py \
   --rag-type KG \
   --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
   --out-csv data/Luca-Long-20250909-133910/aggregated/core4_KG.csv
+
+
+
+Emma-Medium-20250911-154543 --- KG - 20 
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Emma-Medium-20250911-154543 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Emma-Medium-20250911-154543/aggregated/aggregated_KG.csv
+
+
+Emma-Medium-20250911-164455 --- Graph - 20
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Emma-Medium-20250911-164455 \
+  --rag-type Graph \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Emma-Medium-20250911-164455/aggregated/aggregated_Graph.csv
+
+
+Emma-Medium-20250911-180309 --- Hybrid - 20
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Emma-Medium-20250911-180309 \
+  --rag-type Hybrid \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Emma-Medium-20250911-180309/aggregated/aggregated_Hybrid.csv
+
+
+Emma-Small-20250911-183109 --- Hybrid - 20
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Emma-Small-20250911-183109 \
+  --rag-type Hybrid \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Emma-Small-20250911-183109/aggregated/aggregated_Hybrid.csv
+
+Emma-Small-20250911-202907 --- KG - 20
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Emma-Small-20250911-202907 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Emma-Small-20250911-202907/aggregated/aggregated_KG.csv
+
+
+Emma-Small-20250911-212937 --- Graph - 20
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Emma-Small-20250911-212937 \
+  --rag-type Graph \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Emma-Small-20250911-212937/aggregated/aggregated_Graph.csv
+
+
+Emma-Long-20250911-220017 --- Graph - 20
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Emma-Long-20250911-220017 \
+  --rag-type Graph \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Emma-Long-20250911-220017/aggregated/aggregated_Graph.csv
+
+Emma-Long-20250911-222226 --- KG - 20
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Emma-Long-20250911-222226 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Emma-Long-20250911-222226/aggregated/aggregated_KG.csv
+
+
+Emma-Long-20250911-232806 --- Hybrid - 20
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Emma-Long-20250911-232806 \
+  --rag-type Hybrid \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Emma-Long-20250911-232806/aggregated/aggregated_Hybrid.csv
+
+
+Luca-Small-20250912-073410 --- KG - 5
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Small-20250912-073410 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Small-20250912-073410/aggregated/aggregated_KG.csv
+
+Luca-Small-20250912-073410 --- Hybrid - 5
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Small-20250912-073410_Hybrid \
+  --rag-type Hybrid \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Small-20250912-073410_Hybrid/aggregated/aggregated_Hybrid.csv
+
+Luca-Small-20250912-073410 --- Graph - 5
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Small-20250912-073410_Graph \
+  --rag-type Graph \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Small-20250912-073410_Graph/aggregated/aggregated_Graph.csv
+
+Luca-Medium-20250912-073410 --- KG - 5
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Medium-20250912-073410 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Medium-20250912-073410/aggregated/aggregated_KG.csv
+
+
+Luca-Medium-20250912-073410 --- Hybrid - 5
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Medium-20250912-073410_Hybrid \
+  --rag-type Hybrid \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Medium-20250912-073410_Hybrid/aggregated/aggregated_Hybrid.csv
+
+Luca-Medium-20250912-073410 --- Graph - 5
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Medium-20250912-073410_Graph \
+  --rag-type Graph \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Medium-20250912-073410_Graph/aggregated/aggregated_Graph.csv
+
+Luca-Long-20250912-073410 --- KG - 5
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Long-20250912-073410 \
+  --rag-type KG \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Long-20250912-073410/aggregated/aggregated_KG.csv
+
+Luca-Long-20250912-073410_Hybrid --- Hybrid - 5
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Long-20250912-073410_Hybrid \
+  --rag-type Hybrid \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Long-20250912-073410_Hybrid/aggregated/aggregated_Hybrid.csv
+
+Luca-Long-20250912-073410_Graph --- Graph - 5
+
+python one_click_rag_eval.py \
+  --exp-dirs data/Luca-Long-20250912-073410_Graph \
+  --rag-type Graph \
+  --support-extra "--light-clean --tf-th 0.40 --cj-th 0.30 --use-tfidf 1 --use-char3 1 --use-topic 1 --topic-th 0.30 --fusion rrf --rrf-k 60 --decision vote --vote-k 2 --emit-coverage" \
+  --out-csv data/Luca-Long-20250912-073410_Graph/aggregated/aggregated_Graph.csv
+
+
+
+

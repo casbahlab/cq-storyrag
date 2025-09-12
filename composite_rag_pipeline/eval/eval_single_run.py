@@ -35,7 +35,6 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 # Import your existing evaluators
-# --- import shims so we can load from either eval/ or repo root ---
 from pathlib import Path
 import sys
 
