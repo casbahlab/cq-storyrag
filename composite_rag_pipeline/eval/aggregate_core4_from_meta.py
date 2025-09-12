@@ -98,6 +98,69 @@ def aggregate_core4(exp_dirs: List[Path], rag_type: str) -> Dict[str, Any]:
         "local_cohesion_mean": mean(local_cohesion_vals),
     }
 
+import argparse, json, math, csv, sys, re
+from pathlib import Path
+from typing import Any, Dict, List, Tuple
+
+def coerce_float(x) -> float:
+    try:
+        if isinstance(x, bool):
+            return 1.0 if x else 0.0
+        return float(str(x).strip())
+    except Exception:
+        return math.nan
+
+def find_meta_files(exp_dirs: List[Path]) -> List[Path]:
+    metas = []
+    for root in exp_dirs:
+        for p in root.rglob("combined_eval_meta.json"):
+            metas.append(p)
+    metas = sorted(set(metas), key=lambda p: str(p))
+    return metas
+
+# --- NEW: persona/length parsing helpers -------------------------------------
+
+_LEN_SET = {"Small", "Medium", "Long"}
+_REGEX_PL = re.compile(r'(?P<persona>[A-Za-z]+)-(?P<length>Small|Medium|Long)\b')
+
+def _parse_persona_length_from_name(name: str) -> Tuple[str, str]:
+    """
+    Try to parse 'Persona-Length-YYYYMMDD-HHMMSS' -> ('Persona','Length').
+    Falls back to token scan if the exact pattern isn't found.
+    """
+    m = _REGEX_PL.search(name)
+    if m:
+        return m.group("persona"), m.group("length")
+
+    parts = name.split("-")
+    for i, tok in enumerate(parts):
+        if tok in _LEN_SET and i > 0:
+            return parts[i - 1], tok
+    return "", ""
+
+def infer_persona_length(exp_dirs: List[Path]) -> Tuple[str, str]:
+    """
+    Infer persona/length across the provided exp_dirs.
+    If multiple values are present, return 'MIXED' for that field.
+    """
+    seen = set()
+    for d in exp_dirs:
+        persona, length = _parse_persona_length_from_name(d.name)
+        if persona or length:
+            seen.add((persona, length))
+
+    if not seen:
+        return "", ""
+
+    personas = {p for p, _ in seen if p}
+    lengths = {l for _, l in seen if l}
+
+    persona_out = next(iter(personas)) if len(personas) == 1 else ("MIXED" if len(personas) > 1 else "")
+    length_out  = next(iter(lengths))  if len(lengths)  == 1 else ("MIXED"  if len(lengths)  > 1 else "")
+    return persona_out, length_out
+
+
+
 def main():
     ap = argparse.ArgumentParser(description="Aggregate core-4 metrics from combined_eval_meta.json across runs.")
     ap.add_argument("--exp-dirs", nargs="+", required=True, help="Experiment dir(s) containing run-* subfolders.")
@@ -110,15 +173,22 @@ def main():
         if not d.exists():
             print(f"[WARN] Not found: {d}", file=sys.stderr)
 
+    persona, length = infer_persona_length(exp_dirs)
+
     out = aggregate_core4(exp_dirs, args.rag_type.strip())
+
+    out["persona"] = persona
+    out["length"] = length
 
     def fmt(x):
         if isinstance(x, float) and not math.isnan(x):
             return f"{x:.4f}"
         return str(x)
 
-    print("rag_type,runs,beats_support,beats_coverage,support_pct_mean,coverage_pct_mean,flesch_reading_ease_mean,global_cohesion_mean,local_cohesion_mean")
+    print("persona,length,rag_type,runs,beats_support,beats_coverage,support_pct_mean,coverage_pct_mean,flesch_reading_ease_mean,global_cohesion_mean,local_cohesion_mean")
     print(",".join([
+        out["persona"] or "",
+        out["length"] or "",
         out["rag_type"],
         str(out["runs_count"]),
         str(out["beats_support_count"]),
@@ -135,10 +205,12 @@ def main():
         out_path.parent.mkdir(parents=True, exist_ok=True)
         with out_path.open("w", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
-            w.writerow(["rag_type","runs","beats_support","beats_coverage",
+            w.writerow(["persona","length","rag_type","runs","beats_support","beats_coverage",
                         "support_pct_mean","coverage_pct_mean",
                         "flesch_reading_ease_mean","global_cohesion_mean", "local_cohesion_mean"])
             w.writerow([
+                out["persona"],
+                out["length"],
                 out["rag_type"],
                 out["runs_count"],
                 out["beats_support_count"],

@@ -4,14 +4,12 @@
 # Consumes: plan_with_evidence_Graph.json (built from the graph adapter)
 # Produces: answers_Graph.jsonl, story_Graph.md, story_Graph_clean.md
 #
-# Providers: ollama (default) or gemini (requires GOOGLE_API_KEY)
 
 from __future__ import annotations
 import argparse, json, os, re, subprocess
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
-# ----------------------- LLM provider shims -----------------------
 
 def _call_ollama(model: str, prompt: str, num_ctx: int | None = None) -> str:
     args = ["ollama", "run"]

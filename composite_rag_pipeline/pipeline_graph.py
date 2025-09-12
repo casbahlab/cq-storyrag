@@ -584,7 +584,6 @@ def build_argparser() -> argparse.ArgumentParser:
     ap.add_argument("--retriever_params", default=None)
     ap.add_argument("--retriever_params_json", default=None)
 
-    # LLM knobs
     ap.add_argument("--llm_provider", choices=["ollama", "gemini"], default="gemini")
     ap.add_argument("--llm_model", default="gemini-2.5-flash")
     ap.add_argument("--ollama_num_ctx", type=int, default=4096)

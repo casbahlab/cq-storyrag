@@ -35,7 +35,6 @@ P_SONGFACTS_SONG   = "P5241"  # Songfacts song ID
 P_SONGFACTS_ARTIST = "P5287"  # Songfacts artist ID
 
 # MBID properties on Wikidata (used to resolve QIDs)
-# artist → P434, work → P435, recording → P4404; we can union these for fuzzier cases
 MB_PROPS = {
     "artist":   "P434",
     "work":     "P435",

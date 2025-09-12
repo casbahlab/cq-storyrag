@@ -148,7 +148,6 @@ def main():
             for x in list(g.objects(m, SCHEMA.roleName)):
                 g.remove((m, SCHEMA.roleName, x))
 
-        # 6) Ensemble → we can optionally attach a named Role **about** the ensemble
         # If you want, you can add inverse link core:isRoleOf, but typically we attach
         # the ensemble via domain predicates already present (keep original mm triple).
 

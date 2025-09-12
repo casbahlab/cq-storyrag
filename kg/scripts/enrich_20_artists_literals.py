@@ -98,7 +98,6 @@ def main():
     setup_mb()
 
     g = Graph()
-    # Bind both schema and schema1, but we will serialize using schema1 prefix
     g.bind("schema", SCHEMA)
     g.bind("schema1", SCHEMA1)
     g.bind("mm", MM)

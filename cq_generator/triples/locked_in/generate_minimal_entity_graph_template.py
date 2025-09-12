@@ -18,20 +18,17 @@ minimal.bind("rdfs", RDFS)
 minimal.bind("rdf", RDF)
 minimal.bind("schema", SCHEMA)
 
-# === Step 1: Identify declared custom classes ===
 custom_classes = set()
 for s, p, o in g.triples((None, RDF.type, RDFS.Class)):
     if isinstance(s, URIRef) and str(s).startswith("http://example.org/"):
         custom_classes.add(s)
 
-# === Step 2: Add class definitions and subclass links ===
 for cls in custom_classes:
     for triple in g.triples((cls, None, None)):
         minimal.add(triple)
     for triple in g.triples((None, None, cls)):
         minimal.add(triple)
 
-# === Step 3: Add object properties linking declared classes ===
 for prop in g.subjects(RDFS.domain, None):
     domain = g.value(prop, RDFS.domain)
     range_ = g.value(prop, RDFS.range)
@@ -39,7 +36,6 @@ for prop in g.subjects(RDFS.domain, None):
         for triple in g.triples((prop, None, None)):
             minimal.add(triple)
 
-# === Step 4: Add schema.org parents used in subClassOf/domain/range ===
 referenced_schema = set()
 for cls in custom_classes:
     for _, _, parent in g.triples((cls, RDFS.subClassOf, None)):

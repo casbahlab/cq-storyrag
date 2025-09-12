@@ -132,7 +132,6 @@ def main():
                         for bm25 in bm25_modes:
                             if bm25 not in {"off","filter"}:
                                 continue
-                            # if off, we will ignore b/topk loops by running a single dummy set
                             b_vals = bm25_b_vals if bm25 == "filter" else [np.nan]
                             topk_vals = bm25_topk_vals if bm25 == "filter" else [np.nan]
                             for b in b_vals:

@@ -9,7 +9,6 @@
 #  - Per-sentence citation enforcement (optional)
 #  - URL snippet support for Hybrid (optional)
 #  - Writes per-beat answer records (JSONL) and claims.jsonl (claim → evidence)
-#  - Strips LLM meta lead-ins like "Here's the story section: [CQ-...]"
 #  - NEW: also writes a *clean* story file without sections or citations (CQ-IDs / numeric)
 #
 # Examples:
@@ -168,7 +167,6 @@ def _row_to_factlet(row: dict, *, include_urls: bool = False, max_len: int = 280
     return line
 
 def _pack_factlets(rows: list, max_factlets: int) -> list[str]:
-    """Compact, deduped 'factlets' the LLM can integrate verbatim."""
     seen = set(); factlets = []
     rows_sorted = sorted(rows or [], key=_score_row_for_fact_density, reverse=True)
     for r in rows_sorted:
@@ -245,7 +243,6 @@ def _append_jsonl(path: Path, obj: Dict[str, Any]):
     with path.open("a", encoding="utf-8") as f:
         f.write(json.dumps(obj, ensure_ascii=False) + "\n")
 
-# ---------------- LLM adapters ----------------
 
 def _call_ollama(model: str, prompt: str, num_ctx: Optional[int] = None) -> str:
     """Use local Ollama HTTP API if available; else 'ollama run' CLI."""

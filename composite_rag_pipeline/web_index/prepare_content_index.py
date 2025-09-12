@@ -24,7 +24,6 @@ Usage:
     --summarizer extractive \
     --target-words 120
 
-  # With Gemini summarization:
   export GEMINI_API_KEY=...  # or pass --api-key
   python prepare_content_index.py \
     --in urls.txt --out-dir outdir --summarizer gemini --target-words 120
@@ -223,7 +222,6 @@ def main():
     if args.max_urls:
         urls = urls[: args.max_urls]
 
-    # --- Step 1: Fetch content ---
     fetched = []
     with bundle_path.open("w", encoding="utf-8") as fo:
         for u in urls:
@@ -249,7 +247,6 @@ def main():
             fetched.append(rec)
             fo.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
-    # --- Step 2: Summarize ---
     rows = []
     with summaries_jsonl.open("w", encoding="utf-8") as fo:
         for rec in fetched:
@@ -275,7 +272,6 @@ def main():
     except Exception:
         pass
 
-    # --- Step 3: Index (SQLite) ---
     conn = open_db(db_path); cur = conn.cursor()
     now_iso = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
     for rec, row in zip(fetched, rows):

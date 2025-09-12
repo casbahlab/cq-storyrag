@@ -21,7 +21,6 @@ Features
 
 Examples
 --------
-# Dry run (no LLM calls), KG
 python3 planner_creative.py \
   --index_dir ./KG \
   --meta ./KG/cq_metadata.json \
@@ -234,7 +233,6 @@ def _embed_beats(beats: List[Dict[str, Any]], dim: int) -> np.ndarray:
     return Q
 
 
-# ------------------------ LLM plumbing ------------------------
 
 PLAN_PROMPT = """You are a creative story planner for a factual football music show called "Wembley Rewind".
 Given a persona and a target length, produce a compact JSON plan with beats.
@@ -368,7 +366,6 @@ def _select_per_plan(scores: np.ndarray, idxs: np.ndarray, questions: List[str],
 import re
 
 def _extract_json_object(raw: str) -> dict:
-    """Extract a JSON object from LLM text that may include prose or ``` fences."""
     s = (raw or "").strip()
     if not s:
         raise ValueError("Empty LLM response")

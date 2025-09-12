@@ -357,7 +357,6 @@ def section_summary(G: nx.MultiDiGraph, nodes: List[str], max_lines: int) -> str
     return "Graph neighborhood:\n" + "\n".join(lines)
 
 def section_triples(G: nx.MultiDiGraph, nodes: List[str], limit: int) -> List[tuple[str,str,str]]:
-    """Facts for the LLM: **labels only**, membership hubs flattened, no URIs/lit::."""
     sub = G.subgraph(nodes)
     out, seen = [], set()
 

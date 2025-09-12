@@ -15,12 +15,10 @@ SCHEMA = "http://schema.org/"
 
 os.makedirs("output", exist_ok=True)
 
-# ==== STEP 1: Load KG ====
 g = rdflib.Graph()
 g.parse(KG_FILE, format="turtle")
 print(f"✅ Loaded KG with {len(g)} triples")
 
-# ==== STEP 2: Load CQs ====
 cqs = pd.read_csv(CQ_FILE)
 required_cols = {"CQ_ID", "Question", "Category"}
 if not required_cols.issubset(set(cqs.columns)):
@@ -29,7 +27,6 @@ if not required_cols.issubset(set(cqs.columns)):
 report_data = []
 bridging_triples = []
 
-# ==== STEP 3: Generate & Execute SPARQL for each CQ ====
 for idx, row in cqs.iterrows():
     cq_id = row["CQ_ID"]
     question = row["Question"]
@@ -69,13 +66,11 @@ for idx, row in cqs.iterrows():
         "Pass": "✅" if passed else "❌"
     })
 
-    # Step 4: Suggest bridging triple if failed
     if not passed and relation:
         bridging_triples.append(
             f"<{entity_uri}> <{relation}> <{EX}MissingEntityFor_{cq_id}> ."
         )
 
-# ==== STEP 5: Save Reports ====
 pd.DataFrame(report_data).to_csv(OUTPUT_REPORT, index=False)
 print(f"📄 Coverage report saved to: {OUTPUT_REPORT}")
 

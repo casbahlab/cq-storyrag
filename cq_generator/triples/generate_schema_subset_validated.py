@@ -10,18 +10,15 @@ output_file = "schema_subset_validated.ttl"
 # === Namespaces ===
 SCHEMA = Namespace("http://schema.org/")
 
-# === Step 1: Load full schema.org graph ===
 schema_graph = Graph()
 schema_graph.parse(schema_file, format="turtle")
 print(f"Loaded schema.org graph with {len(schema_graph)} triples")
 
-# === Step 2: Load your custom TTLs ===
 custom_graph = Graph()
 for ttl_path in custom_ttls:
     custom_graph.parse(ttl_path, format="ttl")
 print(f"Loaded custom TTLs with {len(custom_graph)} triples")
 
-# === Step 3: Collect schema.org URIs used ===
 used_terms = set()
 for s, p, o in custom_graph:
     for term in (s, p, o):
@@ -32,7 +29,6 @@ for s, p, o in custom_graph:
 
 print(f"Found {len(used_terms)} unique schema.org terms in custom TTLs.")
 
-# === Step 4: Create subset graph ===
 subset_graph = Graph()
 subset_graph.bind("schema", SCHEMA)
 subset_graph.bind("rdf", RDF)
@@ -71,11 +67,9 @@ for term in sorted(used_terms):
     if not found:
         unmatched_terms.append(term)
 
-# === Step 5: Save subset ===
 subset_graph.serialize(destination=output_file, format="turtle")
 print(f"Subset saved to: {output_file} with {triples_added} triples.")
 
-# === Step 6: Report unmatched ===
 if unmatched_terms:
     print("\nThe following terms were NOT found in schema.org:")
     for term in unmatched_terms:

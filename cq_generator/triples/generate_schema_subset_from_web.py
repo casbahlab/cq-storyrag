@@ -9,7 +9,6 @@ schema_local_path = "schemaorg-full.ttl"
 custom_ttls = ["schema_class_attributes_full.ttl", "untyped_suggestions_clean.ttl"]
 output_file = "schema_subset.ttl"
 
-# === Step 1: Download schema.org TTL if not already downloaded ===
 if not os.path.exists(schema_local_path):
     print("Downloading schema.org TTL...")
     response = requests.get(schema_url)
@@ -18,18 +17,15 @@ if not os.path.exists(schema_local_path):
         f.write(response.content)
     print("Downloaded schemaorg-current-https.ttl")
 
-# === Step 2: Load schema.org full graph ===
 schema_graph = Graph()
 schema_graph.parse(schema_local_path, format="turtle")
 print(f"📚 Loaded schema.org graph with {len(schema_graph)} triples")
 
-# === Step 3: Load custom TTLs ===
 custom_graph = Graph()
 for path in custom_ttls:
     custom_graph.parse(path, format="ttl")
 print(f"📦 Loaded custom TTLs with {len(custom_graph)} triples")
 
-# === Step 4: Collect and normalize schema.org terms used in custom TTLs ===
 schema_ns = Namespace("http://schema.org/")
 used_terms = set()
 
@@ -42,7 +38,6 @@ for s, p, o in custom_graph:
 
 print(f"Found {len(used_terms)} unique schema.org terms in custom TTLs.")
 
-# === Step 5: Build subset graph ===
 subset_graph = Graph()
 subset_graph.bind("schema", schema_ns)
 subset_graph.bind("rdfs", RDFS)
@@ -78,7 +73,6 @@ for term in sorted(used_terms):
     if not found:
         unmatched_terms.append(term)
 
-# === Step 6: Save ===
 subset_graph.serialize(destination=output_file, format="turtle")
 print(f"Subset saved to: {output_file} with {triples_added} triples.")
 
