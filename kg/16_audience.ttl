@@ -1,0 +1,10 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:GlobalAudience a schema:Audience ;
+    schema:audienceType "Worldwide Viewers" ;
+    schema:name "Live Aid 1985 Global Audience" ;
+    ex:countryCount 150 ;
+    ex:viewerCount 1900000000 .
+

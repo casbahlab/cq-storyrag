@@ -16,7 +16,6 @@ os.makedirs("output", exist_ok=True)
 # === Namespaces ===
 SCHEMA = Namespace("http://schema.org/")
 
-# === Step 1: Load graphs ===
 g = Graph()
 g.parse(KG_FILE, format="turtle")
 
@@ -32,7 +31,6 @@ merged = g + schema_g + musicmeta_g
 print(f"Parsed KG: {len(g)} triples")
 print(f"Merged with ontologies: {len(merged)} triples")
 
-# === Step 2: Identify and remove local fake classes ===
 removed_triples = []
 to_remove = []
 
@@ -54,7 +52,6 @@ for triple in to_remove:
 
 print(f"🗑 Removed {len(to_remove)} local class assertions.")
 
-# === Step 3: Validate predicates and classes exist ===
 undefined_entities = set()
 for s, p, o in g.triples((None, None, None)):
     # Check predicate
@@ -70,7 +67,6 @@ print(f"⚠ Undefined entities after cleaning: {len(undefined_entities)}")
 if undefined_entities:
     print("Sample:", list(undefined_entities)[:10])
 
-# === Step 4: Save cleaned KG and removed triples ===
 g.serialize(destination=OUTPUT_TTL, format="turtle")
 with open(REMOVED_LOG, "w", encoding="utf-8") as f:
     json.dump(removed_triples, f, indent=2)

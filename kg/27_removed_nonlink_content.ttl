@@ -1,0 +1,2167 @@
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix schema1: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://wembrewind.live/ex#AdamAnt> schema1:description "English musician"@en .
+
+<http://wembrewind.live/ex#AdamAnt_prop_P2373_60803500> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#AdamAnt_prop_P5287_80061164> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#AdamAnt_prop_P6351_69655630> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#AshfordSimpson> schema1:description "American husband-and-wife songwriting-production team and recording duo"@en .
+
+<http://wembrewind.live/ex#AshfordSimpson_prop_P5287_7384065> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BandAid> schema1:description "UK supergroup"@en .
+
+<http://wembrewind.live/ex#BernardWalton> schema1:description "British musician"@en .
+
+<http://wembrewind.live/ex#BillyOcean> schema1:description "British singer"@en .
+
+<http://wembrewind.live/ex#BillyOcean_prop_P5287_58528388> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BlackSabbath> schema1:description "British heavy metal band"@en .
+
+<http://wembrewind.live/ex#BlackSabbath_prop_P2373_11787129> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BobDylan> schema1:description "American singer-songwriter (born 1941)"@en .
+
+<http://wembrewind.live/ex#BobDylan_prop_P2373_19589627> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BobDylan_prop_P5287_90105983> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BobDylan_prop_P6351_79674976> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BranfordMarsalis> schema1:description "American saxophonist, composer, and bandleader"@en .
+
+<http://wembrewind.live/ex#BrianMay> schema1:description "British musician (born 1947)"@en .
+
+<http://wembrewind.live/ex#BrianMay_prop_P2373_22612436> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BrianMay_prop_P6351_55166767> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BryanAdams> schema1:description "Canadian musician, singer, songwriter, record producer, and photographer"@en .
+
+<http://wembrewind.live/ex#BryanAdams_prop_P2373_70705807> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BryanAdams_prop_P6351_79197440> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BryanFerry> schema1:description "English singer and songwriter (born 1945)"@en .
+
+<http://wembrewind.live/ex#BryanFerry_prop_P2373_43333642> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BryanFerry_prop_P5287_67036615> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#BryanFerry_prop_P6351_498637> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#CrosbyStillsNash> schema1:description "American folk rock band"@en .
+
+<http://wembrewind.live/ex#CrosbyStillsNashYoung> schema1:description "American and British folk rock supergroup"@en .
+
+<http://wembrewind.live/ex#CrosbyStillsNashYoung_prop_P2373_79739753> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#CrosbyStillsNash_prop_P2373_30149194> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DarylHallJohnOates> schema1:description "American musical duo composed of Daryl Hall and John Oates (1970–2024)"@en .
+
+<http://wembrewind.live/ex#DarylHallJohnOates_prop_P2373_30501715> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DarylHallJohnOates_prop_P5287_15047867> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DavidBowie> schema1:description "English musician and actor (1947–2016)"@en .
+
+<http://wembrewind.live/ex#DavidBowie_prop_P2373_2213344> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DavidBowie_prop_P5287_66868988> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DavidBowie_prop_P6351_87810513> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DavidGilmour> schema1:description "English musician, member of Pink Floyd (born 1946)"@en .
+
+<http://wembrewind.live/ex#DavidGilmour_prop_P2373_27143824> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DavidRuffin> schema1:description "American singer (1941–1991)"@en .
+
+<http://wembrewind.live/ex#DavidRuffin_prop_P2373_65790015> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DavidRuffin_prop_P6351_65790193> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DireStraits> schema1:description "English rock band"@en .
+
+<http://wembrewind.live/ex#DireStraits_prop_P2373_73743709> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DireStraits_prop_P5287_25660612> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#DuranDuran> schema1:description "British band"@en .
+
+<http://wembrewind.live/ex#DuranDuran_prop_P2373_93088836> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#EddieKendricks> schema1:description "American singer and songwriter, member of The Temptations (1939-1992)"@en .
+
+<http://wembrewind.live/ex#EddieKendricks_prop_P2373_38734293> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#EddieKendricks_prop_P6351_79947558> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#EltonJohn> schema1:description "British singer, songwriter and musician"@en .
+
+<http://wembrewind.live/ex#EltonJohn_prop_P2373_97908933> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#EltonJohn_prop_P5287_32967513> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#EltonJohn_prop_P6351_19773686> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#ElvisCostello> schema1:description "English singer-songwriter (born 1954)"@en .
+
+<http://wembrewind.live/ex#ElvisCostello_prop_P2373_62188673> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#ElvisCostello_prop_P5287_97451565> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#ElvisCostello_prop_P6351_98487254> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#EricClapton> schema1:description "British musician"@en .
+
+<http://wembrewind.live/ex#EricClapton_prop_P5287_98954467> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#FourTops> schema1:description "American vocal quartet"@en .
+
+<http://wembrewind.live/ex#FreddieMercury> schema1:description "British singer, songwriter, record producer, and graphic designer (1946–1991)"@en .
+
+<http://wembrewind.live/ex#FreddieMercury_prop_P2373_68664250> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#FreddieMercury_prop_P5287_33731282> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#FreddieMercury_prop_P6351_85505662> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#GeorgeThorogoodTheDestroyers> schema1:description "American musical group"@en .
+
+<http://wembrewind.live/ex#HowardJones> schema1:description "English musician, singer and songwriter"@en .
+
+<http://wembrewind.live/ex#HowardJones_prop_P2373_97244533> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#HowardJones_prop_P5287_52300266> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#JimmyPage> schema1:description "English guitarist (born 1944)"@en .
+
+<http://wembrewind.live/ex#JoanBaez> schema1:description "American contemporary folk musician (born 1941)"@en .
+
+<http://wembrewind.live/ex#JoanBaez_prop_P2373_67311080> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#JoanBaez_prop_P5287_32551590> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#JoanBaez_prop_P6351_39432921> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#JohnPaulJones> schema1:description "British bassist"@en .
+
+<http://wembrewind.live/ex#JudasPriest> schema1:description "British heavy metal band"@en .
+
+<http://wembrewind.live/ex#JudasPriest_prop_P2373_99452748> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#KeithRichards> schema1:description "British musician, guitarist of the Rolling Stones"@en .
+
+<http://wembrewind.live/ex#KeithRichards_prop_P2373_97263026> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#KeithRichards_prop_P5287_2126077> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#KeithRichards_prop_P6351_99572247> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#KennyLoggins> schema1:description "American singer and guitarist"@en .
+
+<http://wembrewind.live/ex#KennyLoggins_prop_P2373_79891001> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Madonna> schema1:description "American singer, songwriter, and actress (born 1958)"@en .
+
+<http://wembrewind.live/ex#Madonna_prop_P2373_65959788> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Madonna_prop_P5287_65253259> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Madonna_prop_P6351_50618089> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#MickJagger> schema1:description "British singer and songwriter; vocalist of The Rolling Stones"@en .
+
+<http://wembrewind.live/ex#NeilYoung> schema1:description "Canadian singer, songwriter and filmmaker (born 1945)"@en .
+
+<http://wembrewind.live/ex#NeilYoung_prop_P2373_2735984> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#NikKershaw> schema1:description "British musician"@en .
+
+<http://wembrewind.live/ex#NikKershaw_prop_P2373_16703204> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#NikKershaw_prop_P6351_59184691> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#PatMetheny> schema1:description "American jazz musician"@en .
+
+<http://wembrewind.live/ex#PattiLabelle> schema1:description "American singer and actress"@en .
+
+<http://wembrewind.live/ex#PattiLabelle_prop_P2373_53759606> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#PattiLabelle_prop_P6351_67032053> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#PaulMartinez> schema1:description "British musician"@en .
+
+<http://wembrewind.live/ex#PaulMccartney> schema1:description "English musician and member of the Beatles (born 1942)"@en .
+
+<http://wembrewind.live/ex#PaulMccartney_prop_P2373_93155383> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#PaulMccartney_prop_P6351_96205416> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#PaulYoung> schema1:description "English musician (born 1956)"@en .
+
+<http://wembrewind.live/ex#PaulYoung_prop_P2373_40734048> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#PhilCollins> schema1:description "English drummer, singer, and songwriter"@en .
+
+<http://wembrewind.live/ex#PhilCollins_prop_P2373_62838005> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#PhilCollins_prop_P6351_15061841> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Pretenders> schema1:description "English-American rock band"@en .
+
+<http://wembrewind.live/ex#Queen> schema1:description "British musical group; rock band"@en .
+
+<http://wembrewind.live/ex#Queen_prop_P2373_36409118> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Recording_A1985Rewind_38d05d49> schema1:duration "PT1M8S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_A1985Rewind_38d05d49_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_A4TheTearsInYourEyes_454a89c8> schema1:duration "PT3M25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_A4TheTearsInYourEyes_454a89c8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AViewToAKill_a694f876> schema1:duration "PT4M6S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AViewToAKill_a694f876_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AWorldOfDifference_adbcfa3e> schema1:duration "PT2M45S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AWorldOfDifference_adbcfa3e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_09b943a8> schema1:duration "PT33S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_09b943a8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_6130bf23> schema1:duration "PT33S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_6130bf23_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_95c8f136> schema1:duration "PT31S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_95c8f136_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_00f9da60> schema1:duration "PT20S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AbcIntermission_00f9da60_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_49a45fef> schema1:duration "PT1M1S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AbcIntermission_49a45fef_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_81ed5a7e> schema1:duration "PT6S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AbcIntermission_81ed5a7e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_83775933> schema1:duration "PT29S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AbcIntermission_83775933_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_85f07145> schema1:duration "PT54S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AbcIntermission_85f07145_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AgainstAllOdds_158681cb> schema1:duration "PT3M44S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AgainstAllOdds_158681cb_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AgainstAllOdds_50b4150f> schema1:duration "PT3M25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AgainstAllOdds_50b4150f_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AinTTooProudToBeg_98a1fc06> schema1:duration "PT2M49S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AinTTooProudToBeg_98a1fc06_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AllOfUs_eaa279da> schema1:duration "PT4M45S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AllOfUs_eaa279da_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AllYouNeedIsLove_f6f9aebe> schema1:duration "PT3M41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AllYouNeedIsLove_f6f9aebe_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AllYouZombies_bfd09d22> schema1:duration "PT5M43S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AllYouZombies_bfd09d22_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AmazingGrace_7eaf7963> schema1:duration "PT1M55S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AmazingGrace_7eaf7963_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AmericanGirl_7ef5bce9> schema1:duration "PT4M7S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AmericanGirl_7ef5bce9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_AndWeDanced_095b10f0> schema1:duration "PT4M43S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_AndWeDanced_095b10f0_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Annoncement_4a0a49dd> schema1:duration "PT12S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Annoncement_4a0a49dd_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Announcement_4a0a49dd> schema1:duration "PT12S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Announcement_4a0a49dd_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BackOnTheChainGang_e955dd67> schema1:duration "PT3M35S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BackOnTheChainGang_e955dd67_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Bad_79932b83> schema1:duration "PT12M37S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Bad_79932b83_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BandAidNewReport_513cb62a> schema1:duration "PT35S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BandAidNewReport_513cb62a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BandPresentation_dd6bf224> schema1:duration "PT34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BandPresentation_dd6bf224_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermissionAbcIntermission_19c74232> schema1:duration "PT57S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermissionAbcIntermission_19c74232_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_0227b235> schema1:duration "PT7M28S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_0227b235_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_041c8ce9> schema1:duration "PT6M1S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_041c8ce9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_07eca73d> schema1:duration "PT36S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_07eca73d_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_18eb5d75> schema1:duration "PT5M41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_18eb5d75_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_1e29381d> schema1:duration "PT2M55S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_1e29381d_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_22b6ae23> schema1:duration "PT28S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_22b6ae23_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_22fdaf96> schema1:duration "PT1M27S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_22fdaf96_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_25727208> schema1:duration "PT32S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_25727208_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_2b4ee3ba> schema1:duration "PT5M53S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_2b4ee3ba_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_30ab381b> schema1:duration "PT26S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_30ab381b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_354ab3f5> schema1:duration "PT4M48S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_354ab3f5_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_3a6bb6fc> schema1:duration "PT26S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_3a6bb6fc_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_3d9e29bb> schema1:duration "PT9M36S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_3d9e29bb_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_414f2255> schema1:duration "PT1M21S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_414f2255_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_49990f09> schema1:duration "PT9M3S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_49990f09_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_574d5d52> schema1:duration "PT4M20S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_574d5d52_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5a19ddad> schema1:duration "PT3M18S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_5a19ddad_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5cbe9bcb> schema1:duration "PT47S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_5cbe9bcb_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5d90b210> schema1:duration "PT3M52S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_5d90b210_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_61a8469b> schema1:duration "PT54S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_61a8469b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_6fc44463> schema1:duration "PT14M27S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_6fc44463_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_789ff269> schema1:duration "PT3M27S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_789ff269_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_90beb67b> schema1:duration "PT45S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_90beb67b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_99bb5db6> schema1:duration "PT4M26S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_99bb5db6_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_9ac4324d> schema1:duration "PT4M57S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_9ac4324d_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_a9ef78d9> schema1:duration "PT29S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_a9ef78d9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_ad7a3e54> schema1:duration "PT37S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_ad7a3e54_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_aec51e68> schema1:duration "PT6M35S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_aec51e68_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_bfd18769> schema1:duration "PT47S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_bfd18769_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_cceeb1c3> schema1:duration "PT5M40S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_cceeb1c3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_da0cfdf6> schema1:duration "PT8M28S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_da0cfdf6_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_dad155e9> schema1:duration "PT5M15S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_dad155e9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_db87a546> schema1:duration "PT3M18S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_db87a546_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_defdd523> schema1:duration "PT3M15S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_defdd523_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_e92e7051> schema1:duration "PT3M17S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_e92e7051_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_f63c2ff1> schema1:duration "PT4M47S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_f63c2ff1_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_f890491e> schema1:duration "PT21S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_f890491e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_faf9e1a6> schema1:duration "PT2M44S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_faf9e1a6_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_ff043393> schema1:duration "PT27S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BbcIntermission_ff043393_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BeachBoysCaliforniaGirls_4fbf7149> schema1:duration "PT2M31S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BeachBoysCaliforniaGirls_4fbf7149_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BennieAndTheJets_6e546f44> schema1:duration "PT4M40S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BennieAndTheJets_6e546f44_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Bernadette_af9d9185> schema1:duration "PT1M43S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Bernadette_af9d9185_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BigBossGroove_a1d2bfd4> schema1:duration "PT3M55S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BigBossGroove_a1d2bfd4_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BlowinInTheWind_63170ff1> schema1:duration "PT4M35S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BlowinInTheWind_63170ff1_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BobGeldofSnippet_3cfd8fdd> schema1:duration "PT25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BobGeldofSnippet_3cfd8fdd_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BobGeldofSnippet_e3840161> schema1:duration "PT7S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BobGeldofSnippet_e3840161_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BohemianRhapsody_6b547796> schema1:duration "PT2M22S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BohemianRhapsody_6b547796_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BonoOnChristmas_7b56ed1b> schema1:duration "PT1M5S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BonoOnChristmas_7b56ed1b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_BoysAndGirls_7cb4fb3d> schema1:duration "PT4M31S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_BoysAndGirls_7cb4fb3d_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Brotherhood_d1e40685> schema1:duration "PT3M22S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Brotherhood_d1e40685_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ByThePool_2140460b> schema1:duration "PT1M4S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ByThePool_2140460b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_CanIGetAWitness_d38daca0> schema1:duration "PT3M42S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_CanIGetAWitness_d38daca0_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_CanTFightThisFeeling_6b4e30bc> schema1:duration "PT5M25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_CanTFightThisFeeling_6b4e30bc_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_CaribbeanQueen_1dacb861> schema1:duration "PT4M8S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_CaribbeanQueen_1dacb861_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Caroline_a514cf78> schema1:duration "PT4M34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Caroline_a514cf78_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Cherish_1b54ade8> schema1:duration "PT3M11S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Cherish_1b54ade8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ChildrenOfTheGrave_26fa12f1> schema1:duration "PT4M18S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ChildrenOfTheGrave_26fa12f1_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ComeBackAndStay_4f38bb16> schema1:duration "PT7M10S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ComeBackAndStay_4f38bb16_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_CrazyLittleThingCalledLove_20b2a2c3> schema1:duration "PT3M37S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_CrazyLittleThingCalledLove_20b2a2c3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_CutsLikeAKnife_44359dd2> schema1:duration "PT5M34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_CutsLikeAKnife_44359dd2_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DancingInTheStreetsIntroductionFromJfk_cc322142> schema1:duration "PT34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DancingInTheStreetsIntroductionFromJfk_cc322142_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DancingInTheStreets_8a9a317a> schema1:duration "PT2M44S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DancingInTheStreets_8a9a317a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DancingWithTearsInMyEyes_d32e9ce2> schema1:duration "PT5M9S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DancingWithTearsInMyEyes_d32e9ce2_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DayligthAgain_3c59521b> schema1:duration "PT2M25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DayligthAgain_3c59521b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DoTheyKnowItSChristmas_57b2fa68> schema1:duration "PT53S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DoTheyKnowItSChristmas_57b2fa68_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DonQuixote_029c9aed> schema1:duration "PT4M48S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DonQuixote_029c9aed_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DonTAnswerTheDoor_337917c4> schema1:duration "PT5M1S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DonTAnswerTheDoor_337917c4_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DonTChange_0faebebd> schema1:duration "PT5M11S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DonTChange_0faebebd_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DonTGoBreakingMyHeart_05923cfc> schema1:duration "PT4M51S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DonTGoBreakingMyHeart_05923cfc_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DonTLetTheSunGoDownOnMe_118dd83a> schema1:duration "PT5M35S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DonTLetTheSunGoDownOnMe_118dd83a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DonTSpeakNoEvil_0c0af31b> schema1:duration "PT4M20S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DonTSpeakNoEvil_0c0af31b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DonTWasteMyTime_627b88ac> schema1:duration "PT4M34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DonTWasteMyTime_627b88ac_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DonTYouForgetAboutMe_bdf2301c> schema1:duration "PT6M56S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DonTYouForgetAboutMe_bdf2301c_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DragMeDown_6e154953> schema1:duration "PT4M3S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DragMeDown_6e154953_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Drive_d9f86097> schema1:duration "PT4M4S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Drive_d9f86097_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_DrivenToTears_b08c7df3> schema1:duration "PT3M17S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_DrivenToTears_b08c7df3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_EndlessNights_8e1282b4> schema1:duration "PT1M58S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_EndlessNights_8e1282b4_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_EpiReportFromLondon_83334b2c> schema1:duration "PT41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_EpiReportFromLondon_83334b2c_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_EsGehtVoran_8cf70891> schema1:duration "PT2M29S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_EsGehtVoran_8cf70891_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_EveryBreathYouTake_fe77b125> schema1:duration "PT3M12S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_EveryBreathYouTake_fe77b125_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_EverytimeYouGoAway_86704278> schema1:duration "PT6M52S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_EverytimeYouGoAway_86704278_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_849ef639> schema1:duration "PT3M45S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_FamineVideo_849ef639_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_936ca70a> schema1:duration "PT3M45S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_FamineVideo_936ca70a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_ffa6934b> schema1:duration "PT2M58S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_FamineVideo_ffa6934b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Footloose_570d9d64> schema1:duration "PT4M14S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Footloose_570d9d64_on_8aef762f>,
+        <http://wembrewind.live/ex#Recording_Footloose_570d9d64_on_a835ceb0> .
+
+<http://wembrewind.live/ex#Recording_ForeverYoung_9268848f> schema1:duration "PT5M53S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ForeverYoung_9268848f_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_GetItOn_6d6c207b> schema1:duration "PT6M"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_GetItOn_6d6c207b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_GetReady_bac9a200> schema1:duration "PT2M34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_GetReady_bac9a200_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_GhostDancing_5773e1ad> schema1:duration "PT5M50S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_GhostDancing_5773e1ad_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_GoodVibrations_7acd0668> schema1:duration "PT4M46S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_GoodVibrations_7acd0668_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_GottaFight_cf5149c8> schema1:duration "PT1M56S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_GottaFight_cf5149c8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_HammerToFall_159f3644> schema1:duration "PT4M46S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_HammerToFall_159f3644_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_HeartbeatCity_b310b1b8> schema1:duration "PT5M11S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_HeartbeatCity_b310b1b8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_HelloFromTheSovietUnion_26fcd54e> schema1:duration "PT38S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_HelloFromTheSovietUnion_26fcd54e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_HelpMeRhonda_09c194b8> schema1:duration "PT3M7S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_HelpMeRhonda_09c194b8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Helpless_ecc0334e> schema1:duration "PT4M22S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Helpless_ecc0334e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Heroes_9ad9811b> schema1:duration "PT6M41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Heroes_9ad9811b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_HideAndSeek_220dceb7> schema1:duration "PT3M56S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_HideAndSeek_220dceb7_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_HoldMeNow_0489bbef> schema1:duration "PT7M59S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_HoldMeNow_0489bbef_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Holiday_9ddf03bc> schema1:duration "PT6M19S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Holiday_9ddf03bc_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_HollandLinkUp_23f27730> schema1:duration "PT16S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_HollandLinkUp_23f27730_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_HumanTouch_c6c0bf1a> schema1:duration "PT2M32S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_HumanTouch_c6c0bf1a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ICanTHelpMyselfSugarPieHoneyBunch_aac9c2e3> schema1:duration "PT2M28S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ICanTHelpMyselfSugarPieHoneyBunch_aac9c2e3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_IDonTLikeMondays_679ee6ca> schema1:duration "PT5M17S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_IDonTLikeMondays_679ee6ca_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_IMStillStanding_f390bbb2> schema1:duration "PT3M20S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_IMStillStanding_f390bbb2_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Imagine_314e559d> schema1:duration "PT4M44S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Imagine_314e559d_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_InTheAirTonight_3bd855ce> schema1:duration "PT4M35S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_InTheAirTonight_3bd855ce_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_InTheAirTonight_8b47f77a> schema1:duration "PT4M45S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_InTheAirTonight_8b47f77a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Intermission_06433087> schema1:duration "PT57S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Intermission_06433087_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Intermission_23d59455> schema1:duration "PT1M17S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Intermission_23d59455_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Intermission_5a1f491d> schema1:duration "PT34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Intermission_5a1f491d_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Intermission_9a046ec9> schema1:duration "PT39S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Intermission_9a046ec9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Intermission_a9023e6b> schema1:duration "PT14S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Intermission_a9023e6b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Intermission_a9dfaa12> schema1:duration "PT1M31S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Intermission_a9dfaa12_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Internationalists_08ca2301> schema1:duration "PT2M50S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Internationalists_08ca2301_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_IntoTheGroove_301a7f9c> schema1:duration "PT6M29S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_IntoTheGroove_301a7f9c_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_IntroducingJackNicholsonAtJfk_130c0c25> schema1:duration "PT45S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_IntroducingJackNicholsonAtJfk_130c0c25_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_IntroducingJoanBaez_0d0d4160> schema1:duration "PT1M19S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_IntroducingJoanBaez_0d0d4160_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_IntroductionFromJfk_2397d2a8> schema1:duration "PT1M13S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_IntroductionFromJfk_2397d2a8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_IronMan_10c9d7e1> schema1:duration "PT7M44S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_IronMan_10c9d7e1_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_IsItACrime_3cb8e20f> schema1:duration "PT6M10S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_IsItACrime_3cb8e20f_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_IsThisTheWorldWeCreated_9ad485f5> schema1:duration "PT2M57S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_IsThisTheWorldWeCreated_9ad485f5_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ItSOnlyRockAndRoll_84d84f97> schema1:duration "PT2M54S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ItSOnlyRockAndRoll_84d84f97_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ItSTheSameOldSong_f19f6599> schema1:duration "PT1M20S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ItSTheSameOldSong_f19f6599_on_101e8cc7>,
+        <http://wembrewind.live/ex#Recording_ItSTheSameOldSong_f19f6599_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_JamMasterJay_745685a1> schema1:duration "PT1M31S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_JamMasterJay_745685a1_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_JealousGuy_5ef0d284> schema1:duration "PT4M48S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_JealousGuy_5ef0d284_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_JustAnotherNight_d6663e8f> schema1:duration "PT5M27S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_JustAnotherNight_d6663e8f_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_JustWhatINeeded_0ce2996b> schema1:duration "PT3M26S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_JustWhatINeeded_0ce2996b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_KidsWannaRock_c1ffea2d> schema1:duration "PT2M59S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_KidsWannaRock_c1ffea2d_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Layla_e63a72d2> schema1:duration "PT6M43S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Layla_e63a72d2_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_LetItBe_a581c536> schema1:duration "PT4M51S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LetItBe_a581c536_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_LinkUp_edab5679> schema1:duration "PT18S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LinkUp_edab5679_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_LiveAidMessage1_2d69e5ba> schema1:duration "PT49S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LiveAidMessage1_2d69e5ba_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_LiveAidMessage1_fd3c6e4f> schema1:duration "PT1M3S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LiveAidMessage1_fd3c6e4f_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56> schema1:duration "PT3M58S"^^xsd:duration ;
+    mm:hasISRC "UK6821836667" ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56_on_8aef762f>,
+        <http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56_on_8fb392fe>,
+        <http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56_on_d9c19883> .
+
+<http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56> schema1:duration "PT3M58S"^^xsd:duration ;
+    mm:hasISRC "UK6821836667" ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56_on_8aef762f>,
+        <http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56_on_8fb392fe>,
+        <http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56_on_d9c19883> .
+
+<http://wembrewind.live/ex#Recording_LonelyAtTheTop_156cc230> schema1:duration "PT3M25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LonelyAtTheTop_156cc230_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_LongLongWayToGo_4ff594bf> schema1:duration "PT3M30S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LongLongWayToGo_4ff594bf_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_LoveMakesTheWorldGoRound_5479ad4a> schema1:duration "PT5M16S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LoveMakesTheWorldGoRound_5479ad4a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_LoveReignOErMe_5fa0efda> schema1:duration "PT4M47S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LoveReignOErMe_5fa0efda_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_LoveSomebody_b884a1ca> schema1:duration "PT3M37S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_LoveSomebody_b884a1ca_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Loverboy_558af7ff> schema1:duration "PT3M38S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Loverboy_558af7ff_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MadisonBlues_2135bbf8> schema1:duration "PT5M10S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MadisonBlues_2135bbf8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Maneater_b6a526a8> schema1:duration "PT5M27S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Maneater_b6a526a8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MessageInABottle_3e4b4e90> schema1:duration "PT4M32S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MessageInABottle_3e4b4e90_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MessageOfLove_733e6470> schema1:duration "PT3M15S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MessageOfLove_733e6470_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MickJaggerAndTinaTurnerRehearsals_5a4e9694> schema1:duration "PT22S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MickJaggerAndTinaTurnerRehearsals_5a4e9694_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MiddleOfTheRoad_ebe661e5> schema1:duration "PT4M2S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MiddleOfTheRoad_ebe661e5_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MissYou_4ed24c6c> schema1:duration "PT5M9S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MissYou_4ed24c6c_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ModernLove_a1ae373f> schema1:duration "PT3M31S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ModernLove_a1ae373f_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MoneyForNothing_e3536a52> schema1:duration "PT7M26S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MoneyForNothing_e3536a52_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MtvIntermissionBbcIntermission_9ce09d10> schema1:duration "PT4M53S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MtvIntermissionBbcIntermission_9ce09d10_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MtvIntermission_e2f35e5e> schema1:duration "PT1M40S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MtvIntermission_e2f35e5e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Murderess_889583de> schema1:duration "PT4M19S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Murderess_889583de_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MyGeneration_f800e8ee> schema1:duration "PT1M40S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MyGeneration_f800e8ee_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_MyGirl_2144d2ac> schema1:duration "PT3M40S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_MyGirl_2144d2ac_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_NacktImWind_234936eb> schema1:duration "PT4M3S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_NacktImWind_234936eb_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_NewAttitude_839ef1c3> schema1:duration "PT2M51S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_NewAttitude_839ef1c3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_NightOwl_50c2fff9> schema1:duration "PT4M58S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_NightOwl_50c2fff9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_NothingIsPerfect_4ee7077f> schema1:duration "PT4M42S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_NothingIsPerfect_4ee7077f_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_OneSmallDay_6e7eade1> schema1:duration "PT3M49S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_OneSmallDay_6e7eade1_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_OnlyLoveCanBreakYourHeart_be3169b8> schema1:duration "PT3M29S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_OnlyLoveCanBreakYourHeart_be3169b8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_OnlyWhenYouLeave_518df094> schema1:duration "PT5M22S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_OnlyWhenYouLeave_518df094_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_OpenInvitation_3c2f1252> schema1:duration "PT5M14S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_OpenInvitation_3c2f1252_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_OutOfTouch_cccaefcf> schema1:duration "PT4M27S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_OutOfTouch_cccaefcf_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_OverTheRainbow_9d50a5e3> schema1:duration "PT2M42S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_OverTheRainbow_9d50a5e3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Overkill_db1cc1d2> schema1:duration "PT3M50S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Overkill_db1cc1d2_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_OzForAfricaLinkOut_6b2fd5cb> schema1:duration "PT1M18S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_OzForAfricaLinkOut_6b2fd5cb_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_OzForAfricaLinkUp_be84d0a4> schema1:duration "PT41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_OzForAfricaLinkUp_be84d0a4_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Paranoid_fd08b596> schema1:duration "PT3M18S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Paranoid_fd08b596_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_PinballWizard_49f4bb45> schema1:duration "PT3M2S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_PinballWizard_49f4bb45_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Powderfinger_377962db> schema1:duration "PT4M49S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Powderfinger_377962db_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_PrimeraInvasion_3f8669be> schema1:duration "PT2M11S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_PrimeraInvasion_3f8669be_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_PromisedYouAMiracle_eb1d4910> schema1:duration "PT2M9S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_PromisedYouAMiracle_eb1d4910_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_RadioGaga_40401938> schema1:duration "PT4M"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_RadioGaga_40401938_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_RatTrap_3e80d77e> schema1:duration "PT5M37S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_RatTrap_3e80d77e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ReachAndTouchSomebodySHand_65653667> schema1:duration "PT6M5S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ReachAndTouchSomebodySHand_65653667_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ReachOutILlBeThere_cf659519> schema1:duration "PT1M36S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ReachOutILlBeThere_cf659519_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ReapTheWildWind_51237118> schema1:duration "PT2M58S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ReapTheWildWind_51237118_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_RebelRebel_a3fd1fde> schema1:duration "PT3M13S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_RebelRebel_a3fd1fde_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Rebels_7b896cb6> schema1:duration "PT5M41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Rebels_7b896cb6_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Refugee_f67560d9> schema1:duration "PT3M43S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Refugee_f67560d9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Revolution_691fb7d6> schema1:duration "PT4M47S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Revolution_691fb7d6_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_RightNow_658166c0> schema1:duration "PT6M27S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_RightNow_658166c0_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_RockAndRoll_c38a9c1e> schema1:duration "PT4M43S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_RockAndRoll_c38a9c1e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_RocketMan_ea6fbaf0> schema1:duration "PT4M44S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_RocketMan_ea6fbaf0_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_RockinAllOverTheWorld_ff3aa159> schema1:duration "PT3M54S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_RockinAllOverTheWorld_ff3aa159_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_RollWithTheChanges_a86ab6c4> schema1:duration "PT4M41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_RollWithTheChanges_a86ab6c4_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Roxanne_cbabd27e> schema1:duration "PT3M38S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Roxanne_cbabd27e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SaveAPrayer_4c2713e9> schema1:duration "PT6M43S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SaveAPrayer_4c2713e9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Sensation_db2cf95b> schema1:duration "PT4M31S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Sensation_db2cf95b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ShakeMeWakeMeWhenItSOver_2ea33e6c> schema1:duration "PT2M42S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ShakeMeWakeMeWhenItSOver_2ea33e6c_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Shame_55d6af65> schema1:duration "PT3M7S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Shame_55d6af65_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SheSWaiting_7a849b5b> schema1:duration "PT4M44S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SheSWaiting_7a849b5b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SimpleMindsFeedLostBbcIntermission_7201a832> schema1:duration "PT1M32S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SimpleMindsFeedLostBbcIntermission_7201a832_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1> schema1:duration "PT3M41S"^^xsd:duration ;
+    mm:hasISRC "UK6821836621" ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1_on_8aef762f>,
+        <http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1_on_8fb392fe>,
+        <http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1_on_d9c19883> .
+
+<http://wembrewind.live/ex#Recording_SolidRock_8c3a6e00> schema1:duration "PT5M39S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SolidRock_8c3a6e00_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Solid_936fd477> schema1:duration "PT4M56S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Solid_936fd477_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SouthernCross_a9c4179d> schema1:duration "PT4M57S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SouthernCross_a9c4179d_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_StageIntermission_c148e598> schema1:duration "PT55S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_StageIntermission_c148e598_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_StairwayToHeaven_35ec4330> schema1:duration "PT9M19S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_StairwayToHeaven_35ec4330_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_StandUpAndSing_108255cb> schema1:duration "PT2M1S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_StandUpAndSing_108255cb_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_StateOfShock_a9becd00> schema1:duration "PT2M34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_StateOfShock_a9becd00_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_StateOfTheHeart_65dfffa0> schema1:duration "PT4M4S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_StateOfTheHeart_65dfffa0_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_StirItUp_e32aea71> schema1:duration "PT2M20S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_StirItUp_e32aea71_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_StopYourSobbing_9282c957> schema1:duration "PT2M"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_StopYourSobbing_9282c957_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SugarMountain_c23f61cd> schema1:duration "PT4M45S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SugarMountain_c23f61cd_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SuiteJudyBlueEyes_ad8433ec> schema1:duration "PT8M5S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SuiteJudyBlueEyes_ad8433ec_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SultansOfSwing_9a5b1ff6> schema1:duration "PT11M16S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SultansOfSwing_9a5b1ff6_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SummerOf69_315af4d0> schema1:duration "PT4M26S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SummerOf69_315af4d0_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SundayBloodySunday_b0ce8594> schema1:duration "PT5M20S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SundayBloodySunday_b0ce8594_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_SurfinUsa_df04837c> schema1:duration "PT2M40S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_SurfinUsa_df04837c_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TakeItTime_b814544d> schema1:duration "PT1M51S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TakeItTime_b814544d_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TeachYourChildren_e91e1321> schema1:duration "PT3M13S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TeachYourChildren_e91e1321_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TearsAreNotEnough_d4e824e9> schema1:duration "PT4M12S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TearsAreNotEnough_d4e824e9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ThatSForTheTearsInYourEyes_454a89c8> schema1:duration "PT3M25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ThatSForTheTearsInYourEyes_454a89c8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ThatSTheWayLoveIs_4f7d61d0> schema1:duration "PT4M51S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ThatSTheWayLoveIs_4f7d61d0_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TheBalladOfHollisBrown_ae1feb90> schema1:duration "PT4M33S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TheBalladOfHollisBrown_ae1feb90_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TheGreenManalishi_7049eb5c> schema1:duration "PT3M42S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TheGreenManalishi_7049eb5c_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TheNeedleAndTheDamageDone_882ef9db> schema1:duration "PT2M30S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TheNeedleAndTheDamageDone_882ef9db_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TheReflex_73ff1d7a> schema1:duration "PT5M59S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TheReflex_73ff1d7a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TheRiddle_59101c84> schema1:duration "PT4M13S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TheRiddle_59101c84_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TheSkyIsCrying_30b104f5> schema1:duration "PT6M3S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TheSkyIsCrying_30b104f5_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TheWaiting_eb9d24b9> schema1:duration "PT4M46S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TheWaiting_eb9d24b9_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TheWayYouDoTheThingsYouDo_2d19e310> schema1:duration "PT2M41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TheWayYouDoTheThingsYouDo_2d19e310_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_TimeTheAvenger_c74a5c06> schema1:duration "PT3M35S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_TimeTheAvenger_c74a5c06_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_True_ca2c82a1> schema1:duration "PT5M52S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_True_ca2c82a1_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Tvc15_4ccc6c6b> schema1:duration "PT3M35S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Tvc15_4ccc6c6b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_U2IntroductionFromJfk_34b8b69a> schema1:duration "PT29S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_U2IntroductionFromJfk_34b8b69a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_UkFinale_e52b59cf> schema1:duration "PT3M41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_UkFinale_e52b59cf_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_UnionOfTheSnake_d1a8cfd3> schema1:duration "PT4M41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_UnionOfTheSnake_d1a8cfd3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_UnknownNewsReport_658df5b3> schema1:duration "PT1M45S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_UnknownNewsReport_658df5b3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Unknown_32ae9adc> schema1:duration "PT4M1S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Unknown_32ae9adc_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Unknown_5b8d7f98> schema1:duration "PT27S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Unknown_5b8d7f98_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Unknown_d0d61d3a> schema1:duration "PT5M19S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Unknown_d0d61d3a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_UsFinale_f5a06f66> schema1:duration "PT8M57S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_UsFinale_f5a06f66_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Vienna_1d8f82e2> schema1:duration "PT4M46S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Vienna_1d8f82e2_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_Virgin_4625d665> schema1:duration "PT4M40S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Virgin_4625d665_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_ViveLeRock_e09de3f8> schema1:duration "PT3M26S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_ViveLeRock_e09de3f8_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WallsComeTumblingDown_203a982d> schema1:duration "PT3M32S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WallsComeTumblingDown_203a982d_on_8aef762f>,
+        <http://wembrewind.live/ex#Recording_WallsComeTumblingDown_203a982d_on_9d3527a2> .
+
+<http://wembrewind.live/ex#Recording_Warum_717380bd> schema1:duration "PT4M31S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_Warum_717380bd_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WeAreTheChampions_ab0796fb> schema1:duration "PT3M41S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WeAreTheChampions_ab0796fb_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WeAreTheWorld_35a488c3> schema1:duration "PT2M33S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WeAreTheWorld_35a488c3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WeWillRockYou_2f58f9a6> schema1:duration "PT1M16S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WeWillRockYou_2f58f9a6_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WelcomingAmerica_b815d586> schema1:duration "PT25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WelcomingAmerica_b815d586_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WembleyLinkUpToJfk_c7ae20df> schema1:duration "PT24S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WembleyLinkUpToJfk_c7ae20df_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WhatYouNeed_7f30e02a> schema1:duration "PT3M29S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WhatYouNeed_7f30e02a_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WhenTheShipsComesIn_3bfc4b19> schema1:duration "PT3M36S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WhenTheShipsComesIn_3bfc4b19_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WhiteRoom_6919d285> schema1:duration "PT5M13S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WhiteRoom_6919d285_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WhoDoYouLove_2918fca0> schema1:duration "PT5M34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WhoDoYouLove_2918fca0_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WholeLottaLove_c24368f1> schema1:duration "PT5M20S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WholeLottaLove_c24368f1_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WhyCanTIGetItOver_dc308b4b> schema1:duration "PT2M44S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WhyCanTIGetItOver_dc308b4b_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WhyCanTWeLiveTogether_0bf0a51e> schema1:duration "PT3M22S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WhyCanTWeLiveTogether_0bf0a51e_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WhyISingTheBlues_4b1f43fc> schema1:duration "PT3M21S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WhyISingTheBlues_4b1f43fc_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WideBoy_2e405de3> schema1:duration "PT3M25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WideBoy_2e405de3_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WonTGetFooledAgain_e7c6be90> schema1:duration "PT9M25S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WonTGetFooledAgain_e7c6be90_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WouldnTItBeGood_f01b6a95> schema1:duration "PT5M12S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WouldnTItBeGood_f01b6a95_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_WouldnTItBeNice_de5d8181> schema1:duration "PT3M2S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_WouldnTItBeNice_de5d8181_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_YouMightThink_62b257d5> schema1:duration "PT3M2S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_YouMightThink_62b257d5_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_YouReTheBestThing_85650129> schema1:duration "PT4M59S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_YouReTheBestThing_85650129_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_YouVeGotAnotherThingComin_b48f9409> schema1:duration "PT7M15S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_YouVeGotAnotherThingComin_b48f9409_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_YourLoveIsKing_a214b8ab> schema1:duration "PT4M34S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_YourLoveIsKing_a214b8ab_on_8aef762f> .
+
+<http://wembrewind.live/ex#Recording_YuRockMissionForAMillionYears_573da091> schema1:duration "PT4M42S"^^xsd:duration ;
+    mm:onRelease <http://wembrewind.live/ex#Recording_YuRockMissionForAMillionYears_573da091_on_8aef762f> .
+
+<http://wembrewind.live/ex#ReoSpeedwagon> schema1:description "American rock band"@en .
+
+<http://wembrewind.live/ex#RickSpringfield> schema1:description "Australian-American musician, singer-songwriter, and actor"@en .
+
+<http://wembrewind.live/ex#RickSpringfield_prop_P2373_44639644> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#RickSpringfield_prop_P6351_31672053> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#RobertPlant> schema1:description "English musician and lead vocalist of Led Zeppelin"@en .
+
+<http://wembrewind.live/ex#RobertPlant_prop_P2373_22368250> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#RobertPlant_prop_P6351_16494487> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#RonnieWood> schema1:description "British rock guitarist, member of The Rolling Stones"@en .
+
+<http://wembrewind.live/ex#RonnieWood_prop_P2373_38453130> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#RonnieWood_prop_P6351_89235205> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#RunDMC> schema1:description "American hip-hop group"@en .
+
+<http://wembrewind.live/ex#RunDMC_prop_P2373_497319> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Sade> schema1:description "British band"@en .
+
+<http://wembrewind.live/ex#Sade_prop_P2373_46707602> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Santana> schema1:description "American rock band"@en .
+
+<http://wembrewind.live/ex#SimpleMinds> schema1:description "Scottish rock band"@en .
+
+<http://wembrewind.live/ex#SpandauBallet> schema1:description "English musical group; new wave band"@en .
+
+<http://wembrewind.live/ex#SpandauBallet_prop_P2373_82098567> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#SpandauBallet_prop_P5287_57781880> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#StatusQuo> schema1:description "British musical group; rock band"@en .
+
+<http://wembrewind.live/ex#StatusQuo_prop_P2373_35851071> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Sting> schema1:description "British musician (b. 1951)"@en .
+
+<http://wembrewind.live/ex#Sting_prop_P2373_68104611> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Sting_prop_P6351_30237597> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TheBandOfTheColdstreamGuards> schema1:description "musical artist"@en .
+
+<http://wembrewind.live/ex#TheBeachBoys> schema1:description "American rock band"@en .
+
+<http://wembrewind.live/ex#TheBeachBoys_prop_P2373_67138700> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TheBeachBoys_prop_P5287_79925448> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TheBoomtownRats> schema1:description "Irish rock band"@en .
+
+<http://wembrewind.live/ex#TheBoomtownRats_prop_P2373_91699445> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TheCars> schema1:description "American pop-rock band"@en .
+
+<http://wembrewind.live/ex#TheCars_prop_P2373_2313358> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TheCars_prop_P6351_45967714> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TheHooters> schema1:description "American rock band"@en .
+
+<http://wembrewind.live/ex#ThePowerStation> schema1:description "American-British musical supergroup; rock band"@en .
+
+<http://wembrewind.live/ex#TheStyleCouncil> schema1:description "English band active 1983–1989"@en .
+
+<http://wembrewind.live/ex#TheWho> schema1:description "English rock band"@en .
+
+<http://wembrewind.live/ex#TheWho_prop_P2373_83838751> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#ThomasDolby> schema1:description "English musician, producer, entrepreneur and teacher"@en .
+
+<http://wembrewind.live/ex#ThomasDolby_prop_P2373_92310548> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#ThompsonTwins> schema1:description "British band"@en .
+
+<http://wembrewind.live/ex#ThompsonTwins_prop_P2373_62110772> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#ThompsonTwins_prop_P5287_52301287> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TinaTurner> schema1:description "American-born Swiss singer and songwriter (1939–2023)"@en .
+
+<http://wembrewind.live/ex#TinaTurner_prop_P2373_15363937> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TinaTurner_prop_P5287_35449336> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TinaTurner_prop_P6351_56988100> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#TomPettyAndTheHeartbreakers> schema1:description "American rock band"@en .
+
+<http://wembrewind.live/ex#TonyThompson> schema1:description "American drummer (1954–2003)"@en .
+
+<http://wembrewind.live/ex#U2> schema1:description "Irish rock band"@en .
+
+<http://wembrewind.live/ex#U2_prop_P2373_78989832> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Ultravox> schema1:description "British new wave band"@en .
+
+<http://wembrewind.live/ex#UsaForAfrica> schema1:description "US supergroup"@en .
+
+<http://wembrewind.live/ex#UsaForAfrica_prop_P2373_76053809> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Work_AViewToAKill_f9b82c4a_2> schema1:description "original song composed by John Barry and Duran Duran; from the 1985 film \"A View to a Kill\""@en .
+
+<http://wembrewind.live/ex#Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2> schema1:description "original film song written, composed, and performed by Phil Collins; from the 1984 film \"Against All Odds\""@en .
+
+<http://wembrewind.live/ex#Work_AinTTooProudToBeg_d97a13df_2> schema1:description "single by The Temptations"@en .
+
+<http://wembrewind.live/ex#Work_AllYouNeedIsLove_0dfca25e_2> schema1:description "original song written and composed by Lennon-McCartney; first recording by The Beatles"@en .
+
+<http://wembrewind.live/ex#Work_AmazingGrace_a5393197> schema1:description "Christian hymn"@en .
+
+<http://wembrewind.live/ex#Work_AmazingGrace_a5393197_prop_P5241_15702552> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Work_AmericanGirl_667f5519_2> schema1:description "1976 song by Tom Petty"@en .
+
+<http://wembrewind.live/ex#Work_BackOnTheChainGang_31d4aa2c> schema1:description "original song written and composed by Chrissie Hynde"@en .
+
+<http://wembrewind.live/ex#Work_Bad_62d0a051> schema1:description "1984 song by U2"@en .
+
+<http://wembrewind.live/ex#Work_Bad_62d0a051_YT_LCdltGg4EzM> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_BalladOfHollisBrown_5ed18d5c> schema1:description "song written, composed, and performed by Bob Dylan"@en .
+
+<http://wembrewind.live/ex#Work_BennieAndTheJets_6ef8fb46_2> schema1:description "original song composed by Elton John with lyrics by Bernie Taupin"@en .
+
+<http://wembrewind.live/ex#Work_Bernadette_78a776b8_2> schema1:description "single by The Four Tops"@en .
+
+<http://wembrewind.live/ex#Work_BlowinInTheWind_f5a12d42> schema1:description "orignal song written and composed by Bob Dylan; originally recorded by Bob Dylan in 1962 and released in 1963"@en .
+
+<http://wembrewind.live/ex#Work_BohemianRhapsody_41c94a08> schema1:description "1975 Queen song written and composed by Freddie Mercury"@en .
+
+<http://wembrewind.live/ex#Work_BohemianRhapsody_41c94a08_YT_fJ9rUzIMcZQ> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_CaliforniaGirls_9c56c803> schema1:description "1965 song by the Beach Boys"@en .
+
+<http://wembrewind.live/ex#Work_CanIGetAWitness_238819bb_2> schema1:description "1963 single by Marvin Gaye"@en .
+
+<http://wembrewind.live/ex#Work_CanTFightThisFeeling_4b497a42_2> schema1:description "song written and composed by Kevin Cronin, originally recorded by REO Speedwagon and released in 1984"@en .
+
+<http://wembrewind.live/ex#Work_CaribbeanQueen_d4d2cc6d> schema1:description "1984 single by Billy Ocean"@en .
+
+<http://wembrewind.live/ex#Work_CaribbeanQueen_d4d2cc6d_YT_uxX2gA18grk> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_Caroline_c758c89e_2> schema1:description "1973 song by Status Quo"@en .
+
+<http://wembrewind.live/ex#Work_Cherish_7331e730> schema1:description "original song co-written and performed by Kool & The Gang"@en .
+
+<http://wembrewind.live/ex#Work_ChildrenOfTheGrave_08b8087b> schema1:description "song by Black Sabbath"@en .
+
+<http://wembrewind.live/ex#Work_ComeBackAndStay_ad4e5fd6_2> schema1:description "original song written, composed, and performed by Jack Lee"@en .
+
+<http://wembrewind.live/ex#Work_CrazyLittleThingCalledLove_dad1c2a9> schema1:description "original song written and composed by Freddie Mercury; first recorded by Queen"@en .
+
+<http://wembrewind.live/ex#Work_CutsLikeAKnife_aa289c4d> schema1:description "1983 single by Bryan Adams"@en .
+
+<http://wembrewind.live/ex#Work_CutsLikeAKnife_aa289c4d_YT_6VZhSkREYBc> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_DancingWithTearsInMyEyes_a88ba41e_2> schema1:description "original song written and composed by Midge Ure, Chris Cross, Warren Cann and Billy Currie, originally recorded by Ultravox and released in 1984"@en .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2> schema1:description "Christmas song written and composed by Bob Geldof and Midge Ure, originally recorded by Band Aid and released in 1984"@en .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_YT_Zc8TYsYb5i0> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_prop_P5241_56510414> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_prop_P5241_65921839> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Work_DoTheyKnowItSChristmas_d64306b1_2_prop_P5241_94658583> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Work_DonTChange_f0e75ada_2> schema1:description "1982 song performed by INXS"@en .
+
+<http://wembrewind.live/ex#Work_DonTChange_f0e75ada_2_YT_sLm3Khusq_8> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_DonTGoBreakingMyHeart_f8d529ad_2> schema1:description "song by Elton John and Kiki Dee"@en .
+
+<http://wembrewind.live/ex#Work_DonTGoBreakingMyHeart_f8d529ad_2_YT_z0qW9P-uYfM> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_DonTLetTheSunGoDownOnMe_75ed39fe> schema1:description "original song written and composed by Elton John, Bernie Taupin"@en .
+
+<http://wembrewind.live/ex#Work_DonTYouForgetAboutMe_4694f742> schema1:description "original song written and composed by Keith Forsey and Steve Schiff; from the 1985 movie \"The Breakfast Club\"; first recorded by Simple Minds"@en .
+
+<http://wembrewind.live/ex#Work_Drive_4cbcd04d_2> schema1:description "1984 song by The Cars"@en .
+
+<http://wembrewind.live/ex#Work_Drive_4cbcd04d_2_YT_xuZA6qiJVfU> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_DrivenToTears_d7c50a9a> schema1:description "1980 song by The Police"@en .
+
+<http://wembrewind.live/ex#Work_EveryBreathYouTake_f88369e2> schema1:description "song by The Police"@en .
+
+<http://wembrewind.live/ex#Work_EverytimeYouGoAway_677d42d6_2> schema1:description "original song written and composed by Daryl Hall; first recorded in 1980 by Hall & Oates"@en .
+
+<http://wembrewind.live/ex#Work_Footloose_fee797bd> schema1:description "1984 single by Kenny Loggins"@en .
+
+<http://wembrewind.live/ex#Work_ForeverYoung_f978ba1e> schema1:description "1979 song by Bob Dylan"@en .
+
+<http://wembrewind.live/ex#Work_GetItOn_29ff18d1_2> schema1:description "original song written and composed by Marc Bolan; released in 1971 by T. Rex"@en .
+
+<http://wembrewind.live/ex#Work_GetReady_3df4f8a5> schema1:description "song by The Temptations"@en .
+
+<http://wembrewind.live/ex#Work_GoodVibrations_ede10e9a> schema1:description "The Beach Boys song"@en .
+
+<http://wembrewind.live/ex#Work_GoodVibrations_ede10e9a_YT_apBWI6xrbLY> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_HammerToFall_1e807fa4_2> schema1:description "single"@en .
+
+<http://wembrewind.live/ex#Work_HammerToFall_1e807fa4_2_YT_JU5LMG3WFBw> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_HelpMeRhonda_21404af0> schema1:description "single by The Beach Boys"@en .
+
+<http://wembrewind.live/ex#Work_Helpless_295f4446_2> schema1:description "original song written and composed by Neil Young"@en .
+
+<http://wembrewind.live/ex#Work_Heroes_e2b01286> schema1:description "original song co-written and performed by David Bowie"@en .
+
+<http://wembrewind.live/ex#Work_HoldMeNow_d77e1b17> schema1:description "original song written, composed, and recorded by Thompson Twins"@en .
+
+<http://wembrewind.live/ex#Work_Holiday_1c03c879> schema1:description "original song written and composed by Curtis Hudson and Lisa Stevens; first recorded and released 1983 by Madonna"@en .
+
+<http://wembrewind.live/ex#Work_Holiday_1c03c879_YT_5Rswx2Z7SDw> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_HumanTouch_f9c6ee89> schema1:description "Rick Springfield single"@en .
+
+<http://wembrewind.live/ex#Work_ICanTHelpMyselfSugarPieHoneyBunch_209a62bf> schema1:description "song written and and composed by Holland–Dozier–Holland, originally recorded by Four Tops and released in 1965"@en .
+
+<http://wembrewind.live/ex#Work_IDonTLikeMondays_d998a80c> schema1:description "song written and composed by Bob Geldof and Johnnie Fingers; originally recorded by Boomtown Rats and released in 1979"@en .
+
+<http://wembrewind.live/ex#Work_IDonTLikeMondays_d998a80c_YT_-Kobdb37Cwc> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_IMStillStanding_4ae45d33> schema1:description "1983 song by Elton John"@en .
+
+<http://wembrewind.live/ex#Work_IMStillStanding_4ae45d33_YT_ZHwVBirqD2s> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_Imagine_517ff96c_2> schema1:description "song writen and composed by John Lennon and Yoko Ono, originally recorded by John Lennon and released in 1971"@en .
+
+<http://wembrewind.live/ex#Work_Imagine_517ff96c_2_YT_rAn-AWXtHv0> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea> schema1:description "1981 song by Phil Collins"@en .
+
+<http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea_YT_YkADj0TPrJA> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea_prop_P6218_82327223> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Work_IntoTheGroove_35b448bb_2> schema1:description "original film song co-written and performed by Madonna; from the 1985 movie \"Desperately Seeking Susan\""@en .
+
+<http://wembrewind.live/ex#Work_IronMan_4a43511c_2> schema1:description "original song written, composed, and performed by Black Sabbath"@en .
+
+<http://wembrewind.live/ex#Work_IsThisTheWorldWeCreated_3a6c7da6> schema1:description "original song written and composed by Freddie Mercury and Brian May; first recorded by Queen"@en .
+
+<http://wembrewind.live/ex#Work_ItSTheSameOldSong_1c0a52ff> schema1:description "original song written and composed by Holland–Dozier–Holland"@en .
+
+<http://wembrewind.live/ex#Work_JealousGuy_056b839a> schema1:description "1971 original song written, composed, and performed by John Lennon"@en .
+
+<http://wembrewind.live/ex#Work_JustAnotherNight_1adedf0f_2> schema1:description "1985 song performed by Mick Jagger"@en .
+
+<http://wembrewind.live/ex#Work_JustWhatINeeded_f5128e1e_2> schema1:description "The Cars song"@en .
+
+<http://wembrewind.live/ex#Work_JustWhatINeeded_f5128e1e_2_YT_gvy2yqUHLLg> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_Layla_beb76331> schema1:description "song written by Eric Clapton and Jim Gordon"@en .
+
+<http://wembrewind.live/ex#Work_LetItBe_ef5b9074> schema1:description "original song written and composed by Lennon-McCartney; first recorded by The Beatles"@en .
+
+<http://wembrewind.live/ex#Work_LetItBe_ef5b9074_YT_atLK2RIZzWk> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_LivingAfterMidnight_c2f04756> schema1:description "1980 single by Judas Priest"@en .
+
+<http://wembrewind.live/ex#Work_LoveReignOErMe_e2318c2e> schema1:description "song by The Who"@en .
+
+<http://wembrewind.live/ex#Work_Loverboy_ccf61ac6_2> schema1:description "song performed by Billy Ocean"@en .
+
+<http://wembrewind.live/ex#Work_Maneater_59e765fb> schema1:description "1982 single by Hall & Oates"@en .
+
+<http://wembrewind.live/ex#Work_Maneater_59e765fb_YT_yRYFKcMa_Ek> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_MessageInABottle_d4bbeea9> schema1:description "1979 single by The Police"@en .
+
+<http://wembrewind.live/ex#Work_MessageInABottle_d4bbeea9_YT_MbXWrmQW-OE> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_MessageInABottle_d4bbeea9_prop_P6218_27643505> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Work_MessageOfLove_43dd26dc_2> schema1:description "1981 song performed by The Pretenders"@en .
+
+<http://wembrewind.live/ex#Work_MiddleOfTheRoad_ba390ae8> schema1:description "1983 single by The Pretenders"@en .
+
+<http://wembrewind.live/ex#Work_MissYou_be9728e0_2> schema1:description "1978 single by The Rolling Stones"@en .
+
+<http://wembrewind.live/ex#Work_MissYou_be9728e0_2_YT_hic-dnps6MU> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_ModernLove_508a3dac_2> schema1:description "original song written, composed, and recorded by David Bowie"@en .
+
+<http://wembrewind.live/ex#Work_MoneyForNothing_d6f71ddf> schema1:description "1985 song by Dire Straits"@en .
+
+<http://wembrewind.live/ex#Work_MoneyForNothing_d6f71ddf_YT_wTP2RUD_cL0> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_MyGeneration_a55b5d5b> schema1:description "original song written and composed by Pete Townshend"@en .
+
+<http://wembrewind.live/ex#Work_MyGirl_e8f22db4> schema1:description "song written and composed by Smokey Robinson and Ronald White, originaly recorded by The Temptations and released in 1964"@en .
+
+<http://wembrewind.live/ex#Work_MyGirl_e8f22db4_YT_y3KJ7d2qBoA> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_NewAttitude_f2d275ad_2> schema1:description "single"@en .
+
+<http://wembrewind.live/ex#Work_OnlyLoveCanBreakYourHeart_8558d07e> schema1:description "original song written, composed, and performed by Neil Young"@en .
+
+<http://wembrewind.live/ex#Work_OnlyWhenYouLeave_ab26cb3a> schema1:description "original song written and composed by Gary Kemp; first recorded and released by Spandau Ballet"@en .
+
+<http://wembrewind.live/ex#Work_OutOfTouch_937a13f3> schema1:description "1984 Hall & Oates song"@en .
+
+<http://wembrewind.live/ex#Work_OutOfTouch_937a13f3_YT_0fZJfQhABro> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_OverTheRainbow_f8217125_2> schema1:description "song by Harold Arlen with lyrics by E.Y. Harburg; originally recorded by Judy Garland in 1939"@en .
+
+<http://wembrewind.live/ex#Work_Overkill_23300222_2> schema1:description "song by Men At Work"@en .
+
+<http://wembrewind.live/ex#Work_Overkill_23300222_2_YT_RY7S6EgSlCI> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_Paranoid_7949591a_2> schema1:description "original song written, composed, and performed by Black Sabbath"@en .
+
+<http://wembrewind.live/ex#Work_PinballWizard_6ef8cd26> schema1:description "original song written and composed by Pete Townshend; first recorded by The Who"@en .
+
+<http://wembrewind.live/ex#Work_Powderfinger_e4de49b8> schema1:description "1979 song by Neil Young"@en .
+
+<http://wembrewind.live/ex#Work_RadioGaGa_2c76fe20_2> schema1:description "original song written and composed by Roger Taylor; first recorded by Queen in 1984"@en .
+
+<http://wembrewind.live/ex#Work_RatTrap_a09a4c84_2> schema1:description "single by The Boomtown Rats"@en .
+
+<http://wembrewind.live/ex#Work_ReachOutAndTouchSomebodySHand_d76165e1_2> schema1:description "1970 single by Diana Ross"@en .
+
+<http://wembrewind.live/ex#Work_ReachOutILlBeThere_f82341b9_2> schema1:description "original song written and composed by Holland-Dozier-Holland; first recorded by Four Tops"@en .
+
+<http://wembrewind.live/ex#Work_RebelRebel_dc6d909d_2> schema1:description "1974 song by David Bowie"@en .
+
+<http://wembrewind.live/ex#Work_Refugee_df6f6edd_2> schema1:description "song recorded by Tom Petty and the Heartbreakers"@en .
+
+<http://wembrewind.live/ex#Work_Revolution_fc6e50dd_2> schema1:description "original song written and composed by Lennon–McCartney; first recorded and released by The Beatles"@en .
+
+<http://wembrewind.live/ex#Work_RockAndRoll_d47cdd1d> schema1:description "1972 single by Led Zeppelin"@en .
+
+<http://wembrewind.live/ex#Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306> schema1:description "original song written and composed by Elton John (music) and Bernie Taupin (lyrics)"@en .
+
+<http://wembrewind.live/ex#Work_RockinAllOverTheWorld_5b31460f_2> schema1:description "single by John Fogerty"@en .
+
+<http://wembrewind.live/ex#Work_RockinAllOverTheWorld_5b31460f_2_prop_P5241_69582449> a schema1:PropertyValue .
+
+<http://wembrewind.live/ex#Work_Roxanne_0ddba90a> schema1:description "original song written and composed by Sting; recorded 1978 by The Police"@en .
+
+<http://wembrewind.live/ex#Work_SaveAPrayer_604f7422> schema1:description "1982 song by Duran Duran"@en .
+
+<http://wembrewind.live/ex#Work_SaveAPrayer_604f7422_YT_6Uxc9eFcZyM> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_ShakeMeWakeMeWhenItSOver_29237a79> schema1:description "1966 single by Four Tops"@en .
+
+<http://wembrewind.live/ex#Work_SlaveToLove_01cf29f1> schema1:description "original song written, composed, and performed by Bryan Ferry"@en .
+
+<http://wembrewind.live/ex#Work_Solid_552d2380> schema1:description "original song written, composed, and performed by Ashford & Simpson"@en .
+
+<http://wembrewind.live/ex#Work_StairwayToHeaven_968ee3c5_2> schema1:description "original song written and composed by Jimmy Page and Robert Plant; first recorded by Led Zeppelin in 1970 and released in 1971"@en .
+
+<http://wembrewind.live/ex#Work_StairwayToHeaven_968ee3c5_2_YT_iXQUu5Dti4g> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_StateOfShock_8e0f121d_2> schema1:description "1984 single by the Jacksons featuring Mick Jagger"@en .
+
+<http://wembrewind.live/ex#Work_StateOfTheHeart_5f9be140_2> schema1:description "1981 song performed by Mondo Rock"@en .
+
+<http://wembrewind.live/ex#Work_StirItUp_fa22c5e3> schema1:description "1985 single by Patti LaBelle"@en .
+
+<http://wembrewind.live/ex#Work_StopYourSobbing_9533d2bf> schema1:description "1979 song performed by The Pretenders"@en .
+
+<http://wembrewind.live/ex#Work_SugarMountain_36ab6f4c_2> schema1:description "original song written and composed by Neil Young"@en .
+
+<http://wembrewind.live/ex#Work_SultansOfSwing_8626823c> schema1:description "original song written and composed by Mark Knopfler; performed by Dire Straits"@en .
+
+<http://wembrewind.live/ex#Work_SummerOf69_9604422e_2> schema1:description "song written and composed by Bryan Adams and Jim Vallance, originally recorded by Bryan Adams in 1984"@en .
+
+<http://wembrewind.live/ex#Work_SummerOf69_9604422e_2_YT_9f06QZCVUHg> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_SundayBloodySunday_dc2c1143_2> schema1:description "original song written, composed, and performed by U2"@en .
+
+<http://wembrewind.live/ex#Work_SurfinUSA_537d49de_2> schema1:description "song; rewritten version of \"Sweet Little Sixteen\", lyrics adapted by Brian Wilson and Mike Love"@en .
+
+<http://wembrewind.live/ex#Work_TeachYourChildren_ea98da58> schema1:description "1970 single by Crosby, Stills, Nash & Young"@en .
+
+<http://wembrewind.live/ex#Work_TeachYourChildren_ea98da58_YT_EkaKwXddT_I> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_TearsAreNotEnough_b78023a3> schema1:description "1985 Northern Lights song"@en .
+
+<http://wembrewind.live/ex#Work_ThatSTheWayLoveIs_431780d2> schema1:description "1969 single by Marvin Gaye"@en .
+
+<http://wembrewind.live/ex#Work_TheGreenManalishiWithTheTwoProngCrown_784d31f1> schema1:description "original song written and composed by Peter Green; first recorded by Fleetwood Mac"@en .
+
+<http://wembrewind.live/ex#Work_TheNeedleAndTheDamageDone_6d0d3f75_2> schema1:description "original song written, composed, and performed by Neil Young"@en .
+
+<http://wembrewind.live/ex#Work_TheReflex_50ec521b> schema1:description "original song written, composed, and performed by Duran Duran"@en .
+
+<http://wembrewind.live/ex#Work_TheRiddle_b5c6086c> schema1:description "original song written, composed, and performed by Nik Kershaw"@en .
+
+<http://wembrewind.live/ex#Work_TheSkyIsCrying_ea9996dc> schema1:description "single by Elmore James"@en .
+
+<http://wembrewind.live/ex#Work_TheWaiting_dd9f2a88_2> schema1:description "1981 single by Tom Petty and the Heartbreakers"@en .
+
+<http://wembrewind.live/ex#Work_TheWayYouDoTheThingsYouDo_44ddc0a7_2> schema1:description "1964 single by The Temptations"@en .
+
+<http://wembrewind.live/ex#Work_True_022cacb2_2> schema1:description "1983 single by Spandau Ballet"@en .
+
+<http://wembrewind.live/ex#Work_Tvc15_126ed430> schema1:description "song by David Bowie"@en .
+
+<http://wembrewind.live/ex#Work_Vienna_33826c32> schema1:description "song written and composed by Warren Cann, Chris Cross, Billy Currie and Midge Ure, originally recorded by Ultravox and released in 1981"@en .
+
+<http://wembrewind.live/ex#Work_Vienna_33826c32_YT_xJeWySiuq1I> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_WallsComeTumblingDown_2f64618a> schema1:description "original song written and composed by Paul Weller; first released by The Style Council"@en .
+
+<http://wembrewind.live/ex#Work_WeAreTheChampions_0b3da969_2> schema1:description "1977 single by Queen"@en .
+
+<http://wembrewind.live/ex#Work_WeAreTheWorld_0b9a2e1d_2> schema1:description "song by USA for Africa"@en .
+
+<http://wembrewind.live/ex#Work_WeWillRockYou_3623f3af_2> schema1:description "song written and composed by Brian May, originally recorded by Queen in 1977"@en .
+
+<http://wembrewind.live/ex#Work_WhatYouNeed_5e27c4a3_2> schema1:description "1985 single by INXS"@en .
+
+<http://wembrewind.live/ex#Work_WhenTheShipComesIn_e393936f> schema1:description "original song written and composed by Bob Dylan, originally recorded by Bob Dylan in 1963 and released in 1964"@en .
+
+<http://wembrewind.live/ex#Work_WhiteRoom_7549fd84_2> schema1:description "1968 single by Cream"@en .
+
+<http://wembrewind.live/ex#Work_WhiteRoom_7549fd84_2_YT_V5BF1V1pbTs> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_WhoDoYouLove_4f19a475_2> schema1:description "1956 song by Bo Diddley"@en .
+
+<http://wembrewind.live/ex#Work_WholeLottaLove_36df44f5_2> schema1:description "song written by John Paul Jones, John Bonham, Jimmy Page, Robert Plant"@en .
+
+<http://wembrewind.live/ex#Work_WhyCanTWeLiveTogether_8bae3d24_2> schema1:description "1972 single by Timmy Thomas"@en .
+
+<http://wembrewind.live/ex#Work_WonTGetFooledAgain_f00616af_2> schema1:description "song written by Pete Townshend; first recorded by The Who"@en .
+
+<http://wembrewind.live/ex#Work_WouldnTItBeGood_6a8be284_2> schema1:description "1984 single by Nik Kershaw"@en .
+
+<http://wembrewind.live/ex#Work_WouldnTItBeNice_8d9c97e9_2> schema1:description "1966 song by the Beach Boys"@en .
+
+<http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e> schema1:description "1984 single by The Cars"@en .
+
+<http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e_YT_3dOx510kyOs> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e_YT_h9rU5gHcsAw> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Work_YouReTheBestThing_318c96a9_2> schema1:description "original song written and composed by Paul Weller; first recorded by The Style Council"@en .
+
+<http://wembrewind.live/ex#Work_YouVeGotAnotherThingComin_24f7f4ea> schema1:description "original song written and composed by Glenn Tipton, K. K. Downing, Rob Halford; first recorded by Judas Priest"@en .
+
+<http://wembrewind.live/ex#Work_YourLoveIsKing_89d27ad0> schema1:description "1984 single by Sade"@en .
+
+<http://wembrewind.live/ex#Work_YourLoveIsKing_89d27ad0_YT_k1ljpLQ1V6Y> a schema1:VideoObject .
+
+<http://wembrewind.live/ex#Recording_A1985Rewind_38d05d49_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_A4TheTearsInYourEyes_454a89c8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AViewToAKill_a694f876_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AWorldOfDifference_adbcfa3e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_09b943a8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_6130bf23_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AbcIntermissionBbcIntermission_95c8f136_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_00f9da60_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_49a45fef_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_81ed5a7e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_83775933_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AbcIntermission_85f07145_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AgainstAllOdds_158681cb_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AgainstAllOdds_50b4150f_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AinTTooProudToBeg_98a1fc06_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AllOfUs_eaa279da_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AllYouNeedIsLove_f6f9aebe_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AllYouZombies_bfd09d22_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AmazingGrace_7eaf7963_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AmericanGirl_7ef5bce9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_AndWeDanced_095b10f0_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Annoncement_4a0a49dd_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Announcement_4a0a49dd_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BackOnTheChainGang_e955dd67_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Bad_79932b83_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BandAidNewReport_513cb62a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BandPresentation_dd6bf224_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermissionAbcIntermission_19c74232_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_0227b235_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_041c8ce9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_07eca73d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_18eb5d75_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_1e29381d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_22b6ae23_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_22fdaf96_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_25727208_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_2b4ee3ba_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_30ab381b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_354ab3f5_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_3a6bb6fc_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_3d9e29bb_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_414f2255_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_49990f09_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_574d5d52_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5a19ddad_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5cbe9bcb_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_5d90b210_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_61a8469b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_6fc44463_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_789ff269_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_90beb67b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_99bb5db6_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_9ac4324d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_a9ef78d9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_ad7a3e54_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_aec51e68_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_bfd18769_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_cceeb1c3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_da0cfdf6_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_dad155e9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_db87a546_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_defdd523_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_e92e7051_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_f63c2ff1_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_f890491e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_faf9e1a6_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BbcIntermission_ff043393_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BeachBoysCaliforniaGirls_4fbf7149_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BennieAndTheJets_6e546f44_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Bernadette_af9d9185_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BigBossGroove_a1d2bfd4_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BlowinInTheWind_63170ff1_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BobGeldofSnippet_3cfd8fdd_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BobGeldofSnippet_e3840161_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BohemianRhapsody_6b547796_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BonoOnChristmas_7b56ed1b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_BoysAndGirls_7cb4fb3d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Brotherhood_d1e40685_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ByThePool_2140460b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_CanIGetAWitness_d38daca0_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_CanTFightThisFeeling_6b4e30bc_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_CaribbeanQueen_1dacb861_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Caroline_a514cf78_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Cherish_1b54ade8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ChildrenOfTheGrave_26fa12f1_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ComeBackAndStay_4f38bb16_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_CrazyLittleThingCalledLove_20b2a2c3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_CutsLikeAKnife_44359dd2_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DancingInTheStreetsIntroductionFromJfk_cc322142_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DancingInTheStreets_8a9a317a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DancingWithTearsInMyEyes_d32e9ce2_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DayligthAgain_3c59521b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DoTheyKnowItSChristmas_57b2fa68_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DonQuixote_029c9aed_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DonTAnswerTheDoor_337917c4_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DonTChange_0faebebd_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DonTGoBreakingMyHeart_05923cfc_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DonTLetTheSunGoDownOnMe_118dd83a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DonTSpeakNoEvil_0c0af31b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DonTWasteMyTime_627b88ac_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DonTYouForgetAboutMe_bdf2301c_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DragMeDown_6e154953_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Drive_d9f86097_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_DrivenToTears_b08c7df3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_EndlessNights_8e1282b4_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_EpiReportFromLondon_83334b2c_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_EsGehtVoran_8cf70891_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_EveryBreathYouTake_fe77b125_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_EverytimeYouGoAway_86704278_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_849ef639_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_936ca70a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_FamineVideo_ffa6934b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Footloose_570d9d64_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Footloose_570d9d64_on_a835ceb0> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ForeverYoung_9268848f_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_GetItOn_6d6c207b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_GetReady_bac9a200_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_GhostDancing_5773e1ad_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_GoodVibrations_7acd0668_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_GottaFight_cf5149c8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_HammerToFall_159f3644_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_HeartbeatCity_b310b1b8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_HelloFromTheSovietUnion_26fcd54e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_HelpMeRhonda_09c194b8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Helpless_ecc0334e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Heroes_9ad9811b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_HideAndSeek_220dceb7_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_HoldMeNow_0489bbef_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Holiday_9ddf03bc_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_HollandLinkUp_23f27730_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_HumanTouch_c6c0bf1a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ICanTHelpMyselfSugarPieHoneyBunch_aac9c2e3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_IDonTLikeMondays_679ee6ca_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_IMStillStanding_f390bbb2_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Imagine_314e559d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_InTheAirTonight_3bd855ce_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_InTheAirTonight_8b47f77a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Intermission_06433087_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Intermission_23d59455_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Intermission_5a1f491d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Intermission_9a046ec9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Intermission_a9023e6b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Intermission_a9dfaa12_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Internationalists_08ca2301_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_IntoTheGroove_301a7f9c_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_IntroducingJackNicholsonAtJfk_130c0c25_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_IntroducingJoanBaez_0d0d4160_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_IntroductionFromJfk_2397d2a8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_IronMan_10c9d7e1_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_IsItACrime_3cb8e20f_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_IsThisTheWorldWeCreated_9ad485f5_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ItSOnlyRockAndRoll_84d84f97_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ItSTheSameOldSong_f19f6599_on_101e8cc7> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ItSTheSameOldSong_f19f6599_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_JamMasterJay_745685a1_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_JealousGuy_5ef0d284_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_JustAnotherNight_d6663e8f_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_JustWhatINeeded_0ce2996b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_KidsWannaRock_c1ffea2d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Layla_e63a72d2_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LetItBe_a581c536_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LinkUp_edab5679_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LiveAidMessage1_2d69e5ba_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LiveAidMessage1_fd3c6e4f_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56_on_8fb392fe> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LivinAfterMidnight_4e135c56_on_d9c19883> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56_on_8fb392fe> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LivingAfterMidnight_4e135c56_on_d9c19883> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LonelyAtTheTop_156cc230_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LongLongWayToGo_4ff594bf_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LoveMakesTheWorldGoRound_5479ad4a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LoveReignOErMe_5fa0efda_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_LoveSomebody_b884a1ca_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Loverboy_558af7ff_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MadisonBlues_2135bbf8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Maneater_b6a526a8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MessageInABottle_3e4b4e90_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MessageOfLove_733e6470_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MickJaggerAndTinaTurnerRehearsals_5a4e9694_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MiddleOfTheRoad_ebe661e5_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MissYou_4ed24c6c_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ModernLove_a1ae373f_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MoneyForNothing_e3536a52_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MtvIntermissionBbcIntermission_9ce09d10_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MtvIntermission_e2f35e5e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Murderess_889583de_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MyGeneration_f800e8ee_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_MyGirl_2144d2ac_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_NacktImWind_234936eb_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_NewAttitude_839ef1c3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_NightOwl_50c2fff9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_NothingIsPerfect_4ee7077f_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_OneSmallDay_6e7eade1_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_OnlyLoveCanBreakYourHeart_be3169b8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_OnlyWhenYouLeave_518df094_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_OpenInvitation_3c2f1252_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_OutOfTouch_cccaefcf_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_OverTheRainbow_9d50a5e3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Overkill_db1cc1d2_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_OzForAfricaLinkOut_6b2fd5cb_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_OzForAfricaLinkUp_be84d0a4_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Paranoid_fd08b596_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_PinballWizard_49f4bb45_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Powderfinger_377962db_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_PrimeraInvasion_3f8669be_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_PromisedYouAMiracle_eb1d4910_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_RadioGaga_40401938_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_RatTrap_3e80d77e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ReachAndTouchSomebodySHand_65653667_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ReachOutILlBeThere_cf659519_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ReapTheWildWind_51237118_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_RebelRebel_a3fd1fde_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Rebels_7b896cb6_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Refugee_f67560d9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Revolution_691fb7d6_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_RightNow_658166c0_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_RockAndRoll_c38a9c1e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_RocketMan_ea6fbaf0_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_RockinAllOverTheWorld_ff3aa159_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_RollWithTheChanges_a86ab6c4_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Roxanne_cbabd27e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SaveAPrayer_4c2713e9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Sensation_db2cf95b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ShakeMeWakeMeWhenItSOver_2ea33e6c_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Shame_55d6af65_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SheSWaiting_7a849b5b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SimpleMindsFeedLostBbcIntermission_7201a832_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1_on_8fb392fe> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SlaveToLove_b31e1ae1_on_d9c19883> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SolidRock_8c3a6e00_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Solid_936fd477_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SouthernCross_a9c4179d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_StageIntermission_c148e598_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_StairwayToHeaven_35ec4330_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_StandUpAndSing_108255cb_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_StateOfShock_a9becd00_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_StateOfTheHeart_65dfffa0_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_StirItUp_e32aea71_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_StopYourSobbing_9282c957_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SugarMountain_c23f61cd_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SuiteJudyBlueEyes_ad8433ec_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SultansOfSwing_9a5b1ff6_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SummerOf69_315af4d0_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SundayBloodySunday_b0ce8594_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_SurfinUsa_df04837c_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TakeItTime_b814544d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TeachYourChildren_e91e1321_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TearsAreNotEnough_d4e824e9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ThatSForTheTearsInYourEyes_454a89c8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ThatSTheWayLoveIs_4f7d61d0_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TheBalladOfHollisBrown_ae1feb90_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TheGreenManalishi_7049eb5c_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TheNeedleAndTheDamageDone_882ef9db_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TheReflex_73ff1d7a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TheRiddle_59101c84_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TheSkyIsCrying_30b104f5_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TheWaiting_eb9d24b9_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TheWayYouDoTheThingsYouDo_2d19e310_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_TimeTheAvenger_c74a5c06_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_True_ca2c82a1_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Tvc15_4ccc6c6b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_U2IntroductionFromJfk_34b8b69a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_UkFinale_e52b59cf_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_UnionOfTheSnake_d1a8cfd3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_UnknownNewsReport_658df5b3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Unknown_32ae9adc_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Unknown_5b8d7f98_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Unknown_d0d61d3a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_UsFinale_f5a06f66_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Vienna_1d8f82e2_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Virgin_4625d665_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_ViveLeRock_e09de3f8_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WallsComeTumblingDown_203a982d_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WallsComeTumblingDown_203a982d_on_9d3527a2> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_Warum_717380bd_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WeAreTheChampions_ab0796fb_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WeAreTheWorld_35a488c3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WeWillRockYou_2f58f9a6_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WelcomingAmerica_b815d586_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WembleyLinkUpToJfk_c7ae20df_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WhatYouNeed_7f30e02a_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WhenTheShipsComesIn_3bfc4b19_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WhiteRoom_6919d285_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WhoDoYouLove_2918fca0_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WholeLottaLove_c24368f1_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WhyCanTIGetItOver_dc308b4b_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WhyCanTWeLiveTogether_0bf0a51e_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WhyISingTheBlues_4b1f43fc_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WideBoy_2e405de3_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WonTGetFooledAgain_e7c6be90_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WouldnTItBeGood_f01b6a95_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_WouldnTItBeNice_de5d8181_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_YouMightThink_62b257d5_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_YouReTheBestThing_85650129_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_YouVeGotAnotherThingComin_b48f9409_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_YourLoveIsKing_a214b8ab_on_8aef762f> a mm:Release .
+
+<http://wembrewind.live/ex#Recording_YuRockMissionForAMillionYears_573da091_on_8aef762f> a mm:Release .
+

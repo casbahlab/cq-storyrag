@@ -1,0 +1,783 @@
+@prefix schema: <http://schema.org/> .
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:MedicalEvent a rdfs:Class ;
+    rdfs:label "Medical Event" ;
+    rdfs:comment "A medical or health-related incident relevant to a music performance or event." ;
+    rdfs:subClassOf schema:Event .
+
+ex:MusicInstrument a rdfs:Class ;
+    rdfs:label "Musical Instrument" ;
+    rdfs:comment "A physical or digital instrument used to perform music." ;
+    rdfs:subClassOf schema:Thing .
+
+ex:150Countries a schema:Place ;
+    rdfs:label "150 Countries" .
+
+ex:AKindOfMagicRecording schema:recordedIn "1986"^^xsd:gYear ;
+    schema:recordingOf ex:AKindOfMagic ;
+    ex:occurredAfter ex:LiveAid1985 ;
+    mm:isCreatedBy ex:Queen .
+
+ex:BBCCameraman a schema:Person ;
+    schema:performer ex:BalletWithFreddieMercury .
+
+ex:Charisma a schema:DefinedTerm ;
+    schema:description "The quality of being compelling and charming." ;
+    schema:name "Charisma" .
+
+ex:CoordinationEvent a schema:Event ;
+    schema:about ex:LiveAid1985 ;
+    schema:subjectOf ex:ArtistSchedules ;
+    ex:relatedFact "The coordination event involved artist schedules" .
+
+ex:CrowdEngagement a schema:DefinedTerm ;
+    schema:description "The performer’s ability to involve and energize the audience." ;
+    schema:name "Crowd Engagement" .
+
+ex:DavidBowieLiveAid1985Performance a mm:LivePerformance ;
+    schema:isPartOf ex:LiveAid1985 ;
+    schema:location ex:WembleyStadium ;
+    mm:isCreatedBy ex:DavidBowie .
+
+ex:David_Bowie a schema:Person .
+
+ex:DoTheyKnowItsChristmas schema:datePublished "1984"^^xsd:gYear ;
+    schema:name "Do They Know It's Christmas?" ;
+    ex:charitySingle true ;
+    ex:isBestSellingIn ex:UnitedKingdom .
+
+ex:EltonJohnPerformance1985 a mm:LivePerformance ;
+    schema:isPartOf ex:LiveAid1985 ;
+    mm:isCreatedBy ex:EltonJohn .
+
+ex:Elton_John a schema:Person .
+
+ex:Energy a schema:DefinedTerm ;
+    schema:description "A lively and dynamic quality of performance." ;
+    schema:name "Energy" .
+
+ex:FamineInEthiopia schema:location ex:Ethiopia ;
+    schema:name "Famine in Ethiopia" .
+
+ex:FreddieMercuryLaryngitisBattle a schema:MedicalCondition ;
+    schema:about ex:FreddieMercury ;
+    schema:associatedMedia ex:Queen_LiveAid1985_Performance .
+
+ex:Fundraising schema:name "Raise funds" .
+
+ex:GlobalBroadcast1985 schema:description "Live global broadcast across multiple countries and networks" .
+
+ex:GlobalBroadcasters rdfs:label "Global Television Broadcasters" .
+
+ex:HumanitarianAid schema:name "Humanitarian Aid" .
+
+ex:LiveAid1985GlobalAudience schema:description "Global television audience across 150 countries." .
+
+ex:LiveAid1985JFK a schema:MusicEvent,
+        schema:Place,
+        schema:StadiumOrArena ;
+    schema:location ex:JFKStadium ;
+    schema:name "Live Aid 1985 - JFK Stadium" ;
+    ex:attendance 89484 .
+
+ex:LiveAid1985Wembley schema:location ex:WembleyStadium ;
+    ex:attendance 72000 ;
+    ex:occurredSimultaneouslyWith ex:LiveAid1985Philadelphia ;
+    ex:usedBroadcastInfrastructure ex:SatelliteNetwork .
+
+ex:LiveAidAudience a schema:Audience .
+
+ex:LiveAidBroadcast a schema:BroadcastEvent ;
+    schema:audience ex:GlobalAudience ;
+    schema:duration "PT16H"^^xsd:duration ;
+    schema:name "Live Aid Global Broadcast" ;
+    schema:spatialCoverage ex:GlobalCoverage ;
+    schema:superEvent ex:LiveAid1985 ;
+    ex:facilitatedBy ex:SatelliteNetwork .
+
+ex:MusicCriticsGroup a schema:Organization .
+
+ex:PhiladelphiaMasterTapes1985 schema:location ex:PhiladelphiaUSA .
+
+ex:QueenLiveAid1985_AyOh a mm:LivePerformance ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    mm:creates ex:AyOh ;
+    mm:isCreatedBy ex:FreddieMercury,
+        ex:Queen .
+
+ex:QueenLiveAid1985_BohemianRhapsody a mm:LivePerformance ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:position 1 ;
+    mm:creates ex:BohemianRhapsody ;
+    mm:isCreatedBy ex:Queen .
+
+ex:QueenLiveAid1985_CrazyLittleThingCalledLove a mm:LivePerformance ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:position 4 ;
+    mm:creates ex:CrazyLittleThingCalledLove ;
+    mm:isCreatedBy ex:Queen .
+
+ex:QueenLiveAid1985_HammerToFall a mm:LivePerformance ;
+    schema:hasPart ex:HammerToFall_CameramanMoment ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:position 3 ;
+    mm:creates ex:HammerToFall ;
+    mm:isCreatedBy ex:FreddieMercury,
+        ex:Queen .
+
+ex:QueenLiveAid1985_RadioGaGa a mm:LivePerformance ;
+    schema:hasPart ex:RadioGaGa_AudienceInteraction ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:position 2 ;
+    mm:creates ex:RadioGaGa ;
+    mm:isCreatedBy ex:FreddieMercury,
+        ex:Queen .
+
+ex:QueenLiveAid1985_WeAreTheChampions a mm:LivePerformance ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:position 6 ;
+    mm:creates ex:WeAreTheChampions ;
+    mm:isCreatedBy ex:Queen .
+
+ex:QueenLiveAid1985_WeWillRockYou a mm:LivePerformance ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:position 5 ;
+    mm:creates ex:WeWillRockYou ;
+    mm:isCreatedBy ex:Queen .
+
+ex:WembleyConcert1985 schema:location ex:WembleyStadium .
+
+ex:WorksTour schema:name "The Works Tour" .
+
+ex:attendance a rdf:Property ;
+    rdfs:label "attendance" ;
+    rdfs:comment "Number of people attending a live event or performance." ;
+    rdfs:domain schema:Event ;
+    rdfs:range xsd:integer .
+
+ex:charitySingle a rdf:Property ;
+    rdfs:label "charity single" ;
+    rdfs:comment "Indicates whether a music release is a charity single." ;
+    rdfs:domain schema:MusicRecording ;
+    rdfs:range xsd:boolean .
+
+ex:debutYear a rdf:Property ;
+    rdfs:label "debut year" ;
+    rdfs:comment "The year in which a musical artist or group first debuted." ;
+    rdfs:domain schema:MusicArtist ;
+    rdfs:range xsd:gYear .
+
+ex:distributedVia a rdf:Property ;
+    rdfs:label "distributed via" ;
+    rdfs:comment "Describes the medium or method through which a broadcast event was distributed, as a literal string." ;
+    rdfs:domain schema:BroadcastEvent ;
+    rdfs:range xsd:string .
+
+ex:earlyMusicInfluence a rdf:Property ;
+    rdfs:label "early music influence" ;
+    rdfs:comment "Links a music artist to a music genre that influenced their early style." ;
+    rdfs:domain mm:MusicArtist ;
+    rdfs:range mm:MusicGenre .
+
+ex:facilitatedBy a rdf:Property,
+        owl:ObjectProperty ;
+    rdfs:label "facilitated by" ;
+    rdfs:comment "Indicates the satellite or broadcast infrastructure that facilitated the transmission of a broadcast event." ;
+    rdfs:domain schema:BroadcastEvent ;
+    rdfs:range schema:Satellite .
+
+ex:hadBroadcast a rdf:Property ;
+    rdfs:domain schema:MusicEvent ;
+    rdfs:range schema:BroadcastEvent .
+
+ex:hasChallenge a rdf:Property ;
+    rdfs:label "has challenge" ;
+    rdfs:comment "Links an event to a challenge it faced, such as logistical or technical issues." ;
+    rdfs:domain schema:Event ;
+    rdfs:range ex:EventChallenge .
+
+ex:hasDebutRelease a rdf:Property ;
+    rdfs:label "has debut release" ;
+    rdfs:comment "Links a music artist to their first release (album or single)." ;
+    rdfs:domain schema:MusicArtist ;
+    rdfs:range schema:MusicRelease .
+
+ex:inspiredEvent a rdf:Property ;
+    rdfs:label "inspired event" ;
+    rdfs:comment "Indicates that an event inspired the creation of another event." ;
+    rdfs:domain schema:Event ;
+    rdfs:range schema:Event .
+
+ex:isBestSellingIn a rdf:Property ;
+    rdfs:label "is best selling in" ;
+    rdfs:comment "Links a music release to the country where it was the best seller." ;
+    rdfs:domain schema:MusicRecording ;
+    rdfs:range schema:Country .
+
+ex:numberOfActs a rdf:Property ;
+    rdfs:label "number of acts" ;
+    rdfs:comment "Number of acts or performances at an event." ;
+    rdfs:domain schema:Event ;
+    rdfs:range schema:Number .
+
+ex:occurredDuring a rdf:Property ;
+    rdfs:label "occurred during" ;
+    rdfs:comment "Indicates that an event occurred during a specific condition or circumstance." ;
+    rdfs:domain schema:Event ;
+    rdfs:range schema:MedicalCondition .
+
+ex:performedAt a rdf:Property ;
+    rdfs:label "performed at" ;
+    rdfs:comment "Indicates that a music artist performed at a specific live event." ;
+    rdfs:domain schema:MusicArtist ;
+    rdfs:range schema:Event .
+
+ex:performedWithInstrument a owl:ObjectProperty ;
+    rdfs:label "performed with instrument" ;
+    rdfs:comment "Links a LivePerformance to a musical instrument used during the performance." ;
+    rdfs:domain mm:LivePerformance ;
+    rdfs:range ex:MusicInstrument ;
+    rdfs:subPropertyOf schema:instrument .
+
+ex:playsInstrument a rdf:Property ;
+    rdfs:label "plays instrument" ;
+    rdfs:comment "Indicates the musical instrument a person plays." ;
+    rdfs:domain schema:Person ;
+    rdfs:range ex:MusicInstrument .
+
+ex:raisedAmount a rdf:Property ;
+    rdfs:label "raised amount" ;
+    rdfs:comment "Total amount of money raised by the event." ;
+    rdfs:domain schema:Event ;
+    rdfs:range schema:MonetaryAmount .
+
+ex:usedBroadcastInfrastructure a rdf:Property ;
+    rdfs:label "used broadcast infrastructure" ;
+    rdfs:comment "Infrastructure used to broadcast the event." ;
+    rdfs:domain schema:BroadcastEvent ;
+    rdfs:range schema:Organization .
+
+ex:wasBroadcastBy a rdf:Property ;
+    rdfs:label "was broadcast by" ;
+    rdfs:comment "The organizations that broadcast the event." ;
+    rdfs:domain schema:BroadcastEvent ;
+    rdfs:range schema:Organization .
+
+ex:wasBroadcastPreserved a rdf:Property ;
+    rdfs:domain schema:BroadcastEvent ;
+    rdfs:range xsd:boolean .
+
+ex:wasBroadcastVia a rdf:Property ;
+    rdfs:label "was broadcast via" ;
+    rdfs:comment "Mediums through which the event was broadcast (radio, TV, satellite, etc.)." ;
+    rdfs:domain schema:BroadcastEvent ;
+    rdfs:range schema:Text .
+
+mm:LondonStage a schema:Place .
+
+ex:AKindOfMagic a schema:MusicAlbum .
+
+ex:ArenaRock a mm:MusicGenre ;
+    schema:name "Arena Rock" .
+
+ex:ArtistSchedules a schema:Schedule ;
+    schema:about ex:LiveAid1985 ;
+    schema:description "Schedules of performing artists for Live Aid 1985" .
+
+ex:BalletWithFreddieMercury a schema:Event ;
+    schema:description "A spontaneous ballet during 'Hammer to Fall' performance involving Freddie Mercury and a BBC cameraman." ;
+    ex:hasAttribute ex:SpontaneousAttribute ;
+    ex:hasStatus ex:VisualHighlight .
+
+ex:BandAidTrust a schema:Organization ;
+    schema:name "Band Aid Trust" .
+
+ex:BobGeldof a schema:Person ;
+    schema:name "Bob Geldof" .
+
+ex:BrianMay a schema:Person,
+        mm:Musician ;
+    schema:memberOf ex:Queen ;
+    schema:name "Brian May" ;
+    schema:startDate "1970"^^xsd:gYear ;
+    ex:playsInstrument ex:ElectricGuitar ;
+    owl:sameAs <http://www.wikidata.org/entity/Q15873> .
+
+ex:ChorusSingalong a schema:Event ;
+    schema:description "Audience sang along with the chorus during Queen's performance at Live Aid 1985." .
+
+ex:ConcertPhiladelphia1985 schema:location ex:PhiladelphiaUSA .
+
+ex:Ethiopia a schema:Country .
+
+ex:FreddieMercuryLaryngitis a schema:MedicalCondition ;
+    schema:affectedBy ex:FreddieMercury ;
+    schema:citation "Contemporary reports and retrospectives note that Mercury had laryngitis during Queen's Live Aid performance." ;
+    schema:description "Freddie Mercury was battling laryngitis during the Live Aid performance." ;
+    schema:endDate "1985-07-14"^^xsd:date ;
+    schema:isBasedOn <https://en.wikipedia.org/wiki/Queen_at_Live_Aid>,
+        <https://www.bbc.co.uk/archive/live-aid/> ;
+    schema:name "Laryngitis" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Laryngitis> ;
+    schema:startDate "1985-07-12"^^xsd:date ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q1194557> .
+
+ex:GlamRock a mm:MusicGenre ;
+    schema:name "Glam Rock" .
+
+ex:GlobalCitizen a schema:MusicEvent ;
+    schema:location ex:NewYorkUSA ;
+    schema:name "Global Citizen Festival" ;
+    schema:startDate "2012-09-29"^^xsd:date .
+
+ex:GlobalCoverage a schema:Place ;
+    schema:name "Global" .
+
+ex:HammerToFall_CameramanMoment a schema:CreativeWork ;
+    schema:description "Freddie Mercury broke into a spontaneous ballet with a BBC cameraman" ;
+    schema:location ex:WembleyStadium .
+
+ex:HammerToFall_VisualMoment a schema:CreativeWork ;
+    schema:about ex:FreddieMercury,
+        ex:HammerToFall ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:name "Spontaneous ballet with BBC cameraman during Hammer to Fall" .
+
+ex:IntelsatSatelliteFleet a schema:Collection ;
+    schema:description "The fleet of Intelsat satellites used for international telecommunications." ;
+    schema:name "Intelsat Satellite Fleet" ;
+    schema:numberOfItems 5 .
+
+ex:JohnDeacon a schema:Person,
+        mm:Musician ;
+    schema:memberOf ex:Queen ;
+    schema:name "John Deacon" ;
+    schema:startDate "1971"^^xsd:gYear ;
+    ex:playsInstrument ex:BassGuitar ;
+    owl:sameAs <http://www.wikidata.org/entity/Q192103> .
+
+ex:Laryngitis a schema:MedicalCondition ;
+    schema:name "Laryngitis" .
+
+ex:LaryngitisDuringLiveAid1985 a ex:MedicalEvent ;
+    schema:isPartOf ex:LiveAid1985_Wembley ;
+    schema:name "Freddie Mercury battling laryngitis during Live Aid 1985" .
+
+ex:Live8 a schema:MusicEvent ;
+    schema:location ex:LondonUK ;
+    schema:name "Live 8" ;
+    schema:startDate "2005-07-02"^^xsd:date .
+
+ex:LiveAid1985BroadcastPhiladelphia a schema:BroadcastEvent ;
+    schema:description "ABC did not preserve the Philadelphia broadcast of Live Aid." ;
+    schema:isPartOf ex:LiveAid1985Broadcast ;
+    schema:location ex:JFKStadium ;
+    schema:provider ex:ABC,
+        ex:MTV ;
+    ex:wasBroadcastPreserved false .
+
+ex:LiveAid1985BroadcastWembley a schema:BroadcastEvent ;
+    schema:description "BBC preserved the Wembley broadcast of Live Aid." ;
+    schema:isPartOf ex:LiveAid1985Broadcast ;
+    schema:location ex:WembleyStadium ;
+    schema:provider ex:BBC ;
+    ex:wasBroadcastPreserved true .
+
+ex:LiveAid1985Philadelphia ex:usedBroadcastInfrastructure ex:SatelliteNetwork .
+
+ex:LiveAid1985_Philadelphia a schema:MusicEvent ;
+    schema:location ex:JFKStadium ;
+    schema:name "Live Aid 1985 - Philadelphia" ;
+    schema:recordedIn ex:LiveAid1985_Philadelphia_Broadcast .
+
+ex:LiveAid1985_Philadelphia_Broadcast schema:provider ex:ABC .
+
+ex:LiveAid1985_Queen_Setlist a schema:ItemList ;
+    schema:itemListElement ex:AyOh,
+        ex:BohemianRhapsody,
+        ex:CrazyLittleThingCalledLove,
+        ex:HammerToFall,
+        ex:RadioGaGa,
+        ex:WeAreTheChampions,
+        ex:WeWillRockYou ;
+    schema:itemListOrder "ItemListOrderAscending" .
+
+ex:LiveAid1985_Wembley_Broadcast schema:provider ex:BBC .
+
+ex:LiveAidAudience1985 a schema:Audience ;
+    schema:audienceType "Live concert audience" ;
+    schema:description "Over 72,000 people attended at Wembley Stadium" ;
+    schema:location ex:WembleyStadium ;
+    ex:participatedIn ex:ChorusSingalong .
+
+ex:Madonna a schema:Person ;
+    schema:name "Madonna" ;
+    ex:debutYear "1982"^^xsd:gYear ;
+    ex:hasDebutRelease ex:MadonnaDebutAlbum ;
+    ex:performedAt ex:LiveAid1985 .
+
+ex:MadonnaDebutAlbum a schema:MusicAlbum,
+        mm:Release ;
+    schema:datePublished "1983-07-27"^^xsd:date ;
+    schema:name "Madonna" ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1744> ;
+    mm:hasPublisher ex:Sire_Records .
+
+ex:MidgeUre a schema:Person ;
+    schema:name "Midge Ure" .
+
+ex:NewYorkUSA a schema:City ;
+    schema:containedInPlace ex:UnitedStatesOfAmerica ;
+    schema:name "New York City" .
+
+ex:OtherCommercialSatelliteFleet a schema:Collection ;
+    schema:description "Commercial satellites operated by various providers, used alongside Intelsat satellites for Live Aid's international broadcast." ;
+    schema:name "Other Commercial Satellite Fleet" ;
+    schema:numberOfItems 8 .
+
+ex:PopRock a mm:MusicGenre ;
+    schema:name "Pop Rock" .
+
+ex:QueenLiveAid1985_RollingStoneReview a schema:Review ;
+    schema:author ex:RollingStone ;
+    schema:datePublished "2013-02-05"^^xsd:date ;
+    schema:itemReviewed ex:Queen_LiveAid1985_Performance ;
+    schema:reviewAspect "Charisma",
+        "Crowd Engagement",
+        "Legacy" ;
+    schema:reviewBody "Queen never sounded better and many critics said they stole the show, even though U2 put up a very good fight." ;
+    schema:url <https://www.rollingstone.com/music/music-news/flashback-queen-steal-the-show-at-live-aid-60831/> .
+
+ex:QueenLiveAid1985_uDiscoverReview a schema:Review ;
+    schema:author ex:uDiscoverMusic ;
+    schema:datePublished "2025-07-13"^^xsd:date ;
+    schema:itemReviewed ex:Queen_LiveAid1985_Performance ;
+    schema:reviewAspect "Iconic Status",
+        "Legendary Impact",
+        "Show‑Stealing Energy" ;
+    schema:reviewBody "The article declares Queen’s Live Aid set the day’s show‑stopping event and ‘one of the greatest live concerts of all time.’" ;
+    schema:url <https://www.udiscovermusic.com/stories/queen-live-aid-concert-performance/> .
+
+ex:RadioGaGa_AudienceInteraction a schema:CreativeWork ;
+    schema:about ex:LiveAid1985_Audience ;
+    schema:description "The audience clapped and sang along with Freddie Mercury's famous 'Radio Ga Ga' gestures." .
+
+ex:RaisedAmount125k a schema:MonetaryAmount ;
+    schema:currency "USD" ;
+    schema:value 100000000.0 .
+
+ex:Rock a mm:MusicGenre ;
+    schema:name "Rock" .
+
+ex:RogerTaylor a schema:Person,
+        mm:Musician ;
+    schema:memberOf ex:Queen ;
+    schema:name "Roger Taylor" ;
+    schema:startDate "1970"^^xsd:gYear ;
+    ex:playsInstrument ex:DrumKit ;
+    owl:sameAs <http://www.wikidata.org/entity/Q15880> .
+
+ex:RollingStone a schema:Organization ;
+    schema:description "Rolling Stone is an American magazine and online publication that covers music, popular culture, politics, and more. It is known for its influential reviews, in-depth artist features, and cultural commentary." ;
+    schema:name "Rolling Stone" ;
+    schema:url <https://www.rollingstone.com/> .
+
+ex:Sire_Records a schema:Organization ;
+    schema:foundingDate "1966-01-01"^^xsd:date ;
+    schema:name "Sire Records" .
+
+ex:SpontaneousAttribute a schema:DefinedTerm ;
+    schema:description "Performed without prior planning or rehearsal." ;
+    schema:name "Spontaneous" .
+
+ex:TheWorks schema:byArtist ex:Queen ;
+    schema:datePublished "1984-02-27"^^xsd:date ;
+    schema:name "The Works" ;
+    ex:occurredBefore ex:LiveAid1985 ;
+    mm:isCreatedBy ex:Queen .
+
+ex:VisualHighlight a schema:DefinedTerm ;
+    schema:description "A memorable and striking moment during a performance." ;
+    schema:name "Visual Highlight" .
+
+ex:uDiscoverMusic a schema:Organization ;
+    schema:description "uDiscoverMusic is a music editorial platform owned by Universal Music Group, publishing artist features, reviews, and music history articles across genres." ;
+    schema:name "uDiscoverMusic" ;
+    schema:url <https://www.udiscovermusic.com/> .
+
+ex:AyOh a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "Ay‑Oh" .
+
+ex:BassGuitar a ex:MusicInstrument ;
+    schema:name "Bass Guitar" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bass_guitar> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q46185> .
+
+ex:BohemianRhapsody a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "musicbrainz" ;
+            schema:value "41c94a08-a551-3c86-bb17-d9a52e3a618b" ] ;
+    schema:name "Bohemian Rhapsody" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Bohemian_Rhapsody> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q187745> .
+
+ex:CrazyLittleThingCalledLove a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "Crazy Little Thing Called Love" .
+
+ex:DavidBowie a schema:Person ;
+    schema:name "David Bowie" ;
+    ex:performedAt ex:LiveAid1985 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q5383> .
+
+ex:DrumKit a ex:MusicInstrument ;
+    schema:name "Drum Kit" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Drum_kit> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q128309> .
+
+ex:ElectricGuitar a ex:MusicInstrument ;
+    schema:name "Electric Guitar" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Electric_guitar> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q78987> .
+
+ex:EltonJohn a schema:Person ;
+    schema:name "Elton John" ;
+    ex:performedAt ex:LiveAid1985 ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2808> .
+
+ex:GlobalAudience a schema:Audience ;
+    schema:audienceType "Worldwide Viewers" ;
+    schema:name "Live Aid 1985 Global Audience" ;
+    ex:countryCount 150 ;
+    ex:viewerCount 1900000000 .
+
+ex:HardRock a mm:MusicGenre ;
+    schema:name "Hard Rock" .
+
+ex:HeavyMetal a mm:MusicGenre ;
+    schema:name "Heavy Metal" .
+
+ex:Piano a ex:MusicInstrument ;
+    schema:name "Piano" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Piano> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q5994> .
+
+ex:ProgressiveRock a mm:MusicGenre ;
+    schema:name "Progressive Rock" .
+
+ex:RadioGaGa a schema:MusicComposition,
+        schema:MusicRecording,
+        mm:MusicEntity ;
+    schema:byArtist ex:Queen ;
+    schema:identifier [ a schema:PropertyValue ;
+            schema:propertyID "musicbrainz" ;
+            schema:value "2c76fe20-59d5-3dd9-93ee-be2107ac977c" ] ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:name "Radio Ga Ga" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Radio_Ga_Ga> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q605031> .
+
+ex:UnitedStatesOfAmerica a schema:Country ;
+    schema:name "United States of America" .
+
+ex:WeAreTheChampions a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "We Are the Champions" .
+
+ex:WeWillRockYou a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "We Will Rock You" .
+
+schema:StadiumOrArena a schema:Place .
+
+ex:HammerToFall a schema:MusicComposition,
+        mm:MusicEntity ;
+    schema:name "Hammer to Fall" .
+
+ex:LiveAid1985Broadcast a schema:BroadcastEvent ;
+    schema:about "Live Aid was broadcast worldwide via television and radio, expanding its global impact." ;
+    schema:audience ex:GlobalAudience ;
+    schema:broadcastOfEvent ex:LiveAid1985 ;
+    schema:description "Global broadcast expanded Live Aid's impact." ;
+    schema:name "Live Aid 1985 Global Broadcast" ;
+    schema:provider ex:ABC,
+        ex:BBC,
+        ex:MTV ;
+    schema:subEvent ex:LiveAid1985BroadcastPhiladelphia,
+        ex:LiveAid1985BroadcastWembley ;
+    ex:distributedVia "Satellite Uplink",
+        "Television Network" ;
+    ex:usedBroadcastInfrastructure ex:SatelliteNetwork .
+
+ex:LiveAid1985_Wembley a schema:MusicEvent ;
+    schema:location ex:WembleyStadium ;
+    schema:name "Live Aid 1985 - Wembley" ;
+    schema:recordedIn ex:LiveAid1985_Wembley_Broadcast ;
+    schema:subEvent ex:Queen_LiveAid1985_Performance .
+
+ex:LondonUK a schema:City ;
+    schema:containedInPlace ex:UnitedKingdom ;
+    schema:name "London" .
+
+ex:MTV a schema:Organization ;
+    schema:name "MTV" .
+
+ex:PhiladelphiaUSA a schema:City ;
+    schema:containedInPlace ex:UnitedStatesOfAmerica ;
+    schema:name "Philadelphia" .
+
+ex:UnitedKingdom a schema:Country ;
+    schema:name "United Kingdom" .
+
+ex:ABC a schema:Organization ;
+    schema:alternateName "ABC" ;
+    schema:name "ABC" .
+
+ex:BBC a schema:Organization ;
+    schema:alternateName "BBC" ;
+    schema:location "London, UK" ;
+    schema:name "BBC" ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q9531> ;
+    ex:archived true ;
+    ex:coverageNote "Broadcasted globally, archived by BBC" .
+
+ex:JFKStadium a schema:MusicVenue,
+        schema:Place,
+        schema:StadiumOrArena ;
+    schema:address "Philadelphia, USA" ;
+    schema:addressLocality "Philadelphia" ;
+    schema:location ex:PhiladelphiaUSA ;
+    schema:name "John F. Kennedy Stadium" .
+
+ex:SatelliteNetwork a schema:Organization ;
+    schema:description "A network of commercial telecommunications satellites including five Intelsat satellites, which were integral to the global broadcast of the 1985 Live Aid concert." ;
+    schema:hasPart ex:IntelsatSatelliteFleet,
+        ex:OtherCommercialSatelliteFleet ;
+    schema:name "Commercial Satellite Network" .
+
+ex:FreddieMercury a schema:Person,
+        mm:Musician ;
+    schema:memberOf ex:Queen ;
+    schema:name "Freddie Mercury" ;
+    schema:startDate "1970"^^xsd:gYear ;
+    ex:battledCondition ex:LaryngitisDuringLiveAid1985 ;
+    ex:experiencedCondition ex:Laryngitis ;
+    ex:performedVisualHighlightDuring ex:HammerToFall_VisualMoment ;
+    ex:playsInstrument ex:Piano ;
+    owl:sameAs <http://www.wikidata.org/entity/Q15869> .
+
+ex:WembleyStadium a schema:MusicVenue,
+        schema:Place,
+        schema:StadiumOrArena ;
+    schema:address "London, UK" ;
+    schema:addressLocality "London" ;
+    schema:location ex:LondonUK ;
+    schema:name "Wembley Stadium" ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Wembley_Stadium> ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q128468> .
+
+ex:LiveAid1985 a schema:MusicEvent ;
+    schema:about "Famine Relief in Ethiopia",
+        "Humanitarian relief" ;
+    schema:description "A benefit concert to raise funds for humanitarian relief efforts.",
+        "Global Broadcast",
+        "Live Aid set the standard for global fundraising concerts and inspired events like Live 8 and Global Citizen." ;
+    schema:duration "PT16H"^^xsd:duration ;
+    schema:isBasedOn <https://en.wikipedia.org/wiki/Live_Aid> ;
+    schema:keywords "Charity",
+        "Ethiopia",
+        "Famine Relief",
+        "Live Aid 1985" ;
+    schema:location ex:JFKStadium,
+        ex:WembleyStadium ;
+    schema:name "Live Aid 1985" ;
+    schema:organizer ex:BandAidTrust,
+        ex:BobGeldof,
+        ex:MidgeUre ;
+    schema:performer ex:DavidBowie,
+        ex:EltonJohn,
+        ex:Madonna,
+        ex:Queen ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Live_Aid>,
+        <https://www.wikidata.org/entity/Q18058> ;
+    schema:startDate "1985-07-13"^^xsd:date ;
+    schema:subEvent ex:ConcertPhiladelphia1985,
+        ex:LiveAid1985_Philadelphia,
+        ex:LiveAid1985_Wembley ;
+    ex:hadBroadcast ex:LiveAid1985Broadcast ;
+    ex:hasChallenge "Managing venues, schedules, and live broadcast posed logistical challenges.",
+        "The coordination event presented technical challenges" ;
+    ex:inspiredEvent ex:GlobalCitizen,
+        ex:Live8 ;
+    ex:numberOfActs 60 ;
+    ex:raisedAmount ex:RaisedAmount125k ;
+    ex:usedBroadcastInfrastructure ex:SatelliteNetwork ;
+    ex:wasBroadcastBy ex:ABC,
+        ex:BBC,
+        ex:MTV ;
+    ex:wasBroadcastVia "Radio",
+        "Satellite",
+        "TelevisionNetwork" ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q193740> .
+
+ex:Queen_LiveAid1985_Performance a mm:LivePerformance ;
+    schema:audience ex:LiveAidAudience1985 ;
+    schema:comment "Fans praised Freddie Mercury's energy, vocal power, and audience engagement.",
+        "The crowd participated enthusiastically, especially during 'Radio Ga Ga' and 'Ay‑Oh'." ;
+    schema:description "Widely regarded as one of the most iconic live performances in rock history due to Freddie Mercury's showmanship and audience engagement." ;
+    schema:duration "PT21M"^^xsd:duration ;
+    schema:isBasedOn <https://en.wikipedia.org/wiki/Live_Aid>,
+        <https://en.wikipedia.org/wiki/Queen_at_Live_Aid> ;
+    schema:isPartOf ex:LiveAid1985 ;
+    schema:location ex:WembleyStadium ;
+    schema:name "Queen's Live Aid Performance" ;
+    schema:review ex:QueenLiveAid1985_RollingStoneReview,
+        ex:QueenLiveAid1985_uDiscoverReview ;
+    schema:startDate "1985-07-13T18:41:00"^^xsd:dateTime ;
+    ex:isIconic true ;
+    ex:occurredDuring ex:FreddieMercuryLaryngitis ;
+    ex:performedWithInstrument ex:BassGuitar,
+        ex:DrumKit,
+        ex:ElectricGuitar,
+        ex:Piano ;
+    mm:creates ex:LiveAid1985_Queen_Setlist ;
+    mm:isCreatedBy ex:Queen .
+
+ex:Queen a schema:MusicGroup,
+        mm:MusicArtist ;
+    schema:foundingDate "1970"^^xsd:gYear ;
+    schema:foundingLocation ex:LondonUK ;
+    schema:genre ex:Rock ;
+    schema:isBasedOn <https://en.wikipedia.org/wiki/Queen_(band)> ;
+    schema:member ex:BrianMay,
+        ex:FreddieMercury,
+        ex:JohnDeacon,
+        ex:RogerTaylor ;
+    schema:name "Queen" ;
+    schema:nationality ex:UnitedKingdom ;
+    schema:sameAs <https://en.wikipedia.org/wiki/Queen_(band)>,
+        <https://www.wikidata.org/entity/Q17737> ;
+    ex:earlyMusicInfluence ex:HardRock,
+        ex:HeavyMetal,
+        ex:ProgressiveRock ;
+    ex:performedAt ex:LiveAid1985,
+        ex:LiveAid1985_Wembley ;
+    owl:sameAs <http://www.wikidata.org/entity/Q15862>,
+        <https://www.wikidata.org/wiki/Q15862> ;
+    mm:creates ex:TheWorks ;
+    mm:hasGenre ex:ArenaRock,
+        ex:GlamRock,
+        ex:HardRock,
+        ex:HeavyMetal,
+        ex:PopRock,
+        ex:ProgressiveRock .
+

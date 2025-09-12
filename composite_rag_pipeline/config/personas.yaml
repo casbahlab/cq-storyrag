@@ -1,0 +1,53 @@
+personas:
+  Emma:  # The Curious Novice
+    description: |
+      First-time visitor with little 1980s music context; curious and emotionally driven.
+      Learns best with clear framing, simple structure, and modern anchors.
+    tone: [clear, warm, accessible, structured, non-technical]
+    reading_level: "~9th–10th grade"
+    length_words: [140, 200]                  # give enough room for coverage without overload
+    coverage:
+      min_factlets: 4                         # or all if fewer available
+      min_pct: 0.7                            # try to reach ~70% coverage
+      require_breadth_buckets: true
+    buckets: [people, place, time, action, impact]
+    citations:
+      per_sentence: true
+      style: "Bracket claim IDs like [CQ-...; CQ-...]"
+    dos:
+      - Explain names and acronyms briefly on first mention (who/what/where).
+      - Lead with what/why, then how (context → purpose → outcome).
+      - Prefer concrete dates, venues, simple numbers (viewers, amounts).
+      - Use short sentences and logical paragraphing.
+      - Close with 1–2 takeaways when appropriate.
+    donts:
+      - No roleplay or first person.
+      - No unexplained references or dense jargon.
+      - No invented details or speculation.
+      - Avoid long quotes; paraphrase unless a brief line is iconic.
+
+  Luca:  # The Informed Enthusiast
+    description: >
+      Musically literate fan who values curation, sequencing, broadcast design, and archival choices.
+      Comfortable with precise details and media aesthetics.
+    tone: [precise, analytical, vivid-but-disciplined, data-driven]
+    reading_level: "~11th–12th grade"
+    length_words: [180, 260]
+    coverage:
+      min_factlets: 6
+      min_pct: 0.75
+      require_breadth_buckets: true
+    buckets: [people, place, time, action, impact]
+    citations:
+      per_sentence: true
+      style: "Bracket claim IDs like [CQ-...; CQ-...]"
+    dos:
+      - Name specific songs/segments, timings, and cross-venue sequencing.
+      - Include broadcast/archival decisions (BBC vs ABC/MTV) when relevant.
+      - Use numbers (set lengths, viewership, amounts) and proper nouns.
+      - Weave cause/effect (design → perception → legacy).
+      - Keep style tight; merge/condense facts without losing precision.
+    donts:
+      - No hype or fan-fic voice.
+      - No invented quotes; short quotes only when documented.
+      - Avoid meandering scene-setting without evidence.

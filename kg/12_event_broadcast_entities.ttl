@@ -1,0 +1,182 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+ex:CoordinationEvent a schema:Event ;
+    schema:about ex:LiveAid1985 ;
+    schema:subjectOf ex:ArtistSchedules ;
+    ex:relatedFact "The coordination event involved artist schedules" .
+
+ex:CrowdEngagement a schema:DefinedTerm ;
+    schema:description "The performer’s ability to involve and energize the audience." ;
+    schema:name "Crowd Engagement" .
+
+ex:Energy a schema:DefinedTerm ;
+    schema:description "A lively and dynamic quality of performance." ;
+    schema:name "Energy" .
+
+ex:IntelsatSatelliteFleet a schema:Collection ;
+    schema:description "The fleet of Intelsat satellites used for international telecommunications." ;
+    schema:name "Intelsat Satellite Fleet" ;
+    schema:numberOfItems 5 .
+
+ex:LaryngitisDuringLiveAid1985 a ex:MedicalEvent ;
+    schema:isPartOf ex:LiveAid1985_Wembley ;
+    schema:name "Freddie Mercury battling laryngitis during Live Aid 1985" .
+
+ex:LiveAid1985JFK a schema:MusicEvent,
+        schema:Place,
+        schema:StadiumOrArena ;
+    schema:location ex:JFKStadium ;
+    schema:name "Live Aid 1985 - JFK Stadium" ;
+    ex:attendance 89484 .
+
+ex:LiveAidBroadcast a schema:BroadcastEvent ;
+    schema:audience ex:GlobalAudience ;
+    schema:duration "PT16H"^^xsd:duration ;
+    schema:name "Live Aid Global Broadcast" ;
+    schema:spatialCoverage ex:GlobalCoverage ;
+    schema:superEvent ex:LiveAid1985 ;
+    ex:facilitatedBy ex:SatelliteNetwork .
+
+ex:OtherCommercialSatelliteFleet a schema:Collection ;
+    schema:description "Commercial satellites operated by various providers, used alongside Intelsat satellites for Live Aid's international broadcast." ;
+    schema:name "Other Commercial Satellite Fleet" ;
+    schema:numberOfItems 8 .
+
+ex:ArtistSchedules a schema:Schedule ;
+    schema:about ex:LiveAid1985 ;
+    schema:description "Schedules of performing artists for Live Aid 1985" .
+
+ex:GlobalCitizen a schema:MusicEvent ;
+    schema:location ex:NewYorkUSA ;
+    schema:name "Global Citizen Festival" ;
+    schema:startDate "2012-09-29"^^xsd:date .
+
+ex:Live8 a schema:MusicEvent ;
+    schema:location ex:LondonUK ;
+    schema:name "Live 8" ;
+    schema:startDate "2005-07-02"^^xsd:date .
+
+ex:LiveAid1985BroadcastPhiladelphia a schema:BroadcastEvent ;
+    schema:description "ABC did not preserve the Philadelphia broadcast of Live Aid." ;
+    schema:isPartOf ex:LiveAid1985Broadcast ;
+    schema:location ex:JFKStadium ;
+    schema:provider ex:ABC,
+        ex:MTV ;
+    ex:wasBroadcastPreserved false .
+
+ex:LiveAid1985BroadcastWembley a schema:BroadcastEvent ;
+    schema:description "BBC preserved the Wembley broadcast of Live Aid." ;
+    schema:isPartOf ex:LiveAid1985Broadcast ;
+    schema:location ex:WembleyStadium ;
+    schema:provider ex:BBC ;
+    ex:wasBroadcastPreserved true .
+
+ex:LiveAid1985_Philadelphia a schema:MusicEvent ;
+    owl:sameAs <https://musicbrainz.org/event/08657c50-71c6-4a3d-b7c4-3db6efbf07fd>, <https://www.wikidata.org/wiki/Q193740> ;
+    schema:location ex:JFKStadium ;
+    schema:name "Live Aid 1985 - Philadelphia" ;
+    schema:recordedIn ex:LiveAid1985_Philadelphia_Broadcast .
+
+# Total (GBP)
+ex:LiveAid1985_Raised_GBP_Total a schema:MonetaryAmount ;
+  schema:currency "GBP" ;
+  schema:value "150000000"^^xsd:decimal ;
+  schema:description "Estimated total raised (GBP)." ;
+  schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Fundraising> .
+
+# Day-of (GBP)
+ex:LiveAid1985_Raised_GBP_DayOf a schema:MonetaryAmount ;
+  schema:currency "GBP" ;
+  schema:value "45000000"^^xsd:decimal ;  # midpoint of £40–50m band
+  schema:description "Estimated raised on the day (GBP), midpoint of reported £40–£50m range." ;
+  schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Fundraising> .
+
+# Total (USD)
+ex:LiveAid1985_Raised_USD_Total a schema:MonetaryAmount ;
+  schema:currency "USD" ;
+  schema:value "127000000"^^xsd:decimal ;
+  schema:description "Estimated total raised (USD)." ;
+  schema:citation <https://en.wikipedia.org/wiki/Live_Aid#Fundraising> .
+
+ex:SpontaneousAttribute a schema:DefinedTerm ;
+    schema:description "Performed without prior planning or rehearsal." ;
+    schema:name "Spontaneous" .
+
+ex:VisualHighlight a schema:DefinedTerm ;
+    schema:description "A memorable and striking moment during a performance." ;
+    schema:name "Visual Highlight" .
+
+ex:LiveAid1985_Wembley a schema:MusicEvent ;
+    owl:sameAs <https://musicbrainz.org/event/08657c50-71c6-4a3d-b7c4-3db6efbf07fd> , <https://www.wikidata.org/wiki/Q193740> ;
+    schema:location ex:WembleyStadium ;
+    schema:name "Live Aid 1985 - Wembley" ;
+    schema:recordedIn ex:LiveAid1985_Wembley_Broadcast ;
+    schema:subEvent ex:Queen_LiveAid1985_Performance .
+
+ex:LiveAid1985Broadcast a schema:BroadcastEvent ;
+    schema:about "Live Aid was broadcast worldwide via television and radio, expanding its global impact." ;
+    schema:audience ex:GlobalAudience ;
+    schema:broadcastOfEvent ex:LiveAid1985 ;
+    schema:description "Global broadcast expanded Live Aid's impact." ;
+    schema:name "Live Aid 1985 Global Broadcast" ;
+    schema:provider ex:ABC,
+        ex:BBC,
+        ex:MTV ;
+    schema:subEvent ex:LiveAid1985BroadcastPhiladelphia,
+        ex:LiveAid1985BroadcastWembley ;
+    ex:distributedVia "Satellite Uplink",
+        "Television Network" ;
+    ex:usedBroadcastInfrastructure ex:SatelliteNetwork .
+
+ex:LiveAid1985 a schema:MusicEvent ;
+    owl:sameAs <https://www.wikidata.org/wiki/Q193740> , <https://musicbrainz.org/event/8e0ff16a-757f-4e16-9877-4c4131621a8b>, <https://en.wikipedia.org/wiki/Live_Aid> ;
+    schema:about "Famine Relief in Ethiopia",
+        "Humanitarian relief" ;
+    schema:description "A benefit concert to raise funds for humanitarian relief efforts.",
+        "Global Broadcast",
+        "Live Aid set the standard for global fundraising concerts and inspired events like Live 8 and Global Citizen." ;
+    schema:duration "PT16H"^^xsd:duration ;
+    schema:keywords "Charity",
+        "Ethiopia",
+        "Famine Relief",
+        "Live Aid 1985" ;
+    schema:location ex:JFKStadium,
+        ex:WembleyStadium ;
+    schema:name "Live Aid 1985" ;
+    schema:organizer ex:BandAidTrust,
+        ex:BobGeldof,
+        ex:MidgeUre ;
+    schema:performer ex:DavidBowie,
+        ex:EltonJohn,
+        ex:Madonna,
+        ex:Queen ;
+    schema:sameAs <https://www.wikidata.org/entity/Q18058> ;
+    schema:startDate "1985-07-13"^^xsd:date ;
+    schema:subEvent ex:ConcertPhiladelphia1985,
+        ex:LiveAid1985_Philadelphia,
+        ex:LiveAid1985_Wembley ;
+    ex:hadBroadcast ex:LiveAid1985Broadcast ;
+    ex:hasChallenge "The concert was organised in just 12 weeks."@en ;
+    ex:hasChallenge "Some artists, including Queen, were announced as confirmed before they had agreed to perform."@en ;
+    ex:hasChallenge "Criticism from The Voice for allegedly excluding black British artists; several prominent black American artists declined to participate."@en ;
+    ex:hasChallenge "Dire Straits had to rush from Live Aid to a separate concert at Wembley Arena on the same day."@en ;
+    ex:hasChallenge "Phil Collins performed at both Wembley and Philadelphia using the Concorde, but faced technical and performance issues with Led Zeppelin."@en ;
+    ex:hasChallenge "During the Moscow broadcast, audio played correctly but visuals initially showed a cherry harvest documentary instead of the band Autograph."@en ;
+    ex:hasChallenge "Bands performed without sound checks, leading to problems like U2 nearly pulling out and Paul McCartney starting with no sound in the stadium."@en ;
+    ex:inspiredEvent ex:GlobalCitizen,
+        ex:Live8 ;
+    ex:numberOfActs 60 ;
+    ex:raisedAmount ex:LiveAid1985_Raised_GBP_Total ,
+                               ex:LiveAid1985_Raised_GBP_DayOf ,
+                               ex:LiveAid1985_Raised_USD_Total ;
+    ex:usedBroadcastInfrastructure ex:SatelliteNetwork ;
+    ex:wasBroadcastBy ex:ABC,
+        ex:BBC,
+        ex:MTV ;
+    ex:wasBroadcastVia "Radio",
+        "Satellite",
+        "TelevisionNetwork" .
+

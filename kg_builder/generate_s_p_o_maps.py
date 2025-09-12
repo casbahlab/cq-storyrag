@@ -29,7 +29,6 @@ def get_prefixed_ontology_maps(ontology_graph: Graph):
     subclass_map = defaultdict(set)
     class_restrictions = defaultdict(set)
 
-    # Step 1: Direct domain/range property mapping
     for s, p, o in ontology_graph.triples((None, RDF.type, RDF.Property)):
         for domain in ontology_graph.objects(subject=s, predicate=RDFS.domain):
             subject_predicate_map[apply_prefix(str(domain))].add(str(s))  # key prefixed, value full URI
@@ -39,18 +38,15 @@ def get_prefixed_ontology_maps(ontology_graph: Graph):
                 predicate_object_map[pred_key] = set()
             predicate_object_map[pred_key].add(str(range_))  # value full URI
 
-    # Step 2: Subclass mapping
     for subclass, _, superclass in ontology_graph.triples((None, RDFS.subClassOf, None)):
         if isinstance(superclass, URIRef):
             subclass_map[apply_prefix(str(subclass))].add(apply_prefix(str(superclass)))
 
-    # Step 3: Restriction-based property capture
     for class_uri, _, restriction in ontology_graph.triples((None, RDFS.subClassOf, None)):
         if (restriction, RDF.type, OWL.Restriction) in ontology_graph:
             for prop in ontology_graph.objects(restriction, OWL.onProperty):
                 class_restrictions[apply_prefix(str(class_uri))].add(str(prop))  # full URI as value
 
-    # Step 4: Inherited properties recursively
     def get_all_properties(cls, memo={}):
         if cls in memo:
             return memo[cls]
@@ -60,7 +56,6 @@ def get_prefixed_ontology_maps(ontology_graph: Graph):
         memo[cls] = props
         return props
 
-    # Step 5: Final expanded property map
     full_class_properties = {}
     all_classes = set(subject_predicate_map.keys()) | set(class_restrictions.keys()) | set(subclass_map.keys())
     for cls in all_classes:

@@ -1,0 +1,601 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+
+ex:AcousticRock a mm:MusicGenre ;
+    rdfs:label "acoustic rock" ;
+    schema:name "acoustic rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q65936391>,
+        <https://musicbrainz.org/genre/00055e8b-b951-46e2-af1e-58b5624e7952> .
+
+ex:AlternativeDance a mm:MusicGenre ;
+    rdfs:label "alternative dance" ;
+    schema:name "alternative dance" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2187392>,
+        <https://musicbrainz.org/genre/8301f73c-9166-4108-bfeb-4fd22dc19083> .
+
+ex:AlternativeRock a mm:MusicGenre ;
+    rdfs:label "alternative rock" ;
+    schema:name "alternative rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q11366>,
+        <https://musicbrainz.org/genre/ceeaa283-5d7b-4202-8d1d-e25d116b2a18> .
+
+ex:AmbientDub a mm:MusicGenre ;
+    rdfs:label "ambient dub" ;
+    schema:name "ambient dub" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q3613770>,
+        <https://musicbrainz.org/genre/9c143ab1-1506-4134-ba40-1660fbad7f51> .
+
+ex:Americana a mm:MusicGenre ;
+    rdfs:label "Americana" ;
+    schema:name "Americana" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2407862>,
+        <https://musicbrainz.org/genre/2c765e49-a12e-45eb-b628-f8b9cc0a0250> .
+
+ex:ArenaRock a mm:MusicGenre ;
+    rdfs:label "arena rock" ;
+    schema:name "arena rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q379033>,
+        <https://musicbrainz.org/genre/26af3760-750a-4b5e-a699-78c87697585a> .
+
+ex:ArtPop a mm:MusicGenre ;
+    rdfs:label "art pop" ;
+    schema:name "art pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q25094849>,
+        <https://musicbrainz.org/genre/930ef127-3653-4677-9b95-ecc90c7c1a14> .
+
+ex:ArtPunk a mm:MusicGenre ;
+    rdfs:label "art punk" ;
+    schema:name "art punk" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q659599>,
+        <https://musicbrainz.org/genre/6e105daf-c06d-431e-8e33-1b8da3e48f7e> .
+
+ex:ArtRock a mm:MusicGenre ;
+    rdfs:label "art rock" ;
+    schema:name "art rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q217467>,
+        <https://musicbrainz.org/genre/b7ef058e-6d83-4ca4-8123-9724bff4648b> .
+
+ex:BaroquePop a mm:MusicGenre ;
+    rdfs:label "baroque pop" ;
+    schema:name "baroque pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q46046>,
+        <https://musicbrainz.org/genre/150eb95a-7739-4fde-a5fe-b62ca576a928> .
+
+ex:BlueEyedSoul a mm:MusicGenre ;
+    rdfs:label "blue-eyed soul" ;
+    schema:name "blue-eyed soul" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q885561>,
+        <https://musicbrainz.org/genre/650bda08-20ca-4012-b873-3b68c5768bdf> .
+
+ex:Blues a mm:MusicGenre ;
+    rdfs:label "blues" ;
+    schema:name "blues" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q9759>,
+        <https://musicbrainz.org/genre/fe12b346-a10e-450f-bf81-fa20894b5ea2> .
+
+ex:BluesRock a mm:MusicGenre ;
+    rdfs:label "blues rock" ;
+    schema:name "blues rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q193355>,
+        <https://musicbrainz.org/genre/58e325d5-54fd-4e98-b39a-3aa6bc319273> .
+
+ex:BoogieRock a mm:MusicGenre ;
+    rdfs:label "boogie rock" ;
+    schema:name "boogie rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2266376>,
+        <https://musicbrainz.org/genre/f07bf7f4-1b55-42ea-8c4d-9906fce84cdf> .
+
+ex:ClassicRock a mm:MusicGenre ;
+    rdfs:label "classic rock" ;
+    schema:name "classic rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q56351111>,
+        <https://musicbrainz.org/genre/93244085-20e5-4f16-9067-1d19143b3810> .
+
+ex:ContemporaryJazz a mm:MusicGenre ;
+    rdfs:label "contemporary jazz" ;
+    schema:name "contemporary jazz" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q5928480>,
+        <https://musicbrainz.org/genre/e2b06d21-13df-4a48-aa81-6ddd99344dc7> .
+
+ex:ContemporaryRB a mm:MusicGenre ;
+    rdfs:label "contemporary R&B" ;
+    schema:name "contemporary R&B" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q850412>,
+        <https://musicbrainz.org/genre/4bb4043a-0ee5-4b84-93fa-6ba4567a6ba0> .
+
+ex:CountryPop a mm:MusicGenre ;
+    rdfs:label "country pop" ;
+    schema:name "country pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2280497>,
+        <https://musicbrainz.org/genre/2de61e9c-de1d-47c8-999d-5b44c0cfeca1> .
+
+ex:CountryRock a mm:MusicGenre ;
+    rdfs:label "country rock" ;
+    schema:name "country rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q613408>,
+        <https://musicbrainz.org/genre/fb07b1e3-411d-4146-a0d6-3479c0e7557b> .
+
+ex:CrossoverProg a mm:MusicGenre ;
+    rdfs:label "crossover prog" ;
+    schema:name "crossover prog" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q65937817>,
+        <https://musicbrainz.org/genre/eee90717-3eee-41bd-b463-003c180544bd> .
+
+ex:DancePop a mm:MusicGenre ;
+    rdfs:label "dance-pop" ;
+    schema:name "dance-pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q211756>,
+        <https://musicbrainz.org/genre/b739a895-85ed-4ad3-8717-4e9ef5387dd8> .
+
+ex:DanceRock a mm:MusicGenre ;
+    rdfs:label "dance-rock" ;
+    schema:name "dance-rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2281409>,
+        <https://musicbrainz.org/genre/2c473395-9cd5-465d-8d85-c308de067c04> .
+
+ex:Disco a mm:MusicGenre ;
+    rdfs:label "disco" ;
+    schema:name "disco" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q58339>,
+        <https://musicbrainz.org/genre/a04d680b-b5c5-4f6a-87a3-f9f1ff98e3ea> .
+
+ex:DoomMetal a mm:MusicGenre ;
+    rdfs:label "doom metal" ;
+    schema:name "doom metal" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q186170>,
+        <https://musicbrainz.org/genre/db815815-60fe-44a3-9859-2232df479dc9> .
+
+ex:Downtempo a mm:MusicGenre ;
+    rdfs:label "downtempo" ;
+    schema:name "downtempo" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q251192>,
+        <https://musicbrainz.org/genre/cc38aba3-48ed-439a-83b9-f81a34a66598> .
+
+ex:EastCoastHipHop a mm:MusicGenre ;
+    rdfs:label "East Coast hip-hop" ;
+    schema:name "East Coast hip-hop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q876171>,
+        <https://musicbrainz.org/genre/1bafab01-c092-47bc-84ee-a6b503b3cb86> .
+
+ex:EasyListening a mm:MusicGenre ;
+    rdfs:label "easy listening" ;
+    schema:name "easy listening" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q848399>,
+        <https://musicbrainz.org/genre/ca06817d-8622-4120-b49d-96921c8bb767> .
+
+ex:ElectricBlues a mm:MusicGenre ;
+    rdfs:label "electric blues" ;
+    schema:name "electric blues" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q640097>,
+        <https://musicbrainz.org/genre/8164d906-055d-4ca8-9ab2-14204b301cc3> .
+
+ex:Electro a mm:MusicGenre ;
+    rdfs:label "electro" ;
+    schema:name "electro" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q217597>,
+        <https://musicbrainz.org/genre/60f00d05-df4d-496e-8f5a-c45c03a56ad4> .
+
+ex:Electronica a mm:MusicGenre ;
+    rdfs:label "electronica" ;
+    schema:name "electronica" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q817138>,
+        <https://musicbrainz.org/genre/53a3cea3-17af-4421-a07a-5824b540aeb5> .
+
+ex:Electropop a mm:MusicGenre ;
+    rdfs:label "electropop" ;
+    schema:name "electropop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q188450>,
+        <https://musicbrainz.org/genre/3f3388b4-e36a-4bf8-a0be-66b10d92aaa4> .
+
+ex:FolkPop a mm:MusicGenre ;
+    rdfs:label "folk-pop" ;
+    schema:name "folk-pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q11700058>,
+        <https://musicbrainz.org/genre/abb2374f-30e5-4d3e-b417-2caf78ef1f6c> .
+
+ex:FolkRock a mm:MusicGenre ;
+    rdfs:label "folk rock" ;
+    schema:name "folk rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q186472>,
+        <https://musicbrainz.org/genre/445dc48f-5233-4b4f-987f-867ff9ade836> .
+
+ex:Freakbeat a mm:MusicGenre ;
+    rdfs:label "freakbeat" ;
+    schema:name "freakbeat" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2607836>,
+        <https://musicbrainz.org/genre/1fb25dfa-0c71-4ecb-9ae8-560474d9413b> .
+
+ex:Funk a mm:MusicGenre ;
+    rdfs:label "funk" ;
+    schema:name "funk" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q164444>,
+        <https://musicbrainz.org/genre/fe4ba6a1-9873-4fd0-a12b-a70c81818514> .
+
+ex:GlamRock a mm:MusicGenre ;
+    rdfs:label "glam rock" ;
+    schema:name "glam rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q76092>,
+        <https://musicbrainz.org/genre/54d89e62-5bfb-42bc-a321-9230e6fdcd75> .
+
+ex:HardBop a mm:MusicGenre ;
+    rdfs:label "hard bop" ;
+    schema:name "hard bop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q181010>,
+        <https://musicbrainz.org/genre/8c083468-2dce-4a31-ae77-433af3deafd3> .
+
+ex:HardRock a mm:MusicGenre ;
+    rdfs:label "hard rock" ;
+    schema:name "hard rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q83270>,
+        <https://musicbrainz.org/genre/51cb9f91-e6a2-41bf-891f-e78e3f1e52ab> .
+
+ex:HardcoreHipHop a mm:MusicGenre ;
+    rdfs:label "hardcore hip-hop" ;
+    schema:name "hardcore hip-hop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q966564>,
+        <https://musicbrainz.org/genre/12b013ff-cf03-4fa0-8e1b-c9b7f5d27f90> .
+
+ex:HeartlandRock a mm:MusicGenre ;
+    rdfs:label "heartland rock" ;
+    schema:name "heartland rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q747717>,
+        <https://musicbrainz.org/genre/52856ec0-9f9b-45f4-ab09-1bb8cc0a98e4> .
+
+ex:HeavyMetal a mm:MusicGenre ;
+    rdfs:label "heavy metal" ;
+    schema:name "heavy metal" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q38848>,
+        <https://musicbrainz.org/genre/a6719055-99c4-47eb-beaa-71081f2376f9> .
+
+ex:HipHop a mm:MusicGenre ;
+    rdfs:label "hip-hop" ;
+    schema:name "hip-hop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q11401>,
+        <https://musicbrainz.org/genre/52faa157-6bad-4d86-a0ab-d4dec7d2513c> .
+
+ex:JanglePop a mm:MusicGenre ;
+    rdfs:label "jangle pop" ;
+    schema:name "jangle pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q1190565>,
+        <https://musicbrainz.org/genre/6c207307-cac0-43cf-be8f-e2dde68a92f1> .
+
+ex:Jazz a mm:MusicGenre ;
+    rdfs:label "jazz" ;
+    schema:name "jazz" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q8341>,
+        <https://musicbrainz.org/genre/a715278f-1580-409f-8078-4ffbc800e08b> .
+
+ex:JazzFusion a mm:MusicGenre ;
+    rdfs:label "jazz fusion" ;
+    schema:name "jazz fusion" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q105527>,
+        <https://musicbrainz.org/genre/2377ff19-83e7-4873-b425-dce6d1ad4ef4> .
+
+ex:JazzPop a mm:MusicGenre ;
+    rdfs:label "jazz pop" ;
+    schema:name "jazz pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2104067>,
+        <https://musicbrainz.org/genre/c88a8b97-ba4b-4d45-916f-4c4a779ccd89> .
+
+ex:JazzRock a mm:MusicGenre ;
+    rdfs:label "jazz rock" ;
+    schema:name "jazz rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q944465>,
+        <https://musicbrainz.org/genre/5eea976c-1ab2-4d94-9b63-7d1297d5dba5> .
+
+ex:LatinRock a mm:MusicGenre ;
+    rdfs:label "Latin rock" ;
+    schema:name "Latin rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q185162>,
+        <https://musicbrainz.org/genre/b07b5eec-c7f0-4529-a876-e0dd6b350084> .
+
+ex:Mod a mm:MusicGenre ;
+    rdfs:label "mod" ;
+    schema:name "mod" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q98528293>,
+        <https://musicbrainz.org/genre/f5ce6b81-b277-4a23-ba23-2e1e2a7e51ac> .
+
+ex:Motown a mm:MusicGenre ;
+    rdfs:label "Motown" ;
+    schema:name "Motown" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q9078960>,
+        <https://musicbrainz.org/genre/0c44a04f-f7ba-46a0-9dbe-1a21359cfa1e> .
+
+ex:NewJackSwing a mm:MusicGenre ;
+    rdfs:label "new jack swing" ;
+    schema:name "new jack swing" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q840065>,
+        <https://musicbrainz.org/genre/dd497eac-e915-49a9-b1e4-482792acf397> .
+
+ex:NewRomantic a mm:MusicGenre ;
+    rdfs:label "New Romantic" ;
+    schema:name "New Romantic" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q597240>,
+        <https://musicbrainz.org/genre/391a797d-50d7-46df-b380-39ccacd52a09> .
+
+ex:NewWave a mm:MusicGenre ;
+    rdfs:label "new wave" ;
+    schema:name "new wave" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q187760>,
+        <https://musicbrainz.org/genre/56407f9d-3398-4bf3-bbbd-ea372fa5adeb> .
+
+ex:OldSchoolHipHop a mm:MusicGenre ;
+    rdfs:label "old-school hip-hop" ;
+    schema:name "old-school hip-hop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q868855>,
+        <https://musicbrainz.org/genre/4a28dad3-1224-4b9b-bd4b-e03e03791856> .
+
+ex:PianoRock a mm:MusicGenre ;
+    rdfs:label "piano rock" ;
+    schema:name "piano rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2090023>,
+        <https://musicbrainz.org/genre/34cd43be-4711-4e77-a25c-c6d6a4bf3cb4> .
+
+ex:PopRock a mm:MusicGenre ;
+    rdfs:label "pop rock" ;
+    schema:name "pop rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q484641>,
+        <https://musicbrainz.org/genre/797e2e85-5ffd-495c-a757-8b4079052f0e> .
+
+ex:PopSoul a mm:MusicGenre ;
+    rdfs:label "pop soul" ;
+    schema:name "pop soul" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q11700065>,
+        <https://musicbrainz.org/genre/64e0bd76-822f-4549-a6fe-9858561282d1> .
+
+ex:PostPunk a mm:MusicGenre ;
+    rdfs:label "post-punk" ;
+    schema:name "post-punk" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q598929>,
+        <https://musicbrainz.org/genre/f6d8cadd-6a5e-4ec9-9c2b-996b5332a639> .
+
+ex:PowerPop a mm:MusicGenre ;
+    rdfs:label "power pop" ;
+    schema:name "power pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q837837>,
+        <https://musicbrainz.org/genre/618704fc-daac-44a2-92c9-89e3b1a2fc8c> .
+
+ex:ProgressivePop a mm:MusicGenre ;
+    rdfs:label "progressive pop" ;
+    schema:name "progressive pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q3397882>,
+        <https://musicbrainz.org/genre/489ebed8-1299-4761-ba0b-29d381085f82> .
+
+ex:ProgressiveRock a mm:MusicGenre ;
+    rdfs:label "progressive rock" ;
+    schema:name "progressive rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q49451>,
+        <https://musicbrainz.org/genre/ae9b8279-3959-48d8-8a88-741a7f6d4a48> .
+
+ex:PsychedelicPop a mm:MusicGenre ;
+    rdfs:label "psychedelic pop" ;
+    schema:name "psychedelic pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q383982>,
+        <https://musicbrainz.org/genre/2aeb5340-c474-4677-b9a6-35ddac9b6a58> .
+
+ex:PsychedelicRock a mm:MusicGenre ;
+    rdfs:label "psychedelic rock" ;
+    schema:name "psychedelic rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q206159>,
+        <https://musicbrainz.org/genre/146ef761-5ad9-48b4-b0b3-483104f7da48> .
+
+ex:PubRock a mm:MusicGenre ;
+    rdfs:label "pub rock" ;
+    schema:name "pub rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q1431327>,
+        <https://musicbrainz.org/genre/86c3d53d-c9db-44a2-930c-d3145cbf7b7b> .
+
+ex:PunkRock a mm:MusicGenre ;
+    rdfs:label "punk rock" ;
+    schema:name "punk rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q3071>,
+        <https://musicbrainz.org/genre/bd7e1d40-43b1-4ba5-97b3-05b891466962> .
+
+ex:QuietStorm a mm:MusicGenre ;
+    rdfs:label "quiet storm" ;
+    schema:name "quiet storm" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2746831>,
+        <https://musicbrainz.org/genre/27b1c4a7-07f9-4dee-9362-b16530b5c73a> .
+
+ex:RapRock a mm:MusicGenre ;
+    rdfs:label "rap rock" ;
+    schema:name "rap rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q877693>,
+        <https://musicbrainz.org/genre/b4b184b7-6224-478e-a273-f9da9ee30136> .
+
+ex:RockAndRoll a mm:MusicGenre ;
+    rdfs:label "rock and roll" ;
+    schema:name "rock and roll" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q7749>,
+        <https://musicbrainz.org/genre/e4581b76-a842-440b-9b0f-1aa7a00a5c57> .
+
+ex:RockMusic a mm:MusicGenre ;
+    rdfs:label "rock music" ;
+    schema:name "rock music" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q11399>,
+        <https://musicbrainz.org/genre/0e3fc579-2d24-4f20-9dae-736e1ec78798> .
+
+ex:RockOpera a mm:MusicGenre ;
+    rdfs:label "rock opera" ;
+    schema:name "rock opera" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q253137>,
+        <https://musicbrainz.org/genre/baaf713d-1e4e-459e-a058-60d89ce1f9df> .
+
+ex:RootsRock a mm:MusicGenre ;
+    rdfs:label "roots rock" ;
+    schema:name "roots rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q1929352>,
+        <https://musicbrainz.org/genre/883d75d5-1365-46ee-8cbe-d3ae2facdd93> .
+
+ex:SmoothJazz a mm:MusicGenre ;
+    rdfs:label "smooth jazz" ;
+    schema:name "smooth jazz" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q831354>,
+        <https://musicbrainz.org/genre/a1f1dcc8-6078-4c12-90b7-47e3080e330c> .
+
+ex:SmoothSoul a mm:MusicGenre ;
+    rdfs:label "smooth soul" ;
+    schema:name "smooth soul" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q3963051>,
+        <https://musicbrainz.org/genre/d4eafdc7-1a86-422b-b598-79e6bb81745c> .
+
+ex:SoftRock a mm:MusicGenre ;
+    rdfs:label "soft rock" ;
+    schema:name "soft rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q217191>,
+        <https://musicbrainz.org/genre/7d0c6a6b-5d56-4b1e-a8c7-e32194f246b9> .
+
+ex:SophistiPop a mm:MusicGenre ;
+    rdfs:label "sophisti-pop" ;
+    schema:name "sophisti-pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q264289>,
+        <https://musicbrainz.org/genre/d13290c7-581a-4aa7-85ad-450b35261bf8> .
+
+ex:Soul a mm:MusicGenre ;
+    rdfs:label "soul" ;
+    schema:name "soul" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q131272>,
+        <https://musicbrainz.org/genre/1b5e7b16-336b-473e-a364-5120413a9827> .
+
+ex:SouthernRock a mm:MusicGenre ;
+    rdfs:label "southern rock" ;
+    schema:name "southern rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q852767>,
+        <https://musicbrainz.org/genre/905c1899-3027-4d29-8d9c-bbeef2c8628a> .
+
+ex:SunshinePop a mm:MusicGenre ;
+    rdfs:label "sunshine pop" ;
+    schema:name "sunshine pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q2461933>,
+        <https://musicbrainz.org/genre/68b80b55-c919-4258-ac7a-55fb6c927ed9> .
+
+ex:SurfRock a mm:MusicGenre ;
+    rdfs:label "surf rock" ;
+    schema:name "surf rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q106581470>,
+        <https://musicbrainz.org/genre/b76ee78d-ec97-49e9-8ea6-cfc46ecc3b23> .
+
+ex:SymphonicRock a mm:MusicGenre ;
+    rdfs:label "symphonic rock" ;
+    schema:name "symphonic rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q719927>,
+        <https://musicbrainz.org/genre/f729e6f8-30dc-4b81-9ff4-f4e7de82225d> .
+
+ex:SynthPop a mm:MusicGenre ;
+    rdfs:label "synth-pop" ;
+    schema:name "synth-pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q1298934>,
+        <https://musicbrainz.org/genre/988e91a3-3341-416d-b7f8-7dbef6848dac> .
+
+ex:TraditionalDoomMetal a mm:MusicGenre ;
+    rdfs:label "traditional doom metal" ;
+    schema:name "traditional doom metal" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q108979517>,
+        <https://musicbrainz.org/genre/5f2ae224-81de-4dfa-82ec-672c321c4e58> .
+
+ex:TraditionalPop a mm:MusicGenre ;
+    rdfs:label "traditional pop" ;
+    schema:name "traditional pop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q1196752>,
+        <https://musicbrainz.org/genre/70c145aa-fed6-4b20-9d75-48b2c3b208f2> .
+
+ex:TripHop a mm:MusicGenre ;
+    rdfs:label "trip hop" ;
+    schema:name "trip hop" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q205560>,
+        <https://musicbrainz.org/genre/45eb1d9c-588c-4dc8-9394-a14b7c8f02bc> .
+
+ex:YachtRock a mm:MusicGenre ;
+    rdfs:label "yacht rock" ;
+    schema:name "yacht rock" ;
+    
+    owl:sameAs <http://www.wikidata.org/entity/Q28401124>,
+        <https://musicbrainz.org/genre/6d39ad19-fbd6-407b-baf3-ad6ad46a5518> .
+

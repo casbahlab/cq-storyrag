@@ -1,0 +1,154 @@
+{
+  "Emma": {
+    "Short": [
+      {
+        "step": 0,
+        "beat": "Introduction"
+      },
+      {
+        "step": 1,
+        "beat": "Context Setup"
+      },
+      {
+        "step": 2,
+        "beat": "Performance Detail"
+      },
+      {
+        "step": 3,
+        "beat": "Legacy & Reflection"
+      }
+    ],
+    "Medium": [
+      {
+        "step": 0,
+        "beat": "Introduction"
+      },
+      {
+        "step": 1,
+        "beat": "Context Setup"
+      },
+      {
+        "step": 2,
+        "beat": "Audience Interaction"
+      },
+      {
+        "step": 3,
+        "beat": "Performance Detail"
+      },
+      {
+        "step": 4,
+        "beat": "Cultural Impact"
+      },
+      {
+        "step": 5,
+        "beat": "Legacy & Reflection"
+      }
+    ],
+    "Long": [
+      {
+        "step": 0,
+        "beat": "Introduction"
+      },
+      {
+        "step": 1,
+        "beat": "Context Setup"
+      },
+      {
+        "step": 2,
+        "beat": "Performance Detail"
+      },
+      {
+        "step": 3,
+        "beat": "Audience Interaction"
+      },
+      {
+        "step": 4,
+        "beat": "Cultural Impact"
+      },
+      {
+        "step": 5,
+        "beat": "Behind the Scenes"
+      },
+      {
+        "step": 6,
+        "beat": "Legacy & Reflection"
+      }
+    ]
+  },
+  "Luca": {
+    "Short": [
+      {
+        "step": 0,
+        "beat": "Introduction"
+      },
+      {
+        "step": 1,
+        "beat": "Historical Hook"
+      },
+      {
+        "step": 2,
+        "beat": "Performance Detail"
+      },
+      {
+        "step": 3,
+        "beat": "Legacy & Reflection"
+      }
+    ],
+    "Medium": [
+      {
+        "step": 0,
+        "beat": "Introduction"
+      },
+      {
+        "step": 1,
+        "beat": "Historical Hook"
+      },
+      {
+        "step": 2,
+        "beat": "Performance Detail"
+      },
+      {
+        "step": 3,
+        "beat": "Cultural Impact"
+      },
+      {
+        "step": 4,
+        "beat": "Behind the Scenes"
+      },
+      {
+        "step": 5,
+        "beat": "Legacy & Reflection"
+      }
+    ],
+    "Long": [
+      {
+        "step": 0,
+        "beat": "Introduction"
+      },
+      {
+        "step": 1,
+        "beat": "Historical Hook"
+      },
+      {
+        "step": 2,
+        "beat": "Performance Detail"
+      },
+      {
+        "step": 3,
+        "beat": "Cultural Impact"
+      },
+      {
+        "step": 4,
+        "beat": "Behind the Scenes"
+      },
+      {
+        "step": 5,
+        "beat": "Audience Interaction"
+      },
+      {
+        "step": 6,
+        "beat": "Legacy & Reflection"
+      }
+    ]
+  }
+}

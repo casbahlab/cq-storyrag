@@ -1,0 +1,86 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:RollingStone a schema:Organization ;
+    schema:description "Rolling Stone is an American magazine and online publication that covers music, popular culture, politics, and more. It is known for its influential reviews, in-depth artist features, and cultural commentary." ;
+    schema:name "Rolling Stone" ;
+    schema:url <https://www.rollingstone.com/> .
+
+ex:uDiscoverMusic a schema:Organization ;
+    schema:description "uDiscoverMusic is a music editorial platform owned by Universal Music Group, publishing artist features, reviews, and music history articles across genres." ;
+    schema:name "uDiscoverMusic" ;
+    schema:url <https://www.udiscovermusic.com/> .
+
+ex:CNN a schema:Organization ;
+    schema:description "CNN (Cable News Network) is a multinational news-based television channel and digital media platform headquartered in Atlanta, Georgia. It provides global news coverage, in-depth features, and multimedia storytelling, including cultural and historical retrospectives." ;
+    schema:name "CNN" ;
+    schema:url <https://www.cnn.com/> ;
+    schema:alternateName "Cable News Network" ;
+    schema:location "Atlanta, Georgia, USA" ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q48340> .
+
+ex:Wikipedia a schema:Organization ;
+    schema:description "Wikipedia is a free, collaboratively edited online encyclopedia maintained by the non-profit Wikimedia Foundation. It offers articles across millions of topics, including detailed cultural and historical records." ;
+    schema:name "Wikipedia" ;
+    schema:url <https://www.wikipedia.org/> ;
+    schema:alternateName "Wiki" ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q52> .
+
+ex:BBC a schema:Organization ;
+    schema:alternateName "BBC" ;
+    schema:location "London, UK" ;
+    schema:name "BBC" ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q9531> ;
+    ex:archived true ;
+    ex:coverageNote "Broadcasted globally, archived by BBC" .
+
+ex:QueenLiveAid1985_RollingStoneReview a schema:Review ;
+    schema:author ex:RollingStone ;
+    schema:datePublished "2013-02-05"^^xsd:date ;
+    schema:itemReviewed ex:Queen_LiveAid1985_Performance ;
+    schema:reviewAspect "Charisma",
+        "Crowd Engagement",
+        "Legacy" ;
+    schema:reviewBody "Queen never sounded better and many critics said they stole the show, even though U2 put up a very good fight." ;
+    schema:url <https://www.rollingstone.com/music/music-news/flashback-queen-steal-the-show-at-live-aid-60831/> .
+
+ex:QueenLiveAid1985_uDiscoverReview a schema:Review ;
+    schema:author ex:uDiscoverMusic ;
+    schema:datePublished "2025-07-13"^^xsd:date ;
+    schema:itemReviewed ex:Queen_LiveAid1985_Performance ;
+    schema:reviewAspect "Iconic Status",
+        "Legendary Impact",
+        "Show‑Stealing Energy" ;
+    schema:reviewBody "The article declares Queen’s Live Aid set the day’s show‑stopping event and ‘one of the greatest live concerts of all time.’" ;
+    schema:url <https://www.udiscovermusic.com/stories/queen-live-aid-concert-performance/> .
+
+# CNN (photo essay + commentary)
+ex:QueenLiveAid1985_CNNReview a schema:Review ;
+    schema:author ex:CNN ;
+    schema:datePublished "2018-11-01"^^xsd:date ;
+    schema:itemReviewed ex:Queen_LiveAid1985_Performance ;
+    schema:reviewAspect "Show-Stealing", "Charisma", "Crowd Engagement" ;
+    schema:reviewBody "CNN framed Queen’s Live Aid set as the moment they ‘stole the show’, citing precision, charisma, and unmatched audience connection." ;
+    schema:url <https://edition.cnn.com/interactive/2018/11/opinions/queen-live-aid-cnnphotos/> .
+
+# BBC (retrospective / reactions)
+ex:QueenLiveAid1985_BBCReview a schema:Review ;
+    schema:author ex:BBC ;
+    schema:datePublished "2025-07-10"^^xsd:date ;
+    schema:itemReviewed ex:Queen_LiveAid1985_Performance ;
+    schema:reviewAspect "Audience Reaction", "Cultural Impact", "Legacy" ;
+    schema:reviewBody "BBC retrospectives highlight the crowd’s electrifying call-and-response led by Mercury and the performance’s enduring reputation as Live Aid’s pinnacle." ;
+    schema:url <https://www.bbc.co.uk/news/articles/cvg10nqqeego> .
+
+# Wikipedia (Legacy section)
+ex:QueenLiveAid1985_WikiLegacyReview a schema:Review ;
+    schema:author ex:Wikipedia ;
+    schema:datePublished "2024-01-01"^^xsd:date ;  # use page snapshot date if you track it
+    schema:itemReviewed ex:Queen_LiveAid1985_Performance ;
+    schema:reviewAspect "Legacy", "Critical Consensus", "Historical Standing" ;
+    schema:reviewBody "The Live Aid article’s Legacy section frequently cites Queen’s set as one of the greatest live performances in rock history and a defining moment of the concert." ;
+    schema:url <https://en.wikipedia.org/wiki/Live_Aid#Legacy> .
+
+
+

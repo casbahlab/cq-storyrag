@@ -33,7 +33,6 @@ for prefix, ns in g.namespaces():
     schema_graph.bind(prefix, ns)
     instance_graph.bind(prefix, ns)
 
-# Step 1: Identify schema triples
 schema_triples = set()
 instance_triples = set()
 
@@ -64,7 +63,6 @@ for s, p, o in g:
     instance_triples.add((s, p, o))
     schema_predicates.add(p)
 
-# Step 2: Populate graphs
 for t in schema_triples:
     schema_graph.add(t)
 for t in instance_triples:

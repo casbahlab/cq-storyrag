@@ -1,0 +1,26 @@
+planner:
+  cq_metadata_path: data/WembleyRewindCQs_with_beats_trimmed.json
+  persona: Emma
+  length: Medium
+  total_limit: 6
+  seed: 42
+
+retriever:
+  require_sparql: true
+  per_item_sample: 5
+  timeout_s: 10
+  enrich_urls: true
+  fetch_url_content: true
+  url_timeout_s: 5
+  max_urls_per_item: 5
+  content_max_bytes: 250000
+  content_max_chars: 5000
+
+generator:
+#  mode: ollama
+  mode: gemini
+  temperature: 0.4
+  gemini_model: gemini-2.5-flash
+  evidence_max_docs: 18
+  evidence_max_chars_per_doc: 4000
+  include_executed_query: true

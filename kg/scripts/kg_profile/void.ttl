@@ -1,0 +1,10 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://wembrewind.live/ex/dataset/liveaid> a void:Dataset ;
+    dcterms:title "KG Profiled Dataset" ;
+    void:classes 40 ;
+    void:properties 109 ;
+    void:triples 20344 .
+

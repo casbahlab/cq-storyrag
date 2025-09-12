@@ -1,0 +1,50 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:GlobalCoverage a schema:Place ;
+    schema:name "Global" .
+
+ex:LiveAid1985JFK a schema:MusicEvent,
+        schema:Place,
+        schema:StadiumOrArena ;
+    schema:location ex:JFKStadium ;
+    schema:name "Live Aid 1985 - JFK Stadium" ;
+    ex:attendance 89484 .
+
+ex:NewYorkUSA a schema:City ;
+    schema:containedInPlace ex:UnitedStatesOfAmerica ;
+    schema:name "New York City" .
+
+ex:WembleyStadium a schema:MusicVenue,
+        schema:Place,
+        schema:StadiumOrArena ;
+    schema:address "London, UK" ;
+    schema:addressLocality "London" ;
+    schema:location ex:LondonUK ;
+    schema:name "Wembley Stadium" .
+
+ex:JFKStadium a schema:MusicVenue,
+        schema:Place,
+        schema:StadiumOrArena ;
+    schema:address "Philadelphia, USA" ;
+    schema:addressLocality "Philadelphia" ;
+    schema:location ex:PhiladelphiaUSA ;
+    schema:name "John F. Kennedy Stadium" .
+
+ex:LondonUK a schema:City ;
+    schema:containedInPlace ex:UnitedKingdom ;
+    schema:name "London" .
+
+ex:PhiladelphiaUSA a schema:City ;
+    schema:containedInPlace ex:UnitedStatesOfAmerica ;
+    schema:name "Philadelphia" .
+
+ex:UnitedKingdom a schema:Country ;
+    schema:name "United Kingdom" .
+
+ex:UnitedStatesOfAmerica a schema:Country ;
+    schema:name "United States of America" .
+

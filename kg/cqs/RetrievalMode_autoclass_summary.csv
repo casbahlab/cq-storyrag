@@ -1,0 +1,65 @@
+CQ_ID,Refactored CQ,RetrievalMode_prev,RetrievalMode
+CQ-E1,What kind of event was [Event]?,KG,KG
+CQ-E2,Why was [Event] organized?,KG,KG
+CQ-E3,Which [MusicGroup] performed at [Event] held at [Venue]?,KG,KG
+CQ-E4,Which [MusicGroup] performed during [Event]?,KG,KG
+CQ-E5,Which city or country hosted [Event]?,KG,KG
+CQ-E6,Which venue hosted [Event]?,KG,KG
+CQ-E7,What role did television and media coverage play in [Event]?,KG,Hybrid
+CQ-E8,Who organized [Event]?,KG,KG
+CQ-E9,Which performance at [Event] is considered iconic?,KG,Both
+CQ-E10,Which song did [MusicGroup] perform at [Event]?,KG,Both
+CQ-E11,When did [SingleArtist] debut?,KG,Both
+CQ-E12,When was [MusicGroup] formed?,KG,Hybrid
+CQ-E13,Who were the members of [MusicGroup]?,KG,Hybrid
+CQ-E14,Who were the solo artists that performed at [Event]?,KG,Both
+CQ-E15,What genre are associated with [MusicGroup]?,KG,Hybrid
+CQ-E16,What enabled the global broadcast of [Event]?,KG,Hybrid
+CQ-E17,What were the challenges in organizing [Event]?,KG,Hybrid
+CQ-E18,How did [Event] influence future benefit concerts?,KG,Hybrid
+CQ-E19,What were the reactions of the audience or media to [MusicGroup]’s performance at [Event]?,KG,Both
+CQ-E20,How much money was raised by [Event]?,KG,Hybrid
+CQ-E21,Which organization archived the broadcast of [Event]?,KG,Hybrid
+CQ-E22,Which organization failed to archive the broadcast of [Event]?,KG,Hybrid
+CQ-E23,What is the preservation status of [Event] broadcasts at [Venue]?,KG,Both
+CQ-E24,Why is [MusicGroup]’s performance at [Event] considered iconic?,KG,Both
+CQ-E27,What creative milestones defined [MusicGroup]’s career before and after [Event]?,KG,Hybrid
+CQ-L1,What type of event was [Event]?,KG,KG
+CQ-L2,How commercially successful was the Band Aid single 'Do They Know It's Christmas?' in the UK?,KG,KG
+CQ-L3,Who were the organizers of [Event]?,KG,KG
+CQ-L4,What were the locations that hosted [Event]?,KG,KG
+CQ-L5,What was the attendance at each venue of [Event]?,KG,KG
+CQ-L6,How many satellites were used during [Event]’s broadcast?,KG,KG
+CQ-L7,What was the global TV audience size for [Event]?,KG,KG
+CQ-L8,When did [Event] take place?,KG,KG
+CQ-L9,Who founded [Event]?,KG,KG
+CQ-L10,What was [MusicGroup]’s full setlist at [Event]?,KG,Both
+CQ-L11,Which [MusicGroup] song was the third in their [Event] setlist,KG,Both
+CQ-L12,What visual moment involving performer occurred during [MusicGroup]’s performance of [Song] during [Event]?,KG,Both
+CQ-L13,What audience interaction occurred during [MusicGroup]’s performance of [Song] at [Event]?,KG,Both
+CQ-L14,Who were the founding members of [MusicGroup]?,KG,Hybrid
+CQ-L15,What genre influenced [MusicGroup]’s early music?,KG,Hybrid
+CQ-L16,How did [MusicGroup]’s musical style evolve over time?,KG,Both
+CQ-L17,What genre did [MusicGroup] incorporate later in their career?,KG,Hybrid
+CQ-L18,Why is [MusicGroup]’s [Event] performance considered iconic?,KG,Both
+CQ-L19,What was the average length of [Event]?,KG,Hybrid
+CQ-L20,How many viewers watched [Event] globally?,KG,Hybrid
+CQ-L21,What facilitated the simultaneous global broadcast of [Event]?,KG,Hybrid
+CQ-L22,How were performance scheduled across the venues during [Event]?,KG,Both
+CQ-L23,What songs were performed by [MusicGroup] at [Venue]?,KG,Both
+CQ-L24,Which organization preserved the broadcast of [Event]?,KG,Hybrid
+CQ-L25,Which organization deleted the broadcast of [Event]?,KG,Hybrid
+CQ-L26,What was the total amount raised by [Event]?,KG,Hybrid
+CQ-L27,Did [Event] serve as a model for subsequent charitable music events?,KG,Hybrid
+CQ-E28,What instruments were used in [Event]?,KG,KG
+CQ-L28,Which instruments did [MusicArtist] play during [Event]?,KG,KG
+CQ-L29,Did [MusicArtist] have a health condition during [Event] at [Venue]?,KG,Both
+CQ-H-AF1,What are some notable facts about the music artist {artist}?,Hybrid,KG
+CQ-H-SF1,What are some notable facts about the song {song}?,KG,KG
+CQ-H-GS1,What are the lyrics to the song {song}?,KG,Both
+CQ-H-SF2,What Songfacts pages exist for songs performed by {artist} at Live Aid?,KG,Both
+CQ-H-GS2,Show the Genius lyrics pages for songs performed by {artist} at Live Aid.,KG,Both
+CQ-LA1,What was Live Aid and why was it organised?,KG,KG
+CQ-LA2,How was Live Aid broadcast and what was its global audience reach?,KG,KG
+CQ-LA3,How much money did Live Aid raise and how were donations collected?,KG,KG
+CQ-LA4,How was Live Aid organised and by whom?,KG,KG

@@ -1,0 +1,31 @@
+retrieval:
+  k_hops: 3           # was 2
+  max_nodes: 600      # was ~300
+  community: "label_propagation"
+  edge_types_include:
+    - involvesMusicEnsemble
+    - involvesMemberOfMusicEnsemble
+    - member
+    - isOriginalMember
+    - recordingOf
+    - startDate
+    - hasPart
+    - inAlbum
+    - location
+
+planning:
+  mode: "communities"
+  num_sections: 6
+  expand:
+    enable: true
+    top_neighbours_per_section: 8
+    extra_facts_per_section: 80
+    summary_append_lines: 25
+    spawn_new_sections: true     # optionally create new sections from frontier nodes
+    spawn_sections_max: 2
+
+generation:
+  beat_sentences: 6               # more verbose sections
+  max_context_chars: 8000
+  max_triples: 500
+  max_facts: 350

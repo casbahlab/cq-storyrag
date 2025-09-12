@@ -1,0 +1,260 @@
+@prefix schema1: <http://schema.org/> .
+
+<http://wembrewind.live/ex#Work_AViewToAKill_f9b82c4a_2> schema1:sameAs <https://genius.com/Duran-Duran-A-View-TO-A-Kill-lyrics> .
+
+<http://wembrewind.live/ex#Work_AgainstAllOddsTakeALookAtMeNow_277700f9_2> schema1:sameAs <https://genius.com/Phil-Collins-Against-ALL-Odds-Take-A-Look-AT-ME-NOW-lyrics> .
+
+<http://wembrewind.live/ex#Work_AllYouZombies_ca255d52_2> schema1:sameAs <https://genius.com/THE-Hooters-ALL-YOU-Zombies-lyrics> .
+
+<http://wembrewind.live/ex#Work_AmazingGrace_a5393197> schema1:sameAs <https://genius.com/Joan-Baez-Amazing-Grace-lyrics> .
+
+<http://wembrewind.live/ex#Work_AndWeDanced_55e8031f> schema1:sameAs <https://genius.com/THE-Hooters-AND-WE-Danced-lyrics> .
+
+<http://wembrewind.live/ex#Work_BackOnTheChainGang_31d4aa2c> schema1:sameAs <https://genius.com/Pretenders-Back-ON-THE-Chain-Gang-lyrics> .
+
+<http://wembrewind.live/ex#Work_Bad_62d0a051> schema1:sameAs <https://genius.com/U2-BAD-lyrics> .
+
+<http://wembrewind.live/ex#Work_BalladOfHollisBrown_5ed18d5c> schema1:sameAs <https://genius.com/BOB-Dylan-Ballad-OF-Hollis-Brown-lyrics> .
+
+<http://wembrewind.live/ex#Work_BennieAndTheJets_6ef8fb46_2> schema1:sameAs <https://genius.com/Elton-John-Bennie-AND-THE-Jets-lyrics> .
+
+<http://wembrewind.live/ex#Work_Bernadette_78a776b8_2> schema1:sameAs <https://genius.com/Four-Tops-Bernadette-lyrics> .
+
+<http://wembrewind.live/ex#Work_BlowinInTheWind_f5a12d42> schema1:sameAs <https://genius.com/BOB-Dylan-Blowin-IN-THE-Wind-lyrics> .
+
+<http://wembrewind.live/ex#Work_BohemianRhapsody_41c94a08> schema1:sameAs <https://genius.com/Queen-Bohemian-Rhapsody-lyrics> .
+
+<http://wembrewind.live/ex#Work_BoysAndGirls_4af8cc8e_2> schema1:sameAs <https://genius.com/Bryan-Ferry-Boys-AND-Girls-lyrics> .
+
+<http://wembrewind.live/ex#Work_Brotherhood_92d118d8_2> schema1:sameAs <https://genius.com/Santana-Brotherhood-lyrics> .
+
+<http://wembrewind.live/ex#Work_CaliforniaGirls_9c56c803> schema1:sameAs <https://genius.com/THE-Beach-Boys-California-Girls-lyrics> .
+
+<http://wembrewind.live/ex#Work_CanTFightThisFeeling_4b497a42_2> schema1:sameAs <https://genius.com/REO-Speedwagon-Cant-Fight-This-Feeling-lyrics> .
+
+<http://wembrewind.live/ex#Work_Caroline_c758c89e_2> schema1:sameAs <https://genius.com/Status-QUO-Caroline-lyrics> .
+
+<http://wembrewind.live/ex#Work_ChildrenOfTheGrave_08b8087b> schema1:sameAs <https://genius.com/Black-Sabbath-Children-OF-THE-Grave-lyrics> .
+
+<http://wembrewind.live/ex#Work_ComeBackAndStay_ad4e5fd6_2> schema1:sameAs <https://genius.com/Paul-Young-Come-Back-AND-Stay-lyrics> .
+
+<http://wembrewind.live/ex#Work_CrazyLittleThingCalledLove_dad1c2a9> schema1:sameAs <https://genius.com/Queen-Crazy-Little-Thing-Called-Love-lyrics> .
+
+<http://wembrewind.live/ex#Work_CutsLikeAKnife_aa289c4d> schema1:sameAs <https://genius.com/Bryan-Adams-Cuts-Like-A-Knife-lyrics> .
+
+<http://wembrewind.live/ex#Work_DancingWithTearsInMyEyes_a88ba41e_2> schema1:sameAs <https://genius.com/Ultravox-Dancing-With-Tears-IN-MY-Eyes-lyrics> .
+
+<http://wembrewind.live/ex#Work_DonQuixote_7e7b9a3f> schema1:sameAs <https://genius.com/NIK-Kershaw-DON-Quixote-lyrics> .
+
+<http://wembrewind.live/ex#Work_DonTLetTheSunGoDownOnMe_75ed39fe> schema1:sameAs <https://genius.com/Elton-John-Dont-LET-THE-SUN-GO-Down-ON-ME-lyrics> .
+
+<http://wembrewind.live/ex#Work_DonTWasteMyTime_8ac35dd3> schema1:sameAs <https://genius.com/Status-QUO-Dont-Waste-MY-Time-lyrics> .
+
+<http://wembrewind.live/ex#Work_DonTYouForgetAboutMe_4694f742> schema1:sameAs <https://genius.com/Simple-Minds-Dont-YOU-Forget-About-ME-lyrics> .
+
+<http://wembrewind.live/ex#Work_DragMeDown_3024d565_2> schema1:sameAs <https://genius.com/THE-Boomtown-Rats-Drag-ME-Down-lyrics> .
+
+<http://wembrewind.live/ex#Work_Drive_4cbcd04d_2> schema1:sameAs <https://genius.com/THE-Cars-Drive-lyrics> .
+
+<http://wembrewind.live/ex#Work_DrivenToTears_d7c50a9a> schema1:sameAs <https://genius.com/Sting-Driven-TO-Tears-lyrics> .
+
+<http://wembrewind.live/ex#Work_EverytimeYouGoAway_677d42d6_2> schema1:sameAs <https://genius.com/Paul-Young-Everytime-YOU-GO-Away-lyrics> .
+
+<http://wembrewind.live/ex#Work_Footloose_fee797bd> schema1:sameAs <https://genius.com/Kenny-Loggins-Footloose-lyrics> .
+
+<http://wembrewind.live/ex#Work_GetItOn_29ff18d1_2> schema1:sameAs <https://genius.com/THE-Power-Station-GET-IT-ON-lyrics> .
+
+<http://wembrewind.live/ex#Work_Ghostdancing_84c1a403_2> schema1:sameAs <https://genius.com/Simple-Minds-Ghostdancing-lyrics> .
+
+<http://wembrewind.live/ex#Work_GoodVibrations_ede10e9a> schema1:sameAs <https://genius.com/THE-Beach-Boys-Good-Vibrations-lyrics> .
+
+<http://wembrewind.live/ex#Work_HammerToFall_1e807fa4_2> schema1:sameAs <https://genius.com/Queen-Hammer-TO-Fall-lyrics> .
+
+<http://wembrewind.live/ex#Work_HeartbeatCity_75dc9fbb_2> schema1:sameAs <https://genius.com/THE-Cars-Heartbeat-City-lyrics> .
+
+<http://wembrewind.live/ex#Work_HelpMeRhonda_21404af0> schema1:sameAs <https://genius.com/THE-Beach-Boys-Help-ME-Rhonda-lyrics> .
+
+<http://wembrewind.live/ex#Work_Helpless_295f4446_2> schema1:sameAs <https://genius.com/Neil-Young-Helpless-lyrics> .
+
+<http://wembrewind.live/ex#Work_Heroes_e2b01286> schema1:sameAs <https://genius.com/David-Bowie-Heroes-lyrics> .
+
+<http://wembrewind.live/ex#Work_HideAndSeek_1a1cf738> schema1:sameAs <https://genius.com/Howard-Jones-Hide-AND-Seek-lyrics> .
+
+<http://wembrewind.live/ex#Work_HoldMeNow_d77e1b17> schema1:sameAs <https://genius.com/Thompson-Twins-Hold-ME-NOW-lyrics> .
+
+<http://wembrewind.live/ex#Work_Holiday_1c03c879> schema1:sameAs <https://genius.com/Madonna-Holiday-lyrics> .
+
+<http://wembrewind.live/ex#Work_HumanTouch_f9c6ee89> schema1:sameAs <https://genius.com/Rick-Springfield-Human-Touch-lyrics> .
+
+<http://wembrewind.live/ex#Work_ICanTHelpMyselfSugarPieHoneyBunch_209a62bf> schema1:sameAs <https://genius.com/Four-Tops-I-Cant-Help-Myself-Sugar-PIE-Honey-Bunch-lyrics> .
+
+<http://wembrewind.live/ex#Work_IDonTLikeMondays_d998a80c> schema1:sameAs <https://genius.com/THE-Boomtown-Rats-I-Dont-Like-Mondays-lyrics> .
+
+<http://wembrewind.live/ex#Work_IMStillStanding_4ae45d33> schema1:sameAs <https://genius.com/Elton-John-IM-Still-Standing-lyrics> .
+
+<http://wembrewind.live/ex#Work_InTheAirTonight_b9a05cea> schema1:sameAs <https://genius.com/Phil-Collins-IN-THE-AIR-Tonight-lyrics> .
+
+<http://wembrewind.live/ex#Work_Internationalists_25434796> schema1:sameAs <https://genius.com/THE-Style-Council-Internationalists-lyrics> .
+
+<http://wembrewind.live/ex#Work_IntoTheGroove_35b448bb_2> schema1:sameAs <https://genius.com/Madonna-Into-THE-Groove-lyrics> .
+
+<http://wembrewind.live/ex#Work_IronMan_4a43511c_2> schema1:sameAs <https://genius.com/Black-Sabbath-Iron-MAN-lyrics> .
+
+<http://wembrewind.live/ex#Work_IsItACrime_14db4b5e_2> schema1:sameAs <https://genius.com/Sade-IS-IT-A-Crime-lyrics> .
+
+<http://wembrewind.live/ex#Work_ItSTheSameOldSong_1c0a52ff> schema1:sameAs <https://genius.com/Four-Tops-ITS-THE-Same-OLD-Song-lyrics> .
+
+<http://wembrewind.live/ex#Work_JealousGuy_056b839a> schema1:sameAs <https://genius.com/Bryan-Ferry-Jealous-GUY-lyrics> .
+
+<http://wembrewind.live/ex#Work_JustAnotherNight_1adedf0f_2> schema1:sameAs <https://genius.com/Mick-Jagger-Just-Another-Night-lyrics> .
+
+<http://wembrewind.live/ex#Work_JustWhatINeeded_f5128e1e_2> schema1:sameAs <https://genius.com/THE-Cars-Just-What-I-Needed-lyrics> .
+
+<http://wembrewind.live/ex#Work_KidsWannaRock_1f056781> schema1:sameAs <https://genius.com/Bryan-Adams-Kids-Wanna-Rock-lyrics> .
+
+<http://wembrewind.live/ex#Work_Layla_beb76331> schema1:sameAs <https://genius.com/Eric-Clapton-Layla-lyrics> .
+
+<http://wembrewind.live/ex#Work_LetItBe_ef5b9074> schema1:sameAs <https://genius.com/Paul-Mccartney-LET-IT-BE-lyrics> .
+
+<http://wembrewind.live/ex#Work_LivingAfterMidnight_c2f04756> schema1:sameAs <https://genius.com/Judas-Priest-Living-After-Midnight-lyrics> .
+
+<http://wembrewind.live/ex#Work_LonelyAtTheTop_62617910> schema1:sameAs <https://genius.com/Mick-Jagger-Lonely-AT-THE-TOP-lyrics> .
+
+<http://wembrewind.live/ex#Work_LongLongWayToGo_2bff2bbb_2> schema1:sameAs <https://genius.com/Phil-Collins-Long-Long-WAY-TO-GO-lyrics> .
+
+<http://wembrewind.live/ex#Work_LoveMakesTheWorldGoRound_b79da28d_2> schema1:sameAs <https://genius.com/Madonna-Love-Makes-THE-World-GO-Round-lyrics> .
+
+<http://wembrewind.live/ex#Work_LoveReignOErMe_e2318c2e> schema1:sameAs <https://genius.com/THE-WHO-Love-Reign-OER-ME-lyrics> .
+
+<http://wembrewind.live/ex#Work_LoveSomebody_85410af7_2> schema1:sameAs <https://genius.com/Rick-Springfield-Love-Somebody-lyrics> .
+
+<http://wembrewind.live/ex#Work_Loverboy_ccf61ac6_2> schema1:sameAs <https://genius.com/Billy-Ocean-Loverboy-lyrics> .
+
+<http://wembrewind.live/ex#Work_MessageOfLove_43dd26dc_2> schema1:sameAs <https://genius.com/Pretenders-Message-OF-Love-lyrics> .
+
+<http://wembrewind.live/ex#Work_MiddleOfTheRoad_ba390ae8> schema1:sameAs <https://genius.com/Pretenders-Middle-OF-THE-Road-lyrics> .
+
+<http://wembrewind.live/ex#Work_ModernLove_508a3dac_2> schema1:sameAs <https://genius.com/David-Bowie-Modern-Love-lyrics> .
+
+<http://wembrewind.live/ex#Work_MoneyForNothing_d6f71ddf> schema1:sameAs <https://genius.com/Dire-Straits-Money-FOR-Nothing-lyrics> .
+
+<http://wembrewind.live/ex#Work_Murderess_bc3b1534> schema1:sameAs <https://genius.com/THE-Power-Station-Murderess-lyrics> .
+
+<http://wembrewind.live/ex#Work_MyGeneration_a55b5d5b> schema1:sameAs <https://genius.com/THE-WHO-MY-Generation-lyrics> .
+
+<http://wembrewind.live/ex#Work_NewAttitude_f2d275ad_2> schema1:sameAs <https://genius.com/Patti-Labelle-NEW-Attitude-lyrics> .
+
+<http://wembrewind.live/ex#Work_NothingIsPerfect_e3684af2> schema1:sameAs <https://genius.com/Neil-Young-Nothing-IS-Perfect-lyrics> .
+
+<http://wembrewind.live/ex#Work_OneSmallDay_d09d4f20> schema1:sameAs <https://genius.com/Ultravox-ONE-Small-DAY-lyrics> .
+
+<http://wembrewind.live/ex#Work_OnlyWhenYouLeave_ab26cb3a> schema1:sameAs <https://genius.com/Spandau-Ballet-Only-When-YOU-Leave-lyrics> .
+
+<http://wembrewind.live/ex#Work_OpenInvitation_13ca1e44> schema1:sameAs <https://genius.com/Santana-Open-Invitation-lyrics> .
+
+<http://wembrewind.live/ex#Work_OverTheRainbow_f8217125_2> schema1:sameAs <https://genius.com/Patti-Labelle-Over-THE-Rainbow-lyrics> .
+
+<http://wembrewind.live/ex#Work_Paranoid_7949591a_2> schema1:sameAs <https://genius.com/Black-Sabbath-Paranoid-lyrics> .
+
+<http://wembrewind.live/ex#Work_PinballWizard_6ef8cd26> schema1:sameAs <https://genius.com/THE-WHO-Pinball-Wizard-lyrics> .
+
+<http://wembrewind.live/ex#Work_Powderfinger_e4de49b8> schema1:sameAs <https://genius.com/Neil-Young-Powderfinger-lyrics> .
+
+<http://wembrewind.live/ex#Work_PrimeraInvasion_1a3c7702_2> schema1:sameAs <https://genius.com/Santana-Primera-Invasion-lyrics> .
+
+<http://wembrewind.live/ex#Work_PromisedYouAMiracle_5d09ac47> schema1:sameAs <https://genius.com/Simple-Minds-Promised-YOU-A-Miracle-lyrics> .
+
+<http://wembrewind.live/ex#Work_RadioGaGa_2c76fe20_2> schema1:sameAs <https://genius.com/Queen-Radio-GA-GA-lyrics> .
+
+<http://wembrewind.live/ex#Work_RatTrap_a09a4c84_2> schema1:sameAs <https://genius.com/THE-Boomtown-Rats-RAT-Trap-lyrics> .
+
+<http://wembrewind.live/ex#Work_ReachOutILlBeThere_f82341b9_2> schema1:sameAs <https://genius.com/Four-Tops-Reach-OUT-ILL-BE-There-lyrics> .
+
+<http://wembrewind.live/ex#Work_ReapTheWildWind_ab62d196_2> schema1:sameAs <https://genius.com/Ultravox-Reap-THE-Wild-Wind-lyrics> .
+
+<http://wembrewind.live/ex#Work_RebelRebel_dc6d909d_2> schema1:sameAs <https://genius.com/David-Bowie-Rebel-Rebel-lyrics> .
+
+<http://wembrewind.live/ex#Work_Revolution_fc6e50dd_2> schema1:sameAs <https://genius.com/Thompson-Twins-Revolution-lyrics> .
+
+<http://wembrewind.live/ex#Work_RightNow_3778dd5b> schema1:sameAs <https://genius.com/Santana-Right-NOW-lyrics> .
+
+<http://wembrewind.live/ex#Work_RocketManIThinkItSGoingToBeALongLongTime_af9bc306> schema1:sameAs <https://genius.com/Elton-John-Rocket-MAN-I-Think-ITS-Going-TO-BE-A-Long-Long-Time-lyrics> .
+
+<http://wembrewind.live/ex#Work_RockinAllOverTheWorld_5b31460f_2> schema1:sameAs <https://genius.com/Status-QUO-Rockin-ALL-Over-THE-World-lyrics> .
+
+<http://wembrewind.live/ex#Work_RollWithTheChanges_831ed988_2> schema1:sameAs <https://genius.com/REO-Speedwagon-Roll-With-THE-Changes-lyrics> .
+
+<http://wembrewind.live/ex#Work_Roxanne_0ddba90a> schema1:sameAs <https://genius.com/Sting-Roxanne-lyrics> .
+
+<http://wembrewind.live/ex#Work_SaveAPrayer_604f7422> schema1:sameAs <https://genius.com/Duran-Duran-Save-A-Prayer-lyrics> .
+
+<http://wembrewind.live/ex#Work_Sensation_a1d723b4> schema1:sameAs <https://genius.com/Bryan-Ferry-Sensation-lyrics> .
+
+<http://wembrewind.live/ex#Work_ShakeMeWakeMeWhenItSOver_29237a79> schema1:sameAs <https://genius.com/Four-Tops-Shake-ME-Wake-ME-When-ITS-Over-lyrics> .
+
+<http://wembrewind.live/ex#Work_SlaveToLove_01cf29f1> schema1:sameAs <https://genius.com/Bryan-Ferry-Slave-TO-Love-lyrics> .
+
+<http://wembrewind.live/ex#Work_StateOfTheHeart_5f9be140_2> schema1:sameAs <https://genius.com/Rick-Springfield-State-OF-THE-Heart-lyrics> .
+
+<http://wembrewind.live/ex#Work_StirItUp_fa22c5e3> schema1:sameAs <https://genius.com/Patti-Labelle-Stir-IT-UP-lyrics> .
+
+<http://wembrewind.live/ex#Work_StopYourSobbing_9533d2bf> schema1:sameAs <https://genius.com/Pretenders-Stop-Your-Sobbing-lyrics> .
+
+<http://wembrewind.live/ex#Work_SugarMountain_36ab6f4c_2> schema1:sameAs <https://genius.com/Neil-Young-Sugar-Mountain-lyrics> .
+
+<http://wembrewind.live/ex#Work_SultansOfSwing_8626823c> schema1:sameAs <https://genius.com/Dire-Straits-Sultans-OF-Swing-lyrics> .
+
+<http://wembrewind.live/ex#Work_SummerOf69_9604422e_2> schema1:sameAs <https://genius.com/Bryan-Adams-Summer-OF-69-lyrics> .
+
+<http://wembrewind.live/ex#Work_SundayBloodySunday_dc2c1143_2> schema1:sameAs <https://genius.com/U2-Sunday-Bloody-Sunday-lyrics> .
+
+<http://wembrewind.live/ex#Work_TheBigBossGroove_bddd59cc_2> schema1:sameAs <https://genius.com/THE-Style-Council-THE-BIG-Boss-Groove-lyrics> .
+
+<http://wembrewind.live/ex#Work_TheNeedleAndTheDamageDone_6d0d3f75_2> schema1:sameAs <https://genius.com/Neil-Young-THE-Needle-AND-THE-Damage-Done-lyrics> .
+
+<http://wembrewind.live/ex#Work_TheReflex_50ec521b> schema1:sameAs <https://genius.com/Duran-Duran-THE-Reflex-lyrics> .
+
+<http://wembrewind.live/ex#Work_TheRiddle_b5c6086c> schema1:sameAs <https://genius.com/NIK-Kershaw-THE-Riddle-lyrics> .
+
+<http://wembrewind.live/ex#Work_TimeTheAvenger_34b57a63_2> schema1:sameAs <https://genius.com/Pretenders-Time-THE-Avenger-lyrics> .
+
+<http://wembrewind.live/ex#Work_True_022cacb2_2> schema1:sameAs <https://genius.com/Spandau-Ballet-True-lyrics> .
+
+<http://wembrewind.live/ex#Work_Tvc15_126ed430> schema1:sameAs <https://genius.com/David-Bowie-TVC-15-lyrics> .
+
+<http://wembrewind.live/ex#Work_UnionOfTheSnake_5287e415> schema1:sameAs <https://genius.com/Duran-Duran-Union-OF-THE-Snake-lyrics> .
+
+<http://wembrewind.live/ex#Work_Vienna_33826c32> schema1:sameAs <https://genius.com/Ultravox-Vienna-lyrics> .
+
+<http://wembrewind.live/ex#Work_Virgin_be856f58> schema1:sameAs <https://genius.com/Spandau-Ballet-Virgin-lyrics> .
+
+<http://wembrewind.live/ex#Work_ViveLeRock_b8fa9822> schema1:sameAs <https://genius.com/Adam-ANT-Vive-LE-Rock-lyrics> .
+
+<http://wembrewind.live/ex#Work_WallsComeTumblingDown_2f64618a> schema1:sameAs <https://genius.com/THE-Style-Council-Walls-Come-Tumbling-Down-lyrics> .
+
+<http://wembrewind.live/ex#Work_WeAreTheChampions_0b3da969_2> schema1:sameAs <https://genius.com/Queen-WE-ARE-THE-Champions-lyrics> .
+
+<http://wembrewind.live/ex#Work_WeWillRockYou_3623f3af_2> schema1:sameAs <https://genius.com/Queen-WE-Will-Rock-YOU-lyrics> .
+
+<http://wembrewind.live/ex#Work_WhenTheShipComesIn_e393936f> schema1:sameAs <https://genius.com/BOB-Dylan-When-THE-Ship-Comes-IN-lyrics> .
+
+<http://wembrewind.live/ex#Work_WhiteRoom_7549fd84_2> schema1:sameAs <https://genius.com/Eric-Clapton-White-Room-lyrics> .
+
+<http://wembrewind.live/ex#Work_WhyCanTWeLiveTogether_8bae3d24_2> schema1:sameAs <https://genius.com/Sade-WHY-Cant-WE-Live-Together-lyrics> .
+
+<http://wembrewind.live/ex#Work_WideBoy_d3b9738a> schema1:sameAs <https://genius.com/NIK-Kershaw-Wide-BOY-lyrics> .
+
+<http://wembrewind.live/ex#Work_WonTGetFooledAgain_f00616af_2> schema1:sameAs <https://genius.com/THE-WHO-Wont-GET-Fooled-Again-lyrics> .
+
+<http://wembrewind.live/ex#Work_WouldnTItBeGood_6a8be284_2> schema1:sameAs <https://genius.com/NIK-Kershaw-Wouldnt-IT-BE-Good-lyrics> .
+
+<http://wembrewind.live/ex#Work_WouldnTItBeNice_8d9c97e9_2> schema1:sameAs <https://genius.com/THE-Beach-Boys-Wouldnt-IT-BE-Nice-lyrics> .
+
+<http://wembrewind.live/ex#Work_YouMightThink_9bd7d77e> schema1:sameAs <https://genius.com/THE-Cars-YOU-Might-Think-lyrics> .
+
+<http://wembrewind.live/ex#Work_YouReTheBestThing_318c96a9_2> schema1:sameAs <https://genius.com/THE-Style-Council-Youre-THE-Best-Thing-lyrics> .
+
+<http://wembrewind.live/ex#Work_YouVeGotAnotherThingComin_24f7f4ea> schema1:sameAs <https://genius.com/Judas-Priest-Youve-GOT-Another-Thing-Comin-lyrics> .
+
+<http://wembrewind.live/ex#Work_YourLoveIsKing_89d27ad0> schema1:sameAs <https://genius.com/Sade-Your-Love-IS-King-lyrics> .
+

@@ -1,0 +1,44 @@
+@prefix sh:     <http://www.w3.org/ns/shacl#> .
+@prefix ex:     <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix mm:     <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+
+# LivePerformance must link to event, artist, venue; optional instruments; optional (max 1) condition
+ex:LivePerformanceShape a sh:NodeShape ;
+  sh:targetClass mm:LivePerformance ;
+  sh:property [ sh:path schema:isPartOf ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path mm:isCreatedBy ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path schema:location ; sh:minCount 1 ; sh:nodeKind sh:IRI ] ;
+  sh:property [ sh:path ex:performedWithInstrument ; sh:minCount 0 ; sh:nodeKind sh:IRI ; sh:class ex:MusicInstrument ] ;
+  sh:property [ sh:path mm:occurredDuring ; sh:minCount 0 ; sh:maxCount 1 ; sh:nodeKind sh:IRI ; sh:class schema:MedicalCondition ] .
+
+# Instruments must be named
+ex:MusicInstrumentShape a sh:NodeShape ;
+  sh:targetClass ex:MusicInstrument ;
+  sh:property [ sh:path schema:name ; sh:minCount 1 ; sh:datatype xsd:string ] .
+
+# MedicalCondition must have a name; description optional
+ex:MedicalConditionShape a sh:NodeShape ;
+  sh:targetClass schema:MedicalCondition ;
+  sh:property [ sh:path schema:name ; sh:minCount 1 ; sh:datatype xsd:string ] ;
+  sh:property [ sh:path schema:description ; sh:minCount 0 ; sh:datatype xsd:string ] .
+
+# Optional: enforce song-level instrument tagging if you adopt ex:featuresInstrument
+ex:MusicWorkShape a sh:NodeShape ;
+  sh:targetClass schema:MusicComposition ;
+  sh:property [ sh:path schema:name ; sh:minCount 1 ; sh:datatype xsd:string ] .
+
+ex:EventCountsShape a sh:NodeShape ;
+  sh:targetClass schema:Event ;
+  sh:property [ sh:path ex:numberOfActs ; sh:datatype xsd:integer ] ;
+  sh:property [ sh:path ex:attendance   ; sh:datatype xsd:integer ] .
+
+ex:BroadcastShape a sh:NodeShape ;
+  sh:targetClass schema:BroadcastEvent ;
+  sh:property [ sh:path ex:wasBroadcastPreserved ; sh:datatype xsd:boolean ] ;
+  sh:property [ sh:path ex:wasBroadcastVia ; sh:datatype xsd:string ] .
+
+ex:ArtistDebutShape a sh:NodeShape ;
+  sh:targetClass schema:MusicArtist ;
+  sh:property [ sh:path ex:debutYear ; sh:datatype xsd:gYear ] .

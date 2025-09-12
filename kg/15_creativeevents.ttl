@@ -1,0 +1,19 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+
+ex:HammerToFall_CameramanMoment a schema:CreativeWork ;
+    schema:description "Freddie Mercury broke into a spontaneous ballet with a BBC cameraman" ;
+    schema:about ex:FreddieMercury;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:location ex:WembleyStadium .
+
+ex:HammerToFall_VisualMoment a schema:CreativeWork ;
+    schema:about ex:FreddieMercury,
+        ex:HammerToFall ;
+    schema:isPartOf ex:Queen_LiveAid1985_Performance ;
+    schema:name "Spontaneous ballet with BBC cameraman during Hammer to Fall" .
+
+ex:RadioGaGa_AudienceInteraction a schema:CreativeWork ;
+    schema:about ex:LiveAid1985_Audience ;
+    schema:description "The audience clapped and sang along with Freddie Mercury's famous 'Radio Ga Ga' gestures." .
+

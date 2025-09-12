@@ -1,0 +1,3152 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix mm: <https://w3id.org/polifonia/ontology/music-meta/> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Adam_Ant_Cajun_Twisters_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Cajun Twisters" ;
+    schema:recordingOf ex:Adam_Ant_Cajun_Twisters_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/81ac1074-d29b-44b9-8a8c-4d9af9e1a2ba> .
+
+ex:Adam_Ant_Crackpot_History_and_the_Right_to_Lie_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Crackpot History and the Right to Lie" ;
+    schema:recordingOf ex:Adam_Ant_Crackpot_History_and_the_Right_to_Lie_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9ef41f31-b8e1-4184-9062-c53828120bf9> .
+
+ex:Adam_Ant_Desperate_but_Not_Serious_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Desperate but Not Serious" ;
+    schema:recordingOf ex:Adam_Ant_Desperate_but_Not_Serious_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9fb9634b-f56e-4737-9262-f9ab22a1dd99> .
+
+ex:Adam_Ant_Friend_or_Foe_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Friend or Foe" ;
+    schema:recordingOf ex:Adam_Ant_Friend_or_Foe_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/bbc354f3-7764-42ca-82a4-52c1546e08ba> .
+
+ex:Adam_Ant_Goody_Two_Shoes_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Goody Two Shoes" ;
+    schema:recordingOf ex:Adam_Ant_Goody_Two_Shoes_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6b837336-02e8-4022-8ae3-a2ade5aa8f00> .
+
+ex:Adam_Ant_Hello_I_Love_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Hello, I Love You" ;
+    schema:recordingOf ex:Adam_Ant_Hello_I_Love_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a98277d0-1f37-400a-9734-6ffa773a263f> .
+
+ex:Adam_Ant_Here_Comes_the_Grump_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Here Comes the Grump" ;
+    schema:recordingOf ex:Adam_Ant_Here_Comes_the_Grump_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ca85730f-d633-4301-aecf-71321831af32> .
+
+ex:Adam_Ant_Made_of_Money_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Made of Money" ;
+    schema:recordingOf ex:Adam_Ant_Made_of_Money_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1b9f6a17-20ea-4494-a9ea-ebc2a46efd17> .
+
+ex:Adam_Ant_Man_Called_Marco_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Man Called Marco" ;
+    schema:recordingOf ex:Adam_Ant_Man_Called_Marco_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ac9d2334-a97b-4acd-9a35-537d55931250> .
+
+ex:Adam_Ant_Place_in_the_Country_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Place in the Country" ;
+    schema:recordingOf ex:Adam_Ant_Place_in_the_Country_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/cc7ff384-4a1e-4c58-bf92-4cfeb8bb707f> .
+
+ex:Adam_Ant_Something_Girls_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Something Girls" ;
+    schema:recordingOf ex:Adam_Ant_Something_Girls_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d8e8484c-45e2-4cc6-9427-2d5446023ea5> .
+
+ex:Adam_Ant_Try_This_for_Sighs_Rec a mm:Recording ;
+    schema:inAlbum ex:Adam_Ant_Friend_or_Foe_Album ;
+    schema:name "Try This for Sighs" ;
+    schema:recordingOf ex:Adam_Ant_Try_This_for_Sighs_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ce8e09d3-5ebe-4be0-a0b7-622dcb989fae> .
+
+ex:Bernard_Walton_On_A_Note_Of_Triumph_Part_7_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On A Note Of Triumph (Part 7)" ;
+    schema:recordingOf ex:Bernard_Walton_On_A_Note_Of_Triumph_Part_7_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/7c17e9f7-d41c-43d2-adb7-601cc916c171> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_10_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 10)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_10_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e5eec821-90a2-4ba0-af0e-3c2a400ba66f> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_11_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 11)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_11_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/06a642c9-0a53-4eab-b0c2-52028af1cd48> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_12_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 12)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_12_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a8b04eac-b04f-4556-be95-b0fb3f8df884> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_1_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 1)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_1_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/5dbbc2f9-06e6-429f-8037-90e6a7faf713> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_2_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 2)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_2_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e03e6fbf-3c12-45ee-8864-57a149aca5bd> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_3_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 3)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_3_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a875e966-ecdb-43bf-a2e4-ce1aecd82d57> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_4_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 4)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_4_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4b672ae6-37bd-4a76-92a4-38b00ac5bfc4> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_5_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 5)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_5_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e8f1b9a7-2f95-4d26-b56a-66c05afee797> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_6_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 6)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_6_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d150c3d1-7c8a-4b03-a70e-e765422dba9c> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_8_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 8)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_8_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3b91cd78-e383-47db-a96e-3f9174d43a03> .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Part_9_Rec a mm:Recording ;
+    schema:inAlbum ex:Bernard_Walton_On_a_Note_of_Triumph_Album ;
+    schema:name "On a Note of Triumph (Part 9)" ;
+    schema:recordingOf ex:Bernard_Walton_On_a_Note_of_Triumph_Part_9_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/44c69815-8b0b-4b11-9fbf-e2b4a7458df2> .
+
+ex:Billy_Ocean_Eye_of_a_Storm_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "Eye of a Storm" ;
+    schema:recordingOf ex:Billy_Ocean_Eye_of_a_Storm_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/cb309ce1-2c00-46bf-9cfe-342e7c2b04b1> .
+
+ex:Billy_Ocean_Hungry_for_Love_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "Hungry for Love" ;
+    schema:recordingOf ex:Billy_Ocean_Hungry_for_Love_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/240f3e5a-cebf-4249-97eb-a99a7852462e> .
+
+ex:Billy_Ocean_L_O_D_Love_on_Delivery_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "L.O.D. (Love on Delivery)" ;
+    schema:recordingOf ex:Billy_Ocean_L_O_D_Love_on_Delivery_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/7529743a-c73e-4daf-a064-922d24b1ec64> .
+
+ex:Billy_Ocean_Let_s_Do_It_All_Again_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "Let’s Do It All Again" ;
+    schema:recordingOf ex:Billy_Ocean_Let_s_Do_It_All_Again_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/decf7f3b-80b3-40a0-8672-f61f4f069fb6> .
+
+ex:Billy_Ocean_Let_s_Put_Our_Emotions_in_Motion_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "Let’s Put Our Emotions in Motion" ;
+    schema:recordingOf ex:Billy_Ocean_Let_s_Put_Our_Emotions_in_Motion_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c3048c70-671e-4336-9a38-2dee55925cf1> .
+
+ex:Billy_Ocean_Love_Really_Hurts_Without_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "Love Really Hurts Without You" ;
+    schema:recordingOf ex:Billy_Ocean_Love_Really_Hurts_Without_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9b13d052-1995-4635-8880-64e4779066c7> .
+
+ex:Billy_Ocean_One_Kiss_Away_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "One Kiss Away" ;
+    schema:recordingOf ex:Billy_Ocean_One_Kiss_Away_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f2382aa6-a2fa-488f-a878-50370aed5978> .
+
+ex:Billy_Ocean_Soul_Rock_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "Soul Rock" ;
+    schema:recordingOf ex:Billy_Ocean_Soul_Rock_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/7158de77-5fb6-4887-b910-55bf31188c27> .
+
+ex:Billy_Ocean_Stop_Me_If_You_ve_Heard_It_All_Before_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "Stop Me (If You’ve Heard It All Before)" ;
+    schema:recordingOf ex:Billy_Ocean_Stop_Me_If_You_ve_Heard_It_All_Before_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/719cbdae-ce45-4376-be5a-a4236f91c9fa> .
+
+ex:Billy_Ocean_Tell_Him_to_Move_Over_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "Tell Him to Move Over" ;
+    schema:recordingOf ex:Billy_Ocean_Tell_Him_to_Move_Over_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f8f2a00a-bb76-4cde-90e3-9e471d143244> .
+
+ex:Billy_Ocean_Whose_Little_Girl_Are_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Billy_Ocean_Billy_Ocean_Album ;
+    schema:name "Whose Little Girl Are You" ;
+    schema:recordingOf ex:Billy_Ocean_Whose_Little_Girl_Are_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ac42a542-a7ca-47c8-9dfc-427f47527169> .
+
+ex:Bob_Dylan_Baby_Let_Me_Follow_You_Down_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "Baby, Let Me Follow You Down" ;
+    schema:recordingOf ex:Bob_Dylan_Baby_Let_Me_Follow_You_Down_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2f10e157-d46a-4e74-a8d0-8f8a2243d2f8> .
+
+ex:Bob_Dylan_Fixin_to_Die_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "Fixin’ to Die" ;
+    schema:recordingOf ex:Bob_Dylan_Fixin_to_Die_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d1cd3bc8-ab20-49ca-9333-6ac4cb315026> .
+
+ex:Bob_Dylan_Freight_Train_Blues_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "Freight Train Blues" ;
+    schema:recordingOf ex:Bob_Dylan_Freight_Train_Blues_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/85057ddb-649d-462e-ac17-66d7c9963bb1> .
+
+ex:Bob_Dylan_Gospel_Plow_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "Gospel Plow" ;
+    schema:recordingOf ex:Bob_Dylan_Gospel_Plow_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ecceda4c-56a7-490b-b8e6-f3b0d4ef6964> .
+
+ex:Bob_Dylan_Highway_51_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "Highway 51" ;
+    schema:recordingOf ex:Bob_Dylan_Highway_51_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/00a07585-14a0-4aae-b209-454c5bf02ae8> .
+
+ex:Bob_Dylan_House_of_the_Risin_Sun_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "House of the Risin’ Sun" ;
+    schema:recordingOf ex:Bob_Dylan_House_of_the_Risin_Sun_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b31f12e9-2b2d-4ac5-b1fd-fdb0b97d168c> .
+
+ex:Bob_Dylan_In_My_Time_of_Dyin_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "In My Time of Dyin’" ;
+    schema:recordingOf ex:Bob_Dylan_In_My_Time_of_Dyin_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/750b475a-59f7-4a5b-bc62-f46d4e948670> .
+
+ex:Bob_Dylan_Man_of_Constant_Sorrow_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "Man of Constant Sorrow" ;
+    schema:recordingOf ex:Bob_Dylan_Man_of_Constant_Sorrow_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a4d9c3ad-dc0d-4a3c-b0dd-5819cbf3c412> .
+
+ex:Bob_Dylan_Pretty_Peggy_O_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "Pretty Peggy‐O" ;
+    schema:recordingOf ex:Bob_Dylan_Pretty_Peggy_O_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fe2c63d2-1ac0-44e4-8a7b-b5c4be58f80d> .
+
+ex:Bob_Dylan_See_That_My_Grave_Is_Kept_Clean_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "See That My Grave Is Kept Clean" ;
+    schema:recordingOf ex:Bob_Dylan_See_That_My_Grave_Is_Kept_Clean_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0128d3d7-03e7-4f12-8c72-7ec3791a72cb> .
+
+ex:Bob_Dylan_Song_to_Woody_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "Song to Woody" ;
+    schema:recordingOf ex:Bob_Dylan_Song_to_Woody_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/97c5ff2b-bb61-4d4d-80ec-95b754bb76ed> .
+
+ex:Bob_Dylan_Talkin_New_York_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "Talkin’ New York" ;
+    schema:recordingOf ex:Bob_Dylan_Talkin_New_York_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0d0020a4-0892-45d1-ae4a-979a51f3f54d> .
+
+ex:Bob_Dylan_You_re_No_Good_Rec a mm:Recording ;
+    schema:inAlbum ex:Bob_Dylan_Bob_Dylan_Album ;
+    schema:name "You’re No Good" ;
+    schema:recordingOf ex:Bob_Dylan_You_re_No_Good_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ac781013-b606-4a6e-89bb-6db725c4ccc9> .
+
+ex:Branford_Marsalis_No_Backstage_Pass_Rec a mm:Recording ;
+    schema:inAlbum ex:Branford_Marsalis_Scenes_in_the_City_Album ;
+    schema:name "No Backstage Pass" ;
+    schema:recordingOf ex:Branford_Marsalis_No_Backstage_Pass_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/efff1a50-43a1-4692-885c-ad90397ace3b> .
+
+ex:Branford_Marsalis_No_Sidestepping_Rec a mm:Recording ;
+    schema:inAlbum ex:Branford_Marsalis_Scenes_in_the_City_Album ;
+    schema:name "No Sidestepping" ;
+    schema:recordingOf ex:Branford_Marsalis_No_Sidestepping_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/32d9b82c-a9e3-4499-8c9e-34e0ce69f17a> .
+
+ex:Branford_Marsalis_Parable_Rec a mm:Recording ;
+    schema:inAlbum ex:Branford_Marsalis_Scenes_in_the_City_Album ;
+    schema:name "Parable" ;
+    schema:recordingOf ex:Branford_Marsalis_Parable_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3bf1ec96-0db1-4aec-9ccc-657d3d93ecb6> .
+
+ex:Branford_Marsalis_Scenes_in_the_City_Rec a mm:Recording ;
+    schema:inAlbum ex:Branford_Marsalis_Scenes_in_the_City_Album ;
+    schema:name "Scenes in the City" ;
+    schema:recordingOf ex:Branford_Marsalis_Scenes_in_the_City_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4ba778c4-3a44-4292-a13e-8a86423d5ff4> .
+
+ex:Branford_Marsalis_Solstice_Rec a mm:Recording ;
+    schema:inAlbum ex:Branford_Marsalis_Scenes_in_the_City_Album ;
+    schema:name "Solstice" ;
+    schema:recordingOf ex:Branford_Marsalis_Solstice_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9813cc83-ae11-4624-9068-3e6986cf190d> .
+
+ex:Branford_Marsalis_Waiting_for_Tain_Rec a mm:Recording ;
+    schema:inAlbum ex:Branford_Marsalis_Scenes_in_the_City_Album ;
+    schema:name "Waiting for Tain" ;
+    schema:recordingOf ex:Branford_Marsalis_Waiting_for_Tain_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e19cd11a-f1b4-4a6d-a6dc-f3b333bdb741> .
+
+ex:Brian_May_Blues_Breaker_Rec a mm:Recording ;
+    schema:inAlbum ex:Brian_May_Star_Fleet_Project_Album ;
+    schema:name "Blues Breaker" ;
+    schema:recordingOf ex:Brian_May_Blues_Breaker_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/52c55dda-f668-4cfc-8908-b32f11fe5b41> .
+
+ex:Brian_May_Let_Me_Out_Rec a mm:Recording ;
+    schema:inAlbum ex:Brian_May_Star_Fleet_Project_Album ;
+    schema:name "Let Me Out" ;
+    schema:recordingOf ex:Brian_May_Let_Me_Out_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ef5e39e3-4c23-45c7-9504-ef45fa56da3a> .
+
+ex:Brian_May_Starfleet_Rec a mm:Recording ;
+    schema:inAlbum ex:Brian_May_Star_Fleet_Project_Album ;
+    schema:name "Starfleet" ;
+    schema:recordingOf ex:Brian_May_Starfleet_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/45cc0e87-8a30-4953-aa51-e4b9233360d2> .
+
+ex:Bryan_Adams_Don_t_Ya_Say_It_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Adams_Bryan_Adams_Album ;
+    schema:name "Don’t Ya Say It" ;
+    schema:recordingOf ex:Bryan_Adams_Don_t_Ya_Say_It_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2fae23ed-a650-49cf-a51f-cb0b0d998b09> .
+
+ex:Bryan_Adams_Give_Me_Your_Love_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Adams_Bryan_Adams_Album ;
+    schema:name "Give Me Your Love" ;
+    schema:recordingOf ex:Bryan_Adams_Give_Me_Your_Love_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0e499d57-20d4-4a59-836b-1916f798578a> .
+
+ex:Bryan_Adams_Hidin_From_Love_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Adams_Bryan_Adams_Album ;
+    schema:name "Hidin’ From Love" ;
+    schema:recordingOf ex:Bryan_Adams_Hidin_From_Love_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/aa7d9f5d-31b9-45dc-bf05-2cdf6970f37c> .
+
+ex:Bryan_Adams_Remember_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Adams_Bryan_Adams_Album ;
+    schema:name "Remember" ;
+    schema:recordingOf ex:Bryan_Adams_Remember_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0dfbf941-6e86-4099-9ee6-1cda48c599eb> .
+
+ex:Bryan_Adams_State_of_Mind_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Adams_Bryan_Adams_Album ;
+    schema:name "State of Mind" ;
+    schema:recordingOf ex:Bryan_Adams_State_of_Mind_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/85997bf9-d9cc-4437-b4ff-7a5266797277> .
+
+ex:Bryan_Adams_Try_to_See_It_My_Way_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Adams_Bryan_Adams_Album ;
+    schema:name "Try to See It My Way" ;
+    schema:recordingOf ex:Bryan_Adams_Try_to_See_It_My_Way_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ec6099b9-9ae3-4154-9419-cc0ddcd00388> .
+
+ex:Bryan_Adams_Wait_and_See_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Adams_Bryan_Adams_Album ;
+    schema:name "Wait and See" ;
+    schema:recordingOf ex:Bryan_Adams_Wait_and_See_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f456d20f-5259-4139-b750-687c6b57a2f6> .
+
+ex:Bryan_Adams_Wastin_Time_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Adams_Bryan_Adams_Album ;
+    schema:name "Wastin’ Time" ;
+    schema:recordingOf ex:Bryan_Adams_Wastin_Time_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fbe2a499-9aaa-4fb4-9b5b-65f7f79c74e0> .
+
+ex:Bryan_Adams_Win_Some_Lose_Some_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Adams_Bryan_Adams_Album ;
+    schema:name "Win Some Lose Some" ;
+    schema:recordingOf ex:Bryan_Adams_Win_Some_Lose_Some_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/63aed0af-fb0f-42bc-bba6-82e83acd6c95> .
+
+ex:Bryan_Ferry_A_Hard_Rain_s_A_Gonna_Fall_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "A Hard Rain’s A‐Gonna Fall" ;
+    schema:recordingOf ex:Bryan_Ferry_A_Hard_Rain_s_A_Gonna_Fall_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0fa861ce-5618-4867-9866-fc03f09d29fc> .
+
+ex:Bryan_Ferry_Baby_I_Don_t_Care_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "Baby I Don’t Care" ;
+    schema:recordingOf ex:Bryan_Ferry_Baby_I_Don_t_Care_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ae498d68-6e5a-4d5d-8fcd-7ea62354a771> .
+
+ex:Bryan_Ferry_Don_t_Ever_Change_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "Don’t Ever Change" ;
+    schema:recordingOf ex:Bryan_Ferry_Don_t_Ever_Change_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/8e642c21-783f-464f-b1d6-bf767fbf73c4> .
+
+ex:Bryan_Ferry_Don_t_Worry_Baby_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "Don’t Worry Baby" ;
+    schema:recordingOf ex:Bryan_Ferry_Don_t_Worry_Baby_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/54c90f3e-728e-4d2d-ad90-c2cb1771b10d> .
+
+ex:Bryan_Ferry_I_Love_How_You_Love_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "I Love How You Love Me" ;
+    schema:recordingOf ex:Bryan_Ferry_I_Love_How_You_Love_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/39a803a6-a7b1-4a9c-9f5b-2f25a2a6863c> .
+
+ex:Bryan_Ferry_It_s_My_Party_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "It’s My Party" ;
+    schema:recordingOf ex:Bryan_Ferry_It_s_My_Party_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/cb52ec52-d86d-4813-b47e-76b7e300108d> .
+
+ex:Bryan_Ferry_Loving_You_Is_Sweeter_Than_Ever_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "Loving You Is Sweeter Than Ever" ;
+    schema:recordingOf ex:Bryan_Ferry_Loving_You_Is_Sweeter_Than_Ever_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4fcedbb0-5212-4d7b-83bf-c43ed23915f8> .
+
+ex:Bryan_Ferry_Piece_of_My_Heart_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "Piece of My Heart" ;
+    schema:recordingOf ex:Bryan_Ferry_Piece_of_My_Heart_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/af40a396-3404-4e6b-b26c-7988338b9133> .
+
+ex:Bryan_Ferry_River_of_Salt_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "River of Salt" ;
+    schema:recordingOf ex:Bryan_Ferry_River_of_Salt_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fb0e0929-5f31-4b0a-a83e-22805a1222d6> .
+
+ex:Bryan_Ferry_Sympathy_for_the_Devil_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "Sympathy for the Devil" ;
+    schema:recordingOf ex:Bryan_Ferry_Sympathy_for_the_Devil_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4ef49e92-edea-467d-a55b-8c91608e99c9> .
+
+ex:Bryan_Ferry_The_Tracks_of_My_Tears_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "The Tracks of My Tears" ;
+    schema:recordingOf ex:Bryan_Ferry_The_Tracks_of_My_Tears_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/7f521b44-9b61-4a8c-81af-8a761e8603a1> .
+
+ex:Bryan_Ferry_These_Foolish_Things_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "These Foolish Things" ;
+    schema:recordingOf ex:Bryan_Ferry_These_Foolish_Things_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/38daf0fa-4f6f-43c4-af1b-487034f039d6> .
+
+ex:Bryan_Ferry_You_Don_t_See_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Bryan_Ferry_These_Foolish_Things_Album ;
+    schema:name "You Don’t See Me" ;
+    schema:recordingOf ex:Bryan_Ferry_You_Don_t_See_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0b2e2ba0-5792-4809-bda9-11ea65e90fe4> .
+
+ex:David_Bowie_Come_and_Buy_My_Toys_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "Come and Buy My Toys" ;
+    schema:recordingOf ex:David_Bowie_Come_and_Buy_My_Toys_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/5a87d529-0db7-4aa4-bd96-3b174abdfc8b> .
+
+ex:David_Bowie_Join_the_Gang_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "Join the Gang" ;
+    schema:recordingOf ex:David_Bowie_Join_the_Gang_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1f8877cf-6271-4990-8bb4-f444cfb4d292> .
+
+ex:David_Bowie_Little_Bombardier_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "Little Bombardier" ;
+    schema:recordingOf ex:David_Bowie_Little_Bombardier_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/5401e647-9399-435c-b7df-4461b86f7bbc> .
+
+ex:David_Bowie_Love_You_Till_Tuesday_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "Love You Till Tuesday" ;
+    schema:recordingOf ex:David_Bowie_Love_You_Till_Tuesday_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1cebe02d-c14e-4747-9b11-7f5e15c1bde0> .
+
+ex:David_Bowie_Please_Mr_Gravedigger_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "Please Mr. Gravedigger" ;
+    schema:recordingOf ex:David_Bowie_Please_Mr_Gravedigger_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3dfa58de-7668-4fa9-acb2-1be152eacc5a> .
+
+ex:David_Bowie_Rubber_Band_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "Rubber Band" ;
+    schema:recordingOf ex:David_Bowie_Rubber_Band_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/aa185189-17ff-4e4e-b0d2-7fa88d845b00> .
+
+ex:David_Bowie_Sell_Me_a_Coat_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "Sell Me a Coat" ;
+    schema:recordingOf ex:David_Bowie_Sell_Me_a_Coat_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/737ca97d-9411-4a34-952d-97d9d91461c1> .
+
+ex:David_Bowie_She_s_Got_Medals_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "She’s Got Medals" ;
+    schema:recordingOf ex:David_Bowie_She_s_Got_Medals_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/632c98b9-b395-4940-88b2-cf7c54b715fb> .
+
+ex:David_Bowie_Silly_Boy_Blue_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "Silly Boy Blue" ;
+    schema:recordingOf ex:David_Bowie_Silly_Boy_Blue_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/18e56805-6cd9-4e5b-ad96-62d2a6976d8d> .
+
+ex:David_Bowie_There_Is_a_Happy_Land_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "There Is a Happy Land" ;
+    schema:recordingOf ex:David_Bowie_There_Is_a_Happy_Land_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f9f22e3c-38c3-43b7-882d-4b374b898a22> .
+
+ex:David_Bowie_Uncle_Arthur_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "Uncle Arthur" ;
+    schema:recordingOf ex:David_Bowie_Uncle_Arthur_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4368a3de-35c7-485c-85ba-fdd6ae2b3424> .
+
+ex:David_Bowie_When_I_Live_My_Dream_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Bowie_David_Bowie_Album ;
+    schema:name "When I Live My Dream" ;
+    schema:recordingOf ex:David_Bowie_When_I_Live_My_Dream_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1562e312-192d-432a-9277-8ee7a6c09758> .
+
+ex:David_Gilmour_Cry_From_the_Street_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Gilmour_David_Gilmour_Album ;
+    schema:name "Cry From the Street" ;
+    schema:recordingOf ex:David_Gilmour_Cry_From_the_Street_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/da9d2544-ad49-4571-8892-1e98d1ee402d> .
+
+ex:David_Gilmour_I_Can_t_Breathe_Anymore_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Gilmour_David_Gilmour_Album ;
+    schema:name "I Can’t Breathe Anymore" ;
+    schema:recordingOf ex:David_Gilmour_I_Can_t_Breathe_Anymore_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f2077608-d6b6-41a3-9f1a-46185d3dd0c6> .
+
+ex:David_Gilmour_It_s_Deafinitely_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Gilmour_David_Gilmour_Album ;
+    schema:name "It’s Deafinitely" ;
+    schema:recordingOf ex:David_Gilmour_It_s_Deafinitely_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b625a1e0-4263-4f17-bcd6-0b540319de74> .
+
+ex:David_Gilmour_Mihalis_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Gilmour_David_Gilmour_Album ;
+    schema:name "Mihalis" ;
+    schema:recordingOf ex:David_Gilmour_Mihalis_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/859da3d4-789f-4e82-929e-4b9940671e94> .
+
+ex:David_Gilmour_No_Way_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Gilmour_David_Gilmour_Album ;
+    schema:name "No Way" ;
+    schema:recordingOf ex:David_Gilmour_No_Way_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/546a4ea0-2f0a-4d2d-9ffc-170ba2cb5e4a> .
+
+ex:David_Gilmour_Raise_My_Rent_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Gilmour_David_Gilmour_Album ;
+    schema:name "Raise My Rent" ;
+    schema:recordingOf ex:David_Gilmour_Raise_My_Rent_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/28da8b41-f2c3-45fc-a52f-2f21f306e64d> .
+
+ex:David_Gilmour_Short_and_Sweet_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Gilmour_David_Gilmour_Album ;
+    schema:name "Short and Sweet" ;
+    schema:recordingOf ex:David_Gilmour_Short_and_Sweet_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/705cd168-22cc-413a-a240-f655d1f7108a> .
+
+ex:David_Gilmour_So_Far_Away_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Gilmour_David_Gilmour_Album ;
+    schema:name "So Far Away" ;
+    schema:recordingOf ex:David_Gilmour_So_Far_Away_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c246e7bc-d2b0-42fc-9950-c12b885ba5d1> .
+
+ex:David_Gilmour_There_s_No_Way_out_of_Here_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Gilmour_David_Gilmour_Album ;
+    schema:name "There’s No Way out of Here" ;
+    schema:recordingOf ex:David_Gilmour_There_s_No_Way_out_of_Here_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a0f3ad50-4f94-40ae-80e2-3c646f21133c> .
+
+ex:David_Ruffin_Everlasting_Love_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "Everlasting Love" ;
+    schema:recordingOf ex:David_Ruffin_Everlasting_Love_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/5c1feef9-24f6-45b3-9387-b9d13e3c6299> .
+
+ex:David_Ruffin_Flower_Child_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "Flower Child" ;
+    schema:recordingOf ex:David_Ruffin_Flower_Child_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2b5f03e5-a22e-43af-bd67-e6b0728e1fa6> .
+
+ex:David_Ruffin_I_ve_Got_to_Find_Myself_a_Brand_New_Baby_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "I’ve Got to Find Myself a Brand New Baby" ;
+    schema:recordingOf ex:David_Ruffin_I_ve_Got_to_Find_Myself_a_Brand_New_Baby_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0ba58b3c-8e3c-4ea6-bde9-1d0bb5fb9246> .
+
+ex:David_Ruffin_I_ve_Lost_Everything_I_ve_Ever_Loved_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "I’ve Lost Everything I’ve Ever Loved" ;
+    schema:recordingOf ex:David_Ruffin_I_ve_Lost_Everything_I_ve_Ever_Loved_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c7dac30a-954c-424f-8b3f-29e150d63ff1> .
+
+ex:David_Ruffin_Message_From_Maria_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "Message From Maria" ;
+    schema:recordingOf ex:David_Ruffin_Message_From_Maria_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f846e7ce-400a-4874-a51a-b149627ec2f2> .
+
+ex:David_Ruffin_My_Love_Is_Growing_Stronger_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "My Love Is Growing Stronger" ;
+    schema:recordingOf ex:David_Ruffin_My_Love_Is_Growing_Stronger_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c5b2a54c-10a5-4ecc-9b61-da392fe57d43> .
+
+ex:David_Ruffin_My_Whole_World_Ended_the_Moment_You_Left_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "My Whole World Ended (the Moment You Left Me)" ;
+    schema:recordingOf ex:David_Ruffin_My_Whole_World_Ended_the_Moment_You_Left_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fb83fc43-595a-4b43-a811-c164df1eb87d> .
+
+ex:David_Ruffin_Pieces_of_a_Man_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "Pieces of a Man" ;
+    schema:recordingOf ex:David_Ruffin_Pieces_of_a_Man_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/8b165b19-3683-42d4-8842-0b0098776dc4> .
+
+ex:David_Ruffin_Somebody_Stole_My_Dream_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "Somebody Stole My Dream" ;
+    schema:recordingOf ex:David_Ruffin_Somebody_Stole_My_Dream_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/aaa434c4-1d9a-40c8-b6e2-aa85a9b4624f> .
+
+ex:David_Ruffin_The_Double_Cross_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "The Double Cross" ;
+    schema:recordingOf ex:David_Ruffin_The_Double_Cross_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f333617d-d465-4d92-8be9-1940e2321038> .
+
+ex:David_Ruffin_We_ll_Have_a_Good_Thing_Going_On_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "We’ll Have a Good Thing Going On" ;
+    schema:recordingOf ex:David_Ruffin_We_ll_Have_a_Good_Thing_Going_On_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/18cce303-bb33-4b51-8bfe-cf80480eebe7> .
+
+ex:David_Ruffin_World_of_Darkness_Rec a mm:Recording ;
+    schema:inAlbum ex:David_Ruffin_My_Whole_World_Ended_Album ;
+    schema:name "World of Darkness" ;
+    schema:recordingOf ex:David_Ruffin_World_of_Darkness_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c10fbdad-fcb3-44a3-93d2-451031a2f2ca> .
+
+ex:Eddie_Kendricks_Can_I_Rec a mm:Recording ;
+    schema:inAlbum ex:Eddie_Kendricks_All_By_Myself_Album ;
+    schema:name "Can I" ;
+    schema:recordingOf ex:Eddie_Kendricks_Can_I_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a9b5483c-8289-41d2-a604-37a911161a49> .
+
+ex:Eddie_Kendricks_Didn_t_We_Rec a mm:Recording ;
+    schema:inAlbum ex:Eddie_Kendricks_All_By_Myself_Album ;
+    schema:name "Didn't We" ;
+    schema:recordingOf ex:Eddie_Kendricks_Didn_t_We_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/01e6fd9d-c6fa-44e3-b0ff-885c0b3d90f9> .
+
+ex:Eddie_Kendricks_I_Did_It_All_For_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Eddie_Kendricks_All_By_Myself_Album ;
+    schema:name "I Did It All For You" ;
+    schema:recordingOf ex:Eddie_Kendricks_I_Did_It_All_For_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4394b8c0-2b0a-417a-b281-19ae40b80210> .
+
+ex:Eddie_Kendricks_It_s_So_Hard_For_Me_To_Say_Good_Bye_Rec a mm:Recording ;
+    schema:inAlbum ex:Eddie_Kendricks_All_By_Myself_Album ;
+    schema:name "It's So Hard For Me To Say Good-Bye" ;
+    schema:recordingOf ex:Eddie_Kendricks_It_s_So_Hard_For_Me_To_Say_Good_Bye_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/da82c533-212f-4f88-a188-995b5033ba34> .
+
+ex:Eddie_Kendricks_Let_s_Go_Back_To_Day_One_Rec a mm:Recording ;
+    schema:inAlbum ex:Eddie_Kendricks_All_By_Myself_Album ;
+    schema:name "Let's Go Back To Day One" ;
+    schema:recordingOf ex:Eddie_Kendricks_Let_s_Go_Back_To_Day_One_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/69302700-195a-49d6-957c-586dce8737f2> .
+
+ex:Eddie_Kendricks_Something_s_Burning_Rec a mm:Recording ;
+    schema:inAlbum ex:Eddie_Kendricks_All_By_Myself_Album ;
+    schema:name "Something's Burning" ;
+    schema:recordingOf ex:Eddie_Kendricks_Something_s_Burning_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/491dff4e-4aba-4a53-8db6-112eacd37623> .
+
+ex:Eddie_Kendricks_This_Used_To_Be_The_Home_Of_Johnnie_Mae_Rec a mm:Recording ;
+    schema:inAlbum ex:Eddie_Kendricks_All_By_Myself_Album ;
+    schema:name "This Used To Be The Home Of Johnnie Mae" ;
+    schema:recordingOf ex:Eddie_Kendricks_This_Used_To_Be_The_Home_Of_Johnnie_Mae_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/63059196-b55c-4675-a1e7-d5ce963e73e7> .
+
+ex:Elton_John_Empty_Sky_Rec a mm:Recording ;
+    schema:inAlbum ex:Elton_John_Empty_Sky_Album ;
+    schema:name "Empty Sky" ;
+    schema:recordingOf ex:Elton_John_Empty_Sky_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1231ac77-6f50-4856-bdf5-fe5c4b96c0da> .
+
+ex:Elton_John_Gulliver_It_s_Hay_Chewed_Reprise_Rec a mm:Recording ;
+    schema:inAlbum ex:Elton_John_Empty_Sky_Album ;
+    schema:name "Gulliver / It’s Hay Chewed / Reprise" ;
+    schema:recordingOf ex:Elton_John_Gulliver_It_s_Hay_Chewed_Reprise_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fc8f1b04-9966-4da8-a048-e9cf49a022a0> .
+
+ex:Elton_John_Hymn_2000_Rec a mm:Recording ;
+    schema:inAlbum ex:Elton_John_Empty_Sky_Album ;
+    schema:name "Hymn 2000" ;
+    schema:recordingOf ex:Elton_John_Hymn_2000_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/7d4c0504-84a1-4c98-92a6-32669303fc7f> .
+
+ex:Elton_John_Lady_What_s_Tomorrow_Rec a mm:Recording ;
+    schema:inAlbum ex:Elton_John_Empty_Sky_Album ;
+    schema:name "Lady What’s Tomorrow" ;
+    schema:recordingOf ex:Elton_John_Lady_What_s_Tomorrow_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/929220fd-ee8b-4925-a3bc-e1cd552f6c4b> .
+
+ex:Elton_John_Sails_Rec a mm:Recording ;
+    schema:inAlbum ex:Elton_John_Empty_Sky_Album ;
+    schema:name "Sails" ;
+    schema:recordingOf ex:Elton_John_Sails_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/95323ce2-a2bb-4215-8593-6d57d2f7c992> .
+
+ex:Elton_John_Skyline_Pigeon_Rec a mm:Recording ;
+    schema:inAlbum ex:Elton_John_Empty_Sky_Album ;
+    schema:name "Skyline Pigeon" ;
+    schema:recordingOf ex:Elton_John_Skyline_Pigeon_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a1bca9e2-165b-4580-a3d6-f8d81b4dc3db> .
+
+ex:Elton_John_The_Scaffold_Rec a mm:Recording ;
+    schema:inAlbum ex:Elton_John_Empty_Sky_Album ;
+    schema:name "The Scaffold" ;
+    schema:recordingOf ex:Elton_John_The_Scaffold_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/07bb18a1-424b-4fde-aeef-3ba299b6c5c7> .
+
+ex:Elton_John_Val_Hala_Rec a mm:Recording ;
+    schema:inAlbum ex:Elton_John_Empty_Sky_Album ;
+    schema:name "Val‐Hala" ;
+    schema:recordingOf ex:Elton_John_Val_Hala_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/372f76f4-a3e9-4ec5-8e7e-8ce46b34d566> .
+
+ex:Elton_John_Western_Ford_Gateway_Rec a mm:Recording ;
+    schema:inAlbum ex:Elton_John_Empty_Sky_Album ;
+    schema:name "Western Ford Gateway" ;
+    schema:recordingOf ex:Elton_John_Western_Ford_Gateway_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/79b4aaa7-0a27-4f85-9e36-ee4994053b89> .
+
+ex:Elvis_Costello_Alison_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "Alison" ;
+    schema:recordingOf ex:Elvis_Costello_Alison_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b88e7114-93e7-4039-819f-2907afdf6942> .
+
+ex:Elvis_Costello_Blame_It_on_Cain_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "Blame It on Cain" ;
+    schema:recordingOf ex:Elvis_Costello_Blame_It_on_Cain_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e5808591-d389-4a84-9afb-ca9475c4b9eb> .
+
+ex:Elvis_Costello_I_m_Not_Angry_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "I’m Not Angry" ;
+    schema:recordingOf ex:Elvis_Costello_I_m_Not_Angry_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3256567c-7d5d-48a9-a078-f609da6faefb> .
+
+ex:Elvis_Costello_Less_Than_Zero_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "Less Than Zero" ;
+    schema:recordingOf ex:Elvis_Costello_Less_Than_Zero_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f57fdb53-a5cf-46e8-8338-ced7bc207e10> .
+
+ex:Elvis_Costello_Miracle_Man_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "Miracle Man" ;
+    schema:recordingOf ex:Elvis_Costello_Miracle_Man_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b58eb750-df27-40aa-93e4-c1baee12345b> .
+
+ex:Elvis_Costello_Mystery_Dance_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "Mystery Dance" ;
+    schema:recordingOf ex:Elvis_Costello_Mystery_Dance_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/dc9b24fb-dfba-4140-8482-9c15bf45f93b> .
+
+ex:Elvis_Costello_No_Dancing_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "No Dancing" ;
+    schema:recordingOf ex:Elvis_Costello_No_Dancing_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d36282be-0439-494f-aafe-40b08502e6f9> .
+
+ex:Elvis_Costello_Pay_It_Back_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "Pay It Back" ;
+    schema:recordingOf ex:Elvis_Costello_Pay_It_Back_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/99a2a445-9fab-48a1-a508-a6e3b3a8a1d5> .
+
+ex:Elvis_Costello_Sneaky_Feelings_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "Sneaky Feelings" ;
+    schema:recordingOf ex:Elvis_Costello_Sneaky_Feelings_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1468dd0e-eebf-4c2c-b8ba-42f496385024> .
+
+ex:Elvis_Costello_The_Angels_Wanna_Wear_My_Red_Shoes_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "(The Angels Wanna Wear My) Red Shoes" ;
+    schema:recordingOf ex:Elvis_Costello_The_Angels_Wanna_Wear_My_Red_Shoes_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/90e9dad7-f3f1-428e-9d7c-014916cb97df> .
+
+ex:Elvis_Costello_Waiting_for_the_End_of_the_World_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "Waiting for the End of the World" ;
+    schema:recordingOf ex:Elvis_Costello_Waiting_for_the_End_of_the_World_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e4a6e3a2-4f3b-4311-9226-136c999e535c> .
+
+ex:Elvis_Costello_Welcome_to_the_Working_Week_Rec a mm:Recording ;
+    schema:inAlbum ex:Elvis_Costello_My_Aim_Is_True_Album ;
+    schema:name "Welcome to the Working Week" ;
+    schema:recordingOf ex:Elvis_Costello_Welcome_to_the_Working_Week_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/dfa22b4f-0335-494b-bd3d-f6e2bf177701> .
+
+ex:Eric_Clapton_After_Midnight_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "After Midnight" ;
+    schema:recordingOf ex:Eric_Clapton_After_Midnight_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1356028d-22ed-4ac1-be12-44a4448ff22f> .
+
+ex:Eric_Clapton_Bad_Boy_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Bad Boy" ;
+    schema:recordingOf ex:Eric_Clapton_Bad_Boy_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/cc8bb366-438d-437b-bf6c-bc12863f2e61> .
+
+ex:Eric_Clapton_Blues_Power_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Blues Power" ;
+    schema:recordingOf ex:Eric_Clapton_Blues_Power_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3c65efa0-b46c-4130-9485-f069531b4fdc> .
+
+ex:Eric_Clapton_Bottle_of_Red_Wine_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Bottle of Red Wine" ;
+    schema:recordingOf ex:Eric_Clapton_Bottle_of_Red_Wine_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3d142c56-9b0e-4d90-b5e6-791a1f18194e> .
+
+ex:Eric_Clapton_Don_t_Know_Why_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Don’t Know Why" ;
+    schema:recordingOf ex:Eric_Clapton_Don_t_Know_Why_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a3d0f3f3-975e-4e6a-8cc9-275a6d9e2807> .
+
+ex:Eric_Clapton_Easy_Now_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Easy Now" ;
+    schema:recordingOf ex:Eric_Clapton_Easy_Now_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/17cc7208-54fc-4100-9a20-a71af5c34a50> .
+
+ex:Eric_Clapton_Let_It_Rain_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Let It Rain" ;
+    schema:recordingOf ex:Eric_Clapton_Let_It_Rain_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/43acfa2d-096f-4701-adc0-824a8dbcfa26> .
+
+ex:Eric_Clapton_Lonesome_and_a_Long_Way_From_Home_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Lonesome and a Long Way From Home" ;
+    schema:recordingOf ex:Eric_Clapton_Lonesome_and_a_Long_Way_From_Home_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c7c30ab8-0e5d-4531-990e-556a163cfb1a> .
+
+ex:Eric_Clapton_Lovin_You_Lovin_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Lovin’ You Lovin’ Me" ;
+    schema:recordingOf ex:Eric_Clapton_Lovin_You_Lovin_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/12b3f008-0525-4e81-86a5-6a726007f8de> .
+
+ex:Eric_Clapton_Slunky_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Slunky" ;
+    schema:recordingOf ex:Eric_Clapton_Slunky_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c279fb3e-15ad-4ee5-a9d4-61e317892939> .
+
+ex:Eric_Clapton_Told_You_for_the_Last_Time_Rec a mm:Recording ;
+    schema:inAlbum ex:Eric_Clapton_Eric_Clapton_Album ;
+    schema:name "Told You for the Last Time" ;
+    schema:recordingOf ex:Eric_Clapton_Told_You_for_the_Last_Time_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/51d2872e-d138-4d23-b7f4-e27951401835> .
+
+ex:Freddie_Mercury_Foolin_Around_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Foolin’ Around" ;
+    schema:recordingOf ex:Freddie_Mercury_Foolin_Around_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/df78785a-d236-45a9-b0bf-f2db12caaecf> .
+
+ex:Freddie_Mercury_I_Was_Born_to_Love_You_12_version_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "I Was Born to Love You (12″ version)" ;
+    schema:recordingOf ex:Freddie_Mercury_I_Was_Born_to_Love_You_12_version_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ff338673-466f-4828-8ff0-4c05d28095d5> .
+
+ex:Freddie_Mercury_I_Was_Born_to_Love_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "I Was Born to Love You" ;
+    schema:recordingOf ex:Freddie_Mercury_I_Was_Born_to_Love_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d007b190-70d1-4d87-ae78-ea275ecb29ba> .
+
+ex:Freddie_Mercury_Let_s_Turn_It_On_12_version_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Let’s Turn It On (12″ version)" ;
+    schema:recordingOf ex:Freddie_Mercury_Let_s_Turn_It_On_12_version_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d2f69db1-d6eb-47df-9802-5f9c30332185> .
+
+ex:Freddie_Mercury_Let_s_Turn_It_On_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Let’s Turn It On" ;
+    schema:recordingOf ex:Freddie_Mercury_Let_s_Turn_It_On_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0c2ca3a9-c86f-4ad5-901e-7960bad27b29> .
+
+ex:Freddie_Mercury_Living_on_My_Own_12_version_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Living on My Own (12″ version)" ;
+    schema:recordingOf ex:Freddie_Mercury_Living_on_My_Own_12_version_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6a7bab6c-c13e-49b7-ad6f-4c5b1c9f770d> .
+
+ex:Freddie_Mercury_Living_on_My_Own_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Living on My Own" ;
+    schema:recordingOf ex:Freddie_Mercury_Living_on_My_Own_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b195a061-1196-4eb3-82ae-f1b255e05b69> .
+
+ex:Freddie_Mercury_Love_Me_Like_There_s_No_Tomorrow_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Love Me Like There’s No Tomorrow" ;
+    schema:recordingOf ex:Freddie_Mercury_Love_Me_Like_There_s_No_Tomorrow_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c08ff642-1152-44c8-afb7-7cb33c0b36e3> .
+
+ex:Freddie_Mercury_Made_in_Heaven_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Made in Heaven" ;
+    schema:recordingOf ex:Freddie_Mercury_Made_in_Heaven_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/57546716-2df8-478c-a1e0-e39b1b0ad674> .
+
+ex:Freddie_Mercury_Man_Made_Paradise_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Man Made Paradise" ;
+    schema:recordingOf ex:Freddie_Mercury_Man_Made_Paradise_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c024dc45-1a67-41eb-a0e9-43a688835e89> .
+
+ex:Freddie_Mercury_Mr_Bad_Guy_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Mr. Bad Guy" ;
+    schema:recordingOf ex:Freddie_Mercury_Mr_Bad_Guy_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ea92be36-7da3-4441-905c-12d92224e5f5> .
+
+ex:Freddie_Mercury_My_Love_Is_Dangerous_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "My Love Is Dangerous" ;
+    schema:recordingOf ex:Freddie_Mercury_My_Love_Is_Dangerous_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3ab009ab-918c-432c-8bbd-bba5a75c9064> .
+
+ex:Freddie_Mercury_There_Must_Be_More_to_Life_Than_This_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "There Must Be More to Life Than This" ;
+    schema:recordingOf ex:Freddie_Mercury_There_Must_Be_More_to_Life_Than_This_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3e890abb-4953-4ac1-baa1-faa12e359d1a> .
+
+ex:Freddie_Mercury_Your_Kind_of_Lover_Rec a mm:Recording ;
+    schema:inAlbum ex:Freddie_Mercury_Mr_Bad_Guy_Album ;
+    schema:name "Your Kind of Lover" ;
+    schema:recordingOf ex:Freddie_Mercury_Your_Kind_of_Lover_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/666cec37-eecc-48af-bc1b-8e43ea4ce725> .
+
+ex:Howard_Jones_China_Dance_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "China Dance" ;
+    schema:recordingOf ex:Howard_Jones_China_Dance_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9e50531b-ab74-4e60-8e3a-e68fe53653ba> .
+
+ex:Howard_Jones_Conditioning_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "Conditioning" ;
+    schema:recordingOf ex:Howard_Jones_Conditioning_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e6d52698-5722-49db-ad59-87329e858ee3> .
+
+ex:Howard_Jones_Don_t_Always_Look_at_the_Rain_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "Don’t Always Look at the Rain" ;
+    schema:recordingOf ex:Howard_Jones_Don_t_Always_Look_at_the_Rain_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/061debaa-4815-4721-b2ad-d1fd7ae8b01c> .
+
+ex:Howard_Jones_Equality_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "Equality" ;
+    schema:recordingOf ex:Howard_Jones_Equality_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/da0c28c3-80a3-4525-9305-3995a1509cb4> .
+
+ex:Howard_Jones_Hide_and_Seek_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "Hide and Seek" ;
+    schema:recordingOf ex:Howard_Jones_Hide_and_Seek_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f7eef4df-d1d7-4cc3-88b2-728e646154ba> .
+
+ex:Howard_Jones_Human_s_Lib_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "Human’s Lib" ;
+    schema:recordingOf ex:Howard_Jones_Human_s_Lib_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3f58f98f-0788-4fdd-baf8-b743623564c0> .
+
+ex:Howard_Jones_Hunt_the_Self_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "Hunt the Self" ;
+    schema:recordingOf ex:Howard_Jones_Hunt_the_Self_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/5b75b5b2-63b9-4941-99da-3fb851650dc7> .
+
+ex:Howard_Jones_Natural_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "Natural" ;
+    schema:recordingOf ex:Howard_Jones_Natural_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6681aacf-c1d4-43fa-883b-4581a918feb1> .
+
+ex:Howard_Jones_New_Song_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "New Song" ;
+    schema:recordingOf ex:Howard_Jones_New_Song_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/699d68ca-8019-48d9-a422-c09d7d42befb> .
+
+ex:Howard_Jones_Pearl_in_the_Shell_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "Pearl in the Shell" ;
+    schema:recordingOf ex:Howard_Jones_Pearl_in_the_Shell_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/29b22a32-ecf7-4209-86f7-e8682a3dbfe4> .
+
+ex:Howard_Jones_What_Is_Love_extended_version_Rec a mm:Recording ;
+    schema:inAlbum ex:Howard_Jones_Human_s_Lib_Album ;
+    schema:name "What Is Love? (extended version)" ;
+    schema:recordingOf ex:Howard_Jones_What_Is_Love_extended_version_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/82914aae-f9b4-4696-bc78-f256251ad7ba> .
+
+ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Rec a mm:Recording ;
+    schema:inAlbum ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Album ;
+    schema:name "Don’t Send Me No Flowers" ;
+    schema:recordingOf ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2cf56010-8102-4b4e-971f-7198f3cd469f> .
+
+ex:Jimmy_Page_Getting_out_of_Town_Rec a mm:Recording ;
+    schema:inAlbum ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Album ;
+    schema:name "Getting out of Town" ;
+    schema:recordingOf ex:Jimmy_Page_Getting_out_of_Town_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0cee2e51-58d1-4dd3-a207-7feaa99d7c7f> .
+
+ex:Jimmy_Page_I_See_a_Man_Downstairs_Rec a mm:Recording ;
+    schema:inAlbum ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Album ;
+    schema:name "I See a Man Downstairs" ;
+    schema:recordingOf ex:Jimmy_Page_I_See_a_Man_Downstairs_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/282c4e33-527f-4626-93ab-78f701aba731> .
+
+ex:Jimmy_Page_It_s_a_Bloody_Life_Rec a mm:Recording ;
+    schema:inAlbum ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Album ;
+    schema:name "It’s a Bloody Life" ;
+    schema:recordingOf ex:Jimmy_Page_It_s_a_Bloody_Life_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2d46de6a-83b7-41f3-a66c-ff7132b5b3f6> .
+
+ex:Jimmy_Page_Little_Girl_How_Old_Are_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Album ;
+    schema:name "Little Girl, How Old Are You" ;
+    schema:recordingOf ex:Jimmy_Page_Little_Girl_How_Old_Are_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/162cd1a6-aa19-4047-827b-722887f017e1> .
+
+ex:Jimmy_Page_She_Was_So_Dumb_Rec a mm:Recording ;
+    schema:inAlbum ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Album ;
+    schema:name "She Was So Dumb" ;
+    schema:recordingOf ex:Jimmy_Page_She_Was_So_Dumb_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/7e4e8db5-3bee-445f-a25d-e8ff3e02dc8f> .
+
+ex:Jimmy_Page_The_Goat_Rec a mm:Recording ;
+    schema:inAlbum ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Album ;
+    schema:name "The Goat" ;
+    schema:recordingOf ex:Jimmy_Page_The_Goat_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ca5cc274-2046-4922-a0ae-8478c7d06dd2> .
+
+ex:Jimmy_Page_Walking_Rec a mm:Recording ;
+    schema:inAlbum ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Album ;
+    schema:name "Walking" ;
+    schema:recordingOf ex:Jimmy_Page_Walking_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3215fa21-1612-4a5b-962d-d637f7b2e075> .
+
+ex:Joan_Baez_Astrapsen_The_Sun_Is_Risen_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Astrapsen (The Sun Is Risen)" ;
+    schema:recordingOf ex:Joan_Baez_Astrapsen_The_Sun_Is_Risen_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b1cbb0f4-2fc3-4302-8e01-4fdc14541aed> .
+
+ex:Joan_Baez_Black_Is_the_Color_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Black Is the Color" ;
+    schema:recordingOf ex:Joan_Baez_Black_Is_the_Color_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/aa4489af-bf48-44bb-9691-b7cbff92e6d9> .
+
+ex:Joan_Baez_Bold_Soldier_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Bold Soldier" ;
+    schema:recordingOf ex:Joan_Baez_Bold_Soldier_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9de034ea-9de0-4493-8192-df3c0b0d3ea6> .
+
+ex:Joan_Baez_Careless_Love_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Careless Love" ;
+    schema:recordingOf ex:Joan_Baez_Careless_Love_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/5b67c3fd-1bfc-4a4d-94ec-4ec2df928e8f> .
+
+ex:Joan_Baez_Don_t_Weep_After_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Don’t Weep After Me" ;
+    schema:recordingOf ex:Joan_Baez_Don_t_Weep_After_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b62394fd-b182-4fbe-9ed5-d592c36776cb> .
+
+ex:Joan_Baez_John_Henry_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "John Henry" ;
+    schema:recordingOf ex:Joan_Baez_John_Henry_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fac4a133-5608-448c-8b98-04d7d51837cc> .
+
+ex:Joan_Baez_Kitty_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Kitty" ;
+    schema:recordingOf ex:Joan_Baez_Kitty_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4390f8c6-b179-405e-9552-ff3fd19aeca5> .
+
+ex:Joan_Baez_Lass_From_the_Low_Country_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Lass From the Low Country" ;
+    schema:recordingOf ex:Joan_Baez_Lass_From_the_Low_Country_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3a44f296-abc1-4f51-9120-bce0ae9cedbe> .
+
+ex:Joan_Baez_Le_Cheval_dans_la_baignoire_Horse_in_the_Bathtub_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Le Cheval dans la baignoire (Horse in the Bathtub)" ;
+    schema:recordingOf ex:Joan_Baez_Le_Cheval_dans_la_baignoire_Horse_in_the_Bathtub_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ab75a898-8d7d-4c94-b7c5-d40439761f50> .
+
+ex:Joan_Baez_Lowlands_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Lowlands" ;
+    schema:recordingOf ex:Joan_Baez_Lowlands_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/049ae32e-3dc0-4d39-bac2-25a1afe38533> .
+
+ex:Joan_Baez_O_What_a_Beautiful_City_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "O What a Beautiful City" ;
+    schema:recordingOf ex:Joan_Baez_O_What_a_Beautiful_City_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fb842842-335f-41c8-8819-638bf5d78eec> .
+
+ex:Joan_Baez_Rejected_Lover_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Rejected Lover" ;
+    schema:recordingOf ex:Joan_Baez_Rejected_Lover_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1335b1a1-9c15-4260-9e84-13d55b5e5d22> .
+
+ex:Joan_Baez_Sail_Away_Ladies_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Sail Away Ladies" ;
+    schema:recordingOf ex:Joan_Baez_Sail_Away_Ladies_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9e966e9c-6a8f-4ad1-8071-afc7294fbd93> .
+
+ex:Joan_Baez_So_Soon_in_the_Morning_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "So Soon in the Morning" ;
+    schema:recordingOf ex:Joan_Baez_So_Soon_in_the_Morning_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4b8ad2de-f245-4bf1-8b53-825e62658969> .
+
+ex:Joan_Baez_The_Banks_of_The_Ohio_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "The Banks of The Ohio" ;
+    schema:recordingOf ex:Joan_Baez_The_Banks_of_The_Ohio_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0b25561b-ba6b-4097-a386-c6f7ece96103> .
+
+ex:Joan_Baez_Travelin_Shoes_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Travelin’ Shoes" ;
+    schema:recordingOf ex:Joan_Baez_Travelin_Shoes_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/31006727-256d-4a81-838c-b8e88033f5a4> .
+
+ex:Joan_Baez_Walie_Walie_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "Walie Walie" ;
+    schema:recordingOf ex:Joan_Baez_Walie_Walie_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/45f45714-df0d-4551-a161-ca93a3bf5bd3> .
+
+ex:Joan_Baez_What_You_Gonna_Call_Your_Pretty_Little_Baby_Rec a mm:Recording ;
+    schema:inAlbum ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album ;
+    schema:name "What You Gonna Call Your Pretty Little Baby" ;
+    schema:recordingOf ex:Joan_Baez_What_You_Gonna_Call_Your_Pretty_Little_Baby_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/998b77fc-3d2e-4251-86d0-b8f2cec21557> .
+
+ex:John_Paul_Jones_Boll_Weevil_Rock_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Boll Weevil Rock" ;
+    schema:recordingOf ex:John_Paul_Jones_Boll_Weevil_Rock_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/04300f18-f69f-456c-8c5f-b1c258668e06> .
+
+ex:John_Paul_Jones_Breathless_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Breathless" ;
+    schema:recordingOf ex:John_Paul_Jones_Breathless_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4a4fd9a3-985a-4c86-9b45-1d0743b171cd> .
+
+ex:John_Paul_Jones_Burn_Up_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Burn Up" ;
+    schema:recordingOf ex:John_Paul_Jones_Burn_Up_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/da82e483-87ba-4cd2-9372-e94275c81eee> .
+
+ex:John_Paul_Jones_Dixie_Fried_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Dixie Fried" ;
+    schema:recordingOf ex:John_Paul_Jones_Dixie_Fried_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0812f6fd-08b4-4c39-80dd-b839c26faa95> .
+
+ex:John_Paul_Jones_Down_the_Line_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Down the Line" ;
+    schema:recordingOf ex:John_Paul_Jones_Down_the_Line_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/cfa065b1-442b-4eea-8e76-177111865145> .
+
+ex:John_Paul_Jones_Everything_I_Do_Is_Wrong_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Everything I Do Is Wrong" ;
+    schema:recordingOf ex:John_Paul_Jones_Everything_I_Do_Is_Wrong_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/81beff59-55e2-46e3-befc-f6de7ec3eb17> .
+
+ex:John_Paul_Jones_Fabulous_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Fabulous" ;
+    schema:recordingOf ex:John_Paul_Jones_Fabulous_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d680be52-681f-43e5-8299-88b6fafe0a17> .
+
+ex:John_Paul_Jones_Livin_Lovin_Wreck_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Livin’ Lovin’ Wreck" ;
+    schema:recordingOf ex:John_Paul_Jones_Livin_Lovin_Wreck_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/47aab044-8ae1-4346-8d4c-ca6980c6a2d8> .
+
+ex:John_Paul_Jones_Lonely_Weekend_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Lonely Weekend" ;
+    schema:recordingOf ex:John_Paul_Jones_Lonely_Weekend_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c4800f4e-2d57-44d2-90e9-144f2581d0df> .
+
+ex:John_Paul_Jones_Lovin_Up_a_Storm_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Lovin’ Up a Storm" ;
+    schema:recordingOf ex:John_Paul_Jones_Lovin_Up_a_Storm_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a5dcf410-9b77-4f9d-823b-826ff1a21c7c> .
+
+ex:John_Paul_Jones_One_Long_Kiss_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "One Long Kiss" ;
+    schema:recordingOf ex:John_Paul_Jones_One_Long_Kiss_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/42984ff4-7d04-4499-a256-53c7f3dd95c3> .
+
+ex:John_Paul_Jones_Rave_On_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Rave On" ;
+    schema:recordingOf ex:John_Paul_Jones_Rave_On_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/81f7d82d-0f3d-4d8c-b2e4-8ef5e9310ee1> .
+
+ex:John_Paul_Jones_Think_It_Over_Rec a mm:Recording ;
+    schema:inAlbum ex:John_Paul_Jones_No_Introduction_Necessary_Album ;
+    schema:name "Think It Over" ;
+    schema:recordingOf ex:John_Paul_Jones_Think_It_Over_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a0fc699e-9e7d-4d7e-856d-63a696301c6e> .
+
+ex:Keith_Richards_Big_Enough_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "Big Enough" ;
+    schema:recordingOf ex:Keith_Richards_Big_Enough_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e2c3572e-b77f-48fd-888e-aa8eebafea9a> .
+
+ex:Keith_Richards_How_I_Wish_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "How I Wish" ;
+    schema:recordingOf ex:Keith_Richards_How_I_Wish_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/37bdab9d-a06d-47c0-a4c8-b7a6b0615626> .
+
+ex:Keith_Richards_I_Could_Have_Stood_You_Up_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "I Could Have Stood You Up" ;
+    schema:recordingOf ex:Keith_Richards_I_Could_Have_Stood_You_Up_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c3c2d44d-9f5d-40c5-992a-5e43a397a747> .
+
+ex:Keith_Richards_It_Means_a_Lot_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "It Means a Lot" ;
+    schema:recordingOf ex:Keith_Richards_It_Means_a_Lot_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/72c5d005-389a-4ddc-bbf1-4b4d23586933> .
+
+ex:Keith_Richards_Locked_Away_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "Locked Away" ;
+    schema:recordingOf ex:Keith_Richards_Locked_Away_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d664abe2-e290-4566-a010-9cd37252fdb3> .
+
+ex:Keith_Richards_Make_No_Mistake_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "Make No Mistake" ;
+    schema:recordingOf ex:Keith_Richards_Make_No_Mistake_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/67cdf288-4142-4022-a129-cb3113e48101> .
+
+ex:Keith_Richards_Rockawhile_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "Rockawhile" ;
+    schema:recordingOf ex:Keith_Richards_Rockawhile_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c53bac12-ed27-4c2d-a56c-bb4172488b39> .
+
+ex:Keith_Richards_Struggle_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "Struggle" ;
+    schema:recordingOf ex:Keith_Richards_Struggle_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/48abd11d-25f3-4d53-bae1-1b4e74da2cad> .
+
+ex:Keith_Richards_Take_It_So_Hard_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "Take It So Hard" ;
+    schema:recordingOf ex:Keith_Richards_Take_It_So_Hard_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/065417dd-8a81-4e30-8da4-41543baa0f61> .
+
+ex:Keith_Richards_Whip_It_Up_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "Whip It Up" ;
+    schema:recordingOf ex:Keith_Richards_Whip_It_Up_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a9be0ca4-7b2c-44ed-89bd-3eb6c5a1868f> .
+
+ex:Keith_Richards_You_Don_t_Move_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Keith_Richards_Talk_Is_Cheap_Album ;
+    schema:name "You Don’t Move Me" ;
+    schema:recordingOf ex:Keith_Richards_You_Don_t_Move_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3efe5ad1-e42c-4965-b959-49635d6c3ae0> .
+
+ex:Kenny_Loggins_Celebrate_Me_Home_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "Celebrate Me Home" ;
+    schema:recordingOf ex:Kenny_Loggins_Celebrate_Me_Home_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9f71aab8-d5ea-40ce-92ff-7e2ab75d948c> .
+
+ex:Kenny_Loggins_Daddy_s_Back_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "Daddy’s Back" ;
+    schema:recordingOf ex:Kenny_Loggins_Daddy_s_Back_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/138ac10b-e07a-4cf8-89a5-8ed0dc8af9f2> .
+
+ex:Kenny_Loggins_Enter_My_Dream_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "Enter My Dream" ;
+    schema:recordingOf ex:Kenny_Loggins_Enter_My_Dream_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/557a4d8c-46b9-4c43-8dbc-27dc434146e0> .
+
+ex:Kenny_Loggins_I_Believe_in_Love_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "I Believe in Love" ;
+    schema:recordingOf ex:Kenny_Loggins_I_Believe_in_Love_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2fd77d0e-0368-42e8-9454-90a09c058a76> .
+
+ex:Kenny_Loggins_I_ve_Got_the_Melody_Deep_in_My_Heart_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "I’ve Got the Melody (Deep in My Heart)" ;
+    schema:recordingOf ex:Kenny_Loggins_I_ve_Got_the_Melody_Deep_in_My_Heart_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/eeba0986-93a4-4b09-b181-7e50578204d6> .
+
+ex:Kenny_Loggins_If_You_Be_Wise_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "If You Be Wise" ;
+    schema:recordingOf ex:Kenny_Loggins_If_You_Be_Wise_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/923bacba-fb40-4072-9d4c-498a0f4ab28b> .
+
+ex:Kenny_Loggins_Lady_Luck_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "Lady Luck" ;
+    schema:recordingOf ex:Kenny_Loggins_Lady_Luck_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2f1baaab-4dde-45bb-ae37-983426beac75> .
+
+ex:Kenny_Loggins_Set_It_Free_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "Set It Free" ;
+    schema:recordingOf ex:Kenny_Loggins_Set_It_Free_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/11e68484-03e5-451f-9eb1-55eb5917582f> .
+
+ex:Kenny_Loggins_Why_Do_People_Lie_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "Why Do People Lie" ;
+    schema:recordingOf ex:Kenny_Loggins_Why_Do_People_Lie_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3706c20b-7828-496b-ac5e-3d2181953e66> .
+
+ex:Kenny_Loggins_You_Don_t_Know_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Kenny_Loggins_Celebrate_Me_Home_Album ;
+    schema:name "You Don’t Know Me" ;
+    schema:recordingOf ex:Kenny_Loggins_You_Don_t_Know_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0667ca95-b190-4943-8ea2-b0dddf9f3faa> .
+
+ex:Madonna_Borderline_Rec a mm:Recording ;
+    schema:inAlbum ex:Madonna_Madonna_Album ;
+    schema:name "Borderline" ;
+    schema:recordingOf ex:Madonna_Borderline_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/516012bf-ff23-4fb9-ae18-d70f35fa8603> .
+
+ex:Madonna_Burning_Up_Rec a mm:Recording ;
+    schema:inAlbum ex:Madonna_Madonna_Album ;
+    schema:name "Burning Up" ;
+    schema:recordingOf ex:Madonna_Burning_Up_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a17afcb2-d983-40d4-af7a-c9a2d803fe48> .
+
+ex:Madonna_Everybody_Rec a mm:Recording ;
+    schema:inAlbum ex:Madonna_Madonna_Album ;
+    schema:name "Everybody" ;
+    schema:recordingOf ex:Madonna_Everybody_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e9493fd6-f337-4e57-ae21-1bb597b9bdbf> .
+
+ex:Madonna_Holiday_Rec a mm:Recording ;
+    schema:inAlbum ex:Madonna_Madonna_Album ;
+    schema:name "Holiday" ;
+    schema:recordingOf ex:Madonna_Holiday_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d4708b79-62e7-4ce4-a6ca-247237d4ef4e> .
+
+ex:Madonna_I_Know_It_Rec a mm:Recording ;
+    schema:inAlbum ex:Madonna_Madonna_Album ;
+    schema:name "I Know It" ;
+    schema:recordingOf ex:Madonna_I_Know_It_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/69c1c7e0-4bd5-40d5-9e35-857142fa64df> .
+
+ex:Madonna_Lucky_Star_Rec a mm:Recording ;
+    schema:inAlbum ex:Madonna_Madonna_Album ;
+    schema:name "Lucky Star" ;
+    schema:recordingOf ex:Madonna_Lucky_Star_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9a501c4e-c7cb-40f8-ae2d-6cd92807f9a8> .
+
+ex:Madonna_Physical_Attraction_Rec a mm:Recording ;
+    schema:inAlbum ex:Madonna_Madonna_Album ;
+    schema:name "Physical Attraction" ;
+    schema:recordingOf ex:Madonna_Physical_Attraction_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d4f61112-4bc2-4109-a56c-ba63acb9465f> .
+
+ex:Madonna_Think_of_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Madonna_Madonna_Album ;
+    schema:name "Think of Me" ;
+    schema:recordingOf ex:Madonna_Think_of_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ebebef4c-8016-4602-8e65-bbcdb418d14c> .
+
+ex:Mick_Jagger_Blow_With_Ry_Rec a mm:Recording ;
+    schema:inAlbum ex:Mick_Jagger_Jamming_With_Edward_Album ;
+    schema:name "Blow With Ry" ;
+    schema:recordingOf ex:Mick_Jagger_Blow_With_Ry_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1294479f-7418-4ac8-8424-35cab04a6507> .
+
+ex:Mick_Jagger_Edward_s_Thrump_Up_Rec a mm:Recording ;
+    schema:inAlbum ex:Mick_Jagger_Jamming_With_Edward_Album ;
+    schema:name "Edward’s Thrump Up" ;
+    schema:recordingOf ex:Mick_Jagger_Edward_s_Thrump_Up_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3eb17bcb-36ed-425d-8cba-a6c1e481737b> .
+
+ex:Mick_Jagger_Highland_Fling_Rec a mm:Recording ;
+    schema:inAlbum ex:Mick_Jagger_Jamming_With_Edward_Album ;
+    schema:name "Highland Fling" ;
+    schema:recordingOf ex:Mick_Jagger_Highland_Fling_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6e8dbe1b-d238-44f0-a23b-226db12f6e06> .
+
+ex:Mick_Jagger_Interlude_la_el_Hopo_Rec a mm:Recording ;
+    schema:inAlbum ex:Mick_Jagger_Jamming_With_Edward_Album ;
+    schema:name "Interlude à la el Hopo" ;
+    schema:recordingOf ex:Mick_Jagger_Interlude_la_el_Hopo_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3ea223fc-a178-4fcd-99f7-fa98e8d19a4d> .
+
+ex:Mick_Jagger_It_Hurts_Me_Too_Rec a mm:Recording ;
+    schema:inAlbum ex:Mick_Jagger_Jamming_With_Edward_Album ;
+    schema:name "It Hurts Me Too" ;
+    schema:recordingOf ex:Mick_Jagger_It_Hurts_Me_Too_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/14399433-c3e7-438d-aaaa-dee3f79592e3> .
+
+ex:Mick_Jagger_The_Boudoir_Stomp_Rec a mm:Recording ;
+    schema:inAlbum ex:Mick_Jagger_Jamming_With_Edward_Album ;
+    schema:name "The Boudoir Stomp" ;
+    schema:recordingOf ex:Mick_Jagger_The_Boudoir_Stomp_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4a56afc5-6739-48c9-b5da-d28c63633672> .
+
+ex:Mick_Jagger_The_Loveliest_Night_of_the_Year_Rec a mm:Recording ;
+    schema:inAlbum ex:Mick_Jagger_Jamming_With_Edward_Album ;
+    schema:name "The Loveliest Night of the Year" ;
+    schema:recordingOf ex:Mick_Jagger_The_Loveliest_Night_of_the_Year_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/187e69f2-085b-4806-90bc-046a99eca230> .
+
+ex:Neil_Young_Here_We_Are_in_the_Years_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "Here We Are in the Years" ;
+    schema:recordingOf ex:Neil_Young_Here_We_Are_in_the_Years_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4f15a10b-fa8c-45d3-99fe-1f0beeae8038> .
+
+ex:Neil_Young_I_ve_Been_Waiting_for_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "I’ve Been Waiting for You" ;
+    schema:recordingOf ex:Neil_Young_I_ve_Been_Waiting_for_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/764bba61-bbac-40fd-a512-a2a9acbdeb1b> .
+
+ex:Neil_Young_I_ve_Loved_Her_So_Long_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "I’ve Loved Her So Long" ;
+    schema:recordingOf ex:Neil_Young_I_ve_Loved_Her_So_Long_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/43dac896-4f53-4eb8-86bc-8277e972ca95> .
+
+ex:Neil_Young_If_I_Could_Have_Her_Tonight_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "If I Could Have Her Tonight" ;
+    schema:recordingOf ex:Neil_Young_If_I_Could_Have_Her_Tonight_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/93e5bc8e-ac11-417c-84ea-530d30fc4c6e> .
+
+ex:Neil_Young_String_Quartet_From_Whiskey_Boot_Hill_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "String Quartet From Whiskey Boot Hill" ;
+    schema:recordingOf ex:Neil_Young_String_Quartet_From_Whiskey_Boot_Hill_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fb233c12-f6b0-406b-8fdd-82c64f252149> .
+
+ex:Neil_Young_The_Emperor_of_Wyoming_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "The Emperor of Wyoming" ;
+    schema:recordingOf ex:Neil_Young_The_Emperor_of_Wyoming_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/bd0e5922-bd3e-403e-bce6-0e24dcf191fd> .
+
+ex:Neil_Young_The_Last_Trip_to_Tulsa_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "The Last Trip to Tulsa" ;
+    schema:recordingOf ex:Neil_Young_The_Last_Trip_to_Tulsa_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/65f5f981-ae41-4c61-9349-b734fd03961e> .
+
+ex:Neil_Young_The_Loner_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "The Loner" ;
+    schema:recordingOf ex:Neil_Young_The_Loner_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ab4137a5-146b-4093-8736-1811ef18a105> .
+
+ex:Neil_Young_The_Old_Laughing_Lady_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "The Old Laughing Lady" ;
+    schema:recordingOf ex:Neil_Young_The_Old_Laughing_Lady_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/74ec3248-13ec-4e22-a71f-52792e48ae99> .
+
+ex:Neil_Young_What_Did_You_Do_to_My_Life_Rec a mm:Recording ;
+    schema:inAlbum ex:Neil_Young_Neil_Young_Album ;
+    schema:name "What Did You Do to My Life?" ;
+    schema:recordingOf ex:Neil_Young_What_Did_You_Do_to_My_Life_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/9ecd9610-5e6e-49b8-aab7-b9a996412b51> .
+
+ex:Nik_Kershaw_Bogart_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "Bogart" ;
+    schema:recordingOf ex:Nik_Kershaw_Bogart_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/038af95c-2017-4cbc-96ec-a1e9042bf033> .
+
+ex:Nik_Kershaw_Cloak_and_Dagger_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "Cloak and Dagger" ;
+    schema:recordingOf ex:Nik_Kershaw_Cloak_and_Dagger_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ed5f5d62-8794-421b-8d40-6405b46be22f> .
+
+ex:Nik_Kershaw_Dancing_Girls_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "Dancing Girls" ;
+    schema:recordingOf ex:Nik_Kershaw_Dancing_Girls_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/02f162bf-468f-4160-a336-ee082301fd02> .
+
+ex:Nik_Kershaw_Drum_Talk_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "Drum Talk" ;
+    schema:recordingOf ex:Nik_Kershaw_Drum_Talk_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/cda99e73-90d2-4f3d-a8b5-40f58e3e34bb> .
+
+ex:Nik_Kershaw_Faces_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "Faces" ;
+    schema:recordingOf ex:Nik_Kershaw_Faces_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/7ebc8ca4-dc48-4fc6-8503-906cec2f010b> .
+
+ex:Nik_Kershaw_Gone_to_Pieces_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "Gone to Pieces" ;
+    schema:recordingOf ex:Nik_Kershaw_Gone_to_Pieces_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/66cc9b15-d49b-4b1d-bce2-0195b51e6c29> .
+
+ex:Nik_Kershaw_Human_Racing_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "Human Racing" ;
+    schema:recordingOf ex:Nik_Kershaw_Human_Racing_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f6384772-713b-430e-882a-a26d263a68f2> .
+
+ex:Nik_Kershaw_I_Won_t_Let_the_Sun_Go_Down_on_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "I Won’t Let the Sun Go Down on Me" ;
+    schema:recordingOf ex:Nik_Kershaw_I_Won_t_Let_the_Sun_Go_Down_on_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2b7195fe-b993-41ff-a32a-628550210cac> .
+
+ex:Nik_Kershaw_Shame_on_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "Shame on You" ;
+    schema:recordingOf ex:Nik_Kershaw_Shame_on_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/cccb48a6-9432-4593-a1d3-0c96e3cc2541> .
+
+ex:Nik_Kershaw_Wouldn_t_It_Be_Good_Rec a mm:Recording ;
+    schema:inAlbum ex:Nik_Kershaw_Human_Racing_Album ;
+    schema:name "Wouldn’t It Be Good" ;
+    schema:recordingOf ex:Nik_Kershaw_Wouldn_t_It_Be_Good_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/5c81e18d-ae23-4251-9523-bf354cffb148> .
+
+ex:Pat_Metheny_Batterie_Rec a mm:Recording ;
+    schema:inAlbum ex:Pat_Metheny_Jaco_Album ;
+    schema:name "Batterie" ;
+    schema:recordingOf ex:Pat_Metheny_Batterie_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3d9b5ebf-7241-41cf-a0d6-2549f8c72081> .
+
+ex:Pat_Metheny_Blood_Rec a mm:Recording ;
+    schema:inAlbum ex:Pat_Metheny_Jaco_Album ;
+    schema:name "Blood" ;
+    schema:recordingOf ex:Pat_Metheny_Blood_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/932e5548-0de5-42d1-a44d-2be23685ff61> .
+
+ex:Pat_Metheny_Donkey_Rec a mm:Recording ;
+    schema:inAlbum ex:Pat_Metheny_Jaco_Album ;
+    schema:name "Donkey" ;
+    schema:recordingOf ex:Pat_Metheny_Donkey_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/bb2b4ffe-d76e-4bea-a227-cb87c823b42c> .
+
+ex:Pat_Metheny_Jaco_Rec a mm:Recording ;
+    schema:inAlbum ex:Pat_Metheny_Jaco_Album ;
+    schema:name "Jaco" ;
+    schema:recordingOf ex:Pat_Metheny_Jaco_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/60c5d466-e729-4abb-b65b-6081b18b4784> .
+
+ex:Pat_Metheny_King_Korn_Rec a mm:Recording ;
+    schema:inAlbum ex:Pat_Metheny_Jaco_Album ;
+    schema:name "King Korn" ;
+    schema:recordingOf ex:Pat_Metheny_King_Korn_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a223917a-4577-4390-b194-1986abfa371d> .
+
+ex:Pat_Metheny_Overtoned_Rec a mm:Recording ;
+    schema:inAlbum ex:Pat_Metheny_Jaco_Album ;
+    schema:name "Overtoned" ;
+    schema:recordingOf ex:Pat_Metheny_Overtoned_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/934e8bb2-3550-4884-828a-d99be1737f3f> .
+
+ex:Pat_Metheny_Poconos_Rec a mm:Recording ;
+    schema:inAlbum ex:Pat_Metheny_Jaco_Album ;
+    schema:name "Poconos" ;
+    schema:recordingOf ex:Pat_Metheny_Poconos_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4709c49f-c6b0-4673-9dc8-addd435de82d> .
+
+ex:Pat_Metheny_Vampira_Rec a mm:Recording ;
+    schema:inAlbum ex:Pat_Metheny_Jaco_Album ;
+    schema:name "Vampira" ;
+    schema:recordingOf ex:Pat_Metheny_Vampira_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/247c8a09-8b45-4b49-ac71-d1369163bb81> .
+
+ex:Pat_Metheny_Vashkar_Rec a mm:Recording ;
+    schema:inAlbum ex:Pat_Metheny_Jaco_Album ;
+    schema:name "Vashkar" ;
+    schema:recordingOf ex:Pat_Metheny_Vashkar_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4c3f1c45-4726-4f85-832e-86ea6671ecef> .
+
+ex:Patti_LaBelle_Dan_Swit_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Patti_LaBelle_Patti_Labelle_Album ;
+    schema:name "Dan Swit Me" ;
+    schema:recordingOf ex:Patti_LaBelle_Dan_Swit_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e5db97aa-4e52-4f78-9818-ff792ed5f7d8> .
+
+ex:Patti_LaBelle_Do_I_Stand_a_Chance_Rec a mm:Recording ;
+    schema:inAlbum ex:Patti_LaBelle_Patti_Labelle_Album ;
+    schema:name "Do I Stand a Chance" ;
+    schema:recordingOf ex:Patti_LaBelle_Do_I_Stand_a_Chance_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/518f8c97-2733-496d-9330-eea1555b3826> .
+
+ex:Patti_LaBelle_Funky_Music_Rec a mm:Recording ;
+    schema:inAlbum ex:Patti_LaBelle_Patti_Labelle_Album ;
+    schema:name "Funky Music" ;
+    schema:recordingOf ex:Patti_LaBelle_Funky_Music_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1aa3e0f2-9c48-431e-a95c-fd9147ce83c3> .
+
+ex:Patti_LaBelle_I_Think_About_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Patti_LaBelle_Patti_Labelle_Album ;
+    schema:name "I Think About You" ;
+    schema:recordingOf ex:Patti_LaBelle_I_Think_About_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f723ba80-9b37-478f-94a8-834a09061031> .
+
+ex:Patti_LaBelle_Joy_to_Have_Your_Love_Rec a mm:Recording ;
+    schema:inAlbum ex:Patti_LaBelle_Patti_Labelle_Album ;
+    schema:name "Joy to Have Your Love" ;
+    schema:recordingOf ex:Patti_LaBelle_Joy_to_Have_Your_Love_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b905996a-8d64-4ad8-97c1-4abfd0e1dabb> .
+
+ex:Patti_LaBelle_Most_Likely_You_Go_Your_Way_and_I_ll_Go_Mine_Rec a mm:Recording ;
+    schema:inAlbum ex:Patti_LaBelle_Patti_Labelle_Album ;
+    schema:name "Most Likely You Go Your Way (and I’ll Go Mine)" ;
+    schema:recordingOf ex:Patti_LaBelle_Most_Likely_You_Go_Your_Way_and_I_ll_Go_Mine_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b0872e4f-be41-4e4a-8b1c-7a9fbb0d505f> .
+
+ex:Patti_LaBelle_Since_I_Don_t_Have_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Patti_LaBelle_Patti_Labelle_Album ;
+    schema:name "Since I Don't Have You" ;
+    schema:recordingOf ex:Patti_LaBelle_Since_I_Don_t_Have_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/386ea8fe-8085-4b38-a03a-2c34ad7dfd39> .
+
+ex:Patti_LaBelle_You_Are_My_Friend_Rec a mm:Recording ;
+    schema:inAlbum ex:Patti_LaBelle_Patti_Labelle_Album ;
+    schema:name "You Are My Friend" ;
+    schema:recordingOf ex:Patti_LaBelle_You_Are_My_Friend_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/8cd2c5d1-3ca5-4bc7-aec4-ff02e7c7eb15> .
+
+ex:Patti_LaBelle_You_Can_t_Judge_a_Book_by_the_Cover_Rec a mm:Recording ;
+    schema:inAlbum ex:Patti_LaBelle_Patti_Labelle_Album ;
+    schema:name "You Can't Judge a Book by the Cover" ;
+    schema:recordingOf ex:Patti_LaBelle_You_Can_t_Judge_a_Book_by_the_Cover_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ed81866c-79a8-473b-b36c-00adda065275> .
+
+ex:Paul_Martinez_Every_Night_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Every Night" ;
+    schema:recordingOf ex:Paul_Martinez_Every_Night_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/8d1d2ea2-775c-4ff5-b3a6-02322aa2af93> .
+
+ex:Paul_Martinez_Hot_as_Sun_Glasses_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Hot as Sun / Glasses" ;
+    schema:recordingOf ex:Paul_Martinez_Hot_as_Sun_Glasses_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a6a6eabe-6d63-4791-8c4d-d7a620be1dbb> .
+
+ex:Paul_Martinez_Junk_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Junk" ;
+    schema:recordingOf ex:Paul_Martinez_Junk_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/15a2cdd8-d35d-4d59-a307-cc0fdabd9dfc> .
+
+ex:Paul_Martinez_Kreen_Akrore_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Kreen‐Akrore" ;
+    schema:recordingOf ex:Paul_Martinez_Kreen_Akrore_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6d22b73b-7ca3-482e-9458-d174270cdd70> .
+
+ex:Paul_Martinez_Man_We_Was_Lonely_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Man We Was Lonely" ;
+    schema:recordingOf ex:Paul_Martinez_Man_We_Was_Lonely_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e827bd52-095d-4379-abfd-442bd40235d9> .
+
+ex:Paul_Martinez_Maybe_I_m_Amazed_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Maybe I’m Amazed" ;
+    schema:recordingOf ex:Paul_Martinez_Maybe_I_m_Amazed_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3f285d0c-4530-48a3-8307-425043972e77> .
+
+ex:Paul_Martinez_Momma_Miss_America_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Momma Miss America" ;
+    schema:recordingOf ex:Paul_Martinez_Momma_Miss_America_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/47c795f8-845e-42ae-a015-1ccec46f1ec3> .
+
+ex:Paul_Martinez_Oo_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Oo You" ;
+    schema:recordingOf ex:Paul_Martinez_Oo_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/61e64185-fe2d-4087-a602-3df1fbe18bec> .
+
+ex:Paul_Martinez_Singalong_Junk_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Singalong Junk" ;
+    schema:recordingOf ex:Paul_Martinez_Singalong_Junk_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/22f31be1-997e-4f95-9a0a-26fb4cc154cf> .
+
+ex:Paul_Martinez_Teddy_Boy_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Teddy Boy" ;
+    schema:recordingOf ex:Paul_Martinez_Teddy_Boy_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/05f5be44-f132-4b8f-985a-ff40d267dc03> .
+
+ex:Paul_Martinez_That_Would_Be_Something_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "That Would Be Something" ;
+    schema:recordingOf ex:Paul_Martinez_That_Would_Be_Something_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/8c1f9a46-2c30-4072-b579-da5c09d5d7dd> .
+
+ex:Paul_Martinez_The_Lovely_Linda_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "The Lovely Linda" ;
+    schema:recordingOf ex:Paul_Martinez_The_Lovely_Linda_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/46cb9ec3-83e9-4ebe-86ff-ccf365ce83ea> .
+
+ex:Paul_Martinez_Valentine_Day_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Martinez_McCartney_Album ;
+    schema:name "Valentine Day" ;
+    schema:recordingOf ex:Paul_Martinez_Valentine_Day_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/11ad7683-5ce4-4c08-aecd-ba8c714712d9> .
+
+ex:Paul_McCartney_Every_Night_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Every Night" ;
+    schema:recordingOf ex:Paul_McCartney_Every_Night_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/8d1d2ea2-775c-4ff5-b3a6-02322aa2af93> .
+
+ex:Paul_McCartney_Hot_as_Sun_Glasses_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Hot as Sun / Glasses" ;
+    schema:recordingOf ex:Paul_McCartney_Hot_as_Sun_Glasses_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a6a6eabe-6d63-4791-8c4d-d7a620be1dbb> .
+
+ex:Paul_McCartney_Junk_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Junk" ;
+    schema:recordingOf ex:Paul_McCartney_Junk_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/15a2cdd8-d35d-4d59-a307-cc0fdabd9dfc> .
+
+ex:Paul_McCartney_Kreen_Akrore_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Kreen‐Akrore" ;
+    schema:recordingOf ex:Paul_McCartney_Kreen_Akrore_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6d22b73b-7ca3-482e-9458-d174270cdd70> .
+
+ex:Paul_McCartney_Man_We_Was_Lonely_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Man We Was Lonely" ;
+    schema:recordingOf ex:Paul_McCartney_Man_We_Was_Lonely_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/e827bd52-095d-4379-abfd-442bd40235d9> .
+
+ex:Paul_McCartney_Maybe_I_m_Amazed_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Maybe I’m Amazed" ;
+    schema:recordingOf ex:Paul_McCartney_Maybe_I_m_Amazed_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3f285d0c-4530-48a3-8307-425043972e77> .
+
+ex:Paul_McCartney_Momma_Miss_America_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Momma Miss America" ;
+    schema:recordingOf ex:Paul_McCartney_Momma_Miss_America_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/47c795f8-845e-42ae-a015-1ccec46f1ec3> .
+
+ex:Paul_McCartney_Oo_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Oo You" ;
+    schema:recordingOf ex:Paul_McCartney_Oo_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/61e64185-fe2d-4087-a602-3df1fbe18bec> .
+
+ex:Paul_McCartney_Singalong_Junk_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Singalong Junk" ;
+    schema:recordingOf ex:Paul_McCartney_Singalong_Junk_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/22f31be1-997e-4f95-9a0a-26fb4cc154cf> .
+
+ex:Paul_McCartney_Teddy_Boy_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Teddy Boy" ;
+    schema:recordingOf ex:Paul_McCartney_Teddy_Boy_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/05f5be44-f132-4b8f-985a-ff40d267dc03> .
+
+ex:Paul_McCartney_That_Would_Be_Something_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "That Would Be Something" ;
+    schema:recordingOf ex:Paul_McCartney_That_Would_Be_Something_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/8c1f9a46-2c30-4072-b579-da5c09d5d7dd> .
+
+ex:Paul_McCartney_The_Lovely_Linda_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "The Lovely Linda" ;
+    schema:recordingOf ex:Paul_McCartney_The_Lovely_Linda_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/46cb9ec3-83e9-4ebe-86ff-ccf365ce83ea> .
+
+ex:Paul_McCartney_Valentine_Day_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_McCartney_McCartney_Album ;
+    schema:name "Valentine Day" ;
+    schema:recordingOf ex:Paul_McCartney_Valentine_Day_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/11ad7683-5ce4-4c08-aecd-ba8c714712d9> .
+
+ex:Paul_Young_Behind_Your_Smile_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Behind Your Smile" ;
+    schema:recordingOf ex:Paul_Young_Behind_Your_Smile_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/60ef54db-6365-4102-acf7-db42471c5342> .
+
+ex:Paul_Young_Broken_Man_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Broken Man" ;
+    schema:recordingOf ex:Paul_Young_Broken_Man_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/45326015-580f-44f2-8529-2be03b164b0b> .
+
+ex:Paul_Young_Come_Back_and_Stay_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Come Back and Stay" ;
+    schema:recordingOf ex:Paul_Young_Come_Back_and_Stay_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/dbc85b7b-0230-44ee-ace9-364a6d374a79> .
+
+ex:Paul_Young_Iron_Out_the_Rough_Spots_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Iron Out the Rough Spots" ;
+    schema:recordingOf ex:Paul_Young_Iron_Out_the_Rough_Spots_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/90b65504-2f72-45a6-b11e-8c52c9daf670> .
+
+ex:Paul_Young_Ku_Ku_Kurama_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Ku-Ku Kurama" ;
+    schema:recordingOf ex:Paul_Young_Ku_Ku_Kurama_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b0a44698-4abb-4679-bd20-2d52ee0f7c87> .
+
+ex:Paul_Young_Love_Will_Tear_Us_Apart_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Love Will Tear Us Apart" ;
+    schema:recordingOf ex:Paul_Young_Love_Will_Tear_Us_Apart_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/74fcd2df-4828-4339-aa4d-d51fc62e901b> .
+
+ex:Paul_Young_Love_of_the_Common_People_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Love of the Common People" ;
+    schema:recordingOf ex:Paul_Young_Love_of_the_Common_People_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/155339a4-babf-499f-a8a6-ae3d5d764e16> .
+
+ex:Paul_Young_No_Parlez_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "No Parlez" ;
+    schema:recordingOf ex:Paul_Young_No_Parlez_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/06d48841-e47d-4904-a1a8-00deb2054ff8> .
+
+ex:Paul_Young_Oh_Girl_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Oh Girl" ;
+    schema:recordingOf ex:Paul_Young_Oh_Girl_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/5b8e9792-cba4-46eb-8e8b-f5a20fe142c8> .
+
+ex:Paul_Young_Sex_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Sex" ;
+    schema:recordingOf ex:Paul_Young_Sex_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6e76b69e-f3d9-48f0-bb6c-6a7b0aa4d6e6> .
+
+ex:Paul_Young_Tender_Trap_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Tender Trap" ;
+    schema:recordingOf ex:Paul_Young_Tender_Trap_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/01ab586c-2348-4278-8eed-1818c3804534> .
+
+ex:Paul_Young_Wherever_I_Lay_My_Hat_That_s_My_Home_Rec a mm:Recording ;
+    schema:inAlbum ex:Paul_Young_No_Parlez_Album ;
+    schema:name "Wherever I Lay My Hat (That’s My Home)" ;
+    schema:recordingOf ex:Paul_Young_Wherever_I_Lay_My_Hat_That_s_My_Home_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b75aa88e-c995-4b8f-a380-244f304fe969> .
+
+ex:Phil_Collins_Behind_the_Lines_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "Behind the Lines" ;
+    schema:recordingOf ex:Phil_Collins_Behind_the_Lines_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3d405759-5985-4320-925f-23bad0320516> .
+
+ex:Phil_Collins_Droned_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "Droned" ;
+    schema:recordingOf ex:Phil_Collins_Droned_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/21820bb0-1358-462a-8eef-ce1a1dd7cb0d> .
+
+ex:Phil_Collins_Hand_in_Hand_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "Hand in Hand" ;
+    schema:recordingOf ex:Phil_Collins_Hand_in_Hand_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a31d54fe-b5f8-4a34-8a09-df84f9bbaf82> .
+
+ex:Phil_Collins_I_Missed_Again_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "I Missed Again" ;
+    schema:recordingOf ex:Phil_Collins_I_Missed_Again_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/555d6685-d81a-42d5-8338-801c09c901f1> .
+
+ex:Phil_Collins_I_m_Not_Moving_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "I’m Not Moving" ;
+    schema:recordingOf ex:Phil_Collins_I_m_Not_Moving_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/99dce3cd-d1bd-4be1-ac50-bfdb27f3d394> .
+
+ex:Phil_Collins_If_Leaving_Me_Is_Easy_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "If Leaving Me Is Easy" ;
+    schema:recordingOf ex:Phil_Collins_If_Leaving_Me_Is_Easy_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/bf86d5a6-4e8b-4c73-a680-ed4835b15c9d> .
+
+ex:Phil_Collins_In_the_Air_Tonight_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "In the Air Tonight" ;
+    schema:recordingOf ex:Phil_Collins_In_the_Air_Tonight_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/03b5bad2-47c5-45c3-ad34-53135f3ec4cc> .
+
+ex:Phil_Collins_The_Roof_Is_Leaking_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "The Roof Is Leaking" ;
+    schema:recordingOf ex:Phil_Collins_The_Roof_Is_Leaking_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6ca2d2c8-51dc-47c4-b8a8-0c5089967f89> .
+
+ex:Phil_Collins_This_Must_Be_Love_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "This Must Be Love" ;
+    schema:recordingOf ex:Phil_Collins_This_Must_Be_Love_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b0a47196-7339-4f96-a59e-2a842c272c74> .
+
+ex:Phil_Collins_Thunder_and_Lightning_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "Thunder and Lightning" ;
+    schema:recordingOf ex:Phil_Collins_Thunder_and_Lightning_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/94efe5c4-6730-4b61-a073-585be434c6d6> .
+
+ex:Phil_Collins_Tomorrow_Never_Knows_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "Tomorrow Never Knows" ;
+    schema:recordingOf ex:Phil_Collins_Tomorrow_Never_Knows_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fab587af-ce44-4f3f-a3a5-c3d970d37bae> .
+
+ex:Phil_Collins_You_Know_What_I_Mean_Rec a mm:Recording ;
+    schema:inAlbum ex:Phil_Collins_Face_Value_Album ;
+    schema:name "You Know What I Mean" ;
+    schema:recordingOf ex:Phil_Collins_You_Know_What_I_Mean_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/df579ce2-dcf8-413f-901f-a0a0a6154586> .
+
+ex:Rick_Springfield_1000_Years_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "1000 Years" ;
+    schema:recordingOf ex:Rick_Springfield_1000_Years_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a314b9fa-fde2-457f-9b85-c737a59c62f8> .
+
+ex:Rick_Springfield_Come_on_Everybody_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "Come on Everybody" ;
+    schema:recordingOf ex:Rick_Springfield_Come_on_Everybody_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/cc28af05-3d66-47b7-a26d-d0a58c539df3> .
+
+ex:Rick_Springfield_Hooky_Jo_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "Hooky Jo" ;
+    schema:recordingOf ex:Rick_Springfield_Hooky_Jo_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/afaa84a6-abcb-4294-a155-d37650563779> .
+
+ex:Rick_Springfield_I_Didn_t_Mean_to_Love_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "I Didn't Mean to Love You" ;
+    schema:recordingOf ex:Rick_Springfield_I_Didn_t_Mean_to_Love_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f8712202-b3f4-4d9b-91b5-cf6944cc72c1> .
+
+ex:Rick_Springfield_Mother_Can_You_Carry_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "Mother Can You Carry Me" ;
+    schema:recordingOf ex:Rick_Springfield_Mother_Can_You_Carry_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/022a6ec6-1199-475b-ac6b-838064d22b8e> .
+
+ex:Rick_Springfield_Speak_to_the_Sky_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "Speak to the Sky" ;
+    schema:recordingOf ex:Rick_Springfield_Speak_to_the_Sky_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/94269e70-fca4-42be-95e2-f203482ecaf2> .
+
+ex:Rick_Springfield_The_Ballad_of_Annie_Goodbody_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "The Ballad of Annie Goodbody" ;
+    schema:recordingOf ex:Rick_Springfield_The_Ballad_of_Annie_Goodbody_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/39bc3dc5-5834-4450-a39c-330492d87a25> .
+
+ex:Rick_Springfield_The_Unhappy_Ending_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "The Unhappy Ending" ;
+    schema:recordingOf ex:Rick_Springfield_The_Unhappy_Ending_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b479289c-6046-45bf-b39f-f5da5f297ff2> .
+
+ex:Rick_Springfield_What_Would_the_Children_Think_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "What Would the Children Think" ;
+    schema:recordingOf ex:Rick_Springfield_What_Would_the_Children_Think_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f62a3d77-cf57-48fe-98f8-4bde94dc77eb> .
+
+ex:Rick_Springfield_Why_Rec a mm:Recording ;
+    schema:inAlbum ex:Rick_Springfield_Beginnings_Album ;
+    schema:name "Why" ;
+    schema:recordingOf ex:Rick_Springfield_Why_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2de189ab-a085-4068-ac91-e496f5f4852f> .
+
+ex:Robert_Plant_Burning_Down_One_Side_Rec a mm:Recording ;
+    schema:inAlbum ex:Robert_Plant_Pictures_at_Eleven_Album ;
+    schema:name "Burning Down One Side" ;
+    schema:recordingOf ex:Robert_Plant_Burning_Down_One_Side_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6716ad37-5691-4515-9c23-f9538a70c2ee> .
+
+ex:Robert_Plant_Fat_Lip_Rec a mm:Recording ;
+    schema:inAlbum ex:Robert_Plant_Pictures_at_Eleven_Album ;
+    schema:name "Fat Lip" ;
+    schema:recordingOf ex:Robert_Plant_Fat_Lip_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ab1db758-a4ac-424f-9e18-b49ba9fe9e43> .
+
+ex:Robert_Plant_Like_I_ve_Never_Been_Gone_Rec a mm:Recording ;
+    schema:inAlbum ex:Robert_Plant_Pictures_at_Eleven_Album ;
+    schema:name "Like I’ve Never Been Gone" ;
+    schema:recordingOf ex:Robert_Plant_Like_I_ve_Never_Been_Gone_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/0b962a67-e696-40e4-83d0-2acdd7482e08> .
+
+ex:Robert_Plant_Moonlight_in_Samosa_Rec a mm:Recording ;
+    schema:inAlbum ex:Robert_Plant_Pictures_at_Eleven_Album ;
+    schema:name "Moonlight in Samosa" ;
+    schema:recordingOf ex:Robert_Plant_Moonlight_in_Samosa_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/fb7c90cd-35a2-4eb0-8c90-9b84e1691046> .
+
+ex:Robert_Plant_Mystery_Title_Rec a mm:Recording ;
+    schema:inAlbum ex:Robert_Plant_Pictures_at_Eleven_Album ;
+    schema:name "Mystery Title" ;
+    schema:recordingOf ex:Robert_Plant_Mystery_Title_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/ae1bd3d9-c1b9-4377-af1f-ac51b8fceb32> .
+
+ex:Robert_Plant_Pledge_Pin_Rec a mm:Recording ;
+    schema:inAlbum ex:Robert_Plant_Pictures_at_Eleven_Album ;
+    schema:name "Pledge Pin" ;
+    schema:recordingOf ex:Robert_Plant_Pledge_Pin_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/629a9c7c-9d95-4e61-a66c-db20b60cb886> .
+
+ex:Robert_Plant_Slow_Dancer_Rec a mm:Recording ;
+    schema:inAlbum ex:Robert_Plant_Pictures_at_Eleven_Album ;
+    schema:name "Slow Dancer" ;
+    schema:recordingOf ex:Robert_Plant_Slow_Dancer_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4a755346-1fe1-4825-b233-55a97768d503> .
+
+ex:Robert_Plant_Worse_Than_Detroit_Rec a mm:Recording ;
+    schema:inAlbum ex:Robert_Plant_Pictures_at_Eleven_Album ;
+    schema:name "Worse Than Detroit" ;
+    schema:recordingOf ex:Robert_Plant_Worse_Than_Detroit_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4ab59219-c278-4dca-942d-7e8f6297d38d> .
+
+ex:Ronnie_Wood_Act_Together_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "Act Together" ;
+    schema:recordingOf ex:Ronnie_Wood_Act_Together_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c3cef09d-452f-4f38-8e6f-4eac38b93136> .
+
+ex:Ronnie_Wood_Am_I_Grooving_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "Am I Grooving You" ;
+    schema:recordingOf ex:Ronnie_Wood_Am_I_Grooving_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/56e99d74-83ea-41d2-b9ba-9383b3c58f3d> .
+
+ex:Ronnie_Wood_Cancel_Everything_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "Cancel Everything" ;
+    schema:recordingOf ex:Ronnie_Wood_Cancel_Everything_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/99e7d2b1-de39-4105-8945-2dcbe59299e3> .
+
+ex:Ronnie_Wood_Crotch_Music_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "Crotch Music" ;
+    schema:recordingOf ex:Ronnie_Wood_Crotch_Music_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1e1c6685-5e1d-4de2-8650-fa41e90fcb6e> .
+
+ex:Ronnie_Wood_Far_East_Man_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "Far East Man" ;
+    schema:recordingOf ex:Ronnie_Wood_Far_East_Man_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/8d175691-e7c5-484b-81d7-f23f1d1b0850> .
+
+ex:Ronnie_Wood_I_Can_Feel_the_Fire_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "I Can Feel the Fire" ;
+    schema:recordingOf ex:Ronnie_Wood_I_Can_Feel_the_Fire_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/c6bd4356-de4a-4660-830c-e8b5dc9c7145> .
+
+ex:Ronnie_Wood_If_You_Gotta_Make_a_Fool_of_Somebody_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "If You Gotta Make a Fool of Somebody" ;
+    schema:recordingOf ex:Ronnie_Wood_If_You_Gotta_Make_a_Fool_of_Somebody_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a26a2595-2c20-415f-99e1-5921b7131f9d> .
+
+ex:Ronnie_Wood_Mystifies_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "Mystifies Me" ;
+    schema:recordingOf ex:Ronnie_Wood_Mystifies_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/82d660dc-afc2-424a-b549-da02654cc578> .
+
+ex:Ronnie_Wood_Shirley_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "Shirley" ;
+    schema:recordingOf ex:Ronnie_Wood_Shirley_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/7240d6fa-5a4d-42ec-ab8c-7e1c9c576d95> .
+
+ex:Ronnie_Wood_Sure_the_One_You_Need_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "Sure the One You Need" ;
+    schema:recordingOf ex:Ronnie_Wood_Sure_the_One_You_Need_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/885d3b76-3e09-45ae-ba2c-563bbff7238f> .
+
+ex:Ronnie_Wood_Take_a_Look_at_the_Guy_Rec a mm:Recording ;
+    schema:inAlbum ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album ;
+    schema:name "Take a Look at the Guy" ;
+    schema:recordingOf ex:Ronnie_Wood_Take_a_Look_at_the_Guy_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/7ba7db98-316b-4e1f-8850-b9638d56c897> .
+
+ex:Sting_Children_s_Crusade_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "Children’s Crusade" ;
+    schema:recordingOf ex:Sting_Children_s_Crusade_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3082571a-b2a4-4202-aabc-edc2c3ec4a64> .
+
+ex:Sting_Consider_Me_Gone_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "Consider Me Gone" ;
+    schema:recordingOf ex:Sting_Consider_Me_Gone_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/89c9e0d9-4af2-4046-b8b3-c37f4f568cb0> .
+
+ex:Sting_Fortress_Around_Your_Heart_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "Fortress Around Your Heart" ;
+    schema:recordingOf ex:Sting_Fortress_Around_Your_Heart_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/821f1f88-4be4-4245-90ae-7fff7bf21772> .
+
+ex:Sting_If_You_Love_Somebody_Set_Them_Free_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "If You Love Somebody Set Them Free" ;
+    schema:recordingOf ex:Sting_If_You_Love_Somebody_Set_Them_Free_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/de26e48e-1b04-46ad-aa32-8a19a038c173> .
+
+ex:Sting_Love_Is_the_Seventh_Wave_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "Love Is the Seventh Wave" ;
+    schema:recordingOf ex:Sting_Love_Is_the_Seventh_Wave_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d4dd595e-bc6c-4ab0-b676-2fed9907d9e2> .
+
+ex:Sting_Moon_Over_Bourbon_Street_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "Moon Over Bourbon Street" ;
+    schema:recordingOf ex:Sting_Moon_Over_Bourbon_Street_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/61c34720-a4eb-46cc-a99f-c30680d6b6e3> .
+
+ex:Sting_Russians_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "Russians" ;
+    schema:recordingOf ex:Sting_Russians_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/def155c1-b10c-4451-81ce-b53c436f0620> .
+
+ex:Sting_Shadows_in_the_Rain_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "Shadows in the Rain" ;
+    schema:recordingOf ex:Sting_Shadows_in_the_Rain_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3f8a3add-ba32-4806-ac89-df627a982650> .
+
+ex:Sting_The_Dream_of_the_Blue_Turtles_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "The Dream of the Blue Turtles" ;
+    schema:recordingOf ex:Sting_The_Dream_of_the_Blue_Turtles_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/61e0fe8b-fa99-4102-a470-54549422485d> .
+
+ex:Sting_We_Work_the_Black_Seam_Rec a mm:Recording ;
+    schema:inAlbum ex:Sting_The_Dream_of_the_Blue_Turtles_Album ;
+    schema:name "We Work the Black Seam" ;
+    schema:recordingOf ex:Sting_We_Work_the_Black_Seam_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2b031e58-7d96-4d71-88c6-254b21b39ff8> .
+
+ex:Thomas_Dolby_Airwaves_Rec a mm:Recording ;
+    schema:inAlbum ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album ;
+    schema:name "Airwaves" ;
+    schema:recordingOf ex:Thomas_Dolby_Airwaves_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/090bc67d-736a-40cc-9527-53375b13389d> .
+
+ex:Thomas_Dolby_Cloudburst_at_Shingle_Street_Rec a mm:Recording ;
+    schema:inAlbum ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album ;
+    schema:name "Cloudburst at Shingle Street" ;
+    schema:recordingOf ex:Thomas_Dolby_Cloudburst_at_Shingle_Street_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/f4d8183e-6acc-47c8-ac18-d8ef5c741eb3> .
+
+ex:Thomas_Dolby_Commercial_Breakup_Rec a mm:Recording ;
+    schema:inAlbum ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album ;
+    schema:name "Commercial Breakup" ;
+    schema:recordingOf ex:Thomas_Dolby_Commercial_Breakup_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/6532467d-2868-4cbb-9b84-a43800f560c8> .
+
+ex:Thomas_Dolby_Europa_and_the_Pirate_Twins_Rec a mm:Recording ;
+    schema:inAlbum ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album ;
+    schema:name "Europa and the Pirate Twins" ;
+    schema:recordingOf ex:Thomas_Dolby_Europa_and_the_Pirate_Twins_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/97adb234-f873-4c2f-9d40-91f3633b7f6b> .
+
+ex:Thomas_Dolby_Flying_North_Rec a mm:Recording ;
+    schema:inAlbum ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album ;
+    schema:name "Flying North" ;
+    schema:recordingOf ex:Thomas_Dolby_Flying_North_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3eef99ff-7cec-4465-a2e3-87dfc57a2ff2> .
+
+ex:Thomas_Dolby_Radio_Silence_Rec a mm:Recording ;
+    schema:inAlbum ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album ;
+    schema:name "Radio Silence" ;
+    schema:recordingOf ex:Thomas_Dolby_Radio_Silence_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/99357034-38fa-4cff-b102-703d6a72fcc3> .
+
+ex:Thomas_Dolby_The_Wreck_of_the_Fairchild_Rec a mm:Recording ;
+    schema:inAlbum ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album ;
+    schema:name "The Wreck of the Fairchild" ;
+    schema:recordingOf ex:Thomas_Dolby_The_Wreck_of_the_Fairchild_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/a78de90c-1cc6-4fa0-aa2e-4443567c3ce7> .
+
+ex:Thomas_Dolby_Weightless_Rec a mm:Recording ;
+    schema:inAlbum ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album ;
+    schema:name "Weightless" ;
+    schema:recordingOf ex:Thomas_Dolby_Weightless_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/bcd03754-de59-4319-b421-b379d77c29fd> .
+
+ex:Thomas_Dolby_Windpower_Rec a mm:Recording ;
+    schema:inAlbum ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album ;
+    schema:name "Windpower" ;
+    schema:recordingOf ex:Thomas_Dolby_Windpower_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/02d4eea5-16e7-42ef-8257-9ed7435accad> .
+
+ex:Tina_Turner_Bayou_Song_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "Bayou Song" ;
+    schema:recordingOf ex:Tina_Turner_Bayou_Song_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/532ba86c-af48-4dcb-9157-6bb3d3b7a1c9> .
+
+ex:Tina_Turner_Don_t_Talk_Now_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "Don’t Talk Now" ;
+    schema:recordingOf ex:Tina_Turner_Don_t_Talk_Now_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/186d6195-c576-4175-a034-93ac9d5204b8> .
+
+ex:Tina_Turner_He_Belongs_to_Me_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "He Belongs to Me" ;
+    schema:recordingOf ex:Tina_Turner_He_Belongs_to_Me_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/4c5c1893-708f-4f74-aa9c-0faaa42ac4fd> .
+
+ex:Tina_Turner_Help_Me_Make_It_Through_the_Night_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "Help Me Make It Through the Night" ;
+    schema:recordingOf ex:Tina_Turner_Help_Me_Make_It_Through_the_Night_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/39365a68-ae79-4944-9d81-d7964fb5bdb7> .
+
+ex:Tina_Turner_I_m_Moving_On_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "I’m Moving On" ;
+    schema:recordingOf ex:Tina_Turner_I_m_Moving_On_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/2d79a9d6-8d0f-49d6-af16-3228f84d71d6> .
+
+ex:Tina_Turner_If_You_Love_Me_Let_Me_Know_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "If You Love Me (Let Me Know)" ;
+    schema:recordingOf ex:Tina_Turner_If_You_Love_Me_Let_Me_Know_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/54dadc93-d97b-4c14-8516-4db9df2b2dc3> .
+
+ex:Tina_Turner_Long_Long_Time_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "Long Long Time" ;
+    schema:recordingOf ex:Tina_Turner_Long_Long_Time_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/1fc2dce4-cdf9-4a9d-8303-7a8afa17b749> .
+
+ex:Tina_Turner_The_Love_That_Lights_Your_Way_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "The Love That Lights Your Way" ;
+    schema:recordingOf ex:Tina_Turner_The_Love_That_Lights_Your_Way_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/83e48178-9f05-471f-a50f-3df0b66aea97> .
+
+ex:Tina_Turner_There_ll_Always_Be_Music_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "There’ll Always Be Music" ;
+    schema:recordingOf ex:Tina_Turner_There_ll_Always_Be_Music_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/b306d3eb-8c9f-4f71-91fc-952c81c40a03> .
+
+ex:Tina_Turner_Tonight_I_ll_Be_Staying_Here_With_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Tina_Turner_Tina_Turns_the_Country_On_Album ;
+    schema:name "Tonight I’ll Be Staying Here With You" ;
+    schema:recordingOf ex:Tina_Turner_Tonight_I_ll_Be_Staying_Here_With_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/d5820762-f5bf-422a-b351-85a6f758cb78> .
+
+ex:Tony_Thompson_Because_of_You_Rec a mm:Recording ;
+    schema:inAlbum ex:Tony_Thompson_Because_of_You_Album ;
+    schema:name "Because of You" ;
+    schema:recordingOf ex:Tony_Thompson_Because_of_You_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/765e8983-159b-402a-9fe3-ddfc3a4554df> .
+
+ex:Tony_Thompson_Cold_Cold_Heart_Rec a mm:Recording ;
+    schema:inAlbum ex:Tony_Thompson_Because_of_You_Album ;
+    schema:name "Cold, Cold Heart" ;
+    schema:recordingOf ex:Tony_Thompson_Cold_Cold_Heart_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/11123577-7bc7-4109-b5c0-15f98176ed22> .
+
+ex:Tony_Thompson_I_Wanna_Be_Loved_Rec a mm:Recording ;
+    schema:inAlbum ex:Tony_Thompson_Because_of_You_Album ;
+    schema:name "I Wanna Be Loved" ;
+    schema:recordingOf ex:Tony_Thompson_I_Wanna_Be_Loved_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/036929cd-de87-4a4a-aabd-c7bfdacc6571> .
+
+ex:Tony_Thompson_I_Won_t_Cry_Anymore_Rec a mm:Recording ;
+    schema:inAlbum ex:Tony_Thompson_Because_of_You_Album ;
+    schema:name "I Won’t Cry Anymore" ;
+    schema:recordingOf ex:Tony_Thompson_I_Won_t_Cry_Anymore_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/90ed3e81-ab31-4dbf-ba48-a64f7dc13ad6> .
+
+ex:Tony_Thompson_Once_There_Lived_a_Fool_Rec a mm:Recording ;
+    schema:inAlbum ex:Tony_Thompson_Because_of_You_Album ;
+    schema:name "Once There Lived a Fool" ;
+    schema:recordingOf ex:Tony_Thompson_Once_There_Lived_a_Fool_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/73da049c-74f8-4dd4-a615-b5c7b364461c> .
+
+ex:Tony_Thompson_The_Boulevard_of_Broken_Dreams_Rec a mm:Recording ;
+    schema:inAlbum ex:Tony_Thompson_Because_of_You_Album ;
+    schema:name "The Boulevard of Broken Dreams" ;
+    schema:recordingOf ex:Tony_Thompson_The_Boulevard_of_Broken_Dreams_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/3113248b-3fd1-4072-8b06-8b39ef2dc602> .
+
+ex:Tony_Thompson_The_Valentino_Tango_Rec a mm:Recording ;
+    schema:inAlbum ex:Tony_Thompson_Because_of_You_Album ;
+    schema:name "The Valentino Tango" ;
+    schema:recordingOf ex:Tony_Thompson_The_Valentino_Tango_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/8c54cfa9-1849-4b14-bd86-36a0f5cd88fe> .
+
+ex:Tony_Thompson_While_We_re_Young_Rec a mm:Recording ;
+    schema:inAlbum ex:Tony_Thompson_Because_of_You_Album ;
+    schema:name "While We’re Young" ;
+    schema:recordingOf ex:Tony_Thompson_While_We_re_Young_Song ;
+    schema:sameAs <https://musicbrainz.org/recording/87bd0692-7251-49c6-93a5-fc38a2018487> .
+
+ex:Brian_May_Star_Fleet_Project_Album a schema:MusicAlbum ;
+    schema:byArtist ex:BrianMay ;
+    schema:datePublished "1983-10-31"^^xsd:date ;
+    schema:hasPart ex:Brian_May_Blues_Breaker_Rec,
+        ex:Brian_May_Let_Me_Out_Rec,
+        ex:Brian_May_Starfleet_Rec ;
+    schema:name "Star Fleet Project" ;
+    schema:sameAs <https://musicbrainz.org/release-group/a8453e6f-445d-34fb-90bf-9f67db00eeed>,
+        <https://musicbrainz.org/release/7495af19-8352-4c7c-bd09-beb06f992b44> ;
+    ex:isDebutAlbum true .
+
+ex:Branford_Marsalis_Scenes_in_the_City_Album a schema:MusicAlbum ;
+    schema:byArtist ex:BranfordMarsalis ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:hasPart ex:Branford_Marsalis_No_Backstage_Pass_Rec,
+        ex:Branford_Marsalis_No_Sidestepping_Rec,
+        ex:Branford_Marsalis_Parable_Rec,
+        ex:Branford_Marsalis_Scenes_in_the_City_Rec,
+        ex:Branford_Marsalis_Solstice_Rec,
+        ex:Branford_Marsalis_Waiting_for_Tain_Rec ;
+    schema:name "Scenes in the City" ;
+    schema:sameAs <https://musicbrainz.org/release-group/7bd02727-d58a-38ff-b71c-207b781c9458>,
+        <https://musicbrainz.org/release/128d898c-3ec8-4ad5-84bb-d1b1c66b4183> ;
+    ex:isDebutAlbum true .
+
+ex:Eddie_Kendricks_All_By_Myself_Album a schema:MusicAlbum ;
+    schema:byArtist ex:EddieKendricks ;
+    schema:datePublished "1971"^^xsd:gYear ;
+    schema:hasPart ex:Eddie_Kendricks_Can_I_Rec,
+        ex:Eddie_Kendricks_Didn_t_We_Rec,
+        ex:Eddie_Kendricks_I_Did_It_All_For_You_Rec,
+        ex:Eddie_Kendricks_It_s_So_Hard_For_Me_To_Say_Good_Bye_Rec,
+        ex:Eddie_Kendricks_Let_s_Go_Back_To_Day_One_Rec,
+        ex:Eddie_Kendricks_Something_s_Burning_Rec,
+        ex:Eddie_Kendricks_This_Used_To_Be_The_Home_Of_Johnnie_Mae_Rec ;
+    schema:name "All By Myself" ;
+    schema:sameAs <https://musicbrainz.org/release-group/fda8c80d-1cb5-455b-a688-c1d911aa937b>,
+        <https://musicbrainz.org/release/40c99b4d-5172-4bd9-bbe7-3079ccbe6a09> ;
+    ex:isDebutAlbum true .
+
+ex:Mick_Jagger_Jamming_With_Edward_Album a schema:MusicAlbum ;
+    schema:byArtist ex:MickJagger ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:hasPart ex:Mick_Jagger_Blow_With_Ry_Rec,
+        ex:Mick_Jagger_Edward_s_Thrump_Up_Rec,
+        ex:Mick_Jagger_Highland_Fling_Rec,
+        ex:Mick_Jagger_Interlude_la_el_Hopo_Rec,
+        ex:Mick_Jagger_It_Hurts_Me_Too_Rec,
+        ex:Mick_Jagger_The_Boudoir_Stomp_Rec,
+        ex:Mick_Jagger_The_Loveliest_Night_of_the_Year_Rec ;
+    schema:name "Jamming With Edward!" ;
+    schema:sameAs <https://musicbrainz.org/release-group/d0d56282-b25a-3c93-91dd-ffd066c00974>,
+        <https://musicbrainz.org/release/8cda2e54-2a95-4eda-8fd8-98cbe1bf7949> ;
+    ex:isDebutAlbum true .
+
+ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Album a schema:MusicAlbum ;
+    schema:byArtist ex:JimmyPage ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:hasPart ex:Jimmy_Page_Don_t_Send_Me_No_Flowers_Rec,
+        ex:Jimmy_Page_Getting_out_of_Town_Rec,
+        ex:Jimmy_Page_I_See_a_Man_Downstairs_Rec,
+        ex:Jimmy_Page_It_s_a_Bloody_Life_Rec,
+        ex:Jimmy_Page_Little_Girl_How_Old_Are_You_Rec,
+        ex:Jimmy_Page_She_Was_So_Dumb_Rec,
+        ex:Jimmy_Page_The_Goat_Rec,
+        ex:Jimmy_Page_Walking_Rec ;
+    schema:name "Don’t Send Me No Flowers" ;
+    schema:sameAs <https://musicbrainz.org/release-group/a41d21d9-2cb3-4086-8640-9b6f8d3b51c1>,
+        <https://musicbrainz.org/release/ce0d6c4d-52c5-4b46-a846-f0401128c5f5> ;
+    ex:isDebutAlbum true .
+
+ex:Madonna_Madonna_Album a schema:MusicAlbum ;
+    schema:byArtist ex:Madonna ;
+    schema:datePublished "1983-07-26"^^xsd:date ;
+    schema:hasPart ex:Madonna_Borderline_Rec,
+        ex:Madonna_Burning_Up_Rec,
+        ex:Madonna_Everybody_Rec,
+        ex:Madonna_Holiday_Rec,
+        ex:Madonna_I_Know_It_Rec,
+        ex:Madonna_Lucky_Star_Rec,
+        ex:Madonna_Physical_Attraction_Rec,
+        ex:Madonna_Think_of_Me_Rec ;
+    schema:name "Madonna" ;
+    schema:sameAs <https://musicbrainz.org/release-group/cf44c73c-650d-3c67-9327-c99426ce464f>,
+        <https://musicbrainz.org/release/6c70998d-412c-4c5a-9a75-f3270ce45eb3> ;
+    ex:isDebutAlbum true .
+
+ex:Robert_Plant_Pictures_at_Eleven_Album a schema:MusicAlbum ;
+    schema:byArtist ex:RobertPlant ;
+    schema:datePublished "1982-06-28"^^xsd:date ;
+    schema:hasPart ex:Robert_Plant_Burning_Down_One_Side_Rec,
+        ex:Robert_Plant_Fat_Lip_Rec,
+        ex:Robert_Plant_Like_I_ve_Never_Been_Gone_Rec,
+        ex:Robert_Plant_Moonlight_in_Samosa_Rec,
+        ex:Robert_Plant_Mystery_Title_Rec,
+        ex:Robert_Plant_Pledge_Pin_Rec,
+        ex:Robert_Plant_Slow_Dancer_Rec,
+        ex:Robert_Plant_Worse_Than_Detroit_Rec ;
+    schema:name "Pictures at Eleven" ;
+    schema:sameAs <https://musicbrainz.org/release-group/c62d59e7-9566-394f-a500-58bdcf8ee7b5>,
+        <https://musicbrainz.org/release/82ac4b63-f906-4e4a-91cc-c434b5197d3f> ;
+    ex:isDebutAlbum true .
+
+ex:Tony_Thompson_Because_of_You_Album a schema:MusicAlbum ;
+    schema:byArtist ex:TonyThompson ;
+    schema:datePublished "1952-09"^^xsd:gYearMonth ;
+    schema:hasPart ex:Tony_Thompson_Because_of_You_Rec,
+        ex:Tony_Thompson_Cold_Cold_Heart_Rec,
+        ex:Tony_Thompson_I_Wanna_Be_Loved_Rec,
+        ex:Tony_Thompson_I_Won_t_Cry_Anymore_Rec,
+        ex:Tony_Thompson_Once_There_Lived_a_Fool_Rec,
+        ex:Tony_Thompson_The_Boulevard_of_Broken_Dreams_Rec,
+        ex:Tony_Thompson_The_Valentino_Tango_Rec,
+        ex:Tony_Thompson_While_We_re_Young_Rec ;
+    schema:name "Because of You" ;
+    schema:sameAs <https://musicbrainz.org/release-group/2453da77-ac54-4624-9eb4-40b22f06df52>,
+        <https://musicbrainz.org/release/09537422-fd34-4bfb-8e23-d48f80a4e9ff> ;
+    ex:isDebutAlbum true .
+
+ex:Bryan_Adams_Bryan_Adams_Album a schema:MusicAlbum ;
+    schema:byArtist ex:BryanAdams ;
+    schema:datePublished "1980"^^xsd:gYear ;
+    schema:hasPart ex:Bryan_Adams_Don_t_Ya_Say_It_Rec,
+        ex:Bryan_Adams_Give_Me_Your_Love_Rec,
+        ex:Bryan_Adams_Hidin_From_Love_Rec,
+        ex:Bryan_Adams_Remember_Rec,
+        ex:Bryan_Adams_State_of_Mind_Rec,
+        ex:Bryan_Adams_Try_to_See_It_My_Way_Rec,
+        ex:Bryan_Adams_Wait_and_See_Rec,
+        ex:Bryan_Adams_Wastin_Time_Rec,
+        ex:Bryan_Adams_Win_Some_Lose_Some_Rec ;
+    schema:name "Bryan Adams" ;
+    schema:sameAs <https://musicbrainz.org/release-group/c67d84d5-8032-36be-91e2-2db9af081a51>,
+        <https://musicbrainz.org/release/412389a4-2226-4988-bd1e-b433e6c845a9> ;
+    ex:isDebutAlbum true .
+
+ex:David_Gilmour_David_Gilmour_Album a schema:MusicAlbum ;
+    schema:byArtist ex:DavidGilmour ;
+    schema:datePublished "1978-05-25"^^xsd:date ;
+    schema:hasPart ex:David_Gilmour_Cry_From_the_Street_Rec,
+        ex:David_Gilmour_I_Can_t_Breathe_Anymore_Rec,
+        ex:David_Gilmour_It_s_Deafinitely_Rec,
+        ex:David_Gilmour_Mihalis_Rec,
+        ex:David_Gilmour_No_Way_Rec,
+        ex:David_Gilmour_Raise_My_Rent_Rec,
+        ex:David_Gilmour_Short_and_Sweet_Rec,
+        ex:David_Gilmour_So_Far_Away_Rec,
+        ex:David_Gilmour_There_s_No_Way_out_of_Here_Rec ;
+    schema:name "David Gilmour" ;
+    schema:sameAs <https://musicbrainz.org/release-group/95950776-0eb8-3672-a503-e2181b1773be>,
+        <https://musicbrainz.org/release/1719bc20-c13b-3644-bff1-4619fed6fb3e> ;
+    ex:isDebutAlbum true .
+
+ex:Elton_John_Empty_Sky_Album a schema:MusicAlbum ;
+    schema:byArtist ex:EltonJohn ;
+    schema:datePublished "1969-06-03"^^xsd:date ;
+    schema:hasPart ex:Elton_John_Empty_Sky_Rec,
+        ex:Elton_John_Gulliver_It_s_Hay_Chewed_Reprise_Rec,
+        ex:Elton_John_Hymn_2000_Rec,
+        ex:Elton_John_Lady_What_s_Tomorrow_Rec,
+        ex:Elton_John_Sails_Rec,
+        ex:Elton_John_Skyline_Pigeon_Rec,
+        ex:Elton_John_The_Scaffold_Rec,
+        ex:Elton_John_Val_Hala_Rec,
+        ex:Elton_John_Western_Ford_Gateway_Rec ;
+    schema:name "Empty Sky" ;
+    schema:sameAs <https://musicbrainz.org/release-group/73924e33-3fe3-3dd4-94cf-b97529f6e9af>,
+        <https://musicbrainz.org/release/22f9fe0b-9455-4816-9849-d50c0b5f1b09> ;
+    ex:isDebutAlbum true .
+
+ex:Pat_Metheny_Jaco_Album a schema:MusicAlbum ;
+    schema:byArtist ex:PatMetheny ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:hasPart ex:Pat_Metheny_Batterie_Rec,
+        ex:Pat_Metheny_Blood_Rec,
+        ex:Pat_Metheny_Donkey_Rec,
+        ex:Pat_Metheny_Jaco_Rec,
+        ex:Pat_Metheny_King_Korn_Rec,
+        ex:Pat_Metheny_Overtoned_Rec,
+        ex:Pat_Metheny_Poconos_Rec,
+        ex:Pat_Metheny_Vampira_Rec,
+        ex:Pat_Metheny_Vashkar_Rec ;
+    schema:name "Jaco" ;
+    schema:sameAs <https://musicbrainz.org/release-group/91569094-ba33-3cdf-b9dc-441146fbd837>,
+        <https://musicbrainz.org/release/c03e66a7-197b-4f0c-925e-1a08f636a384> ;
+    ex:isDebutAlbum true .
+
+ex:Patti_LaBelle_Patti_Labelle_Album a schema:MusicAlbum ;
+    schema:byArtist ex:PattiLabelle ;
+    schema:datePublished "1977"^^xsd:gYear ;
+    schema:hasPart ex:Patti_LaBelle_Dan_Swit_Me_Rec,
+        ex:Patti_LaBelle_Do_I_Stand_a_Chance_Rec,
+        ex:Patti_LaBelle_Funky_Music_Rec,
+        ex:Patti_LaBelle_I_Think_About_You_Rec,
+        ex:Patti_LaBelle_Joy_to_Have_Your_Love_Rec,
+        ex:Patti_LaBelle_Most_Likely_You_Go_Your_Way_and_I_ll_Go_Mine_Rec,
+        ex:Patti_LaBelle_Since_I_Don_t_Have_You_Rec,
+        ex:Patti_LaBelle_You_Are_My_Friend_Rec,
+        ex:Patti_LaBelle_You_Can_t_Judge_a_Book_by_the_Cover_Rec ;
+    schema:name "Patti Labelle" ;
+    schema:sameAs <https://musicbrainz.org/release-group/33527892-dba1-3b6f-b079-0e2898b32591>,
+        <https://musicbrainz.org/release/414d61d6-23af-48db-bc7a-240f4da8e4b8> ;
+    ex:isDebutAlbum true .
+
+ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album a schema:MusicAlbum ;
+    schema:byArtist ex:ThomasDolby ;
+    schema:datePublished "1982"^^xsd:gYear ;
+    schema:hasPart ex:Thomas_Dolby_Airwaves_Rec,
+        ex:Thomas_Dolby_Cloudburst_at_Shingle_Street_Rec,
+        ex:Thomas_Dolby_Commercial_Breakup_Rec,
+        ex:Thomas_Dolby_Europa_and_the_Pirate_Twins_Rec,
+        ex:Thomas_Dolby_Flying_North_Rec,
+        ex:Thomas_Dolby_Radio_Silence_Rec,
+        ex:Thomas_Dolby_The_Wreck_of_the_Fairchild_Rec,
+        ex:Thomas_Dolby_Weightless_Rec,
+        ex:Thomas_Dolby_Windpower_Rec ;
+    schema:name "The Golden Age of Wireless" ;
+    schema:sameAs <https://musicbrainz.org/release-group/11ed9046-1cbc-39b0-a8c0-dc27ecbb8670>,
+        <https://musicbrainz.org/release/c0b22839-7b79-485d-9f71-7e9699adc261> ;
+    ex:isDebutAlbum true .
+
+ex:Kenny_Loggins_Celebrate_Me_Home_Album a schema:MusicAlbum ;
+    schema:byArtist ex:KennyLoggins ;
+    schema:datePublished "1977-04-13"^^xsd:date ;
+    schema:hasPart ex:Kenny_Loggins_Celebrate_Me_Home_Rec,
+        ex:Kenny_Loggins_Daddy_s_Back_Rec,
+        ex:Kenny_Loggins_Enter_My_Dream_Rec,
+        ex:Kenny_Loggins_I_Believe_in_Love_Rec,
+        ex:Kenny_Loggins_I_ve_Got_the_Melody_Deep_in_My_Heart_Rec,
+        ex:Kenny_Loggins_If_You_Be_Wise_Rec,
+        ex:Kenny_Loggins_Lady_Luck_Rec,
+        ex:Kenny_Loggins_Set_It_Free_Rec,
+        ex:Kenny_Loggins_Why_Do_People_Lie_Rec,
+        ex:Kenny_Loggins_You_Don_t_Know_Me_Rec ;
+    schema:name "Celebrate Me Home" ;
+    schema:sameAs <https://musicbrainz.org/release-group/eadb481e-1b98-3409-89f1-3579ae67f46e>,
+        <https://musicbrainz.org/release/4e00570c-cc67-45e8-8957-d8e76761724c> ;
+    ex:isDebutAlbum true .
+
+ex:Neil_Young_Neil_Young_Album a schema:MusicAlbum ;
+    schema:byArtist ex:NeilYoung ;
+    schema:datePublished "1968-11-12"^^xsd:date ;
+    schema:hasPart ex:Neil_Young_Here_We_Are_in_the_Years_Rec,
+        ex:Neil_Young_I_ve_Been_Waiting_for_You_Rec,
+        ex:Neil_Young_I_ve_Loved_Her_So_Long_Rec,
+        ex:Neil_Young_If_I_Could_Have_Her_Tonight_Rec,
+        ex:Neil_Young_String_Quartet_From_Whiskey_Boot_Hill_Rec,
+        ex:Neil_Young_The_Emperor_of_Wyoming_Rec,
+        ex:Neil_Young_The_Last_Trip_to_Tulsa_Rec,
+        ex:Neil_Young_The_Loner_Rec,
+        ex:Neil_Young_The_Old_Laughing_Lady_Rec,
+        ex:Neil_Young_What_Did_You_Do_to_My_Life_Rec ;
+    schema:name "Neil Young" ;
+    schema:sameAs <https://musicbrainz.org/release-group/52418ea0-7f00-3265-92ae-485de63fcb13>,
+        <https://musicbrainz.org/release/23758af6-284b-4756-b318-9eb6bd1b2d68> ;
+    ex:isDebutAlbum true .
+
+ex:Nik_Kershaw_Human_Racing_Album a schema:MusicAlbum ;
+    schema:byArtist ex:NikKershaw ;
+    schema:datePublished "1984"^^xsd:gYear ;
+    schema:hasPart ex:Nik_Kershaw_Bogart_Rec,
+        ex:Nik_Kershaw_Cloak_and_Dagger_Rec,
+        ex:Nik_Kershaw_Dancing_Girls_Rec,
+        ex:Nik_Kershaw_Drum_Talk_Rec,
+        ex:Nik_Kershaw_Faces_Rec,
+        ex:Nik_Kershaw_Gone_to_Pieces_Rec,
+        ex:Nik_Kershaw_Human_Racing_Rec,
+        ex:Nik_Kershaw_I_Won_t_Let_the_Sun_Go_Down_on_Me_Rec,
+        ex:Nik_Kershaw_Shame_on_You_Rec,
+        ex:Nik_Kershaw_Wouldn_t_It_Be_Good_Rec ;
+    schema:name "Human Racing" ;
+    schema:sameAs <https://musicbrainz.org/release-group/beed706d-b5cd-39de-9d30-9f6b51ddf758>,
+        <https://musicbrainz.org/release/d8c326ae-205f-43b2-a348-01e8e17de3a7> ;
+    ex:isDebutAlbum true .
+
+ex:Rick_Springfield_Beginnings_Album a schema:MusicAlbum ;
+    schema:byArtist ex:RickSpringfield ;
+    schema:datePublished "1972"^^xsd:gYear ;
+    schema:hasPart ex:Rick_Springfield_1000_Years_Rec,
+        ex:Rick_Springfield_Come_on_Everybody_Rec,
+        ex:Rick_Springfield_Hooky_Jo_Rec,
+        ex:Rick_Springfield_I_Didn_t_Mean_to_Love_You_Rec,
+        ex:Rick_Springfield_Mother_Can_You_Carry_Me_Rec,
+        ex:Rick_Springfield_Speak_to_the_Sky_Rec,
+        ex:Rick_Springfield_The_Ballad_of_Annie_Goodbody_Rec,
+        ex:Rick_Springfield_The_Unhappy_Ending_Rec,
+        ex:Rick_Springfield_What_Would_the_Children_Think_Rec,
+        ex:Rick_Springfield_Why_Rec ;
+    schema:name "Beginnings" ;
+    schema:sameAs <https://musicbrainz.org/release-group/220e7017-a1a1-32e8-af57-8b5d75ab99d3>,
+        <https://musicbrainz.org/release/a0e2a788-3f40-4835-a2cd-8b1a63f66c43> ;
+    ex:isDebutAlbum true .
+
+ex:Sting_The_Dream_of_the_Blue_Turtles_Album a schema:MusicAlbum ;
+    schema:byArtist ex:Sting ;
+    schema:datePublished "1985-06-01"^^xsd:date ;
+    schema:hasPart ex:Sting_Children_s_Crusade_Rec,
+        ex:Sting_Consider_Me_Gone_Rec,
+        ex:Sting_Fortress_Around_Your_Heart_Rec,
+        ex:Sting_If_You_Love_Somebody_Set_Them_Free_Rec,
+        ex:Sting_Love_Is_the_Seventh_Wave_Rec,
+        ex:Sting_Moon_Over_Bourbon_Street_Rec,
+        ex:Sting_Russians_Rec,
+        ex:Sting_Shadows_in_the_Rain_Rec,
+        ex:Sting_The_Dream_of_the_Blue_Turtles_Rec,
+        ex:Sting_We_Work_the_Black_Seam_Rec ;
+    schema:name "The Dream of the Blue Turtles" ;
+    schema:sameAs <https://musicbrainz.org/release-group/93ef0ae1-0735-3699-b450-d79bdcb3d0b8>,
+        <https://musicbrainz.org/release/52809f2d-3c0a-41c0-8149-ef5a28800ed2> ;
+    ex:isDebutAlbum true .
+
+ex:Tina_Turner_Tina_Turns_the_Country_On_Album a schema:MusicAlbum ;
+    schema:byArtist ex:TinaTurner ;
+    schema:datePublished "1974"^^xsd:gYear ;
+    schema:hasPart ex:Tina_Turner_Bayou_Song_Rec,
+        ex:Tina_Turner_Don_t_Talk_Now_Rec,
+        ex:Tina_Turner_He_Belongs_to_Me_Rec,
+        ex:Tina_Turner_Help_Me_Make_It_Through_the_Night_Rec,
+        ex:Tina_Turner_I_m_Moving_On_Rec,
+        ex:Tina_Turner_If_You_Love_Me_Let_Me_Know_Rec,
+        ex:Tina_Turner_Long_Long_Time_Rec,
+        ex:Tina_Turner_The_Love_That_Lights_Your_Way_Rec,
+        ex:Tina_Turner_There_ll_Always_Be_Music_Rec,
+        ex:Tina_Turner_Tonight_I_ll_Be_Staying_Here_With_You_Rec ;
+    schema:name "Tina Turns the Country On" ;
+    schema:sameAs <https://musicbrainz.org/release-group/74737c0f-911d-4eec-a7bd-f02787002a00>,
+        <https://musicbrainz.org/release/0c2d8411-5ac1-45c1-bf23-1fd17d8c5467> ;
+    ex:isDebutAlbum true .
+
+ex:Billy_Ocean_Billy_Ocean_Album a schema:MusicAlbum ;
+    schema:byArtist ex:BillyOcean ;
+    schema:datePublished "1976"^^xsd:gYear ;
+    schema:hasPart ex:Billy_Ocean_Eye_of_a_Storm_Rec,
+        ex:Billy_Ocean_Hungry_for_Love_Rec,
+        ex:Billy_Ocean_L_O_D_Love_on_Delivery_Rec,
+        ex:Billy_Ocean_Let_s_Do_It_All_Again_Rec,
+        ex:Billy_Ocean_Let_s_Put_Our_Emotions_in_Motion_Rec,
+        ex:Billy_Ocean_Love_Really_Hurts_Without_You_Rec,
+        ex:Billy_Ocean_One_Kiss_Away_Rec,
+        ex:Billy_Ocean_Soul_Rock_Rec,
+        ex:Billy_Ocean_Stop_Me_If_You_ve_Heard_It_All_Before_Rec,
+        ex:Billy_Ocean_Tell_Him_to_Move_Over_Rec,
+        ex:Billy_Ocean_Whose_Little_Girl_Are_You_Rec ;
+    schema:name "Billy Ocean" ;
+    schema:sameAs <https://musicbrainz.org/release-group/42bf3188-1b93-39b0-8491-c594ded6a9ec>,
+        <https://musicbrainz.org/release/05ef25ae-e56c-4129-ba1d-0c76c7bea5e7> ;
+    ex:isDebutAlbum true .
+
+ex:Eric_Clapton_Eric_Clapton_Album a schema:MusicAlbum ;
+    schema:byArtist ex:EricClapton ;
+    schema:datePublished "1970-08"^^xsd:gYearMonth ;
+    schema:hasPart ex:Eric_Clapton_After_Midnight_Rec,
+        ex:Eric_Clapton_Bad_Boy_Rec,
+        ex:Eric_Clapton_Blues_Power_Rec,
+        ex:Eric_Clapton_Bottle_of_Red_Wine_Rec,
+        ex:Eric_Clapton_Don_t_Know_Why_Rec,
+        ex:Eric_Clapton_Easy_Now_Rec,
+        ex:Eric_Clapton_Let_It_Rain_Rec,
+        ex:Eric_Clapton_Lonesome_and_a_Long_Way_From_Home_Rec,
+        ex:Eric_Clapton_Lovin_You_Lovin_Me_Rec,
+        ex:Eric_Clapton_Slunky_Rec,
+        ex:Eric_Clapton_Told_You_for_the_Last_Time_Rec ;
+    schema:name "Eric Clapton" ;
+    schema:sameAs <https://musicbrainz.org/release-group/f1674003-7613-3217-a0fb-f74f2d1e0a89>,
+        <https://musicbrainz.org/release/c3297840-2b95-39aa-b678-b1cdd58a6b74> ;
+    ex:isDebutAlbum true .
+
+ex:Howard_Jones_Human_s_Lib_Album a schema:MusicAlbum ;
+    schema:byArtist ex:HowardJones ;
+    schema:datePublished "1984-03-17"^^xsd:date ;
+    schema:hasPart ex:Howard_Jones_China_Dance_Rec,
+        ex:Howard_Jones_Conditioning_Rec,
+        ex:Howard_Jones_Don_t_Always_Look_at_the_Rain_Rec,
+        ex:Howard_Jones_Equality_Rec,
+        ex:Howard_Jones_Hide_and_Seek_Rec,
+        ex:Howard_Jones_Human_s_Lib_Rec,
+        ex:Howard_Jones_Hunt_the_Self_Rec,
+        ex:Howard_Jones_Natural_Rec,
+        ex:Howard_Jones_New_Song_Rec,
+        ex:Howard_Jones_Pearl_in_the_Shell_Rec,
+        ex:Howard_Jones_What_Is_Love_extended_version_Rec ;
+    schema:name "Human’s Lib" ;
+    schema:sameAs <https://musicbrainz.org/release-group/1b14a428-9018-392f-a0ec-9ecab7c78dfd>,
+        <https://musicbrainz.org/release/b7c9b00a-d7bf-4bb3-9492-274eae97fc65> ;
+    ex:isDebutAlbum true .
+
+ex:Keith_Richards_Talk_Is_Cheap_Album a schema:MusicAlbum ;
+    schema:byArtist ex:KeithRichards ;
+    schema:datePublished "1988"^^xsd:gYear ;
+    schema:hasPart ex:Keith_Richards_Big_Enough_Rec,
+        ex:Keith_Richards_How_I_Wish_Rec,
+        ex:Keith_Richards_I_Could_Have_Stood_You_Up_Rec,
+        ex:Keith_Richards_It_Means_a_Lot_Rec,
+        ex:Keith_Richards_Locked_Away_Rec,
+        ex:Keith_Richards_Make_No_Mistake_Rec,
+        ex:Keith_Richards_Rockawhile_Rec,
+        ex:Keith_Richards_Struggle_Rec,
+        ex:Keith_Richards_Take_It_So_Hard_Rec,
+        ex:Keith_Richards_Whip_It_Up_Rec,
+        ex:Keith_Richards_You_Don_t_Move_Me_Rec ;
+    schema:name "Talk Is Cheap" ;
+    schema:sameAs <https://musicbrainz.org/release-group/5da03e1b-1d7f-323d-b3a0-329547a6c88a>,
+        <https://musicbrainz.org/release/ccba159a-e193-45b3-b3e1-25bdf73ebb07> ;
+    ex:isDebutAlbum true .
+
+ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album a schema:MusicAlbum ;
+    schema:byArtist ex:RonnieWood ;
+    schema:datePublished "1974-09"^^xsd:gYearMonth ;
+    schema:hasPart ex:Ronnie_Wood_Act_Together_Rec,
+        ex:Ronnie_Wood_Am_I_Grooving_You_Rec,
+        ex:Ronnie_Wood_Cancel_Everything_Rec,
+        ex:Ronnie_Wood_Crotch_Music_Rec,
+        ex:Ronnie_Wood_Far_East_Man_Rec,
+        ex:Ronnie_Wood_I_Can_Feel_the_Fire_Rec,
+        ex:Ronnie_Wood_If_You_Gotta_Make_a_Fool_of_Somebody_Rec,
+        ex:Ronnie_Wood_Mystifies_Me_Rec,
+        ex:Ronnie_Wood_Shirley_Rec,
+        ex:Ronnie_Wood_Sure_the_One_You_Need_Rec,
+        ex:Ronnie_Wood_Take_a_Look_at_the_Guy_Rec ;
+    schema:name "I’ve Got My Own Album to Do" ;
+    schema:sameAs <https://musicbrainz.org/release-group/ae995681-2e05-3c4a-beea-f53b9c00f663>,
+        <https://musicbrainz.org/release/a1213a23-3fdd-4184-97b2-6d20b149468d> ;
+    ex:isDebutAlbum true .
+
+ex:Adam_Ant_Friend_or_Foe_Album a schema:MusicAlbum ;
+    schema:byArtist ex:AdamAnt ;
+    schema:datePublished "1982-10-14"^^xsd:date ;
+    schema:hasPart ex:Adam_Ant_Cajun_Twisters_Rec,
+        ex:Adam_Ant_Crackpot_History_and_the_Right_to_Lie_Rec,
+        ex:Adam_Ant_Desperate_but_Not_Serious_Rec,
+        ex:Adam_Ant_Friend_or_Foe_Rec,
+        ex:Adam_Ant_Goody_Two_Shoes_Rec,
+        ex:Adam_Ant_Hello_I_Love_You_Rec,
+        ex:Adam_Ant_Here_Comes_the_Grump_Rec,
+        ex:Adam_Ant_Made_of_Money_Rec,
+        ex:Adam_Ant_Man_Called_Marco_Rec,
+        ex:Adam_Ant_Place_in_the_Country_Rec,
+        ex:Adam_Ant_Something_Girls_Rec,
+        ex:Adam_Ant_Try_This_for_Sighs_Rec ;
+    schema:name "Friend or Foe" ;
+    schema:sameAs <https://musicbrainz.org/release-group/54cb81de-946f-3a5b-9688-272172466340>,
+        <https://musicbrainz.org/release/c1f9b340-a37e-4dc8-aaf9-f622c5457f1a> ;
+    ex:isDebutAlbum true .
+
+ex:Bernard_Walton_On_a_Note_of_Triumph_Album a schema:MusicAlbum ;
+    schema:byArtist ex:BernardWalton ;
+    schema:datePublished "1945"^^xsd:gYear ;
+    schema:hasPart ex:Bernard_Walton_On_A_Note_Of_Triumph_Part_7_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_10_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_11_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_12_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_1_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_2_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_3_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_4_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_5_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_6_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_8_Rec,
+        ex:Bernard_Walton_On_a_Note_of_Triumph_Part_9_Rec ;
+    schema:name "On a Note of Triumph" ;
+    schema:sameAs <https://musicbrainz.org/release-group/b4d58b07-cdc7-479d-a73f-e6277f3fce25>,
+        <https://musicbrainz.org/release/21fe853e-6554-4f20-ac13-99a353b20ad2> ;
+    ex:isDebutAlbum true .
+
+ex:David_Bowie_David_Bowie_Album a schema:MusicAlbum ;
+    schema:byArtist ex:DavidBowie ;
+    schema:datePublished "1967-06"^^xsd:gYearMonth ;
+    schema:hasPart ex:David_Bowie_Come_and_Buy_My_Toys_Rec,
+        ex:David_Bowie_Join_the_Gang_Rec,
+        ex:David_Bowie_Little_Bombardier_Rec,
+        ex:David_Bowie_Love_You_Till_Tuesday_Rec,
+        ex:David_Bowie_Please_Mr_Gravedigger_Rec,
+        ex:David_Bowie_Rubber_Band_Rec,
+        ex:David_Bowie_Sell_Me_a_Coat_Rec,
+        ex:David_Bowie_She_s_Got_Medals_Rec,
+        ex:David_Bowie_Silly_Boy_Blue_Rec,
+        ex:David_Bowie_There_Is_a_Happy_Land_Rec,
+        ex:David_Bowie_Uncle_Arthur_Rec,
+        ex:David_Bowie_When_I_Live_My_Dream_Rec ;
+    schema:name "David Bowie" ;
+    schema:sameAs <https://musicbrainz.org/release-group/5db40351-97ed-36a8-88e2-a21a2603cae1>,
+        <https://musicbrainz.org/release/bfa03202-690b-411a-bf6a-baa78d74cfb7> ;
+    ex:isDebutAlbum true .
+
+ex:David_Ruffin_My_Whole_World_Ended_Album a schema:MusicAlbum ;
+    schema:byArtist ex:DavidRuffin ;
+    schema:datePublished "1969-01-01"^^xsd:date ;
+    schema:hasPart ex:David_Ruffin_Everlasting_Love_Rec,
+        ex:David_Ruffin_Flower_Child_Rec,
+        ex:David_Ruffin_I_ve_Got_to_Find_Myself_a_Brand_New_Baby_Rec,
+        ex:David_Ruffin_I_ve_Lost_Everything_I_ve_Ever_Loved_Rec,
+        ex:David_Ruffin_Message_From_Maria_Rec,
+        ex:David_Ruffin_My_Love_Is_Growing_Stronger_Rec,
+        ex:David_Ruffin_My_Whole_World_Ended_the_Moment_You_Left_Me_Rec,
+        ex:David_Ruffin_Pieces_of_a_Man_Rec,
+        ex:David_Ruffin_Somebody_Stole_My_Dream_Rec,
+        ex:David_Ruffin_The_Double_Cross_Rec,
+        ex:David_Ruffin_We_ll_Have_a_Good_Thing_Going_On_Rec,
+        ex:David_Ruffin_World_of_Darkness_Rec ;
+    schema:name "My Whole World Ended" ;
+    schema:sameAs <https://musicbrainz.org/release-group/bffbd9af-a492-3511-ad16-189eff09d2eb>,
+        <https://musicbrainz.org/release/401fba3d-9ac6-4010-a480-b4cdddacd123> ;
+    ex:isDebutAlbum true .
+
+ex:Elvis_Costello_My_Aim_Is_True_Album a schema:MusicAlbum ;
+    schema:byArtist ex:ElvisCostello ;
+    schema:datePublished "1977-07-22"^^xsd:date ;
+    schema:hasPart ex:Elvis_Costello_Alison_Rec,
+        ex:Elvis_Costello_Blame_It_on_Cain_Rec,
+        ex:Elvis_Costello_I_m_Not_Angry_Rec,
+        ex:Elvis_Costello_Less_Than_Zero_Rec,
+        ex:Elvis_Costello_Miracle_Man_Rec,
+        ex:Elvis_Costello_Mystery_Dance_Rec,
+        ex:Elvis_Costello_No_Dancing_Rec,
+        ex:Elvis_Costello_Pay_It_Back_Rec,
+        ex:Elvis_Costello_Sneaky_Feelings_Rec,
+        ex:Elvis_Costello_The_Angels_Wanna_Wear_My_Red_Shoes_Rec,
+        ex:Elvis_Costello_Waiting_for_the_End_of_the_World_Rec,
+        ex:Elvis_Costello_Welcome_to_the_Working_Week_Rec ;
+    schema:name "My Aim Is True" ;
+    schema:sameAs <https://musicbrainz.org/release-group/c7a4740f-2729-3895-8498-08c521886a95>,
+        <https://musicbrainz.org/release/a1566ca6-f80c-47eb-a203-75f2ea4d80dc> ;
+    ex:isDebutAlbum true .
+
+ex:Paul_Young_No_Parlez_Album a schema:MusicAlbum ;
+    schema:byArtist ex:PaulYoung ;
+    schema:datePublished "1983-07-18"^^xsd:date ;
+    schema:hasPart ex:Paul_Young_Behind_Your_Smile_Rec,
+        ex:Paul_Young_Broken_Man_Rec,
+        ex:Paul_Young_Come_Back_and_Stay_Rec,
+        ex:Paul_Young_Iron_Out_the_Rough_Spots_Rec,
+        ex:Paul_Young_Ku_Ku_Kurama_Rec,
+        ex:Paul_Young_Love_Will_Tear_Us_Apart_Rec,
+        ex:Paul_Young_Love_of_the_Common_People_Rec,
+        ex:Paul_Young_No_Parlez_Rec,
+        ex:Paul_Young_Oh_Girl_Rec,
+        ex:Paul_Young_Sex_Rec,
+        ex:Paul_Young_Tender_Trap_Rec,
+        ex:Paul_Young_Wherever_I_Lay_My_Hat_That_s_My_Home_Rec ;
+    schema:name "No Parlez" ;
+    schema:sameAs <https://musicbrainz.org/release-group/5b1228aa-8acc-3cad-abf6-a267cd8635c6>,
+        <https://musicbrainz.org/release/663105f1-296e-4efd-ab1c-6fdd06ecb541> ;
+    ex:isDebutAlbum true .
+
+ex:Phil_Collins_Face_Value_Album a schema:MusicAlbum ;
+    schema:byArtist ex:PhilCollins ;
+    schema:datePublished "1981-02-13"^^xsd:date ;
+    schema:hasPart ex:Phil_Collins_Behind_the_Lines_Rec,
+        ex:Phil_Collins_Droned_Rec,
+        ex:Phil_Collins_Hand_in_Hand_Rec,
+        ex:Phil_Collins_I_Missed_Again_Rec,
+        ex:Phil_Collins_I_m_Not_Moving_Rec,
+        ex:Phil_Collins_If_Leaving_Me_Is_Easy_Rec,
+        ex:Phil_Collins_In_the_Air_Tonight_Rec,
+        ex:Phil_Collins_The_Roof_Is_Leaking_Rec,
+        ex:Phil_Collins_This_Must_Be_Love_Rec,
+        ex:Phil_Collins_Thunder_and_Lightning_Rec,
+        ex:Phil_Collins_Tomorrow_Never_Knows_Rec,
+        ex:Phil_Collins_You_Know_What_I_Mean_Rec ;
+    schema:name "Face Value" ;
+    schema:sameAs <https://musicbrainz.org/release-group/1cbc1a5a-5512-3f8e-997b-d9281b83722b>,
+        <https://musicbrainz.org/release/f5242826-0ebb-446a-b147-ebbf968ebc0b> ;
+    ex:isDebutAlbum true .
+
+ex:Bob_Dylan_Bob_Dylan_Album a schema:MusicAlbum ;
+    schema:byArtist ex:BobDylan ;
+    schema:datePublished "1962-03-19"^^xsd:date ;
+    schema:hasPart ex:Bob_Dylan_Baby_Let_Me_Follow_You_Down_Rec,
+        ex:Bob_Dylan_Fixin_to_Die_Rec,
+        ex:Bob_Dylan_Freight_Train_Blues_Rec,
+        ex:Bob_Dylan_Gospel_Plow_Rec,
+        ex:Bob_Dylan_Highway_51_Rec,
+        ex:Bob_Dylan_House_of_the_Risin_Sun_Rec,
+        ex:Bob_Dylan_In_My_Time_of_Dyin_Rec,
+        ex:Bob_Dylan_Man_of_Constant_Sorrow_Rec,
+        ex:Bob_Dylan_Pretty_Peggy_O_Rec,
+        ex:Bob_Dylan_See_That_My_Grave_Is_Kept_Clean_Rec,
+        ex:Bob_Dylan_Song_to_Woody_Rec,
+        ex:Bob_Dylan_Talkin_New_York_Rec,
+        ex:Bob_Dylan_You_re_No_Good_Rec ;
+    schema:name "Bob Dylan" ;
+    schema:sameAs <https://musicbrainz.org/release-group/6ac612a5-e815-3fed-b341-8b3faa351df4>,
+        <https://musicbrainz.org/release/4b5db958-0948-4151-8e1f-2d5b8cc35975> ;
+    ex:isDebutAlbum true .
+
+ex:Bryan_Ferry_These_Foolish_Things_Album a schema:MusicAlbum ;
+    schema:byArtist ex:BryanFerry ;
+    schema:datePublished "1973-10-05"^^xsd:date ;
+    schema:hasPart ex:Bryan_Ferry_A_Hard_Rain_s_A_Gonna_Fall_Rec,
+        ex:Bryan_Ferry_Baby_I_Don_t_Care_Rec,
+        ex:Bryan_Ferry_Don_t_Ever_Change_Rec,
+        ex:Bryan_Ferry_Don_t_Worry_Baby_Rec,
+        ex:Bryan_Ferry_I_Love_How_You_Love_Me_Rec,
+        ex:Bryan_Ferry_It_s_My_Party_Rec,
+        ex:Bryan_Ferry_Loving_You_Is_Sweeter_Than_Ever_Rec,
+        ex:Bryan_Ferry_Piece_of_My_Heart_Rec,
+        ex:Bryan_Ferry_River_of_Salt_Rec,
+        ex:Bryan_Ferry_Sympathy_for_the_Devil_Rec,
+        ex:Bryan_Ferry_The_Tracks_of_My_Tears_Rec,
+        ex:Bryan_Ferry_These_Foolish_Things_Rec,
+        ex:Bryan_Ferry_You_Don_t_See_Me_Rec ;
+    schema:name "These Foolish Things" ;
+    schema:sameAs <https://musicbrainz.org/release-group/a774bcb1-682e-35ab-aac4-47a28534626c>,
+        <https://musicbrainz.org/release/6c49155c-b2e7-48ec-8b00-330b2d2e6d6e> ;
+    ex:isDebutAlbum true .
+
+ex:John_Paul_Jones_No_Introduction_Necessary_Album a schema:MusicAlbum ;
+    schema:byArtist ex:JohnPaulJones ;
+    schema:datePublished "1968"^^xsd:gYear ;
+    schema:hasPart ex:John_Paul_Jones_Boll_Weevil_Rock_Rec,
+        ex:John_Paul_Jones_Breathless_Rec,
+        ex:John_Paul_Jones_Burn_Up_Rec,
+        ex:John_Paul_Jones_Dixie_Fried_Rec,
+        ex:John_Paul_Jones_Down_the_Line_Rec,
+        ex:John_Paul_Jones_Everything_I_Do_Is_Wrong_Rec,
+        ex:John_Paul_Jones_Fabulous_Rec,
+        ex:John_Paul_Jones_Livin_Lovin_Wreck_Rec,
+        ex:John_Paul_Jones_Lonely_Weekend_Rec,
+        ex:John_Paul_Jones_Lovin_Up_a_Storm_Rec,
+        ex:John_Paul_Jones_One_Long_Kiss_Rec,
+        ex:John_Paul_Jones_Rave_On_Rec,
+        ex:John_Paul_Jones_Think_It_Over_Rec ;
+    schema:name "No Introduction Necessary" ;
+    schema:sameAs <https://musicbrainz.org/release-group/e40eefcd-13a7-4909-afd9-e8ab1295090c>,
+        <https://musicbrainz.org/release/202b9fad-0072-4958-9802-c1f03aab350d> ;
+    ex:isDebutAlbum true .
+
+ex:Paul_Martinez_McCartney_Album a schema:MusicAlbum ;
+    schema:byArtist ex:PaulMartinez ;
+    schema:datePublished "1970-04-17"^^xsd:date ;
+    schema:hasPart ex:Paul_Martinez_Every_Night_Rec,
+        ex:Paul_Martinez_Hot_as_Sun_Glasses_Rec,
+        ex:Paul_Martinez_Junk_Rec,
+        ex:Paul_Martinez_Kreen_Akrore_Rec,
+        ex:Paul_Martinez_Man_We_Was_Lonely_Rec,
+        ex:Paul_Martinez_Maybe_I_m_Amazed_Rec,
+        ex:Paul_Martinez_Momma_Miss_America_Rec,
+        ex:Paul_Martinez_Oo_You_Rec,
+        ex:Paul_Martinez_Singalong_Junk_Rec,
+        ex:Paul_Martinez_Teddy_Boy_Rec,
+        ex:Paul_Martinez_That_Would_Be_Something_Rec,
+        ex:Paul_Martinez_The_Lovely_Linda_Rec,
+        ex:Paul_Martinez_Valentine_Day_Rec ;
+    schema:name "McCartney" ;
+    schema:sameAs <https://musicbrainz.org/release-group/d6a52dc7-f4fa-4d10-89d9-5a99d178dae9>,
+        <https://musicbrainz.org/release/94aaf751-be3a-3f21-bed4-d515d21f0080> ;
+    ex:isDebutAlbum true .
+
+ex:Paul_McCartney_McCartney_Album a schema:MusicAlbum ;
+    schema:byArtist ex:PaulMccartney ;
+    schema:datePublished "1970-04-17"^^xsd:date ;
+    schema:hasPart ex:Paul_McCartney_Every_Night_Rec,
+        ex:Paul_McCartney_Hot_as_Sun_Glasses_Rec,
+        ex:Paul_McCartney_Junk_Rec,
+        ex:Paul_McCartney_Kreen_Akrore_Rec,
+        ex:Paul_McCartney_Man_We_Was_Lonely_Rec,
+        ex:Paul_McCartney_Maybe_I_m_Amazed_Rec,
+        ex:Paul_McCartney_Momma_Miss_America_Rec,
+        ex:Paul_McCartney_Oo_You_Rec,
+        ex:Paul_McCartney_Singalong_Junk_Rec,
+        ex:Paul_McCartney_Teddy_Boy_Rec,
+        ex:Paul_McCartney_That_Would_Be_Something_Rec,
+        ex:Paul_McCartney_The_Lovely_Linda_Rec,
+        ex:Paul_McCartney_Valentine_Day_Rec ;
+    schema:name "McCartney" ;
+    schema:sameAs <https://musicbrainz.org/release-group/d6a52dc7-f4fa-4d10-89d9-5a99d178dae9>,
+        <https://musicbrainz.org/release/94aaf751-be3a-3f21-bed4-d515d21f0080> ;
+    ex:isDebutAlbum true .
+
+ex:Freddie_Mercury_Mr_Bad_Guy_Album a schema:MusicAlbum ;
+    schema:byArtist ex:FreddieMercury ;
+    schema:datePublished "1985-04-29"^^xsd:date ;
+    schema:hasPart ex:Freddie_Mercury_Foolin_Around_Rec,
+        ex:Freddie_Mercury_I_Was_Born_to_Love_You_12_version_Rec,
+        ex:Freddie_Mercury_I_Was_Born_to_Love_You_Rec,
+        ex:Freddie_Mercury_Let_s_Turn_It_On_12_version_Rec,
+        ex:Freddie_Mercury_Let_s_Turn_It_On_Rec,
+        ex:Freddie_Mercury_Living_on_My_Own_12_version_Rec,
+        ex:Freddie_Mercury_Living_on_My_Own_Rec,
+        ex:Freddie_Mercury_Love_Me_Like_There_s_No_Tomorrow_Rec,
+        ex:Freddie_Mercury_Made_in_Heaven_Rec,
+        ex:Freddie_Mercury_Man_Made_Paradise_Rec,
+        ex:Freddie_Mercury_Mr_Bad_Guy_Rec,
+        ex:Freddie_Mercury_My_Love_Is_Dangerous_Rec,
+        ex:Freddie_Mercury_There_Must_Be_More_to_Life_Than_This_Rec,
+        ex:Freddie_Mercury_Your_Kind_of_Lover_Rec ;
+    schema:name "Mr. Bad Guy" ;
+    schema:sameAs <https://musicbrainz.org/release-group/e179dc23-7db6-3506-a01c-ae70210134f0>,
+        <https://musicbrainz.org/release/eac6329c-084c-4bc1-bffa-cc67e728158c> ;
+    ex:isDebutAlbum true .
+
+ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album a schema:MusicAlbum ;
+    schema:byArtist ex:JoanBaez ;
+    schema:datePublished "1959"^^xsd:gYear ;
+    schema:hasPart ex:Joan_Baez_Astrapsen_The_Sun_Is_Risen_Rec,
+        ex:Joan_Baez_Black_Is_the_Color_Rec,
+        ex:Joan_Baez_Bold_Soldier_Rec,
+        ex:Joan_Baez_Careless_Love_Rec,
+        ex:Joan_Baez_Don_t_Weep_After_Me_Rec,
+        ex:Joan_Baez_John_Henry_Rec,
+        ex:Joan_Baez_Kitty_Rec,
+        ex:Joan_Baez_Lass_From_the_Low_Country_Rec,
+        ex:Joan_Baez_Le_Cheval_dans_la_baignoire_Horse_in_the_Bathtub_Rec,
+        ex:Joan_Baez_Lowlands_Rec,
+        ex:Joan_Baez_O_What_a_Beautiful_City_Rec,
+        ex:Joan_Baez_Rejected_Lover_Rec,
+        ex:Joan_Baez_Sail_Away_Ladies_Rec,
+        ex:Joan_Baez_So_Soon_in_the_Morning_Rec,
+        ex:Joan_Baez_The_Banks_of_The_Ohio_Rec,
+        ex:Joan_Baez_Travelin_Shoes_Rec,
+        ex:Joan_Baez_Walie_Walie_Rec,
+        ex:Joan_Baez_What_You_Gonna_Call_Your_Pretty_Little_Baby_Rec ;
+    schema:name "Folksingers ’Round Harvard Square" ;
+    schema:sameAs <https://musicbrainz.org/release-group/546af406-7acf-3867-b57e-3e3c5bab06fc>,
+        <https://musicbrainz.org/release/9550939a-6c34-48f8-b838-1ec3c8132295> ;
+    ex:isDebutAlbum true .
+

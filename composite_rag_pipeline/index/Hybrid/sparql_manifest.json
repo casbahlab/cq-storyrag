@@ -1,0 +1,314 @@
+{
+  "file": "Hybrid/cq_metadata.json",
+  "total": 43,
+  "counts": {
+    "direct": 0,
+    "file": 0,
+    "rq_scan": 43,
+    "fallback_named": 0,
+    "missing": 0
+  },
+  "manifest": {
+    "CQ-E1": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 644,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E10": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 520,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E11": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 744,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E12": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 405,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E12b": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 295,
+      "preview": "PREFIX ex:     <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E13": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 441,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E14": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 534,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E15": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 562,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E16": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 641,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E17": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 676,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E18": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 628,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E19": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 774,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E2": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 644,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E20": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 648,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E21": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 653,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E22": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 817,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E23": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 726,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E24": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 527,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E27": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 739,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E28": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 364,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E3": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 938,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E4": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 597,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E5": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 547,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E6": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 398,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E7": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 641,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-E9": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 481,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-H-AF1": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 353,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-H-GS1": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 438,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-H-SF1": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 451,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-L10": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 652,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-L11": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 678,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-L14": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 688,
+      "preview": "PREFIX schema: <http://schema.org/>",
+      "question": ""
+    },
+    "CQ-L15": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 404,
+      "preview": "PREFIX schema: <http://schema.org/>",
+      "question": ""
+    },
+    "CQ-L20": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 547,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-L21": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 640,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-L22": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 652,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-L28": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 456,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-L4": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 347,
+      "preview": "PREFIX ex: <http://wembrewind.live/ex#>",
+      "question": ""
+    },
+    "CQ-L5": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 518,
+      "preview": "PREFIX schema: <http://schema.org/>",
+      "question": ""
+    },
+    "CQ-L6": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 586,
+      "preview": "PREFIX schema: <http://schema.org/>",
+      "question": ""
+    },
+    "CQ-L7": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 469,
+      "preview": "PREFIX schema: <http://schema.org/>",
+      "question": ""
+    },
+    "CQ-L8": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 211,
+      "preview": "PREFIX schema: <http://schema.org/>",
+      "question": ""
+    },
+    "CQ-L9": {
+      "source": "rq_scan",
+      "has_sparql": true,
+      "sparql_len": 261,
+      "preview": "PREFIX schema: <http://schema.org/>",
+      "question": ""
+    }
+  }
+}

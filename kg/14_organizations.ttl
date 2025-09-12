@@ -1,0 +1,44 @@
+@prefix ex: <http://wembrewind.live/ex#> .
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:ABC a schema:Organization ;
+    schema:alternateName "ABC" ;
+    schema:name "ABC" .
+
+ex:BBC a schema:Organization ;
+    schema:alternateName "BBC" ;
+    schema:location "London, UK" ;
+    schema:name "BBC" ;
+    schema:sameAs <https://www.wikidata.org/wiki/Q9531> ;
+    ex:archived true ;
+    ex:coverageNote "Broadcasted globally, archived by BBC" .
+
+ex:BandAidTrust a schema:Organization ;
+    schema:name "Band Aid Trust" .
+
+ex:MTV a schema:Organization ;
+    schema:name "MTV" .
+
+ex:MusicCriticsGroup a schema:Organization .
+
+ex:RollingStone a schema:Organization ;
+    schema:description "Rolling Stone is an American magazine and online publication that covers music, popular culture, politics, and more. It is known for its influential reviews, in-depth artist features, and cultural commentary." ;
+    schema:name "Rolling Stone" ;
+    schema:url <https://www.rollingstone.com/> .
+
+ex:SatelliteNetwork a schema:Organization ;
+    schema:description "A network of commercial telecommunications satellites including five Intelsat satellites, which were integral to the global broadcast of the 1985 Live Aid concert." ;
+    schema:hasPart ex:IntelsatSatelliteFleet,
+        ex:OtherCommercialSatelliteFleet ;
+    schema:name "Commercial Satellite Network" .
+
+ex:Sire_Records a schema:Organization ;
+    schema:foundingDate "1966-01-01"^^xsd:date ;
+    schema:name "Sire Records" .
+
+ex:uDiscoverMusic a schema:Organization ;
+    schema:description "uDiscoverMusic is a music editorial platform owned by Universal Music Group, publishing artist features, reviews, and music history articles across genres." ;
+    schema:name "uDiscoverMusic" ;
+    schema:url <https://www.udiscovermusic.com/> .
+
