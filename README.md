@@ -1,4 +1,7 @@
-# Wembley Rewind
+# CQ Story RAG
+[![Data License: CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 
 Graph-centric RAG for Live Aid 1985 storytelling. The system builds a knowledge graph, retrieves evidence, generates persona-aligned narratives, and evaluates support, coverage, readability and cohesion.
 
@@ -114,10 +117,15 @@ python one_click_rag_eval.py   --exp-dirs data/Luca-Long-20250909-133910   --rag
 - **Empty retrieval for a CQ:** confirm the CQ is covered by SPARQL templates and the KG has the required entities
 - **FAISS or embeddings errors:** reinstall `faiss-cpu` and check Python version compatibility
 
-## License
-
-Add your chosen license in `LICENSE`. Update this section to match.
-
 ## How to cite
 
-If you cite this project, please include the repository name, the commit or release tag and the year.
+If you use the AskCQ dataset or the methodologies and findings from this research in your work, please cite the original paper. (*Bibliographic details are omitted here to preserve anonymity for review processes.*)
+
+```bibtex
+@article{AnonymousCQStoryRAG,
+  title={Competency Questions as Executable Plans: a Controlled RAG Architecture for Cultural Heritage Storytelling},
+  author={Anonymous Author(s)},
+  journal={Submitted for review},
+  year={202X},
+  note={Details omitted for double-blind review..}
+}
