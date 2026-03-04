@@ -3,9 +3,9 @@
 [![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 
-Graph-centric Retrieval-Augmented Generation (RAG) for cultural heritage storytelling, demonstrated on the Live Aid 1985 Knowledge Graph.
+A graph-centric Retrieval-Augmented Generation (RAG) framework for cultural heritage storytelling, demonstrated on the Live Aid 1985 Knowledge Graph.
 
-The system constructs and validates a structured Knowledge Graph, retrieves evidence via Competency Questions (CQs), generates persona-conditioned narratives, and evaluates support, coverage, readability, and cohesion.
+The system constructs and validates a Knowledge Graph, retrieves evidence via Competency Questions (CQs), generates persona-conditioned narratives, and evaluates support, coverage, readability, and cohesion.
 
 The architecture is knowledge-graph agnostic and can be applied to any KG supporting structured querying over typed entities and relations.
 
@@ -14,8 +14,10 @@ The architecture is knowledge-graph agnostic and can be applied to any KG suppor
 
 Accepted at the **23rd International Conference on the Semantic Web (ESWC 2026)**, Dubrovnik, Croatia, May 10–14, 2026.
 
-Paper:  
+Paper  
 *Competency Questions as Executable Plans: A Controlled {RAG} Architecture for Cultural Heritage Storytelling*
+
+This repository contains the reference implementation and reproducibility artefacts accompanying the paper.
 
 ## Method Overview
 
@@ -141,7 +143,7 @@ python one_click_rag_eval.py   --exp-dirs data/Luca-Long-20250909-133910   --rag
 
 ## How to cite
 
-If you use the Live Aid KG or the methodologies and findings from this research in your work, please cite the original paper. 
+If you use the Live Aid Knowledge Graph or build upon the CQ-driven RAG methodology, please cite:
 
 ```bibtex
 @inproceedings{Barla2026CQDrivenRAG,
