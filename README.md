@@ -119,7 +119,7 @@ python one_click_rag_eval.py   --exp-dirs data/Luca-Long-20250909-133910   --rag
 
 ## How to cite
 
-If you use the AskCQ dataset or the methodologies and findings from this research in your work, please cite the original paper. (*Bibliographic details are omitted here to preserve anonymity for review processes.*)
+If you use the LiveAid KG or the methodologies and findings from this research in your work, please cite the original paper. (*Bibliographic details are omitted here to preserve anonymity for review processes.*)
 
 ```bibtex
 @article{Barla2026CQStoryRAG,
