@@ -140,11 +140,11 @@ python one_click_rag_eval.py   --exp-dirs data/Luca-Long-20250909-133910   --rag
 
 ## How to cite
 
-If you use the LiveAid KG or the methodologies and findings from this research in your work, please cite the original paper. 
+If you use the Live Aid KG or the methodologies and findings from this research in your work, please cite the original paper. 
 
 ```bibtex
 @inproceedings{Barla2026CQDrivenRAG,
-  title = {Competency Questions as Executable Plans: A Controlled {RAG} Architecture for Cultural Heritage Storytelling},
+  title = {Competency Questions as Executable Plans: a Controlled RAG Architecture for Cultural Heritage Storytelling},
   author={Barla, Naga Sowjanya and de Berardinis, Jacopo},
   publisher={Springer},
   booktitle = {Semantic Web -- 23rd International Conference, ESWC 2026, Dubrovnik, Croatia, May 10--14, 2026, Proceedings},
