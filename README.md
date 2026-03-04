@@ -3,18 +3,19 @@
 [![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 
-## ESWC 2026
-
-This work has been accepted at the **23rd International Conference on the Semantic Web (ESWC 2026)**, Dubrovnik, Croatia, May 10–14, 2026.
-
-Paper:  
-*Competency Questions as Executable Plans: A Controlled RAG Architecture for Cultural Heritage Storytelling*
-
 Graph-centric Retrieval-Augmented Generation (RAG) for cultural heritage storytelling, demonstrated on the Live Aid 1985 Knowledge Graph.
 
 The system constructs and validates a structured Knowledge Graph, retrieves evidence via Competency Questions (CQs), generates persona-conditioned narratives, and evaluates support, coverage, readability, and cohesion.
 
 The architecture is knowledge-graph agnostic and can be applied to any KG supporting structured querying over typed entities and relations.
+
+
+## Publication
+
+Accepted at the **23rd International Conference on the Semantic Web (ESWC 2026)**, Dubrovnik, Croatia, May 10–14, 2026.
+
+Paper:  
+*Competency Questions as Executable Plans: A Controlled {RAG} Architecture for Cultural Heritage Storytelling*
 
 ## Method Overview
 
