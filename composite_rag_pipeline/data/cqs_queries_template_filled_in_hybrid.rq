@@ -202,7 +202,7 @@ PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT ?artistName ?foundingDate ?foundingLocation
 WHERE {
     BIND (ex:Queen as ?artist)
-    ?artist a mm:MusicArtist .
+    ?artist a mm:MusicEnsemble .
     ?artist schema:foundingDate ?foundingDate .
     ?artist schema:foundingLocation ?foundingLocation .
     ?artist schema:name ?artistName .
@@ -607,7 +607,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?artistName (GROUP_CONCAT(DISTINCT ?founderName; separator=", ") AS ?foundingMembers)
 WHERE {
     BIND (ex:Queen AS ?artist)
-    ?artist a mm:MusicArtist ;
+    ?artist a mm:MusicEnsemble ;
             schema:name ?artistName ;
             schema:foundingDate ?foundingYear .
     ?role a schema:Role, mm:MusicEnsembleMembership ;

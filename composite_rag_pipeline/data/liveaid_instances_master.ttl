@@ -20893,8 +20893,8 @@ ex:AndyBown a schema:Person,
     schema:name "AndyBown" ;
     core:isMemberOf ex:StatusQuo .
 
-ex:AshfordSimpson a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:AshfordSimpson schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American husband-and-wife songwriting-production team and recording duo"@en ;
     schema:foundingDate "1964" ;
     schema:foundingLocation "New York" ;
@@ -21376,8 +21376,8 @@ ex:Bryan_Adams_Bryan_Adams_Album a schema:MusicAlbum ;
         <https://musicbrainz.org/release/412389a4-2226-4988-bd1e-b433e6c845a9> ;
     ex:isDebutAlbum true .
 
-ex:CrosbyStillsNashYoung a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:CrosbyStillsNashYoung schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American and British folk rock supergroup"@en ;
     schema:foundingDate "1969" ;
     schema:foundingLocation "Bethel" ;
@@ -21501,8 +21501,8 @@ ex:Queen_LiveAid1985_Performance a mm:LivePerformance ;
         ex:Work_WeAreTheChampions_0b3da969_2,
         ex:Work_WeWillRockYou_3623f3af_2 .
 
-ex:TheStyleCouncil a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:TheStyleCouncil schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "English band active 1983–1989"@en ;
     schema:foundingDate "1983" ;
     schema:foundingLocation "Woking" ;
@@ -21538,8 +21538,8 @@ ex:Thomas_Dolby_The_Golden_Age_of_Wireless_Album a schema:MusicAlbum ;
         <https://musicbrainz.org/release/c0b22839-7b79-485d-9f71-7e9699adc261> ;
     ex:isDebutAlbum true .
 
-ex:CrosbyStillsNash a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:CrosbyStillsNash schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American folk rock band"@en ;
     schema:foundingDate "1968" ;
     schema:foundingLocation "Los Angeles" ;
@@ -21783,8 +21783,8 @@ ex:Ronnie_Wood_I_ve_Got_My_Own_Album_to_Do_Album a schema:MusicAlbum ;
         <https://musicbrainz.org/release/a1213a23-3fdd-4184-97b2-6d20b149468d> ;
     ex:isDebutAlbum true .
 
-ex:Sade a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:Sade schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "British band"@en ;
     schema:foundingDate "1982" ;
     schema:foundingLocation "London (Greater London)" ;
@@ -21817,8 +21817,8 @@ ex:Sade a schema:MusicGroup,
         ex:Soul,
         ex:TripHop .
 
-ex:SpandauBallet a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:SpandauBallet schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "English musical group; new wave band"@en ;
     schema:foundingDate "1979" ;
     schema:foundingLocation "Islington" ;
@@ -21847,8 +21847,8 @@ ex:SpandauBallet a schema:MusicGroup,
         ex:PopRock,
         ex:SophistiPop .
 
-ex:TheCars a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:TheCars schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American pop-rock band"@en ;
     schema:foundingDate "1976" ;
     schema:foundingLocation "Boston" ;
@@ -21876,8 +21876,8 @@ ex:TheCars a schema:MusicGroup,
         ex:PowerPop,
         ex:SynthPop .
 
-ex:U2 a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:U2 schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "Irish rock band"@en ;
     schema:foundingDate "1976" ;
     schema:foundingLocation "Dublin" ;
@@ -22086,8 +22086,8 @@ ex:Bryan_Ferry_These_Foolish_Things_Album a schema:MusicAlbum ;
         <https://musicbrainz.org/release/6c49155c-b2e7-48ec-8b00-330b2d2e6d6e> ;
     ex:isDebutAlbum true .
 
-ex:FourTops a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:FourTops schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American vocal quartet"@en ;
     schema:foundingDate "1956" ;
     schema:foundingLocation "Detroit" ;
@@ -22176,8 +22176,8 @@ ex:Paul_McCartney_McCartney_Album a schema:MusicAlbum ;
         <https://musicbrainz.org/release/94aaf751-be3a-3f21-bed4-d515d21f0080> ;
     ex:isDebutAlbum true .
 
-ex:ThePowerStation a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:ThePowerStation schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American-British musical supergroup; rock band"@en ;
     schema:foundingDate "1984" ;
     schema:foundingLocation "New York" ;
@@ -22200,8 +22200,8 @@ ex:ThePowerStation a schema:MusicGroup,
         ex:TonyThompson ;
     mm:hasGenre ex:PopRock .
 
-ex:DarylHallJohnOates_2 a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:DarylHallJohnOates_2 schema:MusicGroup,
+        mm:MusicEnsemble ;
     rdfs:label "DarylHallJohnOates_2" ;
     schema:member ex:CharlieDechant,
         ex:DarylHall,
@@ -22253,8 +22253,8 @@ ex:Synthesizer a ex:MusicInstrument ;
     schema:sameAs <https://musicbrainz.org/instrument/4a29230c-5ab5-4eff-ac59-4a253f3561a0>,
         <https://www.wikidata.org/wiki/Q163829> .
 
-ex:TheHooters a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:TheHooters schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American rock band"@en ;
     schema:foundingDate "1980" ;
     schema:foundingLocation "Philadelphia" ;
@@ -22301,8 +22301,8 @@ ex:ClassicRock a mm:MusicGenre ;
     owl:sameAs <http://www.wikidata.org/entity/Q56351111>,
         <https://musicbrainz.org/genre/93244085-20e5-4f16-9067-1d19143b3810> .
 
-ex:DarylHallJohnOates a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:DarylHallJohnOates schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American musical duo composed of Daryl Hall and John Oates (1970–2024)"@en ;
     schema:foundingDate "1967" ;
     schema:foundingLocation "Philadelphia" ;
@@ -22341,8 +22341,8 @@ ex:SoftRock a mm:MusicGenre ;
     owl:sameAs <http://www.wikidata.org/entity/Q217191>,
         <https://musicbrainz.org/genre/7d0c6a6b-5d56-4b1e-a8c7-e32194f246b9> .
 
-ex:GeorgeThorogoodTheDestroyers a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:GeorgeThorogoodTheDestroyers schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American musical group"@en ;
     schema:foundingDate "1976" ;
     schema:foundingLocation "Newark" ;
@@ -22370,8 +22370,8 @@ ex:GeorgeThorogoodTheDestroyers a schema:MusicGroup,
         ex:ElectricBlues,
         ex:HardRock .
 
-ex:ThompsonTwins a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:ThompsonTwins schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "British band"@en ;
     schema:foundingDate "1977" ;
     schema:foundingLocation "Sheffield" ;
@@ -22405,8 +22405,8 @@ ex:ThompsonTwins a schema:MusicGroup,
         ex:NewWave,
         ex:PostPunk .
 
-ex:Ultravox a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:Ultravox schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "British new wave band"@en ;
     schema:foundingDate "1976" ;
     schema:foundingLocation "London (Greater London)" ;
@@ -22464,8 +22464,8 @@ ex:Joan_Baez_Folksingers_Round_Harvard_Square_Album a schema:MusicAlbum ;
         <https://musicbrainz.org/release/9550939a-6c34-48f8-b838-1ec3c8132295> ;
     ex:isDebutAlbum true .
 
-ex:Queen a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:Queen schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "British musical group; rock band"@en ;
     schema:foundingDate "1970-06-27"^^xsd:date ;
     schema:foundingLocation "London (Greater London)" ;
@@ -22498,8 +22498,8 @@ ex:Queen a schema:MusicGroup,
         ex:ProgressiveRock,
         ex:SymphonicRock .
 
-ex:DireStraits a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:DireStraits schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "English rock band"@en ;
     schema:foundingDate "1977" ;
     schema:foundingLocation "Deptford" ;
@@ -22545,8 +22545,8 @@ ex:NewWave a mm:MusicGenre ;
     owl:sameAs <http://www.wikidata.org/entity/Q187760>,
         <https://musicbrainz.org/genre/56407f9d-3398-4bf3-bbbd-ea372fa5adeb> .
 
-ex:TheBoomtownRats a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:TheBoomtownRats schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "Irish rock band"@en ;
     schema:foundingDate "1975" ;
     schema:identifier ex:TheBoomtownRats_prop_P2373_91699445 ;
@@ -22578,8 +22578,8 @@ ex:TheBoomtownRats a schema:MusicGroup,
         ex:PowerPop,
         ex:PunkRock .
 
-ex:TomPettyAndTheHeartbreakers a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:TomPettyAndTheHeartbreakers schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American rock band"@en ;
     schema:foundingDate "1976" ;
     schema:foundingLocation "Gainesville" ;
@@ -22611,8 +22611,8 @@ ex:TomPettyAndTheHeartbreakers a schema:MusicGroup,
         ex:PowerPop,
         ex:SouthernRock .
 
-ex:DuranDuran a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:DuranDuran schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "British band"@en ;
     schema:foundingDate "1978" ;
     schema:foundingLocation "Birmingham" ;
@@ -22648,8 +22648,8 @@ ex:DuranDuran a schema:MusicGroup,
         ex:PopRock,
         ex:SynthPop .
 
-ex:TheBeachBoys a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:TheBeachBoys schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American rock band"@en ;
     schema:foundingDate "1961" ;
     schema:foundingLocation "Hawthorne" ;
@@ -22698,8 +22698,8 @@ ex:WembleyStadium a schema:MusicVenue,
     schema:location ex:LondonUK ;
     schema:name "Wembley Stadium" .
 
-ex:RunDMC a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:RunDMC schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American hip-hop group"@en ;
     schema:foundingDate "1982" ;
     schema:foundingLocation "Hollis" ;
@@ -22742,8 +22742,8 @@ ex:RunDMC a schema:MusicGroup,
         ex:OldSchoolHipHop,
         ex:RapRock .
 
-ex:StatusQuo a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:StatusQuo schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "British musical group; rock band"@en ;
     schema:foundingDate "1967" ;
     schema:foundingLocation "London (Greater London)" ;
@@ -22783,8 +22783,8 @@ ex:StatusQuo a schema:MusicGroup,
         ex:PsychedelicPop,
         ex:PsychedelicRock .
 
-ex:TheWho a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:TheWho schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "English rock band"@en ;
     schema:foundingDate "1964-02" ;
     schema:foundingLocation "London (Greater London)" ;
@@ -22829,8 +22829,8 @@ ex:TheWho a schema:MusicGroup,
         ex:PopRock,
         ex:RockOpera .
 
-ex:Pretenders a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:Pretenders schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "English-American rock band"@en ;
     schema:foundingDate "1978-03" ;
     schema:foundingLocation "Hereford" ;
@@ -22887,8 +22887,8 @@ ex:PopRock a mm:MusicGenre ;
     owl:sameAs <http://www.wikidata.org/entity/Q484641>,
         <https://musicbrainz.org/genre/797e2e85-5ffd-495c-a757-8b4079052f0e> .
 
-ex:JudasPriest a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:JudasPriest schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "British heavy metal band"@en ;
     schema:foundingDate "1969" ;
     schema:foundingLocation "Birmingham" ;
@@ -22981,8 +22981,8 @@ ex:Work_BbcIntermission_fee0475e a mm:MusicEntity ;
         ex:Recording_BbcIntermission_faf9e1a6,
         ex:Recording_BbcIntermission_ff043393 .
 
-ex:ReoSpeedwagon a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:ReoSpeedwagon schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American rock band"@en ;
     schema:foundingDate "1967" ;
     schema:foundingLocation "Champaign" ;
@@ -23048,8 +23048,8 @@ ex:Percussion a ex:MusicInstrument ;
     schema:sameAs <https://musicbrainz.org/instrument/8e9abdf1-0afc-4544-b201-c6fa768d01f4>,
         <https://www.wikidata.org/wiki/Q133163> .
 
-ex:SimpleMinds a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:SimpleMinds schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "Scottish rock band"@en ;
     schema:foundingDate "1977" ;
     schema:foundingLocation "Glasgow" ;
@@ -23116,8 +23116,8 @@ ex:SimpleMinds a schema:MusicGroup,
         ex:SoftRock,
         ex:SynthPop .
 
-ex:BlackSabbath a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:BlackSabbath schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "British heavy metal band"@en ;
     schema:foundingDate "1968-09" ;
     schema:foundingLocation "Birmingham" ;
@@ -23262,8 +23262,8 @@ ex:Voice a ex:MusicInstrument ;
     schema:name "Voice" ;
     schema:sameAs <https://www.wikidata.org/entity/Q17172850> .
 
-ex:Santana a schema:MusicGroup,
-        mm:MusicArtist ;
+ex:Santana schema:MusicGroup,
+        mm:MusicEnsemble ;
     schema:description "American rock band"@en ;
     schema:foundingDate "1966" ;
     schema:foundingLocation "San Francisco" ;
