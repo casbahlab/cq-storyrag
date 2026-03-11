@@ -607,7 +607,7 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 SELECT ?artistName (GROUP_CONCAT(DISTINCT ?founderName; separator=", ") AS ?foundingMembers)
 WHERE {
     BIND ({musicgroup} AS ?artist)
-    ?artist a mm:MusicArtist ;
+    ?artist a mm:MusicEnsemble ;
             schema:name ?artistName ;
             schema:foundingDate ?foundingYear .
     ?role a mm:MusicEnsembleMembership  ;
