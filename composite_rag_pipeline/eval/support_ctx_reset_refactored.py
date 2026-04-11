@@ -49,7 +49,7 @@ DEFAULT_ALIASES = {
 
 def strip_noise(s: str) -> str:
     if s is None: return ""
-    s = str(s).replace("“", '"').replace("”", '"').replace("’", "'")
+    s = str(s).replace("\u201c", '"').replace("\u201d", '"').replace("\u2019", "'")
     m = TYPED_LIT_RX.fullmatch(s.strip())
     if m: s = m.group(1)
     s = URL_RX.sub("", s)
@@ -188,12 +188,20 @@ def normalize_context(ctxs: List[str], max_len: int = 180, near_dup: float = 0.8
 # --- light clean helpers (recommended) ---
 PREFIX_RX = re.compile(r'^\s*:?\s*(KG|WEB)\s*:\s*', re.I)
 URL_OR_IRI_RX = re.compile(r'https?://\S+|<[^>]+>')
+GRAPH_NEIGHBORHOOD_RX = re.compile(r'^\s*Graph\s+neighborhood\s*:\s*', re.I)
+LIT_NODE_RX = re.compile(r'\blit::[A-Za-z0-9]+\b')
 
 def light_clean_line(s: str) -> str:
     if not s: return ""
-    s = str(s).replace("“", '"').replace("”", '"').replace("’", "'")
+    s = str(s).replace("\u201c", '"').replace("\u201d", '"').replace("\u2019", "'")
+    # Strip "Graph neighborhood:" header produced by graph expander
+    s = GRAPH_NEIGHBORHOOD_RX.sub("", s)
     s = URL_OR_IRI_RX.sub("", s)
     s = PREFIX_RX.sub("", s)
+    # Normalize arrow notation to plain space so char3-grams don't produce noise tokens
+    s = re.sub(r'\s*(?:→|->)\s*', ' ', s)
+    # Drop lit:: hash-nodes (internal graph identifiers with no narrative equivalent)
+    s = LIT_NODE_RX.sub("", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
 

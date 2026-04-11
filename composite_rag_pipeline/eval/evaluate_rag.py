@@ -101,7 +101,7 @@ def harvest_texts_anywhere(obj) -> list[str]:
 # Dates & quoted titles (generic)
 DATE_LONG_RE = re.compile(r"\b(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|October|November|December)\s+((?:19|20)\d{2})\b", re.I)
 DATE_ISO_RE  = re.compile(r"\b(19|20)\d{2}-\d{2}-\d{2}\b")
-QUOTED_RE    = re.compile(r"[“\"]([^”\"]+)[”\"]")
+QUOTED_RE    = re.compile(r"[“\"]([^“”\"]+)[”\"]")
 
 def extract_entities_from_texts(texts: list[str]) -> list[str]:
     """Entities as proper nouns + dates + quoted titles from arbitrary text blocks."""
@@ -180,7 +180,7 @@ def content_tokens_plain(text: str) -> list[str]:
     toks = re.findall(r"[A-Za-z][A-Za-z\-']+", text or "")
     return [t.lower() for t in toks if t.lower() not in STOPWORDS]
 
-# Graph neighborhood parser: lines like “X → rel → Y” or “… -> …”
+# Graph neighborhood parser: lines like "X → rel → Y" or "… -> …"
 _ARROW_RE = re.compile(r'^\s*[-•]?\s*(.+?)\s*(?:→|->)\s*(.+?)\s*(?:→|->)\s*(.+?)\s*$')
 
 def parse_arrow_block_to_factlets(s: str) -> list[str]:
@@ -189,6 +189,9 @@ def parse_arrow_block_to_factlets(s: str) -> list[str]:
         m = _ARROW_RE.match(line.strip())
         if not m: continue
         a, p, b = [strip_quotes(t.strip()) for t in m.groups()]
+        # humanize_label strips URI namespaces and splits CamelCase so tokens
+        # match narrative words (e.g. "ex:LiveAid1985" → "Live Aid 1985")
+        a, p, b = humanize_label(a), humanize_label(p), humanize_label(b)
         if a and b:
             outs.append(f"{a}{EM_DASH}{p}{EM_DASH}{b}")
     return outs
@@ -219,7 +222,7 @@ def build_factlets_from_item(item: dict) -> list[str]:
         fl = _row_to_factlet(r, include_urls=True)
         if fl: factlets.append(fl)
 
-    # 2) Graph evidence “text” blocks → arrow factlets
+    # 2) Graph evidence 'text' blocks -> arrow factlets
     ev = item.get("evidence") or []
     for e in ev:
         if (e.get("type") or "").lower() == "text" and isinstance(e.get("value"), str):
@@ -227,7 +230,18 @@ def build_factlets_from_item(item: dict) -> list[str]:
             if "→" in e["value"] or "->" in e["value"] or "Graph neighborhood" in e["value"]:
                 factlets.extend(parse_arrow_block_to_factlets(e["value"]))
 
-    # 3) De-dup case-insensitive
+    # 3) Enriched variant: expanded_rows from per-beat graph expansion
+    for r in (item.get("expanded_rows") or []):
+        if not isinstance(r, dict):
+            continue
+        # expanded_rows store humanized subject/predicate/object strings
+        s = humanize_label(strip_quotes((r.get("subject") or "").strip()))
+        p = humanize_label(strip_quotes((r.get("predicate") or "").strip()))
+        o = humanize_label(strip_quotes((r.get("object") or "").strip()))
+        if s and o:
+            factlets.append(f"{s}{EM_DASH}{p}{EM_DASH}{o}")
+
+    # 4) De-dup case-insensitive
     seen = set(); uniq = []
     for fl in factlets:
         k = fl.lower().strip()
