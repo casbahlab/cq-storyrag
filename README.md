@@ -81,6 +81,9 @@ python run_cq_coverage.py   --kg ../liveaid_instances_master.ttl   --input ../cq
 
 Assumed working directory: `composite_rag_pipeline`. This triggers the respective pipelines for each combination.
 
+### Set your Google API key
+export GOOGLE_API_KEY="your_api_key_here"
+
 ```bash
 # Example: Emma, Medium, all patterns, single run
 python run_narrative_grid.py   --personas Emma   --lengths Medium   --patterns KG Hybrid Graph   --runs 1

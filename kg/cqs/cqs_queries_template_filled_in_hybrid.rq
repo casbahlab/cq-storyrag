@@ -107,7 +107,6 @@ WHERE {
 }
 
 #CQ-ID:CQ-E6 Which [Venue] hosted [Event]?
-PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 SELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?venueName; separator=", ") AS ?allVenues)
 WHERE {

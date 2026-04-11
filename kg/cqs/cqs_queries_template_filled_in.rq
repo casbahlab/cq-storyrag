@@ -90,7 +90,6 @@ WHERE {
 }
 
 #CQ-ID:CQ-E6 Which [Venue] hosted [Event]?
-PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 SELECT DISTINCT ?eventName (GROUP_CONCAT(DISTINCT ?venueName; separator=", ") AS ?allVenues)
 WHERE {
@@ -231,7 +230,6 @@ GROUP BY ?eventName
 
 
 #CQ-ID:CQ-E15 What [Genre] are associated with [Artist]?
-PREFIX ex: <http://wembrewind.live/ex#>
 PREFIX schema: <http://schema.org/>
 PREFIX mm: <https://w3id.org/polifonia/ontology/music-meta/>
 SELECT DISTINCT ?artistName (GROUP_CONCAT(DISTINCT ?genreLabel; separator=", ") AS ?allGenres)
