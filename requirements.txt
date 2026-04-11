@@ -95,7 +95,7 @@ beautifulsoup4
 streamlit
 syntok
 streamlit-aggrid>=0.3.4
-google-generativeai
+google-genai
 SPARQLWrapper
 faiss-cpu
 ollama
@@ -105,7 +105,7 @@ pandas==2.1.4
 numpy==1.26.4
 pyvis
 jinja2
-google-generativeai
+google-genai
 pyshacl
 musicbrainzngs
 urllib3~=2.5.0

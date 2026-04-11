@@ -227,11 +227,10 @@ async def crawl_urls(urls: List[str], db_path: Path, max_urls: Optional[int]=Non
 # ---------------------------------------------------------------------------
 def summarize_with_gemini(text: str, api_key: str, target_words: int=120) -> str:
     try:
-        import google.generativeai as genai
+        from google import genai
     except Exception as e:
-        raise RuntimeError("google-generativeai not installed. pip install google-generativeai") from e
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+        raise RuntimeError("google-genai not installed. pip install google-genai") from e
+    client = genai.Client(api_key=api_key)
     prompt = textwrap.dedent(f"""
     Summarize the following webpage content in under {target_words} words.
     Make it factual, neutral, and self-contained. Mention key named entities and dates if present.
@@ -239,7 +238,7 @@ def summarize_with_gemini(text: str, api_key: str, target_words: int=120) -> str
     Content:
     {text[:12000]}
     """).strip()
-    resp = model.generate_content(prompt)
+    resp = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
     return getattr(resp, "text", "").strip()
 
 def run_summarize(db_path: Path, target_words: int=120, api_key: Optional[str]=None, limit: Optional[int]=None, overwrite: bool=False):

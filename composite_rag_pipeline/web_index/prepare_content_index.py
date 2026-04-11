@@ -153,11 +153,10 @@ def summarize_gemini(text: str, api_key: Optional[str], target_words: int=120) -
     if not key:
         raise RuntimeError("Gemini summarizer selected but GEMINI_API_KEY not provided.")
     try:
-        import google.generativeai as genai
+        from google import genai
     except Exception as e:
-        raise RuntimeError("google-generativeai not installed. pip install google-generativeai") from e
-    genai.configure(api_key=key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+        raise RuntimeError("google-genai not installed. pip install google-genai") from e
+    client = genai.Client(api_key=key)
     prompt = textwrap.dedent(f"""
     Summarize the following page content in under {target_words} words.
     Be factual, neutral, and self-contained. Mention key named entities and dates if present.
@@ -165,7 +164,7 @@ def summarize_gemini(text: str, api_key: Optional[str], target_words: int=120) -
     Content:
     {text[:12000]}
     """).strip()
-    resp = model.generate_content(prompt)
+    resp = client.models.generate_content(model="gemini-2.0-flash", contents=prompt)
     return getattr(resp, "text", "").strip()
 
 # ---------------------------- DB helpers ----------------------------

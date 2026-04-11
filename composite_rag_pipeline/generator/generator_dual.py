@@ -271,17 +271,16 @@ def _call_ollama(model: str, prompt: str, num_ctx: Optional[int] = None) -> str:
         return out.strip()
 
 def _call_gemini(model: str, prompt: str) -> str:
-    """Google Generative AI (requires GOOGLE_API_KEY)."""
+    """Google GenAI SDK (requires GOOGLE_API_KEY)."""
     try:
-        import google.generativeai as genai  # type: ignore
+        from google import genai  # type: ignore
     except Exception:
-        raise RuntimeError("Gemini provider selected but 'google-generativeai' package is not installed.")
+        raise RuntimeError("Gemini provider selected but 'google-genai' package is not installed. pip install google-genai")
     api_key = os.getenv("GOOGLE_API_KEY")
     if not api_key:
         raise RuntimeError("Gemini provider selected but GOOGLE_API_KEY is not set.")
-    genai.configure(api_key=api_key)
-    model_obj = genai.GenerativeModel(model)
-    r = model_obj.generate_content(prompt)
+    client = genai.Client(api_key=api_key)
+    r = client.models.generate_content(model=model, contents=prompt)
     return (getattr(r, "text", None) or "").strip()
 
 def llm_generate(provider: str, model: str, prompt: str, ollama_num_ctx: Optional[int] = None) -> str:
